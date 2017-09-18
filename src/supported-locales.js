@@ -1,3 +1,7 @@
+/**
+ * Currently supported locales for the Scratch Project
+ * @type {Object} Key Value pairs of locale code: Language name written in the language
+ */
 
 const locales = {
     en: 'English',

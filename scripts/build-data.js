@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*
-Generates lib/<component>_locales.js for each component (gui, etc) from  the
+Generates locales/<component>-msgs.js for each component (gui, etc) from  the
 current translation files for each language for that component
 
 Translation files are expected to be in Chrome i18n json format:
@@ -56,7 +56,10 @@ let messages = Object.keys(locales).reduce((collection, lang) => {
         Object.keys(langData).forEach((id) => {
             langMessages[id] = langData[id].message;
         });
-        collection[lang] = langMessages;
+        collection[lang] = {
+            name: locales[lang],
+            messages: langMessages
+        };
     } catch (e) {
         missingLocales.push(lang);
     }
@@ -64,10 +67,11 @@ let messages = Object.keys(locales).reduce((collection, lang) => {
 }, {});
 
 mkdirpSync(MSGS_DIR);
-let data = 
+let data =
     '// GENERATED FILE:\n' +
-    'export default ' + component + 'Msgs = ' +
-    JSON.stringify(messages, null, 2);
+    'const ' + component + 'Msgs = ' +
+    JSON.stringify(messages, null, 2) +
+    '\nexports.locales = ' + component + 'Msgs;\n';
 fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
 
 if (missingLocales.length > 0) {
