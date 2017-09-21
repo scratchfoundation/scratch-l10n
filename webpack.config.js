@@ -7,7 +7,7 @@ const base = {
     devtool: 'cheap-module-source-map',
     module: {
         rules: [{
-            test: /\.jsx?$/,
+            test: /\.js$/,
             loader: 'babel-loader',
             include: path.resolve(__dirname, 'src')
         }]
@@ -24,10 +24,6 @@ const base = {
 module.exports = [
     // For use as a library
     defaultsDeep({}, base, {
-        externals: {
-            'react': 'react',
-            'react-dom': 'react-dom'
-        },
         entry: {
             l10n: './src/index.js'
         },
