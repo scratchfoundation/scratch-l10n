@@ -1,9 +1,6 @@
-const defaultsDeep = require('lodash.defaultsdeep');
 const path = require('path');
-const webpack = require('webpack');
 
-
-const base = {
+module.exports = {
     devtool: 'cheap-module-source-map',
     module: {
         rules: [{
@@ -12,25 +9,12 @@ const base = {
             include: path.resolve(__dirname, 'src')
         }]
     },
-    plugins: []
-        .concat(process.env.NODE_ENV === 'production' ? [
-            new webpack.optimize.UglifyJsPlugin({
-                include: /\.min\.js$/,
-                minimize: true
-            })
-        ] : [])
+    entry: {
+        l10n: './src/index.js'
+    },
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].js',
+        libraryTarget: 'commonjs2'
+    }
 };
-
-module.exports = [
-    // For use as a library
-    defaultsDeep({}, base, {
-        entry: {
-            l10n: './src/index.js'
-        },
-        output: {
-            path: path.resolve(__dirname, 'dist'),
-            filename: '[name].js',
-            libraryTarget: 'commonjs2'
-        }
-    })
-];
