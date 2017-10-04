@@ -12,9 +12,7 @@ jobs:
       node_js: 6
       script: npm run build
       before_deploy:
-      - npm --no-git-tag-version version $($(npm bin)/json -f package.json version)-prerelease.$(date +%s)
-      - git config --global user.email $(git log --pretty=format:"%ae" -n1)
-      - git config --global user.name $(git log --pretty=format:"%an" -n1)
+      - npm --no-git-tag-version version $($(npm bin)/json -f package.json version).$(date +%Y%m%d%H%M%S)
       deploy:
         provider: npm
         skip_cleanup: true
