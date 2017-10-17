@@ -45,36 +45,37 @@ import locales from '../src/supported-locales.js';
 const MSGS_DIR = './locales/';
 let missingLocales = [];
 
-// GUI messages:
-let component = 'gui';
-let messages = Object.keys(locales).reduce((collection, lang) => {
-    let langMessages = {};
-    try {
-        let langData = JSON.parse(
-            fs.readFileSync(path.resolve(component, lang + '.json'), 'utf8')
-        );
-        Object.keys(langData).forEach((id) => {
-            langMessages[id] = langData[id].message;
-        });
-        collection[lang] = {
-            name: locales[lang],
-            messages: langMessages
-        };
-    } catch (e) {
-        missingLocales.push(lang);
+// generate messages:
+let components = ['gui', 'paint'];
+components.forEach((component) => {
+    let messages = Object.keys(locales).reduce((collection, lang) => {
+        let langMessages = {};
+        try {
+            let langData = JSON.parse(
+                fs.readFileSync(path.resolve(component, lang + '.json'), 'utf8')
+            );
+            Object.keys(langData).forEach((id) => {
+                langMessages[id] = langData[id].message;
+            });
+            collection[lang] = {
+                messages: langMessages
+            };
+        } catch (e) {
+            missingLocales.push(lang);
+        }
+        return collection;
+    }, {});
+
+    mkdirpSync(MSGS_DIR);
+    let data =
+        '// GENERATED FILE:\n' +
+        'const ' + component + 'Msgs = ' +
+        JSON.stringify(messages, null, 2) +
+        '\nexports.messages = ' + component + 'Msgs;\n';
+    fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
+
+    if (missingLocales.length > 0) {
+        process.stdout.write('missing locales: ' + missingLocales.toString());
+        process.exit(1);
     }
-    return collection;
-}, {});
-
-mkdirpSync(MSGS_DIR);
-let data =
-    '// GENERATED FILE:\n' +
-    'const ' + component + 'Msgs = ' +
-    JSON.stringify(messages, null, 2) +
-    '\nexports.locales = ' + component + 'Msgs;\n';
-fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
-
-if (missingLocales.length > 0) {
-    process.stdout.write('missing locales: ' + missingLocales.toString());
-    process.exit(1);
-}
+});
