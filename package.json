@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "Localization for the Scratch 3.0 components",
   "main": "./dist/l10n.js",
+  "bin": {
+    "build-i18n-src": "./scripts/build-i18n-src.js"
+  },
   "scripts": {
     "build:data": "babel-node scripts/build-data",
     "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
@@ -20,8 +23,12 @@
     "url": "https://github.com/LLK/scratch-l10n/issues"
   },
   "homepage": "https://github.com/LLK/scratch-l10n#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.26.0",
+    "babel-plugin-intl": "^0.1.1",
+    "babel-plugin-react-intl": "^2.3.1"
+  },
+  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
