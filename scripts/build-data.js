@@ -46,7 +46,7 @@ const MSGS_DIR = './locales/';
 let missingLocales = [];
 
 // generate messages:
-let components = ['gui', 'paint'];
+let components = ['gui', 'paint', 'pen'];
 components.forEach((component) => {
     let messages = Object.keys(locales).reduce((collection, lang) => {
         let langMessages = {};
