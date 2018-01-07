@@ -8,7 +8,8 @@ const locales = {
     ar: {name: 'الْعَرَبِيَّة'},
     de: {name: 'Deutsch'},
     es: {name: 'Español'},
-    he: {name: 'עִבְרִית'}
+    he: {name: 'עִבְרִית'},
+    zh: {name: '中文'}
 };
 
 export {locales as default};
