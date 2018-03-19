@@ -10,7 +10,9 @@
     "build:data": "babel-node scripts/build-data",
     "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
     "clean": "rimraf ./dist ./locales && mkdirp dist locales",
-    "lint": "eslint . --ext .js,.json",
+    "lint:js": "eslint . --ext .js",
+    "lint:json": "jshint -e .json www gui paint pen",
+    "lint": "npm run lint:js && npm run lint:json",
     "test": "npm run lint && npm run build"
   },
   "repository": {
@@ -37,8 +39,9 @@
     "eslint": "^4.6.1",
     "eslint-config-scratch": "^4.0.0",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-json": "1.2.0",
+    "jshint": "2.9.5",
     "json": "^9.0.6",
+    "jsonlint": "1.6.3",
     "lodash.defaultsdeep": "4.6.0",
     "mkdirp": "^0.5.1",
     "react-intl": "2.4.0",
