@@ -2,6 +2,5 @@
     "plugins": [
         "transform-object-rest-spread"
     ],
-    "presets": ["es2015"]
+    "presets": [["env", {"targets": {"browsers": ["last 3 versions", "Safari >= 8", "iOS >= 8"]}}]]
 }
-
