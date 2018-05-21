@@ -1,20 +1,25 @@
 [main]
 host = https://www.transifex.com
-lang_map = zh_CN:zh-cn, zh_TW:zh-tw, pt_BR:pt-br
+lang_map = zh_CN:zh-cn, zh_TW:zh-tw, pt_BR:pt-br, es_419:es-419
 
-[experimental-scratch.scratch-gui]
-file_filter = gui/<lang>.json
-source_file = gui/en.json
+[scratch-editor.blocks]
+file_filter = editor/blocks/<lang>.json
+source_file = editor/blocks/en.json
 source_lang = en
 type = CHROME
-[experimental-scratch.scratch-paint]
-file_filter = paint/<lang>.json
-source_file = paint/en.json
+[scratch-editor.extensions]
+file_filter = editor/extensions/<lang>.json
+source_file = editor/extensions/en.json
 source_lang = en
 type = CHROME
-[experimental-scratch.pen]
-file_filter = pen/<lang>.json
-source_file = pen/en.json
+[scratch-editor.interface]
+file_filter = editor/interface/<lang>.json
+source_file = editor/interface/en.json
+source_lang = en
+type = CHROME
+[scratch-editor.paint-editor]
+file_filter = editor/paint-editor/<lang>.json
+source_file = editor/paint-editor/en.json
 source_lang = en
 type = CHROME
 

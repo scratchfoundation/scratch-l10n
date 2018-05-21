@@ -34,48 +34,79 @@ Example output:
   }
 }
 '''
+NOTE: blocks messages are plain key-value JSON files
 
 Missing locales are ignored, react-intl will use the default messages for them.
  */
 import * as fs from 'fs';
 import * as path from 'path';
 import {sync as mkdirpSync} from 'mkdirp';
+import defaultsDeep from 'lodash.defaultsdeep';
 import locales from '../src/supported-locales.js';
 
 const MSGS_DIR = './locales/';
+mkdirpSync(MSGS_DIR);
 let missingLocales = [];
 
-// generate messages:
-let components = ['gui', 'paint', 'pen'];
+// generate messages for gui components - files are Chrome i18n format json
+let components = ['interface', 'extensions', 'paint-editor'];
+let editorMsgs = {};
 components.forEach((component) => {
     let messages = Object.keys(locales).reduce((collection, lang) => {
         let langMessages = {};
         try {
             let langData = JSON.parse(
-                fs.readFileSync(path.resolve(component, lang + '.json'), 'utf8')
+                fs.readFileSync(path.resolve('editor', component, lang + '.json'), 'utf8')
             );
             Object.keys(langData).forEach((id) => {
                 langMessages[id] = langData[id].message;
             });
-            collection[lang] = {
-                messages: langMessages
-            };
+            collection[lang] = langMessages;
         } catch (e) {
             missingLocales.push(lang);
         }
         return collection;
     }, {});
-
-    mkdirpSync(MSGS_DIR);
+    
     let data =
         '// GENERATED FILE:\n' +
-        'const ' + component + 'Msgs = ' +
+        'export default ' +
         JSON.stringify(messages, null, 2) +
-        '\nexports.messages = ' + component + 'Msgs;\n';
+        ';\n';
     fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
+    defaultsDeep(editorMsgs, messages);
 
     if (missingLocales.length > 0) {
         process.stdout.write('missing locales: ' + missingLocales.toString());
         process.exit(1);
     }
 });
+
+// generate the blocks messages: files are plain key-value JSON
+let blocksMessages = Object.keys(locales).reduce((collection, lang) => {
+    try {
+        let langData = JSON.parse(
+            fs.readFileSync(path.resolve('editor', 'blocks', lang + '.json'), 'utf8')
+        );
+        collection[lang] = langData;
+    } catch (e) {
+        missingLocales.push(lang);
+    }
+    return collection;
+}, {});
+let blockData =
+    '// GENERATED FILE:\n' +
+    'export default ' +
+    JSON.stringify(blocksMessages, null, 2) +
+    ';\n';
+
+fs.writeFileSync(MSGS_DIR + 'blocks-msgs.js', blockData);
+defaultsDeep(editorMsgs, blocksMessages);
+
+// generate combined editor-msgs file
+let editorData =
+    '// GENERATED FILE:\n' +
+    'export default ' +
+    JSON.stringify(editorMsgs, null, 2) +
+    ';\n';
+fs.writeFileSync(MSGS_DIR + 'editor-msgs.js', editorData);
