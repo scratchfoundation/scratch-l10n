@@ -4,11 +4,55 @@
  */
 
 const locales = {
-    en: {name: 'English'},
-    ar: {name: 'الْعَرَبِيَّة'},
-    de: {name: 'Deutsch'},
-    es: {name: 'Español'},
-    he: {name: 'עִבְרִית'}
+    'ab': {name: 'Аҧсшәа'},
+    'ca': {name: 'Català'},
+    'cs': {name: 'Česky'},
+    'cy': {name: 'Cymraeg'},
+    'de': {name: 'Deutsch'},
+    'el': {name: 'Ελληνικά'},
+    'en': {name: 'English'},
+    'es': {name: 'Español'},
+    'es-419': {name: 'Español Latinoamericano'},
+    'fr': {name: 'Français'},
+    'ga': {name: 'Gaeilge'},
+    'gd': {name: 'Gàidhlig'},
+    'he': {name: 'עִבְרִית'},
+    'it': {name: 'Italiano'},
+    'ja': {name: '日本語'},
+    'mi': {name: 'Maori'},
+    'nl': {name: 'Nederlands'},
+    'nb': {name: 'Norsk Bokmål'},
+    'pt': {name: 'Português'},
+    'pt-br': {name: 'Português Brasileiro'},
+    'sr': {name: 'Српски'},
+    'sl': {name: 'Slovenščina'},
+    'tr': {name: 'Türkçe'},
+    'uk': {name: 'Українська'},
+    'zh-cn': {name: '简体中文'},
+    'zh-tw': {name: '繁體中文'}
+};
+
+const customLocales = {
+    'ab': {
+        locale: 'ab',
+        parentLocale: 'az'
+    },
+    'es-419': {
+        locale: 'es-419',
+        parentLocale: 'es'
+    },
+    'mi': {
+        locale: 'mi',
+        parentLocale: 'en'
+    },
+    'zh-cn': {
+        locale: 'zh-cn',
+        parentLocale: 'zh'
+    },
+    'zh-tw': {
+        locale: 'zh-tw',
+        parentLocale: 'zh'
+    }
 };
 
 const wwwLocales = {
@@ -87,4 +131,4 @@ const wwwLocales = {
     'zh-tw': {name: '繁體中文'}
 };
 
-export {locales as default, wwwLocales};
+export {locales as default, customLocales, wwwLocales};

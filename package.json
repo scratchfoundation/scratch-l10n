@@ -1,6 +1,6 @@
 {
   "name": "scratch-l10n",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Localization for the Scratch 3.0 components",
   "main": "./dist/l10n.js",
   "bin": {
@@ -11,7 +11,7 @@
     "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
     "clean": "rimraf ./dist ./locales && mkdirp dist locales",
     "lint:js": "eslint . --ext .js",
-    "lint:json": "jshint -e .json www gui paint pen",
+    "lint:json": "jshint -e .json www editor/blocks editor/extensions editor/interface editor/paint-editor",
     "lint": "npm run lint:js && npm run lint:json",
     "test": "npm run lint && npm run build"
   },
