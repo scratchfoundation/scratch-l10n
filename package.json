@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "Localization for the Scratch 3.0 components",
   "main": "./dist/l10n.js",
+  "browser": "./src/index.js",
   "bin": {
     "build-i18n-src": "./scripts/build-i18n-src.js"
   },
@@ -28,7 +29,8 @@
   "dependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-intl": "^0.1.1",
-    "babel-plugin-react-intl": "^2.3.1"
+    "babel-plugin-react-intl": "^2.3.1",
+    "react-intl": "2.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -44,7 +46,6 @@
     "jsonlint": "1.6.3",
     "lodash.defaultsdeep": "4.6.0",
     "mkdirp": "^0.5.1",
-    "react-intl": "2.4.0",
     "rimraf": "^2.6.2",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
