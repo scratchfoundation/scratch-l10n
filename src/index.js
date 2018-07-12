@@ -7,6 +7,7 @@ import da from 'react-intl/locale-data/da';
 import de from 'react-intl/locale-data/de';
 import el from 'react-intl/locale-data/el';
 import es from 'react-intl/locale-data/es';
+import et from 'react-intl/locale-data/et';
 import fi from 'react-intl/locale-data/fi';
 import fr from 'react-intl/locale-data/fr';
 import ga from 'react-intl/locale-data/ga';
@@ -16,11 +17,13 @@ import he from 'react-intl/locale-data/he';
 import id from 'react-intl/locale-data/id';
 import it from 'react-intl/locale-data/it';
 import ja from 'react-intl/locale-data/ja';
+import ko from 'react-intl/locale-data/ko';
 import nl from 'react-intl/locale-data/nl';
 import nb from 'react-intl/locale-data/nb';
 import nn from 'react-intl/locale-data/nn';
 import pt from 'react-intl/locale-data/pt';
 import sl from 'react-intl/locale-data/sl';
+import sk from 'react-intl/locale-data/sk';
 import sr from 'react-intl/locale-data/sr';
 import sv from 'react-intl/locale-data/sv';
 import th from 'react-intl/locale-data/th';
@@ -70,6 +73,7 @@ let localeData = [].concat(
     de,
     el,
     es,
+    et,
     fi,
     fr,
     ga,
@@ -79,11 +83,13 @@ let localeData = [].concat(
     id,
     it,
     ja,
+    ko,
     nl,
     nb,
     nn,
     pt,
     sl,
+    sk,
     sr,
     sv,
     th,
