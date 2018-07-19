@@ -8,7 +8,7 @@ cache:
 jobs:
   include:
     - stage: npm release
-      if: branch IN (env(RELEASE_BRANCHES))
+      if: branch = master OR branch = npm-publish
       node_js: 6
       script: npm run build
       before_deploy:
