@@ -71,6 +71,10 @@
         "message": "Simpan",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "Oops, looks like something went wrong.",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "Keluar dari mode seluruh layar",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "Mainkan Suara Ketika Dikli",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "Unggah Suara",
@@ -153,7 +153,7 @@
     },
     "gui.extension.googletranslate.description": {
         "message": "Terjemahkan teks menjadi berbagai bahasa.",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "Panggung",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "Jangan khawatir, kami sedang mengerjakannya {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "Ubah Warna",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "Pilih Suara",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "Google Terjemahan",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "Lihat",
@@ -222,6 +218,10 @@
     "gui.customProcedures.addAnInputBoolean": {
         "message": "Tambahkan input",
         "description": "Label for button to add a boolean input"
+    },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Try again",
+        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.stageHeader.stageSizeSmall": {
         "message": "Ganti ke panggung kecil",
@@ -259,10 +259,6 @@
         "message": "Perbolehkan Kamera",
         "description": "A caption for a disabled button prompting the user to enable camera access"
     },
-    "gui.extension.speechrecognition.description": {
-        "message": "Berbicara ke karya-karyamu.",
-        "description": "Description for the 'Speech Recognition' extension"
-    },
     "gui.loader.message5": {
         "message": "Menggembala kucing-kucing …",
         "description": "One of the loading messages"
@@ -295,9 +291,17 @@
         "message": "pemilih bahasa",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Make sure you have Scratch Link installed and running",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "Pilih Latar",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "When Clicked Increase Score",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "Lebih lambat",
@@ -318,10 +322,6 @@
     "gui.extensionLibrary.extensionUrl": {
         "message": "Masukkan URL ekstension",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "Bantuan",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": "Batal",
@@ -372,8 +372,8 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "Hubungkan karya-karyamu dengan dunia nyata.",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "Connect your projects with the world.",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "Mainkan",
@@ -382,6 +382,10 @@
     "gui.cameraModal.retakePhoto": {
         "message": "Ambil Ulang Foto",
         "description": "A button that allows the user to take the picture again, replacing the old one"
+    },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Ubah Warna",
+        "description": "Step name for 'Change Color' step"
     },
     "gui.connection.scanning.noDevicesFound": {
         "message": "No devices found",
@@ -407,10 +411,6 @@
         "message": "Perambanmu Tidak Mendukung WebGL",
         "description": "WebGL missing title"
     },
-    "gui.extension.videomotion.name": {
-        "message": "Gerakan Video",
-        "description": "Name for the 'Video Motion' extension"
-    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Pilih Sebuah Sprite Huruf",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -427,10 +427,6 @@
         "message": "Lebih banyak hal untuk dicoba!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "Pengenalan Percakapan",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
         "message": "Connect",
         "description": "Button to start connecting to a specific device"
@@ -443,9 +439,25 @@
         "message": "Kamera",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "Bantuan",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Bantuan",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "Menggambar dengan sprite-spritemu.",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Check that Bluetooth is enabled",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "Bergerak Naik & Turun Dengan Tombol Panah",
@@ -470,6 +482,10 @@
     "gui.importInfo.previewfaqlink": {
         "message": "Tinjau Pertanyaan Yang Sering Diajukan",
         "description": "link to Scratch 3.0 preview FAQ page"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Connecting",
+        "description": "Message to help people connect to their micro:bit."
     },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "Pilih Latar",
@@ -511,6 +527,10 @@
         "message": "Disconnect",
         "description": "Button to disconnect the device"
     },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
+    },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "Buat Sebuah Lagu",
         "description": "Step name for 'Create a Song' step"
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Kosongkan Nilai",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "Pergi ke posisi sembarang",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "Berkreasi dengan motor dan sensor.",
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "Tambahkan sebuah Latar",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Mainkan Suara Ketika Dikli",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "Masuk mode layar penuh",
@@ -594,10 +614,6 @@
     "gui.spriteSelector.addSpriteFromSurprise": {
         "message": "Kejutan",
         "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
     },
     "gui.connection.go-to-editor": {
         "message": "Go to Editor",
@@ -647,10 +663,6 @@
         "message": "Arah",
         "description": "Sprite info direction label"
     },
-    "gui.extension.boost.description": {
-        "message": "Berkreasi dengan motor dan sensor.",
-        "description": "Description for the 'LEGO Boost' extension"
-    },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "Pilih Latar",
         "description": "Heading for the backdrop library"
@@ -683,6 +695,10 @@
         "message": "Ambil Sebuah Foto",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Try again",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "Balikkan arah",
         "description": "Title of the button to apply the reverse effect"
@@ -698,10 +714,6 @@
     "gui.menuBar.seeCommunity": {
         "message": "Lihat Komunitas",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "Tambahkan sebuah Sprite",
@@ -739,6 +751,10 @@
         "message": "Variabel ini bakal tersedia untuk semua sprite.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.modal.help": {
+        "message": "Bantuan",
+        "description": "Help button in modal"
+    },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "Unggah",
         "description": "Button to add a sprite in the target pane from file"
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "Tambahkan sebuah Sprite",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Buat Variabel Nilai",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "ekspor",
@@ -771,10 +791,6 @@
         "message": "Ransel",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "Mendeteksi gerakan dengan kamera.",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Judul",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "Memuat...",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "Sensor Video",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "tampilan normal",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "Hentikan",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Buat sebuah Balok",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Pick A Sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "Buat Sebuah Permainan Klik-Klikan",
@@ -823,6 +851,10 @@
         "message": "Unggah Latar",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Pergi ke posisi sembarang",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "Tambahkan sebuah Sprite",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "Suara",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Sense motion with the camera.",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": "Peramban tidak didukung",

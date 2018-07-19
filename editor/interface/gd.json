@@ -8,7 +8,7 @@
         "description": "Label for button to back out of trying Scratch 3.0 preview"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Airson na sprìde seo a-mhàin",
+        "message": "Airson na sprìde seo a‑mhàin",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
     "gui.howtos.animate-a-name.step_AnimateChangeColor": {
@@ -71,6 +71,10 @@
         "message": "Sàbhail",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "Oich, tha coltas gun deach rudeigin cearr.",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "Fàg modh na làn-sgrìn",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "Cluich fuaim nuair a thèid briogadh air",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "Luchdaich suas fuaim",
@@ -153,7 +153,7 @@
     },
     "gui.extension.googletranslate.description": {
         "message": "Eadar-theangaich teacsa gu iomadh cànan.",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "Àrd-ùrlar",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "Na gabh dragh, tha sinn ag obair air {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "Atharrachadh an datha",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "Tagh fuaim",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "Google Translate",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "Seall",
@@ -223,6 +219,10 @@
         "message": "Cuir raon ris",
         "description": "Label for button to add a boolean input"
     },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Feuch ris a‑rithist",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.stageHeader.stageSizeSmall": {
         "message": "Atharraich gu àrd-ùrlar beag",
         "description": "Button to change stage size to small"
@@ -232,7 +232,7 @@
         "description": "Menu bar item for saving now"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "Ga cheangal…",
         "description": "Label indicating that connection is in progress"
     },
     "gui.SpriteInfo.sprite": {
@@ -252,16 +252,12 @@
         "description": "Button to add a sound in the editor tab"
     },
     "gui.connection.scanning.lookingfordevices": {
-        "message": "Looking for devices",
+        "message": "A’ lorg nan uidheaman",
         "description": "Text shown while scanning for devices"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "Cuir an camara an comas",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "Bruidhinn ris na pròiseactan agad.",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "Cho foighidinneach ri cat…",
@@ -276,7 +272,7 @@
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
+        "message": "Tagh an t‑uidheam agad san liosta gu h‑àrd.",
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.menuBar.uploadFromComputer": {
@@ -295,9 +291,17 @@
         "message": "roghnaichear nan cànan",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Make sure you have Scratch Link installed and running",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "Tagh cùlaibh",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "When Clicked Increase Score",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "Nas slaodaiche",
@@ -316,12 +320,8 @@
         "description": "Alert for recording error"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Cuir a-steach URL an leudachain",
+        "message": "Cuir a‑steach URL an leudachain",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "Cobhair",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": "Sguir dheth",
@@ -372,19 +372,23 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "Ceanglaich na pròiseactan agad ris an t-saoghal.",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "Connect your projects with the world.",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "Cluich",
         "description": "Title of the button to start playing the sound"
     },
     "gui.cameraModal.retakePhoto": {
-        "message": "Tog an dealbh a-rithist",
+        "message": "Tog an dealbh a‑rithist",
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Atharrachadh an datha",
+        "description": "Step name for 'Change Color' step"
+    },
     "gui.connection.scanning.noDevicesFound": {
-        "message": "No devices found",
+        "message": "Cha deach uidheam a lorg",
         "description": "Text shown when no devices could be found"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
@@ -392,7 +396,7 @@
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.connection.search": {
-        "message": "Refresh",
+        "message": "Ath-nuadhaich",
         "description": "Button in prompt for starting a search"
     },
     "gui.menuBar.share": {
@@ -400,16 +404,12 @@
         "description": "Label for project share button"
     },
     "gui.crashMessage.description": {
-        "message": "Tha sinn duilich ach tha coltas gun do thuislich Scratch. Fhuair sgioba Scratch fios mu dhèidhinn gu fèin-obrachail. Ath-nuadhaich an duilleag airson fheuchainn ris a-rithist.",
+        "message": "Tha sinn duilich ach tha coltas gun do thuislich Scratch. Fhuair sgioba Scratch fios mu dhèidhinn gu fèin-obrachail. Ath-nuadhaich an duilleag airson fheuchainn ris a‑rithist.",
         "description": "Unhandled error description"
     },
     "gui.webglModal.label": {
         "message": "Cha chuir am brabhsair agad taic ri WebGL",
         "description": "WebGL missing title"
-    },
-    "gui.extension.videomotion.name": {
-        "message": "Gluasad a’ video",
-        "description": "Name for the 'Video Motion' extension"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Tagh sprìd litreach",
@@ -427,28 +427,40 @@
         "message": "Barrachd rudan ri am feuchainn!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "Aithneachadh cainnte",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
-        "message": "Connect",
+        "message": "Ceangail",
         "description": "Button to start connecting to a specific device"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Tagh oideachadh",
         "description": "Heading for the help/tutorials library"
     },
     "gui.costumeTab.addCameraCostume": {
         "message": "Camara",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "Cobhair",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Cobhair",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "Tarraing leis na sprìdean agad.",
         "description": "Description for the 'Pen' extension"
     },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Check that Bluetooth is enabled",
+        "description": "Message for making sure Bluetooth is enabled"
+    },
     "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Gluais suas ⁊ sìos leis na h-iuchraichean-saighde",
+        "message": "Gluais suas ⁊ sìos leis na h‑iuchraichean-saighde",
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.spriteLibrary.chooseASprite": {
@@ -471,6 +483,10 @@
         "message": "CÀBHA an ro-sheallaidh",
         "description": "link to Scratch 3.0 preview FAQ page"
     },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Connecting",
+        "description": "Message to help people connect to their micro:bit."
+    },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "Tagh cùlaibh",
         "description": "Button to add a backdrop in the editor tab"
@@ -488,7 +504,7 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Airson a h-uile sprìd",
+        "message": "Airson a h‑uile sprìd",
         "description": "Option message when creating a variable for making it available to all sprites"
     },
     "gui.backpack.errorBackpack": {
@@ -508,8 +524,12 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "Bris an ceangal",
         "description": "Button to disconnect the device"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "Cruthaich òran",
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Ath-shuidhich an sgòr",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "Rach gu ionad air thuaiream",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "Tog nithean le einnseanan is mothaichearan.",
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "Cuir cùlaibh ris",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Cluich fuaim nuair a thèid briogadh air",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "Modh na làn-sgrìn",
@@ -595,12 +615,8 @@
         "message": "Cùis-iongnaidh",
         "description": "Button to add a random sprite in the target pane"
     },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
-    },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "Rach dhan deasaiche",
         "description": "Button to return to the editor"
     },
     "gui.howtos.change-size.name": {
@@ -647,10 +663,6 @@
         "message": "Comhair",
         "description": "Sprite info direction label"
     },
-    "gui.extension.boost.description": {
-        "message": "Tog nithean le einnseanan is mothaichearan.",
-        "description": "Description for the 'LEGO Boost' extension"
-    },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "Tagh cùlaibh",
         "description": "Heading for the backdrop library"
@@ -683,6 +695,10 @@
         "message": "Tog dealbh",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Feuch ris a‑rithist",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "Contrarra",
         "description": "Title of the button to apply the reverse effect"
@@ -692,16 +708,12 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "Ceangailte",
         "description": "Message indicating that a device was connected"
     },
     "gui.menuBar.seeCommunity": {
         "message": "Faic a’ choimhearsnachd",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "Cuir sprìd ris",
@@ -736,8 +748,12 @@
         "description": "Button to get to the code panel"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Bidh an caochladair seo ri làimh dhan a h-uile sprìd.",
+        "message": "Bidh an caochladair seo ri làimh dhan a h‑uile sprìd.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    },
+    "gui.modal.help": {
+        "message": "Cobhair",
+        "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "Luchdaich suas",
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "Cuir sprìd ris",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Cruthaich caochladair sgòir",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "às-phortaich",
@@ -760,7 +780,7 @@
         "description": "One of the loading messages"
     },
     "gui.howtos.make-music.step_LeftRight": {
-        "message": "Gluais gun taobh deas ⁊ chlì leis na h-iuchraichean-saighde",
+        "message": "Gluais gun taobh deas ⁊ chlì leis na h‑iuchraichean-saighde",
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.loader.message3": {
@@ -770,10 +790,6 @@
     "gui.backpack.header": {
         "message": "Màla-droma",
         "description": "Button to open the backpack"
-    },
-    "gui.extension.videomotion.description": {
-        "message": "Mothaich do ghluasad leis a’ chamara.",
-        "description": "Description for the 'Video Motion' extension"
     },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Ainm",
@@ -791,6 +807,10 @@
         "message": "’Ga luchdadh…",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "Mothachadh video",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "sealladh àbhaisteach",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "Cuir stad air",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Cruthaich bloca",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Pick A Sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "Cruthaich geama briogaidh",
@@ -823,6 +851,10 @@
         "message": "Luchdaich suas cùlaibh",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Rach gu ionad air thuaiream",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "Cuir sprìd ris",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "Fuaim",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Sense motion with the camera.",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": "Cha chuir sinn taic ris a’ bhrabhsair",
@@ -868,7 +904,7 @@
         "description": "Name for the 'Make a Chase Game' how-to"
     },
     "gui.playbackStep.reRecordMsg": {
-        "message": "Clàraich a-rithist e",
+        "message": "Clàraich a‑rithist e",
         "description": "Button to re-record sound in recording playback"
     },
     "gui.importInfo.message": {
@@ -896,7 +932,7 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.connection.device-name-label": {
-        "message": "Device name",
+        "message": "Ainm an uidheim",
         "description": "Label for field showing the device name"
     },
     "gui.webglModal.previewfaq": {

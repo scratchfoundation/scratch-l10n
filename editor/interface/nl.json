@@ -71,6 +71,10 @@
         "message": "Opslaan",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "Oeps, het lijkt dat er iets mis gegaan is.",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "Verlaat full screen mode",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "Klik om een geluid te spelen",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "Upload geluid",
@@ -152,8 +152,8 @@
         "description": "Menu bar item for undoing"
     },
     "gui.extension.googletranslate.description": {
-        "message": "Translate text into many languages.",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "message": "Vertaal tekst naar vele talen.",
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "Speelveld",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "Geen zorgen, wij zijn ermee bezig {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "Verander de kleur",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "Kies een geluid",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "Google Translate",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "Bekijk",
@@ -212,7 +208,7 @@
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.extension.music.description": {
-        "message": "Play instruments and drums.",
+        "message": "Speel instrumenten en drums.",
         "description": "Description for the 'Music' extension"
     },
     "gui.cards.see-more": {
@@ -223,6 +219,10 @@
         "message": "Voeg een invoer toe",
         "description": "Label for button to add a boolean input"
     },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Probeer opnieuw",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.stageHeader.stageSizeSmall": {
         "message": "Schakel naar klein speelveld",
         "description": "Button to change stage size to small"
@@ -232,7 +232,7 @@
         "description": "Menu bar item for saving now"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "Bezig te verbinden ...",
         "description": "Label indicating that connection is in progress"
     },
     "gui.SpriteInfo.sprite": {
@@ -252,16 +252,12 @@
         "description": "Button to add a sound in the editor tab"
     },
     "gui.connection.scanning.lookingfordevices": {
-        "message": "Looking for devices",
+        "message": "Zoeken naar apparaten",
         "description": "Text shown while scanning for devices"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "Camera inschakelen",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "Talk to your projects.",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "Katten verzamelen ...",
@@ -276,7 +272,7 @@
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
+        "message": "Kies je apparaat in de lijst hierboven.",
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.menuBar.uploadFromComputer": {
@@ -295,9 +291,17 @@
         "message": "taalkiezer",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Zorg ervoor Scratch Link geinstalleerd is en draait.",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "Kies een achtergrond",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "Klik om Score te verhogen",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "Trager",
@@ -318,10 +322,6 @@
     "gui.extensionLibrary.extensionUrl": {
         "message": "Geef de URL van de uitbreiding",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "Help",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": " Annuleren",
@@ -364,7 +364,7 @@
         "description": "Notification to the user that the app needs camera access"
     },
     "gui.customProcedures.numberTextType": {
-        "message": "nummer of tekst",
+        "message": "getal of tekst",
         "description": "Description of the number/text input type"
     },
     "gui.unsupportedBrowser.previewfaq": {
@@ -372,8 +372,8 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the physical world.",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "Verbind je projecten met de wereld.",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "Spelen",
@@ -383,8 +383,12 @@
         "message": "Foto opnieuw nemen",
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Verander de kleur",
+        "description": "Step name for 'Change Color' step"
+    },
     "gui.connection.scanning.noDevicesFound": {
-        "message": "No devices found",
+        "message": "Geen apparaten gevonden",
         "description": "Text shown when no devices could be found"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
@@ -392,7 +396,7 @@
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.connection.search": {
-        "message": "Refresh",
+        "message": "Ververs",
         "description": "Button in prompt for starting a search"
     },
     "gui.menuBar.share": {
@@ -406,10 +410,6 @@
     "gui.webglModal.label": {
         "message": "WebGL wordt niet door jouw browser ondersteund",
         "description": "WebGL missing title"
-    },
-    "gui.extension.videomotion.name": {
-        "message": "Video bewegingsherkenning",
-        "description": "Name for the 'Video Motion' extension"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Kies een letter sprite",
@@ -427,25 +427,37 @@
         "message": "Meer om uit te proberen!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "Speech Recognition",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
-        "message": "Connect",
+        "message": "Verbind",
         "description": "Button to start connecting to a specific device"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Kies een handleiding",
         "description": "Heading for the help/tutorials library"
     },
     "gui.costumeTab.addCameraCostume": {
         "message": "Camera",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "Help",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Help",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
-        "message": "Draw with your sprites.",
+        "message": "Teken met je sprites.",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "Het geselecteerde projectbestand kon niet geladen worden.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Controleer dat Bluetooth aan staat",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "Beweeg op & neer met de pijltjestoetsen",
@@ -470,6 +482,10 @@
     "gui.importInfo.previewfaqlink": {
         "message": "Bekijk de FAQ",
         "description": "link to Scratch 3.0 preview FAQ page"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Bezig te verbinden",
+        "description": "Message to help people connect to their micro:bit."
     },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "Kies een achtergrond",
@@ -508,8 +524,12 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "Verbinding verbreken",
         "description": "Button to disconnect the device"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Bezig te verbinden. Zorg dat de pin op je EV3 op 1234 gezet is.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "Maak een liedje",
@@ -523,12 +543,8 @@
         "message": "Score resetten",
         "description": "Step name for 'Reset Score' step"
     },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "Ga naar een willekeurige positie",
-        "description": "Step name for 'Go to a random position' step"
-    },
     "gui.extension.wedo2.description": {
-        "message": "Build with motors and sensors.",
+        "message": "Bouw met motoren en sensoren.",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.controls.go": {
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "Voeg een achtergrond toe",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Klik om een geluid te spelen",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "Ga naar volledig scherm",
@@ -595,12 +615,8 @@
         "message": "Verrassing",
         "description": "Button to add a random sprite in the target pane"
     },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
-    },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "Ga naar de editor",
         "description": "Button to return to the editor"
     },
     "gui.howtos.change-size.name": {
@@ -624,7 +640,7 @@
         "description": "Step name for 'Create Score Variable"
     },
     "gui.extension.ev3.description": {
-        "message": "Build interactive robots and more.",
+        "message": "Bouw interactieve robots en meer.",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.loader.message8": {
@@ -646,10 +662,6 @@
     "gui.SpriteInfo.direction": {
         "message": "Richting",
         "description": "Sprite info direction label"
-    },
-    "gui.extension.boost.description": {
-        "message": "Build with motors and sensors.",
-        "description": "Description for the 'LEGO Boost' extension"
     },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "Kies een achtergrond",
@@ -683,6 +695,10 @@
         "message": "Neem een foto",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Probeer opnieuw",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "Keer om",
         "description": "Title of the button to apply the reverse effect"
@@ -692,16 +708,12 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "Verbonden",
         "description": "Message indicating that a device was connected"
     },
     "gui.menuBar.seeCommunity": {
         "message": "Zie Gemeenschap",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "Voeg een sprite toe",
@@ -736,8 +748,12 @@
         "description": "Button to get to the code panel"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "This variable will be available to all sprites.",
+        "message": "Deze variabele is beschikbaar in alle sprites.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    },
+    "gui.modal.help": {
+        "message": "Help",
+        "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "Uploaden",
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "Voeg een sprite toe",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Maak een  variabele met de naam score",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "exporteren",
@@ -771,10 +791,6 @@
         "message": "Rugzak",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "Detect motion with the camera.",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Naam",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "Laden ...",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "Video",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "normaal uitlezen",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "Stop",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Maak een blok",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Kies een sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "Maak een klikspel",
@@ -823,6 +851,10 @@
         "message": "Upload achtergrond",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Ga naar een willekeurige positie",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "Voeg een sprite toe",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "Geluid",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Neem beweging waar met de camera",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": "Browser wordt niet ondersteund",
@@ -896,7 +932,7 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.connection.device-name-label": {
-        "message": "Device name",
+        "message": "Apparaatnaam",
         "description": "Label for field showing the device name"
     },
     "gui.webglModal.previewfaq": {

@@ -4,7 +4,7 @@
         "description": "Title of the button to apply the echo effect"
     },
     "gui.previewInfo.notnow": {
-        "message": "Not Now",
+        "message": "الان نه",
         "description": "Label for button to back out of trying Scratch 3.0 preview"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
@@ -16,7 +16,7 @@
         "description": "Step name for 'Change color' step"
     },
     "gui.costumeLibrary.chooseACostume": {
-        "message": "Choose a Costume",
+        "message": "یک لباس را انتخاب کنید",
         "description": "Heading for the costume library"
     },
     "gui.library.filterPlaceholder": {
@@ -24,7 +24,7 @@
         "description": "Placeholder text for library search field"
     },
     "gui.unsupportedBrowser.back": {
-        "message": "Back",
+        "message": "بازگشت",
         "description": "Button to go back in unsupported browser modal"
     },
     "gui.extension.music.name": {
@@ -36,7 +36,7 @@
         "description": "Button to add a random stage in the target pane"
     },
     "gui.comingSoon.message3": {
-        "message": "We're working on it {emoji}",
+        "message": "ما در حال کار بر روی آن هستیم {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.unsupportedBrowser.previewfaqlink": {
@@ -71,6 +71,10 @@
         "message": "ذخیره",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "Oops, looks like something went wrong.",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "Exit full screen mode",
         "description": "Button to get out of full screen mode"
@@ -88,23 +92,19 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.costumeTab.addFileBackdrop": {
-        "message": "Upload Backdrop",
+        "message": "بارگذاری پشت صحنه",
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "Play Sound When Clicked",
         "description": "Step name for 'Play Sound When Clicked' step"
     },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
-    },
     "gui.soundTab.fileUploadSound": {
         "message": "Upload Sound",
         "description": "Button to upload sound from file in the editor tab"
     },
     "gui.soundEditor.stop": {
-        "message": "Stop",
+        "message": "متوقف کن",
         "description": "Title of the button to stop the sound"
     },
     "gui.loader.message2": {
@@ -144,7 +144,7 @@
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.robot": {
-        "message": "Robot",
+        "message": "ربات",
         "description": "Title of the button to apply the robot effect"
     },
     "gui.menuBar.undo": {
@@ -153,34 +153,30 @@
     },
     "gui.extension.googletranslate.description": {
         "message": "Translate text into many languages.",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "طبقه",
         "description": "Label for the stage in the stage selector"
     },
     "gui.webglModal.back": {
-        "message": "Back",
+        "message": "بازگشت",
         "description": "Label for button go back when browser is unsupported"
     },
     "gui.comingSoon.message1": {
         "message": "Don't worry, we're on it {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "Change Color",
-        "description": "Step name for 'Change Color' step"
-    },
     "gui.soundLibrary.chooseASound": {
-        "message": "Choose a Sound",
+        "message": "یک صدا را انتخاب کنید",
         "description": "Heading for the sound library"
     },
     "gui.importInfo.invalidFormatError": {
-        "message": "Uh oh, that project link or id doesn't look quite right.",
+        "message": "اوه، لینک پروژه یا شناسه به نظر میرسه درست نیست.",
         "description": "Invalid project link or id message"
     },
     "gui.customProcedures.addAnInputNumberText": {
-        "message": "Add an input",
+        "message": "ورودی را اضافه کنید",
         "description": "Label for button to add a number/text input"
     },
     "gui.menuBar.saveAsCopy": {
@@ -188,8 +184,8 @@
         "description": "Menu bar item for saving as a copy"
     },
     "gui.extension.googletranslate.name": {
-        "message": "Google Translate",
-        "description": "Name for the 'Google Translate' extension"
+        "message": "مترجم گوگل",
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "View",
@@ -208,7 +204,7 @@
         "description": "Label for button to add a label"
     },
     "gui.soundEditor.trim": {
-        "message": "Trim",
+        "message": "اصلاح کردن",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.extension.music.description": {
@@ -220,8 +216,12 @@
         "description": "Title for button to see more in how-to library"
     },
     "gui.customProcedures.addAnInputBoolean": {
-        "message": "Add an input",
+        "message": "ورودی را اضافه کنید",
         "description": "Label for button to add a boolean input"
+    },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Try again",
+        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.stageHeader.stageSizeSmall": {
         "message": "Switch to small stage",
@@ -244,11 +244,11 @@
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Choose a Costume",
+        "message": "یک لباس را انتخاب کنید",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
-        "message": "Choose a Sound",
+        "message": "یک صدا را انتخاب کنید",
         "description": "Button to add a sound in the editor tab"
     },
     "gui.connection.scanning.lookingfordevices": {
@@ -258,10 +258,6 @@
     "gui.cameraModal.enableCameraCaption": {
         "message": "Enable Camera",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "Talk to your projects.",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "Herding cats …",
@@ -295,12 +291,20 @@
         "message": "language selector",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Make sure you have Scratch Link installed and running",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "Choose a Backdrop",
         "description": "Button to add a stage in the target pane from library"
     },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "When Clicked Increase Score",
+        "description": "Step name for 'When Clicked Increase Score' step"
+    },
     "gui.soundEditor.slower": {
-        "message": "Slower",
+        "message": "آرام‌تر",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.turboMode.active": {
@@ -319,10 +323,6 @@
         "message": "Enter the URL of the extension",
         "description": "Prompt for unoffical extension url"
     },
-    "gui.connection.helpbutton": {
-        "message": "کمک",
-        "description": "Button to view help content"
-    },
     "gui.customProcedures.cancel": {
         "message": "لغو",
         "description": "Label for button to cancel custom procedure edits"
@@ -336,7 +336,7 @@
         "description": "Name for the 'Animate a Name' how-to"
     },
     "gui.modal.back": {
-        "message": "Back",
+        "message": "بازگشت",
         "description": "Back button in modal"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
@@ -364,7 +364,7 @@
         "description": "Notification to the user that the app needs camera access"
     },
     "gui.customProcedures.numberTextType": {
-        "message": "number or text",
+        "message": "عدد یا متن",
         "description": "Description of the number/text input type"
     },
     "gui.unsupportedBrowser.previewfaq": {
@@ -372,16 +372,20 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the physical world.",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "Connect your projects with the world.",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
-        "message": "Play",
+        "message": "پخش",
         "description": "Title of the button to start playing the sound"
     },
     "gui.cameraModal.retakePhoto": {
         "message": "Retake Photo",
         "description": "A button that allows the user to take the picture again, replacing the old one"
+    },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Change Color",
+        "description": "Step name for 'Change Color' step"
     },
     "gui.connection.scanning.noDevicesFound": {
         "message": "No devices found",
@@ -407,10 +411,6 @@
         "message": "Your Browser Does Not Support WebGL",
         "description": "WebGL missing title"
     },
-    "gui.extension.videomotion.name": {
-        "message": "Video Motion",
-        "description": "Name for the 'Video Motion' extension"
-    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Pick a Letter Sprite",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -427,10 +427,6 @@
         "message": "More things to try!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "Speech Recognition",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
         "message": "Connect",
         "description": "Button to start connecting to a specific device"
@@ -443,9 +439,25 @@
         "message": "دوربین",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "کمک",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "کمک",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "Draw with your sprites.",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Check that Bluetooth is enabled",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "Move Up & Down With Arrow Keys",
@@ -456,11 +468,11 @@
         "description": "Heading for the sprite library"
     },
     "gui.loader.headline": {
-        "message": "Loading Project",
+        "message": "در حال بارگیری پروژه",
         "description": "Main loading message"
     },
     "gui.playbackStep.playMsg": {
-        "message": "Play",
+        "message": "پخش",
         "description": "Stop/Play button in recording playback"
     },
     "gui.customProcedures.booleanType": {
@@ -471,6 +483,10 @@
         "message": "Preview FAQ",
         "description": "link to Scratch 3.0 preview FAQ page"
     },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Connecting",
+        "description": "Message to help people connect to their micro:bit."
+    },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "Choose a Backdrop",
         "description": "Button to add a backdrop in the editor tab"
@@ -480,7 +496,7 @@
         "description": "Menu bar item for redoing"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paint",
+        "message": "نقاشی",
         "description": "Button to add a sprite in the target pane from paint"
     },
     "gui.previewInfo.invitation": {
@@ -511,6 +527,10 @@
         "message": "Disconnect",
         "description": "Button to disconnect the device"
     },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
+    },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "Create a Song",
         "description": "Step name for 'Create a Song' step"
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Reset Score",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "Go to a random position",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "Build with motors and sensors.",
@@ -555,6 +571,10 @@
         "message": "Add a Backdrop",
         "description": "Step name for 'Add a Backdrop' step"
     },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Play Sound When Clicked",
+        "description": "Play Sound When Clicked' step"
+    },
     "gui.stageHeader.stageSizeFull": {
         "message": "Enter full screen mode",
         "description": "Button to change stage size to full screen"
@@ -572,7 +592,7 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.SpriteInfo.size": {
-        "message": "Size",
+        "message": "اندازه",
         "description": "Sprite info size label"
     },
     "gui.webglModal.previewfaqlink": {
@@ -580,7 +600,7 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "بلندتر",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.howtos.record-a-sound.name": {
@@ -588,16 +608,12 @@
         "description": "Record A Sound' how-to"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Preview",
+        "message": "خوش‌آمدید به پیش‌نمایش اسکرچ ۳٫۰",
         "description": "Header for Preview Info Modal"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
         "message": "Surprise",
         "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
     },
     "gui.connection.go-to-editor": {
         "message": "Go to Editor",
@@ -608,7 +624,7 @@
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.extensionLibrary.comingSoon": {
-        "message": "Coming Soon",
+        "message": "به زودی",
         "description": "Label for extensions that are not yet implemented"
     },
     "gui.SpriteInfo.show": {
@@ -632,7 +648,7 @@
         "description": "One of the loading messages"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "سریعتر",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.gui.soundsTab": {
@@ -647,10 +663,6 @@
         "message": "Direction",
         "description": "Sprite info direction label"
     },
-    "gui.extension.boost.description": {
-        "message": "Build with motors and sensors.",
-        "description": "Description for the 'LEGO Boost' extension"
-    },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "Choose a Backdrop",
         "description": "Heading for the backdrop library"
@@ -660,11 +672,11 @@
         "description": "A caption for a disabled button while the video from the camera is still loading"
     },
     "gui.gui.variablePrompt": {
-        "message": "More Options",
+        "message": "تنظیمات بیشتر",
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.costumesTab": {
-        "message": "لباس ها",
+        "message": "لباس‌ها",
         "description": "Button to get to the costumes panel"
     },
     "gui.gui.addExtension": {
@@ -683,8 +695,12 @@
         "message": "Take a Photo",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Try again",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "معکوس",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.webglModal.webgllink": {
@@ -699,10 +715,6 @@
         "message": "See Community",
         "description": "Label for see community button"
     },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "Add a Sprite",
         "description": "Step name for 'Add a Sprite' step"
@@ -716,11 +728,11 @@
         "description": "Notification to the user that the camera is loading"
     },
     "gui.costumeTab.addFileCostume": {
-        "message": "Upload Costume",
+        "message": "بارگذاری لباس",
         "description": "Button to add a costume by uploading a file in the editor tab"
     },
     "gui.playbackStep.stopMsg": {
-        "message": "Stop",
+        "message": "متوقف کن",
         "description": "Stop/Play button in recording playback"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
@@ -732,27 +744,35 @@
         "description": "Title of the button to undo"
     },
     "gui.gui.codeTab": {
-        "message": "Code",
+        "message": "کد",
         "description": "Button to get to the code panel"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "This variable will be available to all sprites.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.modal.help": {
+        "message": "کمک",
+        "description": "Help button in modal"
+    },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload",
+        "message": "بارگذاری",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "Add a Sprite",
         "description": "Step name for 'Add a new sprite' step"
     },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Create Score Variable",
+        "description": "Step name for 'Create Score Variable' step"
+    },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "خروجی گرفتن",
         "description": "Menu item to export the selected item"
     },
     "gui.loader.message1": {
-        "message": "Creating blocks …",
+        "message": "ایجاد بلاک...",
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
@@ -771,10 +791,6 @@
         "message": "کوله پشتی",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "Detect motion with the camera.",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Name",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "Loading...",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "Video Sensing",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "بازخوانش معمولی",
         "description": "Menu item to switch to the default monitor"
@@ -800,15 +820,23 @@
         "description": "Step name for 'Pick Another Letter Sprite"
     },
     "gui.controls.stop": {
-        "message": "Stop",
+        "message": "متوقف کن",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "ایجاد یک بلاک",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Pick A Sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "Make a Clicker Game",
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.costumeTab.addBlankCostume": {
-        "message": "Paint",
+        "message": "نقاشی",
         "description": "Button to add a blank costume in the editor tab"
     },
     "gui.howtos.Chase-Game.step_MoveRandom": {
@@ -820,8 +848,12 @@
         "description": "Label for checkbox to run without screen refresh"
     },
     "gui.stageSelector.addBackdropFromFile": {
-        "message": "Upload Backdrop",
+        "message": "بارگذاری پشت صحنه",
         "description": "Button to add a stage in the target pane from file"
+    },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Go to a random position",
+        "description": "Step name for 'Go to a random position' step"
     },
     "gui.howtos.add-sprite.name": {
         "message": "Add a Sprite",
@@ -835,8 +867,12 @@
         "message": "صدا",
         "description": "Label for the name of the sound"
     },
+    "gui.extension.videosensing.description": {
+        "message": "Sense motion with the camera.",
+        "description": "Description for the 'Video Sensing' extension"
+    },
     "gui.unsupportedBrowser.label": {
-        "message": "Browser is not supported",
+        "message": "مرورگر پشتیبانی نمی‌شود",
         "description": ""
     },
     "gui.playbackStep.loadingMsg": {
@@ -848,11 +884,11 @@
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.comingSoon.message2": {
-        "message": "Coming Soon...",
+        "message": "به زودی...",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paint",
+        "message": "نقاشی",
         "description": "Button to add a stage in the target pane from paint"
     },
     "gui.cameraModal.takePhoto": {

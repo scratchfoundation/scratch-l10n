@@ -71,6 +71,10 @@
         "message": "Spara",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "Hoppsan, det verkar som om något gick fel.",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "Gå ur fullskärmsläge",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "Spela ljud när den klickas på",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "Ladda upp ljud från fil",
@@ -153,7 +153,7 @@
     },
     "gui.extension.googletranslate.description": {
         "message": "Översätt text till många språk.",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "Scen",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "Det är lugnt, vi jobbar på det {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "Ändra Färg",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "Välj ett ljud",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "Google Översättning",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "Visa",
@@ -223,6 +219,10 @@
         "message": "Lägg till en indata",
         "description": "Label for button to add a boolean input"
     },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Försök igen",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.stageHeader.stageSizeSmall": {
         "message": "Byt till en mindre scen",
         "description": "Button to change stage size to small"
@@ -232,7 +232,7 @@
         "description": "Menu bar item for saving now"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "Kopplar upp...",
         "description": "Label indicating that connection is in progress"
     },
     "gui.SpriteInfo.sprite": {
@@ -258,10 +258,6 @@
     "gui.cameraModal.enableCameraCaption": {
         "message": "Aktivera kameran",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "Prata med dina projekt.",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "Samlar katter...",
@@ -295,9 +291,17 @@
         "message": "språkväljare",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Make sure you have Scratch Link installed and running",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "Välj en bakgrund",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "When Clicked Increase Score",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "Saktare",
@@ -318,10 +322,6 @@
     "gui.extensionLibrary.extensionUrl": {
         "message": "Skriv in en URL till tillägget",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "Hjälp",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": "Avbryt",
@@ -372,8 +372,8 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "Koppla dina projekt till den fysiska världen.",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "Koppla upp dina projekt med världen.",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "Spela upp",
@@ -382,6 +382,10 @@
     "gui.cameraModal.retakePhoto": {
         "message": "Ta om foto",
         "description": "A button that allows the user to take the picture again, replacing the old one"
+    },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Ändra Färg",
+        "description": "Step name for 'Change Color' step"
     },
     "gui.connection.scanning.noDevicesFound": {
         "message": "No devices found",
@@ -392,7 +396,7 @@
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.connection.search": {
-        "message": "Refresh",
+        "message": "Uppdatera",
         "description": "Button in prompt for starting a search"
     },
     "gui.menuBar.share": {
@@ -406,10 +410,6 @@
     "gui.webglModal.label": {
         "message": "Din webbläsare stödjer inte WebGL",
         "description": "WebGL missing title"
-    },
-    "gui.extension.videomotion.name": {
-        "message": "Videorörelse",
-        "description": "Name for the 'Video Motion' extension"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Välj en bokstavssprajt",
@@ -427,25 +427,37 @@
         "message": "Fler saker att pröva!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "Taligenkänning",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
-        "message": "Connect",
+        "message": "Koppla upp",
         "description": "Button to start connecting to a specific device"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Välj en handledning",
         "description": "Heading for the help/tutorials library"
     },
     "gui.costumeTab.addCameraCostume": {
         "message": "Kamera",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "Hjälp",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Hjälp",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "Låt dina sprajts rita.",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Check that Bluetooth is enabled",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "Flytta uppåt & nedåt med piltangenterna",
@@ -470,6 +482,10 @@
     "gui.importInfo.previewfaqlink": {
         "message": "Förhandsvisa FAQ",
         "description": "link to Scratch 3.0 preview FAQ page"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Kopplar upp",
+        "description": "Message to help people connect to their micro:bit."
     },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "Välj en bakgrund",
@@ -508,8 +524,12 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "Koppla ur",
         "description": "Button to disconnect the device"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "Skapa en sång",
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Nollställ Poäng",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "Gå till en slumpmässig position",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "Bygg med motorer och sensorer.",
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "Lägg till en bakgrund",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Spela ljud när den klickas på",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "Byt till fullskärmsläge",
@@ -595,12 +615,8 @@
         "message": "Överraska",
         "description": "Button to add a random sprite in the target pane"
     },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
-    },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "Gå till redigeraren",
         "description": "Button to return to the editor"
     },
     "gui.howtos.change-size.name": {
@@ -647,10 +663,6 @@
         "message": "Riktning",
         "description": "Sprite info direction label"
     },
-    "gui.extension.boost.description": {
-        "message": "Bygg med motorer och sensorer.",
-        "description": "Description for the 'LEGO Boost' extension"
-    },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "Välj en bakgrund",
         "description": "Heading for the backdrop library"
@@ -683,6 +695,10 @@
         "message": "Ta ett foto",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Försök igen",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "Backa",
         "description": "Title of the button to apply the reverse effect"
@@ -692,16 +708,12 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "Uppkopplad",
         "description": "Message indicating that a device was connected"
     },
     "gui.menuBar.seeCommunity": {
         "message": "Visa community",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "Lägg till en sprajt",
@@ -739,6 +751,10 @@
         "message": "Variabeln blir tillgänglig för alla sprajtar.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.modal.help": {
+        "message": "Hjälp",
+        "description": "Help button in modal"
+    },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "Ladda upp",
         "description": "Button to add a sprite in the target pane from file"
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "Lägg till en sprajt",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Skapa poängvariabel",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "exportera",
@@ -771,10 +791,6 @@
         "message": "Ryggsäck",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "Känn av rörelse med kameran.",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Namn",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "Laddar...",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "Video - Känna av",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "normal avläsning",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "Stoppa",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Skapa ett block",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Pick A Sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "Gör ett Klicka Spel",
@@ -823,6 +851,10 @@
         "message": "Ladda upp bakgrund",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Gå till en slumpmässig position",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "Lägg till en sprajt",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "Ljud",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Sense motion with the camera.",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": "Webbläsaren stöds ej",

@@ -71,6 +71,10 @@
         "message": "保存",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "呀，好像出错了。",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "退出全屏模式",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "点击时播放声音",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "上传声音",
@@ -153,7 +153,7 @@
     },
     "gui.extension.googletranslate.description": {
         "message": "把文字翻译成多种语言。",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "舞台",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "别急，我们还在做这个 {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "改变颜色",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "选择一个声音",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "谷歌翻译",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "观看",
@@ -223,6 +219,10 @@
         "message": "添加输入项",
         "description": "Label for button to add a boolean input"
     },
+    "gui.connection.error.tryagainbutton": {
+        "message": "重试",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.stageHeader.stageSizeSmall": {
         "message": "缩小舞台",
         "description": "Button to change stage size to small"
@@ -232,7 +232,7 @@
         "description": "Menu bar item for saving now"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "正在连接……",
         "description": "Label indicating that connection is in progress"
     },
     "gui.SpriteInfo.sprite": {
@@ -252,16 +252,12 @@
         "description": "Button to add a sound in the editor tab"
     },
     "gui.connection.scanning.lookingfordevices": {
-        "message": "Looking for devices",
+        "message": "正在查找设备",
         "description": "Text shown while scanning for devices"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "启用摄像头",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "听懂你说的话。",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "呼唤小猫……",
@@ -276,7 +272,7 @@
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
+        "message": "选择上面列出的设备。",
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.menuBar.uploadFromComputer": {
@@ -295,9 +291,17 @@
         "message": "语言菜单",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Make sure you have Scratch Link installed and running",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "选择一个背景",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "When Clicked Increase Score",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "慢一点",
@@ -318,10 +322,6 @@
     "gui.extensionLibrary.extensionUrl": {
         "message": "键入扩展的URL",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "帮助",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": "取消",
@@ -373,7 +373,7 @@
     },
     "gui.extension.microbit.description": {
         "message": "让项目连接到实体世界。",
-        "description": "Description for the 'Micro:bit' extension"
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "播放",
@@ -383,8 +383,12 @@
         "message": "重新拍摄",
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "改变颜色",
+        "description": "Step name for 'Change Color' step"
+    },
     "gui.connection.scanning.noDevicesFound": {
-        "message": "No devices found",
+        "message": "没有发现任何设备",
         "description": "Text shown when no devices could be found"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
@@ -392,7 +396,7 @@
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.connection.search": {
-        "message": "Refresh",
+        "message": "刷新",
         "description": "Button in prompt for starting a search"
     },
     "gui.menuBar.share": {
@@ -406,10 +410,6 @@
     "gui.webglModal.label": {
         "message": "你的浏览器不支持WenGL",
         "description": "WebGL missing title"
-    },
-    "gui.extension.videomotion.name": {
-        "message": "视频运动",
-        "description": "Name for the 'Video Motion' extension"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "选一个字母角色",
@@ -427,25 +427,37 @@
         "message": "再试试这些！",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "语音识别",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
-        "message": "Connect",
+        "message": "连接",
         "description": "Button to start connecting to a specific device"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "选择一个教程",
         "description": "Heading for the help/tutorials library"
     },
     "gui.costumeTab.addCameraCostume": {
         "message": "摄像头",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "帮助",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "帮助",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "绘制角色。",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Check that Bluetooth is enabled",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "用方向键控制上下移动",
@@ -470,6 +482,10 @@
     "gui.importInfo.previewfaqlink": {
         "message": "预览版常见问题",
         "description": "link to Scratch 3.0 preview FAQ page"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "正在连接",
+        "description": "Message to help people connect to their micro:bit."
     },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "选择一个背景",
@@ -508,8 +524,12 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "断开连接",
         "description": "Button to disconnect the device"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "创作乐曲",
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "把得分清零",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "移动到随机位置",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "支持马达和传感器。",
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "添加一个背景",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "点击时播放声音",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "进入全屏模式",
@@ -595,12 +615,8 @@
         "message": "随机",
         "description": "Button to add a random sprite in the target pane"
     },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
-    },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "返回编辑器",
         "description": "Button to return to the editor"
     },
     "gui.howtos.change-size.name": {
@@ -647,10 +663,6 @@
         "message": "方向",
         "description": "Sprite info direction label"
     },
-    "gui.extension.boost.description": {
-        "message": "支持马达和传感器。",
-        "description": "Description for the 'LEGO Boost' extension"
-    },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "选择一个背景",
         "description": "Heading for the backdrop library"
@@ -683,6 +695,10 @@
         "message": "拍摄",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "重试",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "反转",
         "description": "Title of the button to apply the reverse effect"
@@ -692,16 +708,12 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "已连接",
         "description": "Message indicating that a device was connected"
     },
     "gui.menuBar.seeCommunity": {
         "message": "查看社区",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "添加一个角色",
@@ -739,6 +751,10 @@
         "message": "所有角色都可使用该变量。",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.modal.help": {
+        "message": "帮助",
+        "description": "Help button in modal"
+    },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "上传",
         "description": "Button to add a sprite in the target pane from file"
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "添加一个角色",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "建立一个得分变量",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "导出",
@@ -771,10 +791,6 @@
         "message": "书包",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "用摄像头探测物体运动。",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "名字",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "载入中……",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "视频传感",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "正常显示",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "停止",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "制作新的积木",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Pick A Sprite",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "制作消除游戏",
@@ -823,6 +851,10 @@
         "message": "上传背景",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "移动到随机位置",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "添加一个角色",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "声音",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Sense motion with the camera.",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": "不支持当前浏览器",
@@ -896,7 +932,7 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.connection.device-name-label": {
-        "message": "Device name",
+        "message": "设备名称",
         "description": "Label for field showing the device name"
     },
     "gui.webglModal.previewfaq": {

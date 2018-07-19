@@ -16,7 +16,7 @@
         "description": "set the state for a pen color parameter e.g. saturation"
     },
     "music.drumCabasa": {
-        "message": "Cabasa",
+        "message": "(15) Cabasa",
         "description": "Sound of a cabasa being shaken"
     },
     "music.getTempo": {
@@ -24,8 +24,8 @@
         "description": "get the current tempo (speed) for notes, drums, and rests played"
     },
     "translate.categoryName": {
-        "message": "Traducere",
-        "description": "Label for the translate extension category"
+        "message": "Google Translate",
+        "description": "Name of extension that adds translate blocks. Do Not translate Google"
     },
     "music.drumOpenHiHat": {
         "message": "(5) Open Hi-Hat",
@@ -72,7 +72,7 @@
         "description": "Sound of a Vibraslap being played"
     },
     "pen.stamp": {
-        "message": "stampila",
+        "message": "ștampila",
         "description": "render current costume on the background"
     },
     "music.instrumentPizzicato": {
@@ -80,7 +80,7 @@
         "description": "Sound of a string instrument (e.g. violin) being plucked"
     },
     "music.instrumentWoodenFlute": {
-        "message": "Flaut de lemn",
+        "message": "(13) Flaut de lemn",
         "description": "Sound of a wooden flute being played"
     },
     "music.drumSnare": {
@@ -120,7 +120,7 @@
         "description": "Sound of a triangle (instrument) being struck"
     },
     "music.instrumentTrombone": {
-        "message": "Trombon",
+        "message": "(9) Trombon",
         "description": "Sound of a trombone being played"
     },
     "music.instrumentVibraphone": {
@@ -164,7 +164,7 @@
         "description": "Sound of a bassoon being played"
     },
     "translate.viewerLanguage": {
-        "message": "viewer language",
+        "message": "language",
         "description": "the languge of the project viewer"
     },
     "pen.setShade": {
@@ -175,6 +175,10 @@
         "message": "(12) Flute",
         "description": "Sound of a flute being played"
     },
+    "speech.whenIHear": {
+        "message": "when I hear [PHRASE]",
+        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
+    },
     "pen.colorMenu.color": {
         "message": "culoare",
         "description": "label for color element in color picker for pen extension"
@@ -182,6 +186,10 @@
     "music.drumConga": {
         "message": "(14) Conga",
         "description": "Sound of a conga being struck"
+    },
+    "speech.speechReporter": {
+        "message": "speech",
+        "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "pen.changeSize": {
         "message": "change pen size by [SIZE]",
@@ -200,8 +208,12 @@
         "description": "label for transparency element in color picker for pen extension"
     },
     "music.instrumentGuitar": {
-        "message": "Chitară",
+        "message": "(4) Chitară",
         "description": "Sound of an accoustic guitar"
+    },
+    "speech.listenAndWait": {
+        "message": "listen and wait",
+        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "music.drumClosedHiHat": {
         "message": "(6) Closed Hi-Hat",
@@ -215,12 +227,16 @@
         "message": "when video motion > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
     },
+    "speech.defaultWhenIHearValue": {
+        "message": "let''s go",
+        "description": "The default phrase/word that, when heard, triggers the event."
+    },
     "speak.speakAndWaitBlock": {
         "message": "spune [WORDS]",
         "description": "speak some words"
     },
     "music.drumTambourine": {
-        "message": "Tamburină",
+        "message": "(7) Tamburină",
         "description": "Sound of a tambourine being struck"
     },
     "music.playDrumForBeats": {
@@ -272,8 +288,12 @@
         "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
     },
     "music.instrumentPiano": {
-        "message": "Pian",
+        "message": "(1) Pian",
         "description": "Sound of a piano"
+    },
+    "speech.extensionName": {
+        "message": "Google Speech",
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "music.drumWoodBlock": {
         "message": "(10) Wood Block",
@@ -304,8 +324,8 @@
         "description": "Sound of an electric piano"
     },
     "videoSensing.categoryName": {
-        "message": "Video Motion",
-        "description": "Label for the video motion extension category"
+        "message": "Detectare video",
+        "description": "Label for the video sensing extension category"
     },
     "music.instrumentElectricGuitar": {
         "message": "(5) Electric Guitar",
