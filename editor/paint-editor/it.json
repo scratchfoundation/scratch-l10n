@@ -4,7 +4,7 @@
         "description": "Alt to image for the button to redo an action"
     },
     "paint.paintEditor.fill": {
-        "message": "Riempi",
+        "message": "Riempimento",
         "description": "Label for the color picker for the fill color"
     },
     "gui.comingSoon.message3": {
@@ -19,6 +19,10 @@
         "message": "Altro",
         "description": "Label for dropdown to access more action buttons"
     },
+    "paint.colorPicker.swap": {
+        "message": "Swap",
+        "description": "Label for button that swaps the two colors in a gradient"
+    },
     "gui.comingSoon.message1": {
         "message": "Tranquillo, ci stiamo lavorando {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
@@ -30,6 +34,10 @@
     "paint.paintEditor.backward": {
         "message": "Indietro",
         "description": "Label for the `Send backward on canvas` button"
+    },
+    "paint.modeTools.filled": {
+        "message": "Riempito",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
     },
     "paint.paintEditor.bitmap": {
         "message": "Converti in Bitmap",
@@ -43,21 +51,21 @@
         "message": "Incolla",
         "description": "Label for the paste button"
     },
-    "paint.modeTools.lineSize": {
-        "message": "Line size",
-        "description": "Label for the line size input"
-    },
     "paint.paintEditor.saturation": {
         "message": "Saturazione",
         "description": "Label for the saturation component in the color picker"
     },
     "paint.modeTools.curved": {
-        "message": "Curvo",
+        "message": "Curva",
         "description": "Label for the button that converts selected points to curves"
     },
     "paint.modeTools.brushSize": {
-        "message": "Dimensione pennello",
+        "message": "Dimensione",
         "description": "Label for the brush size input"
+    },
+    "paint.modeTools.thickness": {
+        "message": "Spessore",
+        "description": "Label for the number input to choose the line thickness"
     },
     "paint.paintEditor.undo": {
         "message": "Annulla",
@@ -71,12 +79,16 @@
         "message": "Inverti in Verticale",
         "description": "Label for the button to flip the image vertically"
     },
+    "paint.modeTools.delete": {
+        "message": "Cancella",
+        "description": "Label for the delete button"
+    },
     "paint.paintEditor.brightness": {
         "message": "Luminosità",
         "description": "Label for the brightness component in the color picker"
     },
     "paint.paintEditor.vector": {
-        "message": "Convert to Vector",
+        "message": "Converti in Vettoriale",
         "description": "Label for button that converts the paint editor to vector mode"
     },
     "paint.paintEditor.costume": {
@@ -96,12 +108,16 @@
         "description": "Label for the button to flip the image horizontally"
     },
     "paint.paintEditor.hue": {
-        "message": "Tonalità",
+        "message": "Colore",
         "description": "Label for the hue component in the color picker"
     },
     "paint.modeTools.copy": {
         "message": "Copia",
         "description": "Label for the copy button"
+    },
+    "paint.modeTools.outlined": {
+        "message": "Contorno",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
     },
     "paint.paintEditor.front": {
         "message": "Primo piano",

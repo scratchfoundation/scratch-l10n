@@ -8,16 +8,20 @@
         "description": "Label for the color picker for the fill color"
     },
     "gui.comingSoon.message3": {
-        "message": "We're working on it {emoji}",
+        "message": "ما در حال کار بر روی آن هستیم {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "paint.modeTools.eraserSize": {
-        "message": "Eraser size",
+        "message": "اندازه پاک کن",
         "description": "Label for the eraser size input"
     },
     "paint.paintEditor.more": {
-        "message": "More",
+        "message": "بیشتر",
         "description": "Label for dropdown to access more action buttons"
+    },
+    "paint.colorPicker.swap": {
+        "message": "Swap",
+        "description": "Label for button that swaps the two colors in a gradient"
     },
     "gui.comingSoon.message1": {
         "message": "Don't worry, we're on it {emoji}",
@@ -31,8 +35,12 @@
         "message": "Backward",
         "description": "Label for the `Send backward on canvas` button"
     },
+    "paint.modeTools.filled": {
+        "message": "Filled",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
+    },
     "paint.paintEditor.bitmap": {
-        "message": "Convert to Bitmap",
+        "message": "تبدیل به بیت‌مپ",
         "description": "Label for button that converts the paint editor to bitmap mode"
     },
     "paint.paintEditor.group": {
@@ -43,21 +51,21 @@
         "message": "Paste",
         "description": "Label for the paste button"
     },
-    "paint.modeTools.lineSize": {
-        "message": "Line size",
-        "description": "Label for the line size input"
-    },
     "paint.paintEditor.saturation": {
         "message": "Saturation",
         "description": "Label for the saturation component in the color picker"
     },
     "paint.modeTools.curved": {
-        "message": "Curved",
+        "message": "منحنی",
         "description": "Label for the button that converts selected points to curves"
     },
     "paint.modeTools.brushSize": {
-        "message": "Brush size",
+        "message": "اندازه",
         "description": "Label for the brush size input"
+    },
+    "paint.modeTools.thickness": {
+        "message": "Thickness",
+        "description": "Label for the number input to choose the line thickness"
     },
     "paint.paintEditor.undo": {
         "message": "برگرد",
@@ -71,12 +79,16 @@
         "message": "Flip Vertical",
         "description": "Label for the button to flip the image vertically"
     },
+    "paint.modeTools.delete": {
+        "message": "حذف",
+        "description": "Label for the delete button"
+    },
     "paint.paintEditor.brightness": {
-        "message": "Brightness",
+        "message": "روشنایی",
         "description": "Label for the brightness component in the color picker"
     },
     "paint.paintEditor.vector": {
-        "message": "Convert to Vector",
+        "message": "تبدیل به وکتور",
         "description": "Label for button that converts the paint editor to vector mode"
     },
     "paint.paintEditor.costume": {
@@ -84,7 +96,7 @@
         "description": "Label for the name of a costume"
     },
     "paint.paintEditor.back": {
-        "message": "Back",
+        "message": "بازگشت",
         "description": "Label for the `Send to back of canvas` button"
     },
     "paint.paintEditor.ungroup": {
@@ -96,12 +108,16 @@
         "description": "Label for the button to flip the image horizontally"
     },
     "paint.paintEditor.hue": {
-        "message": "Color",
+        "message": "رنگ",
         "description": "Label for the hue component in the color picker"
     },
     "paint.modeTools.copy": {
-        "message": "Copy",
+        "message": "کپی",
         "description": "Label for the copy button"
+    },
+    "paint.modeTools.outlined": {
+        "message": "Outlined",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
     },
     "paint.paintEditor.front": {
         "message": "Front",
@@ -112,7 +128,7 @@
         "description": "Label for the color picker for the outline color"
     },
     "gui.comingSoon.message2": {
-        "message": "Coming Soon...",
+        "message": "به زودی...",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     }
 }

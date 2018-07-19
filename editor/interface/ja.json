@@ -71,6 +71,10 @@
         "message": "保存",
         "description": "Title of the button to save trimmed sound"
     },
+    "gui.connection.error.errorMessage": {
+        "message": "うわっ! 何か問題が発生したようです。",
+        "description": "The device connection process has encountered an error."
+    },
     "gui.stageHeader.stageSizeUnFull": {
         "message": "全画面表示をやめる",
         "description": "Button to get out of full screen mode"
@@ -94,10 +98,6 @@
     "gui.howtos.Make-Music.step_PlaySoundClick": {
         "message": "クリックしたら音を鳴らす",
         "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.connection.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
     },
     "gui.soundTab.fileUploadSound": {
         "message": "音をアップロードする",
@@ -152,8 +152,8 @@
         "description": "Menu bar item for undoing"
     },
     "gui.extension.googletranslate.description": {
-        "message": "テキストを色々な言語に翻訳します。",
-        "description": "Description for the 'Google Translate' extension. Do not translate 'Google'"
+        "message": "色々な言語にテキストを翻訳します。",
+        "description": "Description for the 'Google Translate' extension"
     },
     "gui.stageSelector.stage": {
         "message": "ステージ",
@@ -166,10 +166,6 @@
     "gui.comingSoon.message1": {
         "message": "ご安心下さい。開発中です {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.howtos.make-a-game.step_ChangeColor": {
-        "message": "色を変える",
-        "description": "Step name for 'Change Color' step"
     },
     "gui.soundLibrary.chooseASound": {
         "message": "音を選ぶ",
@@ -189,7 +185,7 @@
     },
     "gui.extension.googletranslate.name": {
         "message": "Google翻訳",
-        "description": "Name for the 'Google Translate' extension"
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.importModal.viewproject": {
         "message": "見る",
@@ -223,6 +219,10 @@
         "message": "引数を追加",
         "description": "Label for button to add a boolean input"
     },
+    "gui.connection.error.tryagainbutton": {
+        "message": "もう一度試す",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.stageHeader.stageSizeSmall": {
         "message": "小さいステージに切り替える",
         "description": "Button to change stage size to small"
@@ -232,7 +232,7 @@
         "description": "Menu bar item for saving now"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "接続中です...",
         "description": "Label indicating that connection is in progress"
     },
     "gui.SpriteInfo.sprite": {
@@ -252,16 +252,12 @@
         "description": "Button to add a sound in the editor tab"
     },
     "gui.connection.scanning.lookingfordevices": {
-        "message": "Looking for devices",
+        "message": "デバイスを探索中",
         "description": "Text shown while scanning for devices"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "カメラを有効にする",
         "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.extension.speechrecognition.description": {
-        "message": "プロジェクトに話しかける。",
-        "description": "Description for the 'Speech Recognition' extension"
     },
     "gui.loader.message5": {
         "message": "猫の群れを集めています…",
@@ -276,7 +272,7 @@
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
+        "message": "上のリストからデバイスを選んでください。",
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.menuBar.uploadFromComputer": {
@@ -295,9 +291,17 @@
         "message": "言語の選択",
         "description": "accessibility text for the language selection menu"
     },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Scratchリンクがインストールされ、実行中であることを確認してください",
+        "description": "Message for getting Scratch Link installed"
+    },
     "gui.spriteSelector.addBackdropFromLibrary": {
         "message": "背景を選ぶ",
         "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "クリックしたらスコアを加える",
+        "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.soundEditor.slower": {
         "message": "遅く",
@@ -318,10 +322,6 @@
     "gui.extensionLibrary.extensionUrl": {
         "message": "拡張機能のURLを入力",
         "description": "Prompt for unoffical extension url"
-    },
-    "gui.connection.helpbutton": {
-        "message": "ヘルプ",
-        "description": "Button to view help content"
     },
     "gui.customProcedures.cancel": {
         "message": "キャンセル",
@@ -372,8 +372,8 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.extension.microbit.description": {
-        "message": "あなたのプロジェクトを現実の世界に接続する。",
-        "description": "Description for the 'Micro:bit' extension"
+        "message": "あなたのプロジェクトを現実の世界と接続する。",
+        "description": "Description for the 'micro:bit' extension"
     },
     "gui.soundEditor.play": {
         "message": "再生",
@@ -383,8 +383,12 @@
         "message": "写真を撮り直す",
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "色を変える",
+        "description": "Step name for 'Change Color' step"
+    },
     "gui.connection.scanning.noDevicesFound": {
-        "message": "No devices found",
+        "message": "デバイスが見つかりませんでした",
         "description": "Text shown when no devices could be found"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
@@ -392,7 +396,7 @@
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.connection.search": {
-        "message": "Refresh",
+        "message": "更新",
         "description": "Button in prompt for starting a search"
     },
     "gui.menuBar.share": {
@@ -406,10 +410,6 @@
     "gui.webglModal.label": {
         "message": "ブラウザーはWebGLをサポートしていないようです",
         "description": "WebGL missing title"
-    },
-    "gui.extension.videomotion.name": {
-        "message": "ビデオモーション",
-        "description": "Name for the 'Video Motion' extension"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "文字のスプライトを選ぶ",
@@ -427,25 +427,37 @@
         "message": "もっとやってみる!",
         "description": "Title card with more things to try"
     },
-    "gui.extension.speechrecognition.name": {
-        "message": "音声認識",
-        "description": "Name for the 'Speech Recognition' extension"
-    },
     "gui.connection.connect": {
-        "message": "Connect",
+        "message": "接続する",
         "description": "Button to start connecting to a specific device"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "チュートリアルを選ぶ",
         "description": "Heading for the help/tutorials library"
     },
     "gui.costumeTab.addCameraCostume": {
         "message": "カメラ",
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
+    "gui.connection.error.helpbutton": {
+        "message": "ヘルプ",
+        "description": "Button to view help content"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "ヘルプ",
+        "description": "Button to view help content"
+    },
     "gui.extension.pen.description": {
         "message": "スプライトで絵を描く。",
         "description": "Description for the 'Pen' extension"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "選択されたプロジェクトファイルの読み込みに失敗しました。",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Bluetoothが有効になっていることを確認してください",
+        "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
         "message": "矢印キーで上下に動かす",
@@ -470,6 +482,10 @@
     "gui.importInfo.previewfaqlink": {
         "message": "プレビュー版FAQ",
         "description": "link to Scratch 3.0 preview FAQ page"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "接続中",
+        "description": "Message to help people connect to their micro:bit."
     },
     "gui.costumeTab.addBackdropFromLibrary": {
         "message": "背景を選ぶ",
@@ -508,8 +524,12 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "切断する",
         "description": "Button to disconnect the device"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "接続中です。EV3のピンが1234に設定されていることを確認してください。",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.howtos.Make-Music.step_MakeSong": {
         "message": "曲を作る",
@@ -522,10 +542,6 @@
     "gui.howtos.make-music.step_ResetScore": {
         "message": "スコアをリセットする",
         "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.Make-A-Game.step_RandomPosition": {
-        "message": "ランダムな場所へ行く",
-        "description": "Step name for 'Go to a random position' step"
     },
     "gui.extension.wedo2.description": {
         "message": "モーターとセンサーを使って作る。",
@@ -554,6 +570,10 @@
     "gui.howtos.Chase-Game.step_BG": {
         "message": "背景を追加する",
         "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "クリックしたら音を鳴らす",
+        "description": "Play Sound When Clicked' step"
     },
     "gui.stageHeader.stageSizeFull": {
         "message": "全画面表示にする",
@@ -595,12 +615,8 @@
         "message": "サプライズ",
         "description": "Button to add a random sprite in the target pane"
     },
-    "gui.connection.connecting": {
-        "message": "Connecting",
-        "description": ""
-    },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "エディターへ行く",
         "description": "Button to return to the editor"
     },
     "gui.howtos.change-size.name": {
@@ -624,7 +640,7 @@
         "description": "Step name for 'Create Score Variable"
     },
     "gui.extension.ev3.description": {
-        "message": "対話型ロボット他を作る。",
+        "message": "対話型ロボットなどを作る。",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.loader.message8": {
@@ -646,10 +662,6 @@
     "gui.SpriteInfo.direction": {
         "message": "向き",
         "description": "Sprite info direction label"
-    },
-    "gui.extension.boost.description": {
-        "message": "モーターとセンサーで作る。",
-        "description": "Description for the 'LEGO Boost' extension"
     },
     "gui.costumeLibrary.chooseABackdrop": {
         "message": "背景を選ぶ",
@@ -683,6 +695,10 @@
         "message": "写真を撮る",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "もう一度試す",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
     "gui.soundEditor.reverse": {
         "message": "逆向き",
         "description": "Title of the button to apply the reverse effect"
@@ -692,16 +708,12 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "接続されました",
         "description": "Message indicating that a device was connected"
     },
     "gui.menuBar.seeCommunity": {
         "message": "コミュニティーを見る",
         "description": "Label for see community button"
-    },
-    "gui.connection.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.howtos.chase-game.step_AddOcto": {
         "message": "スプライトを追加する",
@@ -739,6 +751,10 @@
         "message": "この変数はすべてのスプライトで利用できます。",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.modal.help": {
+        "message": "ヘルプ",
+        "description": "Help button in modal"
+    },
     "gui.spriteSelector.addSpriteFromFile": {
         "message": "アップロード",
         "description": "Button to add a sprite in the target pane from file"
@@ -746,6 +762,10 @@
     "gui.howtos.add-sprite.step_addSprite": {
         "message": "スプライトを追加する",
         "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "スコアの変数を作る",
+        "description": "Step name for 'Create Score Variable' step"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
         "message": "書き出し",
@@ -771,10 +791,6 @@
         "message": "バックパック",
         "description": "Button to open the backpack"
     },
-    "gui.extension.videomotion.description": {
-        "message": "カメラで動きを検知する。",
-        "description": "Description for the 'Video Motion' extension"
-    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "名前",
         "description": "Placeholder text for sprite name"
@@ -791,6 +807,10 @@
         "message": "読み込み中...",
         "description": "Loading backpack message"
     },
+    "gui.extension.videosensing.name": {
+        "message": "ビデオモーションセンサー",
+        "description": "Name for the 'Video Sensing' extension"
+    },
     "gui.monitor.contextMenu.default": {
         "message": "普通の表示",
         "description": "Menu item to switch to the default monitor"
@@ -802,6 +822,14 @@
     "gui.controls.stop": {
         "message": "止める",
         "description": "Stop button title"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "ブロックを作る",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "スプライトを選ぶ",
+        "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.name": {
         "message": "クリッカーゲームを作る",
@@ -823,6 +851,10 @@
         "message": "背景をアップロード",
         "description": "Button to add a stage in the target pane from file"
     },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "ランダムな場所へ行く",
+        "description": "Step name for 'Go to a random position' step"
+    },
     "gui.howtos.add-sprite.name": {
         "message": "スプライトを追加する",
         "description": "Name for the 'Add a Sprite' how-to"
@@ -834,6 +866,10 @@
     "gui.soundEditor.sound": {
         "message": "音",
         "description": "Label for the name of the sound"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "カメラで動きを検知する。",
+        "description": "Description for the 'Video Sensing' extension"
     },
     "gui.unsupportedBrowser.label": {
         "message": " ブラウザーはサポートされていません",
@@ -896,7 +932,7 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.connection.device-name-label": {
-        "message": "Device name",
+        "message": "デバイス名",
         "description": "Label for field showing the device name"
     },
     "gui.webglModal.previewfaq": {

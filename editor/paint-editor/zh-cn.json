@@ -19,17 +19,25 @@
         "message": "更多",
         "description": "Label for dropdown to access more action buttons"
     },
+    "paint.colorPicker.swap": {
+        "message": "Swap",
+        "description": "Label for button that swaps the two colors in a gradient"
+    },
     "gui.comingSoon.message1": {
         "message": "别急，我们还在开发 {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "paint.modeTools.pointed": {
-        "message": "尖锐化",
+        "message": "折线",
         "description": "Label for the button that converts selected points to sharp points"
     },
     "paint.paintEditor.backward": {
         "message": "往后放",
         "description": "Label for the `Send backward on canvas` button"
+    },
+    "paint.modeTools.filled": {
+        "message": "实心",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
     },
     "paint.paintEditor.bitmap": {
         "message": "转换为位图",
@@ -43,21 +51,21 @@
         "message": "粘贴",
         "description": "Label for the paste button"
     },
-    "paint.modeTools.lineSize": {
-        "message": "Line size",
-        "description": "Label for the line size input"
-    },
     "paint.paintEditor.saturation": {
         "message": "饱和度",
         "description": "Label for the saturation component in the color picker"
     },
     "paint.modeTools.curved": {
-        "message": "平滑化",
+        "message": "曲线",
         "description": "Label for the button that converts selected points to curves"
     },
     "paint.modeTools.brushSize": {
-        "message": "画笔大小",
+        "message": "粗细",
         "description": "Label for the brush size input"
+    },
+    "paint.modeTools.thickness": {
+        "message": "粗细",
+        "description": "Label for the number input to choose the line thickness"
     },
     "paint.paintEditor.undo": {
         "message": "撤销",
@@ -71,12 +79,16 @@
         "message": "垂直翻转",
         "description": "Label for the button to flip the image vertically"
     },
+    "paint.modeTools.delete": {
+        "message": "删除",
+        "description": "Label for the delete button"
+    },
     "paint.paintEditor.brightness": {
         "message": "亮度",
         "description": "Label for the brightness component in the color picker"
     },
     "paint.paintEditor.vector": {
-        "message": "Convert to Vector",
+        "message": "转换为矢量图",
         "description": "Label for button that converts the paint editor to vector mode"
     },
     "paint.paintEditor.costume": {
@@ -102,6 +114,10 @@
     "paint.modeTools.copy": {
         "message": "复制",
         "description": "Label for the copy button"
+    },
+    "paint.modeTools.outlined": {
+        "message": "轮廓",
+        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
     },
     "paint.paintEditor.front": {
         "message": "放最前面",

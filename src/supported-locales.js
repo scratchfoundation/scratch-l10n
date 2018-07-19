@@ -5,6 +5,7 @@
 
 const locales = {
     'ab': {name: 'Аҧсшәа'},
+    'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
     'ca': {name: 'Català'},
     'cs': {name: 'Česky'},
@@ -27,11 +28,14 @@ const locales = {
     'nl': {name: 'Nederlands'},
     'ja': {name: '日本語'},
     'ja-Hira': {name: 'にほんご'},
+    'hu': {name: 'Magyar'},
     'nb': {name: 'Norsk Bokmål'},
     'nn': {name: 'Norsk Nynorsk'},
     'th': {name: 'ไทย'},
+    'pl': {name: 'Polski'},
     'pt': {name: 'Português'},
     'pt-br': {name: 'Português Brasileiro'},
+    'ru': {name: 'Русский'},
     'sr': {name: 'Српски'},
     'sk': {name: 'Slovenčina'},
     'sl': {name: 'Slovenščina'},

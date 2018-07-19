@@ -1,5 +1,5 @@
 import en from 'react-intl/locale-data/en';
-import az from 'react-intl/locale-data/az'; // parent for Abkahz
+import az from 'react-intl/locale-data/az'; // also parent for Abkahz
 import ca from 'react-intl/locale-data/ca';
 import cs from 'react-intl/locale-data/cs';
 import cy from 'react-intl/locale-data/cy';
@@ -14,6 +14,7 @@ import ga from 'react-intl/locale-data/ga';
 import gd from 'react-intl/locale-data/gd';
 import gl from 'react-intl/locale-data/gl';
 import he from 'react-intl/locale-data/he';
+import hu from 'react-intl/locale-data/hu';
 import id from 'react-intl/locale-data/id';
 import it from 'react-intl/locale-data/it';
 import ja from 'react-intl/locale-data/ja';
@@ -21,7 +22,9 @@ import ko from 'react-intl/locale-data/ko';
 import nl from 'react-intl/locale-data/nl';
 import nb from 'react-intl/locale-data/nb';
 import nn from 'react-intl/locale-data/nn';
+import pl from 'react-intl/locale-data/pl';
 import pt from 'react-intl/locale-data/pt';
+import ru from 'react-intl/locale-data/ru';
 import sl from 'react-intl/locale-data/sl';
 import sk from 'react-intl/locale-data/sk';
 import sr from 'react-intl/locale-data/sr';
@@ -80,6 +83,7 @@ let localeData = [].concat(
     gd,
     gl,
     he,
+    hu,
     id,
     it,
     ja,
@@ -87,11 +91,13 @@ let localeData = [].concat(
     nl,
     nb,
     nn,
+    pl,
     pt,
     sl,
     sk,
     sr,
     sv,
+    ru,
     th,
     tr,
     uk,

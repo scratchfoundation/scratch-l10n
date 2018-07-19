@@ -24,8 +24,8 @@
         "description": "get the current tempo (speed) for notes, drums, and rests played"
     },
     "translate.categoryName": {
-        "message": "Traducción",
-        "description": "Label for the translate extension category"
+        "message": "Traductor de Google",
+        "description": "Name of extension that adds translate blocks. Do Not translate Google"
     },
     "music.drumOpenHiHat": {
         "message": "(5) Charles abierto",
@@ -44,7 +44,7 @@
         "description": "label for brightness element in color picker for pen extension"
     },
     "videoSensing.videoToggle": {
-        "message": "poner vídeo a [VIDEO_STATE]",
+        "message": "[VIDEO_STATE] vídeo",
         "description": "Controls display of the video preview layer"
     },
     "pen.setSize": {
@@ -68,7 +68,7 @@
         "description": "Sound of a choir singing"
     },
     "music.drumVibraslap": {
-        "message": "(17) Trafaplás",
+        "message": "(17) Vibraslap",
         "description": "Sound of a Vibraslap being played"
     },
     "pen.stamp": {
@@ -88,7 +88,7 @@
         "description": "Sound of snare drum as used in a standard drum kit"
     },
     "translate.translateBlock": {
-        "message": "traduce [WORDS] al [LANGUAGE]",
+        "message": "traducir [WORDS] al [LANGUAGE]",
         "description": "translate some text to a different language"
     },
     "music.drumCowbell": {
@@ -96,7 +96,7 @@
         "description": "Sound of a cowbell being struck"
     },
     "videoSensing.onFlipped": {
-        "message": "invertido",
+        "message": "invertir",
         "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
     },
     "pen.categoryName": {
@@ -164,7 +164,7 @@
         "description": "Sound of a bassoon being played"
     },
     "translate.viewerLanguage": {
-        "message": "idioma del visor",
+        "message": "language",
         "description": "the languge of the project viewer"
     },
     "pen.setShade": {
@@ -175,6 +175,10 @@
         "message": "(12) Flauta",
         "description": "Sound of a flute being played"
     },
+    "speech.whenIHear": {
+        "message": "when I hear [PHRASE]",
+        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
+    },
     "pen.colorMenu.color": {
         "message": "color",
         "description": "label for color element in color picker for pen extension"
@@ -183,12 +187,16 @@
         "message": "(14) Conga",
         "description": "Sound of a conga being struck"
     },
+    "speech.speechReporter": {
+        "message": "speech",
+        "description": "Get the text of spoken words transcribed by the speech recognition system."
+    },
     "pen.changeSize": {
         "message": "cambiar tamaño de lápiz por [SIZE]",
         "description": "change the diameter of the trail left by a sprite"
     },
     "videoSensing.on": {
-        "message": "encendido",
+        "message": "encender",
         "description": "Option for the \"turn video [STATE]\" block"
     },
     "music.instrumentSynthPad": {
@@ -203,6 +211,10 @@
         "message": "(4) Guitarra",
         "description": "Sound of an accoustic guitar"
     },
+    "speech.listenAndWait": {
+        "message": "listen and wait",
+        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
+    },
     "music.drumClosedHiHat": {
         "message": "(6) Charles cerrado",
         "description": "Sound of a drum stick hitting a hi-hat while closed"
@@ -214,6 +226,10 @@
     "videoSensing.whenMotionGreaterThan": {
         "message": "cuando movimiento de vídeo > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
+    },
+    "speech.defaultWhenIHearValue": {
+        "message": "let''s go",
+        "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speak.speakAndWaitBlock": {
         "message": "habla [WORDS]",
@@ -240,7 +256,7 @@
         "description": "Sound of an organ"
     },
     "videoSensing.videoOn": {
-        "message": "[ATTRIBUTE] del vídeo en [SUBJECT]",
+        "message": "[ATTRIBUTE] de vídeo en [SUBJECT]",
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
     "music.drumCuica": {
@@ -275,8 +291,12 @@
         "message": "(1) Piano",
         "description": "Sound of a piano"
     },
+    "speech.extensionName": {
+        "message": "Google Speech",
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+    },
     "music.drumWoodBlock": {
-        "message": "(10) Bloque de madera",
+        "message": "(10) Caja china",
         "description": "Sound of a wood block being struck"
     },
     "videoSensing.direction": {
@@ -304,8 +324,8 @@
         "description": "Sound of an electric piano"
     },
     "videoSensing.categoryName": {
-        "message": "Movimiento del vídeo",
-        "description": "Label for the video motion extension category"
+        "message": "Sensor de video",
+        "description": "Label for the video sensing extension category"
     },
     "music.instrumentElectricGuitar": {
         "message": "(5) Guitarra eléctrica",
@@ -316,7 +336,7 @@
         "description": "Sound of a drum stick hitting a crash cymbal"
     },
     "videoSensing.off": {
-        "message": "apagado",
+        "message": "apagar",
         "description": "Option for the \"turn video [STATE]\" block"
     },
     "music.playNoteForBeats": {
