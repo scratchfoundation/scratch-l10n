@@ -101,7 +101,6 @@ let blockData =
     ';\n';
 
 fs.writeFileSync(MSGS_DIR + 'blocks-msgs.js', blockData);
-defaultsDeep(editorMsgs, blocksMessages);
 
 // generate combined editor-msgs file
 let editorData =
