@@ -5,7 +5,7 @@
     },
     "gui.previewInfo.notnow": {
         "message": "나중에",
-        "description": "Label for button to back out of trying Scratch 3.0 preview"
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
         "message": "이 스프라이트에서만 사용",
@@ -39,21 +39,21 @@
         "message": "작업 중입니다 {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.unsupportedBrowser.previewfaqlink": {
-        "message": "미리보기 FAQ",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.monitor.contextMenu.slider": {
         "message": "슬라이더 사용하기",
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.cards.remove": {
-        "message": "없애기",
+        "message": "닫기",
         "description": "Title for button to close how-to card"
     },
     "gui.unsupportedBrowser.description": {
         "message": "정말로 죄송하지만, 스크래치 3.0은 Internet Explorer, Vivaldi, Opera, Silk를 지원하지 않습니다. Google Chrome, Mozilla Firefox, Microsoft Edge와 같이 새로운 브라우저를 사용하는 것을 권장합니다.",
         "description": "Unsupported browser description"
+    },
+    "gui.unsupportedBrowser.previewfaqlinktext": {
+        "message": "자주 묻는 질문(FAQ)",
+        "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeTab.addSurpriseCostume": {
         "message": "서프라이즈 ",
@@ -135,10 +135,6 @@
         "message": "2.0 프로젝트 보기",
         "description": "Label for button to import a 2.0 project"
     },
-    "gui.previewInfo.previewfaqlink": {
-        "message": "미리보기 FAQ",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.soundEditor.softer": {
         "message": "작게",
         "description": "Title of the button to apply thr.softer effect"
@@ -194,6 +190,10 @@
     "gui.cards.all-tutorials": {
         "message": "튜토리얼",
         "description": "Title for button to return to tutorials library"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Turn on Turbo Mode",
+        "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.new": {
         "message": "새로 만들기",
@@ -254,6 +254,14 @@
     "gui.connection.scanning.lookingfordevices": {
         "message": "기기를 찾고 있습니다.",
         "description": "Text shown while scanning for devices"
+    },
+    "gui.importInfo.betamessage": {
+        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "description": "Import project message"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "All Around",
+        "description": "Button to change to the all around rotation style"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "카메라 사용",
@@ -339,6 +347,10 @@
         "message": "뒤로",
         "description": "Back button in modal"
     },
+    "gui.previewInfo.previewfaqlinktext": {
+        "message": "자주 묻는 질문(FAQ)",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
         "message": "다른 글자 스프라이트를 선택해 자라게 하기",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
@@ -411,6 +423,10 @@
         "message": "브라우저가 WebGL을 지원하지 않습니다",
         "description": "WebGL missing title"
     },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "자주 묻는 질문(FAQ)",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "글자 스프라이트 선택하기 ",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -451,6 +467,10 @@
         "message": "사용자의 스프라이트로 그리세요. ",
         "description": "Description for the 'Pen' extension"
     },
+    "gui.menuBar.turboModeOff": {
+        "message": "Turn off Turbo Mode",
+        "description": "Menu bar item for turning off turbo mode"
+    },
     "gui.projectLoader.loadError": {
         "message": "The project file that was selected failed to load.",
         "description": "An error that displays when a local project file fails to load."
@@ -479,10 +499,6 @@
         "message": "논리값",
         "description": "Description of the boolean input type"
     },
-    "gui.importInfo.previewfaqlink": {
-        "message": "미리보기 FAQ",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.extension.microbit.connectingMessage": {
         "message": "연결 중",
         "description": "Message to help people connect to their micro:bit."
@@ -501,7 +517,7 @@
     },
     "gui.previewInfo.invitation": {
         "message": "스크래치 다음 세대를 준비하고 있습니다. 귀하가 체험하시게 되어 기쁩니다! ",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.gui.variableScopeOptionAllSprites": {
         "message": "모든 스프라이트에서 사용",
@@ -537,7 +553,7 @@
     },
     "gui.previewInfo.previewfaq": {
         "message": "더 알아보려면, {previewFaqLink}로 이동하세요.",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.howtos.make-music.step_ResetScore": {
         "message": "점수 초기화하기",
@@ -595,10 +611,6 @@
         "message": "크기",
         "description": "Sprite info size label"
     },
-    "gui.webglModal.previewfaqlink": {
-        "message": "미리보기 FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
     "gui.soundEditor.louder": {
         "message": "크게",
         "description": "Title of the button to apply the louder effect"
@@ -608,7 +620,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.previewInfo.welcome": {
-        "message": "스크래치 3.0 미리보기에 오신 것을 환영합니다.",
+        "message": "Welcome to the Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
@@ -650,6 +662,10 @@
     "gui.soundEditor.faster": {
         "message": "빠르게",
         "description": "Title of the button to apply the faster effect"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Do not rotate",
+        "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.soundsTab": {
         "message": "소리",
@@ -703,6 +719,10 @@
         "message": "뒤집기",
         "description": "Title of the button to apply the reverse effect"
     },
+    "gui.previewInfo.betawelcome": {
+        "message": "Welcome to the Scratch 3.0 Beta",
+        "description": "Header for Beta Info Modal"
+    },
     "gui.webglModal.webgllink": {
         "message": "WebGL을 지원하지 않는 상태",
         "description": "link part of your browser does not support WebGL message"
@@ -751,12 +771,16 @@
         "message": "이 변수는 모든 스프라이트에서 사용할 수 있습니다.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.howtos.spin-video.name": {
+        "message": "Make It Spin",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
     "gui.modal.help": {
         "message": "도움말",
         "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "업로드",
+        "message": "Upload Sprite",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.howtos.add-sprite.step_addSprite": {
@@ -791,6 +815,10 @@
         "message": "개인 저장소",
         "description": "Button to open the backpack"
     },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Left/Right",
+        "description": "Button to change to the left-right rotation style"
+    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "이름",
         "description": "Placeholder text for sprite name"
@@ -801,7 +829,7 @@
     },
     "gui.previewModal.tryit": {
         "message": "지금 시작! {caticon}",
-        "description": "Label for button to try Scratch 3.0 preview"
+        "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.backpack.loadingBackpack": {
         "message": "로딩중...",
@@ -879,6 +907,10 @@
         "message": "로딩 중...",
         "description": "Loading/Save button in recording playback"
     },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Use Arrow Keys",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
     "gui.howtos.add-a-backdrop.name": {
         "message": "배경 추가하기",
         "description": "Name for the 'Add a Backdrop' how-to"
@@ -935,13 +967,13 @@
         "message": "기기 이름",
         "description": "Label for field showing the device name"
     },
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "자주 묻는 질문(FAQ)",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.webglModal.previewfaq": {
         "message": "더 알아보려면, {previewFaqLink}로 이동하세요.",
         "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.menuBar.turboMode": {
-        "message": "터보 모드",
-        "description": "Menu bar item for toggling turbo mode"
     },
     "gui.prompt.cancel": {
         "message": "취소하기",

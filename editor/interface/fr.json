@@ -5,7 +5,7 @@
     },
     "gui.previewInfo.notnow": {
         "message": "Pas maintenant",
-        "description": "Label for button to back out of trying Scratch 3.0 preview"
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
         "message": "Pour ce lutin uniquement",
@@ -39,21 +39,21 @@
         "message": "Nous y travaillons {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.unsupportedBrowser.previewfaqlink": {
-        "message": "FAQ prévisualisation",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.monitor.contextMenu.slider": {
         "message": "barre de défilement",
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.cards.remove": {
-        "message": "Supprimer",
+        "message": "Fermer",
         "description": "Title for button to close how-to card"
     },
     "gui.unsupportedBrowser.description": {
         "message": "Nous sommes désolés, mais scratch 3.0 ne supporte pas Internet Explorer, Vivaldi, Opera ou Silk. Nous vous recommandons d'essayer des navigateurs plus récents, tels que Google Chrome, Mozilla Firefox ou Microsoft Edge.",
         "description": "Unsupported browser description"
+    },
+    "gui.unsupportedBrowser.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeTab.addSurpriseCostume": {
         "message": "Surprise",
@@ -135,10 +135,6 @@
         "message": "Voir un projet 2.0",
         "description": "Label for button to import a 2.0 project"
     },
-    "gui.previewInfo.previewfaqlink": {
-        "message": "FAQ prévisualisation",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.soundEditor.softer": {
         "message": "Plus doux",
         "description": "Title of the button to apply thr.softer effect"
@@ -194,6 +190,10 @@
     "gui.cards.all-tutorials": {
         "message": "Tutoriels",
         "description": "Title for button to return to tutorials library"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Turn on Turbo Mode",
+        "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.new": {
         "message": "Nouveau",
@@ -254,6 +254,14 @@
     "gui.connection.scanning.lookingfordevices": {
         "message": "Recherche d'appareils",
         "description": "Text shown while scanning for devices"
+    },
+    "gui.importInfo.betamessage": {
+        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "description": "Import project message"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "All Around",
+        "description": "Button to change to the all around rotation style"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "Activer l'appareil photo",
@@ -339,6 +347,10 @@
         "message": "Retour",
         "description": "Back button in modal"
     },
+    "gui.previewInfo.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
         "message": "Choisis un costume avec une autre lettre & Fais la grandir",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
@@ -411,6 +423,10 @@
         "message": "Votre navigateur ne supporte pas WebGL",
         "description": "WebGL missing title"
     },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Choisis un sprite en forme de lettre",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -451,6 +467,10 @@
         "message": "Dessiner avec vos lutins.",
         "description": "Description for the 'Pen' extension"
     },
+    "gui.menuBar.turboModeOff": {
+        "message": "Turn off Turbo Mode",
+        "description": "Menu bar item for turning off turbo mode"
+    },
     "gui.projectLoader.loadError": {
         "message": "Le fichier du projet qui a été sélectionné n'a pas réussi à être chargé.",
         "description": "An error that displays when a local project file fails to load."
@@ -479,10 +499,6 @@
         "message": "booléenne",
         "description": "Description of the boolean input type"
     },
-    "gui.importInfo.previewfaqlink": {
-        "message": "FAQ prévisualisation",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.extension.microbit.connectingMessage": {
         "message": "Connexion",
         "description": "Message to help people connect to their micro:bit."
@@ -501,7 +517,7 @@
     },
     "gui.previewInfo.invitation": {
         "message": "Nous travaillons sur la prochaine version de Scratch. Nous sommes impatients que vous l’essayiez !",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.gui.variableScopeOptionAllSprites": {
         "message": "Pour tous les lutins",
@@ -537,7 +553,7 @@
     },
     "gui.previewInfo.previewfaq": {
         "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Remets le score à zéro",
@@ -595,10 +611,6 @@
         "message": "Taille",
         "description": "Sprite info size label"
     },
-    "gui.webglModal.previewfaqlink": {
-        "message": "FAQ prévisualisation",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
     "gui.soundEditor.louder": {
         "message": "Plus fort",
         "description": "Title of the button to apply the louder effect"
@@ -608,7 +620,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.previewInfo.welcome": {
-        "message": "Bienvenue dans l'aperçu de Scratch 3.0",
+        "message": "Welcome to the Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
@@ -650,6 +662,10 @@
     "gui.soundEditor.faster": {
         "message": "Plus vite",
         "description": "Title of the button to apply the faster effect"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Do not rotate",
+        "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.soundsTab": {
         "message": "Sons",
@@ -703,6 +719,10 @@
         "message": "Inverser",
         "description": "Title of the button to apply the reverse effect"
     },
+    "gui.previewInfo.betawelcome": {
+        "message": "Welcome to the Scratch 3.0 Beta",
+        "description": "Header for Beta Info Modal"
+    },
     "gui.webglModal.webgllink": {
         "message": "ne supporte pas WebGL",
         "description": "link part of your browser does not support WebGL message"
@@ -751,12 +771,16 @@
         "message": "La variable sera disponible pour tous les lutins.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.howtos.spin-video.name": {
+        "message": "Fais-le Tourner",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
     "gui.modal.help": {
         "message": "Aide",
         "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Importer",
+        "message": "Upload Sprite",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.howtos.add-sprite.step_addSprite": {
@@ -791,6 +815,10 @@
         "message": "Sac à dos",
         "description": "Button to open the backpack"
     },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Left/Right",
+        "description": "Button to change to the left-right rotation style"
+    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Nom",
         "description": "Placeholder text for sprite name"
@@ -801,7 +829,7 @@
     },
     "gui.previewModal.tryit": {
         "message": "L'essayer ! {caticon}",
-        "description": "Label for button to try Scratch 3.0 preview"
+        "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.backpack.loadingBackpack": {
         "message": "Chargement...",
@@ -879,6 +907,10 @@
         "message": "Chargement...",
         "description": "Loading/Save button in recording playback"
     },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Use Arrow Keys",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
     "gui.howtos.add-a-backdrop.name": {
         "message": "Ajoute un arrière-plan",
         "description": "Name for the 'Add a Backdrop' how-to"
@@ -935,13 +967,13 @@
         "message": "Nom de l'appareil",
         "description": "Label for field showing the device name"
     },
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.webglModal.previewfaq": {
         "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
         "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.menuBar.turboMode": {
-        "message": "Mode Turbo",
-        "description": "Menu bar item for toggling turbo mode"
     },
     "gui.prompt.cancel": {
         "message": "Annuler",

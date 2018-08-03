@@ -5,7 +5,7 @@
     },
     "gui.previewInfo.notnow": {
         "message": "現在還不要",
-        "description": "Label for button to back out of trying Scratch 3.0 preview"
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
         "message": "僅適用當前角色",
@@ -39,10 +39,6 @@
         "message": "我們在做囉 {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.unsupportedBrowser.previewfaqlink": {
-        "message": "預覽版常見問答",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.monitor.contextMenu.slider": {
         "message": "滑桿",
         "description": "Menu item to switch to the slider monitor"
@@ -54,6 +50,10 @@
     "gui.unsupportedBrowser.description": {
         "message": "很抱歉，Scratch 3.0 不支援 IE、Opera、Silk 瀏覽器。建議你改用其它的，像是  Google Chrome、Mozilla Firefox、Microsoft Edge。",
         "description": "Unsupported browser description"
+    },
+    "gui.unsupportedBrowser.previewfaqlinktext": {
+        "message": "常見問答",
+        "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeTab.addSurpriseCostume": {
         "message": "驚喜",
@@ -135,10 +135,6 @@
         "message": "檢視 2.0 專案",
         "description": "Label for button to import a 2.0 project"
     },
-    "gui.previewInfo.previewfaqlink": {
-        "message": "預覽版常見問答",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.soundEditor.softer": {
         "message": "輕柔",
         "description": "Title of the button to apply thr.softer effect"
@@ -194,6 +190,10 @@
     "gui.cards.all-tutorials": {
         "message": "教學課程",
         "description": "Title for button to return to tutorials library"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Turn on Turbo Mode",
+        "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.new": {
         "message": "新建專案",
@@ -254,6 +254,14 @@
     "gui.connection.scanning.lookingfordevices": {
         "message": "正在尋找裝置",
         "description": "Text shown while scanning for devices"
+    },
+    "gui.importInfo.betamessage": {
+        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "description": "Import project message"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "All Around",
+        "description": "Button to change to the all around rotation style"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "啟用攝影裝置",
@@ -339,6 +347,10 @@
         "message": "返回",
         "description": "Back button in modal"
     },
+    "gui.previewInfo.previewfaqlinktext": {
+        "message": "常見問答",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
         "message": "選擇另一個字母並讓它縮放",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
@@ -411,6 +423,10 @@
         "message": "你的瀏覽器不支援 WebGL",
         "description": "WebGL missing title"
     },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "常見問答",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "選擇一個字母",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -451,6 +467,10 @@
         "message": "使用你的角色來畫圖。",
         "description": "Description for the 'Pen' extension"
     },
+    "gui.menuBar.turboModeOff": {
+        "message": "Turn off Turbo Mode",
+        "description": "Menu bar item for turning off turbo mode"
+    },
     "gui.projectLoader.loadError": {
         "message": "所選的專案檔案載入失敗。",
         "description": "An error that displays when a local project file fails to load."
@@ -479,10 +499,6 @@
         "message": "布林值",
         "description": "Description of the boolean input type"
     },
-    "gui.importInfo.previewfaqlink": {
-        "message": "預覽版常見問答",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.extension.microbit.connectingMessage": {
         "message": "正在連線",
         "description": "Message to help people connect to their micro:bit."
@@ -501,7 +517,7 @@
     },
     "gui.previewInfo.invitation": {
         "message": "我們正在開發下一代的 Scratch。很高興你願意嘗試！",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.gui.variableScopeOptionAllSprites": {
         "message": "適用於所有角色",
@@ -537,7 +553,7 @@
     },
     "gui.previewInfo.previewfaq": {
         "message": "若要進一步瞭解，請至 {previewFaqLink}。",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.howtos.make-music.step_ResetScore": {
         "message": "重設分數",
@@ -595,10 +611,6 @@
         "message": "尺寸",
         "description": "Sprite info size label"
     },
-    "gui.webglModal.previewfaqlink": {
-        "message": "預覽版常見問答",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
     "gui.soundEditor.louder": {
         "message": "響亮",
         "description": "Title of the button to apply the louder effect"
@@ -608,7 +620,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.previewInfo.welcome": {
-        "message": "歡迎來到 Scratch 3.0 預覽版",
+        "message": "Welcome to the Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
@@ -650,6 +662,10 @@
     "gui.soundEditor.faster": {
         "message": "快播",
         "description": "Title of the button to apply the faster effect"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Do not rotate",
+        "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.soundsTab": {
         "message": "音效",
@@ -703,6 +719,10 @@
         "message": "反轉",
         "description": "Title of the button to apply the reverse effect"
     },
+    "gui.previewInfo.betawelcome": {
+        "message": "Welcome to the Scratch 3.0 Beta",
+        "description": "Header for Beta Info Modal"
+    },
     "gui.webglModal.webgllink": {
         "message": "不支援 WebGL",
         "description": "link part of your browser does not support WebGL message"
@@ -751,12 +771,16 @@
         "message": "這個變數適用於所有角色。",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.howtos.spin-video.name": {
+        "message": "讓字母旋轉",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
     "gui.modal.help": {
         "message": "幫助",
         "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "上傳",
+        "message": "Upload Sprite",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.howtos.add-sprite.step_addSprite": {
@@ -791,6 +815,10 @@
         "message": "背包",
         "description": "Button to open the backpack"
     },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Left/Right",
+        "description": "Button to change to the left-right rotation style"
+    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "名稱",
         "description": "Placeholder text for sprite name"
@@ -801,7 +829,7 @@
     },
     "gui.previewModal.tryit": {
         "message": "開始試用！{caticon}",
-        "description": "Label for button to try Scratch 3.0 preview"
+        "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.backpack.loadingBackpack": {
         "message": "正在載入…",
@@ -879,6 +907,10 @@
         "message": "正在載入…",
         "description": "Loading/Save button in recording playback"
     },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Use Arrow Keys",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
     "gui.howtos.add-a-backdrop.name": {
         "message": "添加一個背景",
         "description": "Name for the 'Add a Backdrop' how-to"
@@ -935,13 +967,13 @@
         "message": "裝置名稱",
         "description": "Label for field showing the device name"
     },
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "常見問答",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.webglModal.previewfaq": {
         "message": "若要進一步瞭解，請至 {previewFaqLink}。",
         "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.menuBar.turboMode": {
-        "message": "加速模式",
-        "description": "Menu bar item for toggling turbo mode"
     },
     "gui.prompt.cancel": {
         "message": "取消",

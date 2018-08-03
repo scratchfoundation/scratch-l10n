@@ -5,7 +5,7 @@
     },
     "gui.previewInfo.notnow": {
         "message": "Kāore, mō nāianei",
-        "description": "Label for button to back out of trying Scratch 3.0 preview"
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
         "message": "Mō tēnei parehe anake",
@@ -39,21 +39,21 @@
         "message": "Kei te hanga tonu mātou i tēnei {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.unsupportedBrowser.previewfaqlink": {
-        "message": "He Pātai Auau mō te Tiro Wawe",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.monitor.contextMenu.slider": {
         "message": "rēreti",
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.cards.remove": {
-        "message": "Tangohia",
+        "message": "Katia",
         "description": "Title for button to close how-to card"
     },
     "gui.unsupportedBrowser.description": {
         "message": "Aroha mai, kāore i te tautokona e te Scratch 3.0 te Internet Explorer, Vivaldi rānei, Opera rānei, Silk rānei. Ko tā mātou tūtohunga kia huri ki tētahi pūtirotiro hou pērā ki te Google Chrome, Mozilla Firefox rānei, Microsoft Edge rānei.",
         "description": "Unsupported browser description"
+    },
+    "gui.unsupportedBrowser.previewfaqlinktext": {
+        "message": "He Pātai Auau",
+        "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeTab.addSurpriseCostume": {
         "message": "Ohorere",
@@ -135,10 +135,6 @@
         "message": "Tirohia Kaupapa 2.0",
         "description": "Label for button to import a 2.0 project"
     },
-    "gui.previewInfo.previewfaqlink": {
-        "message": "He Pātai Auau mō te Tiro Wawe",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.soundEditor.softer": {
         "message": "Ririki",
         "description": "Title of the button to apply thr.softer effect"
@@ -194,6 +190,10 @@
     "gui.cards.all-tutorials": {
         "message": "Ngā Akoranga",
         "description": "Title for button to return to tutorials library"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Turn on Turbo Mode",
+        "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.new": {
         "message": "Hou",
@@ -254,6 +254,14 @@
     "gui.connection.scanning.lookingfordevices": {
         "message": "Looking for devices",
         "description": "Text shown while scanning for devices"
+    },
+    "gui.importInfo.betamessage": {
+        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "description": "Import project message"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "All Around",
+        "description": "Button to change to the all around rotation style"
     },
     "gui.cameraModal.enableCameraCaption": {
         "message": "Whakaāheitia te Kāmera",
@@ -339,6 +347,10 @@
         "message": "Hoki atu",
         "description": "Back button in modal"
     },
+    "gui.previewInfo.previewfaqlinktext": {
+        "message": "He Pātai Auau",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
         "message": "Kōwhiria tētahi pū, ā, tukuna kia tipu!",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
@@ -411,6 +423,10 @@
         "message": "Kāore a WebGL i te tautokona e tō pūtirotiro",
         "description": "WebGL missing title"
     },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "He Pātai Auau",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
         "message": "Kōwhiria tētahi Parehe Pū",
         "description": "Step name for 'Pick a Letter Sprite' step"
@@ -451,6 +467,10 @@
         "message": "Draw with your sprites.",
         "description": "Description for the 'Pen' extension"
     },
+    "gui.menuBar.turboModeOff": {
+        "message": "Turn off Turbo Mode",
+        "description": "Menu bar item for turning off turbo mode"
+    },
     "gui.projectLoader.loadError": {
         "message": "The project file that was selected failed to load.",
         "description": "An error that displays when a local project file fails to load."
@@ -479,10 +499,6 @@
         "message": "boolean",
         "description": "Description of the boolean input type"
     },
-    "gui.importInfo.previewfaqlink": {
-        "message": "He Pātai Auau mō te Tiro Wawe",
-        "description": "link to Scratch 3.0 preview FAQ page"
-    },
     "gui.extension.microbit.connectingMessage": {
         "message": "Connecting",
         "description": "Message to help people connect to their micro:bit."
@@ -501,7 +517,7 @@
     },
     "gui.previewInfo.invitation": {
         "message": "Kei te waihanga mātou i te putanga hou o Scratch. E hīkaka ana mātou, kia whakamātauria e koutou!",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.gui.variableScopeOptionAllSprites": {
         "message": "Mō ngā parehe katoa",
@@ -537,7 +553,7 @@
     },
     "gui.previewInfo.previewfaq": {
         "message": "Haere ki {previewFaqLink} ki te ako anō.",
-        "description": "Invitation to try 3.0 preview"
+        "description": "Invitation to try 3.0 Beta"
     },
     "gui.howtos.make-music.step_ResetScore": {
         "message": "Tautuhia anō ngā Piro",
@@ -595,10 +611,6 @@
         "message": "Rahi",
         "description": "Sprite info size label"
     },
-    "gui.webglModal.previewfaqlink": {
-        "message": "Pātai Auau mō te tiro wawe",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
     "gui.soundEditor.louder": {
         "message": "Whakakaha i te oro",
         "description": "Title of the button to apply the louder effect"
@@ -608,7 +620,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.previewInfo.welcome": {
-        "message": "Nau mai ki te Scratch 3.0 Preview!",
+        "message": "Welcome to the Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
@@ -650,6 +662,10 @@
     "gui.soundEditor.faster": {
         "message": "Tere ake",
         "description": "Title of the button to apply the faster effect"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Do not rotate",
+        "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.soundsTab": {
         "message": "Ngā oro",
@@ -703,6 +719,10 @@
         "message": "Hurikōaro",
         "description": "Title of the button to apply the reverse effect"
     },
+    "gui.previewInfo.betawelcome": {
+        "message": "Welcome to the Scratch 3.0 Beta",
+        "description": "Header for Beta Info Modal"
+    },
     "gui.webglModal.webgllink": {
         "message": "kāore e tautokona te WebGL",
         "description": "link part of your browser does not support WebGL message"
@@ -751,12 +771,16 @@
         "message": "This variable will be available to all sprites.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
+    "gui.howtos.spin-video.name": {
+        "message": "Make It Spin",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
     "gui.modal.help": {
         "message": "Āwhina",
         "description": "Help button in modal"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Tukuatu",
+        "message": "Upload Sprite",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.howtos.add-sprite.step_addSprite": {
@@ -791,6 +815,10 @@
         "message": "Pīkau",
         "description": "Button to open the backpack"
     },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Left/Right",
+        "description": "Button to change to the left-right rotation style"
+    },
     "gui.SpriteInfo.spritePlaceholder": {
         "message": "Ingoa",
         "description": "Placeholder text for sprite name"
@@ -801,7 +829,7 @@
     },
     "gui.previewModal.tryit": {
         "message": "Whakamātauria! {caticon}",
-        "description": "Label for button to try Scratch 3.0 preview"
+        "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.backpack.loadingBackpack": {
         "message": "Kei te utaina...",
@@ -879,6 +907,10 @@
         "message": "Kei te utaina...",
         "description": "Loading/Save button in recording playback"
     },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Use Arrow Keys",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
     "gui.howtos.add-a-backdrop.name": {
         "message": "Tāpiritia he Ārai Tuarongo",
         "description": "Name for the 'Add a Backdrop' how-to"
@@ -935,13 +967,13 @@
         "message": "Device name",
         "description": "Label for field showing the device name"
     },
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "He Pātai Auau",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
     "gui.webglModal.previewfaq": {
         "message": "Haere ki {previewFaqLink} ki te ako tonu.",
         "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.menuBar.turboMode": {
-        "message": "Te aratau turbo",
-        "description": "Menu bar item for toggling turbo mode"
     },
     "gui.prompt.cancel": {
         "message": "Whakakore",
