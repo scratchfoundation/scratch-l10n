@@ -47,6 +47,10 @@
         "message": "zet video [VIDEO_STATE]",
         "description": "Controls display of the video preview layer"
     },
+    "text2speech.setVoiceBlock": {
+        "message": "set voice to [VOICE]",
+        "description": "Set the voice for speech synthesis."
+    },
     "pen.setSize": {
         "message": "maak pendikte [SIZE]",
         "description": "set the diameter of a trail left by a sprite"
@@ -103,10 +107,6 @@
         "message": "Pen",
         "description": "Label for the pen extension category"
     },
-    "speak.defaultTextToSpeak": {
-        "message": "hallo",
-        "description": "hello: the default text to speak"
-    },
     "videoSensing.sprite": {
         "message": "sprite",
         "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
@@ -119,9 +119,21 @@
         "message": "(12) Triangel",
         "description": "Sound of a triangle (instrument) being struck"
     },
+    "text2speech.speakAndWaitBlock": {
+        "message": "zeg [WORDS]",
+        "description": "Speak some words."
+    },
+    "text2speech.kitten": {
+        "message": "kitten",
+        "description": "A baby cat."
+    },
     "music.instrumentTrombone": {
         "message": "(9) Trombone",
         "description": "Sound of a trombone being played"
+    },
+    "text2speech.defaultTextToSpeak": {
+        "message": "hallo",
+        "description": "hello: the default text to speak"
     },
     "music.instrumentVibraphone": {
         "message": "(16) Vibrafoon",
@@ -195,6 +207,10 @@
         "message": "verander pendikte met [SIZE]",
         "description": "change the diameter of the trail left by a sprite"
     },
+    "text2speech.squeak": {
+        "message": "squeak",
+        "description": "Name for a funny voice with a high pitch."
+    },
     "videoSensing.on": {
         "message": "aan",
         "description": "Option for the \"turn video [STATE]\" block"
@@ -202,6 +218,10 @@
     "music.instrumentSynthPad": {
         "message": "(21) Synth Pad",
         "description": "Sound of a \"pad\" synthesizer being played"
+    },
+    "text2speech.max": {
+        "message": "max",
+        "description": "Name for a voice with ambiguous gender."
     },
     "pen.colorMenu.transparency": {
         "message": "doorzichtigheid",
@@ -231,9 +251,9 @@
         "message": "daar gaan we",
         "description": "The default phrase/word that, when heard, triggers the event."
     },
-    "speak.speakAndWaitBlock": {
-        "message": "zeg [WORDS]",
-        "description": "speak some words"
+    "text2speech.puppy": {
+        "message": "puppy",
+        "description": "A baby dog."
     },
     "music.drumTambourine": {
         "message": "(7) Tamboerijn",
@@ -259,6 +279,10 @@
         "message": "video [ATTRIBUTE]van[SUBJECT]",
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
+    "text2speech.quinn": {
+        "message": "quinn",
+        "description": "Name for a voice with ambiguous gender."
+    },
     "music.drumCuica": {
         "message": "(18) Cuíca",
         "description": "Sound of a cuica being played"
@@ -270,6 +294,10 @@
     "videoSensing.motion": {
         "message": "beweging",
         "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    },
+    "text2speech.monster": {
+        "message": "monster",
+        "description": "Name for a funny voice with a low pitch."
     },
     "pen.penUp": {
         "message": "pen op",
