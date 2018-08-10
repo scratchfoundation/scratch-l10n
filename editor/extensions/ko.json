@@ -1,267 +1,119 @@
 {
-    "music.drumHandClap": {
-        "message": "(8) 박수",
-        "description": "Sound of two hands clapping together"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "비디오 투명도를 [TRANSPARENCY] (으)로 정하기",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "pen.setColor": {
-        "message": "펜 색깔을 [COLOR](으)로 정하기 ",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "펜 [COLOR_PARAM]을(를) [VALUE](으)로 정하기",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "music.drumCabasa": {
-        "message": "(15) 카바사",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.getTempo": {
-        "message": "빠르기",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "translate.categoryName": {
-        "message": "구글 번역 ",
-        "description": "Name of extension that adds translate blocks. Do Not translate Google"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) 열린 하이햇",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumBongo": {
-        "message": "(13) 봉고",
-        "description": "Sound of a bongo being struck"
-    },
-    "videoSensing.stage": {
-        "message": "무대 ",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "명도",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "videoSensing.videoToggle": {
-        "message": "비디오 [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "set voice to [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "pen.setSize": {
-        "message": "펜 굵기를 [SIZE](으)로 정하기",
-        "description": "set the diameter of a trail left by a sprite"
+    "music.changeTempo": {
+        "message": "빠르기를 [TEMPO] 만큼 바꾸기",
+        "description": "change tempo (speed) for notes, drums, and rests played"
     },
     "music.drumBass": {
         "message": "(2) 베이스 드럼",
         "description": "Sound of bass drum as used in a standard drum kit"
     },
-    "music.instrumentCello": {
-        "message": "(8) 첼로 ",
-        "description": "Sound of a cello being played with a bow"
+    "music.drumBongo": {
+        "message": "(13) 봉고",
+        "description": "Sound of a bongo being struck"
     },
-    "pen.changeHue": {
-        "message": "펜 색깔을 [HUE]만큼 바꾸기",
-        "description": "legacy pen blocks - change pen color"
+    "music.drumCabasa": {
+        "message": "(15) 카바사",
+        "description": "Sound of a cabasa being shaken"
     },
-    "music.instrumentChoir": {
-        "message": "(15) 합창단 ",
-        "description": "Sound of a choir singing"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) 비브라슬랩 ",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "pen.stamp": {
-        "message": "도장찍기",
-        "description": "render current costume on the background"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) 피치카토 ",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) 나무 플루트 ",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.drumSnare": {
-        "message": "(1) 스네어 드럼 ",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "translate.translateBlock": {
-        "message": "[WORDS]을(를) [LANGUAGE]로 번역하기",
-        "description": "translate some text to a different language"
-    },
-    "music.drumCowbell": {
-        "message": "(11) 카우벨 ",
-        "description": "Sound of a cowbell being struck"
-    },
-    "videoSensing.onFlipped": {
-        "message": "뒤집힌 상태로 켜기",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "pen.categoryName": {
-        "message": "펜",
-        "description": "Label for the pen extension category"
-    },
-    "videoSensing.sprite": {
-        "message": "스프라이트",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "music.restForBeats": {
-        "message": "[BEATS] 박자 쉬기 ",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.drumTriangle": {
-        "message": "(12) 트라이앵글 ",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "[WORDS] 말하기",
-        "description": "Speak some words."
-    },
-    "text2speech.kitten": {
-        "message": "kitten",
-        "description": "A baby cat."
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) 트럼본",
-        "description": "Sound of a trombone being played"
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "안녕 ",
-        "description": "hello: the default text to speak"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) 비브라폰",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) 색소폰 ",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) 베이스",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "pen.clear": {
-        "message": "모두 지우기",
-        "description": "erase all pen trails and stamps"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) 클라리넷 ",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) 스틸 드럼 ",
-        "description": "Sound of a steel drum being struck"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "안녕 ",
-        "description": "hello: the default text to translate"
-    },
-    "pen.setHue": {
-        "message": "펜 색깔을 [HUE](으)로 정하기",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "music.drumGuiro": {
-        "message": "(16) 귀로우 ",
-        "description": "Sound of a guiro being played"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) 바순",
-        "description": "Sound of a bassoon being played"
-    },
-    "translate.viewerLanguage": {
-        "message": "언어",
-        "description": "the languge of the project viewer"
-    },
-    "pen.setShade": {
-        "message": "펜 명암을 [SHADE](으)로 정하기 ",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) 플루트 ",
-        "description": "Sound of a flute being played"
-    },
-    "speech.whenIHear": {
-        "message": "when I hear [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "pen.colorMenu.color": {
-        "message": "색깔",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "music.drumConga": {
-        "message": "(14) 콩가",
-        "description": "Sound of a conga being struck"
-    },
-    "speech.speechReporter": {
-        "message": "speech",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "pen.changeSize": {
-        "message": "펜 굵기를 [SIZE] 만큼 바꾸기",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "text2speech.squeak": {
-        "message": "squeak",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "videoSensing.on": {
-        "message": "켜기",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) 신드 패드 ",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "pen.colorMenu.transparency": {
-        "message": "투명도",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) 기타",
-        "description": "Sound of an accoustic guitar"
-    },
-    "speech.listenAndWait": {
-        "message": "listen and wait",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
+    "music.drumClaves": {
+        "message": "(9) 클라베",
+        "description": "Sound of claves being struck together"
     },
     "music.drumClosedHiHat": {
         "message": "(6) 닫힌 하이햇",
         "description": "Sound of a drum stick hitting a hi-hat while closed"
     },
-    "pen.changeColorParam": {
-        "message": "펜 [COLOR_PARAM]을(를) [VALUE]만큼 바꾸기",
-        "description": "change the state of a pen color parameter"
+    "music.drumConga": {
+        "message": "(14) 콩가",
+        "description": "Sound of a conga being struck"
     },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "비디오 동작 > [REFERENCE]일 때 ",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
+    "music.drumCowbell": {
+        "message": "(11) 카우벨 ",
+        "description": "Sound of a cowbell being struck"
     },
-    "speech.defaultWhenIHearValue": {
-        "message": "let''s go",
-        "description": "The default phrase/word that, when heard, triggers the event."
+    "music.drumCrashCymbal": {
+        "message": "(4) 크래시 심벌",
+        "description": "Sound of a drum stick hitting a crash cymbal"
     },
-    "text2speech.puppy": {
-        "message": "puppy",
-        "description": "A baby dog."
+    "music.drumCuica": {
+        "message": "(18) 쿠이카 ",
+        "description": "Sound of a cuica being played"
+    },
+    "music.drumGuiro": {
+        "message": "(16) 귀로우 ",
+        "description": "Sound of a guiro being played"
+    },
+    "music.drumHandClap": {
+        "message": "(8) 박수",
+        "description": "Sound of two hands clapping together"
+    },
+    "music.drumOpenHiHat": {
+        "message": "(5) 열린 하이햇",
+        "description": "Sound of a drum stick hitting a hi-hat while open"
+    },
+    "music.drumSideStick": {
+        "message": "(3) 사이드 스틱",
+        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
+    },
+    "music.drumSnare": {
+        "message": "(1) 스네어 드럼 ",
+        "description": "Sound of snare drum as used in a standard drum kit"
     },
     "music.drumTambourine": {
         "message": "(7) 탬버린",
         "description": "Sound of a tambourine being struck"
     },
-    "music.playDrumForBeats": {
-        "message": "[DRUM]번 타악기를 [BEATS] 박자로 연주하기",
-        "description": "play drum sample for a number of beats"
+    "music.drumTriangle": {
+        "message": "(12) 트라이앵글 ",
+        "description": "Sound of a triangle (instrument) being struck"
+    },
+    "music.drumVibraslap": {
+        "message": "(17) 비브라슬랩 ",
+        "description": "Sound of a Vibraslap being played"
+    },
+    "music.drumWoodBlock": {
+        "message": "(10) 나무 블록",
+        "description": "Sound of a wood block being struck"
+    },
+    "music.getTempo": {
+        "message": "빠르기",
+        "description": "get the current tempo (speed) for notes, drums, and rests played"
+    },
+    "music.instrumentBass": {
+        "message": "(6) 베이스",
+        "description": "Sound of an accoustic upright bass"
+    },
+    "music.instrumentBassoon": {
+        "message": "(14) 바순",
+        "description": "Sound of a bassoon being played"
+    },
+    "music.instrumentCello": {
+        "message": "(8) 첼로 ",
+        "description": "Sound of a cello being played with a bow"
+    },
+    "music.instrumentChoir": {
+        "message": "(15) 합창단 ",
+        "description": "Sound of a choir singing"
+    },
+    "music.instrumentClarinet": {
+        "message": "(10) 클라리넷 ",
+        "description": "Sound of a clarinet being played"
+    },
+    "music.instrumentElectricGuitar": {
+        "message": "(5) 전자 기타 ",
+        "description": "Sound of an electric guitar"
+    },
+    "music.instrumentElectricPiano": {
+        "message": "(2) 전자 피아노 ",
+        "description": "Sound of an electric piano"
+    },
+    "music.instrumentFlute": {
+        "message": "(12) 플루트 ",
+        "description": "Sound of a flute being played"
+    },
+    "music.instrumentGuitar": {
+        "message": "(4) 기타",
+        "description": "Sound of an accoustic guitar"
     },
     "music.instrumentMarimba": {
         "message": "(19) 마림바 ",
@@ -275,108 +127,256 @@
         "message": "(3) 오르간",
         "description": "Sound of an organ"
     },
-    "videoSensing.videoOn": {
-        "message": "비디오 [ATTRIBUTE]에 대한 [SUBJECT]에서의 관찰값",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "music.drumCuica": {
-        "message": "(18) 쿠이카 ",
-        "description": "Sound of a cuica being played"
-    },
-    "pen.penDown": {
-        "message": "펜 내리기",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "videoSensing.motion": {
-        "message": "동작",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "text2speech.monster": {
-        "message": "monster",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "pen.penUp": {
-        "message": "펜 올리기",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "music.changeTempo": {
-        "message": "빠르기를 [TEMPO] 만큼 바꾸기",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "채도 ",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "music.setInstrument": {
-        "message": "악기를 [INSTRUMENT](으)로 정하기",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
     "music.instrumentPiano": {
         "message": "(1) 피아노",
         "description": "Sound of a piano"
     },
-    "speech.extensionName": {
-        "message": "구글 음성 인식",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+    "music.instrumentPizzicato": {
+        "message": "(7) 피치카토 ",
+        "description": "Sound of a string instrument (e.g. violin) being plucked"
     },
-    "music.drumWoodBlock": {
-        "message": "(10) 나무 블록",
-        "description": "Sound of a wood block being struck"
+    "music.instrumentSaxophone": {
+        "message": "(11) 색소폰 ",
+        "description": "Sound of a saxophone being played"
     },
-    "videoSensing.direction": {
-        "message": "방향",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    "music.instrumentSteelDrum": {
+        "message": "(18) 스틸 드럼 ",
+        "description": "Sound of a steel drum being struck"
     },
     "music.instrumentSynthLead": {
         "message": "(20) 신드 리드",
         "description": "Sound of a \"lead\" synthesizer being played"
     },
-    "music.drumSideStick": {
-        "message": "(3) 사이드 스틱",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
+    "music.instrumentSynthPad": {
+        "message": "(21) 신드 패드 ",
+        "description": "Sound of a \"pad\" synthesizer being played"
     },
-    "pen.changeShade": {
-        "message": "펜 명암을 [SHADE] 만큼 바꾸기 ",
-        "description": "legacy pen blocks - change pen shade"
+    "music.instrumentTrombone": {
+        "message": "(9) 트럼본",
+        "description": "Sound of a trombone being played"
     },
-    "music.setTempo": {
-        "message": "빠르기를 [TEMPO](으)로 정하기",
-        "description": "set tempo (speed) for notes, drums, and rests played"
+    "music.instrumentVibraphone": {
+        "message": "(16) 비브라폰",
+        "description": "Sound of a vibraphone being struck"
     },
-    "music.instrumentElectricPiano": {
-        "message": "(2) 전자 피아노 ",
-        "description": "Sound of an electric piano"
+    "music.instrumentWoodenFlute": {
+        "message": "(13) 나무 플루트 ",
+        "description": "Sound of a wooden flute being played"
     },
-    "videoSensing.categoryName": {
-        "message": "비디오 센싱",
-        "description": "Label for the video sensing extension category"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) 전자 기타 ",
-        "description": "Sound of an electric guitar"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) 크래시 심벌",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "videoSensing.off": {
-        "message": "끄기",
-        "description": "Option for the \"turn video [STATE]\" block"
+    "music.playDrumForBeats": {
+        "message": "[DRUM]번 타악기를 [BEATS] 박자로 연주하기",
+        "description": "play drum sample for a number of beats"
     },
     "music.playNoteForBeats": {
         "message": "[NOTE]번 음을 [BEATS] 박자로 연주하기",
         "description": "play a note for a number of beats"
     },
+    "music.restForBeats": {
+        "message": "[BEATS] 박자 쉬기 ",
+        "description": "rest (play no sound) for a number of beats"
+    },
+    "music.setInstrument": {
+        "message": "악기를 [INSTRUMENT](으)로 정하기",
+        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
+    },
+    "music.setTempo": {
+        "message": "빠르기를 [TEMPO](으)로 정하기",
+        "description": "set tempo (speed) for notes, drums, and rests played"
+    },
+    "pen.categoryName": {
+        "message": "펜",
+        "description": "Label for the pen extension category"
+    },
+    "pen.changeColorParam": {
+        "message": "펜 [COLOR_PARAM]을(를) [VALUE]만큼 바꾸기",
+        "description": "change the state of a pen color parameter"
+    },
+    "pen.changeHue": {
+        "message": "펜 색깔을 [HUE]만큼 바꾸기",
+        "description": "legacy pen blocks - change pen color"
+    },
+    "pen.changeShade": {
+        "message": "펜 명암을 [SHADE] 만큼 바꾸기 ",
+        "description": "legacy pen blocks - change pen shade"
+    },
+    "pen.changeSize": {
+        "message": "펜 굵기를 [SIZE] 만큼 바꾸기",
+        "description": "change the diameter of the trail left by a sprite"
+    },
+    "pen.clear": {
+        "message": "모두 지우기",
+        "description": "erase all pen trails and stamps"
+    },
+    "pen.colorMenu.brightness": {
+        "message": "명도",
+        "description": "label for brightness element in color picker for pen extension"
+    },
+    "pen.colorMenu.color": {
+        "message": "색깔",
+        "description": "label for color element in color picker for pen extension"
+    },
+    "pen.colorMenu.saturation": {
+        "message": "채도 ",
+        "description": "label for saturation element in color picker for pen extension"
+    },
+    "pen.colorMenu.transparency": {
+        "message": "투명도",
+        "description": "label for transparency element in color picker for pen extension"
+    },
+    "pen.penDown": {
+        "message": "펜 내리기",
+        "description": "start leaving a trail when the sprite moves"
+    },
+    "pen.penUp": {
+        "message": "펜 올리기",
+        "description": "stop leaving a trail behind the sprite"
+    },
+    "pen.setColor": {
+        "message": "펜 색깔을 [COLOR](으)로 정하기 ",
+        "description": "set the pen color to a particular (RGB) value"
+    },
+    "pen.setColorParam": {
+        "message": "펜 [COLOR_PARAM]을(를) [VALUE](으)로 정하기",
+        "description": "set the state for a pen color parameter e.g. saturation"
+    },
+    "pen.setHue": {
+        "message": "펜 색깔을 [HUE](으)로 정하기",
+        "description": "legacy pen blocks - set pen color to number"
+    },
+    "pen.setShade": {
+        "message": "펜 명암을 [SHADE](으)로 정하기 ",
+        "description": "legacy pen blocks - set pen shade"
+    },
+    "pen.setSize": {
+        "message": "펜 굵기를 [SIZE](으)로 정하기",
+        "description": "set the diameter of a trail left by a sprite"
+    },
+    "pen.stamp": {
+        "message": "도장찍기",
+        "description": "render current costume on the background"
+    },
+    "speech.defaultWhenIHearValue": {
+        "message": "let''s go",
+        "description": "The default phrase/word that, when heard, triggers the event."
+    },
+    "speech.extensionName": {
+        "message": "구글 음성 인식",
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+    },
+    "speech.listenAndWait": {
+        "message": "듣고 기다리기",
+        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
+    },
+    "speech.speechReporter": {
+        "message": "speech",
+        "description": "Get the text of spoken words transcribed by the speech recognition system."
+    },
+    "speech.whenIHear": {
+        "message": "[PHRASE] 이(가) 들릴 때",
+        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
+    },
+    "text2speech.defaultTextToSpeak": {
+        "message": "안녕 ",
+        "description": "hello: the default text to speak"
+    },
+    "text2speech.kitten": {
+        "message": "kitten",
+        "description": "A baby cat."
+    },
+    "text2speech.max": {
+        "message": "max",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.monster": {
+        "message": "monster",
+        "description": "Name for a funny voice with a low pitch."
+    },
+    "text2speech.puppy": {
+        "message": "강아지",
+        "description": "A baby dog."
+    },
+    "text2speech.quinn": {
+        "message": "quinn",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.setVoiceBlock": {
+        "message": "set voice to [VOICE]",
+        "description": "Set the voice for speech synthesis."
+    },
+    "text2speech.speakAndWaitBlock": {
+        "message": "[WORDS] 말하기",
+        "description": "Speak some words."
+    },
+    "text2speech.squeak": {
+        "message": "squeak",
+        "description": "Name for a funny voice with a high pitch."
+    },
+    "translate.categoryName": {
+        "message": "구글 번역 ",
+        "description": "Name of extension that adds translate blocks. Do Not translate Google"
+    },
+    "translate.defaultTextToTranslate": {
+        "message": "안녕 ",
+        "description": "hello: the default text to translate"
+    },
+    "translate.translateBlock": {
+        "message": "[WORDS]을(를) [LANGUAGE]로 번역하기",
+        "description": "translate some text to a different language"
+    },
+    "translate.viewerLanguage": {
+        "message": "언어",
+        "description": "the languge of the project viewer"
+    },
+    "videoSensing.categoryName": {
+        "message": "비디오 센싱",
+        "description": "Label for the video sensing extension category"
+    },
+    "videoSensing.direction": {
+        "message": "방향",
+        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    },
+    "videoSensing.motion": {
+        "message": "동작",
+        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    },
+    "videoSensing.off": {
+        "message": "끄기",
+        "description": "Option for the \"turn video [STATE]\" block"
+    },
+    "videoSensing.on": {
+        "message": "켜기",
+        "description": "Option for the \"turn video [STATE]\" block"
+    },
+    "videoSensing.onFlipped": {
+        "message": "뒤집힌 상태로 켜기",
+        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
+    },
+    "videoSensing.setVideoTransparency": {
+        "message": "비디오 투명도를 [TRANSPARENCY] (으)로 정하기",
+        "description": "Controls transparency of the video preview layer"
+    },
+    "videoSensing.sprite": {
+        "message": "스프라이트",
+        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    },
+    "videoSensing.stage": {
+        "message": "무대 ",
+        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
+    },
+    "videoSensing.videoOn": {
+        "message": "비디오 [ATTRIBUTE]에 대한 [SUBJECT]에서의 관찰값",
+        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
+    },
+    "videoSensing.videoToggle": {
+        "message": "비디오 [VIDEO_STATE]",
+        "description": "Controls display of the video preview layer"
+    },
+    "videoSensing.whenMotionGreaterThan": {
+        "message": "비디오 동작 > [REFERENCE]일 때 ",
+        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
+    },
     "music.categoryName": {
         "message": "음악",
         "description": "Label for the Music extension category"
-    },
-    "music.drumClaves": {
-        "message": "(9) 클라베",
-        "description": "Sound of claves being struck together"
     }
 }
