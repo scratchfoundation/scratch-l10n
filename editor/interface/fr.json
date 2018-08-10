@@ -1,982 +1,1010 @@
 {
-    "gui.soundEditor.echo": {
-        "message": "Echo",
-        "description": "Title of the button to apply the echo effect"
+    "gui.backpack.errorBackpack": {
+        "message": "Erreur lors du chargement du sac-à-dos",
+        "description": "Error backpack message"
     },
-    "gui.previewInfo.notnow": {
-        "message": "Pas maintenant",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
+    "gui.backpack.loadingBackpack": {
+        "message": "Chargement...",
+        "description": "Loading backpack message"
     },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Pour ce lutin uniquement",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
+    "gui.backpack.emptyBackpack": {
+        "message": "Le sac-à-dos est vide",
+        "description": "Empty backpack message"
     },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Change la couleur",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Choisis un costume",
-        "description": "Heading for the costume library"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Rechercher",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Retour",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.extension.music.name": {
-        "message": "Musique",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Surprise",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Nous y travaillons {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "barre de défilement",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.cards.remove": {
-        "message": "Fermer",
-        "description": "Title for button to close how-to card"
+    "gui.unsupportedBrowser.label": {
+        "message": "Navigateur non pris en charge",
+        "description": ""
     },
     "gui.unsupportedBrowser.description": {
         "message": "Nous sommes désolés, mais scratch 3.0 ne supporte pas Internet Explorer, Vivaldi, Opera ou Silk. Nous vous recommandons d'essayer des navigateurs plus récents, tels que Google Chrome, Mozilla Firefox ou Microsoft Edge.",
         "description": "Unsupported browser description"
     },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Surprise",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Clique sur le drapeau vert pour commencer",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Choisis un costume avec une autre lettre & Fais la tourner",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.soundEditor.save": {
-        "message": "Sauvegarder",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Oups, on dirait que quelque chose s'est mal passé.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Sortir du mode plein-écran",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.menuBar.file": {
-        "message": "Fichier",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Passer à la grande scène",
-        "description": "Button to change stage size to large"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Anime un sprite",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Importer un arrière-plan",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Jouer un son quand cliqué",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Importer un son",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stop",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.loader.message2": {
-        "message": "Chargement de sprites...",
-        "description": "One of the loading messages"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Contrôle du plein écran",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Refaire",
-        "description": "Title of the button to redo"
-    },
-    "gui.importInfo.title": {
-        "message": "Voir un projet Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Choisis une extension",
-        "description": "Heading for the extension library"
-    },
-    "gui.webglModal.description": {
-        "message": "Malheureusement il semble que votre navigateur ou votre ordinateur {webGlLink}. Cette technologie est nécessaire pour faire fonctionner Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Voir un projet 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Plus doux",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.menuBar.undo": {
-        "message": "Restaurer",
-        "description": "Menu bar item for undoing"
-    },
-    "gui.extension.googletranslate.description": {
-        "message": "Traduire du texte dans différentes langues.",
-        "description": "Description for the 'Google Translate' extension"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Scène",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.webglModal.back": {
+    "gui.unsupportedBrowser.back": {
         "message": "Retour",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ne t'inquiètes pas, nous y travaillons {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Choisis un son",
-        "description": "Heading for the sound library"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Oh oh, on dirait que le lien de ce projet ou le son id n'a pas l'air correct.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Ajouter une entrée",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Sauvegarder comme copie",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Traduction",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
-    },
-    "gui.importModal.viewproject": {
-        "message": "Voir",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Tutoriels",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.new": {
-        "message": "Nouveau",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Ajouter une étiquette",
-        "description": "Label for button to add a label"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Rogner",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.extension.music.description": {
-        "message": "Jouer des instruments et du tambour.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.cards.see-more": {
-        "message": "Voir plus",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Ajouter une entrée",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Essayer à nouveau",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Passer à la petite scène",
-        "description": "Button to change stage size to small"
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Sauvegarder maintenant",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Connexion...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprite",
-        "description": "Sprite info label"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Sauvegarder sur votre ordinateur",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Choisis un costume",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Choisis un son",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.connection.scanning.lookingfordevices": {
-        "message": "Recherche d'appareils",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
-        "description": "Import project message"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Activer l'appareil photo",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.loader.message5": {
-        "message": "Rassemblement des chats ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Gonflement des gobos ...",
-        "description": "One of the loading messages"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Glisser tout autour",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Sélectionner un appareil dans la liste ci-dessus.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Importer depuis votre ordinateur",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Choisis un tambour & fait un battement",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Ok",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "sélecteur de langue",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Veillez à ce que vous ayez Scratch Link d'installé et lancé",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Choisis un arrière-plan",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Quand cliqué augmente le score",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Plus doucement",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.turboMode.active": {
-        "message": "Mode Turbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.loader.message4": {
-        "message": "Chargement des extensions ...",
-        "description": "One of the loading messages"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Impossible de démarrer l'enregistrement",
-        "description": "Alert for recording error"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Entrer l'URL de l'extension",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Annuler",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Ajoute un bloc de mouvement",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Anime un nom",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.modal.back": {
-        "message": "Retour",
-        "description": "Back button in modal"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Choisis un costume avec une autre lettre & Fais la grandir",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.recordModal.title": {
-        "message": "Enregistre un Son",
-        "description": "Recording modal title"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Arrière-plans",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.prompt.ok": {
-        "message": "Ok",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Jouer un son quand cliqué",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Nous avons besoin de votre permission pour utiliser votre appareil photo.",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "nombre ou texte",
-        "description": "Description of the number/text input type"
+        "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
         "message": "Pour en savoir plus, allez sur la {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
-    "gui.extension.microbit.description": {
-        "message": "Connecter vos projets avec le monde.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.soundEditor.play": {
-        "message": "Jouer",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Reprendre la photo",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Change la couleur",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.connection.scanning.noDevicesFound": {
-        "message": "Aucun appareil trouvé",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Ajoute un autre sprite",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.connection.search": {
-        "message": "Rafraîchir",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.menuBar.share": {
-        "message": "Partager",
-        "description": "Label for project share button"
-    },
-    "gui.crashMessage.description": {
-        "message": "Nous sommes désolés, mais on dirait que Scratch a planté. Ce bug a été rapporté automatiquement à l'Equipe Scratch. Merci de rafraîchir la page pour essayer à nouveau.",
-        "description": "Unhandled error description"
-    },
-    "gui.webglModal.label": {
-        "message": "Votre navigateur ne supporte pas WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.importInfo.previewfaqlinktext": {
+    "gui.unsupportedBrowser.previewfaqlinktext": {
         "message": "FAQ",
         "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Choisis un sprite en forme de lettre",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.importInfo.goback": {
-        "message": "Retour",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "grande lecture",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Plus de choses à essayer !",
-        "description": "Title card with more things to try"
-    },
-    "gui.connection.connect": {
-        "message": "Se connecter",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Choisis un tutoriel",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Webcam",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Aide",
-        "description": "Button to view help content"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Aide",
-        "description": "Button to view help content"
-    },
-    "gui.extension.pen.description": {
-        "message": "Dessiner avec vos lutins.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Le fichier du projet qui a été sélectionné n'a pas réussi à être chargé.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Vérifiez que le Bluetooth soit activé",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Bouge vers le haut & vers le bas avec les flèches du clavier",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Choisis un sprite",
-        "description": "Heading for the sprite library"
-    },
-    "gui.loader.headline": {
-        "message": "Chargement du projet",
-        "description": "Main loading message"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Jouer",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "booléenne",
-        "description": "Description of the boolean input type"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Connexion",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Choisis un arrière-plan",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.menuBar.redo": {
-        "message": "Refaire",
-        "description": "Menu bar item for redoing"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Peindre",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Nous travaillons sur la prochaine version de Scratch. Nous sommes impatients que vous l’essayiez !",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Pour tous les lutins",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Erreur lors du chargement du sac-à-dos",
-        "description": "Error backpack message"
-    },
-    "gui.crashMessage.title": {
-        "message": "Oups ! Quelque chose s'est mal passé.",
-        "description": "Unhandled error title"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "dupliquer",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.connection.disconnect": {
-        "message": "Se déconnecter",
-        "description": "Button to disconnect the device"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Connexion. Vérifiez que le pin sur votre EV3 est mis sur 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Créé un son",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Remets le score à zéro",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Construire avec des moteurs et des capteurs.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.controls.go": {
-        "message": "Aller",
-        "description": "Green flag button title"
-    },
-    "gui.extension.pen.name": {
-        "message": "Stylo",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "supprimer",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Fais de la musique",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Surprise",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Ajoute un arrière-plan",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Jouer un son quand cliqué",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Entrer en mode plein-écran",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Arrière-plans",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Se cacher & se montrer",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Tutoriels",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Taille",
-        "description": "Sprite info size label"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Plus fort",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Enregistrer un son",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Surprise",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Aller à l'Éditeur",
-        "description": "Button to return to the editor"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Change la taille",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Ça arrive bientôt",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Afficher",
-        "description": "Sprite info show label"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Dans le sprite pieuvre, Quand touché, Ajouter un score",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Créé une variable score",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.extension.ev3.description": {
-        "message": "Construire des robots interactifs et plus.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.loader.message8": {
-        "message": "Préparation des émojis ...",
-        "description": "One of the loading messages"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Plus vite",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Sons",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Enregistrer",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Direction",
-        "description": "Sprite info direction label"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Choisis un arrière-plan",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Chargement...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.gui.variablePrompt": {
-        "message": "Plus d'options",
-        "description": "Dropdown message for variable/list options"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Costumes",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.addExtension": {
-        "message": "Ajouter une extension",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Ajouter des effets",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Apporter des commentaires",
-        "description": "Label for feedback form modal button"
     },
     "gui.cameraModal.cameraModalTitle": {
         "message": "Prendre une photo",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
-    "gui.connection.unavailable.tryagainbutton": {
+    "gui.cameraModal.loadingCameraMessage": {
+        "message": "Chargement de l'appareil photo...",
+        "description": "Notification to the user that the camera is loading"
+    },
+    "gui.cameraModal.permissionRequest": {
+        "message": "Nous avons besoin de votre permission pour utiliser votre appareil photo.",
+        "description": "Notification to the user that the app needs camera access"
+    },
+    "gui.cameraModal.retakePhoto": {
+        "message": "Reprendre la photo",
+        "description": "A button that allows the user to take the picture again, replacing the old one"
+    },
+    "gui.cameraModal.save": {
+        "message": "Sauvegarder",
+        "description": "A button that allows the user to save the photo they took as a costume"
+    },
+    "gui.cameraModal.takePhoto": {
+        "message": "Prendre une photo",
+        "description": "A button to take a photo"
+    },
+    "gui.cameraModal.loadingCaption": {
+        "message": "Chargement...",
+        "description": "A caption for a disabled button while the video from the camera is still loading"
+    },
+    "gui.cameraModal.enableCameraCaption": {
+        "message": "Activer l'appareil photo",
+        "description": "A caption for a disabled button prompting the user to enable camera access"
+    },
+    "gui.cards.all-tutorials": {
+        "message": "Tutoriels",
+        "description": "Title for button to return to tutorials library"
+    },
+    "gui.cards.remove": {
+        "message": "Fermer",
+        "description": "Title for button to close how-to card"
+    },
+    "gui.cards.more-things-to-try": {
+        "message": "Plus de choses à essayer !",
+        "description": "Title card with more things to try"
+    },
+    "gui.cards.see-more": {
+        "message": "Voir plus",
+        "description": "Title for button to see more in how-to library"
+    },
+    "gui.comingSoon.message1": {
+        "message": "Ne t'inquiète pas, nous y travaillons {emoji}",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.comingSoon.message2": {
+        "message": "Ça arrive bientôt...",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.comingSoon.message3": {
+        "message": "Nous y travaillons {emoji}",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.connection.auto-scanning.noDevicesFound": {
+        "message": "Aucun appareil trouvé",
+        "description": "Text shown when no devices could be found"
+    },
+    "gui.connection.auto-scanning.prescan": {
+        "message": "Have your device nearby, then begin searching.",
+        "description": "Prompt for beginning the search"
+    },
+    "gui.connection.auto-scanning.pressbutton": {
+        "message": "Press the button on your device.",
+        "description": "Prompt for pushing the button on the device"
+    },
+    "gui.connection.auto-scanning.start-search": {
+        "message": "Start Searching",
+        "description": "Button in prompt for starting a search"
+    },
+    "gui.connection.connecting-searchbutton": {
+        "message": "Searching...",
+        "description": "Label indicating that search is in progress"
+    },
+    "gui.connection.auto-scanning.try-again": {
         "message": "Essayer à nouveau",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Inverser",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "ne supporte pas WebGL",
-        "description": "link part of your browser does not support WebGL message"
+        "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
         "message": "Connecté",
         "description": "Message indicating that a device was connected"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Voir communauté",
-        "description": "Label for see community button"
+    "gui.connection.disconnect": {
+        "message": "Se déconnecter",
+        "description": "Button to disconnect the device"
     },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Ajoute un sprite",
-        "description": "Step name for 'Add a Sprite' step"
+    "gui.connection.go-to-editor": {
+        "message": "Aller à l'Éditeur",
+        "description": "Button to return to the editor"
     },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Dans le sprite pieuvre, Quand touché, Jouer un son",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
+    "gui.connection.connecting-cancelbutton": {
+        "message": "Connexion...",
+        "description": "Label indicating that connection is in progress"
     },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Chargement de l'appareil photo...",
-        "description": "Notification to the user that the camera is loading"
+    "gui.connection.device-name-label": {
+        "message": "Nom de l'appareil",
+        "description": "Label for field showing the device name"
     },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Importer un Costume",
-        "description": "Button to add a costume by uploading a file in the editor tab"
+    "gui.connection.connect": {
+        "message": "Se connecter",
+        "description": "Button to start connecting to a specific device"
     },
-    "gui.playbackStep.stopMsg": {
+    "gui.connection.error.errorMessage": {
+        "message": "Oups, on dirait que quelque chose s'est mal passé.",
+        "description": "The device connection process has encountered an error."
+    },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Essayer à nouveau",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
+    "gui.connection.error.helpbutton": {
+        "message": "Aide",
+        "description": "Button to view help content"
+    },
+    "gui.connection.scanning.lookingfordevices": {
+        "message": "Recherche d'appareils",
+        "description": "Text shown while scanning for devices"
+    },
+    "gui.connection.scanning.noDevicesFound": {
+        "message": "Aucun appareil trouvé",
+        "description": "Text shown when no devices could be found"
+    },
+    "gui.connection.scanning.instructions": {
+        "message": "Sélectionner un appareil dans la liste ci-dessus.",
+        "description": "Prompt for choosing a device to connect to"
+    },
+    "gui.connection.search": {
+        "message": "Rafraîchir",
+        "description": "Button in prompt for starting a search"
+    },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Veillez à ce que vous ayez Scratch Link d'installé et lancé",
+        "description": "Message for getting Scratch Link installed"
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Vérifiez que le Bluetooth soit activé",
+        "description": "Message for making sure Bluetooth is enabled"
+    },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Essayer à nouveau",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Aide",
+        "description": "Button to view help content"
+    },
+    "gui.controls.go": {
+        "message": "Aller",
+        "description": "Green flag button title"
+    },
+    "gui.controls.stop": {
         "message": "Stop",
-        "description": "Stop/Play button in recording playback"
+        "description": "Stop button title"
     },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Choisis un sprite instrument",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
+    "gui.crashMessage.title": {
+        "message": "Oups ! Quelque chose s'est mal passé.",
+        "description": "Unhandled error title"
     },
-    "gui.soundEditor.undo": {
-        "message": "Restaurer",
-        "description": "Title of the button to undo"
+    "gui.crashMessage.description": {
+        "message": "Nous sommes désolés, mais on dirait que Scratch a planté. Ce bug a été rapporté automatiquement à l'Equipe Scratch. Merci de rafraîchir la page pour essayer à nouveau.",
+        "description": "Unhandled error description"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Créer un bloc",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.customProcedures.addAnInputNumberText": {
+        "message": "Ajouter une entrée",
+        "description": "Label for button to add a number/text input"
+    },
+    "gui.customProcedures.numberTextType": {
+        "message": "nombre ou texte",
+        "description": "Description of the number/text input type"
+    },
+    "gui.customProcedures.addAnInputBoolean": {
+        "message": "Ajouter une entrée",
+        "description": "Label for button to add a boolean input"
+    },
+    "gui.customProcedures.booleanType": {
+        "message": "booléenne",
+        "description": "Description of the boolean input type"
+    },
+    "gui.customProcedures.addALabel": {
+        "message": "Ajouter une étiquette",
+        "description": "Label for button to add a label"
+    },
+    "gui.customProcedures.runWithoutScreenRefresh": {
+        "message": "Exécuter sans rafraîchissement d'écran",
+        "description": "Label for checkbox to run without screen refresh"
+    },
+    "gui.customProcedures.cancel": {
+        "message": "Annuler",
+        "description": "Label for button to cancel custom procedure edits"
+    },
+    "gui.customProcedures.ok": {
+        "message": "Ok",
+        "description": "Label for button to save new custom procedure"
+    },
+    "gui.SpriteInfo.direction": {
+        "message": "Direction",
+        "description": "Sprite info direction label"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "Tout autour",
+        "description": "Button to change to the all around rotation style"
+    },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Gauche/Droite",
+        "description": "Button to change to the left-right rotation style"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Ne pivote pas",
+        "description": "Button to change to the dont rotate rotation style"
+    },
+    "gui.gui.addExtension": {
+        "message": "Ajouter une extension",
+        "description": "Button to add an extension in the target pane"
     },
     "gui.gui.codeTab": {
         "message": "Code",
         "description": "Button to get to the code panel"
     },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "La variable sera disponible pour tous les lutins.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    "gui.gui.backdropsTab": {
+        "message": "Arrière-plans",
+        "description": "Button to get to the backdrops panel"
     },
-    "gui.howtos.spin-video.name": {
-        "message": "Fais-le Tourner",
-        "description": "Name for the 'Make It Spin' how-to"
+    "gui.gui.costumesTab": {
+        "message": "Costumes",
+        "description": "Button to get to the costumes panel"
     },
-    "gui.modal.help": {
-        "message": "Aide",
-        "description": "Help button in modal"
+    "gui.gui.soundsTab": {
+        "message": "Sons",
+        "description": "Button to get to the sounds panel"
     },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
-        "description": "Button to add a sprite in the target pane from file"
+    "gui.importInfo.title": {
+        "message": "Voir un projet Scratch 2.0",
+        "description": "Scratch 2.0 import modal label - for accessibility"
     },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Ajoute un sprite",
-        "description": "Step name for 'Add a new sprite' step"
+    "gui.importInfo.betamessage": {
+        "message": "Entrez un lien vers un de vos projets Scratch partagés. Les changements faits dans cette Beta de Scratch 3.0 ne seront pas sauvegardés.",
+        "description": "Import project message"
     },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Créé une variable score",
-        "description": "Step name for 'Create Score Variable' step"
+    "gui.importInfo.message": {
+        "message": "Entrer un lien vers un de vos projet Scratch partagé. Les changements faits dans Scratch 3.0 ne seront pas sauvegardés.",
+        "description": "Import project message"
     },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exporter",
-        "description": "Menu item to export the selected item"
+    "gui.importInfo.invalidFormatError": {
+        "message": "Oh oh, on dirait que le lien de ce projet ou le son id n'a pas l'air correct.",
+        "description": "Invalid project link or id message"
+    },
+    "gui.importModal.viewproject": {
+        "message": "Voir",
+        "description": "Label for button to load a scratch 2.0 project"
+    },
+    "gui.importInfo.goback": {
+        "message": "Retour",
+        "description": "Label for button to back out of importing a project"
+    },
+    "gui.importInfo.previewfaq": {
+        "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
+        "description": "Invitation to try 3.0 preview"
+    },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.extensionLibrary.comingSoon": {
+        "message": "Ça arrive bientôt",
+        "description": "Label for extensions that are not yet implemented"
+    },
+    "gui.library.filterPlaceholder": {
+        "message": "Rechercher",
+        "description": "Placeholder text for library search field"
     },
     "gui.loader.message1": {
         "message": "Création des blocs ...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message2": {
+        "message": "Chargement de sprites...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message3": {
+        "message": "Chargement des sons...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message4": {
+        "message": "Chargement des extensions ...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message5": {
+        "message": "Rassemblement des chats ...",
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
         "message": "Transmission des nanos ...",
         "description": "One of the loading messages"
     },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Bouge vers la droite & vers la gauche avec les flèches du clavier",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.loader.message3": {
-        "message": "Chargement des sons...",
+    "gui.loader.message7": {
+        "message": "Gonflement des gobos ...",
         "description": "One of the loading messages"
     },
-    "gui.backpack.header": {
-        "message": "Sac à dos",
-        "description": "Button to open the backpack"
+    "gui.loader.message8": {
+        "message": "Préparation des émojis ...",
+        "description": "One of the loading messages"
     },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
-        "description": "Button to change to the left-right rotation style"
+    "gui.loader.headline": {
+        "message": "Chargement du projet",
+        "description": "Main loading message"
     },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Nom",
-        "description": "Placeholder text for sprite name"
+    "gui.menuBar.LanguageSelector": {
+        "message": "sélecteur de langue",
+        "description": "accessibility text for the language selection menu"
     },
-    "gui.backpack.emptyBackpack": {
-        "message": "Le sac-à-dos est vide",
-        "description": "Empty backpack message"
+    "gui.menuBar.tutorialsLibrary": {
+        "message": "Tutoriels",
+        "description": "accessibility text for the tutorials button"
     },
-    "gui.previewModal.tryit": {
-        "message": "L'essayer ! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
+    "gui.menuBar.file": {
+        "message": "Fichier",
+        "description": "Text for file dropdown menu"
     },
-    "gui.backpack.loadingBackpack": {
-        "message": "Chargement...",
-        "description": "Loading backpack message"
+    "gui.menuBar.new": {
+        "message": "Nouveau",
+        "description": "Menu bar item for creating a new project"
     },
-    "gui.extension.videosensing.name": {
-        "message": "Détection vidéo",
-        "description": "Name for the 'Video Sensing' extension"
+    "gui.menuBar.saveNow": {
+        "message": "Sauvegarder maintenant",
+        "description": "Menu bar item for saving now"
     },
-    "gui.monitor.contextMenu.default": {
-        "message": "lecture normale",
-        "description": "Menu item to switch to the default monitor"
+    "gui.menuBar.saveAsCopy": {
+        "message": "Sauvegarder comme copie",
+        "description": "Menu bar item for saving as a copy"
     },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Choisis un autre sprite en forme de lettre",
-        "description": "Step name for 'Pick Another Letter Sprite"
+    "gui.menuBar.uploadFromComputer": {
+        "message": "Importer depuis votre ordinateur",
+        "description": "Menu bar item for uploading a project from your computer"
     },
-    "gui.controls.stop": {
-        "message": "Stop",
-        "description": "Stop button title"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Créer un bloc",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Choisis un lutin",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Créé un jeu de Clicker",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Peindre",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Move Randomly",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Exécuter sans rafraîchissement d'écran",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Importer un arrière-plan",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Aller à une position aléatoire",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Ajoute un sprite",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Choisis un sprite",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Son",
-        "description": "Label for the name of the sound"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Capter du mouvement avec la caméra.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Navigateur non pris en charge",
-        "description": ""
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Chargement...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Ajoute un arrière-plan",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Ça arrive bientôt...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Peindre",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Prendre une photo",
-        "description": "A button to take a photo"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Sauvegarder",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Fais un jeu de Poursuite",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Réenregistrer",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.importInfo.message": {
-        "message": "Entrer un lien vers un de vos projet Scratch partagé. Les changements faits dans Scratch 3.0 ne seront pas sauvegardés.",
-        "description": "Import project message"
+    "gui.menuBar.downloadToComputer": {
+        "message": "Sauvegarder sur votre ordinateur",
+        "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
         "message": "Modifier",
         "description": "Text for edit dropdown menu"
     },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Prise en main",
-        "description": "Name for the 'Getting Started' how-to"
+    "gui.menuBar.restoreSprite": {
+        "message": "Restore Sprite",
+        "description": "Menu bar item for restoring the last deleted sprite."
     },
-    "gui.cameraModal.save": {
-        "message": "Sauvegarder",
-        "description": "A button that allows the user to save the photo they took as a costume"
+    "gui.menuBar.restore": {
+        "message": "Restore",
+        "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Choisis le sprite micro & la boite à sons surprise",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
+    "gui.menuBar.turboModeOff": {
+        "message": "Désactiver le mode Turbo",
+        "description": "Menu bar item for turning off turbo mode"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Activer le mode Turbo",
+        "description": "Menu bar item for turning on turbo mode"
+    },
+    "gui.menuBar.share": {
+        "message": "Partager",
+        "description": "Label for project share button"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Voir communauté",
+        "description": "Label for see community button"
+    },
+    "gui.menuBar.giveFeedback": {
+        "message": "Apporter des commentaires",
+        "description": "Label for feedback form modal button"
+    },
+    "gui.modal.help": {
+        "message": "Aide",
+        "description": "Help button in modal"
+    },
+    "gui.modal.back": {
+        "message": "Retour",
+        "description": "Back button in modal"
+    },
+    "gui.monitor.contextMenu.default": {
+        "message": "lecture normale",
+        "description": "Menu item to switch to the default monitor"
+    },
+    "gui.monitor.contextMenu.large": {
+        "message": "grande lecture",
+        "description": "Menu item to switch to the large monitor"
+    },
+    "gui.monitor.contextMenu.slider": {
+        "message": "barre de défilement",
+        "description": "Menu item to switch to the slider monitor"
     },
     "gui.previewInfo.label": {
         "message": "Essayer Scratch 3.0",
         "description": "Scratch 3.0 modal label - for accessibility"
     },
-    "gui.connection.device-name-label": {
-        "message": "Nom de l'appareil",
-        "description": "Label for field showing the device name"
+    "gui.previewInfo.welcome": {
+        "message": "Bienvenue sur la bêta de Scratch 3.0",
+        "description": "Header for Preview Info Modal"
     },
-    "gui.webglModal.previewfaqlinktext": {
+    "gui.previewInfo.betawelcome": {
+        "message": "Bienvenue sur la bêta de Scratch 3.0",
+        "description": "Header for Beta Info Modal"
+    },
+    "gui.previewInfo.invitation": {
+        "message": "Nous travaillons sur la prochaine version de Scratch. Nous sommes impatients que vous l’essayiez !",
+        "description": "Invitation to try 3.0 Beta"
+    },
+    "gui.previewInfo.notnow": {
+        "message": "Pas maintenant",
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
+    },
+    "gui.previewModal.tryit": {
+        "message": "L'essayer ! {caticon}",
+        "description": "Label for button to try Scratch 3.0 Beta"
+    },
+    "gui.previewModal.viewproject": {
+        "message": "Voir un projet 2.0",
+        "description": "Label for button to import a 2.0 project"
+    },
+    "gui.previewInfo.previewfaq": {
+        "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
+        "description": "Invitation to try 3.0 Beta"
+    },
+    "gui.previewInfo.previewfaqlinktext": {
         "message": "FAQ",
         "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.gui.variableScopeOptionAllSprites": {
+        "message": "Pour tous les sprites",
+        "description": "Option message when creating a variable for making it available to all sprites"
+    },
+    "gui.gui.variableScopeOptionSpriteOnly": {
+        "message": "Pour ce sprite uniquement",
+        "description": "Option message when creating a varaible for making it only available to the current sprite"
+    },
+    "gui.gui.variablePrompt": {
+        "message": "Plus d'options",
+        "description": "Dropdown message for variable/list options"
+    },
+    "gui.gui.variablePromptAllSpritesMessage": {
+        "message": "La variable sera disponible pour tous les sprites.",
+        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    },
+    "gui.prompt.cancel": {
+        "message": "Annuler",
+        "description": "Button in prompt for cancelling the dialog"
+    },
+    "gui.prompt.ok": {
+        "message": "Ok",
+        "description": "Button in prompt for confirming the dialog"
+    },
+    "gui.playbackStep.stopMsg": {
+        "message": "Stop",
+        "description": "Stop/Play button in recording playback"
+    },
+    "gui.playbackStep.playMsg": {
+        "message": "Jouer",
+        "description": "Stop/Play button in recording playback"
+    },
+    "gui.playbackStep.loadingMsg": {
+        "message": "Chargement...",
+        "description": "Loading/Save button in recording playback"
+    },
+    "gui.playbackStep.saveMsg": {
+        "message": "Sauvegarder",
+        "description": "Loading/Save button in recording playback"
+    },
+    "gui.playbackStep.reRecordMsg": {
+        "message": "Réenregistrer",
+        "description": "Button to re-record sound in recording playback"
+    },
+    "gui.recordModal.title": {
+        "message": "Enregistre un Son",
+        "description": "Recording modal title"
+    },
+    "gui.soundEditor.sound": {
+        "message": "Son",
+        "description": "Label for the name of the sound"
+    },
+    "gui.soundEditor.play": {
+        "message": "Jouer",
+        "description": "Title of the button to start playing the sound"
+    },
+    "gui.soundEditor.stop": {
+        "message": "Stop",
+        "description": "Title of the button to stop the sound"
+    },
+    "gui.soundEditor.trim": {
+        "message": "Rogner",
+        "description": "Title of the button to start trimminging the sound"
+    },
+    "gui.soundEditor.save": {
+        "message": "Sauvegarder",
+        "description": "Title of the button to save trimmed sound"
+    },
+    "gui.soundEditor.undo": {
+        "message": "Restaurer",
+        "description": "Title of the button to undo"
+    },
+    "gui.soundEditor.redo": {
+        "message": "Refaire",
+        "description": "Title of the button to redo"
+    },
+    "gui.soundEditor.faster": {
+        "message": "Plus vite",
+        "description": "Title of the button to apply the faster effect"
+    },
+    "gui.soundEditor.slower": {
+        "message": "Plus doucement",
+        "description": "Title of the button to apply the slower effect"
+    },
+    "gui.soundEditor.echo": {
+        "message": "Echo",
+        "description": "Title of the button to apply the echo effect"
+    },
+    "gui.soundEditor.robot": {
+        "message": "Robot",
+        "description": "Title of the button to apply the robot effect"
+    },
+    "gui.soundEditor.louder": {
+        "message": "Plus fort",
+        "description": "Title of the button to apply the louder effect"
+    },
+    "gui.soundEditor.softer": {
+        "message": "Plus doux",
+        "description": "Title of the button to apply thr.softer effect"
+    },
+    "gui.soundEditor.reverse": {
+        "message": "Inverser",
+        "description": "Title of the button to apply the reverse effect"
+    },
+    "gui.SpriteInfo.spritePlaceholder": {
+        "message": "Nom",
+        "description": "Placeholder text for sprite name"
+    },
+    "gui.SpriteInfo.sprite": {
+        "message": "Sprite",
+        "description": "Sprite info label"
+    },
+    "gui.SpriteInfo.show": {
+        "message": "Afficher",
+        "description": "Sprite info show label"
+    },
+    "gui.SpriteInfo.size": {
+        "message": "Taille",
+        "description": "Sprite info size label"
+    },
+    "gui.spriteSelectorItem.contextMenuDuplicate": {
+        "message": "dupliquer",
+        "description": "Menu item to duplicate in the right click menu"
+    },
+    "gui.spriteSelectorItem.contextMenuDelete": {
+        "message": "supprimer",
+        "description": "Menu item to delete in the right click menu"
+    },
+    "gui.spriteSelectorItem.contextMenuExport": {
+        "message": "exporter",
+        "description": "Menu item to export the selected item"
+    },
+    "gui.spriteSelector.addSpriteFromLibrary": {
+        "message": "Choisis un sprite",
+        "description": "Button to add a sprite in the target pane from library"
+    },
+    "gui.spriteSelector.addSpriteFromPaint": {
+        "message": "Peindre",
+        "description": "Button to add a sprite in the target pane from paint"
+    },
+    "gui.spriteSelector.addSpriteFromSurprise": {
+        "message": "Surprise",
+        "description": "Button to add a random sprite in the target pane"
+    },
+    "gui.spriteSelector.addSpriteFromFile": {
+        "message": "Importer un sprite",
+        "description": "Button to add a sprite in the target pane from file"
+    },
+    "gui.stageHeader.stageSizeLarge": {
+        "message": "Passer à la grande scène",
+        "description": "Button to change stage size to large"
+    },
+    "gui.stageHeader.stageSizeSmall": {
+        "message": "Passer à la petite scène",
+        "description": "Button to change stage size to small"
+    },
+    "gui.stageHeader.stageSizeFull": {
+        "message": "Entrer en mode plein-écran",
+        "description": "Button to change stage size to full screen"
+    },
+    "gui.stageHeader.stageSizeUnFull": {
+        "message": "Sortir du mode plein-écran",
+        "description": "Button to get out of full screen mode"
+    },
+    "gui.stageHeader.fullscreenControl": {
+        "message": "Contrôle du plein écran",
+        "description": "Button to enter/exit full screen mode"
+    },
+    "gui.spriteSelector.addBackdropFromLibrary": {
+        "message": "Choisis un arrière-plan",
+        "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.stageSelector.addBackdropFromPaint": {
+        "message": "Peindre",
+        "description": "Button to add a stage in the target pane from paint"
+    },
+    "gui.stageSelector.addBackdropFromSurprise": {
+        "message": "Surprise",
+        "description": "Button to add a random stage in the target pane"
+    },
+    "gui.stageSelector.addBackdropFromFile": {
+        "message": "Importer un arrière-plan",
+        "description": "Button to add a stage in the target pane from file"
+    },
+    "gui.stageSelector.stage": {
+        "message": "Scène",
+        "description": "Label for the stage in the stage selector"
+    },
+    "gui.stageSelector.backdrops": {
+        "message": "Arrière-plans",
+        "description": "Label for the backdrops in the stage selector"
+    },
+    "gui.turboMode.active": {
+        "message": "Mode Turbo",
+        "description": "Label indicating turbo mode is active"
+    },
+    "gui.webglModal.label": {
+        "message": "Votre navigateur ne supporte pas WebGL",
+        "description": "WebGL missing title"
+    },
+    "gui.webglModal.description": {
+        "message": "Malheureusement il semble que votre navigateur ou votre ordinateur {webGlLink}. Cette technologie est nécessaire pour faire fonctionner Scratch 3.0.",
+        "description": "WebGL missing message"
+    },
+    "gui.webglModal.webgllink": {
+        "message": "ne supporte pas WebGL",
+        "description": "link part of your browser does not support WebGL message"
+    },
+    "gui.webglModal.back": {
+        "message": "Retour",
+        "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
         "message": "Pour en savoir plus, allez sur {previewFaqLink}.",
         "description": "Scratch 3.0 FAQ description"
     },
-    "gui.prompt.cancel": {
-        "message": "Annuler",
-        "description": "Button in prompt for cancelling the dialog"
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "FAQ",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.costumeLibrary.chooseABackdrop": {
+        "message": "Choisis un arrière-plan",
+        "description": "Heading for the backdrop library"
+    },
+    "gui.costumeLibrary.chooseACostume": {
+        "message": "Choisis un costume",
+        "description": "Heading for the costume library"
+    },
+    "gui.costumeTab.addBackdropFromLibrary": {
+        "message": "Choisis un arrière-plan",
+        "description": "Button to add a backdrop in the editor tab"
+    },
+    "gui.costumeTab.addCostumeFromLibrary": {
+        "message": "Choisis un costume",
+        "description": "Button to add a costume in the editor tab"
+    },
+    "gui.costumeTab.addBlankCostume": {
+        "message": "Peindre",
+        "description": "Button to add a blank costume in the editor tab"
+    },
+    "gui.costumeTab.addSurpriseCostume": {
+        "message": "Surprise",
+        "description": "Button to add a surprise costume in the editor tab"
+    },
+    "gui.costumeTab.addFileBackdrop": {
+        "message": "Importer un arrière-plan",
+        "description": "Button to add a backdrop by uploading a file in the editor tab"
+    },
+    "gui.costumeTab.addFileCostume": {
+        "message": "Importer un Costume",
+        "description": "Button to add a costume by uploading a file in the editor tab"
+    },
+    "gui.costumeTab.addCameraCostume": {
+        "message": "Webcam",
+        "description": "Button to use the camera to create a costume costume in the editor tab"
+    },
+    "gui.extensionLibrary.chooseAnExtension": {
+        "message": "Choisis une extension",
+        "description": "Heading for the extension library"
+    },
+    "gui.extensionLibrary.extensionUrl": {
+        "message": "Entrer l'URL de l'extension",
+        "description": "Prompt for unoffical extension url"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "Le fichier du projet qui a été sélectionné n'a pas réussi à être chargé.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.recordingStep.alertMsg": {
+        "message": "Impossible de démarrer l'enregistrement",
+        "description": "Alert for recording error"
+    },
+    "gui.soundLibrary.chooseASound": {
+        "message": "Choisis un son",
+        "description": "Heading for the sound library"
+    },
+    "gui.soundTab.fileUploadSound": {
+        "message": "Importer un son",
+        "description": "Button to upload sound from file in the editor tab"
+    },
+    "gui.soundTab.surpriseSound": {
+        "message": "Surprise",
+        "description": "Button to get a random sound in the editor tab"
+    },
+    "gui.soundTab.recordSound": {
+        "message": "Enregistrer",
+        "description": "Button to record a sound in the editor tab"
+    },
+    "gui.soundTab.addSoundFromLibrary": {
+        "message": "Choisis un son",
+        "description": "Button to add a sound in the editor tab"
+    },
+    "gui.spriteLibrary.chooseASprite": {
+        "message": "Choisis un sprite",
+        "description": "Heading for the sprite library"
+    },
+    "gui.tipsLibrary.tutorials": {
+        "message": "Choisis un tutoriel",
+        "description": "Heading for the help/tutorials library"
+    },
+    "gui.howtos.intro-move-sayhello-hat.name": {
+        "message": "Prise en main",
+        "description": "Name for the 'Getting Started' how-to"
+    },
+    "gui.howtos.intro-move.step_stepMove": {
+        "message": "Ajoute un bloc de mouvement",
+        "description": "Step name for 'Add a move block' step"
+    },
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
+        "message": "Clique sur le drapeau vert pour commencer",
+        "description": "Step name for 'Add A Say Block' step"
+    },
+    "gui.howtos.animate-a-name.name": {
+        "message": "Anime un nom",
+        "description": "Name for the 'Animate a Name' how-to"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
+        "message": "Choisis un sprite en forme de lettre",
+        "description": "Step name for 'Pick a Letter Sprite' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
+        "message": "Jouer un son quand cliqué",
+        "description": "Step name for 'Play a Sound When Clicked' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
+        "message": "Choisis un autre sprite en forme de lettre",
+        "description": "Step name for 'Pick Another Letter Sprite"
+    },
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
+        "message": "Change la couleur",
+        "description": "Step name for 'Change color' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimateSpin": {
+        "message": "Choisis un costume avec une autre lettre & Fais la tourner",
+        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimateGrow": {
+        "message": "Choisis un costume avec une autre lettre & Fais la grandir",
+        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
+    },
+    "gui.howtos.make-music.name": {
+        "message": "Fais de la musique",
+        "description": "Name for the 'Make Music' how-to"
+    },
+    "gui.howtos.Make-Music.step_PickInstrument": {
+        "message": "Choisis un sprite instrument",
+        "description": "Step name for 'Pick an Instrument Sprite' step"
+    },
+    "gui.howtos.Make-Music.step_PlaySoundClick": {
+        "message": "Jouer un son quand cliqué",
+        "description": "Step name for 'Play Sound When Clicked' step"
+    },
+    "gui.howtos.Make-Music.step_MakeSong": {
+        "message": "Créé un son",
+        "description": "Step name for 'Create a Song' step"
+    },
+    "gui.howtos.make-music.step_MakeBeat": {
+        "message": "Choisis un tambour & fait un battement",
+        "description": "Step name for 'Choose a Drum & Make a Beat' step"
+    },
+    "gui.howtos.make-music.step_MakeBeatBox": {
+        "message": "Choisis le sprite micro & la boite à sons surprise",
+        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
+    },
+    "gui.howtos.make-a-game.name": {
+        "message": "Créé un jeu de Clicker",
+        "description": "Name for the 'Make a Clicker Game' how-to"
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Choisis un sprite",
+        "description": "Step name for 'Pick A Sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Jouer un son quand cliqué",
+        "description": "Play Sound When Clicked' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Créé une variable score",
+        "description": "Step name for 'Create Score Variable' step"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "Quand cliqué augmente le score",
+        "description": "Step name for 'When Clicked Increase Score' step"
+    },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Aller à une position aléatoire",
+        "description": "Step name for 'Go to a random position' step"
+    },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Change la couleur",
+        "description": "Step name for 'Change Color' step"
+    },
+    "gui.howtos.make-music.step_ResetScore": {
+        "message": "Remets le score à zéro",
+        "description": "Step name for 'Reset Score' step"
+    },
+    "gui.howtos.make-a-chase-game.name": {
+        "message": "Fais un jeu de Poursuite",
+        "description": "Name for the 'Make a Chase Game' how-to"
+    },
+    "gui.howtos.Chase-Game.step_BG": {
+        "message": "Ajoute un arrière-plan",
+        "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.chase-game.step_AddOcto": {
+        "message": "Ajoute un sprite",
+        "description": "Step name for 'Add a Sprite' step"
+    },
+    "gui.howtos.make-music.step_LeftRight": {
+        "message": "Bouge vers la droite & vers la gauche avec les flèches du clavier",
+        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
+    },
+    "gui.howtos.Chase-Game.step_UpDown": {
+        "message": "Bouge vers le haut & vers le bas avec les flèches du clavier",
+        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
+    },
+    "gui.howtos.Chase-Game.step_AddStar": {
+        "message": "Ajoute un autre sprite",
+        "description": "Step name for 'Add Another Sprite' step"
+    },
+    "gui.howtos.Chase-Game.step_MoveRandom": {
+        "message": "Move Randomly",
+        "description": "Step name for 'Move Randomly' step"
+    },
+    "gui.howtos.Chase-Game.step_WhenTouch": {
+        "message": "Dans le sprite pieuvre, Quand touché, Jouer un son",
+        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
+    },
+    "gui.howtos.Chase-Game.step_ScoreVariable": {
+        "message": "Créé une variable score",
+        "description": "Step name for 'Create Score Variable"
+    },
+    "gui.howtos.Chase-Game.ScoreWhenTouch": {
+        "message": "Dans le sprite pieuvre, Quand touché, Ajouter un score",
+        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
+    },
+    "gui.howtos.add-sprite.name": {
+        "message": "Ajoute un sprite",
+        "description": "Name for the 'Add a Sprite' how-to"
+    },
+    "gui.howtos.add-sprite.step_addSprite": {
+        "message": "Ajoute un sprite",
+        "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.add-a-backdrop.name": {
+        "message": "Ajoute un arrière-plan",
+        "description": "Name for the 'Add a Backdrop' how-to"
+    },
+    "gui.howtos.change-size.name": {
+        "message": "Change la taille",
+        "description": "Name for the 'Change Size' how-to"
+    },
+    "gui.howtos.glide-around.name": {
+        "message": "Glisser tout autour",
+        "description": "Name for the 'Glide Around' how-to"
+    },
+    "gui.howtos.record-a-sound.name": {
+        "message": "Enregistrer un son",
+        "description": "Record A Sound' how-to"
+    },
+    "gui.howtos.spin-video.name": {
+        "message": "Fais-le tourner",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
+    "gui.howtos.hide-and-show.name": {
+        "message": "Se cacher & se montrer",
+        "description": "Name for the 'Hide and Show' how-to"
+    },
+    "gui.howtos.switch-costume.name": {
+        "message": "Anime un sprite",
+        "description": "Name for the 'Animate a Sprite' how-to"
+    },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Utilise les flèches directionnelles",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
+    "gui.howtos.add-effects.name": {
+        "message": "Ajouter des effets",
+        "description": "Name for the 'Add Effects' how-to"
+    },
+    "gui.extension.music.name": {
+        "message": "Musique",
+        "description": "Name for the 'Music' extension"
+    },
+    "gui.extension.music.description": {
+        "message": "Jouer des instruments et du tambour.",
+        "description": "Description for the 'Music' extension"
+    },
+    "gui.extension.pen.name": {
+        "message": "Stylo",
+        "description": "Name for the 'Pen' extension"
+    },
+    "gui.extension.pen.description": {
+        "message": "Dessiner avec vos sprites.",
+        "description": "Description for the 'Pen' extension"
+    },
+    "gui.extension.videosensing.name": {
+        "message": "Détection vidéo",
+        "description": "Name for the 'Video Sensing' extension"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Capter du mouvement avec la caméra.",
+        "description": "Description for the 'Video Sensing' extension"
+    },
+    "gui.extension.googletranslate.name": {
+        "message": "Google Traduction",
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    },
+    "gui.extension.googletranslate.description": {
+        "message": "Traduire du texte dans différentes langues.",
+        "description": "Description for the 'Google Translate' extension"
+    },
+    "gui.extension.microbit.description": {
+        "message": "Connecter vos projets avec le monde.",
+        "description": "Description for the 'micro:bit' extension"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Connexion",
+        "description": "Message to help people connect to their micro:bit."
+    },
+    "gui.extension.ev3.description": {
+        "message": "Construire des robots interactifs et plus.",
+        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Connexion. Vérifiez que le pin sur votre EV3 est mis sur 1234.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
+    },
+    "gui.extension.wedo2.description": {
+        "message": "Construire avec des moteurs et des capteurs.",
+        "description": "Description for the 'LEGO WeDo 2.0' extension"
+    },
+    "gui.extension.wedo2.connectingMessage": {
+        "message": "Connexion",
+        "description": "Message to help people connect to their WeDo."
+    },
+    "gui.backpack.header": {
+        "message": "Sac à dos",
+        "description": "Button to open the backpack"
     }
 }

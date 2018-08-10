@@ -1,982 +1,1010 @@
 {
-    "gui.soundEditor.echo": {
-        "message": "Visszhang",
-        "description": "Title of the button to apply the echo effect"
+    "gui.backpack.errorBackpack": {
+        "message": "Hiba a hátizsák betöltésekor",
+        "description": "Error backpack message"
     },
-    "gui.previewInfo.notnow": {
-        "message": "Most Nem",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
+    "gui.backpack.loadingBackpack": {
+        "message": "Betöltés...",
+        "description": "Loading backpack message"
     },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "A kiválasztott szereplőé",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
+    "gui.backpack.emptyBackpack": {
+        "message": "A hátizsák üres",
+        "description": "Empty backpack message"
     },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Szín változtatása",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Válassz jelmezt",
-        "description": "Heading for the costume library"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Keresés",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Vissza",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.extension.music.name": {
-        "message": "Zene",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Meglepetés",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Dolgozunk rajta {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "csúszka",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.cards.remove": {
-        "message": "Bezár",
-        "description": "Title for button to close how-to card"
+    "gui.unsupportedBrowser.label": {
+        "message": "Böngésző nem támogatott",
+        "description": ""
     },
     "gui.unsupportedBrowser.description": {
         "message": "Nagyon sajnáljuk, de a  Scratch 3.0 nem támogatja az Internet Explorert, Vivaldit, Operát vagy a Silket. Javasoljuk egy újabb böngésző használatát, mint a Google Chrome, Mozilla Firefox, vagy Microsoft Edge.",
         "description": "Unsupported browser description"
     },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "GYIK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Meglepetés",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Kezdéshez kattints a zöld zászlóra",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Vegyél egy másik betű manót és forgasd meg. ",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.soundEditor.save": {
-        "message": "Mentés",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Hoppá, úgy tűnik valami elromlott",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Teljes képernyős üzemmód elhagyása",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.menuBar.file": {
-        "message": "Fájl",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Váltás széles szakaszra",
-        "description": "Button to change stage size to large"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animálj egy Sprite-ot",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Háttérkép feltöltése",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Hang lejátszása klikkeléskor",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Hang feltöltés",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Állj",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.loader.message2": {
-        "message": "Szereplő betöltése ...",
-        "description": "One of the loading messages"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "A teljes képernyő szabályozása",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Mégis",
-        "description": "Title of the button to redo"
-    },
-    "gui.importInfo.title": {
-        "message": "Nézz meg egy Scratch 2.0 Projektet",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Válassz egy kiterjesztést ",
-        "description": "Heading for the extension library"
-    },
-    "gui.webglModal.description": {
-        "message": "A böngésződ vagy a számítógéped sajnálatos módon {webGILink}. Ahhoz, hogy a Scratch 3.0 működjön, ez a teknológia kell.",
-        "description": "WebGL missing message"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Nézd meg a 2.0 projektet",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Lágyabban",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.menuBar.undo": {
-        "message": "Visszavonás",
-        "description": "Menu bar item for undoing"
-    },
-    "gui.extension.googletranslate.description": {
-        "message": "Fordítsd le a szöveget sok nyelvre",
-        "description": "Description for the 'Google Translate' extension"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Játéktér",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.webglModal.back": {
+    "gui.unsupportedBrowser.back": {
         "message": "Vissza",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ne aggódj, rajta vagyunk {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Válassz hangot",
-        "description": "Heading for the sound library"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Ó ne, ennek a programnak a linkje vagy az id-je nem éppen megfelelő.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Adj hozzá egy inputot",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Mentés másolatként",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Fordító",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
-    },
-    "gui.importModal.viewproject": {
-        "message": "Nézet",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Gyakorlatok",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.new": {
-        "message": "Új",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Címke hozzáadás",
-        "description": "Label for button to add a label"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Levágás",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.extension.music.description": {
-        "message": "Játssz a hangszereken és a dobokon.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.cards.see-more": {
-        "message": "Még több",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Bemenet hozzáadása",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Próbáld újra",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Kapcsolj kicsire",
-        "description": "Button to change stage size to small"
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Mentés most",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Csatlakozás…",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Szereplők",
-        "description": "Sprite info label"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Mentsd le a számítógépedre",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Válassz jelmezt",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Válassz hangot",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.connection.scanning.lookingfordevices": {
-        "message": "Készülékek keresése",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
-        "description": "Import project message"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Kamera Engedélyezése",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.loader.message5": {
-        "message": "Vadászó macskák...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "A gobo-k megnövelése",
-        "description": "One of the loading messages"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Elcsúszás körbe",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Válaszd ki az eszközödet a fenti listából ",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Töltsd be a számítógépedről",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Válassz Dobot és Alkoss egy Ritmust",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "nyelv választó",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Győződjön meg róla, hogy a Scratch Link telepítve van és fut",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Háttér választás",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Amikor kattintva lett, növeld a pontszámot",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Lassabban",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.turboMode.active": {
-        "message": "Turbó mód",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.loader.message4": {
-        "message": "bővítmények betöltése",
-        "description": "One of the loading messages"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Nem tudja elkezdeni a rögzítést",
-        "description": "Alert for recording error"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Írd be a bővítmény URL-jét",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Mégsem",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Adj hozzá egy mozgás blokkot. ",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animálj egy nevet",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.modal.back": {
-        "message": "Vissza",
-        "description": "Back button in modal"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "GYIK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Végy egy másik betű ábrát és növeld meg",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.recordModal.title": {
-        "message": "Hang felvétele",
-        "description": "Recording modal title"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Hátterek",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Hang lejátszása klikkeléskor",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Az engedélyedre van szükségünk a kamerád használatához",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "szám vagy szöveg",
-        "description": "Description of the number/text input type"
+        "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
         "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
         "description": "Invitation to try 3.0 preview"
     },
-    "gui.extension.microbit.description": {
-        "message": "Kapcsold össze a programjaidat a világgal.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.soundEditor.play": {
-        "message": "Lejátszás",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Újra készítsd el a fotót",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Szín módosítása",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.connection.scanning.noDevicesFound": {
-        "message": "Nem található eszköz",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Másik figura hozzáadása",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.connection.search": {
-        "message": "Frissítés",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.menuBar.share": {
-        "message": "Megosztás",
-        "description": "Label for project share button"
-    },
-    "gui.crashMessage.description": {
-        "message": "Sajnáljuk, de úgy tűnik, a Scratch összeomlott. Ez a vírus aurtomatikusan jelentésre került a Scratch csapatnak. Az újabb próbálkozáshoz frissítse az oldalt. ",
-        "description": "Unhandled error description"
-    },
-    "gui.webglModal.label": {
-        "message": "A webböngésző nem támogatja a WebGL-t",
-        "description": "WebGL missing title"
-    },
-    "gui.importInfo.previewfaqlinktext": {
+    "gui.unsupportedBrowser.previewfaqlinktext": {
         "message": "GYIK",
         "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Végy egy betű figurát",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.importInfo.goback": {
-        "message": "Menj vissza",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "nagy kijelző",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Még több minden kipróbálható!",
-        "description": "Title card with more things to try"
-    },
-    "gui.connection.connect": {
-        "message": "Csatlakozás",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Válassz Útmutatót",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Súgó",
-        "description": "Button to view help content"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Súgó",
-        "description": "Button to view help content"
-    },
-    "gui.extension.pen.description": {
-        "message": "Rajzolj a sprite-jaiddal",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "A kiválasztott projektfájlt nem sikerült betölteni.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Ellenőrizze, hogy a Bluetooth engedélyezve van-e",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "A nyilakkal mozgasd fel és le",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Válassz szereplőt",
-        "description": "Heading for the sprite library"
-    },
-    "gui.loader.headline": {
-        "message": "Projekt betöltés",
-        "description": "Main loading message"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Lejátszás",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "logikai",
-        "description": "Description of the boolean input type"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Kapcsolódás",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Háttér választás",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.menuBar.redo": {
-        "message": "Mégis",
-        "description": "Menu bar item for redoing"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Festés",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "A Scratch következő generációján dolgozunk. Izgattotak vagyunk hogy kipróbálhasd!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Minden szereplőé",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Hiba a hátizsák betöltésekor",
-        "description": "Error backpack message"
-    },
-    "gui.crashMessage.title": {
-        "message": "Hoppá! Valami elromlott...",
-        "description": "Unhandled error title"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "duplikálás",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.connection.disconnect": {
-        "message": "Szétkapcsolás",
-        "description": "Button to disconnect the device"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Csatlakozás. Győződjön meg róla, hogy az EV3-ban lévő tű 1234-re van állítva.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Dal készítése",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Eredmény lenullázása",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Építsd motorral és érzékelőkkel.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.controls.go": {
-        "message": "Indulás",
-        "description": "Green flag button title"
-    },
-    "gui.extension.pen.name": {
-        "message": "Toll",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "törlés",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Szerzezz zenét",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Meglepetés",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Adj hozzá egy hátteret",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Hang lejátszása klikkeléskor",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Lépj be a teljes képernyős üzemmódba",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Hátterek",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Elrejtés és Megmutatás",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Gyakorlatok",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Méret",
-        "description": "Sprite info size label"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Hangosabban",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Hangfelvétel készítése",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Meglepetés",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Menj a Szerkesztésbe",
-        "description": "Button to return to the editor"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Méret módosítása",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Hamarosan",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Megjelenít",
-        "description": "Sprite info show label"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "A Polip figurához érintkezéskor adjon hozzá eredményt",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Hozz létre eredmény változókat",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.extension.ev3.description": {
-        "message": "Építs interaktív robotokat és sok mást.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.loader.message8": {
-        "message": "Emojik előkészítése ...",
-        "description": "One of the loading messages"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Gyorsabb",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Hangok",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Felvétel",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Irány",
-        "description": "Sprite info direction label"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Háttér választás",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Töltés...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.gui.variablePrompt": {
-        "message": "További lehetőségek",
-        "description": "Dropdown message for variable/list options"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Jelmezek",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.addExtension": {
-        "message": "Bővítmény hozzáadása",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Effektek hozzáadása",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Adj visszajelzést",
-        "description": "Label for feedback form modal button"
     },
     "gui.cameraModal.cameraModalTitle": {
         "message": "Készíts egy fényképet ",
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
-    "gui.connection.unavailable.tryagainbutton": {
+    "gui.cameraModal.loadingCameraMessage": {
+        "message": "Kamera betölt...",
+        "description": "Notification to the user that the camera is loading"
+    },
+    "gui.cameraModal.permissionRequest": {
+        "message": "Az engedélyedre van szükségünk a kamerád használatához",
+        "description": "Notification to the user that the app needs camera access"
+    },
+    "gui.cameraModal.retakePhoto": {
+        "message": "Újra készítsd el a fotót",
+        "description": "A button that allows the user to take the picture again, replacing the old one"
+    },
+    "gui.cameraModal.save": {
+        "message": "Mentés",
+        "description": "A button that allows the user to save the photo they took as a costume"
+    },
+    "gui.cameraModal.takePhoto": {
+        "message": "Készíts egy Képet",
+        "description": "A button to take a photo"
+    },
+    "gui.cameraModal.loadingCaption": {
+        "message": "Töltés...",
+        "description": "A caption for a disabled button while the video from the camera is still loading"
+    },
+    "gui.cameraModal.enableCameraCaption": {
+        "message": "Kamera Engedélyezése",
+        "description": "A caption for a disabled button prompting the user to enable camera access"
+    },
+    "gui.cards.all-tutorials": {
+        "message": "Gyakorlatok",
+        "description": "Title for button to return to tutorials library"
+    },
+    "gui.cards.remove": {
+        "message": "Bezár",
+        "description": "Title for button to close how-to card"
+    },
+    "gui.cards.more-things-to-try": {
+        "message": "Még több minden kipróbálható!",
+        "description": "Title card with more things to try"
+    },
+    "gui.cards.see-more": {
+        "message": "Még több",
+        "description": "Title for button to see more in how-to library"
+    },
+    "gui.comingSoon.message1": {
+        "message": "Ne aggódj, rajta vagyunk {emoji}",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.comingSoon.message2": {
+        "message": "Hamarosan ...",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.comingSoon.message3": {
+        "message": "Dolgozunk rajta {emoji}",
+        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
+    },
+    "gui.connection.auto-scanning.noDevicesFound": {
+        "message": "Nem található eszköz",
+        "description": "Text shown when no devices could be found"
+    },
+    "gui.connection.auto-scanning.prescan": {
+        "message": "Have your device nearby, then begin searching.",
+        "description": "Prompt for beginning the search"
+    },
+    "gui.connection.auto-scanning.pressbutton": {
+        "message": "Press the button on your device.",
+        "description": "Prompt for pushing the button on the device"
+    },
+    "gui.connection.auto-scanning.start-search": {
+        "message": "Start Searching",
+        "description": "Button in prompt for starting a search"
+    },
+    "gui.connection.connecting-searchbutton": {
+        "message": "Searching...",
+        "description": "Label indicating that search is in progress"
+    },
+    "gui.connection.auto-scanning.try-again": {
         "message": "Próbáld újra",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Visszafelé",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "WebGL nem támogatott",
-        "description": "link part of your browser does not support WebGL message"
+        "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
         "message": "Csatlakoztatva",
         "description": "Message indicating that a device was connected"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Közösség megtekintése",
-        "description": "Label for see community button"
+    "gui.connection.disconnect": {
+        "message": "Szétkapcsolás",
+        "description": "Button to disconnect the device"
     },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Adj hozzá szereplőt",
-        "description": "Step name for 'Add a Sprite' step"
+    "gui.connection.go-to-editor": {
+        "message": "Menj a Szerkesztésbe",
+        "description": "Button to return to the editor"
     },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "A polip manó, a hang lejátszás megérintésekor",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
+    "gui.connection.connecting-cancelbutton": {
+        "message": "Csatlakozás…",
+        "description": "Label indicating that connection is in progress"
     },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Kamera betölt...",
-        "description": "Notification to the user that the camera is loading"
+    "gui.connection.device-name-label": {
+        "message": "Eszköz név",
+        "description": "Label for field showing the device name"
     },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Jelmez feltöltése",
-        "description": "Button to add a costume by uploading a file in the editor tab"
+    "gui.connection.connect": {
+        "message": "Csatlakozás",
+        "description": "Button to start connecting to a specific device"
     },
-    "gui.playbackStep.stopMsg": {
+    "gui.connection.error.errorMessage": {
+        "message": "Hoppá, úgy tűnik valami elromlott",
+        "description": "The device connection process has encountered an error."
+    },
+    "gui.connection.error.tryagainbutton": {
+        "message": "Próbáld újra",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
+    "gui.connection.error.helpbutton": {
+        "message": "Súgó",
+        "description": "Button to view help content"
+    },
+    "gui.connection.scanning.lookingfordevices": {
+        "message": "Készülékek keresése",
+        "description": "Text shown while scanning for devices"
+    },
+    "gui.connection.scanning.noDevicesFound": {
+        "message": "Nem található eszköz",
+        "description": "Text shown when no devices could be found"
+    },
+    "gui.connection.scanning.instructions": {
+        "message": "Válaszd ki az eszközödet a fenti listából ",
+        "description": "Prompt for choosing a device to connect to"
+    },
+    "gui.connection.search": {
+        "message": "Frissítés",
+        "description": "Button in prompt for starting a search"
+    },
+    "gui.connection.unavailable.installscratchlink": {
+        "message": "Győződjön meg róla, hogy a Scratch Link telepítve van és fut",
+        "description": "Message for getting Scratch Link installed"
+    },
+    "gui.connection.unavailable.enablebluetooth": {
+        "message": "Ellenőrizze, hogy a Bluetooth engedélyezve van-e",
+        "description": "Message for making sure Bluetooth is enabled"
+    },
+    "gui.connection.unavailable.tryagainbutton": {
+        "message": "Próbáld újra",
+        "description": "Button to initiate trying the device connection again after an error"
+    },
+    "gui.connection.unavailable.helpbutton": {
+        "message": "Súgó",
+        "description": "Button to view help content"
+    },
+    "gui.controls.go": {
+        "message": "Indulás",
+        "description": "Green flag button title"
+    },
+    "gui.controls.stop": {
         "message": "Állj",
-        "description": "Stop/Play button in recording playback"
+        "description": "Stop button title"
     },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Válassz egy hangszer figurát",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
+    "gui.crashMessage.title": {
+        "message": "Hoppá! Valami elromlott...",
+        "description": "Unhandled error title"
     },
-    "gui.soundEditor.undo": {
-        "message": "Visszavonás",
-        "description": "Title of the button to undo"
+    "gui.crashMessage.description": {
+        "message": "Sajnáljuk, de úgy tűnik, a Scratch összeomlott. Ez a vírus aurtomatikusan jelentésre került a Scratch csapatnak. Az újabb próbálkozáshoz frissítse az oldalt. ",
+        "description": "Unhandled error description"
+    },
+    "gui.customProcedures.myblockModalTitle": {
+        "message": "Készíts blokkot",
+        "description": "Title for the modal where you create a custom block."
+    },
+    "gui.customProcedures.addAnInputNumberText": {
+        "message": "Adj hozzá egy inputot",
+        "description": "Label for button to add a number/text input"
+    },
+    "gui.customProcedures.numberTextType": {
+        "message": "szám vagy szöveg",
+        "description": "Description of the number/text input type"
+    },
+    "gui.customProcedures.addAnInputBoolean": {
+        "message": "Bemenet hozzáadása",
+        "description": "Label for button to add a boolean input"
+    },
+    "gui.customProcedures.booleanType": {
+        "message": "logikai",
+        "description": "Description of the boolean input type"
+    },
+    "gui.customProcedures.addALabel": {
+        "message": "Címke hozzáadás",
+        "description": "Label for button to add a label"
+    },
+    "gui.customProcedures.runWithoutScreenRefresh": {
+        "message": "Futtatás képernyőfrissítés nélkül",
+        "description": "Label for checkbox to run without screen refresh"
+    },
+    "gui.customProcedures.cancel": {
+        "message": "Mégsem",
+        "description": "Label for button to cancel custom procedure edits"
+    },
+    "gui.customProcedures.ok": {
+        "message": "OK",
+        "description": "Label for button to save new custom procedure"
+    },
+    "gui.SpriteInfo.direction": {
+        "message": "Irány",
+        "description": "Sprite info direction label"
+    },
+    "gui.directionPicker.rotationStyles.allAround": {
+        "message": "Mindenfelé",
+        "description": "Button to change to the all around rotation style"
+    },
+    "gui.directionPicker.rotationStyles.leftRight": {
+        "message": "Balra-jobbra",
+        "description": "Button to change to the left-right rotation style"
+    },
+    "gui.directionPicker.rotationStyles.dontRotate": {
+        "message": "Nem foroghat",
+        "description": "Button to change to the dont rotate rotation style"
+    },
+    "gui.gui.addExtension": {
+        "message": "Bővítmény hozzáadása",
+        "description": "Button to add an extension in the target pane"
     },
     "gui.gui.codeTab": {
         "message": "Kód",
         "description": "Button to get to the code panel"
     },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ez a változó minden sprite-nak elérhető lesz",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    "gui.gui.backdropsTab": {
+        "message": "Hátterek",
+        "description": "Button to get to the backdrops panel"
     },
-    "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
-        "description": "Name for the 'Make It Spin' how-to"
+    "gui.gui.costumesTab": {
+        "message": "Jelmezek",
+        "description": "Button to get to the costumes panel"
     },
-    "gui.modal.help": {
-        "message": "Súgó",
-        "description": "Help button in modal"
+    "gui.gui.soundsTab": {
+        "message": "Hangok",
+        "description": "Button to get to the sounds panel"
     },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
-        "description": "Button to add a sprite in the target pane from file"
+    "gui.importInfo.title": {
+        "message": "Nézz meg egy Scratch 2.0 Projektet",
+        "description": "Scratch 2.0 import modal label - for accessibility"
     },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Adj hozzá szereplőt",
-        "description": "Step name for 'Add a new sprite' step"
+    "gui.importInfo.betamessage": {
+        "message": "Írj be egy linket az egyik megosztott új projektekhez. Ebben a 3.0 Béta végzett változtatások nem lesznek elmentve.",
+        "description": "Import project message"
     },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Hozz létre eredmény változókat",
-        "description": "Step name for 'Create Score Variable' step"
+    "gui.importInfo.message": {
+        "message": "Írj be egy linket az egyik megosztott új projektedhez. Ebben a 3.0 előnézetben végzett változtatások nem lesznek elmentve. ",
+        "description": "Import project message"
     },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exportálás",
-        "description": "Menu item to export the selected item"
+    "gui.importInfo.invalidFormatError": {
+        "message": "Ó ne, ennek a programnak a linkje vagy az id-je nem éppen megfelelő.",
+        "description": "Invalid project link or id message"
+    },
+    "gui.importModal.viewproject": {
+        "message": "Nézet",
+        "description": "Label for button to load a scratch 2.0 project"
+    },
+    "gui.importInfo.goback": {
+        "message": "Menj vissza",
+        "description": "Label for button to back out of importing a project"
+    },
+    "gui.importInfo.previewfaq": {
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "description": "Invitation to try 3.0 preview"
+    },
+    "gui.importInfo.previewfaqlinktext": {
+        "message": "GYIK",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.extensionLibrary.comingSoon": {
+        "message": "Hamarosan",
+        "description": "Label for extensions that are not yet implemented"
+    },
+    "gui.library.filterPlaceholder": {
+        "message": "Keresés",
+        "description": "Placeholder text for library search field"
     },
     "gui.loader.message1": {
         "message": "Blokkok létrhozása ...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message2": {
+        "message": "Szereplő betöltése ...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message3": {
+        "message": "Hangok betöltése ...",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message4": {
+        "message": "bővítmények betöltése",
+        "description": "One of the loading messages"
+    },
+    "gui.loader.message5": {
+        "message": "Vadászó macskák...",
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
         "message": "A nanók átvitele ...",
         "description": "One of the loading messages"
     },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Mozdulj jobbra és balra a nyilakkal",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.loader.message3": {
-        "message": "Hangok betöltése ...",
+    "gui.loader.message7": {
+        "message": "A gobo-k megnövelése",
         "description": "One of the loading messages"
     },
-    "gui.backpack.header": {
-        "message": "Tálca",
-        "description": "Button to open the backpack"
+    "gui.loader.message8": {
+        "message": "Emojik előkészítése ...",
+        "description": "One of the loading messages"
     },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
-        "description": "Button to change to the left-right rotation style"
+    "gui.loader.headline": {
+        "message": "Projekt betöltés",
+        "description": "Main loading message"
     },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Név",
-        "description": "Placeholder text for sprite name"
+    "gui.menuBar.LanguageSelector": {
+        "message": "nyelv választó",
+        "description": "accessibility text for the language selection menu"
     },
-    "gui.backpack.emptyBackpack": {
-        "message": "A hátizsák üres",
-        "description": "Empty backpack message"
+    "gui.menuBar.tutorialsLibrary": {
+        "message": "Gyakorlatok",
+        "description": "accessibility text for the tutorials button"
     },
-    "gui.previewModal.tryit": {
-        "message": "Próbáld ki! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
+    "gui.menuBar.file": {
+        "message": "Fájl",
+        "description": "Text for file dropdown menu"
     },
-    "gui.backpack.loadingBackpack": {
-        "message": "Betöltés...",
-        "description": "Loading backpack message"
+    "gui.menuBar.new": {
+        "message": "Új",
+        "description": "Menu bar item for creating a new project"
     },
-    "gui.extension.videosensing.name": {
-        "message": "Videóérzékelés",
-        "description": "Name for the 'Video Sensing' extension"
+    "gui.menuBar.saveNow": {
+        "message": "Mentés most",
+        "description": "Menu bar item for saving now"
     },
-    "gui.monitor.contextMenu.default": {
-        "message": "normál kijelző",
-        "description": "Menu item to switch to the default monitor"
+    "gui.menuBar.saveAsCopy": {
+        "message": "Mentés másolatként",
+        "description": "Menu bar item for saving as a copy"
     },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Végy egy másik betű figurát",
-        "description": "Step name for 'Pick Another Letter Sprite"
+    "gui.menuBar.uploadFromComputer": {
+        "message": "Töltsd be a számítógépedről",
+        "description": "Menu bar item for uploading a project from your computer"
     },
-    "gui.controls.stop": {
-        "message": "Állj",
-        "description": "Stop button title"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Készíts blokkot",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Válassz egy szereplőt",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Készíts egy Klikkelős játékot",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Festés",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Mozgatás Véletlenszerűen",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Futtatás képernyőfrissítés nélkül",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Háttérkép feltöltése",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Átállás véletlen pozícióba",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Adj hozzá szereplőt",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Válassz szereplőt",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Hang",
-        "description": "Label for the name of the sound"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Érzékeld a mozgást a kamerával.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Böngésző nem támogatott",
-        "description": ""
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Betöltés...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Adj hozzá háttérszínt",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Hamarosan ...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Rajz",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Készíts egy Képet",
-        "description": "A button to take a photo"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Mentés",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Készíts egy kereső játékot",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Újrafelvétel",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.importInfo.message": {
-        "message": "Írj be egy linket az egyik megosztott új projektedhez. Ebben a 3.0 előnézetben végzett változtatások nem lesznek elmentve. ",
-        "description": "Import project message"
+    "gui.menuBar.downloadToComputer": {
+        "message": "Mentsd le a számítógépedre",
+        "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
         "message": "Szerkesztés",
         "description": "Text for edit dropdown menu"
     },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Kezdő lépések",
-        "description": "Name for the 'Getting Started' how-to"
+    "gui.menuBar.restoreSprite": {
+        "message": "Restore Sprite",
+        "description": "Menu bar item for restoring the last deleted sprite."
     },
-    "gui.cameraModal.save": {
-        "message": "Mentés",
-        "description": "A button that allows the user to save the photo they took as a costume"
+    "gui.menuBar.restore": {
+        "message": "Restore",
+        "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Válaszd ki a Mikrofon figurát és a meglepetés beatboxot",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
+    "gui.menuBar.turboModeOff": {
+        "message": "Kapcsolja ki a turbó módot",
+        "description": "Menu bar item for turning off turbo mode"
+    },
+    "gui.menuBar.turboModeOn": {
+        "message": "Kapcsolja be a turbó módot",
+        "description": "Menu bar item for turning on turbo mode"
+    },
+    "gui.menuBar.share": {
+        "message": "Megosztás",
+        "description": "Label for project share button"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Közösség megtekintése",
+        "description": "Label for see community button"
+    },
+    "gui.menuBar.giveFeedback": {
+        "message": "Adj visszajelzést",
+        "description": "Label for feedback form modal button"
+    },
+    "gui.modal.help": {
+        "message": "Súgó",
+        "description": "Help button in modal"
+    },
+    "gui.modal.back": {
+        "message": "Vissza",
+        "description": "Back button in modal"
+    },
+    "gui.monitor.contextMenu.default": {
+        "message": "normál kijelző",
+        "description": "Menu item to switch to the default monitor"
+    },
+    "gui.monitor.contextMenu.large": {
+        "message": "nagy kijelző",
+        "description": "Menu item to switch to the large monitor"
+    },
+    "gui.monitor.contextMenu.slider": {
+        "message": "csúszka",
+        "description": "Menu item to switch to the slider monitor"
     },
     "gui.previewInfo.label": {
         "message": "Próbáld ki a Scratch 3.0-át",
         "description": "Scratch 3.0 modal label - for accessibility"
     },
-    "gui.connection.device-name-label": {
-        "message": "Eszköz név",
-        "description": "Label for field showing the device name"
+    "gui.previewInfo.welcome": {
+        "message": "Üdvözöljük a Scratch 3.0 Béta",
+        "description": "Header for Preview Info Modal"
     },
-    "gui.webglModal.previewfaqlinktext": {
+    "gui.previewInfo.betawelcome": {
+        "message": "Üdvözöljük a Scratch 3.0 Béta",
+        "description": "Header for Beta Info Modal"
+    },
+    "gui.previewInfo.invitation": {
+        "message": "A Scratch következő generációján dolgozunk. Izgattotak vagyunk hogy kipróbálhasd!",
+        "description": "Invitation to try 3.0 Beta"
+    },
+    "gui.previewInfo.notnow": {
+        "message": "Most Nem",
+        "description": "Label for button to back out of trying Scratch 3.0 Beta"
+    },
+    "gui.previewModal.tryit": {
+        "message": "Próbáld ki! {caticon}",
+        "description": "Label for button to try Scratch 3.0 Beta"
+    },
+    "gui.previewModal.viewproject": {
+        "message": "Nézd meg a 2.0 projektet",
+        "description": "Label for button to import a 2.0 project"
+    },
+    "gui.previewInfo.previewfaq": {
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "description": "Invitation to try 3.0 Beta"
+    },
+    "gui.previewInfo.previewfaqlinktext": {
         "message": "GYIK",
         "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.gui.variableScopeOptionAllSprites": {
+        "message": "Minden szereplőé",
+        "description": "Option message when creating a variable for making it available to all sprites"
+    },
+    "gui.gui.variableScopeOptionSpriteOnly": {
+        "message": "A kiválasztott szereplőé",
+        "description": "Option message when creating a varaible for making it only available to the current sprite"
+    },
+    "gui.gui.variablePrompt": {
+        "message": "További lehetőségek",
+        "description": "Dropdown message for variable/list options"
+    },
+    "gui.gui.variablePromptAllSpritesMessage": {
+        "message": "Ez a változó minden sprite-nak elérhető lesz",
+        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
+    },
+    "gui.prompt.cancel": {
+        "message": "Mégsem",
+        "description": "Button in prompt for cancelling the dialog"
+    },
+    "gui.prompt.ok": {
+        "message": "OK",
+        "description": "Button in prompt for confirming the dialog"
+    },
+    "gui.playbackStep.stopMsg": {
+        "message": "Állj",
+        "description": "Stop/Play button in recording playback"
+    },
+    "gui.playbackStep.playMsg": {
+        "message": "Lejátszás",
+        "description": "Stop/Play button in recording playback"
+    },
+    "gui.playbackStep.loadingMsg": {
+        "message": "Betöltés...",
+        "description": "Loading/Save button in recording playback"
+    },
+    "gui.playbackStep.saveMsg": {
+        "message": "Mentés",
+        "description": "Loading/Save button in recording playback"
+    },
+    "gui.playbackStep.reRecordMsg": {
+        "message": "Újrafelvétel",
+        "description": "Button to re-record sound in recording playback"
+    },
+    "gui.recordModal.title": {
+        "message": "Hang felvétele",
+        "description": "Recording modal title"
+    },
+    "gui.soundEditor.sound": {
+        "message": "Hang",
+        "description": "Label for the name of the sound"
+    },
+    "gui.soundEditor.play": {
+        "message": "Lejátszás",
+        "description": "Title of the button to start playing the sound"
+    },
+    "gui.soundEditor.stop": {
+        "message": "Állj",
+        "description": "Title of the button to stop the sound"
+    },
+    "gui.soundEditor.trim": {
+        "message": "Levágás",
+        "description": "Title of the button to start trimminging the sound"
+    },
+    "gui.soundEditor.save": {
+        "message": "Mentés",
+        "description": "Title of the button to save trimmed sound"
+    },
+    "gui.soundEditor.undo": {
+        "message": "Visszavonás",
+        "description": "Title of the button to undo"
+    },
+    "gui.soundEditor.redo": {
+        "message": "Mégis",
+        "description": "Title of the button to redo"
+    },
+    "gui.soundEditor.faster": {
+        "message": "Gyorsabb",
+        "description": "Title of the button to apply the faster effect"
+    },
+    "gui.soundEditor.slower": {
+        "message": "Lassabban",
+        "description": "Title of the button to apply the slower effect"
+    },
+    "gui.soundEditor.echo": {
+        "message": "Visszhang",
+        "description": "Title of the button to apply the echo effect"
+    },
+    "gui.soundEditor.robot": {
+        "message": "Robot",
+        "description": "Title of the button to apply the robot effect"
+    },
+    "gui.soundEditor.louder": {
+        "message": "Hangosabban",
+        "description": "Title of the button to apply the louder effect"
+    },
+    "gui.soundEditor.softer": {
+        "message": "Lágyabban",
+        "description": "Title of the button to apply thr.softer effect"
+    },
+    "gui.soundEditor.reverse": {
+        "message": "Visszafelé",
+        "description": "Title of the button to apply the reverse effect"
+    },
+    "gui.SpriteInfo.spritePlaceholder": {
+        "message": "Név",
+        "description": "Placeholder text for sprite name"
+    },
+    "gui.SpriteInfo.sprite": {
+        "message": "Szereplők",
+        "description": "Sprite info label"
+    },
+    "gui.SpriteInfo.show": {
+        "message": "Megjelenít",
+        "description": "Sprite info show label"
+    },
+    "gui.SpriteInfo.size": {
+        "message": "Méret",
+        "description": "Sprite info size label"
+    },
+    "gui.spriteSelectorItem.contextMenuDuplicate": {
+        "message": "duplikálás",
+        "description": "Menu item to duplicate in the right click menu"
+    },
+    "gui.spriteSelectorItem.contextMenuDelete": {
+        "message": "törlés",
+        "description": "Menu item to delete in the right click menu"
+    },
+    "gui.spriteSelectorItem.contextMenuExport": {
+        "message": "exportálás",
+        "description": "Menu item to export the selected item"
+    },
+    "gui.spriteSelector.addSpriteFromLibrary": {
+        "message": "Válassz szereplőt",
+        "description": "Button to add a sprite in the target pane from library"
+    },
+    "gui.spriteSelector.addSpriteFromPaint": {
+        "message": "Festés",
+        "description": "Button to add a sprite in the target pane from paint"
+    },
+    "gui.spriteSelector.addSpriteFromSurprise": {
+        "message": "Meglepetés",
+        "description": "Button to add a random sprite in the target pane"
+    },
+    "gui.spriteSelector.addSpriteFromFile": {
+        "message": "Szereplő feltöltés",
+        "description": "Button to add a sprite in the target pane from file"
+    },
+    "gui.stageHeader.stageSizeLarge": {
+        "message": "Váltás széles szakaszra",
+        "description": "Button to change stage size to large"
+    },
+    "gui.stageHeader.stageSizeSmall": {
+        "message": "Kapcsolj kicsire",
+        "description": "Button to change stage size to small"
+    },
+    "gui.stageHeader.stageSizeFull": {
+        "message": "Lépj be a teljes képernyős üzemmódba",
+        "description": "Button to change stage size to full screen"
+    },
+    "gui.stageHeader.stageSizeUnFull": {
+        "message": "Teljes képernyős üzemmód elhagyása",
+        "description": "Button to get out of full screen mode"
+    },
+    "gui.stageHeader.fullscreenControl": {
+        "message": "A teljes képernyő szabályozása",
+        "description": "Button to enter/exit full screen mode"
+    },
+    "gui.spriteSelector.addBackdropFromLibrary": {
+        "message": "Háttér választás",
+        "description": "Button to add a stage in the target pane from library"
+    },
+    "gui.stageSelector.addBackdropFromPaint": {
+        "message": "Rajz",
+        "description": "Button to add a stage in the target pane from paint"
+    },
+    "gui.stageSelector.addBackdropFromSurprise": {
+        "message": "Meglepetés",
+        "description": "Button to add a random stage in the target pane"
+    },
+    "gui.stageSelector.addBackdropFromFile": {
+        "message": "Háttérkép feltöltése",
+        "description": "Button to add a stage in the target pane from file"
+    },
+    "gui.stageSelector.stage": {
+        "message": "Játéktér",
+        "description": "Label for the stage in the stage selector"
+    },
+    "gui.stageSelector.backdrops": {
+        "message": "Hátterek",
+        "description": "Label for the backdrops in the stage selector"
+    },
+    "gui.turboMode.active": {
+        "message": "Turbó mód",
+        "description": "Label indicating turbo mode is active"
+    },
+    "gui.webglModal.label": {
+        "message": "A webböngésző nem támogatja a WebGL-t",
+        "description": "WebGL missing title"
+    },
+    "gui.webglModal.description": {
+        "message": "A böngésződ vagy a számítógéped sajnálatos módon {webGILink}. Ahhoz, hogy a Scratch 3.0 működjön, ez a teknológia kell.",
+        "description": "WebGL missing message"
+    },
+    "gui.webglModal.webgllink": {
+        "message": "WebGL nem támogatott",
+        "description": "link part of your browser does not support WebGL message"
+    },
+    "gui.webglModal.back": {
+        "message": "Vissza",
+        "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
         "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
         "description": "Scratch 3.0 FAQ description"
     },
-    "gui.prompt.cancel": {
-        "message": "Mégsem",
-        "description": "Button in prompt for cancelling the dialog"
+    "gui.webglModal.previewfaqlinktext": {
+        "message": "GYIK",
+        "description": "link to Scratch 3.0 FAQ page"
+    },
+    "gui.costumeLibrary.chooseABackdrop": {
+        "message": "Háttér választás",
+        "description": "Heading for the backdrop library"
+    },
+    "gui.costumeLibrary.chooseACostume": {
+        "message": "Válassz jelmezt",
+        "description": "Heading for the costume library"
+    },
+    "gui.costumeTab.addBackdropFromLibrary": {
+        "message": "Háttér választás",
+        "description": "Button to add a backdrop in the editor tab"
+    },
+    "gui.costumeTab.addCostumeFromLibrary": {
+        "message": "Válassz jelmezt",
+        "description": "Button to add a costume in the editor tab"
+    },
+    "gui.costumeTab.addBlankCostume": {
+        "message": "Festés",
+        "description": "Button to add a blank costume in the editor tab"
+    },
+    "gui.costumeTab.addSurpriseCostume": {
+        "message": "Meglepetés",
+        "description": "Button to add a surprise costume in the editor tab"
+    },
+    "gui.costumeTab.addFileBackdrop": {
+        "message": "Háttérkép feltöltése",
+        "description": "Button to add a backdrop by uploading a file in the editor tab"
+    },
+    "gui.costumeTab.addFileCostume": {
+        "message": "Jelmez feltöltése",
+        "description": "Button to add a costume by uploading a file in the editor tab"
+    },
+    "gui.costumeTab.addCameraCostume": {
+        "message": "Kamera",
+        "description": "Button to use the camera to create a costume costume in the editor tab"
+    },
+    "gui.extensionLibrary.chooseAnExtension": {
+        "message": "Válassz egy kiterjesztést ",
+        "description": "Heading for the extension library"
+    },
+    "gui.extensionLibrary.extensionUrl": {
+        "message": "Írd be a bővítmény URL-jét",
+        "description": "Prompt for unoffical extension url"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "A kiválasztott projektfájlt nem sikerült betölteni.",
+        "description": "An error that displays when a local project file fails to load."
+    },
+    "gui.recordingStep.alertMsg": {
+        "message": "Nem tudja elkezdeni a rögzítést",
+        "description": "Alert for recording error"
+    },
+    "gui.soundLibrary.chooseASound": {
+        "message": "Válassz hangot",
+        "description": "Heading for the sound library"
+    },
+    "gui.soundTab.fileUploadSound": {
+        "message": "Hang feltöltés",
+        "description": "Button to upload sound from file in the editor tab"
+    },
+    "gui.soundTab.surpriseSound": {
+        "message": "Meglepetés",
+        "description": "Button to get a random sound in the editor tab"
+    },
+    "gui.soundTab.recordSound": {
+        "message": "Felvétel",
+        "description": "Button to record a sound in the editor tab"
+    },
+    "gui.soundTab.addSoundFromLibrary": {
+        "message": "Válassz hangot",
+        "description": "Button to add a sound in the editor tab"
+    },
+    "gui.spriteLibrary.chooseASprite": {
+        "message": "Válassz szereplőt",
+        "description": "Heading for the sprite library"
+    },
+    "gui.tipsLibrary.tutorials": {
+        "message": "Válassz Útmutatót",
+        "description": "Heading for the help/tutorials library"
+    },
+    "gui.howtos.intro-move-sayhello-hat.name": {
+        "message": "Kezdő lépések",
+        "description": "Name for the 'Getting Started' how-to"
+    },
+    "gui.howtos.intro-move.step_stepMove": {
+        "message": "Adj hozzá egy mozgás blokkot. ",
+        "description": "Step name for 'Add a move block' step"
+    },
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
+        "message": "Kezdéshez kattints a zöld zászlóra",
+        "description": "Step name for 'Add A Say Block' step"
+    },
+    "gui.howtos.animate-a-name.name": {
+        "message": "Animálj egy nevet",
+        "description": "Name for the 'Animate a Name' how-to"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
+        "message": "Végy egy betű figurát",
+        "description": "Step name for 'Pick a Letter Sprite' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
+        "message": "Hang lejátszása klikkeléskor",
+        "description": "Step name for 'Play a Sound When Clicked' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
+        "message": "Végy egy másik betű figurát",
+        "description": "Step name for 'Pick Another Letter Sprite"
+    },
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
+        "message": "Szín változtatása",
+        "description": "Step name for 'Change color' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimateSpin": {
+        "message": "Vegyél egy másik betű manót és forgasd meg. ",
+        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
+    },
+    "gui.howtos.animate-a-name.step_AnimateGrow": {
+        "message": "Végy egy másik betű ábrát és növeld meg",
+        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
+    },
+    "gui.howtos.make-music.name": {
+        "message": "Szerzezz zenét",
+        "description": "Name for the 'Make Music' how-to"
+    },
+    "gui.howtos.Make-Music.step_PickInstrument": {
+        "message": "Válassz egy hangszer figurát",
+        "description": "Step name for 'Pick an Instrument Sprite' step"
+    },
+    "gui.howtos.Make-Music.step_PlaySoundClick": {
+        "message": "Hang lejátszása klikkeléskor",
+        "description": "Step name for 'Play Sound When Clicked' step"
+    },
+    "gui.howtos.Make-Music.step_MakeSong": {
+        "message": "Dal készítése",
+        "description": "Step name for 'Create a Song' step"
+    },
+    "gui.howtos.make-music.step_MakeBeat": {
+        "message": "Válassz Dobot és Alkoss egy Ritmust",
+        "description": "Step name for 'Choose a Drum & Make a Beat' step"
+    },
+    "gui.howtos.make-music.step_MakeBeatBox": {
+        "message": "Válaszd ki a Mikrofon figurát és a meglepetés beatboxot",
+        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
+    },
+    "gui.howtos.make-a-game.name": {
+        "message": "Készíts egy Klikkelős játékot",
+        "description": "Name for the 'Make a Clicker Game' how-to"
+    },
+    "gui.howtos.Make-A-Game.step_GamePickSprite": {
+        "message": "Válassz egy szereplőt",
+        "description": "Step name for 'Pick A Sprite' step"
+    },
+    "gui.howtos.make-a-game.step_GamePlaySound": {
+        "message": "Hang lejátszása klikkeléskor",
+        "description": "Play Sound When Clicked' step"
+    },
+    "gui.howtos.make-a-game.step_GameAddScore": {
+        "message": "Hozz létre eredmény változókat",
+        "description": "Step name for 'Create Score Variable' step"
+    },
+    "gui.howtos.make-a-game.step_GameChangeScore": {
+        "message": "Amikor kattintva lett, növeld a pontszámot",
+        "description": "Step name for 'When Clicked Increase Score' step"
+    },
+    "gui.howtos.make-a-game.step_Random": {
+        "message": "Átállás véletlen pozícióba",
+        "description": "Step name for 'Go to a random position' step"
+    },
+    "gui.howtos.make-music.step_GameChangeColor": {
+        "message": "Szín módosítása",
+        "description": "Step name for 'Change Color' step"
+    },
+    "gui.howtos.make-music.step_ResetScore": {
+        "message": "Eredmény lenullázása",
+        "description": "Step name for 'Reset Score' step"
+    },
+    "gui.howtos.make-a-chase-game.name": {
+        "message": "Készíts egy kereső játékot",
+        "description": "Name for the 'Make a Chase Game' how-to"
+    },
+    "gui.howtos.Chase-Game.step_BG": {
+        "message": "Adj hozzá egy hátteret",
+        "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.chase-game.step_AddOcto": {
+        "message": "Adj hozzá szereplőt",
+        "description": "Step name for 'Add a Sprite' step"
+    },
+    "gui.howtos.make-music.step_LeftRight": {
+        "message": "Mozdulj jobbra és balra a nyilakkal",
+        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
+    },
+    "gui.howtos.Chase-Game.step_UpDown": {
+        "message": "A nyilakkal mozgasd fel és le",
+        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
+    },
+    "gui.howtos.Chase-Game.step_AddStar": {
+        "message": "Másik figura hozzáadása",
+        "description": "Step name for 'Add Another Sprite' step"
+    },
+    "gui.howtos.Chase-Game.step_MoveRandom": {
+        "message": "Mozgatás Véletlenszerűen",
+        "description": "Step name for 'Move Randomly' step"
+    },
+    "gui.howtos.Chase-Game.step_WhenTouch": {
+        "message": "A polip manó, a hang lejátszás megérintésekor",
+        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
+    },
+    "gui.howtos.Chase-Game.step_ScoreVariable": {
+        "message": "Hozz létre eredmény változókat",
+        "description": "Step name for 'Create Score Variable"
+    },
+    "gui.howtos.Chase-Game.ScoreWhenTouch": {
+        "message": "A Polip figurához érintkezéskor adjon hozzá eredményt",
+        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
+    },
+    "gui.howtos.add-sprite.name": {
+        "message": "Adj hozzá szereplőt",
+        "description": "Name for the 'Add a Sprite' how-to"
+    },
+    "gui.howtos.add-sprite.step_addSprite": {
+        "message": "Adj hozzá szereplőt",
+        "description": "Step name for 'Add a new sprite' step"
+    },
+    "gui.howtos.add-a-backdrop.name": {
+        "message": "Adj hozzá háttérszínt",
+        "description": "Name for the 'Add a Backdrop' how-to"
+    },
+    "gui.howtos.change-size.name": {
+        "message": "Méret módosítása",
+        "description": "Name for the 'Change Size' how-to"
+    },
+    "gui.howtos.glide-around.name": {
+        "message": "Elcsúszás körbe",
+        "description": "Name for the 'Glide Around' how-to"
+    },
+    "gui.howtos.record-a-sound.name": {
+        "message": "Hangfelvétel készítése",
+        "description": "Record A Sound' how-to"
+    },
+    "gui.howtos.spin-video.name": {
+        "message": "Hagyja forogjon",
+        "description": "Name for the 'Make It Spin' how-to"
+    },
+    "gui.howtos.hide-and-show.name": {
+        "message": "Elrejtés és Megmutatás",
+        "description": "Name for the 'Hide and Show' how-to"
+    },
+    "gui.howtos.switch-costume.name": {
+        "message": "Animálj egy Sprite-ot",
+        "description": "Name for the 'Animate a Sprite' how-to"
+    },
+    "gui.howtos.move-around-with-arrow-keys.name": {
+        "message": "Használd a kurzorbillentyűket",
+        "description": "Name for the 'Use Arrow Keys' how-to"
+    },
+    "gui.howtos.add-effects.name": {
+        "message": "Effektek hozzáadása",
+        "description": "Name for the 'Add Effects' how-to"
+    },
+    "gui.extension.music.name": {
+        "message": "Zene",
+        "description": "Name for the 'Music' extension"
+    },
+    "gui.extension.music.description": {
+        "message": "Játssz a hangszereken és a dobokon.",
+        "description": "Description for the 'Music' extension"
+    },
+    "gui.extension.pen.name": {
+        "message": "Toll",
+        "description": "Name for the 'Pen' extension"
+    },
+    "gui.extension.pen.description": {
+        "message": "Rajzolj a sprite-jaiddal",
+        "description": "Description for the 'Pen' extension"
+    },
+    "gui.extension.videosensing.name": {
+        "message": "Videóérzékelés",
+        "description": "Name for the 'Video Sensing' extension"
+    },
+    "gui.extension.videosensing.description": {
+        "message": "Érzékeld a mozgást a kamerával.",
+        "description": "Description for the 'Video Sensing' extension"
+    },
+    "gui.extension.googletranslate.name": {
+        "message": "Google Fordító",
+        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    },
+    "gui.extension.googletranslate.description": {
+        "message": "Fordítsd le a szöveget sok nyelvre",
+        "description": "Description for the 'Google Translate' extension"
+    },
+    "gui.extension.microbit.description": {
+        "message": "Kapcsold össze a programjaidat a világgal.",
+        "description": "Description for the 'micro:bit' extension"
+    },
+    "gui.extension.microbit.connectingMessage": {
+        "message": "Kapcsolódás",
+        "description": "Message to help people connect to their micro:bit."
+    },
+    "gui.extension.ev3.description": {
+        "message": "Építs interaktív robotokat és sok mást.",
+        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
+    },
+    "gui.extension.ev3.connectingMessage": {
+        "message": "Csatlakozás. Győződjön meg róla, hogy az EV3-ban lévő tű 1234-re van állítva.",
+        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
+    },
+    "gui.extension.wedo2.description": {
+        "message": "Építsd motorral és érzékelőkkel.",
+        "description": "Description for the 'LEGO WeDo 2.0' extension"
+    },
+    "gui.extension.wedo2.connectingMessage": {
+        "message": "Kapcsolódás",
+        "description": "Message to help people connect to their WeDo."
+    },
+    "gui.backpack.header": {
+        "message": "Tálca",
+        "description": "Button to open the backpack"
     }
 }

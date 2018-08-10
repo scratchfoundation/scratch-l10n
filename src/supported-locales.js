@@ -23,6 +23,7 @@ const locales = {
     'gl': {name: 'Galego'},
     'ko': {name: '한국어'},
     'he': {name: 'עִבְרִית'},
+    'is': {name: 'Íslenska'},
     'it': {name: 'Italiano'},
     'mi': {name: 'Maori'},
     'nl': {name: 'Nederlands'},
