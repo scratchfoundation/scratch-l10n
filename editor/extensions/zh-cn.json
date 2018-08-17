@@ -1,4 +1,140 @@
 {
+    "ev3.beepNote": {
+        "message": "鸣笛[NOTE][TIME]秒",
+        "description": "play some note on EV3 for some time"
+    },
+    "ev3.buttonPressed": {
+        "message": "按下按钮[PORT]？",
+        "description": "is a button on some port pressed?"
+    },
+    "ev3.getBrightness": {
+        "message": "亮度",
+        "description": "gets measured brightness"
+    },
+    "ev3.getDistance": {
+        "message": "距离",
+        "description": "gets measured distance"
+    },
+    "ev3.getMotorPosition": {
+        "message": "马达[PORT]的位置",
+        "description": "get the measured degrees a motor has turned"
+    },
+    "ev3.motorSetPower": {
+        "message": "电机[PORT]功率设为[POWER]%",
+        "description": "set a motor's power to some value"
+    },
+    "ev3.motorTurnClockwise": {
+        "message": "电机[PORT]正转[TIME]秒",
+        "description": "turn a motor clockwise for some time"
+    },
+    "ev3.motorTurnCounterClockwise": {
+        "message": "电机[PORT]反转[TIME]秒",
+        "description": "turn a motor counter-clockwise for some time"
+    },
+    "ev3.whenBrightnessLessThan": {
+        "message": "当亮度 < [DISTANCE]",
+        "description": "when value measured by brightness sensor is less than some value"
+    },
+    "ev3.whenButtonPressed": {
+        "message": "当按下按钮[PORT]",
+        "description": "when a button connected to a port is pressed"
+    },
+    "ev3.whenDistanceLessThan": {
+        "message": "当距离 < [DISTANCE]",
+        "description": "when the value measured by the distance sensor is less than some value"
+    },
+    "microbit.buttonsMenu.any": {
+        "message": "任意",
+        "description": "label for \"any\" element in button picker for micro:bit extension"
+    },
+    "microbit.clearDisplay": {
+        "message": "清空屏幕",
+        "description": "display nothing on the micro:bit display"
+    },
+    "microbit.defaultTextToDisplay": {
+        "message": "你好！",
+        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
+    },
+    "microbit.displaySymbol": {
+        "message": "显示[MATRIX]",
+        "description": "display a pattern on the micro:bit display"
+    },
+    "microbit.displayText": {
+        "message": "显示[TEXT]",
+        "description": "display text on the micro:bit display"
+    },
+    "microbit.gesturesMenu.jumped": {
+        "message": "抛起",
+        "description": "label for jumped gesture in gesture picker for micro:bit extension"
+    },
+    "microbit.gesturesMenu.moved": {
+        "message": "移动",
+        "description": "label for moved gesture in gesture picker for micro:bit extension"
+    },
+    "microbit.gesturesMenu.shaken": {
+        "message": "晃动",
+        "description": "label for shaken gesture in gesture picker for micro:bit extension"
+    },
+    "microbit.isButtonPressed": {
+        "message": "按下[BTN]按钮？",
+        "description": "is the selected button on the micro:bit pressed?"
+    },
+    "microbit.isTilted": {
+        "message": "向[DIRECTION]倾斜？",
+        "description": "is the micro:bit is tilted in a direction?"
+    },
+    "microbit.pinStateMenu.off": {
+        "message": "低电平",
+        "description": "label for off element in pin state picker for micro:bit extension"
+    },
+    "microbit.pinStateMenu.on": {
+        "message": "高电平",
+        "description": "label for on element in pin state picker for micro:bit extension"
+    },
+    "microbit.tiltAngle": {
+        "message": "向[DIRECTION]倾角",
+        "description": "how much the micro:bit is tilted in a direction"
+    },
+    "microbit.tiltDirectionMenu.any": {
+        "message": "任意",
+        "description": "label for any direction element in tilt direction picker for micro:bit extension"
+    },
+    "microbit.tiltDirectionMenu.back": {
+        "message": "后",
+        "description": "label for back element in tilt direction picker for micro:bit extension"
+    },
+    "microbit.tiltDirectionMenu.front": {
+        "message": "前",
+        "description": "label for front element in tilt direction picker for micro:bit extension"
+    },
+    "microbit.tiltDirectionMenu.left": {
+        "message": "左",
+        "description": "label for left element in tilt direction picker for micro:bit extension"
+    },
+    "microbit.tiltDirectionMenu.right": {
+        "message": "右",
+        "description": "label for right element in tilt direction picker for micro:bit extension"
+    },
+    "microbit.whenButtonPressed": {
+        "message": "当按下[BTN]按钮",
+        "description": "when the selected button on the micro:bit is pressed"
+    },
+    "microbit.whenGesture": {
+        "message": "当被[GESTURE]",
+        "description": "when the selected gesture is detected by the micro:bit"
+    },
+    "microbit.whenPinConnected": {
+        "message": "当引脚[PIN]接地",
+        "description": "when the pin detects a connection to Earth/Ground"
+    },
+    "microbit.whenTilted": {
+        "message": "当向[DIRECTION]倾斜",
+        "description": "when the micro:bit is tilted in a direction"
+    },
+    "music.categoryName": {
+        "message": "音乐",
+        "description": "Label for the Music extension category"
+    },
     "music.changeTempo": {
         "message": "将演奏速度增加[TEMPO]",
         "description": "change tempo (speed) for notes, drums, and rests played"
@@ -375,8 +511,52 @@
         "message": "当视频运动 > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
     },
-    "music.categoryName": {
-        "message": "音乐",
-        "description": "Label for the Music extension category"
+    "wedo2.getDistance": {
+        "message": "距离",
+        "description": "the value returned by the distance sensor"
+    },
+    "wedo2.getTiltAngle": {
+        "message": "tilt angle [TILT_DIRECTION]",
+        "description": "the angle returned by the tilt sensor"
+    },
+    "wedo2.isTilted": {
+        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "description": "whether the tilt sensor is tilted"
+    },
+    "wedo2.motorOff": {
+        "message": "turn [MOTOR_ID] off",
+        "description": "turn a motor off"
+    },
+    "wedo2.motorOn": {
+        "message": "turn [MOTOR_ID] on",
+        "description": "turn a motor on indefinitely"
+    },
+    "wedo2.motorOnFor": {
+        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "description": "turn a motor on for some time"
+    },
+    "wedo2.playNoteFor": {
+        "message": "play note [NOTE] for [DURATION] seconds",
+        "description": "play a certain note for some time"
+    },
+    "wedo2.setLightHue": {
+        "message": "set light color to [HUE]",
+        "description": "set the LED color"
+    },
+    "wedo2.setMotorDirection": {
+        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "description": "set the motor's turn direction"
+    },
+    "wedo2.startMotorPower": {
+        "message": "set [MOTOR_ID] power to [POWER]",
+        "description": "set the motor's power and turn it on"
+    },
+    "wedo2.whenDistance": {
+        "message": "when distance [OP] [REFERENCE]",
+        "description": "check for when distance is < or > than reference"
+    },
+    "wedo2.whenTilted": {
+        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "description": "check when tilted in a certain direction"
     }
 }

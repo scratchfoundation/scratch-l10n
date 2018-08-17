@@ -25,6 +25,8 @@ const locales = {
     'he': {name: 'עִבְרִית'},
     'is': {name: 'Íslenska'},
     'it': {name: 'Italiano'},
+    'lv': {name: 'Latviešu'},
+    'lt': {name: 'Lietuvių'},
     'mi': {name: 'Maori'},
     'nl': {name: 'Nederlands'},
     'ja': {name: '日本語'},
