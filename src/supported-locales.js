@@ -72,6 +72,15 @@ const customLocales = {
     }
 };
 
+// list of RTL locales supported, and a function to check whether a locale is RTL
+const rtlLocales = [
+    'he'
+];
+
+const isRtl = locale => {
+    return rtlLocales.indexOf(locale) !== -1;
+};
+
 const wwwLocales = {
     'ab': {name: 'Аҧсшәа'},
     'ar': {name: 'العربية'},
@@ -148,4 +157,4 @@ const wwwLocales = {
     'zh-tw': {name: '繁體中文'}
 };
 
-export {locales as default, customLocales, wwwLocales};
+export {locales as default, customLocales, rtlLocales, isRtl, wwwLocales};

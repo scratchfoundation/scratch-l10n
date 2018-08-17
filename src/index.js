@@ -16,6 +16,7 @@ import gl from 'react-intl/locale-data/gl';
 import he from 'react-intl/locale-data/he';
 import hu from 'react-intl/locale-data/hu';
 import id from 'react-intl/locale-data/id';
+import is from 'react-intl/locale-data/is';
 import it from 'react-intl/locale-data/it';
 import ja from 'react-intl/locale-data/ja';
 import ko from 'react-intl/locale-data/ko';
@@ -35,7 +36,7 @@ import uk from 'react-intl/locale-data/uk';
 import vi from 'react-intl/locale-data/vi';
 import zh from 'react-intl/locale-data/zh';
 
-import locales, {customLocales} from './supported-locales.js';
+import locales, {customLocales, isRtl} from './supported-locales.js';
 /*
 locales = {
     'ab': {name: 'Аҧсшәа'},
@@ -85,6 +86,7 @@ let localeData = [].concat(
     he,
     hu,
     id,
+    is,
     it,
     ja,
     ko,
@@ -111,5 +113,6 @@ for (const lang in customLocales) {
 
 export {
     locales as default,
+    isRtl,
     localeData // data expected for initializing ReactIntl.addLocaleData
 };
