@@ -4,7 +4,7 @@
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "onko nappia portissa [PORT] painettu?",
+        "message": "onko nappia painettu portissa [PORT]?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -36,7 +36,7 @@
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "kun nappia [PORT] painetaan",
+        "message": "kun nappia painetaan portissa [PORT]",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
@@ -64,15 +64,15 @@
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "hyppääminen",
+        "message": "hypätty",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "siirtäminen",
+        "message": "siirretty",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "ravistaminen",
+        "message": "ravistettu",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
@@ -120,7 +120,7 @@
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "kun eleenä on [GESTURE]",
+        "message": "kun on [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
@@ -144,7 +144,7 @@
         "description": "Sound of bass drum as used in a standard drum kit"
     },
     "music.drumBongo": {
-        "message": "(13) Bongorumpu",
+        "message": "(13) Bongo-rumpu",
         "description": "Sound of a bongo being struck"
     },
     "music.drumCabasa": {
@@ -160,7 +160,7 @@
         "description": "Sound of a drum stick hitting a hi-hat while closed"
     },
     "music.drumConga": {
-        "message": "(14) Congarumpu",
+        "message": "(14) Conga-rumpu",
         "description": "Sound of a conga being struck"
     },
     "music.drumCowbell": {
@@ -172,7 +172,7 @@
         "description": "Sound of a drum stick hitting a crash cymbal"
     },
     "music.drumCuica": {
-        "message": "(18) Cuica",
+        "message": "(18) Cuica-rumpu",
         "description": "Sound of a cuica being played"
     },
     "music.drumGuiro": {
@@ -188,7 +188,7 @@
         "description": "Sound of a drum stick hitting a hi-hat while open"
     },
     "music.drumSideStick": {
-        "message": "(3) Side Stick",
+        "message": "(3) Sivuisku rumpuun",
         "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
     },
     "music.drumSnare": {
@@ -208,7 +208,7 @@
         "description": "Sound of a Vibraslap being played"
     },
     "music.drumWoodBlock": {
-        "message": "(10) Wood block",
+        "message": "(10) Puupalikka",
         "description": "Sound of a wood block being struck"
     },
     "music.getTempo": {
@@ -280,11 +280,11 @@
         "description": "Sound of a steel drum being struck"
     },
     "music.instrumentSynthLead": {
-        "message": "(20) Synth Lead",
+        "message": "(20) Syntetisaattori (lead-efekti)",
         "description": "Sound of a \"lead\" synthesizer being played"
     },
     "music.instrumentSynthPad": {
-        "message": "(21) Synth Pad",
+        "message": "(21) Syntetisaattori (pad-efekti)",
         "description": "Sound of a \"pad\" synthesizer being played"
     },
     "music.instrumentTrombone": {
@@ -396,7 +396,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Google-puhe",
+        "message": "Google Puhe",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -500,7 +500,7 @@
         "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
     },
     "videoSensing.videoOn": {
-        "message": "kohteen [SUBJECT] videon [ATTRIBUTE]",
+        "message": "[SUBJECT]n [ATTRIBUTE] videolla",
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
     "videoSensing.videoToggle": {
@@ -516,47 +516,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "kallista suuntaan [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "onko kallistettu suuntaan [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "laita [MOTOR_ID] pois päältä",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "laita [MOTOR_ID] päälle",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "laita [MOTOR_ID] päälle [DURATION] sekunniksi",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "soita nuottia [NOTE] [DURATION] sekuntia",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "aseta valon väriksi [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "aseta moottorin [MOTOR_ID] suunnaksi [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "aseta moottorin [MOTOR_ID] teho arvoon [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "kun etäisyys [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "kun kallistettu suuntaan [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

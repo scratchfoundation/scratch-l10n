@@ -52,7 +52,7 @@
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "こんにちは!",
+        "message": "Hello!",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
@@ -100,11 +100,11 @@
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
-        "message": "最背面",
+        "message": "後ろ",
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "最前面",
+        "message": "前",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
@@ -516,47 +516,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "[TILT_DIRECTION]方向の傾き",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "[TILT_DIRECTION_ANY]に傾いている",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "[MOTOR_ID]をオフにする",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "[MOTOR_ID]をオンにする",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "[MOTOR_ID]を[DURATION]秒間オンにする",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "[NOTE]の音符を[DURATION]秒間鳴らす",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "ライトの色を[HUE]にする",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "[MOTOR_ID]の方向を[MOTOR_DIRECTION]にする",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "[MOTOR_ID]のパワーを[POWER]にする",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "距離[OP][REFERENCE]のとき",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "[TILT_DIRECTION_ANY]に傾いたとき",
         "description": "check when tilted in a certain direction"
     }
 }
