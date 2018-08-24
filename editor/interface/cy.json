@@ -268,15 +268,15 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Rhowch ddolen i un o'r projectau Scratch rydych y eu rhannu. Ni fydd newidiadau sy'n cael eu gwneud yn Beta 3.0 yn cael eu cadw.",
+        "message": "Rhowch ddolen i un o'r projectau Scratch rydych y eu rhannu. Ni fydd newidiadau sy'n cael eu gwneud yn y Beta 3.0 hwn yn cael eu cadw.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
-        "message": "Rhowch ddolen i un o'r projectau Scratch rydych yn eu rhannu. Ni fydd newidiadau sydd wedi eu gwneud yn Rhagolwg 3.0 yn cael eu cadw.",
+        "message": "Rhowch ddolen i un o'r projectau Scratch rydych yn eu rhannu. Ni fydd newidiadau sydd wedi eu gwneud yn y Rhagolwg 3.0 hwn yn cael eu cadw.",
         "description": "Import project message"
     },
     "gui.importInfo.invalidFormatError": {
-        "message": "Ow, nid yw dolen neu enw'r project yn edrych yn iawn.",
+        "message": "O na, nid yw'r ddolen yna neu enw'r project yn edrych yn iawn.",
         "description": "Invalid project link or id message"
     },
     "gui.importModal.viewproject": {
@@ -340,12 +340,28 @@
         "description": "Main loading message"
     },
     "gui.menuBar.LanguageSelector": {
-        "message": "dewis iaith",
+        "message": "dewisydd iaith",
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
         "message": "Tiwtorialau",
         "description": "accessibility text for the tutorials button"
+    },
+    "gui.menuBar.restoreSprite": {
+        "message": "Adfer Corlun",
+        "description": "Menu bar item for restoring the last deleted sprite."
+    },
+    "gui.menuBar.restoreSound": {
+        "message": "Restore Sound",
+        "description": "Menu bar item for restoring the last deleted sound."
+    },
+    "gui.menuBar.restoreCostume": {
+        "message": "Restore Costume",
+        "description": "Menu bar item for restoring the last deleted costume."
+    },
+    "gui.menuBar.restore": {
+        "message": "Adfer",
+        "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.file": {
         "message": "Ffeil",
@@ -375,20 +391,12 @@
         "message": "Golygu",
         "description": "Text for edit dropdown menu"
     },
-    "gui.menuBar.restoreSprite": {
-        "message": "Adfer Corlun",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restore": {
-        "message": "Adfer",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
     "gui.menuBar.turboModeOff": {
-        "message": "Diffodd y Modd Turbo",
+        "message": "Diffodd y Modd Tyrbo",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "`Cychwyn y Modd Turbo",
+        "message": "`Cychwyn y Modd Tyrbo",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
@@ -424,7 +432,7 @@
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.previewInfo.label": {
-        "message": "Profwch Scratch 3.0",
+        "message": "Rhowch gynnig ar Scratch 3.0",
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
@@ -536,7 +544,7 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Yn gynt",
+        "message": "Yn gyflymach",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
@@ -656,11 +664,11 @@
         "description": "Label indicating turbo mode is active"
     },
     "gui.webglModal.label": {
-        "message": "Nid yw eich Porwr Cynnal WebGL",
+        "message": "Nid yw eich Porwr yn Cynnal WebGL",
         "description": "WebGL missing title"
     },
     "gui.webglModal.description": {
-        "message": "Yn anffodus, mae'n edrych taw eich porwr neu gyfrifiadur {webGlLink}. Mae angen y dechnoleg yma i redeg Scratch 3.0",
+        "message": "Yn anffodus, mae'n edrych mai eich porwr neu gyfrifiadur {webGlLink}. Mae angen y dechnoleg yma i redeg Scratch 3.0",
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
@@ -724,7 +732,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
-        "message": "Methodd y ffeil sydd wedi ei dewis a llwytho.",
+        "message": "Methodd y ffeil sydd wedi ei dewis â llwytho.",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.recordingStep.alertMsg": {
@@ -748,15 +756,15 @@
         "description": "Button to record a sound in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
-        "message": "Dewiswch Sain",
+        "message": "Dewis Sain",
         "description": "Button to add a sound in the editor tab"
     },
     "gui.spriteLibrary.chooseASprite": {
-        "message": "Dewiswch Gorlun",
+        "message": "Dewis Corlun",
         "description": "Heading for the sprite library"
     },
     "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
+        "message": "Ydych chi'n siŵr eich bod am ddileu hwn?",
         "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
@@ -824,7 +832,7 @@
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Dewiswch y Corlun Meicroffon a'r Blwch Taro Syn",
+        "message": "Dewiswch y Corlun Meicroffon a'r Blwch Taro Annisgwyl",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
@@ -844,7 +852,7 @@
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Pan Wedi ei Glicio, Cynyddu'r Sgor",
+        "message": "Pan Fydd Wedi ei Glicio, Cynyddu'r Sgor",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
@@ -876,7 +884,7 @@
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Symud i Fyny ac i Lawr gyda Bysellau Saethau",
+        "message": "Symud i Fyny ac i Lawr gyda Bysellau Saeth",
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
@@ -888,7 +896,7 @@
         "description": "Step name for 'Move Randomly' step"
     },
     "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Mewn Corlun Octopws, Wrth Gyffwrdd Sain Chwarae",
+        "message": "Mewn Corlun Octopws, Pan yn Cyffwrdd Chwaraea Sain ",
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
@@ -896,7 +904,7 @@
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Yn y Corlun Octopws, Wrth Gyffwrdd Ychwanegu Sgôr",
+        "message": "Yn y Corlun Octopws, Pan yn Cyffwrdd Ychwanega Sgôr",
         "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
     },
     "gui.howtos.add-sprite.name": {
@@ -908,7 +916,7 @@
         "description": "Step name for 'Add a new sprite' step"
     },
     "gui.howtos.add-a-backdrop.name": {
-        "message": "Ychwanegu Cefndir",
+        "message": "Ychwanegu Cefnlen",
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.howtos.change-size.name": {
@@ -940,7 +948,7 @@
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
-        "message": "Ychwanegwch Effeithiau",
+        "message": "Ychwanegu Effeithiau",
         "description": "Name for the 'Add Effects' how-to"
     },
     "gui.extension.music.name": {
@@ -972,11 +980,11 @@
         "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.extension.googletranslate.description": {
-        "message": "Cyfieithu testun i lawer o ieithoedd",
+        "message": "Cyfieithu testun i lawer o ieithoedd.",
         "description": "Description for the 'Google Translate' extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Cysylltu eich project a'r byd.",
+        "message": "Cysylltu eich project â'r byd.",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
@@ -984,7 +992,7 @@
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "Adeiladu robotiaid rhyngwe3ithiol a mwy.",
+        "message": "Adeiladu robotiaid rhyngweithiol a mwy.",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
@@ -992,7 +1000,7 @@
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
-        "message": "Adeiladu gyda modura synwyryddion",
+        "message": "Adeiladu gyda moduron a synwyryddion",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.extension.wedo2.connectingMessage": {

@@ -96,19 +96,19 @@
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "Miej swoje urządzenie w pobliżu i zacznij szukać.",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "Naciśnij przycisk na swoim urządzeniu",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "Zacznij szukać",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "Szukanie...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -347,6 +347,22 @@
         "message": "Samouczki",
         "description": "accessibility text for the tutorials button"
     },
+    "gui.menuBar.restoreSprite": {
+        "message": "Odnów duszka",
+        "description": "Menu bar item for restoring the last deleted sprite."
+    },
+    "gui.menuBar.restoreSound": {
+        "message": "Restore Sound",
+        "description": "Menu bar item for restoring the last deleted sound."
+    },
+    "gui.menuBar.restoreCostume": {
+        "message": "Restore Costume",
+        "description": "Menu bar item for restoring the last deleted costume."
+    },
+    "gui.menuBar.restore": {
+        "message": "Odnów",
+        "description": "Menu bar item for restoring the last deleted item in its disabled state."
+    },
     "gui.menuBar.file": {
         "message": "Plik",
         "description": "Text for file dropdown menu"
@@ -374,14 +390,6 @@
     "gui.menuBar.edit": {
         "message": "Edycja",
         "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restore": {
-        "message": "Restore",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.turboModeOff": {
         "message": "Wyłącz tryb turbo",
@@ -448,7 +456,7 @@
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
-        "message": "Pokaż projekt wersji 2.0",
+        "message": "Pokaż projekt z wersji 2.0",
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
@@ -472,7 +480,7 @@
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ta zmienna będzie dostępna dla wszystkich sprite'ów.",
+        "message": "Ta zmienna będzie dostępna dla wszystkich duszków.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
@@ -624,7 +632,7 @@
         "description": "Button to get out of full screen mode"
     },
     "gui.stageHeader.fullscreenControl": {
-        "message": "Pełna kontrola ekranu",
+        "message": "Kontrola pełnego ekranu",
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
@@ -756,7 +764,7 @@
         "description": "Heading for the sprite library"
     },
     "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
+        "message": "Czy jesteś pewny, że chcesz to usunąć?",
         "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
@@ -796,11 +804,11 @@
         "description": "Step name for 'Change color' step"
     },
     "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Wybierz innego sprite'a literowego i spraw, by się obracał",
+        "message": "Wybierz innego duszka literowego i spraw, by się obracał",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Wybierz kolejnego sprite'a literowego i spraw, by urósł",
+        "message": "Wybierz kolejnego duszka literowego i spraw, by urósł",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
@@ -808,7 +816,7 @@
         "description": "Name for the 'Make Music' how-to"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Wybierz sprite'a instrumentu",
+        "message": "Wybierz duszka instrumentu",
         "description": "Step name for 'Pick an Instrument Sprite' step"
     },
     "gui.howtos.Make-Music.step_PlaySoundClick": {
@@ -824,7 +832,7 @@
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Wybierz sprite'a mikrofonu i beatbox-niespodziankę",
+        "message": "Wybierz duszka mikrofonu i beatbox-niespodziankę",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
@@ -880,7 +888,7 @@
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Dodaj sprite'a",
+        "message": "Dodaj duszka",
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.howtos.Chase-Game.step_MoveRandom": {
@@ -932,7 +940,7 @@
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "Animuj sprite'a",
+        "message": "Animuj duszka",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
@@ -956,7 +964,7 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Narysuj za pomocą swoich sprite'ów",
+        "message": "Narysuj za pomocą swoich duszków",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {

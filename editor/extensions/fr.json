@@ -516,47 +516,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "angle d'inclinaison [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "incliné [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "éteindre le moteur [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "allumer le moteur [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "allumer le moteur [MOTOR_ID] pendant [DURATION] secondes",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "jouer la note [NOTE] pendant [DURATION] secondes",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "mettre la couleur de la lampe à [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "mettre la direction du moteur [MOTOR_ID] à [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "mettre la puissance du moteur [MOTOR_ID] à [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "quand la distance [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "quand incliné vers [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "beep note [NOTE] for [TIME] secs",
+        "message": "በ[NOTE] ኖታ ጲጵ በል ለ[TIME] ሰከንድ",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "button [PORT] pressed?",
+        "message": "[PORT]ን ቁልፍ ተጭኗል?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,31 +16,31 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "[PORT]ን ሞተር አኳኋን",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "የ [PORT]ን ሞተር ሃይል ወደ [POWER]% ለውጥ",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] turn this way for [TIME] seconds",
+        "message": "የ[PORT] ሞተር በዚህ አቅጣጫ አዙር ለ[TIME] ሰከንድ",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT] turn that way for [TIME] seconds",
+        "message": "የ[PORT] ሞተር በዚያ አቅጣጫ አዙር ለ[TIME] ሰከንድ",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "ብሩህነት < [DISTANCE] ሲሆን",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "when button [PORT] pressed",
+        "message": "[PORT]ን ቁልፍ ሲጫን",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "ርቀት < [DISTANCE] ሲሆን",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,39 +48,39 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "ማሳያ አጽዳ",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "Hello!",
+        "message": "ሰላም!",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "[MATRIX]ን አሳይ",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display [TEXT]",
+        "message": "[TEXT]ን አሳይ",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "ዘልሏል",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "ተንቀሳቅሷል",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "አራድቷል",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "[BTN]ን ቁልፍ ተጭኗል?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "በ[DIRECTION] አቅጣጫ ተዘነብሏል?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "ማዕዘን በ[DIRECTION] አቅጣጫ አዘንብል",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -100,11 +100,11 @@
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
-        "message": "back",
+        "message": "ኋላ",
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "front",
+        "message": "ፊት",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "[BTN]ን ቁልፍ ሲጫን",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "[GESTURE]ን ሲሰጥ",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected test",
+        "message": "[PIN]ን ዕስፒል ሲገናኝ፣ ሞክር",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "በ[DIRECTION] አቅጣጫ ሲዘነብል",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -136,79 +136,79 @@
         "description": "Label for the Music extension category"
     },
     "music.changeTempo": {
-        "message": "change tempo by [TEMPO]",
+        "message": "ሰልት ቀይር በ[TEMPO]",
         "description": "change tempo (speed) for notes, drums, and rests played"
     },
     "music.drumBass": {
-        "message": "(2) Bass Drum",
+        "message": "(2) ትልቅ ታምቡር",
         "description": "Sound of bass drum as used in a standard drum kit"
     },
     "music.drumBongo": {
-        "message": "(13) Bongo",
+        "message": "(13) ቦንጎ",
         "description": "Sound of a bongo being struck"
     },
     "music.drumCabasa": {
-        "message": "(15) Cabasa",
+        "message": "(13) ካባሳ",
         "description": "Sound of a cabasa being shaken"
     },
     "music.drumClaves": {
-        "message": "(9) Claves",
+        "message": "(9) ክላቭ",
         "description": "Sound of claves being struck together"
     },
     "music.drumClosedHiHat": {
-        "message": "(6) Closed Hi-Hat",
+        "message": "(6) የተዘጋ ድምፀ ብረት",
         "description": "Sound of a drum stick hitting a hi-hat while closed"
     },
     "music.drumConga": {
-        "message": "(14) Conga",
+        "message": "(14) ኮንጋ",
         "description": "Sound of a conga being struck"
     },
     "music.drumCowbell": {
-        "message": "(11) Cowbell",
+        "message": "(11) የላም ቃጭል",
         "description": "Sound of a cowbell being struck"
     },
     "music.drumCrashCymbal": {
-        "message": "(4) Crash Cymbal",
+        "message": "(4) ጸናጽል",
         "description": "Sound of a drum stick hitting a crash cymbal"
     },
     "music.drumCuica": {
-        "message": "(18) Cuica",
+        "message": "(18) ኲካ",
         "description": "Sound of a cuica being played"
     },
     "music.drumGuiro": {
-        "message": "(16) Guiro",
+        "message": "(16) ጒሮ",
         "description": "Sound of a guiro being played"
     },
     "music.drumHandClap": {
-        "message": "(8) Hand Clap",
+        "message": "(8) ጭብጨባ",
         "description": "Sound of two hands clapping together"
     },
     "music.drumOpenHiHat": {
-        "message": "(5) Open Hi-Hat",
+        "message": "(5) የተከፈተ ድምፀ ብረት",
         "description": "Sound of a drum stick hitting a hi-hat while open"
     },
     "music.drumSideStick": {
-        "message": "(3) Side Stick",
+        "message": "(3) የጎን በትር",
         "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
     },
     "music.drumSnare": {
-        "message": "(1) Snare Drum",
+        "message": "(1) ነዛሪ ታምቡር",
         "description": "Sound of snare drum as used in a standard drum kit"
     },
     "music.drumTambourine": {
-        "message": "(7) Tambourine",
+        "message": "(7) ታምቡሪን",
         "description": "Sound of a tambourine being struck"
     },
     "music.drumTriangle": {
-        "message": "(12) Triangle",
+        "message": "(12) ትራያንግል",
         "description": "Sound of a triangle (instrument) being struck"
     },
     "music.drumVibraslap": {
-        "message": "(17) Vibraslap",
+        "message": "(17) ቫይብራስላፕ",
         "description": "Sound of a Vibraslap being played"
     },
     "music.drumWoodBlock": {
-        "message": "(10) Wood Block",
+        "message": "(10) የእንጨት ብሎኬት",
         "description": "Sound of a wood block being struck"
     },
     "music.getTempo": {
@@ -216,107 +216,107 @@
         "description": "get the current tempo (speed) for notes, drums, and rests played"
     },
     "music.instrumentBass": {
-        "message": "(6) Bass",
+        "message": "(6) ባስ",
         "description": "Sound of an accoustic upright bass"
     },
     "music.instrumentBassoon": {
-        "message": "(14) Bassoon",
+        "message": "(14) ባዙን",
         "description": "Sound of a bassoon being played"
     },
     "music.instrumentCello": {
-        "message": "(8) Cello",
+        "message": "(8) ቼሎ",
         "description": "Sound of a cello being played with a bow"
     },
     "music.instrumentChoir": {
-        "message": "(15) Choir",
+        "message": "(15) ሕብረ-ዝማሬ",
         "description": "Sound of a choir singing"
     },
     "music.instrumentClarinet": {
-        "message": "(10) Clarinet",
+        "message": "(10) ክላርኔት",
         "description": "Sound of a clarinet being played"
     },
     "music.instrumentElectricGuitar": {
-        "message": "(5) Electric Guitar",
+        "message": "(5) ኤሌክትሪክ ጊታር",
         "description": "Sound of an electric guitar"
     },
     "music.instrumentElectricPiano": {
-        "message": "(2) Electric Piano",
+        "message": "(2) ኤሌክትሪክ ፒያኖ",
         "description": "Sound of an electric piano"
     },
     "music.instrumentFlute": {
-        "message": "(12) Flute",
+        "message": "(12) ፍሉት",
         "description": "Sound of a flute being played"
     },
     "music.instrumentGuitar": {
-        "message": "(4) Guitar",
+        "message": "(4) ጊታር",
         "description": "Sound of an accoustic guitar"
     },
     "music.instrumentMarimba": {
-        "message": "(19) Marimba",
+        "message": "(19) ማሪምባ",
         "description": "Sound of a marimba being struck"
     },
     "music.instrumentMusicBox": {
-        "message": "(17) Music Box",
+        "message": "(17) የሙዚቃ ሳጥን",
         "description": "Sound of a music box playing"
     },
     "music.instrumentOrgan": {
-        "message": "(3) Organ",
+        "message": "(3) ኦርጋን",
         "description": "Sound of an organ"
     },
     "music.instrumentPiano": {
-        "message": "(1) Piano",
+        "message": "(1) ፒያኖ",
         "description": "Sound of a piano"
     },
     "music.instrumentPizzicato": {
-        "message": "(7) Pizzicato",
+        "message": "(7) ፒዚካቶ",
         "description": "Sound of a string instrument (e.g. violin) being plucked"
     },
     "music.instrumentSaxophone": {
-        "message": "(11) Saxophone",
+        "message": "(11) ሳክስፎን",
         "description": "Sound of a saxophone being played"
     },
     "music.instrumentSteelDrum": {
-        "message": "(18) Steel Drum",
+        "message": "(18) ብረት ታምቡር",
         "description": "Sound of a steel drum being struck"
     },
     "music.instrumentSynthLead": {
-        "message": "(20) Synth Lead",
+        "message": "(20) የመራሄ ድምፅ መምሪያ",
         "description": "Sound of a \"lead\" synthesizer being played"
     },
     "music.instrumentSynthPad": {
-        "message": "(21) Synth Pad",
+        "message": "(21) የመራሄ ድምፅ ደረብ",
         "description": "Sound of a \"pad\" synthesizer being played"
     },
     "music.instrumentTrombone": {
-        "message": "(9) Trombone",
+        "message": "(9) ትሮምቦን",
         "description": "Sound of a trombone being played"
     },
     "music.instrumentVibraphone": {
-        "message": "(16) Vibraphone",
+        "message": "(16) ቫይብራፎን",
         "description": "Sound of a vibraphone being struck"
     },
     "music.instrumentWoodenFlute": {
-        "message": "(13) Wooden Flute",
+        "message": "(13) የእንጨት ፍሉት",
         "description": "Sound of a wooden flute being played"
     },
     "music.playDrumForBeats": {
-        "message": "play drum [DRUM] for [BEATS] beats",
+        "message": "[DRUM]ን ታምቡር ለ[BEATS] ምት ተጫውት",
         "description": "play drum sample for a number of beats"
     },
     "music.playNoteForBeats": {
-        "message": "play note [NOTE] for [BEATS] beats",
+        "message": "[NOTE]ን ኖታ ለ[BEATS] ምት ተጫውት",
         "description": "play a note for a number of beats"
     },
     "music.restForBeats": {
-        "message": "rest for [BEATS] beats",
+        "message": "እረፍ ለ[BEATS] ምት",
         "description": "rest (play no sound) for a number of beats"
     },
     "music.setInstrument": {
-        "message": "set instrument to [INSTRUMENT]",
+        "message": "መሳሪያ ለውጥ ወደ [INSTRUMENT]",
         "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
     },
     "music.setTempo": {
-        "message": "set tempo to [TEMPO]",
+        "message": "ስልት ለውጥ ወደ [TEMPO]",
         "description": "set tempo (speed) for notes, drums, and rests played"
     },
     "pen.categoryName": {
@@ -324,11 +324,11 @@
         "description": "Label for the pen extension category"
     },
     "pen.changeColorParam": {
-        "message": "change pen [COLOR_PARAM] by [VALUE]",
+        "message": "የእስክሪብቶን [COLOR_PARAM] ቀይር በ[VALUE]",
         "description": "change the state of a pen color parameter"
     },
     "pen.changeHue": {
-        "message": "change pen color by [HUE]",
+        "message": "የእስክሪብቶን ቀልም ቀይር በ[HUE]",
         "description": "legacy pen blocks - change pen color"
     },
     "pen.changeShade": {

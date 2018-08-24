@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "beep note [NOTE] for [TIME] secs",
+        "message": "[NOTE] notunu [TIME] saniyə səsləndir",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "button [PORT] pressed?",
+        "message": "[PORT] düyməsi basılıb?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,31 +16,31 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "[PORT] mühərrikinin mövqeyi",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "[PORT] mühərrikinin gücünü [POWER]% təyin et",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] turn this way for [TIME] seconds",
+        "message": "[PORT] mühərrikini saat əqrəbi istiqamətində [TIME] saniyə döndərin",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT] turn that way for [TIME] seconds",
+        "message": "[PORT] mühərrikini saat əqrəbinin əksi istiqamətində [TIME] saniyə döndərin ",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "parlaqlıq < [DISTANCE] olduqda",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "when button [PORT] pressed",
+        "message": "[PORT] düyməsi basıldıqda",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "məsafə < [DISTANCE] olduqda",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,7 +48,7 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "ekranı təmizlə",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
@@ -56,31 +56,31 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "[MATRIX] ekranı",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display [TEXT]",
+        "message": "[TEXT] ekranı",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "sıçrayan",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "hərəkət edən",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "titrəyən",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "[BTN] düyməsi basılıb?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "[DIRECTION] əyilib?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "[DIRECTION] bucağında əyilib",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "[BTN] düyməsi basıldıqda",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "[GESTURE] olduqda",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected test",
+        "message": "[PIN] birləşdiricisi qoşulduqda",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "[DIRECTION] əyildikdə",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -516,47 +516,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "[TILT_DIRECTION] bucağında əyilib",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "[TILT_DIRECTION_ANY] əyilib?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "[MOTOR_ID] söndür",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "[MOTOR_ID] yandır",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "[MOTOR_ID] yandır [DURATION] saniyə",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "[NOTE] notunu [DURATION] saniyə çal",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "işığın rəngini [HUE] təyin et",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "[MOTOR_ID] istiqamətini [MOTOR_DIRECTION] təyin et",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "[MOTOR_ID] gücünü [POWER] təyin et",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "məsafə [OP] [REFERENCE] olduqda",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "[TILT_DIRECTION_ANY] əyildikdə",
         "description": "check when tilted in a certain direction"
     }
 }

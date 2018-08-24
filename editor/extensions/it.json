@@ -24,11 +24,11 @@
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "gira da questa parte motore [PORT] per [TIME] secondi",
+        "message": "aziona il motore [PORT] in questa direzione per [TIME] secondi",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "gira da quella parte motore [PORT] per [TIME] secondi",
+        "message": "azione il motore [PORT] nell'altra direzione per [TIME] secondi",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -516,47 +516,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "angolo inclinazione verso [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "inclinato [TILT_DIRECTION_ANY]",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "spegni [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "accendi [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "accendi [MOTOR_ID] per [DURATION] secondi",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "suona nota [NOTE] per [DURATION] secondi",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "porta colore luci a [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "porta direzione [MOTOR_ID] a [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "porta potenza [MOTOR_ID] a [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "quando distanza [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "quando inclinato [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }
