@@ -96,19 +96,19 @@
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "Ten tu dispositivo cerca, luego inicia la búsqueda.",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "Presiona el botón en tu dispositivo.",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "Inicia la búsqueda",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "Buscando...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -232,15 +232,15 @@
         "description": "Sprite info direction label"
     },
     "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
+        "message": "En todas direcciones",
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
+        "message": "izquierda/derecha",
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
+        "message": "No rotar",
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
@@ -268,7 +268,7 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Ingrese un enlace a uno de sus proyectos compartidos en Scratch. Los cambios realizados en la vista previa 3.0 Beta no se guardarán.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
@@ -348,20 +348,24 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
+        "message": "Restaura Objeto",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "Restaura Sonido",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "Restaura Disfraz",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "Restaura",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
+    },
+    "gui.menuBar.saveNow": {
+        "message": "Guardar ahora",
+        "description": "Menu bar item for saving now"
     },
     "gui.menuBar.file": {
         "message": "Archivo",
@@ -370,10 +374,6 @@
     "gui.menuBar.new": {
         "message": "Nuevo",
         "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Guardar ahora",
-        "description": "Menu bar item for saving now"
     },
     "gui.menuBar.saveAsCopy": {
         "message": "Guardar como copia",
@@ -392,11 +392,11 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "Apagar Modo turbo",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "Encender Modo turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
@@ -436,11 +436,11 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Bienvenido a Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Bienvenido a Scratch 3.0 Beta",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
@@ -612,7 +612,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Sube un objeto",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -764,7 +764,7 @@
         "description": "Heading for the sprite library"
     },
     "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
+        "message": "¿Estás seguro de eliminar esto?",
         "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
@@ -944,7 +944,7 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "Usar las flechas",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
