@@ -96,19 +96,19 @@
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "Установите ваше устройство поблизости и начните поиск",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "Нажмите кнопку на вашем устройстве",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "Начать Поиск",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "Поиск...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -168,11 +168,11 @@
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
+        "message": "Убедитесь в том, что вы установили и запустили Scratch Link",
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
+        "message": "Проверьте, включён ли Bluetooth",
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
@@ -232,15 +232,15 @@
         "description": "Sprite info direction label"
     },
     "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
+        "message": "Кругом",
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
+        "message": "Влево/направо",
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
+        "message": "Не вращать",
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
@@ -268,7 +268,7 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Введите ссылку на один ваш общий проект Scratch. Изменения, внесенные в бета версии 3.0, не будут сохранены.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
@@ -288,7 +288,7 @@
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
-        "message": "Чтобы узнать больше, перейдите к {previewFaqLink}.",
+        "message": "Чтобы узнать больше, перейдите на {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
@@ -344,24 +344,28 @@
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
-        "message": "Учебники",
+        "message": "Уроки",
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
+        "message": "Восстановить Спрайт",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "Восстановить Звук",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "Восстановить Костюм",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "Восстановить",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
+    },
+    "gui.menuBar.saveNow": {
+        "message": "Сохранить сейчас",
+        "description": "Menu bar item for saving now"
     },
     "gui.menuBar.file": {
         "message": "Файл",
@@ -370,10 +374,6 @@
     "gui.menuBar.new": {
         "message": "Новый",
         "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Сохранить сейчас",
-        "description": "Menu bar item for saving now"
     },
     "gui.menuBar.saveAsCopy": {
         "message": "Сохранить как копию",
@@ -392,11 +392,11 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "Выключить Турбо Режим",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "Включить Турбо Режим",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
@@ -436,11 +436,11 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Добро пожаловать в Scratch 3.0 Бета",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Добро пожаловать в Scratch 3.0 Бета",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
@@ -612,7 +612,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Загрузить Спрайт",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -732,7 +732,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "Не удалось загрузить файл проекта, который был выбран.",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.recordingStep.alertMsg": {
@@ -764,7 +764,7 @@
         "description": "Heading for the sprite library"
     },
     "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
+        "message": "Вы действительно хотите это удалить?",
         "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
@@ -840,7 +840,7 @@
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "Выбрать Спрайт",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
@@ -852,7 +852,7 @@
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "Увеличить счёт при нажатии",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
@@ -924,7 +924,7 @@
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.howtos.glide-around.name": {
-        "message": "Плавный поворот",
+        "message": "Плавное движение",
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
@@ -932,7 +932,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Пусть она вращается",
+        "message": "Поворот!",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
@@ -944,7 +944,7 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "Используй клавиши со стрелками",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
@@ -956,7 +956,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Играйте на инструментах и барабанах.",
+        "message": "Создай музыку на инструментах и барабанах.",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -964,15 +964,15 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Нарисуйте собственные спрайты.",
+        "message": "Рисуй своими спрайтами.",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
-        "message": "Video Sensing",
+        "message": "Видео Распознавание",
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "Распознай Движение с видео камеры",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.googletranslate.name": {
@@ -980,11 +980,11 @@
         "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
     },
     "gui.extension.googletranslate.description": {
-        "message": "Перевести текст на другие языки.",
+        "message": "Переводи текст на другие языки.",
         "description": "Description for the 'Google Translate' extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "Делись проектами со всем миром",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
@@ -996,7 +996,7 @@
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "message": "Подключение. Убедитесь, что пин-код на вашем EV3 задан, как 1234",
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
