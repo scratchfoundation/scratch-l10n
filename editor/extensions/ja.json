@@ -24,11 +24,11 @@
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "モーター[PORT]をこちら向きに[TIME]秒間回転させる",
+        "message": "モーター[PORT]をこちら向きに[TIME]秒間回す",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "モーター[PORT]をあちら向きに[TIME]秒間回転させる",
+        "message": "モーター[PORT]をあちら向きに[TIME]秒間回す",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -80,7 +80,7 @@
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "[DIRECTION]方向に傾いた",
+        "message": "[DIRECTION]に傾いた",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -96,7 +96,7 @@
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
-        "message": "どれかの",
+        "message": "どれかの向き",
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
@@ -124,11 +124,11 @@
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "ピン[PIN]が地面につながったとき",
+        "message": "ピン[PIN]がGNDにつながったとき",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "[DIRECTION]方向に傾いたとき",
+        "message": "[DIRECTION]に傾いたとき",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -396,7 +396,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Google スピーチ",
+        "message": "Speech to Text",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -427,10 +427,6 @@
         "message": "モンスター",
         "description": "Name for a funny voice with a low pitch."
     },
-    "text2speech.puppy": {
-        "message": "子犬",
-        "description": "A baby dog."
-    },
     "text2speech.quinn": {
         "message": "クイン",
         "description": "Name for a voice with ambiguous gender."
@@ -448,8 +444,8 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Google翻訳",
-        "description": "Name of extension that adds translate blocks. Do Not translate Google"
+        "message": "翻訳",
+        "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
         "message": "こんにちは",

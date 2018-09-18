@@ -20,15 +20,15 @@
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "馬達 [PORT] 動力設為 [POWER] %",
+        "message": "馬達 埠[PORT] 動力設為 [POWER] %",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "馬達 [PORT] 順時針旋轉 [TIME] 秒",
+        "message": "馬達 埠[PORT] 順時針旋轉 [TIME] 秒",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "馬達 [PORT] 逆時針旋轉 [TIME] 秒",
+        "message": "馬達 埠[PORT] 逆時針旋轉 [TIME] 秒",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -396,7 +396,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Google 語音",
+        "message": "Speech to Text",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -427,10 +427,6 @@
         "message": "怪獸",
         "description": "Name for a funny voice with a low pitch."
     },
-    "text2speech.puppy": {
-        "message": "小狗",
-        "description": "A baby dog."
-    },
     "text2speech.quinn": {
         "message": "奎因",
         "description": "Name for a voice with ambiguous gender."
@@ -448,8 +444,8 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Google 翻譯",
-        "description": "Name of extension that adds translate blocks. Do Not translate Google"
+        "message": "翻譯",
+        "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
         "message": "hello",

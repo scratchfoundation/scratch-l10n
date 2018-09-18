@@ -1,4 +1,5 @@
 import en from 'react-intl/locale-data/en';
+import am from 'react-intl/locale-data/am';
 import az from 'react-intl/locale-data/az'; // also parent for Abkahz
 import ca from 'react-intl/locale-data/ca';
 import cs from 'react-intl/locale-data/cs';
@@ -8,6 +9,7 @@ import de from 'react-intl/locale-data/de';
 import el from 'react-intl/locale-data/el';
 import es from 'react-intl/locale-data/es';
 import et from 'react-intl/locale-data/et';
+import eu from 'react-intl/locale-data/eu';
 import fi from 'react-intl/locale-data/fi';
 import fr from 'react-intl/locale-data/fr';
 import ga from 'react-intl/locale-data/ga';
@@ -69,6 +71,7 @@ locales = {
 
 let localeData = [].concat(
     en,
+    am,
     az, // parent for Abkahz
     ca,
     cs,
@@ -78,6 +81,7 @@ let localeData = [].concat(
     el,
     es,
     et,
+    eu,
     fi,
     fr,
     ga,

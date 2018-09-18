@@ -40,7 +40,7 @@
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "када је растојање < [DISTANCE]",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,7 +48,7 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "обриши екран",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
@@ -56,31 +56,31 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "прикажи [MATRIX]",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display [TEXT]",
+        "message": "прикажи [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "скок",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "померен",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "протресен",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "[BTN] дугме притиснуто?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "нагнуто [DIRECTION]?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "угао нагиба [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "када је [BTN] дугме притиснуто",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "када је [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected test",
+        "message": "када је пин [PIN] повезан",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "када је нагнуто [DIRECTION]",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -396,7 +396,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Гугл говор",
+        "message": "Speech to Text",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -427,10 +427,6 @@
         "message": "чудовиште",
         "description": "Name for a funny voice with a low pitch."
     },
-    "text2speech.puppy": {
-        "message": "куца",
-        "description": "A baby dog."
-    },
     "text2speech.quinn": {
         "message": "quinn",
         "description": "Name for a voice with ambiguous gender."
@@ -448,8 +444,8 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Гугл преводилац",
-        "description": "Name of extension that adds translate blocks. Do Not translate Google"
+        "message": "Преведи",
+        "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
         "message": "здраво",
@@ -516,47 +512,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "угао нагиба [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "нагнуто [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "искључи [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "укључи [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "укључи [MOTOR_ID] током [DURATION] секунди",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "свирај ноту [NOTE] током [DURATION] секунди",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "подеси боју светлости на [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "подеси смер [MOTOR_ID] у [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "подеси снагу [MOTOR_ID] на [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "када је растојање [OP] од [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "када је нагнуто [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

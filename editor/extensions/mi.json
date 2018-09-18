@@ -16,31 +16,31 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "ahunga pūkaha[PORT]",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "pūkaha[PORT] tautuhia te kaha ki[POWER] %",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] turn this way for [TIME] seconds",
+        "message": "pūrere [PORT] huri pēnei mō ngā hēkona [TIME]",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT] turn that way for [TIME] seconds",
+        "message": "pūrere [PORT]huri pērā mō ngā hēkona [TIME]",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "ina pīataata < [DISTANCE]",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "when button [PORT] pressed",
+        "message": "inā pāwhiria te pātene [PORT]",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "ina tawhiti < [DISTANCE]",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,7 +48,7 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "ūkuia te mata",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
@@ -56,31 +56,31 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "whakaaturia [MATRIX]",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display [TEXT]",
+        "message": "whakaaturia [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "i peke",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "i neke",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "i wiriwiri",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "[BTN] pātene i pēhia?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "kua tītaha ki[DIRECTION]?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "koki tītaha [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "ina pēhia pātene [BTN] ",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "ina [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected test",
+        "message": "whakamātautau, ina honoa pine [PIN]",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "ina tītaha ki [DIRECTION]",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -392,23 +392,23 @@
         "description": "render current costume on the background"
     },
     "speech.defaultWhenIHearValue": {
-        "message": "let''s go",
+        "message": "me haere tātou",
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Google Speech",
+        "message": "Speech to Text",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
-        "message": "listen and wait",
+        "message": "whakarongo, tatari",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
-        "message": "speech",
+        "message": "kōrero",
         "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "speech.whenIHear": {
-        "message": "when I hear [PHRASE]",
+        "message": "ina rongo ahau i [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
     "text2speech.defaultTextToSpeak": {
@@ -416,27 +416,23 @@
         "description": "hello: the default text to speak"
     },
     "text2speech.kitten": {
-        "message": "kitten",
+        "message": "punua ngeru",
         "description": "A baby cat."
     },
     "text2speech.max": {
-        "message": "max",
+        "message": "mōrahi",
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.monster": {
-        "message": "monster",
+        "message": "ngārara",
         "description": "Name for a funny voice with a low pitch."
     },
-    "text2speech.puppy": {
-        "message": "puppy",
-        "description": "A baby dog."
-    },
     "text2speech.quinn": {
-        "message": "quinn",
+        "message": "kiri",
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setVoiceBlock": {
-        "message": "set voice to [VOICE]",
+        "message": "tautuhi te reo ki [VOICE]",
         "description": "Set the voice for speech synthesis."
     },
     "text2speech.speakAndWaitBlock": {
@@ -444,12 +440,12 @@
         "description": "Speak some words."
     },
     "text2speech.squeak": {
-        "message": "squeak",
+        "message": "koekoe",
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Google Translate",
-        "description": "Name of extension that adds translate blocks. Do Not translate Google"
+        "message": "Whakawhitiwhiti Reo Ā-tuhi",
+        "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
         "message": "kia ora",
@@ -460,7 +456,7 @@
         "description": "translate some text to a different language"
     },
     "translate.viewerLanguage": {
-        "message": "language",
+        "message": "reo",
         "description": "the languge of the project viewer"
     },
     "videoSensing.categoryName": {
@@ -516,47 +512,47 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "koki tītaha [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "kua tītaha ki [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "whakaweto [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "whakakā [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "whakakā[MOTOR_ID] mō ngā hēkona [DURATION]",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "whakatangihia te oro [NOTE] mō ngā hēkona[DURATION]",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "tautuhia te tae māmā ki te [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "tautuhia te pūrere [MOTOR_ID] kia huri [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "tautuhia te pūrere [MOTOR_ID] kia [POWER] te kaha",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "ina tawhiti [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "ina tītaha [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

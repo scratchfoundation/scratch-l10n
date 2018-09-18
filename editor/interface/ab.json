@@ -40,7 +40,7 @@
         "description": "Notification to the user that the camera is loading"
     },
     "gui.cameraModal.permissionRequest": {
-        "message": "Акамера ахархәараз иаҳҭахуп шәара шақәшаҳаҭхара",
+        "message": "Акамера ахархәараз иаҭахуп шәара шақәшаҳаҭхара",
         "description": "Notification to the user that the app needs camera access"
     },
     "gui.cameraModal.retakePhoto": {
@@ -91,12 +91,12 @@
         "message": "Ари, ҳара аус адулара ҳаҿуп {emoji} ",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Аиҿартәырақәа ԥшаам",
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Аиҿартәыра ыҟоуп, нас иалагатәуп аԥшаара.",
+        "message": "Аиҿартәыра шәааигәа иҟашәҵа, нас шәалага аԥшаара.",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
@@ -116,7 +116,7 @@
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
-        "message": "Еимадақәоу",
+        "message": "Иаҿакуп",
         "description": "Message indicating that a device was connected"
     },
     "gui.connection.disconnect": {
@@ -131,14 +131,6 @@
         "message": "Аимадара...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Аиҿартәыры ахьӡ",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Еимадатәуп",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Уаҳ, аусқәа ишахәҭам ицеит.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Ацхыраара",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Аиҿартәыры ахьӡ",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Еимадатәуп",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Аиҿартәырақәа рыԥшаара",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Аиҿартәырақәа ԥшаам",
         "description": "Text shown when no devices could be found"
     },
@@ -191,6 +191,18 @@
         "message": "Иаанкылатәуп",
         "description": "Stop button title"
     },
+    "gui.crashMessage.label": {
+        "message": "Уаҳ! Аусқәа иашамкәа ицеит.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
+    },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Иаԥҵатәуп аблок",
         "description": "Title for the modal where you create a custom block."
@@ -212,7 +224,7 @@
         "description": "Description of the boolean input type"
     },
     "gui.customProcedures.addALabel": {
-        "message": "Иацҵатәуп анапаҵаҩра",
+        "message": "Иацҵатәуп атеқст аҭыԥ",
         "description": "Label for button to add a label"
     },
     "gui.customProcedures.runWithoutScreenRefresh": {
@@ -268,7 +280,7 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Иҭажәгал азеиԥш проектқәа руак ахь азхьарԥш. Аԥсахрақәа 3.0 Beta версиа аҟны еиқәырхахаӡом.",
+        "message": "Иҭажәгал азеиԥш проектқәа руак ахь азхьарԥш. Аԥсахрақәа 3.0 Beta версиа аҟны иаҟаҵақәоу еиқәырхахаӡом.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
@@ -276,7 +288,7 @@
         "description": "Import project message"
     },
     "gui.importInfo.invalidFormatError": {
-        "message": "Оҳ, апроект ахь азхьарԥш ма аидентификатор ааԥшуеит цқьа ииашамкәа. ",
+        "message": "Оҳ, апроеқт ахь азхьарԥш ма аидентификатор ааԥшуеит цқьа ииашамкәа. ",
         "description": "Invalid project link or id message"
     },
     "gui.importModal.viewproject": {
@@ -344,7 +356,7 @@
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
-        "message": "Арҵага шәҟәқәа",
+        "message": "Аурокқәа",
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
@@ -408,8 +420,12 @@
         "description": "Label for see community button"
     },
     "gui.menuBar.giveFeedback": {
-        "message": "Шәыҽҳамажәда",
+        "message": "Идәықәҵатәуп ахцәажәара",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "Ацхыраара",
@@ -620,7 +636,7 @@
         "description": "Button to change stage size to large"
     },
     "gui.stageHeader.stageSizeSmall": {
-        "message": "Асцена хәыҷ",
+        "message": "Асцена маҷ",
         "description": "Button to change stage size to small"
     },
     "gui.stageHeader.stageSizeFull": {
@@ -728,7 +744,7 @@
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Иҭажәгал арҭбаара URL ",
+        "message": "Иҭажәгал арҭбаара а-URL ",
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
@@ -762,10 +778,6 @@
     "gui.spriteLibrary.chooseASprite": {
         "message": "Далхтәуп анагӡаҩ",
         "description": "Heading for the sprite library"
-    },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Ишәҭахума ари анышәхырц?",
-        "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
         "message": "Иалхтәуп арҵага шәҟәы",
@@ -956,7 +968,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Иашәырҳәала аинструментқәеи адаулқәеи",
+        "message": "Иаԥышәҵа амузыка аинструментқәеи адаулқәеи рыла.",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -975,13 +987,13 @@
         "message": "Авидеокамера аиҭаҵра.",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Аиҭагаҩ",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Атанслиациа",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Еиҭагатәуп атеқст егьырҭ абызшәақәа рахь.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Шәпроеқтқәа адунеи иашәырдыр.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Аимадара",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Абӷакыдҵа",
