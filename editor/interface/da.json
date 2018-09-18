@@ -91,7 +91,7 @@
         "message": "Vi arbejder på sagen {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Ingen enheder fundet",
         "description": "Text shown when no devices could be found"
     },
@@ -131,14 +131,6 @@
         "message": "Forbinder...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Navn på enhed",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Forbind",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Ups, det ser ud som om at noget gik galt.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Hjælp",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Navn på enhed",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Forbind",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Søger efter enheder",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Ingen enheder fundet",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "Stop",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "Ups! Noget gik galt.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Lav en brik",
@@ -380,7 +392,7 @@
         "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.uploadFromComputer": {
-        "message": "Åbn fra din computer",
+        "message": "Hent fra din computer",
         "description": "Menu bar item for uploading a project from your computer"
     },
     "gui.menuBar.downloadToComputer": {
@@ -410,6 +422,10 @@
     "gui.menuBar.giveFeedback": {
         "message": "Giv feedback",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "Hjælp",
@@ -612,7 +628,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload sprite",
+        "message": "Hent sprite",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -648,7 +664,7 @@
         "description": "Button to add a random stage in the target pane"
     },
     "gui.stageSelector.addBackdropFromFile": {
-        "message": "Upload baggrund",
+        "message": "Hent baggrund",
         "description": "Button to add a stage in the target pane from file"
     },
     "gui.stageSelector.stage": {
@@ -712,11 +728,11 @@
         "description": "Button to add a surprise costume in the editor tab"
     },
     "gui.costumeTab.addFileBackdrop": {
-        "message": "Upload baggrund",
+        "message": "Hent baggrund",
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.costumeTab.addFileCostume": {
-        "message": "Upload kostume",
+        "message": "Hent kostume",
         "description": "Button to add a costume by uploading a file in the editor tab"
     },
     "gui.costumeTab.addCameraCostume": {
@@ -744,7 +760,7 @@
         "description": "Heading for the sound library"
     },
     "gui.soundTab.fileUploadSound": {
-        "message": "Upload lyd",
+        "message": "Hent lyd",
         "description": "Button to upload sound from file in the editor tab"
     },
     "gui.soundTab.surpriseSound": {
@@ -762,10 +778,6 @@
     "gui.spriteLibrary.chooseASprite": {
         "message": "Vælg en sprite",
         "description": "Heading for the sprite library"
-    },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Er du sikker på at du vil slette dette?",
-        "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
         "message": "Vælg en vejledning",
@@ -975,13 +987,13 @@
         "message": "Registrerer bevægelse med kameraet",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Oversæt med Google",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Oversæt",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Oversæt tekst til mange sprog.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Forbind dine projekter med den fysiske verden.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Forbinder",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Rygsæk",

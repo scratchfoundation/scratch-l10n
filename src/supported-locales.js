@@ -5,6 +5,7 @@
 
 const locales = {
     'ab': {name: 'Аҧсшәа'},
+    'am': {name: 'አማርኛ'},
     'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
     'ca': {name: 'Català'},
@@ -17,6 +18,7 @@ const locales = {
     'en': {name: 'English'},
     'es': {name: 'Español'},
     'es-419': {name: 'Español Latinoamericano'},
+    'eu': {name: 'Euskara'},
     'fr': {name: 'Français'},
     'ga': {name: 'Gaeilge'},
     'gd': {name: 'Gàidhlig'},

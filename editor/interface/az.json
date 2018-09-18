@@ -91,7 +91,7 @@
         "message": "Biz bunun üzərində çalışırıq {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Heç bir cihaz tapılmadı",
         "description": "Text shown when no devices could be found"
     },
@@ -112,7 +112,7 @@
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
-        "message": "Yenidən cəhd et",
+        "message": "Yenidən cəhd edin",
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
@@ -131,14 +131,6 @@
         "message": "Qoşulur ...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Cihazın adı",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Qoşul",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Ups! Görünür ki, nə isə səhv getdi.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Yardım",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Cihazın adı",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Qoşul",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Cihazlar axtarılır",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Heç bir cihaz tapılmadı",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "Dayandır",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "Ups! Nə isə səhv getdi.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Blok yarat",
@@ -411,6 +423,10 @@
         "message": "Münasibət bildir",
         "description": "Label for feedback form modal button"
     },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
+    },
     "gui.modal.help": {
         "message": "Yardım",
         "description": "Help button in modal"
@@ -604,7 +620,7 @@
         "description": "Button to add a sprite in the target pane from library"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paint",
+        "message": "Çək",
         "description": "Button to add a sprite in the target pane from paint"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
@@ -762,10 +778,6 @@
     "gui.spriteLibrary.chooseASprite": {
         "message": "Sprayt seç",
         "description": "Heading for the sprite library"
-    },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Siz bunu silmək istədiyinizə əminsiniz?",
-        "description": "Confirmation for deleting sprites"
     },
     "gui.tipsLibrary.tutorials": {
         "message": "Təlimat seçin",
@@ -975,13 +987,13 @@
         "message": "Kamera ilə hissi hərəkət",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Tərcümə",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Tərcümə",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Mətni müxtəlif dillərə tərcümə et.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Layihələrinizi dünyayla paylaşın.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Qoşulur",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Bel çantası",

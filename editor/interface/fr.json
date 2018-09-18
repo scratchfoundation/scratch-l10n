@@ -91,7 +91,7 @@
         "message": "Nous y travaillons {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Aucun appareil trouvé",
         "description": "Text shown when no devices could be found"
     },
@@ -131,14 +131,6 @@
         "message": "Connexion...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Nom de l'appareil",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Se connecter",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Oups, on dirait que quelque chose s'est mal passé.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Aide",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Nom de l'appareil",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Se connecter",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Recherche d'appareils",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Aucun appareil trouvé",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "Stop",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "Oups ! Quelque chose s'est mal passé.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Créer un bloc",
@@ -348,7 +360,7 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restorer le lutin",
+        "message": "Restorer le sprite",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
@@ -410,6 +422,10 @@
     "gui.menuBar.giveFeedback": {
         "message": "Apporter des commentaires",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "Aide",
@@ -763,10 +779,6 @@
         "message": "Choisis un sprite",
         "description": "Heading for the sprite library"
     },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Êtes-vous sur de vouloir supprimer ceci?",
-        "description": "Confirmation for deleting sprites"
-    },
     "gui.tipsLibrary.tutorials": {
         "message": "Choisis un tutoriel",
         "description": "Heading for the help/tutorials library"
@@ -975,13 +987,13 @@
         "message": "Capter du mouvement avec la caméra.",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Traduction",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Traduire",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Traduire du texte dans différentes langues.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Connecter vos projets avec le monde.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Connexion",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Sac à dos",

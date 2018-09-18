@@ -91,7 +91,7 @@
         "message": "还在开发 {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "没有发现任何设备",
         "description": "Text shown when no devices could be found"
     },
@@ -131,14 +131,6 @@
         "message": "正在连接……",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "设备名称",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "连接",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "呀，好像出错了。",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "帮助",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "设备名称",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "连接",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "正在查找设备",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "没有发现任何设备",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "停止",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "呀，出错了。",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "制作新的积木",
@@ -410,6 +422,10 @@
     "gui.menuBar.giveFeedback": {
         "message": "意见反馈",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "帮助",
@@ -763,10 +779,6 @@
         "message": "选择一个角色",
         "description": "Heading for the sprite library"
     },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "确定要删除角色吗？",
-        "description": "Confirmation for deleting sprites"
-    },
     "gui.tipsLibrary.tutorials": {
         "message": "选择一个教程",
         "description": "Heading for the help/tutorials library"
@@ -975,13 +987,13 @@
         "message": "使用摄像头侦测运动。",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "谷歌翻译",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "翻译",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "把文字翻译成多种语言。",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "让项目连接到实体世界。",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "正在连接",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "书包",

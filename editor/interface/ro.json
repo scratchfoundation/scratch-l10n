@@ -91,7 +91,7 @@
         "message": "Lucrăm la asta {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Nu s-au găsit dispozitive.",
         "description": "Text shown when no devices could be found"
     },
@@ -131,14 +131,6 @@
         "message": "Se conectează...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Nume dispozitiv",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Conectează",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Hopa! Ceva nu a mers bine.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Ajutor",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Nume dispozitiv",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Conectează",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Se caută dispozitive",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Nu s-au găsit dispozitive.",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "Stop",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "Oops! Something went wrong.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Creaza un bloc",
@@ -264,27 +276,27 @@
         "description": "Button to get to the sounds panel"
     },
     "gui.importInfo.title": {
-        "message": "View a Scratch 2.0 Project",
+        "message": "Vizualizează un proiect Scratch 2.0",
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Beta nu vor fi salvate.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Preview will not be saved.",
+        "message": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Preview nu vor fi salvate.",
         "description": "Import project message"
     },
     "gui.importInfo.invalidFormatError": {
-        "message": "Uh oh, that project link or id doesn't look quite right.",
+        "message": "Atenție, link-ul sau id-ul proiectului nu este corect.",
         "description": "Invalid project link or id message"
     },
     "gui.importModal.viewproject": {
-        "message": "View",
+        "message": "Vizualizare",
         "description": "Label for button to load a scratch 2.0 project"
     },
     "gui.importInfo.goback": {
-        "message": "Go Back",
+        "message": "Înapoi",
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
@@ -296,7 +308,7 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.extensionLibrary.comingSoon": {
-        "message": "Coming Soon",
+        "message": "În curând",
         "description": "Label for extensions that are not yet implemented"
     },
     "gui.library.filterPlaceholder": {
@@ -308,15 +320,15 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message2": {
-        "message": "Loading sprites …",
+        "message": "Se încarcă personaje...",
         "description": "One of the loading messages"
     },
     "gui.loader.message3": {
-        "message": "Loading sounds …",
+        "message": "Se încarcă sunete...",
         "description": "One of the loading messages"
     },
     "gui.loader.message4": {
-        "message": "Loading extensions …",
+        "message": "Se încarcă extensii...",
         "description": "One of the loading messages"
     },
     "gui.loader.message5": {
@@ -332,15 +344,15 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message8": {
-        "message": "Preparing emojis …",
+        "message": "Se pregătesc emoji-urile ...",
         "description": "One of the loading messages"
     },
     "gui.loader.headline": {
-        "message": "Loading Project",
+        "message": "Se încarcă proiectul",
         "description": "Main loading message"
     },
     "gui.menuBar.LanguageSelector": {
-        "message": "language selector",
+        "message": "Selectare limbă",
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
@@ -348,19 +360,19 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
+        "message": "Anulează ștergere personaj",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "Anulează ștergere sunet",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "Anulează ștergere costum",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "Anulează ștergere",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.saveNow": {
@@ -380,11 +392,11 @@
         "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.uploadFromComputer": {
-        "message": "Load from your computer",
+        "message": "Încarcă de pe calculator",
         "description": "Menu bar item for uploading a project from your computer"
     },
     "gui.menuBar.downloadToComputer": {
-        "message": "Save to your computer",
+        "message": "Salvează pe calculatorul tău",
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
@@ -392,11 +404,11 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "Dezactivează modul Turbo",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "Activează modul Turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
@@ -404,12 +416,16 @@
         "description": "Label for project share button"
     },
     "gui.menuBar.seeCommunity": {
-        "message": "See Community",
+        "message": "Vezi Comunitatea",
         "description": "Label for see community button"
     },
     "gui.menuBar.giveFeedback": {
-        "message": "Give Feedback",
+        "message": "Oferă feedback",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "Ajutor",
@@ -436,19 +452,19 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Bun venit în Scratch 3.0 Beta !",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Bun venit în Scratch 3.0 Beta !",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "We're working on the next generation of Scratch. We're excited for you to try it!",
+        "message": "Lucrăm la următoarea generație de Scratch. Abia așteptăm să o încerci !",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
-        "message": "Not Now",
+        "message": "Nu acum",
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
@@ -456,11 +472,11 @@
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
-        "message": "View 2.0 Project",
+        "message": "Vezi proiect 2.0",
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
-        "message": "Pentru mai multe detalii, accesați {previewFaqLink}.",
+        "message": "Pentru mai multe detalii, accesează {previewFaqLink}.",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
@@ -480,7 +496,7 @@
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "This variable will be available to all sprites.",
+        "message": "Această variabilă va fi accesibilă tuturor personajelor.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
@@ -496,7 +512,7 @@
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.playMsg": {
-        "message": "Play",
+        "message": "Redare",
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.loadingMsg": {
@@ -508,11 +524,11 @@
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.reRecordMsg": {
-        "message": "Re-record",
+        "message": "Re-înregistrare",
         "description": "Button to re-record sound in recording playback"
     },
     "gui.recordModal.title": {
-        "message": "Record Sound",
+        "message": "Înregistrare sunet",
         "description": "Recording modal title"
     },
     "gui.soundEditor.sound": {
@@ -520,7 +536,7 @@
         "description": "Label for the name of the sound"
     },
     "gui.soundEditor.play": {
-        "message": "Play",
+        "message": "Redare",
         "description": "Title of the button to start playing the sound"
     },
     "gui.soundEditor.stop": {
@@ -544,15 +560,15 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "Mai rapid",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Slower",
+        "message": "Mai lent",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
-        "message": "Echo",
+        "message": "Ecou",
         "description": "Title of the button to apply the echo effect"
     },
     "gui.soundEditor.robot": {
@@ -560,15 +576,15 @@
         "description": "Title of the button to apply the robot effect"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "Mai puternic",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.soundEditor.softer": {
-        "message": "Softer",
+        "message": "Mai încet",
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "Inversează",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
@@ -604,35 +620,35 @@
         "description": "Button to add a sprite in the target pane from library"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paint",
+        "message": "Desenează",
         "description": "Button to add a sprite in the target pane from paint"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Surprise",
+        "message": "Surpriză",
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Încarcă personaj",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
-        "message": "Switch to large stage",
+        "message": "Comută scenă mare",
         "description": "Button to change stage size to large"
     },
     "gui.stageHeader.stageSizeSmall": {
-        "message": "Switch to small stage",
+        "message": "Comută scenă mică",
         "description": "Button to change stage size to small"
     },
     "gui.stageHeader.stageSizeFull": {
-        "message": "Enter full screen mode",
+        "message": "Intră în mod ecran complet",
         "description": "Button to change stage size to full screen"
     },
     "gui.stageHeader.stageSizeUnFull": {
-        "message": "Exit full screen mode",
+        "message": "Ieși din mod ecran complet",
         "description": "Button to get out of full screen mode"
     },
     "gui.stageHeader.fullscreenControl": {
-        "message": "Full Screen Control",
+        "message": "Control ecran complet",
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
@@ -640,11 +656,11 @@
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paint",
+        "message": "Desenează",
         "description": "Button to add a stage in the target pane from paint"
     },
     "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Surprise",
+        "message": "Surpriză",
         "description": "Button to add a random stage in the target pane"
     },
     "gui.stageSelector.addBackdropFromFile": {
@@ -664,15 +680,15 @@
         "description": "Label indicating turbo mode is active"
     },
     "gui.webglModal.label": {
-        "message": "Your Browser Does Not Support WebGL",
+        "message": "Browser-ul tău nu e compatibil cu WebGL",
         "description": "WebGL missing title"
     },
     "gui.webglModal.description": {
-        "message": "Unfortunately it looks like your browser or computer {webGlLink}. This technology is needed for Scratch 3.0 to run.",
+        "message": "Din păcate se pare că browser-ul sau computerul tău {webGlLink}. Această tehnologie este necesară pentru a rula Scratch 3.0.",
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
-        "message": "does not support WebGL",
+        "message": "nu e compatibil cu WebGL",
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.webglModal.back": {
@@ -692,7 +708,7 @@
         "description": "Heading for the backdrop library"
     },
     "gui.costumeLibrary.chooseACostume": {
-        "message": "Choose a Costume",
+        "message": "Alege un costum",
         "description": "Heading for the costume library"
     },
     "gui.costumeTab.addBackdropFromLibrary": {
@@ -700,15 +716,15 @@
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Choose a Costume",
+        "message": "Alege un costum",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.costumeTab.addBlankCostume": {
-        "message": "Paint",
+        "message": "Desenează",
         "description": "Button to add a blank costume in the editor tab"
     },
     "gui.costumeTab.addSurpriseCostume": {
-        "message": "Surprise",
+        "message": "Surpriză",
         "description": "Button to add a surprise costume in the editor tab"
     },
     "gui.costumeTab.addFileBackdrop": {
@@ -716,7 +732,7 @@
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.costumeTab.addFileCostume": {
-        "message": "Upload Costume",
+        "message": "Încarcă un costum",
         "description": "Button to add a costume by uploading a file in the editor tab"
     },
     "gui.costumeTab.addCameraCostume": {
@@ -724,31 +740,31 @@
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
     "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Choose an Extension",
+        "message": "Alege o extensie",
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Enter the URL of the extension",
+        "message": "Introdu URL-ul extensiei",
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "Fișierul proiectului selectat nu a putut fi încărcat.",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.recordingStep.alertMsg": {
-        "message": "Could not start recording",
+        "message": "Nu s-a putut înregistra",
         "description": "Alert for recording error"
     },
     "gui.soundLibrary.chooseASound": {
-        "message": "Choose a Sound",
+        "message": "Alege un sunet",
         "description": "Heading for the sound library"
     },
     "gui.soundTab.fileUploadSound": {
-        "message": "Upload Sound",
+        "message": "Încarcă sunet",
         "description": "Button to upload sound from file in the editor tab"
     },
     "gui.soundTab.surpriseSound": {
-        "message": "Surprise",
+        "message": "Surpriză",
         "description": "Button to get a random sound in the editor tab"
     },
     "gui.soundTab.recordSound": {
@@ -756,35 +772,31 @@
         "description": "Button to record a sound in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
-        "message": "Choose a Sound",
+        "message": "Alege un sunet",
         "description": "Button to add a sound in the editor tab"
     },
     "gui.spriteLibrary.chooseASprite": {
         "message": "Alege un personaj",
         "description": "Heading for the sprite library"
     },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
-        "description": "Confirmation for deleting sprites"
-    },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Alege un tutorial",
         "description": "Heading for the help/tutorials library"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Getting Started",
+        "message": "Să începem",
         "description": "Name for the 'Getting Started' how-to"
     },
     "gui.howtos.intro-move.step_stepMove": {
-        "message": "Add a move block",
+        "message": "Adaugă un bloc de mișcare",
         "description": "Step name for 'Add a move block' step"
     },
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Click the green flag to start",
+        "message": "Fă clic pe steagul verde pentru a porni",
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.animate-a-name.name": {
-        "message": "Animate a Name",
+        "message": "Animează un nume",
         "description": "Name for the 'Animate a Name' how-to"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
@@ -975,13 +987,13 @@
         "message": "Sense motion with the camera.",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Translate",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Traducere",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Translate text into many languages.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Connect your projects with the world.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Connecting",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Rucsac",

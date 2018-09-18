@@ -91,7 +91,7 @@
         "message": "Delamo na tem {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "Ni najdenih naprav",
         "description": "Text shown when no devices could be found"
     },
@@ -131,14 +131,6 @@
         "message": "Povezovanje...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "Ime naprave",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Poveži",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
         "message": "Ups, nekaj je šlo narobe.",
         "description": "The device connection process has encountered an error."
@@ -151,11 +143,19 @@
         "message": "Pomoč",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "Ime naprave",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "Poveži",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "Iščem naprave",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "Ni najdenih naprav",
         "description": "Text shown when no devices could be found"
     },
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "Ustavi",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "To je nerodno! Nekaj je šlo narobe.",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "Ustvari blok",
@@ -410,6 +422,10 @@
     "gui.menuBar.giveFeedback": {
         "message": "Sporoči povratne informacije",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "Pomoč",
@@ -763,10 +779,6 @@
         "message": "Izberi figuro",
         "description": "Heading for the sprite library"
     },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Si prepričan, da želiš to izbrisati?",
-        "description": "Confirmation for deleting sprites"
-    },
     "gui.tipsLibrary.tutorials": {
         "message": "Izberi Vodič.",
         "description": "Heading for the help/tutorials library"
@@ -975,13 +987,13 @@
         "message": "Nadzor gibanja s kamero",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google Translate",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "Prevedi",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
+    "gui.extension.translate.description": {
         "message": "Prevedi v različne jezike.",
-        "description": "Description for the 'Google Translate' extension"
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
         "message": "Poveži svoje projekte s svetom.",
@@ -1006,6 +1018,10 @@
     "gui.extension.wedo2.connectingMessage": {
         "message": "Povezovanje",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "Shramba",

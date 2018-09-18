@@ -91,24 +91,24 @@
         "message": "เรากำลังทำอยู่ {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
-    "gui.connection.auto-scanning.noDevicesFound": {
+    "gui.connection.auto-scanning.noPeripheralsFound": {
         "message": "ไม่พบอุปกรณ์",
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "นำอุปกรณ์ของคุณมาใกล้ๆ จากนั้นเริ่มค้นหา",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "กดปุ่มที่อุปกรณ์ของคุณ",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "เริ่มค้นหา",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "ค้นหา...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -124,23 +124,15 @@
         "description": "Button to disconnect the device"
     },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "กลับไปยังตัวแก้ไขโค้ด",
         "description": "Button to return to the editor"
     },
     "gui.connection.connecting-cancelbutton": {
         "message": "กำลังเชื่อมต่อ...",
         "description": "Label indicating that connection is in progress"
     },
-    "gui.connection.device-name-label": {
-        "message": "ชื่ออุปกรณ์",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "เชื่อมต่อ",
-        "description": "Button to start connecting to a specific device"
-    },
     "gui.connection.error.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
+        "message": "อ๊ะ ดูเหมือนว่ามีบางอย่างผิดพลาด",
         "description": "The device connection process has encountered an error."
     },
     "gui.connection.error.tryagainbutton": {
@@ -151,16 +143,24 @@
         "message": "ช่วยเหลือ",
         "description": "Button to view help content"
     },
-    "gui.connection.scanning.lookingfordevices": {
+    "gui.connection.peripheral-name-label": {
+        "message": "ชื่ออุปกรณ์",
+        "description": "Label for field showing the device name"
+    },
+    "gui.connection.connect": {
+        "message": "เชื่อมต่อ",
+        "description": "Button to start connecting to a specific device"
+    },
+    "gui.connection.scanning.lookingforperipherals": {
         "message": "กำลังมองหาอุปกรณ์",
         "description": "Text shown while scanning for devices"
     },
-    "gui.connection.scanning.noDevicesFound": {
+    "gui.connection.scanning.noPeripheralsFound": {
         "message": "ไม่พบอุปกรณ์",
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
+        "message": "เลือกอุปกรณ์ของคุณในรายการด้านบน",
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.connection.search": {
@@ -168,11 +168,11 @@
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
+        "message": "ตรวจสอบว่าคุณได้ติดตั้ง Scratch Link และเปิดใช้งานอยู่",
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
+        "message": "ตรวจสอบว่าเปิด Bluetooth แล้ว",
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
@@ -190,6 +190,18 @@
     "gui.controls.stop": {
         "message": "หยุด",
         "description": "Stop button title"
+    },
+    "gui.crashMessage.label": {
+        "message": "อุ๊ย! มีบางอย่างผิดพลาด",
+        "description": "Crash Message title"
+    },
+    "gui.crashMessage.description": {
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "description": "Message to inform the user that page has crashed."
+    },
+    "gui.crashMessage.reload": {
+        "message": "Reload",
+        "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
         "message": "สร้างบล็อกใหม่",
@@ -236,7 +248,7 @@
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
+        "message": "ซ้าย/ขวา",
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
@@ -268,7 +280,7 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "ใส่ลิงค์ไปยังโครงงาน Scratch ของคุณที่แชร์ไว้แล้ว การเปลี่ยนแปลงในเวอร์ชั่น 3.0 Beta จะไม่ถูกบันทึก",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
@@ -392,11 +404,11 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "ปิดโหมดเทอร์โบ",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "เปิดโหมดเทอร์โบ",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
@@ -410,6 +422,10 @@
     "gui.menuBar.giveFeedback": {
         "message": "ให้ข้อเสนอแนะ",
         "description": "Label for feedback form modal button"
+    },
+    "gui.gui.projectTitlePlaceholder": {
+        "message": "Project title here",
+        "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
         "message": "ช่วยเหลือ",
@@ -436,11 +452,11 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "ยินดีต้อนรับสู่ Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "ยินดีต้อนรับสู่ Scratch 3.0 Beta",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
@@ -612,7 +628,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "อัปโหลดสไปรต์",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -732,7 +748,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "ไฟล์โครงงานที่เลือกไม่สามารถโหลดได้",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.recordingStep.alertMsg": {
@@ -763,12 +779,8 @@
         "message": "เลือกสไปรต์",
         "description": "Heading for the sprite library"
     },
-    "gui.spriteSelectorItem.deleteSpriteConfirmation": {
-        "message": "Are you sure you want to delete this?",
-        "description": "Confirmation for deleting sprites"
-    },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "เลือกบทเรียน",
         "description": "Heading for the help/tutorials library"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
@@ -840,7 +852,7 @@
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "เลือกสไปรต์",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
@@ -852,7 +864,7 @@
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "เมื่อคลิกเพิ่มคะแนน",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
@@ -932,7 +944,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
+        "message": "หมุนมัน",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
@@ -944,7 +956,7 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "ใช้ปุ่มลูกศร",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
@@ -956,7 +968,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Play instruments and drums.",
+        "message": "เล่นเครื่องดนตรีและกลอง",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -964,35 +976,35 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Draw with your sprites.",
+        "message": "วาดด้วยสไปรต์ของคุณ",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
-        "message": "Video Sensing",
+        "message": "การตรวจจับวิดีโอ",
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "ตรวจจับการเคลื่อนไหวด้วยกล้อง",
         "description": "Description for the 'Video Sensing' extension"
     },
-    "gui.extension.googletranslate.name": {
-        "message": "Google แปลภาษา",
-        "description": "Name for the 'Google Translate' extension. Do not translate 'Google'."
+    "gui.extension.translate.name": {
+        "message": "แปลภาษา",
+        "description": "Name for the Translate extension"
     },
-    "gui.extension.googletranslate.description": {
-        "message": "Translate text into many languages.",
-        "description": "Description for the 'Google Translate' extension"
+    "gui.extension.translate.description": {
+        "message": "แปลข้อความเป็นหลายภาษา",
+        "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "เชื่อมต่อโครงงานของคุณกับโลก",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
+        "message": "กำลังเชื่อมต่อ",
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "Build interactive robots and more.",
+        "message": "สร้างหุ่นยนต์โต้ตอบและอื่นๆ",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
@@ -1000,12 +1012,16 @@
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
-        "message": "Build with motors and sensors.",
+        "message": "สร้างด้วยมอเตอร์และเซนเซอร์",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
+        "message": "กำลังเชื่อมต่อ",
         "description": "Message to help people connect to their WeDo."
+    },
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "กระเป๋าเป้",
