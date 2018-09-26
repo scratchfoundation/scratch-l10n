@@ -60,7 +60,7 @@
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display [TEXT]",
+        "message": "display text [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
@@ -124,7 +124,7 @@
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected test",
+        "message": "when pin [PIN] connected",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
@@ -299,6 +299,10 @@
         "message": "(13) もっかんフルート",
         "description": "Sound of a wooden flute being played"
     },
+    "music.midiSetInstrument": {
+        "message": "がっきを[INSTRUMENT]にする",
+        "description": "set the instrument for notes played according to a mapping of MIDI codes"
+    },
     "music.playDrumForBeats": {
         "message": "[DRUM]のドラムを[BEATS]はくならす",
         "description": "play drum sample for a number of beats"
@@ -415,6 +419,10 @@
         "message": "こんにちは",
         "description": "hello: the default text to speak"
     },
+    "text2speech.giant": {
+        "message": "giant",
+        "description": "Name for a funny voice with a low pitch."
+    },
     "text2speech.kitten": {
         "message": "kitten",
         "description": "A baby cat."
@@ -423,13 +431,13 @@
         "message": "max",
         "description": "Name for a voice with ambiguous gender."
     },
-    "text2speech.monster": {
-        "message": "monster",
-        "description": "Name for a funny voice with a low pitch."
-    },
     "text2speech.quinn": {
         "message": "quinn",
         "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.setLanguageBlock": {
+        "message": "set language to [LANGUAGE]",
+        "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
         "message": "set voice to [VOICE]",
