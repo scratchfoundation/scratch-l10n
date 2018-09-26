@@ -192,15 +192,15 @@
         "description": "Stop button title"
     },
     "gui.crashMessage.label": {
-        "message": "Oops! Something went wrong.",
+        "message": "უი, რაღაც შეცდომაა",
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "ვწუხვართ მაგრამ როგორც ჩანს Scratch გაიჭედა. ამ ბაგის\n                        შესახებ ავტომატურად ეცნობა Scratch-ის გუნდს. გთხოვთ ახლიდან გახსნათ გვერდი რათა სცადოთ\n                        კიდევ ერთხელ.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "ხელახლა ჩატვირთვა",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -296,7 +296,7 @@
         "description": "Label for button to load a scratch 2.0 project"
     },
     "gui.importInfo.goback": {
-        "message": "Go Back",
+        "message": "დაბრუნდით",
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
@@ -308,51 +308,55 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.extensionLibrary.comingSoon": {
-        "message": "Coming Soon",
+        "message": "მალე იქნება",
         "description": "Label for extensions that are not yet implemented"
     },
     "gui.library.filterPlaceholder": {
         "message": "ძიება",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "ყველა",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
-        "message": "Creating blocks …",
+        "message": "იქმნება ბლოკები...",
         "description": "One of the loading messages"
     },
     "gui.loader.message2": {
-        "message": "Loading sprites …",
+        "message": "იტვრირთება სპრაიტები...",
         "description": "One of the loading messages"
     },
     "gui.loader.message3": {
-        "message": "Loading sounds …",
+        "message": "იტვირთება ხმები...",
         "description": "One of the loading messages"
     },
     "gui.loader.message4": {
-        "message": "Loading extensions …",
+        "message": "იტვირთება დამატებები",
         "description": "One of the loading messages"
     },
     "gui.loader.message5": {
-        "message": "Herding cats …",
+        "message": "კატების მწყემსვა...",
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
-        "message": "Transmitting nanos …",
+        "message": "მიმდინარეობს ბუთხუზა პროექტების გადაცემა...",
         "description": "One of the loading messages"
     },
     "gui.loader.message7": {
-        "message": "Inflating gobos …",
+        "message": "თევზუნები აფრინდებიან...",
         "description": "One of the loading messages"
     },
     "gui.loader.message8": {
-        "message": "Preparing emojis …",
+        "message": "სმაილიკები მზადდება...",
         "description": "One of the loading messages"
     },
     "gui.loader.headline": {
-        "message": "Loading Project",
+        "message": "პროექტი იტვირთება",
         "description": "Main loading message"
     },
     "gui.menuBar.LanguageSelector": {
-        "message": "language selector",
+        "message": "ენის ასარჩევი",
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
@@ -360,43 +364,43 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
+        "message": "აღადგინე სპრაიტი",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "აღადგინე ხმა",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "აღადგინე კოსტიუმი",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "აღადგინე",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.saveNow": {
-        "message": "Save now",
+        "message": "შეინახე ეხლა",
         "description": "Menu bar item for saving now"
     },
     "gui.menuBar.file": {
-        "message": "File",
+        "message": "ფაილი",
         "description": "Text for file dropdown menu"
     },
     "gui.menuBar.new": {
-        "message": "New",
+        "message": "ახალი",
         "description": "Menu bar item for creating a new project"
     },
     "gui.menuBar.saveAsCopy": {
-        "message": "Save as a copy",
+        "message": "შეინახეთ ასლი",
         "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.uploadFromComputer": {
-        "message": "Load from your computer",
+        "message": "გადმოტვირთე შენი კომპიუტერიდან",
         "description": "Menu bar item for uploading a project from your computer"
     },
     "gui.menuBar.downloadToComputer": {
-        "message": "Save to your computer",
+        "message": "შეინახე შენს კომპიუტერში",
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
@@ -404,27 +408,35 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "გამორთე ტურბო მოდი",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "ჩართე ტურბო მოდი",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.share": {
-        "message": "Share",
+        "message": "გააზიარე",
         "description": "Label for project share button"
     },
     "gui.menuBar.seeCommunity": {
-        "message": "See Community",
+        "message": "ნახე ჯგუფი",
         "description": "Label for see community button"
     },
     "gui.menuBar.giveFeedback": {
-        "message": "Give Feedback",
+        "message": "გაგვიზიარე შენი მოსაზრება",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "შეურთდით Scratch-ს",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "შესვლა",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "პროექტის სახელი აქ",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -436,11 +448,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.contextMenu.default": {
-        "message": "normal readout",
+        "message": "ჩვეულებრივი წასაკითხი",
         "description": "Menu item to switch to the default monitor"
     },
     "gui.monitor.contextMenu.large": {
-        "message": "large readout",
+        "message": "დიდი წასაკითხი",
         "description": "Menu item to switch to the large monitor"
     },
     "gui.monitor.contextMenu.slider": {
@@ -448,31 +460,31 @@
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.previewInfo.label": {
-        "message": "Try Scratch 3.0",
+        "message": "სცადე Scratch 3.0",
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "გიწვევთ Scratch 3.0 Beta ვერსიაში",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "გიწვევთ Scratch 3.0 Beta ვერსიაში",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "We're working on the next generation of Scratch. We're excited for you to try it!",
+        "message": "ჩვენ ვმუშაობთ Scratch-ის მომდევნო თაობის შექმნაზე. ჩვენ მოხარული ვიქნებით თუ შენ მას გამოსცდი",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
-        "message": "Not Now",
+        "message": "ეხლა არა",
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Try It! {caticon}",
+        "message": "სცადე! {caticon}",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
-        "message": "View 2.0 Project",
+        "message": "ნახე 2.0 პროექტი",
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
@@ -484,23 +496,23 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.gui.variableScopeOptionAllSprites": {
-        "message": "For all sprites",
+        "message": "ყველა სპრაიტისთვის",
         "description": "Option message when creating a variable for making it available to all sprites"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "For this sprite only",
+        "message": "მხოლოდ ამ სპრაიტისთვის",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
     "gui.gui.variablePrompt": {
-        "message": "More Options",
+        "message": "უფრო მეტი ვარიანტები",
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "This variable will be available to all sprites.",
+        "message": "ეს ცვლადი იქნება ყველა სპრაიტისთვის",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
-        "message": "გააუქმეთ",
+        "message": "გააუქმე",
         "description": "Button in prompt for cancelling the dialog"
     },
     "gui.prompt.ok": {
@@ -508,11 +520,11 @@
         "description": "Button in prompt for confirming the dialog"
     },
     "gui.playbackStep.stopMsg": {
-        "message": "გაჩერდით",
+        "message": "გაჩერდი",
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.playMsg": {
-        "message": "Play",
+        "message": "ითამაშე",
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.loadingMsg": {
@@ -524,11 +536,11 @@
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.reRecordMsg": {
-        "message": "Re-record",
+        "message": "ხელახლა ჩაწერე",
         "description": "Button to re-record sound in recording playback"
     },
     "gui.recordModal.title": {
-        "message": "Record Sound",
+        "message": "ჩაწერე ხმა",
         "description": "Recording modal title"
     },
     "gui.soundEditor.sound": {
@@ -536,7 +548,7 @@
         "description": "Label for the name of the sound"
     },
     "gui.soundEditor.play": {
-        "message": "Play",
+        "message": "ითამაშე",
         "description": "Title of the button to start playing the sound"
     },
     "gui.soundEditor.stop": {
@@ -544,7 +556,7 @@
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
-        "message": "Trim",
+        "message": "შეკრიჭე",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
@@ -560,43 +572,43 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "აუსწრაფე",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Slower",
+        "message": "შეანელე",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
-        "message": "Echo",
+        "message": "ექო",
         "description": "Title of the button to apply the echo effect"
     },
     "gui.soundEditor.robot": {
-        "message": "Robot",
+        "message": "რობოტი",
         "description": "Title of the button to apply the robot effect"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "უფრო ხმამაღლა",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.soundEditor.softer": {
-        "message": "Softer",
+        "message": "ცოტა რბილად",
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "უკან მიბრუნება",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Name",
+        "message": "სახელი",
         "description": "Placeholder text for sprite name"
     },
     "gui.SpriteInfo.sprite": {
-        "message": "Sprite",
+        "message": "სპრაიტი",
         "description": "Sprite info label"
     },
     "gui.SpriteInfo.show": {
-        "message": "Show",
+        "message": "ანახე",
         "description": "Sprite info show label"
     },
     "gui.SpriteInfo.size": {
@@ -604,7 +616,7 @@
         "description": "Sprite info size label"
     },
     "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "duplicate",
+        "message": "დუბლირება",
         "description": "Menu item to duplicate in the right click menu"
     },
     "gui.spriteSelectorItem.contextMenuDelete": {
@@ -616,55 +628,55 @@
         "description": "Menu item to export the selected item"
     },
     "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Choose a Sprite",
+        "message": "აირჩიე სპრაიტი",
         "description": "Button to add a sprite in the target pane from library"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paint",
+        "message": "დახატე",
         "description": "Button to add a sprite in the target pane from paint"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Surprise",
+        "message": "სიურპრიზი",
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "ატვირთე სპრაიტი",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
-        "message": "Switch to large stage",
+        "message": "შეცვალე დიდი სცენით",
         "description": "Button to change stage size to large"
     },
     "gui.stageHeader.stageSizeSmall": {
-        "message": "Switch to small stage",
+        "message": "შეცვალე პატარა სცენით",
         "description": "Button to change stage size to small"
     },
     "gui.stageHeader.stageSizeFull": {
-        "message": "Enter full screen mode",
+        "message": "გაადიდე მთელ ეკრანზე",
         "description": "Button to change stage size to full screen"
     },
     "gui.stageHeader.stageSizeUnFull": {
-        "message": "Exit full screen mode",
+        "message": "გამოდი დიდი ეკრანიდან",
         "description": "Button to get out of full screen mode"
     },
     "gui.stageHeader.fullscreenControl": {
-        "message": "Full Screen Control",
+        "message": "მთლიანი ეკრანის კონტროლი",
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "აირჩიე უკანა ფონი",
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paint",
+        "message": "დახატე",
         "description": "Button to add a stage in the target pane from paint"
     },
     "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Surprise",
+        "message": "სიურპრიზი",
         "description": "Button to add a random stage in the target pane"
     },
     "gui.stageSelector.addBackdropFromFile": {
-        "message": "Upload Backdrop",
+        "message": "ატვირთე უკანა ფონი",
         "description": "Button to add a stage in the target pane from file"
     },
     "gui.stageSelector.stage": {
@@ -676,19 +688,19 @@
         "description": "Label for the backdrops in the stage selector"
     },
     "gui.turboMode.active": {
-        "message": "Turbo Mode",
+        "message": "ტურბო მოდი",
         "description": "Label indicating turbo mode is active"
     },
     "gui.webglModal.label": {
-        "message": "Your Browser Does Not Support WebGL",
+        "message": "თქვენი ბრაუზერი არ უხდება WebGL-ს",
         "description": "WebGL missing title"
     },
     "gui.webglModal.description": {
-        "message": "Unfortunately it looks like your browser or computer {webGlLink}. This technology is needed for Scratch 3.0 to run.",
+        "message": "უი, როგორც ჩანს თქვენი ბრაუზერი ან კომპიუტერი {webGlLink}. არადა ეს ტექნოლოგიაა საჭირო Scratch 3.0-თვის.",
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
-        "message": "does not support WebGL",
+        "message": "ვერ მუშაობს WebGL-თან",
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.webglModal.back": {
@@ -704,35 +716,35 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Choose a Backdrop",
+        "message": "აირჩიე უკანა ფონი",
         "description": "Heading for the backdrop library"
     },
     "gui.costumeLibrary.chooseACostume": {
-        "message": "Choose a Costume",
+        "message": "აირჩიე კოსტიუმი",
         "description": "Heading for the costume library"
     },
     "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "აირჩიე უკანა ფონი",
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Choose a Costume",
+        "message": "აირჩიე კოსტიუმი",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.costumeTab.addBlankCostume": {
-        "message": "Paint",
+        "message": "დახატე",
         "description": "Button to add a blank costume in the editor tab"
     },
     "gui.costumeTab.addSurpriseCostume": {
-        "message": "Surprise",
+        "message": "სიურპრიზი",
         "description": "Button to add a surprise costume in the editor tab"
     },
     "gui.costumeTab.addFileBackdrop": {
-        "message": "Upload Backdrop",
+        "message": "ატვირთე უკანა ფონი",
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.costumeTab.addFileCostume": {
-        "message": "Upload Costume",
+        "message": "ატვირთე კოსტიუმი",
         "description": "Button to add a costume by uploading a file in the editor tab"
     },
     "gui.costumeTab.addCameraCostume": {
@@ -740,227 +752,235 @@
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
     "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Choose an Extension",
+        "message": "აირჩიე დამატება",
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Enter the URL of the extension",
+        "message": "ჩაწერე დამატების URL",
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "არჩეული პროექტის ფაილი ვერ გადმოიტვირთა",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.recordingStep.alertMsg": {
-        "message": "Could not start recording",
+        "message": "ვერ ვიწყებთ ჩაწერას",
         "description": "Alert for recording error"
     },
     "gui.soundLibrary.chooseASound": {
-        "message": "Choose a Sound",
+        "message": "აირჩიე ხმა",
         "description": "Heading for the sound library"
     },
     "gui.soundTab.fileUploadSound": {
-        "message": "Upload Sound",
+        "message": "ატვირთე ხმა",
         "description": "Button to upload sound from file in the editor tab"
     },
     "gui.soundTab.surpriseSound": {
-        "message": "Surprise",
+        "message": "სიურპრიზი",
         "description": "Button to get a random sound in the editor tab"
     },
     "gui.soundTab.recordSound": {
-        "message": "Record",
+        "message": "ჩაწერე",
         "description": "Button to record a sound in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
-        "message": "Choose a Sound",
+        "message": "აირჩიე ხმა",
         "description": "Button to add a sound in the editor tab"
     },
     "gui.spriteLibrary.chooseASprite": {
-        "message": "Choose a Sprite",
+        "message": "აირჩიე სპრაიტი",
         "description": "Heading for the sprite library"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "აირჩია ინსტრუქცია",
         "description": "Heading for the help/tutorials library"
+    },
+    "gui.defaultProject.meow": {
+        "message": "მიაუუ",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "ჩემი ცვლადი",
+        "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "პირველი ნაბიჯები",
         "description": "Name for the 'Getting Started' how-to"
     },
     "gui.howtos.intro-move.step_stepMove": {
-        "message": "Add a move block",
+        "message": "დაამატე მოძრაობის ბლოკი",
         "description": "Step name for 'Add a move block' step"
     },
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Click the green flag to start",
+        "message": "დააწკაპუნე მწვანე დროშას და დაიწყება",
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.animate-a-name.name": {
-        "message": "Animate a Name",
+        "message": "დახატე სახელი",
         "description": "Name for the 'Animate a Name' how-to"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Pick a Letter Sprite",
+        "message": "აირჩიე ასოს სპრაიტი",
         "description": "Step name for 'Pick a Letter Sprite' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Play a Sound When Clicked",
+        "message": "დაწკაპუნებისას დააუკარი მუსიკა",
         "description": "Step name for 'Play a Sound When Clicked' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Pick Another Letter Sprite",
+        "message": "აირჩიე სხვა ასოს სპრაიტი",
         "description": "Step name for 'Pick Another Letter Sprite"
     },
     "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Change color",
+        "message": "შეცვალე ფერი",
         "description": "Step name for 'Change color' step"
     },
     "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Pick Another Letter Sprite & Make It Spin",
+        "message": "აირჩიე სხვა ასოს სპრაიტი და დაატრიალე ის",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Pick Another Letter Sprite & Make It Grow",
+        "message": "აირჩიე სხვა ასოს სპრაიტი და გაზარდე ის",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
-        "message": "Make Music",
+        "message": "შექმენი მუსიკა",
         "description": "Name for the 'Make Music' how-to"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Pick an Instrument Sprite",
+        "message": "აირჩიე ინსტრუმენტის სპრაიტი",
         "description": "Step name for 'Pick an Instrument Sprite' step"
     },
     "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Play Sound When Clicked",
+        "message": "დაწკაპუნებისას დაუკარი ხმა",
         "description": "Step name for 'Play Sound When Clicked' step"
     },
     "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Create a Song",
+        "message": "შექმენი სიმღერა",
         "description": "Step name for 'Create a Song' step"
     },
     "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Choose a Drum & Make a Beat",
+        "message": "აირჩიე ბარაბანი და დაუკარი",
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Choose the Microphone Sprite & Surprise Beatbox",
+        "message": "აირჩიე მიკროფონის სპრაიტი და სიურპრიზების რიტმბოქსი",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
-        "message": "Make a Clicker Game",
+        "message": "შექმენი მაგარი თამაში",
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "აიღე სპრაიტი",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Play Sound When Clicked",
+        "message": "დაწკაპუნებისას დაუკარი ხმა",
         "description": "Play Sound When Clicked' step"
     },
     "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Create Score Variable",
+        "message": "შექმენი ქულების ცვლადი",
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "დაწკაპუნებისას მოუმატე ქულა",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
-        "message": "Go to a random position",
+        "message": "აირჩიე შემთხვევითი მდებარეობა",
         "description": "Step name for 'Go to a random position' step"
     },
     "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Change Color",
+        "message": "შეცვალე ფერი",
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.make-music.step_ResetScore": {
-        "message": "Reset Score",
+        "message": "გაანულე ქულები",
         "description": "Step name for 'Reset Score' step"
     },
     "gui.howtos.make-a-chase-game.name": {
-        "message": "Make a Chase Game",
+        "message": "შექმენი დაჭერობანა თამაში",
         "description": "Name for the 'Make a Chase Game' how-to"
     },
     "gui.howtos.Chase-Game.step_BG": {
-        "message": "Add a Backdrop",
+        "message": "დაუმატე უკანა ფონი",
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Add a Sprite",
+        "message": "დაამატე სპრაიტი",
         "description": "Step name for 'Add a Sprite' step"
     },
     "gui.howtos.make-music.step_LeftRight": {
-        "message": "Move Right & Left With Arrow Keys",
+        "message": "იმოძრავე მარჯვნივ და მარცხნივ ისარის ღილაკებით",
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Move Up & Down With Arrow Keys",
+        "message": "იმოძრავე ზევით და ქვევით ისარის ღილაკებით",
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Add Another Sprite",
+        "message": "დაამატე კიდევ ერთი სპრაიტი",
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Move Randomly",
+        "message": "იმოძრავე ქაოტურად ",
         "description": "Step name for 'Move Randomly' step"
     },
     "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "In Octopus Sprite, When Touching Play Sound",
+        "message": "რვაფეხას სპრაიტში, შეხებისას ჩაირთოს ხმა",
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Create Score Variable",
+        "message": "შექმენი ქულების ცვლადი",
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "In Octopus Sprite, When Touching Add Score",
+        "message": "რვაფეხას სპრაიტში შეხებისას დაუმატე ქულა",
         "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
     },
     "gui.howtos.add-sprite.name": {
-        "message": "Add a Sprite",
+        "message": "დაამატე სპრაიტი",
         "description": "Name for the 'Add a Sprite' how-to"
     },
     "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Add a Sprite",
+        "message": "დაამატე სპრაიტი",
         "description": "Step name for 'Add a new sprite' step"
     },
     "gui.howtos.add-a-backdrop.name": {
-        "message": "Add a Backdrop",
+        "message": "დაუმატე უკანა ფონი",
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.howtos.change-size.name": {
-        "message": "Change Size",
+        "message": "შეცვალე ზომა",
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.howtos.glide-around.name": {
-        "message": "Glide Around",
+        "message": "ისრიალე გარშემო",
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
-        "message": "Record a Sound",
+        "message": "ჩაწერე ხმა",
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
+        "message": "ატრიალე გარშემო",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
-        "message": "Hide and Show",
+        "message": "დამალე და უჩვენე",
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "Animate a Sprite",
+        "message": "დახატე სპრაიტი",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "გამოიყენე ისრიანი ღილაკები",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
-        "message": "Add Effects",
+        "message": "დაუმატე ეფექტები",
         "description": "Name for the 'Add Effects' how-to"
     },
     "gui.extension.music.name": {
@@ -968,7 +988,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Play instruments and drums.",
+        "message": "დაუკარი ინსტრუმენტებზე და ბარაბანზე",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -976,7 +996,7 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Draw with your sprites.",
+        "message": "დახატე შენი სპრაიტებით",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
@@ -984,47 +1004,143 @@
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "იგრძენი მოძრაობა კამერით",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.translate.name": {
-        "message": "Translate",
+        "message": "თარგმნე",
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
-        "message": "Translate text into many languages.",
+        "message": "თარგმნე ტექსტი ბევრ ენაზე",
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "დაუკავშირდი მსოფლიოს შენი პროექტებით",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
+        "message": "კავშირი მყარდება",
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "Build interactive robots and more.",
+        "message": "ააგე ინტერაქტიული რობოტები და სხვა რაღაცეები",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "message": "კავშირი მყარდება. დარწმუნდი რომ შენი EV3-ის პინი არის 1234",
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
-        "message": "Build with motors and sensors.",
+        "message": "ააგე ძრავებით და სენსორებით",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
+        "message": "კავშირი მყარდება",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "ყველა",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "Animals",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "Dance",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "Effects",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "Fantasy",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "Fashion",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Food",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "Indoors",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Loops",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "მუსიკა",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "Notes",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "Outdoors",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Patterns",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "ხალხი",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "Percussion",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "Space",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "სპორტი",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "Underwater",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Voice",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Wacky",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "ზურგჩანთა{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "კოსტიუმი{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "სპრაიტი{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "ამოხტა",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratch პროექტი",
         "description": "Default title for project"
     },
     "gui.backpack.header": {
-        "message": "Backpack",
+        "message": "ზურგჩანთა",
         "description": "Button to open the backpack"
     }
 }

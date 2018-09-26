@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "לצערנו יש תקלה בסקראץ'. בעיה זו דווחה באופן אוטומטי לצוות סקראץ'. אנא רעננו את העמוד כדי לנסות שוב.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "טעינה מחדש",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -256,7 +256,7 @@
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
-        "message": "הוסיפו תוסף",
+        "message": "הוסיפו הרחבה",
         "description": "Button to add an extension in the target pane"
     },
     "gui.gui.codeTab": {
@@ -315,6 +315,10 @@
         "message": "חיפוש",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "הכל",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
         "message": "יצירת לבנים …",
         "description": "One of the loading messages"
@@ -328,7 +332,7 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message4": {
-        "message": "טוען תוספים …",
+        "message": "טוען הרחבות …",
         "description": "One of the loading messages"
     },
     "gui.loader.message5": {
@@ -423,8 +427,16 @@
         "message": "תנו משוב",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "הרשמה",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "כניסה",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "כתבו כאן את כותרת הפרויקט",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -740,11 +752,11 @@
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
     "gui.extensionLibrary.chooseAnExtension": {
-        "message": "בחרו תוסף",
+        "message": "בחרו הרחבה",
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "הכניסו את ה־URL של התוסף",
+        "message": "הכניסו את ה־URL של ההרחבה",
         "description": "Prompt for unoffical extension url"
     },
     "gui.projectLoader.loadError": {
@@ -782,6 +794,14 @@
     "gui.tipsLibrary.tutorials": {
         "message": "בחרו מדריך",
         "description": "Heading for the help/tutorials library"
+    },
+    "gui.defaultProject.meow": {
+        "message": "מיאו",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "המשתנה שלי",
+        "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "מתחילים",
@@ -1019,8 +1039,104 @@
         "message": "מתחבר",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "הכל",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "חיות",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "ריקוד",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "אפקטים",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "פנטסיה",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "אופנה",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Food",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "בפנים",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Loops",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "מוזיקה",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "Notes",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "בחוץ",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Patterns",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "אנשים",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "כלי הקשה",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "רווח",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "ספורט",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "תת-מימי",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Voice",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Wacky",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "רקע{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "תלבושת{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "דמות{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "פופ",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "פרויקט סקראץ'",
         "description": "Default title for project"
     },
     "gui.backpack.header": {

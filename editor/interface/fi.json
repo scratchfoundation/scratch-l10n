@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Olemme pahoillamme, mutta näyttää siltä, että Scratch kaatui. Tästä\n                        viasta on automaattisesti ilmoitettu Scratch-tiimille. Päivitä sivu yrittääksesi\n                        uudelleen.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Lataa uudelleen",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -315,6 +315,10 @@
         "message": "Haku",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "Kaikki",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
         "message": "Luodaan lohkoja...",
         "description": "One of the loading messages"
@@ -423,8 +427,16 @@
         "message": "Anna palautetta",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "Liity Scratchiin",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "Kirjaudu sisään",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Projektin otsikko tähän",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -783,6 +795,14 @@
         "message": "Valitse oppitunti",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.defaultProject.meow": {
+        "message": "Mau",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "muuttujani",
+        "description": "Name for the default variable"
+    },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "Aloitus",
         "description": "Name for the 'Getting Started' how-to"
@@ -1019,8 +1039,104 @@
         "message": "Yhdistetään",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "Kaikki",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "Eläimet",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "Tanssi",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "Efektit",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "Fantasia",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "Muoti",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Ruoka",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "Sisällä",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Toistorakenteet",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "Musiikki",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "Nuotit",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "Ulkona",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Kuviot",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "Ihmiset",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "Rummut",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "Välilyönti",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "Urheilu",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "Vedenalainen",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Ääni",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Outo",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "tausta{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "asuste{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "Hahmo{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "pop",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratch-projekti",
         "description": "Default title for project"
     },
     "gui.backpack.header": {

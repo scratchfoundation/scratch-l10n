@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "申し訳ありません。Scratchがクラッシュしたようです。この問題はScratchチームに自動的に送信されました。ページを再読み込みしてください。 ",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "再読み込み",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -315,6 +315,10 @@
         "message": "検索",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "すべて",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
         "message": "ブロックを作成中…",
         "description": "One of the loading messages"
@@ -423,8 +427,16 @@
         "message": "意見を送る",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "Scratchに参加しよう",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "サインイン",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "プロジェクトのタイトルを入力",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -783,6 +795,14 @@
         "message": "チュートリアルを選ぶ",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.defaultProject.meow": {
+        "message": "ニャー",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "作った変数",
+        "description": "Name for the default variable"
+    },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "さあ、始めましょう",
         "description": "Name for the 'Getting Started' how-to"
@@ -1019,8 +1039,104 @@
         "message": "接続中",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "すべて",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "動物",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "ダンス",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "効果",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "ファンタジー",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "ファッション",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Food",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "屋内",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Loops",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "音楽",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "ノート",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "屋外",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Patterns",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "人",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "打楽器",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "宇宙",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "スポーツ",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "海中",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Voice",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Wacky",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "背景{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "コスチューム{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "スプライト{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "ポップ",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratchのプロジェクト",
         "description": "Default title for project"
     },
     "gui.backpack.header": {

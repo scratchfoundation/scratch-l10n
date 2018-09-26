@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Ár leithscéal, ach tá Scratch tar éis tuairteáil. Cuireadh an fhadhb seo\nin iúl d'Fhoireann Scratch go huathoibríoch. Athlódáil an leathanach chun triail\neile a bhaint as.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Athlódáil",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -315,6 +315,10 @@
         "message": "Cuardaigh",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "Uile",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
         "message": "Blocanna á gcruthú...",
         "description": "One of the loading messages"
@@ -423,8 +427,16 @@
         "message": "Tabhair Aiseolas",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "Cláraigh le Scratch",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "Logáil isteach",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Teideal an tionscadail anseo",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -783,6 +795,14 @@
         "message": "Roghnaigh Cúrsa Teagaisc",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.defaultProject.meow": {
+        "message": "Míáú",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "m'athróg",
+        "description": "Name for the default variable"
+    },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "Tús Maith",
         "description": "Name for the 'Getting Started' how-to"
@@ -1019,8 +1039,104 @@
         "message": "Ceangal",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "Uile",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "Ainmhithe",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "Damhsa",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "Maisíochtaí",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "Fantaisíocht",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "Faisean",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Food",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "Taobh Istigh",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Loops",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "Ceol",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "Nótaí",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "Amuigh Faoin Aer",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Patterns",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "Daoine",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "Cnaguirlisí",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "Spás",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "Spórt",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "Faoi uisce",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Voice",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Wacky",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "cúlra{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "culaith{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "Sprid{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "pléasc",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Tionscadal Scratch",
         "description": "Default title for project"
     },
     "gui.backpack.header": {

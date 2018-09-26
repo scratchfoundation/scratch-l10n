@@ -192,15 +192,15 @@
         "description": "Stop button title"
     },
     "gui.crashMessage.label": {
-        "message": "Oops! Something went wrong.",
+        "message": "Hopa! Ceva nu a mers bine.",
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Ne pare foarte rău, dar se pare că Scratch nu a funcționat. Eroarea a fost transmisă automat echipei Scratch. Reîncarcă pagina pentru a continua.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Reîncarcă",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -252,7 +252,7 @@
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
+        "message": "nu roti",
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
@@ -315,6 +315,10 @@
         "message": "Caută",
         "description": "Placeholder text for library search field"
     },
+    "gui.library.allTag": {
+        "message": "Tot",
+        "description": "Label for library tag to revert to all items after filtering by tag."
+    },
     "gui.loader.message1": {
         "message": "Creare blocuri ...",
         "description": "One of the loading messages"
@@ -332,15 +336,15 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message5": {
-        "message": "Herding cats …",
+        "message": "Adunăm pisici ...",
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
-        "message": "Transmitting nanos …",
+        "message": "Îl pieptănăm pe Nano...",
         "description": "One of the loading messages"
     },
     "gui.loader.message7": {
-        "message": "Inflating gobos …",
+        "message": "Îl umflăm pe Gobo ...",
         "description": "One of the loading messages"
     },
     "gui.loader.message8": {
@@ -423,8 +427,16 @@
         "message": "Oferă feedback",
         "description": "Label for feedback form modal button"
     },
+    "gui.menuBar.joinScratch": {
+        "message": "Alatura-te Scratch",
+        "description": "Link for creating a Scratch account"
+    },
+    "gui.menuBar.signIn": {
+        "message": "Logare",
+        "description": "Link for signing in to your Scratch account"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Titlul proiectului se scrie aici",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -468,7 +480,7 @@
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Try It! {caticon}",
+        "message": "Încearcă !",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
@@ -544,7 +556,7 @@
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
-        "message": "Trim",
+        "message": "Decupează",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
@@ -783,6 +795,14 @@
         "message": "Alege un tutorial",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.defaultProject.meow": {
+        "message": "Miau",
+        "description": "Name for the meow sound"
+    },
+    "gui.defaultProject.variable": {
+        "message": "variabila mea",
+        "description": "Name for the default variable"
+    },
     "gui.howtos.intro-move-sayhello-hat.name": {
         "message": "Să începem",
         "description": "Name for the 'Getting Started' how-to"
@@ -800,27 +820,27 @@
         "description": "Name for the 'Animate a Name' how-to"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Pick a Letter Sprite",
+        "message": "Alege o literă ca personaj",
         "description": "Step name for 'Pick a Letter Sprite' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Play a Sound When Clicked",
+        "message": "Redă un sunet când se face clic",
         "description": "Step name for 'Play a Sound When Clicked' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Pick Another Letter Sprite",
+        "message": "Alege o altă literă ca personaj",
         "description": "Step name for 'Pick Another Letter Sprite"
     },
     "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Change color",
+        "message": "Schimbă culoarea",
         "description": "Step name for 'Change color' step"
     },
     "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Pick Another Letter Sprite & Make It Spin",
+        "message": "Alege încă o literă și fă-o să se rotească",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Pick Another Letter Sprite & Make It Grow",
+        "message": "Alege o altă literă și fă-o să se mărească",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
@@ -828,47 +848,47 @@
         "description": "Name for the 'Make Music' how-to"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Pick an Instrument Sprite",
+        "message": "Alege un instrument muzical ca personaj",
         "description": "Step name for 'Pick an Instrument Sprite' step"
     },
     "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Play Sound When Clicked",
+        "message": "Redă un sunet când se face clic",
         "description": "Step name for 'Play Sound When Clicked' step"
     },
     "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Create a Song",
+        "message": "Creează un cântec",
         "description": "Step name for 'Create a Song' step"
     },
     "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Choose a Drum & Make a Beat",
+        "message": "Alege o tobă și fă un ritm",
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Choose the Microphone Sprite & Surprise Beatbox",
+        "message": "Alege personajul Microfon (Microphone) și un beatbox aleator",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
-        "message": "Make a Clicker Game",
+        "message": "Creează un joc de îndemânare",
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "Alege un personaj",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Play Sound When Clicked",
+        "message": "Redă un sunet când se face clic",
         "description": "Play Sound When Clicked' step"
     },
     "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Create Score Variable",
+        "message": "Creează o variabilă pentru scor",
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "Mărește scorul când se dă clic pe personaj",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
-        "message": "Go to a random position",
+        "message": "Mergi la o poziție aleatoare",
         "description": "Step name for 'Go to a random position' step"
     },
     "gui.howtos.make-music.step_GameChangeColor": {
@@ -876,11 +896,11 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.make-music.step_ResetScore": {
-        "message": "Reset Score",
+        "message": "Resetează scorul",
         "description": "Step name for 'Reset Score' step"
     },
     "gui.howtos.make-a-chase-game.name": {
-        "message": "Make a Chase Game",
+        "message": "Creează un joc de urmărire",
         "description": "Name for the 'Make a Chase Game' how-to"
     },
     "gui.howtos.Chase-Game.step_BG": {
@@ -892,31 +912,31 @@
         "description": "Step name for 'Add a Sprite' step"
     },
     "gui.howtos.make-music.step_LeftRight": {
-        "message": "Move Right & Left With Arrow Keys",
+        "message": "Deplasare stânga-dreapta cu tastele săgeți",
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Move Up & Down With Arrow Keys",
+        "message": "Deplasare sus-jos cu tastele săgeți",
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Add Another Sprite",
+        "message": "Mai adaugă un personaj",
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Move Randomly",
+        "message": "Deplasare aleatoare",
         "description": "Step name for 'Move Randomly' step"
     },
     "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "In Octopus Sprite, When Touching Play Sound",
+        "message": "Pentru personajul Caracatiță (Octopus), redă sunet la atingerea cu celălalt personaj",
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Create Score Variable",
+        "message": "Creează o variabilă pentru scor",
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "In Octopus Sprite, When Touching Add Score",
+        "message": "Pentru personajul Caracatiță (Octopus), la atingere crește scorul",
         "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
     },
     "gui.howtos.add-sprite.name": {
@@ -932,15 +952,15 @@
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.howtos.change-size.name": {
-        "message": "Change Size",
+        "message": "Modifică mărimea",
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.howtos.glide-around.name": {
-        "message": "Glide Around",
+        "message": "Alunecă ici-colo",
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
-        "message": "Record a Sound",
+        "message": "Înregistrează un sunet",
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
@@ -948,15 +968,15 @@
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
-        "message": "Hide and Show",
+        "message": "Dispare și apare",
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "Animate a Sprite",
+        "message": "Animează un personaj",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "Folosește tastele săgeți",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
@@ -968,7 +988,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Play instruments and drums.",
+        "message": "Cântă la instrumente și tobe",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -976,7 +996,7 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Draw with your sprites.",
+        "message": "Desenează cu personajele tale.",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
@@ -984,7 +1004,7 @@
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "Detectează mișcarea cu ajutorul camerei.",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.translate.name": {
@@ -992,35 +1012,131 @@
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
-        "message": "Translate text into many languages.",
+        "message": "Tradu texte în alte limbi.",
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "Conectează-ți proiectele cu lumea.",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
+        "message": "Conectare",
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "Build interactive robots and more.",
+        "message": "Construiește roboți interactivi și mai mult decât atât.",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "message": "Conectare. Asigură-te că pin-ul dispozitivului EV3 este 1234.",
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
-        "message": "Build with motors and sensors.",
+        "message": "Construiește cu motorașe și senzori.",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
+        "message": "Conectare",
         "description": "Message to help people connect to their WeDo."
     },
+    "gui.libraryTags.all": {
+        "message": "Tot",
+        "description": "Tag for filtering a library for everything"
+    },
+    "gui.libraryTags.animals": {
+        "message": "Animale",
+        "description": "Tag for filtering a library for animals"
+    },
+    "gui.libraryTags.dance": {
+        "message": "Dans",
+        "description": "Tag for filtering a library for dance"
+    },
+    "gui.libraryTags.effects": {
+        "message": "Efecte",
+        "description": "Tag for filtering a library for effects"
+    },
+    "gui.libraryTags.fantasy": {
+        "message": "Fantezie",
+        "description": "Tag for filtering a library for fantasy"
+    },
+    "gui.libraryTags.fashion": {
+        "message": "Moda",
+        "description": "Tag for filtering a library for fashion"
+    },
+    "gui.libraryTags.food": {
+        "message": "Mâncare",
+        "description": "Tag for filtering a library for food"
+    },
+    "gui.libraryTags.indoors": {
+        "message": "Interioare",
+        "description": "Tag for filtering a library for indoors"
+    },
+    "gui.libraryTags.loops": {
+        "message": "Repetitive",
+        "description": "Tag for filtering a library for loops"
+    },
+    "gui.libraryTags.music": {
+        "message": "Muzica",
+        "description": "Tag for filtering a library for music"
+    },
+    "gui.libraryTags.notes": {
+        "message": "Note",
+        "description": "Tag for filtering a library for notes"
+    },
+    "gui.libraryTags.outdoors": {
+        "message": "Exterioare",
+        "description": "Tag for filtering a library for outdoors"
+    },
+    "gui.libraryTags.patterns": {
+        "message": "Șabloane",
+        "description": "Tag for filtering a library for patterns"
+    },
+    "gui.libraryTags.people": {
+        "message": "Oameni",
+        "description": "Tag for filtering a library for people"
+    },
+    "gui.libraryTags.percussion": {
+        "message": "Percuție",
+        "description": "Tag for filtering a library for percussion"
+    },
+    "gui.libraryTags.space": {
+        "message": "Spațiu",
+        "description": "Tag for filtering a library for space"
+    },
+    "gui.libraryTags.sports": {
+        "message": "Sporturi",
+        "description": "Tag for filtering a library for sports"
+    },
+    "gui.libraryTags.underwater": {
+        "message": "Subacvatic",
+        "description": "Tag for filtering a library for underwater"
+    },
+    "gui.libraryTags.voice": {
+        "message": "Voce",
+        "description": "Tag for filtering a library for voice"
+    },
+    "gui.libraryTags.wacky": {
+        "message": "Trăznite",
+        "description": "Tag for filtering a library for wacky"
+    },
+    "gui.sharedMessages.backdrop": {
+        "message": "decor{index}",
+        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.costume": {
+        "message": "costum{index}",
+        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.sprite": {
+        "message": "Personaj{index}",
+        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
+    },
+    "gui.sharedMessages.pop": {
+        "message": "pop",
+        "description": "Name of the pop sound, the default sound added to a sprite"
+    },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Proiect Scratch",
         "description": "Default title for project"
     },
     "gui.backpack.header": {
