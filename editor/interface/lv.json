@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Diemžēl, izskatās, ka Scratch nobruka. Par kļūmi tika automātiski ziņots Scratch Komandai. Atsvaidzini lapu, lai mēģinātu vēlreiz.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Pārlādēt",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -383,6 +383,10 @@
         "message": "Saglabāt tagad",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.share": {
+        "message": "Kopīgot",
+        "description": "Label for project share button"
+    },
     "gui.menuBar.file": {
         "message": "Fails",
         "description": "Text for file dropdown menu"
@@ -415,17 +419,9 @@
         "message": "Ieslēgt turbo režīmu",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "Kopīgot",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "Skatīt kopienu",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Dot atsauksmi",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Pievienojies Scratch",
@@ -435,8 +431,12 @@
         "message": "Ienākt",
         "description": "Link for signing in to your Scratch account"
     },
+    "gui.menuBar.giveFeedback": {
+        "message": "Dot atsauksmi",
+        "description": "Label for feedback form modal button"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Projekta virsraksts",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -466,6 +466,18 @@
     "gui.previewInfo.welcome": {
         "message": "Sveicināts Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
+    },
+    "gui.previewModal.notnowtooltip": {
+        "message": "Tagad nē",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "Izmēģini",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "Rādīt 2.0 projektu",
+        "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
         "message": "Sveicināts Scratch 3.0 Beta",
@@ -796,11 +808,11 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Ņau",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
-        "message": "my variable",
+        "message": "mans mainīgais",
         "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
@@ -1008,7 +1020,7 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.translate.name": {
-        "message": "Translate",
+        "message": "Tulkot",
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
@@ -1064,7 +1076,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "Ēdiens",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1072,7 +1084,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "Cilpas",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1080,7 +1092,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Notes",
+        "message": "Notis",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1088,7 +1100,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "Paraugi",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1112,7 +1124,7 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Balss",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
@@ -1120,15 +1132,15 @@
         "description": "Tag for filtering a library for wacky"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
+        "message": "fons{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "costume{index}",
+        "message": "tērps{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
+        "message": "Gariņš{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
@@ -1136,7 +1148,7 @@
         "description": "Name of the pop sound, the default sound added to a sprite"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratch projekts",
         "description": "Default title for project"
     },
     "gui.backpack.header": {
