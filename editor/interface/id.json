@@ -64,7 +64,7 @@
         "description": "A caption for a disabled button prompting the user to enable camera access"
     },
     "gui.cards.all-tutorials": {
-        "message": "Tutorials",
+        "message": "Tutorial",
         "description": "Title for button to return to tutorials library"
     },
     "gui.cards.remove": {
@@ -116,7 +116,7 @@
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "Terhubung",
         "description": "Message indicating that a device was connected"
     },
     "gui.connection.disconnect": {
@@ -360,7 +360,7 @@
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
-        "message": "Tutorials",
+        "message": "Tutorial",
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
@@ -382,6 +382,10 @@
     "gui.menuBar.saveNow": {
         "message": "Simpan sekarang",
         "description": "Menu bar item for saving now"
+    },
+    "gui.menuBar.share": {
+        "message": "Bagikan",
+        "description": "Label for project share button"
     },
     "gui.menuBar.file": {
         "message": "Berkas",
@@ -415,17 +419,9 @@
         "message": "Turn on Turbo Mode",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "Bagikan",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "Lihat Komunitas",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Berikan Masukan",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Bergabung dengan Scratch",
@@ -434,6 +430,10 @@
     "gui.menuBar.signIn": {
         "message": "Masuk",
         "description": "Link for signing in to your Scratch account"
+    },
+    "gui.menuBar.giveFeedback": {
+        "message": "Berikan Masukan",
+        "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
         "message": "Project title here",
@@ -464,11 +464,23 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Selamat datang di Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
+    "gui.previewModal.notnowtooltip": {
+        "message": "Tidak Sekarang",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "Cobalah",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "Lihat Karya 2.0",
+        "description": "Tooltip for View 2.0 Project button"
+    },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Selamat datang di Scratch 3.0 Beta",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
@@ -792,7 +804,7 @@
         "description": "Heading for the sprite library"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Pilih sebuah Tutorial",
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
@@ -1064,7 +1076,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "Makanan",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1112,7 +1124,7 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Suara",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {

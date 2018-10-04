@@ -383,6 +383,10 @@
         "message": "直ちに保存",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.share": {
+        "message": "共有する",
+        "description": "Label for project share button"
+    },
     "gui.menuBar.file": {
         "message": "ファイル",
         "description": "Text for file dropdown menu"
@@ -415,17 +419,9 @@
         "message": "ターボモードにする",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "共有する",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "コミュニティーを見る",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "意見を送る",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Scratchに参加しよう",
@@ -434,6 +430,10 @@
     "gui.menuBar.signIn": {
         "message": "サインイン",
         "description": "Link for signing in to your Scratch account"
+    },
+    "gui.menuBar.giveFeedback": {
+        "message": "意見を送る",
+        "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
         "message": "プロジェクトのタイトルを入力",
@@ -466,6 +466,18 @@
     "gui.previewInfo.welcome": {
         "message": "Scratch 3.0 ベータ版にようこそ! ",
         "description": "Header for Preview Info Modal"
+    },
+    "gui.previewModal.notnowtooltip": {
+        "message": "今はやめておく",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "試してみよう",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "2.0のプロジェクトを見る",
+        "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
         "message": "Scratch 3.0 ベータ版にようこそ! ",
@@ -1012,7 +1024,7 @@
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
-        "message": "色々な言語にテキストを翻訳します。",
+        "message": "色々な言語にテキストを翻訳する。",
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
@@ -1064,7 +1076,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "食べ物",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1072,7 +1084,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "ループ",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1080,7 +1092,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "ノート",
+        "message": "音符",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1088,7 +1100,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "パターン",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1112,11 +1124,11 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "声",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
-        "message": "Wacky",
+        "message": "奇妙な音",
         "description": "Tag for filtering a library for wacky"
     },
     "gui.sharedMessages.backdrop": {

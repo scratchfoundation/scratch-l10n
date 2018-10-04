@@ -64,7 +64,7 @@
         "description": "A caption for a disabled button prompting the user to enable camera access"
     },
     "gui.cards.all-tutorials": {
-        "message": "教學課程",
+        "message": "教程",
         "description": "Title for button to return to tutorials library"
     },
     "gui.cards.remove": {
@@ -112,7 +112,7 @@
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
-        "message": "再次嘗試",
+        "message": "再試一次",
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
@@ -136,7 +136,7 @@
         "description": "The device connection process has encountered an error."
     },
     "gui.connection.error.tryagainbutton": {
-        "message": "再次嘗試",
+        "message": "再試一次",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
@@ -176,7 +176,7 @@
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
-        "message": "再次嘗試",
+        "message": "再試一次",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.unavailable.helpbutton": {
@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "哇哩咧，小貓咪竟然…崩潰了！\n已將錯誤回報給 Scratch 團隊。\n請重新整理頁面，再試一次吧！",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "重新載入",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -316,7 +316,7 @@
         "description": "Placeholder text for library search field"
     },
     "gui.library.allTag": {
-        "message": "所有",
+        "message": "全部",
         "description": "Label for library tag to revert to all items after filtering by tag."
     },
     "gui.loader.message1": {
@@ -360,7 +360,7 @@
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
-        "message": "教學課程",
+        "message": "教程",
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
@@ -382,6 +382,10 @@
     "gui.menuBar.saveNow": {
         "message": "儲存",
         "description": "Menu bar item for saving now"
+    },
+    "gui.menuBar.share": {
+        "message": "分享",
+        "description": "Label for project share button"
     },
     "gui.menuBar.file": {
         "message": "檔案",
@@ -415,17 +419,9 @@
         "message": "開啟加速模式",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "分享",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "到社群逛逛",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "回饋意見",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "加入 Scratch",
@@ -435,8 +431,12 @@
         "message": "登入",
         "description": "Link for signing in to your Scratch account"
     },
+    "gui.menuBar.giveFeedback": {
+        "message": "回饋意見",
+        "description": "Label for feedback form modal button"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "在這輸入專案名稱",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -466,6 +466,18 @@
     "gui.previewInfo.welcome": {
         "message": "歡迎來到 Scratch 3.0 Beta 版",
         "description": "Header for Preview Info Modal"
+    },
+    "gui.previewModal.notnowtooltip": {
+        "message": "現在還不要",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "試一試",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "檢視 2.0 專案",
+        "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
         "message": "歡迎來到 Scratch 3.0 Beta 版",
@@ -664,7 +676,7 @@
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "範例背景",
+        "message": "選個背景",
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
@@ -844,7 +856,7 @@
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
-        "message": "創作音樂",
+        "message": "音樂創作",
         "description": "Name for the 'Make Music' how-to"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
@@ -960,11 +972,11 @@
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
-        "message": "錄製聲音",
+        "message": "聲音錄製",
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "讓字母旋轉",
+        "message": "角色旋轉",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
@@ -976,7 +988,7 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "使用方向鍵移動",
+        "message": "用方向鍵控制",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
@@ -1040,7 +1052,7 @@
         "description": "Message to help people connect to their WeDo."
     },
     "gui.libraryTags.all": {
-        "message": "所有",
+        "message": "全部",
         "description": "Tag for filtering a library for everything"
     },
     "gui.libraryTags.animals": {
@@ -1060,11 +1072,11 @@
         "description": "Tag for filtering a library for fantasy"
     },
     "gui.libraryTags.fashion": {
-        "message": "時尚潮流",
+        "message": "時尚",
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "食物",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1072,7 +1084,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "循環",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1080,7 +1092,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "注意",
+        "message": "音階",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1088,7 +1100,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "圖案",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1096,7 +1108,7 @@
         "description": "Tag for filtering a library for people"
     },
     "gui.libraryTags.percussion": {
-        "message": "打擊樂器",
+        "message": "節奏",
         "description": "Tag for filtering a library for percussion"
     },
     "gui.libraryTags.space": {
@@ -1112,11 +1124,11 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "人聲",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
-        "message": "Wacky",
+        "message": "滑稽",
         "description": "Tag for filtering a library for wacky"
     },
     "gui.sharedMessages.backdrop": {
@@ -1136,7 +1148,7 @@
         "description": "Name of the pop sound, the default sound added to a sprite"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratch 專案",
         "description": "Default title for project"
     },
     "gui.backpack.header": {

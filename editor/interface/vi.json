@@ -1,6 +1,6 @@
 {
     "gui.backpack.errorBackpack": {
-        "message": "Error loading backpack",
+        "message": "Không thể tải lên ba lô",
         "description": "Error backpack message"
     },
     "gui.backpack.loadingBackpack": {
@@ -8,7 +8,7 @@
         "description": "Loading backpack message"
     },
     "gui.backpack.emptyBackpack": {
-        "message": "Backpack is empty",
+        "message": "Ba lô trống",
         "description": "Empty backpack message"
     },
     "gui.unsupportedBrowser.label": {
@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Chúng tôi xin lỗi, nhưng có vẻ là chương trinh Scratch đã có lỗi tải lên. Vấn đề này\nđã được tự động báo lại cho đội ngũ Scratch. Xin hãy tải lại trang này để\nthử lại.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Tải lại",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -340,11 +340,11 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
-        "message": "Transmitting nanos …",
+        "message": "Đang tải trí tuệ của bạn ...",
         "description": "One of the loading messages"
     },
     "gui.loader.message7": {
-        "message": "Inflating gobos …",
+        "message": "Đang tải nhân vật ...",
         "description": "One of the loading messages"
     },
     "gui.loader.message8": {
@@ -383,6 +383,10 @@
         "message": "Lưu bây giờ",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.share": {
+        "message": "Chia sẻ",
+        "description": "Label for project share button"
+    },
     "gui.menuBar.file": {
         "message": "Tập tin",
         "description": "Text for file dropdown menu"
@@ -415,17 +419,9 @@
         "message": "Bật chế độ Turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "Chia sẻ",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "Xem cộng đồng",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Cung cấp phản hồi",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Tham gia Scratch",
@@ -435,8 +431,12 @@
         "message": "Đăng nhập",
         "description": "Link for signing in to your Scratch account"
     },
+    "gui.menuBar.giveFeedback": {
+        "message": "Cung cấp phản hồi",
+        "description": "Label for feedback form modal button"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Đề tên ở đây",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -466,6 +466,18 @@
     "gui.previewInfo.welcome": {
         "message": "Chào mừng đến với Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
+    },
+    "gui.previewModal.notnowtooltip": {
+        "message": "không phải bây giờ",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "Thử nào",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "Xem dự án phiên bản 2.0",
+        "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
         "message": "Chào mừng đến với Scratch 3.0 Beta",
@@ -796,7 +808,7 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Meo",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
@@ -864,7 +876,7 @@
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Choose the Microphone Sprite & Surprise Beatbox",
+        "message": "Chọn nhân vật Máy thu âm và Beatbox Ngạc nhiên",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {

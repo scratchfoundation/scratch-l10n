@@ -196,11 +196,11 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "Es tut uns sehr leid, aber es sieht so aus als sei Scratch abgestürzt.\n                        Dieser Fehler wurde dem Scratch Team automatisch gemeldet.\n                       Lade die Seite neu, um es nochmal zu versuchen.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Neu laden",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -383,6 +383,10 @@
         "message": "Jetzt speichern",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.share": {
+        "message": "Veröffentlichen",
+        "description": "Label for project share button"
+    },
     "gui.menuBar.file": {
         "message": "Datei",
         "description": "Text for file dropdown menu"
@@ -415,17 +419,9 @@
         "message": "Turbo-Modus ausschalten",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.share": {
-        "message": "Veröffentlichen",
-        "description": "Label for project share button"
-    },
     "gui.menuBar.seeCommunity": {
         "message": "Community ansehen",
         "description": "Label for see community button"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Feedback geben",
-        "description": "Label for feedback form modal button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Scratcher werden",
@@ -435,8 +431,12 @@
         "message": "Anmelden",
         "description": "Link for signing in to your Scratch account"
     },
+    "gui.menuBar.giveFeedback": {
+        "message": "Feedback geben",
+        "description": "Label for feedback form modal button"
+    },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Projekttitel",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -466,6 +466,18 @@
     "gui.previewInfo.welcome": {
         "message": "Willkommen zur Scratch 3.0 Beta.",
         "description": "Header for Preview Info Modal"
+    },
+    "gui.previewModal.notnowtooltip": {
+        "message": "Nicht jetzt",
+        "description": "Tooltip for Not Now button"
+    },
+    "gui.previewModal.tryittooltip": {
+        "message": "Probiere es!",
+        "description": "Tooltip for Try It button"
+    },
+    "gui.previewModal.viewprojecttooltip": {
+        "message": "2.0 Projekt ansehen",
+        "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
         "message": "Willkommen zur Scratch 3.0 Beta.",
@@ -796,7 +808,7 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Miau",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
@@ -1064,7 +1076,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "Essen",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1072,7 +1084,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "Schleifen",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1088,7 +1100,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "Muster",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1112,7 +1124,7 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Stimmen",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
@@ -1120,15 +1132,15 @@
         "description": "Tag for filtering a library for wacky"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
+        "message": "Bühnenbild{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "costume{index}",
+        "message": "Kostüm{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
+        "message": "Figur{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
@@ -1136,7 +1148,7 @@
         "description": "Name of the pop sound, the default sound added to a sprite"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scrtach Projekt",
         "description": "Default title for project"
     },
     "gui.backpack.header": {
