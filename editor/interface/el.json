@@ -40,7 +40,7 @@
         "description": "Notification to the user that the camera is loading"
     },
     "gui.cameraModal.permissionRequest": {
-        "message": "Χρειαζόμαστε άδεια σας για χρήση της κάμερας",
+        "message": "Χρειαζόμαστε την άδεια σας για χρήση της κάμερας",
         "description": "Notification to the user that the app needs camera access"
     },
     "gui.cameraModal.retakePhoto": {
@@ -67,7 +67,7 @@
         "message": "Εκπαιδευτικό υλικό",
         "description": "Title for button to return to tutorials library"
     },
-    "gui.cards.remove": {
+    "gui.cards.close": {
         "message": "Κλείσιμο",
         "description": "Title for button to close how-to card"
     },
@@ -100,15 +100,15 @@
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "Πατήστε το κουμπί στη συσκευή σας.",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "Έναρξη Αναζήτησης",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "Αναζήτηση...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -172,7 +172,7 @@
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
+        "message": "Ελέγξτε το Bluetooth να είναι ενεργοποιημένο",
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
@@ -248,11 +248,11 @@
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
+        "message": "Αριστερά/Δεξιά",
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
+        "message": "Χωρίς περιστροφή",
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
@@ -280,7 +280,7 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Εισάγετε έναν σύνδεσμο σε ένα από τα δημοσιευμένα έργα Scratch σας. Οι αλλαγές που θα γίνουν σε αυτήν την έκδοση Beta 3.0 δεν θα αποθηκευτούν.",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
@@ -364,19 +364,19 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
+        "message": "Επαναφορά Αντικείμενου",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "Επαναφορά Ήχου",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "Επαναφορά Ενδυμασίας",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "Επαναφορά",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.saveNow": {
@@ -412,11 +412,11 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
+        "message": "Απενεργοποίηση Κατάστασης Turbo",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
+        "message": "Ενεργοποίηση Κατάστασης Turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.seeCommunity": {
@@ -447,6 +447,14 @@
         "message": "Πίσω",
         "description": "Back button in modal"
     },
+    "gui.monitor.listMonitor.empty": {
+        "message": "(empty)",
+        "description": "Text shown on a list monitor when a list is empty"
+    },
+    "gui.monitor.listMonitor.listLength": {
+        "message": "length {length}",
+        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
+    },
     "gui.monitor.contextMenu.default": {
         "message": "Κανονική Προβολή Κειμένου",
         "description": "Menu item to switch to the default monitor"
@@ -464,7 +472,7 @@
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Καλώς ήλθατε στο Scratch 3.0 Beta",
         "description": "Header for Preview Info Modal"
     },
     "gui.previewModal.notnowtooltip": {
@@ -480,7 +488,7 @@
         "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
+        "message": "Καλώς ήλθατε στο Scratch 3.0 Beta",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
@@ -520,7 +528,7 @@
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Η μεταβλητή αυτή είναι διαθέσιμη σε όλα τα sprites.",
+        "message": "Η μεταβλητή αυτή είναι διαθέσιμη σε όλα τα αντικείμενα.",
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
@@ -554,6 +562,22 @@
     "gui.recordModal.title": {
         "message": "Ηχογράφηση",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Ηχογράφηση",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Ήχος",
@@ -812,7 +836,7 @@
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
-        "message": "my variable",
+        "message": "η μεταβλητή μου",
         "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
@@ -884,7 +908,7 @@
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "Διάλεξε ένα Αντικείμενο",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
@@ -1130,6 +1154,90 @@
     "gui.libraryTags.wacky": {
         "message": "Wacky",
         "description": "Tag for filtering a library for wacky"
+    },
+    "gui.opcodeLabels.direction": {
+        "message": "κατεύθυνση",
+        "description": "Label for the direction monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.xposition": {
+        "message": "x postion",
+        "description": "Label for the x position monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.yposition": {
+        "message": "y postion",
+        "description": "Label for the y position monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.size": {
+        "message": "μέγεθος",
+        "description": "Label for the size monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.costumename": {
+        "message": "όνομα ενδυμασίας",
+        "description": "Label for the costume name monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.costumenumber": {
+        "message": "costume number",
+        "description": "Label for the costume number monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.backdropname": {
+        "message": "όνομα υποβάθρου",
+        "description": "Label for the backdrop name monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.backdropnumber": {
+        "message": "backdrop number",
+        "description": "Label for the backdrop number monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.volume": {
+        "message": "ένταση",
+        "description": "Label for the volume monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.tempo": {
+        "message": "ρυθμός",
+        "description": "Label for the tempo monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.answer": {
+        "message": "απάντηση",
+        "description": "Label for the answer monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.loudness": {
+        "message": "ένταση",
+        "description": "Label for the loudness monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.username": {
+        "message": "όνομα χρήστη",
+        "description": "Label for the username monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.year": {
+        "message": "χρόνος",
+        "description": "Label for the current year monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.month": {
+        "message": "μήνας",
+        "description": "Label for the current month monitor when shown on the stage."
+    },
+    "gui.opcodeLabels.date": {
+        "message": "ημερομηνία",
+        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
+    },
+    "gui.opcodeLabels.dayofweek": {
+        "message": "dayofweek",
+        "description": "Label for the current dayofweek monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.hour": {
+        "message": "ώρα",
+        "description": "Label for the current hour monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.minute": {
+        "message": "λεπτό",
+        "description": "Label for the current minute monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.second": {
+        "message": "δευτερόλεπτο",
+        "description": "Label for the current second monitor when shown on the stage"
+    },
+    "gui.opcodeLabels.timer": {
+        "message": "χρονομέτρηση",
+        "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
         "message": "backdrop{index}",

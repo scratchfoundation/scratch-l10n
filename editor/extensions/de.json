@@ -16,11 +16,11 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "Position von Motor [PORT]",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "setze Leistung von Motor [PORT] auf [POWER]%",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
@@ -32,7 +32,7 @@
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "wenn Helligkeit < [DISTANCE]",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
@@ -40,7 +40,7 @@
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "wenn Abstand < [DISTANCE]",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,7 +48,7 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "zeige nichts an",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
@@ -56,23 +56,23 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "zeige [MATRIX] an",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display text [TEXT]",
+        "message": "zeige Text [TEXT] an",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "gehüpft",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "bewegt",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "geschüttelt",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
@@ -80,7 +80,7 @@
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "[DIRECTION] geneigt?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "Neigungswinkel [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -120,15 +120,15 @@
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "wenn [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
+        "message": "wenn Pin [PIN] angeschlossen",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "wenn [DIRECTION] geneigt",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -400,7 +400,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Speech to Text",
+        "message": "Sprache zu Text",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -420,7 +420,7 @@
         "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
-        "message": "giant",
+        "message": "Riese",
         "description": "Name for a funny voice with a low pitch."
     },
     "text2speech.kitten": {
@@ -436,7 +436,7 @@
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
+        "message": "setze Sprache auf [LANGUAGE]",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
@@ -452,7 +452,7 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Übersetzen",
+        "message": "Übersetzung",
         "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
@@ -524,43 +524,91 @@
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "[TILT_DIRECTION_ANY] geneigt?",
         "description": "whether the tilt sensor is tilted"
     },
+    "wedo2.motorDirection.backward": {
+        "message": "linksherum",
+        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.forward": {
+        "message": "rechtsherum",
+        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.reverse": {
+        "message": "umkehren",
+        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.a": {
+        "message": "motor A",
+        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.all": {
+        "message": "all motors",
+        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.b": {
+        "message": "motor B",
+        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.default": {
+        "message": "motor",
+        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
+    },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "schalte [MOTOR_ID] aus",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "schalte [MOTOR_ID] an",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "schalte [MOTOR_ID] für [DURATION] Sekunden an",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "spiele Note [NOTE] für [DURATION] Sekunden",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "setze Lichtfarbe auf [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "setze Richtung von [MOTOR_ID] auf [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "setze Leistung von [MOTOR_ID] auf [POWER]",
         "description": "set the motor's power and turn it on"
     },
+    "wedo2.tiltDirection.any": {
+        "message": "beliebige",
+        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.down": {
+        "message": "nach unten",
+        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.left": {
+        "message": "links",
+        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.right": {
+        "message": "rechts",
+        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.up": {
+        "message": "nach oben",
+        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
+    },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "wenn Abstand [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "wenn [TILT_DIRECTION_ANY] geneigt",
         "description": "check when tilted in a certain direction"
     }
 }

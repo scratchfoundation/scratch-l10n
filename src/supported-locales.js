@@ -5,6 +5,7 @@
 
 const locales = {
     'ab': {name: 'Аҧсшәа'},
+    'ar': {name: 'العربية'},
     'am': {name: 'አማርኛ'},
     'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
@@ -40,6 +41,7 @@ const locales = {
     'pl': {name: 'Polski'},
     'pt': {name: 'Português'},
     'pt-br': {name: 'Português Brasileiro'},
+    'ro': {name: 'Română'},
     'ru': {name: 'Русский'},
     'sr': {name: 'Српски'},
     'sk': {name: 'Slovenčina'},
@@ -78,6 +80,7 @@ const customLocales = {
 
 // list of RTL locales supported, and a function to check whether a locale is RTL
 const rtlLocales = [
+    'ar',
     'he'
 ];
 

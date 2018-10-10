@@ -24,11 +24,11 @@
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "[PORT] 방향으로 모터를 [TIME]초 동안 이동하기",
+        "message": "[PORT] 모터를 [TIME] 초 동안 이쪽으로 돌리기",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "[PORT]방향으로 모터를 [TIME]초 동안 이동하기",
+        "message": "[PORT] 모터를 [TIME] 초 동안 저쪽으로 돌리기",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -60,7 +60,7 @@
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display text [TEXT]",
+        "message": "글자 [TEXT] 보여주기",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
@@ -116,15 +116,15 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "만약 [BTN] 버튼이 눌러졌을 때",
+        "message": "[BTN] 버튼이 눌러졌을 때",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "만약 [GESTURE]와 동작이 일치할 때",
+        "message": "[GESTURE]와 동작이 일치할 때",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
+        "message": "[PIN]번 핀이 연결되었을 때",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
@@ -400,7 +400,7 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Speech to Text",
+        "message": "음성 인식",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
@@ -420,7 +420,7 @@
         "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
-        "message": "giant",
+        "message": "거인",
         "description": "Name for a funny voice with a low pitch."
     },
     "text2speech.kitten": {
@@ -436,7 +436,7 @@
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
+        "message": "언어를 [LANGUAGE]로 정하기",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
@@ -527,6 +527,34 @@
         "message": "[TILT_DIRECTION_ANY] 방향으로 돌아갔는가?",
         "description": "whether the tilt sensor is tilted"
     },
+    "wedo2.motorDirection.backward": {
+        "message": "반시계방향",
+        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.forward": {
+        "message": "시계방향",
+        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.reverse": {
+        "message": "역방향",
+        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.a": {
+        "message": "motor A",
+        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.all": {
+        "message": "all motors",
+        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.b": {
+        "message": "motor B",
+        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.default": {
+        "message": "motor",
+        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
+    },
     "wedo2.motorOff": {
         "message": "[MOTOR_ID] 끄기",
         "description": "turn a motor off"
@@ -536,7 +564,7 @@
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "[DURATION] 초 간 [MOTOR_ID] 켜기",
+        "message": "[DURATION] 초 동안 [MOTOR_ID] 켜기",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
@@ -554,6 +582,26 @@
     "wedo2.startMotorPower": {
         "message": "[MOTOR_ID] 모터 강도를 [POWER]로 정하기",
         "description": "set the motor's power and turn it on"
+    },
+    "wedo2.tiltDirection.any": {
+        "message": "아무",
+        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.down": {
+        "message": "아래",
+        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.left": {
+        "message": "왼쪽",
+        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.right": {
+        "message": "오른쪽",
+        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.up": {
+        "message": "위",
+        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "만약 거리 [OP] [REFERENCE]라면",

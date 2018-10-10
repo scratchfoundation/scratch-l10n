@@ -1,6 +1,6 @@
 {
     "ev3.beepNote": {
-        "message": "whakatangihia te oro [NOTE] mō ngā hēkona e [TIME]",
+        "message": "whakatangihia te oro [NOTE] mō ngā hēkona [TIME]",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
@@ -24,11 +24,11 @@
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "pūrere [PORT] huri pēnei mō ngā hēkona [TIME]",
+        "message": "pūkaha [PORT] huri pēnei mō ngā hēkona [TIME]",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "pūrere [PORT]huri pērā mō ngā hēkona [TIME]",
+        "message": "pūkaha [PORT]huri pērā mō ngā hēkona [TIME]",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -52,7 +52,7 @@
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "Kia ora!",
+        "message": "Tēnā koe!",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
@@ -60,7 +60,7 @@
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display text [TEXT]",
+        "message": "whakaaturia [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
@@ -72,7 +72,7 @@
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "i wiriwiri",
+        "message": "i rūrū",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
@@ -124,7 +124,7 @@
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
+        "message": "whakamātautau, ina honoa ki te pine [PIN]",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
@@ -400,11 +400,11 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Kōrero-ki-Kuputuhi",
+        "message": "Google Kōrero",
         "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
-        "message": "whakarongo, tatari",
+        "message": "whakarongo, tatari hoki",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
@@ -420,7 +420,7 @@
         "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
-        "message": "giant",
+        "message": "kākarepō",
         "description": "Name for a funny voice with a low pitch."
     },
     "text2speech.kitten": {
@@ -436,11 +436,11 @@
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
+        "message": "tautuhia te reo kia[LANGUAGE]",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
-        "message": "tautuhi te reo ki [VOICE]",
+        "message": "tautuhia te reo ki [VOICE]",
         "description": "Set the voice for speech synthesis."
     },
     "text2speech.speakAndWaitBlock": {
@@ -452,7 +452,7 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "translate.categoryName": {
-        "message": "Whakawhitiwhiti Reo Ā-tuhi",
+        "message": "Google Translate",
         "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
@@ -527,6 +527,34 @@
         "message": "kua tītaha ki [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
+    "wedo2.motorDirection.backward": {
+        "message": "tērā ahunga",
+        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.forward": {
+        "message": "tēnei ahunga",
+        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorDirection.reverse": {
+        "message": "ahu whakamuri",
+        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.a": {
+        "message": "motor A",
+        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.all": {
+        "message": "all motors",
+        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.b": {
+        "message": "motor B",
+        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.motorId.default": {
+        "message": "motor",
+        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
+    },
     "wedo2.motorOff": {
         "message": "whakaweto [MOTOR_ID]",
         "description": "turn a motor off"
@@ -548,12 +576,32 @@
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "tautuhia te pūrere [MOTOR_ID] kia huri [MOTOR_DIRECTION]",
+        "message": "tautuhia te pūkaha [MOTOR_ID] kia huri [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "tautuhia te pūrere [MOTOR_ID] kia [POWER] te kaha",
+        "message": "tautuhia te pūkaha [MOTOR_ID] kia [POWER] te kaha",
         "description": "set the motor's power and turn it on"
+    },
+    "wedo2.tiltDirection.any": {
+        "message": "noa",
+        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.down": {
+        "message": "ki raro",
+        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.left": {
+        "message": "mauī",
+        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.right": {
+        "message": "katau",
+        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
+    },
+    "wedo2.tiltDirection.up": {
+        "message": "ki runga",
+        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "ina tawhiti [OP] [REFERENCE]",
