@@ -383,6 +383,18 @@
         "message": "hifadhi sasa",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.saveAsCopy": {
+        "message": "hifadhi nakala",
+        "description": "Menu bar item for saving as a copy"
+    },
+    "gui.menuBar.remix": {
+        "message": "changanya tena",
+        "description": "Menu bar item for remixing"
+    },
+    "gui.menuBar.new": {
+        "message": "Nouveau",
+        "description": "Menu bar item for creating a new project"
+    },
     "gui.menuBar.share": {
         "message": "Share",
         "description": "Label for project share button"
@@ -390,14 +402,6 @@
     "gui.menuBar.file": {
         "message": "File",
         "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.new": {
-        "message": "Nouveau",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "hifadhi nakala",
-        "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.uploadFromComputer": {
         "message": "Load from your computer",
@@ -562,22 +566,6 @@
     "gui.recordModal.title": {
         "message": "Record Sound",
         "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "rekodi",
-        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "sauti",
@@ -795,13 +783,17 @@
         "message": "Enter the URL of the extension",
         "description": "Prompt for unoffical extension url"
     },
-    "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
-        "description": "An error that displays when a local project file fails to load."
+    "gui.gui.defaultProjectTitle": {
+        "message": "Scratch Project",
+        "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
         "message": "Could not start recording",
         "description": "Alert for recording error"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "The project file that was selected failed to load.",
+        "description": "An error that displays when a local project file fails to load."
     },
     "gui.soundLibrary.chooseASound": {
         "message": "Choose a Sound",
@@ -850,6 +842,94 @@
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
         "message": "Click the green flag to start",
         "description": "Step name for 'Add A Say Block' step"
+    },
+    "gui.howtos.say-it-out-loud": {
+        "message": "Create Animations That Talk",
+        "description": "Name for the 'Create Animations That Talk' how-to"
+    },
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
+        "message": "Add the Text to Speech blocks",
+        "description": "Step name for 'Add the Text to Speech blocks' step"
+    },
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.say-it-out-loud_TXTSetVoice": {
+        "message": "Set a Voice",
+        "description": "Step name for 'Set a Voice"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTMove": {
+        "message": "Move Around",
+        "description": "Step name for 'Move Around' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
+        "message": "Add a Backdrop",
+        "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
+        "message": "Add Another Character",
+        "description": "Step name for 'Add Another Character' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSong": {
+        "message": "Perform a Song",
+        "description": "Step name for 'Perform a Song' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTColor": {
+        "message": "Change Color",
+        "description": "Step name for 'Change Color' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSpin": {
+        "message": "Spin Around",
+        "description": "Step name for 'Spin Around"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTGrow": {
+        "message": "Grow and Shrink",
+        "description": "Step name for 'Grow and Shrink' step"
+    },
+    "gui.howtos.cartoon-network": {
+        "message": "Animate an Adventure Game",
+        "description": "Animate an Adventure Game' how-to"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter": {
+        "message": "Choose Which Character to Show",
+        "description": "Step name for 'Choose Which Character to Show' step"
+    },
+    "gui.howtos.cartoon-network.step_CNsay": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNglide": {
+        "message": "Glide Around",
+        "description": "Step name for ' Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcollect": {
+        "message": "Collect Objects (In Gem Sprite)",
+        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+    },
+    "gui.howtos.cartoon-network.step_CNanimate": {
+        "message": "Add Score",
+        "description": "Step name for 'Add Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNscore": {
+        "message": "Keep Score",
+        "description": "Step name for 'Keep Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNkeepscore": {
+        "message": "Level Up: Change Background",
+        "description": "Step name for 'Level Up: Change Background' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevel": {
+        "message": "Show A New Character",
+        "description": "Step name for 'Show A New Character' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter2": {
+        "message": "Level Up: Say Something",
+        "description": "Step name for 'Level Up: Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevelup": {
+        "message": "Animate A Run",
+        "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animate a Name",
@@ -1043,6 +1123,14 @@
         "message": "Sense motion with the camera.",
         "description": "Description for the 'Video Sensing' extension"
     },
+    "gui.extension.text2speech.name": {
+        "message": "Text to Speech",
+        "description": "Name for the Text to Speech extension"
+    },
+    "gui.extension.text2speech.description": {
+        "message": "Make your projects talk.",
+        "description": "Description for the Text to speech extension"
+    },
     "gui.extension.translate.name": {
         "message": "Translate",
         "description": "Name for the Translate extension"
@@ -1155,16 +1243,32 @@
         "message": "Wacky",
         "description": "Tag for filtering a library for wacky"
     },
+    "gui.libraryTags.animation": {
+        "message": "Animation",
+        "description": "Tag for filtering a library for animation"
+    },
+    "gui.libraryTags.art": {
+        "message": "Art",
+        "description": "Tag for filtering a library for art"
+    },
+    "gui.libraryTags.games": {
+        "message": "Games",
+        "description": "Tag for filtering a library for games"
+    },
+    "gui.libraryTags.stories": {
+        "message": "Stories",
+        "description": "Tag for filtering a library for stories"
+    },
     "gui.opcodeLabels.direction": {
         "message": "Upande",
         "description": "Label for the direction monitor when shown on the stage"
     },
     "gui.opcodeLabels.xposition": {
-        "message": "x postion",
+        "message": "Nafasi x",
         "description": "Label for the x position monitor when shown on the stage"
     },
     "gui.opcodeLabels.yposition": {
-        "message": "y postion",
+        "message": "Nafasi y",
         "description": "Label for the y position monitor when shown on the stage"
     },
     "gui.opcodeLabels.size": {
@@ -1254,10 +1358,6 @@
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "mkoba",

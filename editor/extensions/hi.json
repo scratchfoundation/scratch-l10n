@@ -52,7 +52,7 @@
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "Hello!",
+        "message": "कैसे है",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
@@ -100,11 +100,11 @@
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
-        "message": "back",
+        "message": "पीछे",
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "front",
+        "message": "अक्षर",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Speech to Text",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
         "message": "listen and wait",
@@ -415,9 +415,9 @@
         "message": "when I hear [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "hello",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "giant",
@@ -426,14 +426,6 @@
     "text2speech.kitten": {
         "message": "kitten",
         "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "set language to [LANGUAGE]",
@@ -450,6 +442,10 @@
     "text2speech.squeak": {
         "message": "squeak",
         "description": "Name for a funny voice with a high pitch."
+    },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Translate",

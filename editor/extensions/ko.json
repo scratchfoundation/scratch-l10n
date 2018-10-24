@@ -1,14 +1,14 @@
 {
     "ev3.beepNote": {
-        "message": "[TIME] 초 동안 [NOTE] 경고음 울리기",
+        "message": "[TIME] 초 동안 [NOTE] 번 음 울리기",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": " [PORT] 버튼이 눌렸는가?",
+        "message": " [PORT] 번 버튼이 눌러졌는가?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
-        "message": "명도",
+        "message": "밝기",
         "description": "gets measured brightness"
     },
     "ev3.getDistance": {
@@ -32,15 +32,15 @@
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "만약 밝기 <  [DISTANCE] 라면",
+        "message": "밝기 <  [DISTANCE]일 때",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "만약 [PORT] 버튼이 눌러졌을 때",
+        "message": "[PORT] 번 버튼이 눌러졌을 때",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "만약 거리 < [DISTANCE]라면",
+        "message": "거리 < [DISTANCE]일 때",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,11 +48,11 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "화면 정리하기",
+        "message": "화면 지우기",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "안녕!",
+        "message": "Hello!",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
@@ -64,15 +64,15 @@
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "뛰었다",
+        "message": "뛰었을",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "이동하면",
+        "message": "움직일",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "흔들어지면",
+        "message": "흔들어졌을",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
@@ -80,7 +80,7 @@
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "[DIRECTION] 방향으로 돌아갔는가?",
+        "message": "[DIRECTION] 방향으로 기울어졌는가?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,7 +92,7 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "[DIRECTION] 방향으로 이동하기",
+        "message": "[DIRECTION] 방향으로 기울어진 각도",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -100,11 +100,11 @@
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
-        "message": "맨 뒤쪽",
+        "message": "뒤쪽",
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "맨 앞쪽",
+        "message": "앞쪽",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
@@ -120,7 +120,7 @@
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "[GESTURE]와 동작이 일치할 때",
+        "message": "[GESTURE] 때",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
@@ -128,7 +128,7 @@
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "[DIRECTION] 방향으로 이동했을 때",
+        "message": "[DIRECTION] 방향으로 기울어졌을 때",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -401,23 +401,23 @@
     },
     "speech.extensionName": {
         "message": "음성 인식",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
         "message": "듣고 기다리기",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
-        "message": "발음하기",
+        "message": "인식된 말",
         "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "speech.whenIHear": {
         "message": "[PHRASE] 이(가) 들릴 때",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "안녕 ",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "거인",
@@ -426,14 +426,6 @@
     "text2speech.kitten": {
         "message": "고양이",
         "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "최대",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "공주",
-        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "언어를 [LANGUAGE]로 정하기",
@@ -448,8 +440,12 @@
         "description": "Speak some words."
     },
     "text2speech.squeak": {
-        "message": "쥐 울음소리",
+        "message": "끼익 하는 소리",
         "description": "Name for a funny voice with a high pitch."
+    },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "번역",
@@ -468,7 +464,7 @@
         "description": "the languge of the project viewer"
     },
     "videoSensing.categoryName": {
-        "message": "비디오 센싱",
+        "message": "비디오 감지",
         "description": "Label for the video sensing extension category"
     },
     "videoSensing.direction": {
@@ -520,39 +516,39 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "[TILT_DIRECTION] 방향으로 이동하기",
+        "message": "[TILT_DIRECTION] 방향으로 기울어진 각도",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "[TILT_DIRECTION_ANY] 방향으로 돌아갔는가?",
+        "message": "[TILT_DIRECTION_ANY] 방향으로 기울어졌는가?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
-        "message": "반시계방향",
+        "message": "저쪽",
         "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.forward": {
-        "message": "시계방향",
+        "message": "이쪽",
         "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.reverse": {
-        "message": "역방향",
+        "message": "반대쪽",
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "모터 A",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "모든 모터",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "모터 B",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "모터",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
@@ -572,7 +568,7 @@
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "LED 색을  [HUE]로 정하기",
+        "message": "빛의 색을  [HUE]로 정하기",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
@@ -588,7 +584,7 @@
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {
-        "message": "아래",
+        "message": "아래쪽",
         "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.left": {
@@ -600,15 +596,15 @@
         "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.up": {
-        "message": "위",
+        "message": "위쪽",
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
-        "message": "만약 거리 [OP] [REFERENCE]라면",
+        "message": "거리 [OP] [REFERENCE] 일 때",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "만약 [TILT_DIRECTION_ANY] 방향으로 돌아가면",
+        "message": "[TILT_DIRECTION_ANY] 방향으로 기울일 때",
         "description": "check when tilted in a certain direction"
     }
 }

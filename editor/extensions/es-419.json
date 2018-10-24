@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "suena nota [NOTE] por [TIME] segundos",
+        "message": "tocar nota [NOTE] por [TIME] segundos",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "¿está el botón [PORT] presionado?",
+        "message": "¿está presionado el botón [PORT]?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,19 +16,19 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "posición motor [PORT] ",
+        "message": "posición del motor [PORT] ",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "establecer fuerza [POWER] % en motor [PORT]",
+        "message": "establecer fuerza del motor [PORT] a [POWER]%",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "mover motor [PORT]en esta forma por [TIME]segundos",
+        "message": "girar el motor [PORT] hacia allá por [TIME] segundos",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "mover motor [PORT]en aquella forma por [TIME]segundos",
+        "message": "girar el motor [PORT] hacia acá por [TIME] segundos",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
@@ -44,7 +44,7 @@
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
-        "message": "Cualquiera",
+        "message": "cualquiera",
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
@@ -56,23 +56,23 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "muestra [MATRIX]",
+        "message": "mostrar [MATRIX]",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "mostrar text [TEXT]",
+        "message": "mostrar texto [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "saltó",
+        "message": "salte",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "se movió",
+        "message": "se mueva",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "se sacudió",
+        "message": "se sacuda",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
@@ -80,7 +80,7 @@
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "¿giro [DIRECTION]?",
+        "message": "¿inclinado [DIRECTION]?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -92,31 +92,31 @@
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "ángulo de giro [DIRECTION]",
+        "message": "ángulo de inclinación [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
-        "message": "Cualquiera",
+        "message": "cualquiera",
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
-        "message": "regresar",
+        "message": "hacia atrás",
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "del frente",
+        "message": "hacia el frente",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
-        "message": "izquierda",
+        "message": "hacia la izquierda",
         "description": "label for left element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.right": {
-        "message": "derecha",
+        "message": "hacia la derecha",
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "cuanto botón [BTN] está presionado",
+        "message": "al presionar el botón [BTN]",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
@@ -124,11 +124,11 @@
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "cuando pin [PIN] conectado",
+        "message": "al conectar el pin [PIN]",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "cuando gira [DIRECTION]",
+        "message": "al inclinar [DIRECTION]",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -136,11 +136,11 @@
         "description": "Label for the Music extension category"
     },
     "music.changeTempo": {
-        "message": "Cambiar el tempo por[TEMPO]",
+        "message": "cambiar el tempo por [TEMPO]",
         "description": "change tempo (speed) for notes, drums, and rests played"
     },
     "music.drumBass": {
-        "message": "(2) Tambor de bajo",
+        "message": "(2) Bombo",
         "description": "Sound of bass drum as used in a standard drum kit"
     },
     "music.drumBongo": {
@@ -168,7 +168,7 @@
         "description": "Sound of a cowbell being struck"
     },
     "music.drumCrashCymbal": {
-        "message": "(4) Platillo de choque",
+        "message": "(4) Platillo Crash",
         "description": "Sound of a drum stick hitting a crash cymbal"
     },
     "music.drumCuica": {
@@ -188,11 +188,11 @@
         "description": "Sound of a drum stick hitting a hi-hat while open"
     },
     "music.drumSideStick": {
-        "message": "(3) Palo de lado",
+        "message": "(3) Side Stick",
         "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
     },
     "music.drumSnare": {
-        "message": "(1) Tambor",
+        "message": "(1) Caja",
         "description": "Sound of snare drum as used in a standard drum kit"
     },
     "music.drumTambourine": {
@@ -208,7 +208,7 @@
         "description": "Sound of a Vibraslap being played"
     },
     "music.drumWoodBlock": {
-        "message": "(10) Bloque de madera",
+        "message": "(10) Caja china",
         "description": "Sound of a wood block being struck"
     },
     "music.getTempo": {
@@ -224,7 +224,7 @@
         "description": "Sound of a bassoon being played"
     },
     "music.instrumentCello": {
-        "message": "(8) violonchelo",
+        "message": "(8) Violonchelo",
         "description": "Sound of a cello being played with a bow"
     },
     "music.instrumentChoir": {
@@ -272,19 +272,19 @@
         "description": "Sound of a string instrument (e.g. violin) being plucked"
     },
     "music.instrumentSaxophone": {
-        "message": "(11) Saxófono",
+        "message": "(11) Saxofón",
         "description": "Sound of a saxophone being played"
     },
     "music.instrumentSteelDrum": {
-        "message": "(18) Tambor de acero",
+        "message": "(18) Tambor metálico",
         "description": "Sound of a steel drum being struck"
     },
     "music.instrumentSynthLead": {
-        "message": "(20) Sintetizador principal",
+        "message": "(20) Sintetizador melódico",
         "description": "Sound of a \"lead\" synthesizer being played"
     },
     "music.instrumentSynthPad": {
-        "message": "(21) Colchón sintetizador",
+        "message": "(21) Sintetizador de fondo",
         "description": "Sound of a \"pad\" synthesizer being played"
     },
     "music.instrumentTrombone": {
@@ -304,15 +304,15 @@
         "description": "set the instrument for notes played according to a mapping of MIDI codes"
     },
     "music.playDrumForBeats": {
-        "message": "tocar el tambor [DRUM] por [BEATS] latidos",
+        "message": "tocar el tambor [DRUM] por [BEATS] pulsos",
         "description": "play drum sample for a number of beats"
     },
     "music.playNoteForBeats": {
-        "message": "nota de juego [NOTE] por [BEATS] latidos",
+        "message": "tocar la nota [NOTE] por [BEATS] pulsos",
         "description": "play a note for a number of beats"
     },
     "music.restForBeats": {
-        "message": "descansar por [BEATS] latidos",
+        "message": "descansar por [BEATS] pulsos",
         "description": "rest (play no sound) for a number of beats"
     },
     "music.setInstrument": {
@@ -364,11 +364,11 @@
         "description": "label for transparency element in color picker for pen extension"
     },
     "pen.penDown": {
-        "message": "lapicero abajo",
+        "message": "lápiz abajo",
         "description": "start leaving a trail when the sprite moves"
     },
     "pen.penUp": {
-        "message": "lapicero arriba",
+        "message": "lápiz arriba",
         "description": "stop leaving a trail behind the sprite"
     },
     "pen.setColor": {
@@ -392,7 +392,7 @@
         "description": "set the diameter of a trail left by a sprite"
     },
     "pen.stamp": {
-        "message": "sello",
+        "message": "sellar",
         "description": "render current costume on the background"
     },
     "speech.defaultWhenIHearValue": {
@@ -400,11 +400,11 @@
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Dictado a texto",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "message": "Voz a texto",
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
-        "message": "escucha y espera",
+        "message": "escuchar y esperar",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
@@ -412,12 +412,12 @@
         "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "speech.whenIHear": {
-        "message": "cuando escucho [PHRASE]",
+        "message": "al escuchar [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "hola",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "gigante",
@@ -427,20 +427,12 @@
         "message": "gatito",
         "description": "A baby cat."
     },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
     "text2speech.setLanguageBlock": {
-        "message": "configurar idioma a [LANGUAGE]",
+        "message": "cambiar idioma a [LANGUAGE]",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
-        "message": "establecer voz a [VOICE]",
+        "message": "establecer voz [VOICE]",
         "description": "Set the voice for speech synthesis."
     },
     "text2speech.speakAndWaitBlock": {
@@ -451,8 +443,12 @@
         "message": "chirrido",
         "description": "Name for a funny voice with a high pitch."
     },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
+    },
     "translate.categoryName": {
-        "message": "Traduce",
+        "message": "Traductor",
         "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
@@ -460,7 +456,7 @@
         "description": "hello: the default text to translate"
     },
     "translate.translateBlock": {
-        "message": "traduce [WORDS] a [LANGUAGE]",
+        "message": "traducir [WORDS] al [LANGUAGE]",
         "description": "translate some text to a different language"
     },
     "translate.viewerLanguage": {
@@ -480,15 +476,15 @@
         "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
     },
     "videoSensing.off": {
-        "message": "apagado",
+        "message": "desactivar",
         "description": "Option for the \"turn video [STATE]\" block"
     },
     "videoSensing.on": {
-        "message": "encendido",
+        "message": "activar",
         "description": "Option for the \"turn video [STATE]\" block"
     },
     "videoSensing.onFlipped": {
-        "message": "en volteado",
+        "message": "invertir",
         "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
     },
     "videoSensing.setVideoTransparency": {
@@ -504,15 +500,15 @@
         "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
     },
     "videoSensing.videoOn": {
-        "message": "video [ATTRIBUTE] prendido [SUBJECT]",
+        "message": "[ATTRIBUTE] del video en [SUBJECT]",
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
     "videoSensing.videoToggle": {
-        "message": "convertir video [VIDEO_STATE]",
+        "message": "[VIDEO_STATE] video",
         "description": "Controls display of the video preview layer"
     },
     "videoSensing.whenMotionGreaterThan": {
-        "message": "movimiento de video > [REFERENCE]",
+        "message": "cuando el movimiento de video > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
     },
     "wedo2.getDistance": {
@@ -520,11 +516,11 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "ángulo de giro [TILT_DIRECTION]",
+        "message": "ángulo de inclinación [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "¿giro [TILT_DIRECTION_ANY]?",
+        "message": "¿inclinado [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
@@ -544,7 +540,7 @@
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "todos los motores",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
@@ -584,7 +580,7 @@
         "description": "set the motor's power and turn it on"
     },
     "wedo2.tiltDirection.any": {
-        "message": "Cualquiera",
+        "message": "cualquiera",
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {
@@ -608,7 +604,7 @@
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "cuando gira [TILT_DIRECTION_ANY]",
+        "message": "al inclinarse [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }
