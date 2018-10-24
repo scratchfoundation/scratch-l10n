@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "toca a nota [NOTE] durante [TIME]segs",
+        "message": "toca a nota [NOTE] durante [TIME]s",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "botão [PORT] pressionado?",
+        "message": "o botão [PORT] está a ser pressionado",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,27 +16,27 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "posição do motor [PORT]",
+        "message": "a posição do motor [PORT]",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] altera a potência para [POWER]%",
+        "message": "altera a potência do motor [PORT] para [POWER]%",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT]roda para aqui durante [TIME] segundos",
+        "message": "roda o motor [PORT] para aqui durante [TIME] s",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT]roda para ali durante [TIME] segundos",
+        "message": "roda o motor [PORT]para ali durante [TIME] s",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "quando o brilho < [DISTANCE]",
+        "message": "Quando o brilho for menor que [DISTANCE]",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "quando o botão [PORT] fôr pressionado",
+        "message": "Quando o botão [PORT] for pressionado",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
@@ -96,7 +96,7 @@
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
-        "message": "qualquer",
+        "message": "para qualquer lado",
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
@@ -300,7 +300,7 @@
         "description": "Sound of a wooden flute being played"
     },
     "music.midiSetInstrument": {
-        "message": "altera a teu instrumento para [INSTRUMENT]",
+        "message": "altera o teu instrumento para [INSTRUMENT]",
         "description": "set the instrument for notes played according to a mapping of MIDI codes"
     },
     "music.playDrumForBeats": {
@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Converter Fala para Texto",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
         "message": "ouve e espera",
@@ -415,9 +415,9 @@
         "message": "Quando eu ouvir [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "olá",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "gigante",
@@ -426,14 +426,6 @@
     "text2speech.kitten": {
         "message": "gatinho",
         "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "alex",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "luca",
-        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "altera a língua para [LANGUAGE]",
@@ -450,6 +442,10 @@
     "text2speech.squeak": {
         "message": "guincho",
         "description": "Name for a funny voice with a high pitch."
+    },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Traduzir",
@@ -528,11 +524,11 @@
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
-        "message": "por aí",
+        "message": "para ali",
         "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.forward": {
-        "message": "por aqui",
+        "message": "para aqui",
         "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.reverse": {
@@ -540,19 +536,19 @@
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "o motor A",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "todos os motores",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "o motor B",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "o motor",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
@@ -584,7 +580,7 @@
         "description": "set the motor's power and turn it on"
     },
     "wedo2.tiltDirection.any": {
-        "message": "qualquer",
+        "message": "para qualquer lado",
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {

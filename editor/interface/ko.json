@@ -104,15 +104,15 @@
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "검색을 시작합니다",
+        "message": "검색 시작",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "검색 중 ...",
+        "message": "검색 중...",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
-        "message": "다시 시도하세요 ",
+        "message": "다시 시도",
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
@@ -136,7 +136,7 @@
         "description": "The device connection process has encountered an error."
     },
     "gui.connection.error.tryagainbutton": {
-        "message": "다시 시도하세요 ",
+        "message": "다시 시도",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
@@ -152,7 +152,7 @@
         "description": "Button to start connecting to a specific device"
     },
     "gui.connection.scanning.lookingforperipherals": {
-        "message": "기기를 찾고 있습니다.",
+        "message": "기기를 찾는 중",
         "description": "Text shown while scanning for devices"
     },
     "gui.connection.scanning.noPeripheralsFound": {
@@ -176,7 +176,7 @@
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
-        "message": "다시 시도하세요 ",
+        "message": "다시 시도",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.unavailable.helpbutton": {
@@ -340,7 +340,7 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message6": {
-        "message": "나노 전송 중...",
+        "message": "나노를 전송하는 중...",
         "description": "One of the loading messages"
     },
     "gui.loader.message7": {
@@ -383,6 +383,18 @@
         "message": "저장하기",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.saveAsCopy": {
+        "message": "복사본 저장하기",
+        "description": "Menu bar item for saving as a copy"
+    },
+    "gui.menuBar.remix": {
+        "message": "리믹스",
+        "description": "Menu bar item for remixing"
+    },
+    "gui.menuBar.new": {
+        "message": "새로 만들기",
+        "description": "Menu bar item for creating a new project"
+    },
     "gui.menuBar.share": {
         "message": "공유",
         "description": "Label for project share button"
@@ -391,20 +403,12 @@
         "message": "파일",
         "description": "Text for file dropdown menu"
     },
-    "gui.menuBar.new": {
-        "message": "새로 만들기",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "복사본 저장하기",
-        "description": "Menu bar item for saving as a copy"
-    },
     "gui.menuBar.uploadFromComputer": {
         "message": "컴퓨터에서 가져오기",
         "description": "Menu bar item for uploading a project from your computer"
     },
     "gui.menuBar.downloadToComputer": {
-        "message": "사용자 컴퓨터에 저장하기 ",
+        "message": "컴퓨터에 저장하기 ",
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
@@ -448,11 +452,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(비어 있음)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "길이 {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -492,7 +496,7 @@
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "스크래치 다음 세대를 준비하고 있습니다. 귀하가 체험하시게 되어 기쁩니다! ",
+        "message": "스크래치의 다음 세대를 준비하고 있습니다. 귀하가 체험하시게 되어 기쁩니다!",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
@@ -562,22 +566,6 @@
     "gui.recordModal.title": {
         "message": "소리 녹음하기",
         "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "녹음하기",
-        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "소리",
@@ -795,13 +783,17 @@
         "message": "확장 라이브러리 주소 입력",
         "description": "Prompt for unoffical extension url"
     },
-    "gui.projectLoader.loadError": {
-        "message": "선택된 프로젝트 파일을 불러오기 실패했습니다.",
-        "description": "An error that displays when a local project file fails to load."
+    "gui.gui.defaultProjectTitle": {
+        "message": "스크래치 프로젝트",
+        "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
         "message": "녹음을 시작할 수 없음",
         "description": "Alert for recording error"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "선택된 프로젝트 파일을 불러오기 실패했습니다.",
+        "description": "An error that displays when a local project file fails to load."
     },
     "gui.soundLibrary.chooseASound": {
         "message": "소리 고르기",
@@ -828,7 +820,7 @@
         "description": "Heading for the sprite library"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "튜토리얼 선택하기 ",
+        "message": "튜토리얼 고르기",
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
@@ -848,8 +840,96 @@
         "description": "Step name for 'Add a move block' step"
     },
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "녹색 깃발을 클릭해 시작하세요",
+        "message": "초록색 깃발을 클릭해 시작하기",
         "description": "Step name for 'Add A Say Block' step"
+    },
+    "gui.howtos.say-it-out-loud": {
+        "message": "Create Animations That Talk",
+        "description": "Name for the 'Create Animations That Talk' how-to"
+    },
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
+        "message": "Add the Text to Speech blocks",
+        "description": "Step name for 'Add the Text to Speech blocks' step"
+    },
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.say-it-out-loud_TXTSetVoice": {
+        "message": "Set a Voice",
+        "description": "Step name for 'Set a Voice"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTMove": {
+        "message": "Move Around",
+        "description": "Step name for 'Move Around' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
+        "message": "배경 추가하기",
+        "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
+        "message": "Add Another Character",
+        "description": "Step name for 'Add Another Character' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSong": {
+        "message": "Perform a Song",
+        "description": "Step name for 'Perform a Song' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTColor": {
+        "message": "색 바꾸기",
+        "description": "Step name for 'Change Color' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSpin": {
+        "message": "Spin Around",
+        "description": "Step name for 'Spin Around"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTGrow": {
+        "message": "Grow and Shrink",
+        "description": "Step name for 'Grow and Shrink' step"
+    },
+    "gui.howtos.cartoon-network": {
+        "message": "Animate an Adventure Game",
+        "description": "Animate an Adventure Game' how-to"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter": {
+        "message": "Choose Which Character to Show",
+        "description": "Step name for 'Choose Which Character to Show' step"
+    },
+    "gui.howtos.cartoon-network.step_CNsay": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNglide": {
+        "message": "이곳저곳을 미끄러지며 다니기",
+        "description": "Step name for ' Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcollect": {
+        "message": "Collect Objects (In Gem Sprite)",
+        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+    },
+    "gui.howtos.cartoon-network.step_CNanimate": {
+        "message": "Add Score",
+        "description": "Step name for 'Add Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNscore": {
+        "message": "Keep Score",
+        "description": "Step name for 'Keep Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNkeepscore": {
+        "message": "Level Up: Change Background",
+        "description": "Step name for 'Level Up: Change Background' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevel": {
+        "message": "Show A New Character",
+        "description": "Step name for 'Show A New Character' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter2": {
+        "message": "Level Up: Say Something",
+        "description": "Step name for 'Level Up: Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevelup": {
+        "message": "Animate A Run",
+        "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "이름으로 애니메이션 만들기",
@@ -860,7 +940,7 @@
         "description": "Step name for 'Pick a Letter Sprite' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "클릭할 때 사운드 연주하기 ",
+        "message": "클릭할 때 소리 재생하기",
         "description": "Step name for 'Play a Sound When Clicked' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
@@ -876,7 +956,7 @@
         "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "다른 글자 스프라이트를 선택해 자라게 하기",
+        "message": "다른 글자 스프라이트를 선택하고 키우기",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
@@ -900,7 +980,7 @@
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "마이크 스프라이트 및 서프라이즈 비트박스를 선택하세요 ",
+        "message": "마이크 스프라이트 및 서프라이즈 비트박스를 선택하기",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
@@ -912,11 +992,11 @@
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "클릭할 때 소리 재생",
+        "message": "클릭할 때 소리 재생하기",
         "description": "Play Sound When Clicked' step"
     },
     "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "악보 변수 만들기 ",
+        "message": "점수 변수 만들기 ",
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
@@ -968,7 +1048,7 @@
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "악보 변수 만들기 ",
+        "message": "점수 변수 만들기 ",
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
@@ -992,7 +1072,7 @@
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.howtos.glide-around.name": {
-        "message": "글라이드 어라운드 ",
+        "message": "이곳저곳을 미끄러지며 다니기",
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
@@ -1008,7 +1088,7 @@
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "스프라이트 애니메이션 ",
+        "message": "스프라이트를 애니메이션으로 만들기",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
@@ -1024,7 +1104,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "악기와 드럼을 연주하세요.",
+        "message": "악기와 타악기를 연주하세요.",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -1032,16 +1112,24 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "사용자의 스프라이트로 그리세요. ",
+        "message": "스프라이트로 그리세요. ",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
-        "message": "비디오 센싱",
+        "message": "비디오 감지",
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "카메라로 움직임을 감지합니다.",
+        "message": "카메라로 움직임을 감지하세요.",
         "description": "Description for the 'Video Sensing' extension"
+    },
+    "gui.extension.text2speech.name": {
+        "message": "Text to Speech",
+        "description": "Name for the Text to Speech extension"
+    },
+    "gui.extension.text2speech.description": {
+        "message": "Make your projects talk.",
+        "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
         "message": "번역",
@@ -1060,7 +1148,7 @@
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "대화형 로봇 등을 만드세요.",
+        "message": "감지하고 반응하는 로봇 등을 만드세요.",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
@@ -1155,16 +1243,32 @@
         "message": "엉뚱한 소리",
         "description": "Tag for filtering a library for wacky"
     },
+    "gui.libraryTags.animation": {
+        "message": "애니메이션",
+        "description": "Tag for filtering a library for animation"
+    },
+    "gui.libraryTags.art": {
+        "message": "예술",
+        "description": "Tag for filtering a library for art"
+    },
+    "gui.libraryTags.games": {
+        "message": "게임",
+        "description": "Tag for filtering a library for games"
+    },
+    "gui.libraryTags.stories": {
+        "message": "스토리",
+        "description": "Tag for filtering a library for stories"
+    },
     "gui.opcodeLabels.direction": {
         "message": "방향",
         "description": "Label for the direction monitor when shown on the stage"
     },
     "gui.opcodeLabels.xposition": {
-        "message": "x postion",
+        "message": "x 좌표",
         "description": "Label for the x position monitor when shown on the stage"
     },
     "gui.opcodeLabels.yposition": {
-        "message": "y postion",
+        "message": "y 좌표",
         "description": "Label for the y position monitor when shown on the stage"
     },
     "gui.opcodeLabels.size": {
@@ -1176,7 +1280,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "모양 번호",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1184,7 +1288,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "배경 번호",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1220,7 +1324,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "요일",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1240,24 +1344,20 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "배경 [index]",
+        "message": "배경 {index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "모양 [index]",
+        "message": "모양 {index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "스프라이트 [index]",
+        "message": "스프라이트 {index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
         "message": "팝",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "스크래치 프로젝트",
-        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "개인 저장소",

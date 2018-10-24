@@ -383,6 +383,18 @@
         "message": "שמור עכשיו",
         "description": "Menu bar item for saving now"
     },
+    "gui.menuBar.saveAsCopy": {
+        "message": "שמירה כעותק",
+        "description": "Menu bar item for saving as a copy"
+    },
+    "gui.menuBar.remix": {
+        "message": "עריכה מחדש",
+        "description": "Menu bar item for remixing"
+    },
+    "gui.menuBar.new": {
+        "message": "חדש",
+        "description": "Menu bar item for creating a new project"
+    },
     "gui.menuBar.share": {
         "message": "שיתוף",
         "description": "Label for project share button"
@@ -390,14 +402,6 @@
     "gui.menuBar.file": {
         "message": "קובץ",
         "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.new": {
-        "message": "חדש",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "שמירה כעותק",
-        "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.uploadFromComputer": {
         "message": "טעינה מהמחשב שלך",
@@ -424,7 +428,7 @@
         "description": "Label for see community button"
     },
     "gui.menuBar.joinScratch": {
-        "message": "הרשמה",
+        "message": "הצטרפו לסקראץ'",
         "description": "Link for creating a Scratch account"
     },
     "gui.menuBar.signIn": {
@@ -448,11 +452,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(ריק)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "אורך {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -562,22 +566,6 @@
     "gui.recordModal.title": {
         "message": "הקליטו צליל",
         "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "הקלטה",
-        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "צליל",
@@ -795,13 +783,17 @@
         "message": "הכניסו את ה־URL של ההרחבה",
         "description": "Prompt for unoffical extension url"
     },
-    "gui.projectLoader.loadError": {
-        "message": "טעינת הפרויקט שנבחר נכשלה",
-        "description": "An error that displays when a local project file fails to load."
+    "gui.gui.defaultProjectTitle": {
+        "message": "פרויקט סקראץ'",
+        "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
         "message": "לא ניתן להתחיל הקלטה",
         "description": "Alert for recording error"
+    },
+    "gui.projectLoader.loadError": {
+        "message": "טעינת הפרויקט שנבחר נכשלה",
+        "description": "An error that displays when a local project file fails to load."
     },
     "gui.soundLibrary.chooseASound": {
         "message": "בחרו צליל",
@@ -850,6 +842,94 @@
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
         "message": "לחצו על הדגל הירוק כדי להתחיל",
         "description": "Step name for 'Add A Say Block' step"
+    },
+    "gui.howtos.say-it-out-loud": {
+        "message": "Create Animations That Talk",
+        "description": "Name for the 'Create Animations That Talk' how-to"
+    },
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
+        "message": "Add the Text to Speech blocks",
+        "description": "Step name for 'Add the Text to Speech blocks' step"
+    },
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.say-it-out-loud_TXTSetVoice": {
+        "message": "Set a Voice",
+        "description": "Step name for 'Set a Voice"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTMove": {
+        "message": "Move Around",
+        "description": "Step name for 'Move Around' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
+        "message": "הוסיפו רקע",
+        "description": "Step name for 'Add a Backdrop' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
+        "message": "Add Another Character",
+        "description": "Step name for 'Add Another Character' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSong": {
+        "message": "Perform a Song",
+        "description": "Step name for 'Perform a Song' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTColor": {
+        "message": "שינוי צבע",
+        "description": "Step name for 'Change Color' step"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTSpin": {
+        "message": "Spin Around",
+        "description": "Step name for 'Spin Around"
+    },
+    "gui.howtos.say-it-out-loud.step_TXTGrow": {
+        "message": "Grow and Shrink",
+        "description": "Step name for 'Grow and Shrink' step"
+    },
+    "gui.howtos.cartoon-network": {
+        "message": "Animate an Adventure Game",
+        "description": "Animate an Adventure Game' how-to"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter": {
+        "message": "Choose Which Character to Show",
+        "description": "Step name for 'Choose Which Character to Show' step"
+    },
+    "gui.howtos.cartoon-network.step_CNsay": {
+        "message": "Say Something",
+        "description": "Step name for 'Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNglide": {
+        "message": "החליקו סביב",
+        "description": "Step name for ' Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcollect": {
+        "message": "Collect Objects (In Gem Sprite)",
+        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+    },
+    "gui.howtos.cartoon-network.step_CNanimate": {
+        "message": "Add Score",
+        "description": "Step name for 'Add Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNscore": {
+        "message": "Keep Score",
+        "description": "Step name for 'Keep Score' step"
+    },
+    "gui.howtos.cartoon-network.step_CNkeepscore": {
+        "message": "Level Up: Change Background",
+        "description": "Step name for 'Level Up: Change Background' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevel": {
+        "message": "Show A New Character",
+        "description": "Step name for 'Show A New Character' step"
+    },
+    "gui.howtos.cartoon-network.step_CNcharacter2": {
+        "message": "Level Up: Say Something",
+        "description": "Step name for 'Level Up: Say Something' step"
+    },
+    "gui.howtos.cartoon-network.step_CNlevelup": {
+        "message": "Animate A Run",
+        "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "הנפשת שם",
@@ -1043,6 +1123,14 @@
         "message": "זיהוי תנועה באמצעות המצלמה",
         "description": "Description for the 'Video Sensing' extension"
     },
+    "gui.extension.text2speech.name": {
+        "message": "Text to Speech",
+        "description": "Name for the Text to Speech extension"
+    },
+    "gui.extension.text2speech.description": {
+        "message": "Make your projects talk.",
+        "description": "Description for the Text to speech extension"
+    },
     "gui.extension.translate.name": {
         "message": "תרגם",
         "description": "Name for the Translate extension"
@@ -1100,7 +1188,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "אוכל",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1108,7 +1196,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "לולאות",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1116,7 +1204,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Notes",
+        "message": "רשימות",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1124,7 +1212,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "תבניות",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1148,23 +1236,39 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "קול",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
-        "message": "Wacky",
+        "message": "משוגע",
         "description": "Tag for filtering a library for wacky"
+    },
+    "gui.libraryTags.animation": {
+        "message": "הנפשה",
+        "description": "Tag for filtering a library for animation"
+    },
+    "gui.libraryTags.art": {
+        "message": "אומנות",
+        "description": "Tag for filtering a library for art"
+    },
+    "gui.libraryTags.games": {
+        "message": "משחקים",
+        "description": "Tag for filtering a library for games"
+    },
+    "gui.libraryTags.stories": {
+        "message": "סיפורים",
+        "description": "Tag for filtering a library for stories"
     },
     "gui.opcodeLabels.direction": {
         "message": "כיוון",
         "description": "Label for the direction monitor when shown on the stage"
     },
     "gui.opcodeLabels.xposition": {
-        "message": "x postion",
+        "message": "מיקום על ציר x",
         "description": "Label for the x position monitor when shown on the stage"
     },
     "gui.opcodeLabels.yposition": {
-        "message": "y postion",
+        "message": "מיקום על ציר y",
         "description": "Label for the y position monitor when shown on the stage"
     },
     "gui.opcodeLabels.size": {
@@ -1176,7 +1280,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "מספר תלבושת",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1184,11 +1288,11 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "מספר רקע",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
-        "message": "עוצמת קול",
+        "message": "עוצמה",
         "description": "Label for the volume monitor when shown on the stage"
     },
     "gui.opcodeLabels.tempo": {
@@ -1200,7 +1304,7 @@
         "description": "Label for the answer monitor when shown on the stage"
     },
     "gui.opcodeLabels.loudness": {
-        "message": "עוצמת קול",
+        "message": "קולניות",
         "description": "Label for the loudness monitor when shown on the stage"
     },
     "gui.opcodeLabels.username": {
@@ -1220,7 +1324,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "יום בשבוע",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1254,10 +1358,6 @@
     "gui.sharedMessages.pop": {
         "message": "פופ",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "פרויקט סקראץ'",
-        "description": "Default title for project"
     },
     "gui.backpack.header": {
         "message": "תרמיל",

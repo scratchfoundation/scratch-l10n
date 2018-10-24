@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Hizketatik testura",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
         "message": "entzun eta itxaron",
@@ -415,9 +415,9 @@
         "message": " [PHRASE] entzutean",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "kaixo",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "erraldoia",
@@ -426,14 +426,6 @@
     "text2speech.kitten": {
         "message": "katutxoa",
         "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "ezarri hizkuntza: [LANGUAGE]",
@@ -450,6 +442,10 @@
     "text2speech.squeak": {
         "message": "kirrinka",
         "description": "Name for a funny voice with a high pitch."
+    },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Itzuli",
@@ -524,7 +520,7 @@
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "okertuta [TILT_DIRECTION_ANY]?",
+        "message": "[TILT_DIRECTION_ANY] okertuta?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
@@ -540,19 +536,19 @@
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "A motorra",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "motor guztiak",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "B motorra",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "motorra",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
@@ -564,7 +560,7 @@
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "piztu [MOTOR_ID]  [DURATION] segundo",
+        "message": "piztu [MOTOR_ID]  [DURATION] segundoz",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
@@ -588,7 +584,7 @@
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {
-        "message": "behe",
+        "message": "behera",
         "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.left": {
@@ -600,7 +596,7 @@
         "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.up": {
-        "message": "goi",
+        "message": "gora",
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {

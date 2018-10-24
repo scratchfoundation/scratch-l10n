@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "語音識別",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
+        "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
         "message": "收聽並等待",
@@ -415,9 +415,9 @@
         "message": "當收到語音 [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.defaultTextToSpeak": {
-        "message": "hello",
-        "description": "hello: the default text to speak"
+    "text2speech.alto": {
+        "message": "alto",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
         "message": "低沉",
@@ -426,14 +426,6 @@
     "text2speech.kitten": {
         "message": "小貓",
         "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "麥克斯",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "奎因",
-        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "語言設為 [LANGUAGE]",
@@ -450,6 +442,10 @@
     "text2speech.squeak": {
         "message": "尖細",
         "description": "Name for a funny voice with a high pitch."
+    },
+    "text2speech.tenor": {
+        "message": "tenor",
+        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "翻譯",
@@ -540,19 +536,19 @@
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "馬達 A",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "馬達 A 與 B",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "馬達 B",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "馬達",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
@@ -588,7 +584,7 @@
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {
-        "message": "下",
+        "message": "向下",
         "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.left": {
@@ -600,7 +596,7 @@
         "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.up": {
-        "message": "上",
+        "message": "向上",
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
