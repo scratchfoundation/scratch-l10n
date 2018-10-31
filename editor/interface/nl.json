@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Het spijt ons, maar het ziet er naar uit dat Scratch is gecrasht. \nDeze fout is automatisch gerapporteerd aan het Scratch Team. \nHerlaad de pagina om het nog eens te proberen.",
+        "message": "Het spijt ons, maar het ziet er naar uit dat Scratch het heeft begeven. Deze fout wordt automatisch gerapporteerd aan het Scratch Team. Ververs je pagina om opnieuw te proberen.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Project laden...",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Profiel",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Mijn projecten",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Mijn groepen",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Mijn groep",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Accountinstellingen",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Afmelden",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "taalkiezer",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Delen",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Gedeeld",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Bestand",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Geluid opnemen",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin met opnemen door op de onderstaande knop te klikken",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We hebben je toestemming nodig om je microfoon te gebruiken",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop met opnemen",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Opnemen",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Geluid",

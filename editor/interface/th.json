@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "เราเสียใจหนักมาก แต่ดูเหมือนว่า Scratch จะมีปัญหา ข้อผิดพลาดนี้ได้ถูกรายงานโดยอัตโนมัติไปยังทีมงาน Scratch แล้ว โปรดรีเฟรชหน้าเว็บเพื่อลองอีกครั้ง",
+        "message": "เราเสียใจมาก แต่ดูเหมือนว่า Scratch เกิดขัดข้องขึ้น ข้อผิดพลาดนี้ได้รายงานโดยอัตโนมัติไปยังทีม Scratch แล้ว โปรดรีเฟรชหน้าเว็บของคุณเพื่อลองอีกครั้ง",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "กำลังโหลดโครงงาน",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "โปรไฟล์",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "ผลงานของฉัน",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "ชั้นเรียนของฉัน",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "ชั้นเรียนของฉัน",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "ตั้งค่าบัญชี",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "ลงชื่อออก",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "เลือกภาษา",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "แชร์",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Shared",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "แฟ้ม",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "บันทึกเสียง",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "บันทึก",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "เสียง",

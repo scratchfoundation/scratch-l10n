@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Жао нам је, али изгледа да се Скрач урушио. Ова грешка у програму је\nаутоматски пријављена Скрач тиму. Молим, обнови своју страну да би покушао\nпоново.",
+        "message": "Жао нам је, али изгледа да је Скреч престао са радом. Овај проблем је аутоматски послат Скреч тиму. Молим те, освежи своју страницу да пробаш поново.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Учитавам пројекат",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Профил",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Моје ствари",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Моја одељења",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Моје одељење",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Подешавања налога",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Одјава",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "бирач језика",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Објави (дели)",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Дељено",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Датотека",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Сними звук",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Почни да снимаш притиснувши дугме испод",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}Потребна нам је твоја дозвола да би употребили твој микрофон",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Заустави снимање",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Сними",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Звук",

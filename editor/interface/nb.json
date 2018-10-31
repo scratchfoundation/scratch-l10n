@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Beklager, det ser ut til at Scratch har kræsjet.\nFeilen har blitt automatisk rapportert.\nLast inn siden på nytt for å prøve igjen.",
+        "message": "Beklager, det ser ut til at Scratch har kræsjet. Feilen har blitt rapportert automatisk til utviklerne. Last inn siden på nytt for å prøve igjen.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Laster prosjekt",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Profil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Mine ting",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Mine klasser",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Min klasse",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Brukerinnstillinger",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Logg ut",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "velg språk",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Legg ut",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Lagt ut",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Fil",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Spill inn lyd",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Klikk på knappen nedenfor for å starte opptak",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}Du må godkjenne at Scratch bruker mikrofonen",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stopp opptak",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Spill inn lyd",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Lyd",

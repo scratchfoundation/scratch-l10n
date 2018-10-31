@@ -24,7 +24,7 @@
         "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
-        "message": "Para aprender máis, ir a {previewFaqLink}.",
+        "message": "Para aprender máis, vai a {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.unsupportedBrowser.previewfaqlinktext": {
@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Vaites! Parece que Scratch fallou. Xa se informou\nautomaticamente deste erro ao Equipo de Scratch.\nActualiza a páxina para probar de novo.",
+        "message": "Desculpa! Aparentemente, o Scratch fallou. O Equipo de Scratch acaba de recibir información sobre este erro. Actualiza a páxina para tentalo de novo",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -300,7 +300,7 @@
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
-        "message": "Para aprender máis, ir a {previewFaqLink}.",
+        "message": "Para aprender máis, vai a {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
@@ -355,6 +355,30 @@
         "message": "Cargando proxecto",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Perfil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "As Miñas Cousas",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "As miñas clases",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "A miña clase",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Configuración da conta",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Saír",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "selector de idioma",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Compartir",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Compartidos",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Ficheiro",
@@ -452,11 +480,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(baleiro)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "lonxitude {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -512,7 +540,7 @@
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
-        "message": "Para aprender máis, ir a {previewFaqLink}.",
+        "message": "Para aprender máis, vai a {previewFaqLink}.",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Gravar son",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Gravar",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Son",
@@ -728,7 +772,7 @@
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.webglModal.back": {
-        "message": "Atrás",
+        "message": "Por atrás",
         "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
@@ -752,7 +796,7 @@
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Escoller vetimenta",
+        "message": "Escoller vestimenta",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.costumeTab.addBlankCostume": {
@@ -844,11 +888,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Crea animacións que falen",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Engade o texto aos bloques de fala",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -856,11 +900,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Indica unha voz",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Anda de redor",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -868,11 +912,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Engade outro personaxe",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Canta unha canció",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -880,19 +924,19 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Vira arredor",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Crece e reduce",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Anima un xogo de aventuras",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "Escolle o personaxe que queres mostrar",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -904,11 +948,11 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "Recolle obxectos (na vestimenta Gem)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
+        "message": "Engade puntuación",
         "description": "Step name for 'Add Score' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -916,19 +960,19 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "Subir nivel: Cambia o fondo",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "Mostra unha personaxe nova",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "Subir nivel: Di algo",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "Anima unha carreira",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1004,7 +1048,7 @@
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
-        "message": "Ir a unha posición ao chou",
+        "message": "Ir para unha posición ao chou",
         "description": "Step name for 'Go to a random position' step"
     },
     "gui.howtos.make-music.step_GameChangeColor": {
@@ -1124,11 +1168,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Texto a fala",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Fai que os teus proxectos falen",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1264,11 +1308,11 @@
         "description": "Label for the direction monitor when shown on the stage"
     },
     "gui.opcodeLabels.xposition": {
-        "message": "posición x",
+        "message": "posición en x",
         "description": "Label for the x position monitor when shown on the stage"
     },
     "gui.opcodeLabels.yposition": {
-        "message": "posición y",
+        "message": "posición en y",
         "description": "Label for the y position monitor when shown on the stage"
     },
     "gui.opcodeLabels.size": {
@@ -1280,7 +1324,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "número de vestimenta",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1288,7 +1332,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "número de fondo",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1324,7 +1368,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "día da semana",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {

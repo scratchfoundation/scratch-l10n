@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Схоже на те, що в Скретчі, на жаль, трапилась аварія. \nПовідомлення про цей недолік автоматично надіслано\nдо Команди розробників Скретчу. Оновіть сторінку, \nщоб спробувати ще раз. ",
+        "message": "Схоже на те, що в Скретчі, на жаль, трапилась аварія. Повідомлення про цей недолік автоматично надіслано до Команди розробників Скретчу. Оновіть сторінку, щоб спробувати ще раз.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Завантаження проекту",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Профіль",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Мої проекти",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Мої класи",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Мій клас",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Налаштування облікового запису",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Вийти",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "вибір мови",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Поділитись",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Опубліковане",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Файл",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Запис звуку",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Почніть запис, натиснувши кнопку нижче",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}Нам потрібен ваш дозвіл на використання мікрофону",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Зупинити запис",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Записати",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Звук",
