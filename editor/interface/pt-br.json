@@ -144,7 +144,7 @@
         "description": "Button to view help content"
     },
     "gui.connection.peripheral-name-label": {
-        "message": "Nome do Dispositivo",
+        "message": "Nome do dispositivo",
         "description": "Label for field showing the device name"
     },
     "gui.connection.connect": {
@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Parece que o Scratch parou de funcionar. Este erro foi\n                        reportado para a Equipe Scratch automaticamente. Atualize sua página para tentar\n                        novamente.",
+        "message": "Lamentamos muito, mas parece que o Scratch perdeu conexão. Este erro foi reportado automaticamente para a Equipe do Scratch. Por favor, atualize a sua página para tentar de novo.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -244,7 +244,7 @@
         "description": "Sprite info direction label"
     },
     "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Tudo em Volta",
+        "message": "Rotação Completa",
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
@@ -264,7 +264,7 @@
         "description": "Button to get to the code panel"
     },
     "gui.gui.backdropsTab": {
-        "message": "Panos de Fundo",
+        "message": "Cenários",
         "description": "Button to get to the backdrops panel"
     },
     "gui.gui.costumesTab": {
@@ -355,6 +355,30 @@
         "message": "Carregando Projeto",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Perfil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Minhas Criações",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Minhas Aulas",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Minha turma",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Configurações de conta",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Sair",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "Seletor de idioma",
         "description": "accessibility text for the language selection menu"
@@ -364,15 +388,15 @@
         "description": "accessibility text for the tutorials button"
     },
     "gui.menuBar.restoreSprite": {
-        "message": "Restaure o Ator",
+        "message": "Restaurar o ator",
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restaure o Som",
+        "message": "Restaurar o som",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restaure a Fantasia",
+        "message": "Restaurar a fantasia",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Compartilhar",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Compartilhado",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Arquivo",
@@ -452,11 +480,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(vazio)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "Comprimento {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -567,6 +595,22 @@
         "message": "Gravar Som",
         "description": "Recording modal title"
     },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Gravar",
+        "description": "Record button label"
+    },
     "gui.soundEditor.sound": {
         "message": "Som",
         "description": "Label for the name of the sound"
@@ -580,7 +624,7 @@
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
-        "message": "Aparar",
+        "message": "Cortar Trecho",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
@@ -596,11 +640,11 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Rápido",
+        "message": "Mais Rápido",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Devagar",
+        "message": "Mais Devagar",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
@@ -620,7 +664,7 @@
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Invertido",
+        "message": "Inverter",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
@@ -688,7 +732,7 @@
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Selecionar Pano de Fundo",
+        "message": "Selecionar Cenário",
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
@@ -700,7 +744,7 @@
         "description": "Button to add a random stage in the target pane"
     },
     "gui.stageSelector.addBackdropFromFile": {
-        "message": "Carregar Pano de Fundo",
+        "message": "Carregar Cenário",
         "description": "Button to add a stage in the target pane from file"
     },
     "gui.stageSelector.stage": {
@@ -708,7 +752,7 @@
         "description": "Label for the stage in the stage selector"
     },
     "gui.stageSelector.backdrops": {
-        "message": "Panos de Fundo",
+        "message": "Cenários",
         "description": "Label for the backdrops in the stage selector"
     },
     "gui.turboMode.active": {
@@ -740,19 +784,19 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Selecionar Pano de Fundo",
+        "message": "Selecionar Cenário",
         "description": "Heading for the backdrop library"
     },
     "gui.costumeLibrary.chooseACostume": {
-        "message": "Selecionar uma Fantasia",
+        "message": "Escolher Fantasia",
         "description": "Heading for the costume library"
     },
     "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Selecionar Pano de Fundo",
+        "message": "Selecionar Cenário",
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Escolha uma Fantasia",
+        "message": "Escolher Fantasia",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.costumeTab.addBlankCostume": {
@@ -764,7 +808,7 @@
         "description": "Button to add a surprise costume in the editor tab"
     },
     "gui.costumeTab.addFileBackdrop": {
-        "message": "Carregar Pano de Fundo",
+        "message": "Carregar Cenário",
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.costumeTab.addFileCostume": {
@@ -844,11 +888,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Crie Animações que falam",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Adicione o Texto para os blocos de Fala",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -856,23 +900,23 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Definir uma Voz",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Mova Por Aí",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Adicione um Pano de Fundo",
+        "message": "Adicione um Cenário",
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Adicione Outro Personagem",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Cante uma Música",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -884,15 +928,15 @@
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Aumente ou diminua",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Anime um Jogo de Aventura",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "Escolha Qual Personagem Mostrar",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -904,7 +948,7 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "Coletar Objetos (Em Sprite de Joia)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
@@ -912,23 +956,23 @@
         "description": "Step name for 'Add Score' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Pontuação",
+        "message": "Mantenha Pontuação",
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "Nível Acima: Mude o Cenário",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "Mostre um Novo Personagem",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "Suba de nível: Diga Algo",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "Anime uma corrida",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -984,7 +1028,7 @@
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
-        "message": "Faça um Jogo Clicker",
+        "message": "Faça um Jogo de Clicar",
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
@@ -996,7 +1040,7 @@
         "description": "Play Sound When Clicked' step"
     },
     "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Crie uma Variável de Placar",
+        "message": "Crie uma Variável de Pontuação",
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
@@ -1020,7 +1064,7 @@
         "description": "Name for the 'Make a Chase Game' how-to"
     },
     "gui.howtos.Chase-Game.step_BG": {
-        "message": "Adicione um Pano de Fundo",
+        "message": "Adicione um Cenário",
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.chase-game.step_AddOcto": {
@@ -1028,7 +1072,7 @@
         "description": "Step name for 'Add a Sprite' step"
     },
     "gui.howtos.make-music.step_LeftRight": {
-        "message": "Mova para a Direita & Esquerda com as Teclas Setas",
+        "message": "Mova para a Direita & Esquerda com as Setas do Teclado",
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
@@ -1048,7 +1092,7 @@
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Crie uma Variável de Placar",
+        "message": "Crie uma Variável de Pontuação",
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
@@ -1064,7 +1108,7 @@
         "description": "Step name for 'Add a new sprite' step"
     },
     "gui.howtos.add-a-backdrop.name": {
-        "message": "Adicione um Pano de Fundo",
+        "message": "Adicione um Cenário",
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.howtos.change-size.name": {
@@ -1080,7 +1124,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Faça-a girar",
+        "message": "Faça-o girar",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
@@ -1124,11 +1168,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Texto para Fala",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Faça seus projetos falarem",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1196,7 +1240,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Laços",
+        "message": "Loops",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1204,7 +1248,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Observações",
+        "message": "Notas",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1232,7 +1276,7 @@
         "description": "Tag for filtering a library for sports"
     },
     "gui.libraryTags.underwater": {
-        "message": "Submarino",
+        "message": "Embaixo d'água",
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
@@ -1280,15 +1324,15 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "número da fantasia",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
-        "message": "nome do pano de fundo",
+        "message": "nome do cenário",
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "cenário número",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1324,7 +1368,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "DiaDaSemana",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1344,7 +1388,7 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "pano de fundo{index}",
+        "message": "cenário{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {

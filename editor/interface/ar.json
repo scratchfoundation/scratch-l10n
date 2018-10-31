@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "حن آسفون جدًا ، ولكن يبدو أن برنامج سكراتش قد تعطل. تم الإبلاغ عن هذا الخطأ تلقائيًا إلى فريق برنامج السكراتش. يرجى تحديث صفحتك لتجربتها مرة أخرى.",
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "تحميل المشروع",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "الملف الشخصي",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "أغراضي",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "صفوفي",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "فصلي",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "إعدادات الحساب",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "تسجيل الخروج",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "اختيار اللغة",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "مشاركة",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "المشاركة",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "ملف",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "تسجيل الصوت",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "ابدا التسجيل عند النقر على الزر 1%",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow} نحتاج إلى إذنك لاستخدام الميكروفون",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "إيقاف التسجيل",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "تسجيل",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "الصوت",

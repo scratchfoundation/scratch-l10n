@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Ho sentim, però sembla que l'Scratch ha fallat. S'ha informat d'aquest problema\n                        automàticament a l'equip de Scratch. Si us plau torna a carregar la pàgina per provar-ho\n                        de nou.",
+        "message": "Ho sentim però sembla que l'Scratch ha fallat. Aquest error ha estat enviat a l'Equip de Scratch automàticament. Si us plau torna a carregar la pàgina per provar-ho de nou.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "S'està carregant el projecte",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Perfil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Les Meves Coses",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Les meves classes",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "La meva classe",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Configuració del compte",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Finalitza la sessió",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "tria l'idioma",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Comparteix",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Compartits",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Fitxer",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Grava un so",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Comença la gravació fent clic al botó de sota",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}Necessitem el teu permís per utilitzar el teu micròfon",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Atura la gravació",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Enregistra",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "So",
@@ -844,11 +888,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Crea animacions que parlin",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Afegeix els blocs Text to Speech",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -856,11 +900,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Estableix una veu",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Mou-te a voltant",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -868,11 +912,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Afegeix un altre personatge",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Realitza una cançó",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -884,15 +928,15 @@
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Creix i encongeix",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Anima un joc d'aventures",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "Tria quin personatge es mostra",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -904,7 +948,7 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "Recull objectes (en el personatge Gem)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
@@ -912,23 +956,23 @@
         "description": "Step name for 'Add Score' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
+        "message": "Desa la puntuació",
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "Nivell superat: canvia el fons",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "Mostra un nou personatge",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "Nivell superat: digues alguna cosa",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "Anima una carrera",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1128,7 +1172,7 @@
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Fes que els teus projectes parlin.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {

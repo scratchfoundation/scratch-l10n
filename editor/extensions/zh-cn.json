@@ -124,7 +124,7 @@
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "当引脚[PIN]链接",
+        "message": "当引脚[PIN]接地",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
@@ -416,7 +416,7 @@
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
     "text2speech.alto": {
-        "message": "alto",
+        "message": "中音",
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
@@ -444,7 +444,7 @@
         "description": "Name for a funny voice with a high pitch."
     },
     "text2speech.tenor": {
-        "message": "tenor",
+        "message": "男高音",
         "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
@@ -516,19 +516,19 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "[TILT_DIRECTION]倾角",
+        "message": "向[TILT_DIRECTION]倾角",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "[TILT_DIRECTION_ANY]倾？",
+        "message": "向[TILT_DIRECTION_ANY]倾斜？",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
-        "message": "向左转",
+        "message": "逆时针",
         "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.forward": {
-        "message": "向右转",
+        "message": "顺时针",
         "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.reverse": {
@@ -580,7 +580,7 @@
         "description": "set the motor's power and turn it on"
     },
     "wedo2.tiltDirection.any": {
-        "message": "任意",
+        "message": "任意方向",
         "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.down": {
@@ -596,7 +596,7 @@
         "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.tiltDirection.up": {
-        "message": "向上",
+        "message": "上",
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
@@ -604,7 +604,7 @@
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "当倾向[TILT_DIRECTION_ANY]",
+        "message": "当向[TILT_DIRECTION_ANY]倾斜",
         "description": "check when tilted in a certain direction"
     }
 }

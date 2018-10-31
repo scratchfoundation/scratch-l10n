@@ -355,6 +355,30 @@
         "message": "프로젝트를 불러오는 중",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "내 정보",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "내 작업실",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "내 학급",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "내 학급",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "계정 설정",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "로그 아웃",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "언어 선택기 ",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "공유",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "공유됨",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "파일",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "소리 녹음하기",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "아래에 있는 버튼을 눌러서 녹음을 시작하세요",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}마이크를 사용하려면 당신의 허락이 필요합니다",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "녹음 멈추기",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "녹음하기",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "소리",
@@ -844,23 +888,23 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "대화하는 애니메이션 만들기",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "말하기 블록에 텍스트 추가",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Say Something",
+        "message": "무엇이든지 말하기",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "목소리 설정",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "돌아다니기",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -868,11 +912,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "다른 캐릭터 추가하기",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "노래를 자랑하기",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -880,23 +924,23 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "돌기",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "커지고 사라지기",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "어드벤처 게임을 움직이게 만들기",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "보여줄 캐릭터를 선택하기",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Say Something",
+        "message": "무엇이든지 말하기",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNglide": {
@@ -904,31 +948,31 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "물체를 줍기 (보석 스프라이트)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
+        "message": "점수 추가하기",
         "description": "Step name for 'Add Score' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
+        "message": "점수 저장하기",
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "레벨 업: 배경화면 변경하기",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "새 캐릭터 보이기",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "레벨 업: 무엇이든지 말하기",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "달리기를 애니메이트 해보기",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1124,11 +1168,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "글자를 말로",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "당신의 프로젝트가 대화하게 해보기",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {

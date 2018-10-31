@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Es tut uns sehr leid, aber es sieht so aus als sei Scratch abgestürzt.\n                        Dieser Fehler wurde dem Scratch Team automatisch gemeldet.\n                       Lade die Seite neu, um es nochmal zu versuchen.",
+        "message": "Es tut uns Leid, anscheinend ist ein Fehler bei Scratch aufgetreten. Das Scratch-Team wurde automatisch informiert. Bitte aktualisiere die Seite, um es erneut zu versuchen.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Projekt wird geladen",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Profil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Meine Sachen",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Meine Klassen",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Meine Klasse",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Kontoeinstellungen",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Abmelden",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "Sprachauswahl",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Veröffentlichen",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Veröffentlicht",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Datei",
@@ -452,11 +480,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(leer)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "Länge: {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Klang aufnehmen",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Aufnehmen",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Klang",
@@ -1288,7 +1332,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "Bühnenbildnummer",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {

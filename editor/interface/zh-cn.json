@@ -355,6 +355,30 @@
         "message": "载入项目",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "个人资料",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "我的项目中心",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "我的所有班级",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "我的班级",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "账号设置",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "登出",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "语言菜单",
         "description": "accessibility text for the language selection menu"
@@ -399,6 +423,10 @@
         "message": "分享",
         "description": "Label for project share button"
     },
+    "gui.menuBar.isShared": {
+        "message": "已分享",
+        "description": "Label for shared project"
+    },
     "gui.menuBar.file": {
         "message": "文件",
         "description": "Text for file dropdown menu"
@@ -432,7 +460,7 @@
         "description": "Link for creating a Scratch account"
     },
     "gui.menuBar.signIn": {
-        "message": "登入",
+        "message": "登录",
         "description": "Link for signing in to your Scratch account"
     },
     "gui.menuBar.giveFeedback": {
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "录制声音",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "点击下方的按钮开始录制",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}我们需要你的许可才能使用麦克风。",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "停止录制",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "录制",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "声音",
@@ -844,11 +888,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "创建会说话的动画",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "添加文字朗读积木",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -856,11 +900,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "设置语音",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "四处移动",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -868,11 +912,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "添加另一个角色",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "演奏一首歌",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -884,15 +928,15 @@
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "变大变小",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "让冒险游戏动起来",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "选择要显示的角色",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -904,7 +948,7 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "收集物体(在Gem角色中)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
@@ -916,19 +960,19 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "下一关: 改变背景",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "显示一个新角色",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "下一关：说些什么",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "跑动起来",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1124,11 +1168,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "文字朗读",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "让你的项目开口说话",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1140,7 +1184,7 @@
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "让项目连接到实体世界。",
+        "message": "把项目连接到实体世界。",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
@@ -1196,7 +1240,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "循环向",
+        "message": "可循环",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1204,7 +1248,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "注意",
+        "message": "音符",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1324,7 +1368,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "星期几",
+        "message": "星期",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {

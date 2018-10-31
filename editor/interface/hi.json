@@ -140,7 +140,7 @@
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
-        "message": "Help",
+        "message": "सहायता",
         "description": "Button to view help content"
     },
     "gui.connection.peripheral-name-label": {
@@ -180,7 +180,7 @@
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.unavailable.helpbutton": {
-        "message": "Help",
+        "message": "सहायता",
         "description": "Button to view help content"
     },
     "gui.controls.go": {
@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been\n                        automatically reported to the Scratch Team. Please refresh your page to try\n                        again.",
+        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -204,7 +204,7 @@
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
-        "message": "Make a Block",
+        "message": "खंड बनाये",
         "description": "Title for the modal where you create a custom block."
     },
     "gui.customProcedures.addAnInputNumberText": {
@@ -355,6 +355,30 @@
         "message": "Loading Project",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Profile",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "My Stuff",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "My Classes",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "My Class",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "खाते की सेटिंग्स",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Sign out",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "language selector",
         "description": "accessibility text for the language selection menu"
@@ -399,6 +423,10 @@
         "message": "Share",
         "description": "Label for project share button"
     },
+    "gui.menuBar.isShared": {
+        "message": "Shared",
+        "description": "Label for shared project"
+    },
     "gui.menuBar.file": {
         "message": "File",
         "description": "Text for file dropdown menu"
@@ -412,7 +440,7 @@
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
-        "message": "Edit",
+        "message": "संपादित करे",
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
@@ -444,7 +472,7 @@
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
-        "message": "Help",
+        "message": "सहायता",
         "description": "Help button in modal"
     },
     "gui.modal.back": {
@@ -567,6 +595,22 @@
         "message": "Record Sound",
         "description": "Recording modal title"
     },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Record",
+        "description": "Record button label"
+    },
     "gui.soundEditor.sound": {
         "message": "अवाज",
         "description": "Label for the name of the sound"
@@ -588,11 +632,11 @@
         "description": "Title of the button to save trimmed sound"
     },
     "gui.soundEditor.undo": {
-        "message": "Undo",
+        "message": "पूर्ववत",
         "description": "Title of the button to undo"
     },
     "gui.soundEditor.redo": {
-        "message": "Redo",
+        "message": "पुनः",
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
@@ -1132,7 +1176,7 @@
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
-        "message": "Translate",
+        "message": "भाषांतर",
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {

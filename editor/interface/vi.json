@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Chúng tôi xin lỗi, nhưng có vẻ là chương trinh Scratch đã có lỗi tải lên. Vấn đề này\nđã được tự động báo lại cho đội ngũ Scratch. Xin hãy tải lại trang này để\nthử lại.",
+        "message": "Chúng tôi rất xin lỗi, nhưng có vẻ như Scratch đã gặp vấn đề. Lỗi này đã được thông báo đến đội ngũ của Scratch. Hãy thử tải lại trang của bạn",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Đang tải dự án",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Trang cá nhân",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Chương trình của tôi",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Các lớp học của tôi",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Lớp học của tôi",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Thiết lập tài khoản",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Đăng xuất",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "chọn ngôn ngữ",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Chia sẻ",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Đã chia sẻ",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Tập tin",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Thu lại âm thanh ",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Begin recording by clicking the button below",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}We need your permission to use your microphone",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Stop recording",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Ghi lại",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Âm thanh",

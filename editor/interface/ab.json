@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Ҳара хьаас иҳамоуп Scratch аҟны агха ахьыҟалаз. Ари агха\nавтоматикала Scratch Акоманда ахь идәықәҵахоит. Ишәырҿыц адаҟьа, даҽазнык\nагәаҭаразы. ",
+        "message": "Ҳара хьаас иҳамоуп, аха Scratch аҟны иҟалеит агха. Агхазы ацҳамҭа автоматикала идәықәҵоуп Scratch акомандахь. Ишәырҿыц адаҟьа, даҽазнык агәаҭараз.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Апроеқт аҭагалара",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Апрофиль",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Сара суысумҭақәа",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Сара сыклассқәа",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Сара сыкласс",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Аккаунт азырхирақәа",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Иҭыҵтәуп",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "абызшәа алхра",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Угәаанагарақәа рыцеиҩша",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Апубликациа азуп",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Афаил",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Иҭаҩтәуп абжьы",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Шәалага аҭаҩра, ҵаҟатәи акнопка ақәыӷәӷәарала",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow} Шәмикрофон ахархәараз, ҳара иҳамазароуп шәара шәзин",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Иаанкылатәуп аҭаҩра",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Иҭаҩтәуп",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Абжьы",
@@ -844,11 +888,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Иаԥҵатәуп Анимациа И Иҳәатәуп",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Иацҵатәуп Аблокқәа \"Атеқст Ацәажәарахь\"",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -856,11 +900,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Иқәыргылатәуп Абжьы",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Игьежьлатәуп Иакәыршаны",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -868,11 +912,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Иацҵатәуп Егьи Аперсонаж",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Иқәгылатәуп Ашәаҳәара  ала",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -880,19 +924,19 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Иргьежьтәуп",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Идухалатәуп нас Ихәыҷхалатәуп",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Иаԥҵа Ахәмарра Ахҭыс",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
+        "message": "Далх Ицәырҵраны Иҟоу Афырхаҵа",
         "description": "Step name for 'Choose Which Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -904,31 +948,31 @@
         "description": "Step name for ' Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
+        "message": "Еизгала Аобиеқтқәа (Анагӡаҩ Ахаҳә аҟны)",
         "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
     },
     "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
+        "message": "Иазырҳа Аԥхьаӡара",
         "description": "Step name for 'Add Score' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
+        "message": "Аԥхьаӡара Иацҵала",
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
+        "message": "Иҿыцу Аҩаӡара: Иԥсах Аҿаԥшыра",
         "description": "Step name for 'Level Up: Change Background' step"
     },
     "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
+        "message": "Дцәырга Афырхаҵа Ҿыц",
         "description": "Step name for 'Show A New Character' step"
     },
     "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
+        "message": "Иҿыцу Аҩаӡара: Иҳәа Џьара акы",
         "description": "Step name for 'Level Up: Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
+        "message": "Аҩра Анимациа Азуы",
         "description": "Step name for 'Animate A Run' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1124,11 +1168,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Атеқст Ацәажәарахь",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Упроеқтқәа аԥсы рхаҵа.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {

@@ -196,7 +196,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Désolé, mais on dirait que Scratch a crashé. Ce bug a été\nrapporté automatiquement à l'Équipe Scratch. Essayez de recharger la page pour essayer\nà nouveau.",
+        "message": "Nous sommes désolés, mais on dirait que Scratch a planté. Ce bug a été rapporté automatiquement à l'Equipe Scratch. Merci de rafraîchir la page pour essayer à nouveau.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -355,6 +355,30 @@
         "message": "Chargement du projet",
         "description": "Main loading message"
     },
+    "gui.accountMenu.profile": {
+        "message": "Profil",
+        "description": "Text to link to my user profile, in the account navigation menu"
+    },
+    "gui.accountMenu.myStuff": {
+        "message": "Mes projets",
+        "description": "Text to link to list of my projects, in the account navigation menu"
+    },
+    "gui.accountMenu.myClasses": {
+        "message": "Mes classes",
+        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
+    },
+    "gui.accountMenu.myClass": {
+        "message": "Ma classe",
+        "description": "Text to link to my class (if I am a student), in the account navigation menu"
+    },
+    "gui.accountMenu.accountSettings": {
+        "message": "Paramètres du compte",
+        "description": "Text to link to my account settings, in the account navigation menu"
+    },
+    "gui.accountMenu.signOut": {
+        "message": "Déconnexion",
+        "description": "Text to link to sign out, in the account navigation menu"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "sélecteur de langue",
         "description": "accessibility text for the language selection menu"
@@ -398,6 +422,10 @@
     "gui.menuBar.share": {
         "message": "Partager",
         "description": "Label for project share button"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Partagés",
+        "description": "Label for shared project"
     },
     "gui.menuBar.file": {
         "message": "Fichier",
@@ -566,6 +594,22 @@
     "gui.recordModal.title": {
         "message": "Enregistre un Son",
         "description": "Recording modal title"
+    },
+    "gui.recordingStep.beginRecord": {
+        "message": "Commencez à enregistrer en cliquant sur le bouton ci-dessous.",
+        "description": "Message for recording sound modal"
+    },
+    "gui.recordingStep.permission": {
+        "message": "{arrow}Nous avons besoin de votre permission pour utiliser votre micro",
+        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
+    },
+    "gui.recordingStep.stop": {
+        "message": "Arrêter l'enregistrement",
+        "description": "Stop recording button label"
+    },
+    "gui.recordingStep.record": {
+        "message": "Enregistrer",
+        "description": "Record button label"
     },
     "gui.soundEditor.sound": {
         "message": "Son",
