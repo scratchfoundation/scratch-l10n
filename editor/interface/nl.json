@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Rugzak",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Fout bij laden van de rugzak",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Laden ...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Meer",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Rugzak is leeg",
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "Afmelden",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Gebruikersnaam",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Wachtwoord",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Inloggen",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Hulp nodig?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "taalkiezer",
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Zeg iets",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Glijd rond",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Voeg een puntentelling toe",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Score bijhouden",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animeer een naam",
@@ -1388,23 +1408,19 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "achtergrond",
+        "message": "achtergrond{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "uiterlijk",
+        "message": "uiterlijk{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Sprite",
+        "message": "Sprite{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
         "message": "plop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Rugzak",
-        "description": "Button to open the backpack"
     }
 }

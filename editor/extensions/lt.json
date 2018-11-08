@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "beep note [NOTE] for [TIME] secs",
+        "message": "groti natą [NOTE]tiek sekundžių: [TIME]",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "button [PORT] pressed?",
+        "message": "ar nuspaustas mygtukas [PORT]?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,31 +16,31 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "[PORT] variklio pozicija",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "[PORT] varikliui nustatyti jėgą [POWER] %",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] turn this way for [TIME] seconds",
+        "message": "[PORT] variklį sukti šia kryptimi tiek sekundžių: [TIME]",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT] turn that way for [TIME] seconds",
+        "message": "[PORT] variklį sukti šia kryptimi tiek sekundžių: [TIME]",
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "kai šviesumas < [DISTANCE]",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "when button [PORT] pressed",
+        "message": "kai nuspaudžiamas mygtukas [PORT]",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "kai atstumas < [DISTANCE]",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,7 +48,7 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "nuvalyti ekraną",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
@@ -56,47 +56,47 @@
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "rodyti [MATRIX]",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display text [TEXT]",
+        "message": "[TEXT]rodyti tekstą ",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "šuolis",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "pajudinta",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "papurtyta",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "ar nuspaustas mygtukas [BTN]?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "ar paversta [DIRECTION]?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
-        "message": "Išjungti",
+        "message": "išjungti",
         "description": "label for off element in pin state picker for micro:bit extension"
     },
     "microbit.pinStateMenu.on": {
-        "message": "Įjungti",
+        "message": "įjungti",
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "paversta kampu [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
-        "message": "bet kuris",
+        "message": "bet kur",
         "description": "label for any direction element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.back": {
@@ -104,7 +104,7 @@
         "description": "label for back element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.front": {
-        "message": "priekį",
+        "message": "į priekį",
         "description": "label for front element in tilt direction picker for micro:bit extension"
     },
     "microbit.tiltDirectionMenu.left": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "kai nuspaustas mygtukas [BTN]",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "kai [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
+        "message": "kai prijungtas kištukas [PIN]",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "kai paversta [DIRECTION]",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -300,27 +300,27 @@
         "description": "Sound of a wooden flute being played"
     },
     "music.midiSetInstrument": {
-        "message": "nustatyk instrumentą į [INSTRUMENT]",
+        "message": "nustatyti instrumentą į [INSTRUMENT]",
         "description": "set the instrument for notes played according to a mapping of MIDI codes"
     },
     "music.playDrumForBeats": {
-        "message": "natą [DRUM]grok[BEATS] takto/us",
+        "message": "groti būgnu [DRUM] tiek taktų: [BEATS]",
         "description": "play drum sample for a number of beats"
     },
     "music.playNoteForBeats": {
-        "message": "būgną [NOTE] mušk [BEATS]takto/us",
+        "message": "groti natą [NOTE] tiek taktų: [BEATS]",
         "description": "play a note for a number of beats"
     },
     "music.restForBeats": {
-        "message": "ilsėkis[BEATS] smūgių",
+        "message": "pauzė tiek taktų: [BEATS]",
         "description": "rest (play no sound) for a number of beats"
     },
     "music.setInstrument": {
-        "message": "nustatyk instrumentą į [INSTRUMENT]",
+        "message": "instrumentą nustatyti į [INSTRUMENT]",
         "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
     },
     "music.setTempo": {
-        "message": "keisk tempą į [TEMPO] ",
+        "message": "keiti tempą į [TEMPO] ",
         "description": "set tempo (speed) for notes, drums, and rests played"
     },
     "pen.categoryName": {
@@ -328,7 +328,7 @@
         "description": "Label for the pen extension category"
     },
     "pen.changeColorParam": {
-        "message": "keisk pieštuko [COLOR_PARAM]per[VALUE]",
+        "message": "keisti pieštuko [COLOR_PARAM]per[VALUE]",
         "description": "change the state of a pen color parameter"
     },
     "pen.changeHue": {
@@ -336,7 +336,7 @@
         "description": "legacy pen blocks - change pen color"
     },
     "pen.changeShade": {
-        "message": "keisk pieštuko šešėlį per [SHADE]",
+        "message": "keisk pieštuko atspalvį per [SHADE]",
         "description": "legacy pen blocks - change pen shade"
     },
     "pen.changeSize": {
@@ -364,15 +364,15 @@
         "description": "label for transparency element in color picker for pen extension"
     },
     "pen.penDown": {
-        "message": "nuleisk pieštuką",
+        "message": "pieštukas pieš",
         "description": "start leaving a trail when the sprite moves"
     },
     "pen.penUp": {
-        "message": "pakelk pieštuką",
+        "message": "pieštukas nebepieš",
         "description": "stop leaving a trail behind the sprite"
     },
     "pen.setColor": {
-        "message": "keisk pieštuko spalvą į [COLOR]",
+        "message": "keisti pieštuko spalvą į [COLOR]",
         "description": "set the pen color to a particular (RGB) value"
     },
     "pen.setColorParam": {
@@ -380,31 +380,31 @@
         "description": "set the state for a pen color parameter e.g. saturation"
     },
     "pen.setHue": {
-        "message": "keisk pieštuko spalvą į [HUE]",
+        "message": "keisti pieštuko spalvą į [HUE]",
         "description": "legacy pen blocks - set pen color to number"
     },
     "pen.setShade": {
-        "message": "nustatyti pieštuko atspalvį į [SHADE]",
+        "message": "keisti pieštuko atspalvį į [SHADE]",
         "description": "legacy pen blocks - set pen shade"
     },
     "pen.setSize": {
-        "message": "nustatyk pieštuko dydį į [SIZE]",
+        "message": "keisti pieštuko dydį į [SIZE]",
         "description": "set the diameter of a trail left by a sprite"
     },
     "pen.stamp": {
-        "message": "Antspaudas",
+        "message": "antspaudas",
         "description": "render current costume on the background"
     },
     "speech.defaultWhenIHearValue": {
-        "message": "eime",
+        "message": "pirmyn",
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Speech to Text",
+        "message": "Skaityti tekstą",
         "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
-        "message": "klausyk ir palauk",
+        "message": "paklausyti ir laukti",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
@@ -412,15 +412,15 @@
         "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "speech.whenIHear": {
-        "message": "kai girdžiu [PHRASE]",
+        "message": "kai išgirstu [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
     "text2speech.alto": {
-        "message": "alto",
+        "message": "alto balsas",
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
-        "message": "giant",
+        "message": "milžino balsas",
         "description": "Name for a funny voice with a low pitch."
     },
     "text2speech.kitten": {
@@ -428,27 +428,27 @@
         "description": "A baby cat."
     },
     "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
+        "message": "keisti kalbą į [LANGUAGE]",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
-        "message": "nustatyti balso į [VOICE]",
+        "message": "keisti balsą į [VOICE]",
         "description": "Set the voice for speech synthesis."
     },
     "text2speech.speakAndWaitBlock": {
-        "message": "pasikalbėk [WORDS]",
+        "message": "sakyti [WORDS]",
         "description": "Speak some words."
     },
     "text2speech.squeak": {
-        "message": "čirenti",
+        "message": "cyptelėjimas",
         "description": "Name for a funny voice with a high pitch."
     },
     "text2speech.tenor": {
-        "message": "tenor",
+        "message": "tenoro balsas",
         "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
-        "message": "Translate",
+        "message": "Išversti",
         "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
@@ -504,11 +504,11 @@
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
     "videoSensing.videoToggle": {
-        "message": "nustatyti vaizdo modą į [VIDEO_STATE]",
+        "message": "perjungti video į [VIDEO_STATE]",
         "description": "Controls display of the video preview layer"
     },
     "videoSensing.whenMotionGreaterThan": {
-        "message": "kai vaizdo judesys > [REFERENCE]",
+        "message": "kai judesio vaizde > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
     },
     "wedo2.getDistance": {
@@ -516,15 +516,15 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "paversta kryptimi [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "ar paversta [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
-        "message": "šian",
+        "message": "šen",
         "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.forward": {
@@ -532,51 +532,51 @@
         "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorDirection.reverse": {
-        "message": "apgręžti",
+        "message": "atbulai",
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "variklis A",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "visi varikliai",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "variklis B",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "variklis",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "išjungti [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "įjungti [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "įjungti [MOTOR_ID] tiek sekundžių: [DURATION]",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "groti natą [NOTE]tiek sekundžių: [DURATION]",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "keisti šviesos spalvą į [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "keisti [MOTOR_ID]kryptį į [MOTOR_DIRECTION]",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "keisti [MOTOR_ID] jėgą į [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.tiltDirection.any": {
@@ -600,11 +600,11 @@
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "kai atstumas [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "kai paversta [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

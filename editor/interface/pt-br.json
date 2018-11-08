@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Mochila",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Erro carregando a mochila",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Carregando...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Mais",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "A mochila está vazia",
@@ -88,7 +100,7 @@
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.comingSoon.message3": {
-        "message": "Estamos trabalhando nisso",
+        "message": "Estamos trabalhando nisso {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.connection.auto-scanning.noPeripheralsFound": {
@@ -379,6 +391,22 @@
         "message": "Sair",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Nome de usuário",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Senha",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Entrar",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Precisa de ajuda?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "Seletor de idioma",
         "description": "accessibility text for the language selection menu"
@@ -596,15 +624,15 @@
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Comece a gravação clicando no botão abaixo",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}Precisamos da sua permissão para usar seu microfone",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Parar gravação",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Escolha Qual Personagem Mostrar",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Diga Algo",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Deslize Por Aí",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Coletar Objetos (Em Sprite de Joia)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Adicione uma pontuação",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Mantenha Pontuação",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Nível Acima: Mude o Cenário",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Mostre um Novo Personagem",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Suba de nível: Diga Algo",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Anime uma corrida",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Anime um Nome",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "saltar",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Mochila",
-        "description": "Button to open the backpack"
     }
 }

@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "개인 저장소",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "개인 저장소를 불러오는 중 오류 ",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "로딩중...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "기타",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "개인 저장소가 비었습니다",
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "로그 아웃",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "사용자 이름",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "비밀번호",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "로그인",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "도움이 필요한가요?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "언어 선택기 ",
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "보여줄 캐릭터를 선택하기",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "무엇이든지 말하기",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "이곳저곳을 미끄러지며 다니기",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "물체를 줍기 (보석 스프라이트)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "점수 추가하기",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "점수 저장하기",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "레벨 업: 배경화면 변경하기",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "새 캐릭터 보이기",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "레벨 업: 무엇이든지 말하기",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "달리기를 애니메이트 해보기",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "이름으로 애니메이션 만들기",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "팝",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "개인 저장소",
-        "description": "Button to open the backpack"
     }
 }

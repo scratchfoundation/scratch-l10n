@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Fondo",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Produciuse un erro ao cargar a mochila",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "A cargar...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Máis",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "A mochila está baleira",
@@ -40,7 +52,7 @@
         "description": "Notification to the user that the camera is loading"
     },
     "gui.cameraModal.permissionRequest": {
-        "message": "Precisamos do teu permiso para usar a túa cámara",
+        "message": "Precisamos do teu permiso para usarmos a túa cámara",
         "description": "Notification to the user that the app needs camera access"
     },
     "gui.cameraModal.retakePhoto": {
@@ -379,6 +391,22 @@
         "message": "Saír",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Nome de usuario",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Contrasinal",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Entrar",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Precisas axuda?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "selector de idioma",
         "description": "accessibility text for the language selection menu"
@@ -532,7 +560,7 @@
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Próbao! [caticon]",
+        "message": "Próbao! {caticon}",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
@@ -596,15 +624,15 @@
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Comeza a gravar premendo o botón de embaixo",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}Precisamos do teu permiso para usarmos o teu micrófono",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Parar de gravar",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Escolle o personaxe que queres mostrar",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Decir Algo",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Escorregar",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Recolle obxectos (na vestimenta Gem)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Engade puntuación",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Gardar a Puntuación",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Subir nivel: Cambia o fondo",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Mostra unha personaxe nova",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Subir nivel: Di algo",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Anima unha carreira",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Anima un nome",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Fondo",
-        "description": "Button to open the backpack"
     }
 }

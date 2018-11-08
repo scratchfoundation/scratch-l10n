@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Isikhwama",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Kukhona okungalungile ekufakeni ibackpack",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Kusangena...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Okunye",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "iBackpack ayinalutho",
@@ -112,7 +124,7 @@
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
-        "message": "Phinda uzama",
+        "message": "Phinda uzame",
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
@@ -136,7 +148,7 @@
         "description": "The device connection process has encountered an error."
     },
     "gui.connection.error.tryagainbutton": {
-        "message": "Phinda uzama",
+        "message": "Phinda uzame",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
@@ -168,7 +180,7 @@
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
+        "message": "Yenza isiqiniseko ukuthi iScratch Link ifakiwe futhi iyasebenza",
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
@@ -176,7 +188,7 @@
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
-        "message": "Phinda uzama",
+        "message": "Phinda uzame",
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.unavailable.helpbutton": {
@@ -379,8 +391,24 @@
         "message": "Phuma",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Isidlaliso",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Iphasiwedi",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Ngena ngemvume",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Udingnsizo?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
-        "message": "language selector",
+        "message": "umkhethi wezolimu",
         "description": "accessibility text for the language selection menu"
     },
     "gui.menuBar.tutorialsLibrary": {
@@ -424,7 +452,7 @@
         "description": "Label for project share button"
     },
     "gui.menuBar.isShared": {
-        "message": "Shared",
+        "message": "uPhiwe",
         "description": "Label for shared project"
     },
     "gui.menuBar.file": {
@@ -468,7 +496,7 @@
         "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Isihloko se-Projecti lana",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -524,7 +552,7 @@
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "We're working on the next generation of Scratch. We're excited for you to try it!",
+        "message": "Sisasebenza ukwenza uhlelo olulandelayo kuScratch. Singathokoza uma ungaluzama!",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
@@ -588,23 +616,23 @@
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.reRecordMsg": {
-        "message": "Re-record",
+        "message": "Phinda urekhode",
         "description": "Button to re-record sound in recording playback"
     },
     "gui.recordModal.title": {
-        "message": "Record Sound",
+        "message": "Rekhoda umsindo",
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Qala ukuqoda ngokuchofoza inkinobho",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow} Sidinga imvume yakho ukusebenzisa imicrophone yakho",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Ima ukurekhoda",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -624,7 +652,7 @@
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
-        "message": "Trim",
+        "message": "Cwecwa ngobunono",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
@@ -640,35 +668,35 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "Shesha",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Slower",
+        "message": "Kacane",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
-        "message": "Echo",
+        "message": "Ukunanela",
         "description": "Title of the button to apply the echo effect"
     },
     "gui.soundEditor.robot": {
-        "message": "Robot",
+        "message": "Robhothi",
         "description": "Title of the button to apply the robot effect"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "Kakhulu",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.soundEditor.softer": {
-        "message": "Softer",
+        "message": "Kuthambile",
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "Hlehlisa emumva",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Name",
+        "message": "Igama",
         "description": "Placeholder text for sprite name"
     },
     "gui.SpriteInfo.sprite": {
@@ -676,7 +704,7 @@
         "description": "Sprite info label"
     },
     "gui.SpriteInfo.show": {
-        "message": "Show",
+        "message": "Khombisa",
         "description": "Sprite info show label"
     },
     "gui.SpriteInfo.size": {
@@ -696,55 +724,55 @@
         "description": "Menu item to export the selected item"
     },
     "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Choose a Sprite",
+        "message": "Khetha Umlingisi",
         "description": "Button to add a sprite in the target pane from library"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paint",
+        "message": "Penda",
         "description": "Button to add a sprite in the target pane from paint"
     },
     "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Surprise",
+        "message": "Isimanga",
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Faka Umlingisi",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
-        "message": "Switch to large stage",
+        "message": "Shintshela kwinkundla enkulu",
         "description": "Button to change stage size to large"
     },
     "gui.stageHeader.stageSizeSmall": {
-        "message": "Switch to small stage",
+        "message": "Shintshela kwinkundla encane",
         "description": "Button to change stage size to small"
     },
     "gui.stageHeader.stageSizeFull": {
-        "message": "Enter full screen mode",
+        "message": "Ngena kwindlela ezolula isikhrini sibe sikhula",
         "description": "Button to change stage size to full screen"
     },
     "gui.stageHeader.stageSizeUnFull": {
-        "message": "Exit full screen mode",
+        "message": "Phma kwindlela elula iskhrini sibe sikhulu",
         "description": "Button to get out of full screen mode"
     },
     "gui.stageHeader.fullscreenControl": {
-        "message": "Full Screen Control",
+        "message": "Indlela egcwele yokulawula isinkrini",
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "Khetha Indawo",
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paint",
+        "message": "Penda",
         "description": "Button to add a stage in the target pane from paint"
     },
     "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Surprise",
+        "message": "Isimanga",
         "description": "Button to add a random stage in the target pane"
     },
     "gui.stageSelector.addBackdropFromFile": {
-        "message": "Upload Backdrop",
+        "message": "Faka Indawo",
         "description": "Button to add a stage in the target pane from file"
     },
     "gui.stageSelector.stage": {
@@ -760,15 +788,15 @@
         "description": "Label indicating turbo mode is active"
     },
     "gui.webglModal.label": {
-        "message": "Your Browser Does Not Support WebGL",
+        "message": "iBrowser yakho ayisekeli iWebGL",
         "description": "WebGL missing title"
     },
     "gui.webglModal.description": {
-        "message": "Unfortunately it looks like your browser or computer {webGlLink}. This technology is needed for Scratch 3.0 to run.",
+        "message": "Ngeshwa kubukeka yakho khomphuta noma browza {webGlLink}. Lobu buchwepheshe buyadinge ukuze uScratch 3.0 asebenze",
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
-        "message": "does not support WebGL",
+        "message": "Ayisekeli iWebGL",
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.webglModal.back": {
@@ -784,35 +812,35 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Choose a Backdrop",
+        "message": "Khetha Indawo",
         "description": "Heading for the backdrop library"
     },
     "gui.costumeLibrary.chooseACostume": {
-        "message": "Choose a Costume",
+        "message": "Khetha impahla",
         "description": "Heading for the costume library"
     },
     "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "Khetha Indawo",
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Choose a Costume",
+        "message": "Khetha impahla",
         "description": "Button to add a costume in the editor tab"
     },
     "gui.costumeTab.addBlankCostume": {
-        "message": "Paint",
+        "message": "Penda",
         "description": "Button to add a blank costume in the editor tab"
     },
     "gui.costumeTab.addSurpriseCostume": {
-        "message": "Surprise",
+        "message": "Isimanga",
         "description": "Button to add a surprise costume in the editor tab"
     },
     "gui.costumeTab.addFileBackdrop": {
-        "message": "Upload Backdrop",
+        "message": "Faka Indawo",
         "description": "Button to add a backdrop by uploading a file in the editor tab"
     },
     "gui.costumeTab.addFileCostume": {
-        "message": "Upload Costume",
+        "message": "Faka Impahla",
         "description": "Button to add a costume by uploading a file in the editor tab"
     },
     "gui.costumeTab.addCameraCostume": {
@@ -820,35 +848,35 @@
         "description": "Button to use the camera to create a costume costume in the editor tab"
     },
     "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Choose an Extension",
+        "message": "Khetha Isiluli",
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Enter the URL of the extension",
+        "message": "Faka iURL sokulula",
         "description": "Prompt for unoffical extension url"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "iProject ka Scratch",
         "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
-        "message": "Could not start recording",
+        "message": "Ayikwazi ukuqola ukuqopha",
         "description": "Alert for recording error"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "Ifayela yaleprojekthiebikhethiwe ihlulekile ukuloda",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.soundLibrary.chooseASound": {
-        "message": "Choose a Sound",
+        "message": "Khetha Umsindo",
         "description": "Heading for the sound library"
     },
     "gui.soundTab.fileUploadSound": {
-        "message": "Upload Sound",
+        "message": "Faka Umsindo",
         "description": "Button to upload sound from file in the editor tab"
     },
     "gui.soundTab.surpriseSound": {
-        "message": "Surprise",
+        "message": "Isimanga",
         "description": "Button to get a random sound in the editor tab"
     },
     "gui.soundTab.recordSound": {
@@ -856,15 +884,15 @@
         "description": "Button to record a sound in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
-        "message": "Choose a Sound",
+        "message": "Khetha Umsindo",
         "description": "Button to add a sound in the editor tab"
     },
     "gui.spriteLibrary.chooseASprite": {
-        "message": "Choose a Sprite",
+        "message": "Khetha Umlingisi",
         "description": "Heading for the sprite library"
     },
     "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
+        "message": "Khetha iTutorial",
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
@@ -872,63 +900,63 @@
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
-        "message": "my variable",
+        "message": "i-variable yami",
         "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Getting Started",
+        "message": "Sesizoqala",
         "description": "Name for the 'Getting Started' how-to"
     },
     "gui.howtos.intro-move.step_stepMove": {
-        "message": "Add a move block",
+        "message": "Nezelelela ngebhulokisi lokunyakaza",
         "description": "Step name for 'Add a move block' step"
     },
     "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Click the green flag to start",
+        "message": "Chofoza ifulegi ukuze uqale",
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Yenza Upopayi Okhulumayo",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Yengeza umbhalo kwibhulokisi lenkulumo",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Say Something",
+        "message": "Yisho Okuthize",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Lungisa izwi",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Nyakaza",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Add a Backdrop",
+        "message": "Nezelela Indawo ",
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Faka omunye umlingisi",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Yenza iculo",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Change Color",
+        "message": "Shintsha Umbala",
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Jikeleza",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Khulisa futhi unciphise",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
@@ -936,91 +964,83 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Say Something",
+        "message": "Yisho Okuthize",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Glide Around",
-        "description": "Step name for ' Glide Around' step"
+        "message": "Kekela yonke indawo",
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Keep Score",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
-        "message": "Animate a Name",
+        "message": "Yenza igama elinyakazayo",
         "description": "Name for the 'Animate a Name' how-to"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Pick a Letter Sprite",
+        "message": "Khetha umlingisi oyigama",
         "description": "Step name for 'Pick a Letter Sprite' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Play a Sound When Clicked",
+        "message": "Dlala umsindo uma iciphiziwe",
         "description": "Step name for 'Play a Sound When Clicked' step"
     },
     "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Pick Another Letter Sprite",
+        "message": "Khetha elinye igama elizoba umlingisi",
         "description": "Step name for 'Pick Another Letter Sprite"
     },
     "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Change color",
+        "message": "Shintsha umbala",
         "description": "Step name for 'Change color' step"
     },
     "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Pick Another Letter Sprite & Make It Spin",
+        "message": "Khetha elinye igama lomlingisi iuliphendule",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
     },
     "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Pick Another Letter Sprite & Make It Grow",
+        "message": "Khetha elinye igama lomlingisi iulikhulise",
         "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
     },
     "gui.howtos.make-music.name": {
-        "message": "Make Music",
+        "message": "Wenze Umculo",
         "description": "Name for the 'Make Music' how-to"
     },
     "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Pick an Instrument Sprite",
+        "message": "Khetha umlingisi oyi instrumenti",
         "description": "Step name for 'Pick an Instrument Sprite' step"
     },
     "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Play Sound When Clicked",
+        "message": "Dlala umsindo uma iciphiziwe",
         "description": "Step name for 'Play Sound When Clicked' step"
     },
     "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Create a Song",
+        "message": "Sungula Iculo",
         "description": "Step name for 'Create a Song' step"
     },
     "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Choose a Drum & Make a Beat",
+        "message": "Khetha idlamu mase wenza ibhithi",
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
@@ -1028,119 +1048,119 @@
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
-        "message": "Make a Clicker Game",
+        "message": "Enza Umdlalo Wokuchofoza",
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
+        "message": "Khetha Umlingisi",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Play Sound When Clicked",
+        "message": "Dlala umsindo uma iciphiziwe",
         "description": "Play Sound When Clicked' step"
     },
     "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Create Score Variable",
+        "message": "Yenza ivariabuli yescore",
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "Makucindeleziwe akunyuke isko",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
-        "message": "Go to a random position",
+        "message": "Hamba indawo engajwayelekile",
         "description": "Step name for 'Go to a random position' step"
     },
     "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Change Color",
+        "message": "Shintsha Umbala",
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.make-music.step_ResetScore": {
-        "message": "Reset Score",
+        "message": "Qalaphansi Isko",
         "description": "Step name for 'Reset Score' step"
     },
     "gui.howtos.make-a-chase-game.name": {
-        "message": "Make a Chase Game",
+        "message": "Enza Umdlalo Wokujahha",
         "description": "Name for the 'Make a Chase Game' how-to"
     },
     "gui.howtos.Chase-Game.step_BG": {
-        "message": "Add a Backdrop",
+        "message": "Nezelela Indawo ",
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Add a Sprite",
+        "message": "Nezelela Ngomlingisi",
         "description": "Step name for 'Add a Sprite' step"
     },
     "gui.howtos.make-music.step_LeftRight": {
-        "message": "Move Right & Left With Arrow Keys",
+        "message": "Yiya kwesokudla nakwesokunxele ngomcibisholo",
         "description": "Step name for 'Move Right & Left With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Move Up & Down With Arrow Keys",
+        "message": "Yiya phezulu naphansi ngomcibisholo",
         "description": "Step name for 'Move Up & Down With Arrow Keys' step"
     },
     "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Add Another Sprite",
+        "message": "Nezelela ngomunye umlingisi",
         "description": "Step name for 'Add Another Sprite' step"
     },
     "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Move Randomly",
+        "message": "Nyakaza noma ikephi",
         "description": "Step name for 'Move Randomly' step"
     },
     "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "In Octopus Sprite, When Touching Play Sound",
+        "message": "Kumlingisi weoctopus uma uthinta dlala umsindo",
         "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
     },
     "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Create Score Variable",
+        "message": "Yenza ivariabuli yescore",
         "description": "Step name for 'Create Score Variable"
     },
     "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "In Octopus Sprite, When Touching Add Score",
+        "message": "Mothinta umlingisi Octopus nezelela isko",
         "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
     },
     "gui.howtos.add-sprite.name": {
-        "message": "Add a Sprite",
+        "message": "Nezelela Ngomlingisi",
         "description": "Name for the 'Add a Sprite' how-to"
     },
     "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Add a Sprite",
+        "message": "Nezelela Ngomlingisi",
         "description": "Step name for 'Add a new sprite' step"
     },
     "gui.howtos.add-a-backdrop.name": {
-        "message": "Add a Backdrop",
+        "message": "Nezelela Indawo ",
         "description": "Name for the 'Add a Backdrop' how-to"
     },
     "gui.howtos.change-size.name": {
-        "message": "Change Size",
+        "message": "Shintsha Uzayizi",
         "description": "Name for the 'Change Size' how-to"
     },
     "gui.howtos.glide-around.name": {
-        "message": "Glide Around",
+        "message": "Kekela yonke indawo",
         "description": "Name for the 'Glide Around' how-to"
     },
     "gui.howtos.record-a-sound.name": {
-        "message": "Record a Sound",
+        "message": "Qopha Umsindo",
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
+        "message": "Yenze Iphenduke",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
-        "message": "Hide and Show",
+        "message": "Fihla futhi Veza",
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "Animate a Sprite",
+        "message": "Yenza upopayi womlingisi",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "Sebenzisa Umcibisholo Okhiye",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
-        "message": "Add Effects",
+        "message": "Nezelela Imithelela",
         "description": "Name for the 'Add Effects' how-to"
     },
     "gui.extension.music.name": {
@@ -1148,7 +1168,7 @@
         "description": "Name for the 'Music' extension"
     },
     "gui.extension.music.description": {
-        "message": "Play instruments and drums.",
+        "message": "Dlala isikhali kanye nam dilamu",
         "description": "Description for the 'Music' extension"
     },
     "gui.extension.pen.name": {
@@ -1156,55 +1176,55 @@
         "description": "Name for the 'Pen' extension"
     },
     "gui.extension.pen.description": {
-        "message": "Draw with your sprites.",
+        "message": "Dweba nabalingisibakho",
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
-        "message": "Video Sensing",
+        "message": "Ukubona ividiyo",
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "Izwa ukunyakaza ngeKhamera",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Bhala kwinkulumo",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Yenza iProject yakho ikhulume",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
-        "message": "Translate",
+        "message": "Humusha",
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
-        "message": "Translate text into many languages.",
+        "message": "Shintsela umbhalo kwezinye izilimu",
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "Xhumanisa amaProject akho nomhlaba",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
+        "message": "Siyayixhuma",
         "description": "Message to help people connect to their micro:bit."
     },
     "gui.extension.ev3.description": {
-        "message": "Build interactive robots and more.",
+        "message": "Yakha amaRobhothi akwaziyo ukukhuluma nokunye",
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "message": "Isaxhumanisa. Qinisekisa ukuthi ipin ekuEV3 isethiwe ku1234.",
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
-        "message": "Build with motors and sensors.",
+        "message": "Yakha ngemishini kanye nezinhloli",
         "description": "Description for the 'LEGO WeDo 2.0' extension"
     },
     "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
+        "message": "Kuyaxhumana",
         "description": "Message to help people connect to their WeDo."
     },
     "gui.libraryTags.all": {
@@ -1228,7 +1248,7 @@
         "description": "Tag for filtering a library for fantasy"
     },
     "gui.libraryTags.fashion": {
-        "message": "Fashion",
+        "message": "Imfashini",
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
@@ -1280,7 +1300,7 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Izwi",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
@@ -1288,7 +1308,7 @@
         "description": "Tag for filtering a library for wacky"
     },
     "gui.libraryTags.animation": {
-        "message": "Animation",
+        "message": "Khathuni",
         "description": "Tag for filtering a library for animation"
     },
     "gui.libraryTags.art": {
@@ -1324,7 +1344,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "Inamba yempahla",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1332,7 +1352,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "Inamba indawo",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1368,7 +1388,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "usuku lwesonto",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1388,23 +1408,19 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
+        "message": "Indawo{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "costume{index}",
+        "message": "Impahla{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
+        "message": "Umlingisi{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
         "message": "qhumisa",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Isikhwama",
-        "description": "Button to open the backpack"
     }
 }

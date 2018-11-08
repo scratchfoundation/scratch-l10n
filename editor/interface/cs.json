@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Batoh",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Chyba při načítání batohu",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Nahrávám..",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Více",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Batoh je prázdný",
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "Odhlášení",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Jméno uživatele",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Heslo",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Přihlášení",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Potřebujete pomoc?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "výběr jazyka",
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Vyber, kterou postavu zobrazit",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Řekni něco",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Klouzej okolo",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Sbírej objekty (v postavě drahokamu)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Přidej Skóre",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Udržuj skóre",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Další úroveň: Změn pozadí",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Ukaž novou postavu",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Další úroveň: Řekni něco",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animuj běh",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animuj jméno",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "prask",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Batoh",
-        "description": "Button to open the backpack"
     }
 }

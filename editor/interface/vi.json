@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Ba lô",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Không thể tải lên ba lô",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Đang tải ...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Nhiều hơn",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Ba lô trống",
@@ -24,7 +36,7 @@
         "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
-        "message": "Để biết thêm chi tiết, truy cập [previewFaqLink}.",
+        "message": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.unsupportedBrowser.previewfaqlinktext": {
@@ -300,7 +312,7 @@
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
-        "message": "Để biết thêm chi tiết, truy cập [previewFaqLink}.",
+        "message": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "Đăng xuất",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Tên đăng nhập",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Mật khẩu",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Đăng nhập",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Cần trợ giúp?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "chọn ngôn ngữ",
@@ -532,7 +560,7 @@
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Thử ngay! [caticon]",
+        "message": "Thử ngay! {caticon}",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
@@ -540,7 +568,7 @@
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
-        "message": "Để học thêm nhiều nữa, bấm chọn [previewFaqLink}.",
+        "message": "Để học thêm nhiều nữa, bấm chọn {previewFaqLink}.",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
@@ -764,7 +792,7 @@
         "description": "WebGL missing title"
     },
     "gui.webglModal.description": {
-        "message": "Có vẻ như tình duyệt của bạn hoặc máy tính (webGLinik). Công nghệ mới này cần thiết để vận hành Scratch 3.0.",
+        "message": "Có vẻ như tình duyệt của bạn hoặc máy tính {webGlLink}. Công nghệ mới này cần thiết để vận hành Scratch 3.0.",
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
@@ -776,7 +804,7 @@
         "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
-        "message": "Để biết thêm chi tiết, đi đến [previewFaqLink}.",
+        "message": "Để biết thêm chi tiết, đi đến {previewFaqLink}.",
         "description": "Scratch 3.0 FAQ description"
     },
     "gui.webglModal.previewfaqlinktext": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Nói gì đó",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Trượt xung quanh",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Thêm Điểm số",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Keep Score",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Làm tên chuyển động",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Ba lô",
-        "description": "Button to open the backpack"
     }
 }

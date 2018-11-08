@@ -1,30 +1,42 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Backpack",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
-        "message": "Error loading backpack",
+        "message": "Àṣìṣe ò mú apamọ́ẹ̀yìn kójọpọ̀ ",
         "description": "Error backpack message"
     },
     "gui.backpack.loadingBackpack": {
-        "message": "Mo n ṣiṣẹ lọwọ",
+        "message": "Ń kórajọpọ̀.. ",
         "description": "Loading backpack message"
     },
+    "gui.backpack.more": {
+        "message": "Àfikún",
+        "description": "Load more from backpack"
+    },
     "gui.backpack.emptyBackpack": {
-        "message": "Backpack is empty",
+        "message": "Apamọ́ẹ̀yìn ṣ'òfìfo ",
         "description": "Empty backpack message"
     },
     "gui.unsupportedBrowser.label": {
-        "message": "Browser is not supported",
+        "message": "Kò s'ítìlẹ́yìn fún asàwáríkiri ",
         "description": ""
     },
     "gui.unsupportedBrowser.description": {
-        "message": "We're very sorry, but Scratch 3.0 does not support Internet Explorer, Vivaldi, Opera or Silk. We recommend trying a newer browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.",
+        "message": "A tọrọ gáfárà, ṣùgbọ́n Scratch 3.0 kò ní ìtìlẹ́yìn fún Internet Explorer, Vivaldi, Opera tàbí Silk. A rọ̀ ọ́ kí o lo asàwáríkiri tuntun gẹ́gẹ́ bí Google Chrome, Mozilla Firefox, tàbí Microsoft Edge. ",
         "description": "Unsupported browser description"
     },
     "gui.unsupportedBrowser.back": {
-        "message": "Pada",
+        "message": "Padà ",
         "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
-        "message": "To learn more, go to the {previewFaqLink}.",
+        "message": "Láti mọ̀ sí i, lọ sí {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.unsupportedBrowser.previewfaqlinktext": {
@@ -36,7 +48,7 @@
         "description": "Title for prompt to take a picture (to add as a new costume)."
     },
     "gui.cameraModal.loadingCameraMessage": {
-        "message": "Ayaworan n ṣiṣẹ lọwọ",
+        "message": "Ayàwòrán ń kórajọpọ̀... ",
         "description": "Notification to the user that the camera is loading"
     },
     "gui.cameraModal.permissionRequest": {
@@ -48,7 +60,7 @@
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
     "gui.cameraModal.save": {
-        "message": "Save",
+        "message": "Fi pamọ́ ",
         "description": "A button that allows the user to save the photo they took as a costume"
     },
     "gui.cameraModal.takePhoto": {
@@ -56,11 +68,11 @@
         "description": "A button to take a photo"
     },
     "gui.cameraModal.loadingCaption": {
-        "message": "Mo n ṣiṣẹ lọwọ",
+        "message": "Ń kórajọpọ̀... ",
         "description": "A caption for a disabled button while the video from the camera is still loading"
     },
     "gui.cameraModal.enableCameraCaption": {
-        "message": "Enable Camera",
+        "message": "F'ààyè gba Ẹ̀rọ-ayàwòrán ",
         "description": "A caption for a disabled button prompting the user to enable camera access"
     },
     "gui.cards.all-tutorials": {
@@ -72,11 +84,11 @@
         "description": "Title for button to close how-to card"
     },
     "gui.cards.more-things-to-try": {
-        "message": "Awọn nkan pupọ lati gbiyanju!",
+        "message": "Ọpọ́n nǹkan láti gbìdánwò! ",
         "description": "Title card with more things to try"
     },
     "gui.cards.see-more": {
-        "message": "wo diẹ ẹ sii",
+        "message": "Wo díẹ̀ sí i ",
         "description": "Title for button to see more in how-to library"
     },
     "gui.comingSoon.message1": {
@@ -92,23 +104,23 @@
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "ko si ẹrọ kankan ti a rii",
+        "message": "A kò rí ẹ̀rọ kankan ",
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "Fi ẹ̀rọọ̀ rẹ sítòsí, nígbà náà bẹ̀rẹ̀ ìṣàwárí. ",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
+        "message": "Tẹ bọ́tììnì orí ẹ̀rọọ̀ rẹ. ",
         "description": "Prompt for pushing the button on the device"
     },
     "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
+        "message": "Bẹ̀rẹ̀ ìṣàwárí ",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
+        "message": "Ń ṣàwárí... ",
         "description": "Label indicating that search is in progress"
     },
     "gui.connection.auto-scanning.try-again": {
@@ -116,23 +128,23 @@
         "description": "Button in prompt for trying a device search again"
     },
     "gui.connection.connected": {
-        "message": "Connected",
+        "message": "Tiṣèsopọ̀ ",
         "description": "Message indicating that a device was connected"
     },
     "gui.connection.disconnect": {
-        "message": "Disconnect",
+        "message": "Jáṣàsopọ̀ ",
         "description": "Button to disconnect the device"
     },
     "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
+        "message": "Lọ sí Aṣàtúnṣe",
         "description": "Button to return to the editor"
     },
     "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
+        "message": "Ń ṣèṣàsopọ̀... ",
         "description": "Label indicating that connection is in progress"
     },
     "gui.connection.error.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
+        "message": "Ó ṣe, ó jọ pé nǹkan kan ti yíwọ́. ",
         "description": "The device connection process has encountered an error."
     },
     "gui.connection.error.tryagainbutton": {
@@ -140,15 +152,15 @@
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
-        "message": "Iranlowo",
+        "message": "Ìrànlọ́wọ́ ",
         "description": "Button to view help content"
     },
     "gui.connection.peripheral-name-label": {
-        "message": "Orukọ ẹrọ",
+        "message": "Orúkọ ẹ̀rọ ",
         "description": "Label for field showing the device name"
     },
     "gui.connection.connect": {
-        "message": "sopọ",
+        "message": "Ṣèṣàsopọ̀ ",
         "description": "Button to start connecting to a specific device"
     },
     "gui.connection.scanning.lookingforperipherals": {
@@ -164,15 +176,15 @@
         "description": "Prompt for choosing a device to connect to"
     },
     "gui.connection.search": {
-        "message": "tun ṣe",
+        "message": "Sọdọ̀tun ",
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
+        "message": "Rí i wípé ó gbé Scratch Link tó ń ṣiṣẹ́ sórí ẹ̀rọ ",
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
+        "message": "Ṣàyẹ̀wò bóyá afààyè gba Bluetooth wà ",
         "description": "Message for making sure Bluetooth is enabled"
     },
     "gui.connection.unavailable.tryagainbutton": {
@@ -184,7 +196,7 @@
         "description": "Button to view help content"
     },
     "gui.controls.go": {
-        "message": "Go",
+        "message": "Lọ ",
         "description": "Green flag button title"
     },
     "gui.controls.stop": {
@@ -192,19 +204,19 @@
         "description": "Stop button title"
     },
     "gui.crashMessage.label": {
-        "message": "Oops! Something went wrong.",
+        "message": "Ó ṣe! Nǹkan ti yíwọ́. ",
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
+        "message": "A tọrọ gáfárà, ṣùgbọ́n o jọ bí ẹni pé Scratch ti dẹnu kọlẹ̀. Odù-aṣàṣìṣe yìí ti ti sọ àṣìṣe fún Ikọ̀ Scratch fúnra rẹ̀. Jọ̀wọ́ ṣàtúnṣàjọ ojúùwéè rẹ láti tún ìyánjú ṣe. ",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Ṣàtúnṣàjọ ",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
-        "message": "Ṣe Dẹkun kan",
+        "message": "Ṣe Búlọ́ọ̀kù kan ",
         "description": "Title for the modal where you create a custom block."
     },
     "gui.customProcedures.addAnInputNumberText": {
@@ -212,7 +224,7 @@
         "description": "Label for button to add a number/text input"
     },
     "gui.customProcedures.numberTextType": {
-        "message": "number or text",
+        "message": "Òǹkà tàbí àyọkà ",
         "description": "Description of the number/text input type"
     },
     "gui.customProcedures.addAnInputBoolean": {
@@ -232,11 +244,11 @@
         "description": "Label for checkbox to run without screen refresh"
     },
     "gui.customProcedures.cancel": {
-        "message": "Cancel",
+        "message": "Fagilé ",
         "description": "Label for button to cancel custom procedure edits"
     },
     "gui.customProcedures.ok": {
-        "message": "OK",
+        "message": "Ó dára ",
         "description": "Label for button to save new custom procedure"
     },
     "gui.SpriteInfo.direction": {
@@ -244,15 +256,15 @@
         "description": "Sprite info direction label"
     },
     "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
+        "message": "Yíká gbogbo ",
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "osi/ọtun",
+        "message": "Òsì/Ọ̀tún ",
         "description": "Button to change to the left-right rotation style"
     },
     "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Máṣe yí bi taya kèké",
+        "message": "Máà ṣe yí ",
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
@@ -260,47 +272,47 @@
         "description": "Button to add an extension in the target pane"
     },
     "gui.gui.codeTab": {
-        "message": "Code",
+        "message": "Odù ",
         "description": "Button to get to the code panel"
     },
     "gui.gui.backdropsTab": {
-        "message": "Backdrops",
+        "message": "Aṣọẹ̀yìnìtàgé ",
         "description": "Button to get to the backdrops panel"
     },
     "gui.gui.costumesTab": {
-        "message": "Costumes",
+        "message": "Aṣọ-eré ",
         "description": "Button to get to the costumes panel"
     },
     "gui.gui.soundsTab": {
-        "message": "Sounds",
+        "message": "Ìró ",
         "description": "Button to get to the sounds panel"
     },
     "gui.importInfo.title": {
-        "message": "View a Scratch 2.0 Project",
+        "message": "Wo iṣẹ́ Scratch 2.0 ",
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Fi adarí sí ọ̀kan nínú iṣẹ́ Scratch tí o pín. Àyípadà inú 3.0 Bẹ́tà ò ní wọ ìfipamọ́. ",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Preview will not be saved.",
+        "message": "Fi adarí sí ọ̀kan nínú iṣẹ́ Scratch tí o pín. Àyípadà inú 3.0 Àkọ́wò ò ní wọ ìfipamọ́. ",
         "description": "Import project message"
     },
     "gui.importInfo.invalidFormatError": {
-        "message": "Uh oh, that project link or id doesn't look quite right.",
+        "message": "Ó ṣe, adarí iṣẹ́ yẹn tàbí ìdánimọ̀ ò rí b'ó ti yẹ kó rí. ",
         "description": "Invalid project link or id message"
     },
     "gui.importModal.viewproject": {
-        "message": "View",
+        "message": "Ìwó ",
         "description": "Label for button to load a scratch 2.0 project"
     },
     "gui.importInfo.goback": {
-        "message": "Go Back",
+        "message": "Lọ Sẹ́yìn ",
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
-        "message": "To learn more, go to the {previewFaqLink}.",
+        "message": "Láti mọ̀ sí i, lọ sí {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
@@ -328,7 +340,7 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message3": {
-        "message": "Loading sounds …",
+        "message": "Ń ṣàkórajọpọ̀ ìró... ",
         "description": "One of the loading messages"
     },
     "gui.loader.message4": {
@@ -352,32 +364,48 @@
         "description": "One of the loading messages"
     },
     "gui.loader.headline": {
-        "message": "Loading Project",
+        "message": "Ń ṣàkórajọpọ̀ Iṣẹ́ ",
         "description": "Main loading message"
     },
     "gui.accountMenu.profile": {
-        "message": "Profile",
+        "message": "Àlàyé ọ̀rọ̀ nípa ẹni ",
         "description": "Text to link to my user profile, in the account navigation menu"
     },
     "gui.accountMenu.myStuff": {
-        "message": "My Stuff",
+        "message": "Nǹkan-àn mi ",
         "description": "Text to link to list of my projects, in the account navigation menu"
     },
     "gui.accountMenu.myClasses": {
-        "message": "My Classes",
+        "message": "Àwọn yàrá-ìkẹ́kọ̀ọ́ mi ",
         "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
     },
     "gui.accountMenu.myClass": {
-        "message": "My Class",
+        "message": "Yàrá ìkẹ́kọ̀ọ́ mi ",
         "description": "Text to link to my class (if I am a student), in the account navigation menu"
     },
     "gui.accountMenu.accountSettings": {
-        "message": "Account settings",
+        "message": "Ààtò Ìṣàmúlò ",
         "description": "Text to link to my account settings, in the account navigation menu"
     },
     "gui.accountMenu.signOut": {
-        "message": "Sign out",
+        "message": "Tọwọ́bọ̀wé Ìjáde ",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Username",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Password",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Tọwọ́bọ̀wé wọlé ",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Need Help?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "language selector",
@@ -392,35 +420,35 @@
         "description": "Menu bar item for restoring the last deleted sprite."
     },
     "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
+        "message": "Dá ohùn padà ",
         "description": "Menu bar item for restoring the last deleted sound."
     },
     "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
+        "message": "Dá Aṣọ-eré padà ",
         "description": "Menu bar item for restoring the last deleted costume."
     },
     "gui.menuBar.restore": {
-        "message": "Restore",
+        "message": "Dápadà",
         "description": "Menu bar item for restoring the last deleted item in its disabled state."
     },
     "gui.menuBar.saveNow": {
-        "message": "Save now",
+        "message": "Fipamọ́ nísinsìnyí ",
         "description": "Menu bar item for saving now"
     },
     "gui.menuBar.saveAsCopy": {
-        "message": "Save as a copy",
+        "message": "Fipamọ́ gẹ́gẹ́ bí ẹ̀dà ",
         "description": "Menu bar item for saving as a copy"
     },
     "gui.menuBar.remix": {
-        "message": "Remix",
+        "message": "Àtúnpòpọ̀ ",
         "description": "Menu bar item for remixing"
     },
     "gui.menuBar.new": {
-        "message": "New",
+        "message": "Ọ̀tun ",
         "description": "Menu bar item for creating a new project"
     },
     "gui.menuBar.share": {
-        "message": "Share",
+        "message": "Pín ",
         "description": "Label for project share button"
     },
     "gui.menuBar.isShared": {
@@ -432,11 +460,11 @@
         "description": "Text for file dropdown menu"
     },
     "gui.menuBar.uploadFromComputer": {
-        "message": "Load from your computer",
+        "message": "Ṣèṣàkójọpọ̀ láti orí ẹ̀rọ ayárabíàṣáà rẹ ",
         "description": "Menu bar item for uploading a project from your computer"
     },
     "gui.menuBar.downloadToComputer": {
-        "message": "Save to your computer",
+        "message": "Fipamọ́ sórí ẹ̀rọ-ayárabíàṣáà rẹ ",
         "description": "Menu bar item for downloading a project to your computer"
     },
     "gui.menuBar.edit": {
@@ -452,7 +480,7 @@
         "description": "Menu bar item for turning on turbo mode"
     },
     "gui.menuBar.seeCommunity": {
-        "message": "See Community",
+        "message": "Wo Ìlúayélujára ",
         "description": "Label for see community button"
     },
     "gui.menuBar.joinScratch": {
@@ -460,15 +488,15 @@
         "description": "Link for creating a Scratch account"
     },
     "gui.menuBar.signIn": {
-        "message": "Sign in",
+        "message": "Tọwọ́bọ̀wé wọlé ",
         "description": "Link for signing in to your Scratch account"
     },
     "gui.menuBar.giveFeedback": {
-        "message": "Give Feedback",
+        "message": "Fèsì sílẹ̀ ",
         "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Àkọlé iṣẹ́ níbi ",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -480,11 +508,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(òfìfo) ",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "gígùn {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -500,7 +528,7 @@
         "description": "Menu item to switch to the slider monitor"
     },
     "gui.previewInfo.label": {
-        "message": "Try Scratch 3.0",
+        "message": "Gbìdánwò Scratch 3.0",
         "description": "Scratch 3.0 modal label - for accessibility"
     },
     "gui.previewInfo.welcome": {
@@ -508,7 +536,7 @@
         "description": "Header for Preview Info Modal"
     },
     "gui.previewModal.notnowtooltip": {
-        "message": "Not Now",
+        "message": "Ìsẹ̀yín Kọ́ ",
         "description": "Tooltip for Not Now button"
     },
     "gui.previewModal.tryittooltip": {
@@ -516,31 +544,31 @@
         "description": "Tooltip for Try It button"
     },
     "gui.previewModal.viewprojecttooltip": {
-        "message": "View 2.0 Project",
+        "message": "Wo iṣẹ́ 2.0",
         "description": "Tooltip for View 2.0 Project button"
     },
     "gui.previewInfo.betawelcome": {
-        "message": "Kãbõ sí Scratch 3.0 (t'oní ìdánwò)",
+        "message": "Káàbọ̀ sí Scratch 3.0 Bẹ́tà náà ",
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "We're working on the next generation of Scratch. We're excited for you to try it!",
+        "message": "À ń ṣiṣẹ́ lórí ìran Scratch tí ọpọ́n sún kàn. Ayọ̀ kún inú wa fún ọ láti gbìdánwòo rẹ̀!",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
-        "message": "Not Now",
+        "message": "Ìsẹ̀yín Kọ́ ",
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Try It! {caticon}",
+        "message": "Gbìdánwòo rẹ̀! {caticon}",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
-        "message": "View 2.0 Project",
+        "message": "Wo iṣẹ́ 2.0",
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
-        "message": "To learn more, go to the {previewFaqLink}.",
+        "message": "Láti mọ̀ sí i, lọ sí {previewFaqLink}.",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
@@ -556,7 +584,7 @@
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
     "gui.gui.variablePrompt": {
-        "message": "More Options",
+        "message": "Ìyàn sí i ",
         "description": "Dropdown message for variable/list options"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
@@ -564,11 +592,11 @@
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
-        "message": "Cancel",
+        "message": "Fagilé ",
         "description": "Button in prompt for cancelling the dialog"
     },
     "gui.prompt.ok": {
-        "message": "OK",
+        "message": "Ó dára ",
         "description": "Button in prompt for confirming the dialog"
     },
     "gui.playbackStep.stopMsg": {
@@ -576,7 +604,7 @@
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.playMsg": {
-        "message": "Play",
+        "message": "Ṣeré ",
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.loadingMsg": {
@@ -584,31 +612,31 @@
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.saveMsg": {
-        "message": "Save",
+        "message": "Fi pamọ́ ",
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.reRecordMsg": {
-        "message": "Re-record",
+        "message": "Tún ká-sílẹ̀ ",
         "description": "Button to re-record sound in recording playback"
     },
     "gui.recordModal.title": {
-        "message": "Record Sound",
+        "message": "Ká ohun sílẹ̀ ",
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Bẹ̀rẹ̀ ìkóhùnsílẹ̀ nípa ṣíṣíra tẹ bọ́tììnì ìsàlẹ̀ ",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}A nílò àṣẹẹ̀ rẹ láti lo ẹ̀rọ-gbohùngbohùnun rẹ ",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Dá ìkóhùnsílẹ̀ dúró ",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
-        "message": "Record",
+        "message": "Ká ohùn sílẹ̀ ",
         "description": "Record button label"
     },
     "gui.soundEditor.sound": {
@@ -616,7 +644,7 @@
         "description": "Label for the name of the sound"
     },
     "gui.soundEditor.play": {
-        "message": "Play",
+        "message": "Ṣeré ",
         "description": "Title of the button to start playing the sound"
     },
     "gui.soundEditor.stop": {
@@ -624,11 +652,11 @@
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
-        "message": "Trim",
+        "message": "Gé kúrò ",
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
-        "message": "Save",
+        "message": "Fi pamọ́ ",
         "description": "Title of the button to save trimmed sound"
     },
     "gui.soundEditor.undo": {
@@ -640,35 +668,35 @@
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "Yára ",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Slower",
+        "message": "Fà bí ìgbín ",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
-        "message": "Echo",
+        "message": "Kù ",
         "description": "Title of the button to apply the echo effect"
     },
     "gui.soundEditor.robot": {
-        "message": "Robot",
+        "message": "Róbọ́ọ̀tì ",
         "description": "Title of the button to apply the robot effect"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "Gbóhùnókè ",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.soundEditor.softer": {
-        "message": "Softer",
+        "message": "rọ̀",
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "Fàsẹ́yìn ",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Name",
+        "message": "Orúkọ ",
         "description": "Placeholder text for sprite name"
     },
     "gui.SpriteInfo.sprite": {
@@ -676,7 +704,7 @@
         "description": "Sprite info label"
     },
     "gui.SpriteInfo.show": {
-        "message": "Show",
+        "message": "Fi hàn ",
         "description": "Sprite info show label"
     },
     "gui.SpriteInfo.size": {
@@ -752,7 +780,7 @@
         "description": "Label for the stage in the stage selector"
     },
     "gui.stageSelector.backdrops": {
-        "message": "Backdrops",
+        "message": "Aṣọẹ̀yìnìtàgé ",
         "description": "Label for the backdrops in the stage selector"
     },
     "gui.turboMode.active": {
@@ -776,7 +804,7 @@
         "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
-        "message": "To learn more, go to the {previewFaqLink}.",
+        "message": "Láti mọ̀ sí i, lọ sí {previewFaqLink}.",
         "description": "Scratch 3.0 FAQ description"
     },
     "gui.webglModal.previewfaqlinktext": {
@@ -852,7 +880,7 @@
         "description": "Button to get a random sound in the editor tab"
     },
     "gui.soundTab.recordSound": {
-        "message": "Record",
+        "message": "Ká ohùn sílẹ̀ ",
         "description": "Button to record a sound in the editor tab"
     },
     "gui.soundTab.addSoundFromLibrary": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Say Something",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Glide Around",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Keep Score",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animate a Name",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Backpack",
-        "description": "Button to open the backpack"
     }
 }

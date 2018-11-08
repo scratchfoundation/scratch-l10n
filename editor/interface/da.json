@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Rygsæk",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Fejl, kan ikke indlæse rygsækken",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Indlæser ...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Mere",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Rygsækken er tom",
@@ -200,7 +212,7 @@
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Genindlæs",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -379,6 +391,22 @@
         "message": "Log ud",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Brugernavn",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Kodeord",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Log på",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Brug for hjælp?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "valg af sprog",
         "description": "accessibility text for the language selection menu"
@@ -468,7 +496,7 @@
         "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Skriv projektets navn her",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -480,11 +508,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(tom)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "længde {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -596,15 +624,15 @@
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Begynd at optage ved at klikke på knappen herunder",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}Vi skal bruge din tilladelse til at bruge din mikrofon",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Stop med at optage",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -828,7 +856,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Scratch Projekt",
         "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
@@ -868,7 +896,7 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Mijav",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
@@ -888,11 +916,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Lav animationer som snakker",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Tilføj teksten til talebrikker",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -900,11 +928,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Vælg en stemme",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Bevæg den rundt",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -912,11 +940,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Tilføj en ny sprite",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Syng en sang",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -924,20 +952,20 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Drej rundt",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Bliv større og mindre",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Animer et eventyrspil",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Sig noget",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Glid rundt",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Før regnskab",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animér et navn",
@@ -1168,11 +1188,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Tekst til tale",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Få dine projekter til at tale.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1232,7 +1252,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "Mad",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1240,7 +1260,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "Gentagelser",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1248,7 +1268,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Notes",
+        "message": "Noder",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1256,7 +1276,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "Mønstre",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1280,11 +1300,11 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Stemme",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
-        "message": "Wacky",
+        "message": "Skør",
         "description": "Tag for filtering a library for wacky"
     },
     "gui.libraryTags.animation": {
@@ -1324,7 +1344,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "kostume nummer",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1332,7 +1352,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "baggrund nummer",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1368,7 +1388,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "dagiuge",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1388,11 +1408,11 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
+        "message": "baggrund{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "costume{index}",
+        "message": "kostume{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "knald",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Rygsæk",
-        "description": "Button to open the backpack"
     }
 }
