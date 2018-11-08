@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Σακίδιο",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Σφάλμα κατά τη φόρτωση σακιδίου",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Γίνεται φόρτωση...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Περισσότερα",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Το σακίδιο είναι άδειο",
@@ -96,7 +108,7 @@
         "description": "Text shown when no devices could be found"
     },
     "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
+        "message": "Έχε τη συσκευή σου κάπου κοντά και ξεκίνα την αναζήτηση.",
         "description": "Prompt for beginning the search"
     },
     "gui.connection.auto-scanning.pressbutton": {
@@ -168,7 +180,7 @@
         "description": "Button in prompt for starting a search"
     },
     "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
+        "message": "Βεβαιώσου ότι έχεις εγκαταστήσει το πρόγραμμα Scratch Link και ότι αυτό εκτελείται.",
         "description": "Message for getting Scratch Link installed"
     },
     "gui.connection.unavailable.enablebluetooth": {
@@ -200,7 +212,7 @@
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Επαναφόρτωση",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -244,7 +256,7 @@
         "description": "Sprite info direction label"
     },
     "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
+        "message": "Πλήρης Περιστροφή",
         "description": "Button to change to the all around rotation style"
     },
     "gui.directionPicker.rotationStyles.leftRight": {
@@ -379,6 +391,22 @@
         "message": "Αποσύνδεση",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Όνομα χρήστη",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Κωδικός",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Σύνδεση",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Need Help?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "επιλογέας γλώσσας",
         "description": "accessibility text for the language selection menu"
@@ -468,7 +496,7 @@
         "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Τίτλος Έργου εδώ",
         "description": "Placeholder for project title when blank"
     },
     "gui.modal.help": {
@@ -480,11 +508,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(άδεια)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "μήκος {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -596,15 +624,15 @@
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Ξεκίνα την ηχογράφηση πατώντας το κουμπί κάτω",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}Χρειαζόμαστε την άδεια σου για τη χρήση του μικρόφωνου",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Τέλος ηχογράφησης",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -708,7 +736,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Μεταφόρτωση Αντικείμενου",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -828,7 +856,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Έργο Scratch",
         "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
@@ -836,7 +864,7 @@
         "description": "Alert for recording error"
     },
     "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
+        "message": "Απέτυχε η φόρτωση του αρχείου έργου που επιλέχθηκε.",
         "description": "An error that displays when a local project file fails to load."
     },
     "gui.soundLibrary.chooseASound": {
@@ -868,7 +896,7 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Μιάου",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
@@ -888,11 +916,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Δημιούργησε Κινούμενες Εικόνες Που Μιλούν",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Πρόσθεσε τα μπλοκ Κείμενο σε Ομιλία",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -900,11 +928,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Όρισε μια Φωνή",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Κινήσου",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -912,11 +940,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Πρόσθεσε άλλον ένα Χαρακτήρα",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Πες ένα Τραγούδι",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -924,20 +952,20 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Κάνε περιστροφή",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Μεγέθυνση και Σμίκρυνση",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Ζωντάνεψε ένα Παιχνίδι Περιπέτειας",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Πείτε Κάτι!",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Γλύστρησε Γύρω",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Κρατήστε Σκορ!",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Ζωντάνεψε ένα Όνομα",
@@ -1044,7 +1064,7 @@
         "description": "Step name for 'Create Score Variable' step"
     },
     "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
+        "message": "Όταν Πατηθεί Αύξησε το Σκορ",
         "description": "Step name for 'When Clicked Increase Score' step"
     },
     "gui.howtos.make-a-game.step_Random": {
@@ -1124,7 +1144,7 @@
         "description": "Record A Sound' how-to"
     },
     "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
+        "message": "Κάνε να Περιστρέφεται",
         "description": "Name for the 'Make It Spin' how-to"
     },
     "gui.howtos.hide-and-show.name": {
@@ -1136,7 +1156,7 @@
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
+        "message": "Χρησιμοποίησε τα Πλήκτρα Βέλους",
         "description": "Name for the 'Use Arrow Keys' how-to"
     },
     "gui.howtos.add-effects.name": {
@@ -1164,15 +1184,15 @@
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
+        "message": "Ανίχνευση κίνησης με την κάμερα.",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Κείμενο σε Ομιλία",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Κάνε τα έργα σου να μιλούν.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1184,7 +1204,7 @@
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
+        "message": "Σύνδεσε τα έργα σου με τον πραγματικό κόσμο.",
         "description": "Description for the 'micro:bit' extension"
     },
     "gui.extension.microbit.connectingMessage": {
@@ -1196,7 +1216,7 @@
         "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
     },
     "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+        "message": "Συνδέεται. Βεβαιωθείτε ότι το pin στο EV3 έχει οριστεί σε 1234.",
         "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
     },
     "gui.extension.wedo2.description": {
@@ -1232,7 +1252,7 @@
         "description": "Tag for filtering a library for fashion"
     },
     "gui.libraryTags.food": {
-        "message": "Food",
+        "message": "Τρόφιμα",
         "description": "Tag for filtering a library for food"
     },
     "gui.libraryTags.indoors": {
@@ -1248,7 +1268,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Notes",
+        "message": "Νότες",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1256,7 +1276,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "Μοτίβα",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1280,11 +1300,11 @@
         "description": "Tag for filtering a library for underwater"
     },
     "gui.libraryTags.voice": {
-        "message": "Voice",
+        "message": "Φωνή",
         "description": "Tag for filtering a library for voice"
     },
     "gui.libraryTags.wacky": {
-        "message": "Wacky",
+        "message": "Αστείοι ήχοι",
         "description": "Tag for filtering a library for wacky"
     },
     "gui.libraryTags.animation": {
@@ -1324,7 +1344,7 @@
         "description": "Label for the costume name monitor when shown on the stage"
     },
     "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
+        "message": "αριθμός ενδυμασίας",
         "description": "Label for the costume number monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropname": {
@@ -1332,7 +1352,7 @@
         "description": "Label for the backdrop name monitor when shown on the stage"
     },
     "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
+        "message": "αριθμός υπόβαθρου",
         "description": "Label for the backdrop number monitor when shown on the stage"
     },
     "gui.opcodeLabels.volume": {
@@ -1368,7 +1388,7 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "dayofweek",
+        "message": "μέραεβδομάδας",
         "description": "Label for the current dayofweek monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
@@ -1388,23 +1408,19 @@
         "description": "Label for the timer monitor when shown on the stage"
     },
     "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
+        "message": "υπόβαθρο{index}",
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "costume{index}",
+        "message": "ενδυμασία{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
+        "message": "Αντικείμενο{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
         "message": "μπουμ",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Σακίδιο",
-        "description": "Button to open the backpack"
     }
 }

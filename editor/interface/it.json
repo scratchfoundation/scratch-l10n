@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Valigetta",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Errore nel caricamento dello zaino",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Caricamento in corso...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Altro",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Lo zaino è vuoto",
@@ -196,7 +208,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "Siamo spiacenti, ma sembra che Scratch si sia bloccato. Il problema è automaticamente stato segnalato al Team di Scratch. Aggiorna la pagina per riprovare.",
+        "message": "Siamo spiacenti, ma sembra che Scratch si sia bloccato. Il problema è stato automaticamente segnalato al Team di Scratch. Aggiorna la pagina per riprovare.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -360,15 +372,15 @@
         "description": "Text to link to my user profile, in the account navigation menu"
     },
     "gui.accountMenu.myStuff": {
-        "message": "Le Mie Cose",
+        "message": "Le mie Cose",
         "description": "Text to link to list of my projects, in the account navigation menu"
     },
     "gui.accountMenu.myClasses": {
-        "message": "Le Mie Classi",
+        "message": "Le mie Classi",
         "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
     },
     "gui.accountMenu.myClass": {
-        "message": "La Mia Classe",
+        "message": "La mia Classe",
         "description": "Text to link to my class (if I am a student), in the account navigation menu"
     },
     "gui.accountMenu.accountSettings": {
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "Esci",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Nome utente",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Password",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Entra",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Hai bisogno di aiuto?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "selezione lingua",
@@ -600,7 +628,7 @@
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}Ci occorre il suo permesso per poter usare il microfono",
+        "message": "{arrow}Ci occorre il tuo permesso per poter usare il microfono",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Scegliere Quale Personaggio Mostrare",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Dire Qualcosa",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Scivola di Qua e di Là",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Raccogliere Oggetti (nello Sprite Gem)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Aggiungi il Punteggio",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Tenere il Punteggio",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Passare al Livello Successivo: Cambiare lo Sfondo",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Mostra un Nuovo Personaggio",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Passare al Livello Successivo: Dire Qualcosa",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animare Una Corsa",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Anima un nome",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Valigetta",
-        "description": "Button to open the backpack"
     }
 }

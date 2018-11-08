@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Pecyn Cefn",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Gwall wrth lwytho'r pecyn cefn",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Llwytho...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Rhagor",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "Mae pecyn cefn yn wag",
@@ -379,6 +391,22 @@
         "message": "Allgofnodi",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "general.username": {
+        "message": "Enw defnyddwir",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Cyfrinair",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Mewngofnodi",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Angen Cymorth?",
+        "description": "Button text for user to indicate that they need help"
+    },
     "gui.menuBar.LanguageSelector": {
         "message": "dewisydd iaith",
         "description": "accessibility text for the language selection menu"
@@ -484,7 +512,7 @@
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "hyd [length}",
+        "message": "hyd {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -600,7 +628,7 @@
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "[arrow]Rydym angen eich caniatâd i ddefnyddio eich meicroffon",
+        "message": "{arrow}Rydym angen eich caniatâd i ddefnyddio eich meicroffon",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Dewis pa Gymeriad i'w Ddangos",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Dweud Rhywbeth",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Llithro o Amgylch",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Casglu Gwrthrychau (Yn Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Ychwanegwch Sgôr",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Cadw Sgôr",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Lefel i Fyny: Newid Cefndir",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Dangos Cymeriad Newydd",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Lefel i Fyny: Dweud Rhywbeth",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animeiddio Rhedeg",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animeiddio Enw",
@@ -1392,19 +1412,15 @@
         "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.costume": {
-        "message": "gwisg[index]",
+        "message": "gwisg{index}",
         "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.sprite": {
-        "message": "Corlun[index]",
+        "message": "Corlun{index}",
         "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
     },
     "gui.sharedMessages.pop": {
         "message": "pop",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Pecyn Cefn",
-        "description": "Button to open the backpack"
     }
 }

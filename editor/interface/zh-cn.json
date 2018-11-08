@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "书包",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "载入书包时出错了",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "载入中……",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "更多",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "书包是空的",
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "登出",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "用户名称",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "密码",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "登录",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "需要帮助？",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "语言菜单",
@@ -892,7 +920,7 @@
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "添加文字朗读积木",
+        "message": "添加文字朗读扩展积木",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -932,12 +960,12 @@
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "让冒险游戏动起来",
+        "message": "冒险游戏动画",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "选择要显示的角色",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "让角色说些话",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "滑来滑去",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "收集物体(在Gem角色中)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "加入计分功能",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "保存成绩",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "下一关: 改变背景",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "显示一个新角色",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "下一关：说些什么",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "跑动起来",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "姓名动画",
@@ -1024,7 +1044,7 @@
         "description": "Step name for 'Choose a Drum & Make a Beat' step"
     },
     "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "\b用麦克风角色演唱节奏口技",
+        "message": "用麦克风角色演唱节奏口技",
         "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
     },
     "gui.howtos.make-a-game.name": {
@@ -1132,7 +1152,7 @@
         "description": "Name for the 'Hide and Show' how-to"
     },
     "gui.howtos.switch-costume.name": {
-        "message": "让角色动起来",
+        "message": "角色动画",
         "description": "Name for the 'Animate a Sprite' how-to"
     },
     "gui.howtos.move-around-with-arrow-keys.name": {
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "啵",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "书包",
-        "description": "Button to open the backpack"
     }
 }

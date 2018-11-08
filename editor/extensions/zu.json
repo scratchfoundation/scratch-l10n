@@ -1,10 +1,10 @@
 {
     "ev3.beepNote": {
-        "message": "beep note [NOTE] for [TIME] secs",
+        "message": "Inothi beep [NOTE] isikhathi [TIME] imizuzwana",
         "description": "play some note on EV3 for some time"
     },
     "ev3.buttonPressed": {
-        "message": "button [PORT] pressed?",
+        "message": "inkinobho [PORT] ecindezeliwe?",
         "description": "is a button on some port pressed?"
     },
     "ev3.getBrightness": {
@@ -16,15 +16,15 @@
         "description": "gets measured distance"
     },
     "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
+        "message": "indawo yemotho [PORT]",
         "description": "get the measured degrees a motor has turned"
     },
     "ev3.motorSetPower": {
-        "message": "motor [PORT] set power [POWER] %",
+        "message": "hlela amandla [POWER]% eMotho [PORT]",
         "description": "set a motor's power to some value"
     },
     "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] turn this way for [TIME] seconds",
+        "message": "Imotho [PORT] ayijike ngalendlela isikhathi [TIME]Imizuzwana  ",
         "description": "turn a motor clockwise for some time"
     },
     "ev3.motorTurnCounterClockwise": {
@@ -32,15 +32,15 @@
         "description": "turn a motor counter-clockwise for some time"
     },
     "ev3.whenBrightnessLessThan": {
-        "message": "when brightness < [DISTANCE]",
+        "message": "uma ukukhanya <[DISTANCE]",
         "description": "when value measured by brightness sensor is less than some value"
     },
     "ev3.whenButtonPressed": {
-        "message": "when button [PORT] pressed",
+        "message": "Inkinobho [PORT] mayicindezeliwe",
         "description": "when a button connected to a port is pressed"
     },
     "ev3.whenDistanceLessThan": {
-        "message": "when distance < [DISTANCE]",
+        "message": "uma ibanga < [DISTANCE]",
         "description": "when the value measured by the distance sensor is less than some value"
     },
     "microbit.buttonsMenu.any": {
@@ -48,39 +48,39 @@
         "description": "label for \"any\" element in button picker for micro:bit extension"
     },
     "microbit.clearDisplay": {
-        "message": "clear display",
+        "message": "isiboniso esicacile",
         "description": "display nothing on the micro:bit display"
     },
     "microbit.defaultTextToDisplay": {
-        "message": "Hello!",
+        "message": "Sawubona!",
         "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
     },
     "microbit.displaySymbol": {
-        "message": "display [MATRIX]",
+        "message": "Isibonisi [MATRIX]",
         "description": "display a pattern on the micro:bit display"
     },
     "microbit.displayText": {
-        "message": "display text [TEXT]",
+        "message": "Isibonisi samagama abhaliwe [TEXT]",
         "description": "display text on the micro:bit display"
     },
     "microbit.gesturesMenu.jumped": {
-        "message": "jumped",
+        "message": "gxumile",
         "description": "label for jumped gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.moved": {
-        "message": "moved",
+        "message": "nyakazile",
         "description": "label for moved gesture in gesture picker for micro:bit extension"
     },
     "microbit.gesturesMenu.shaken": {
-        "message": "shaken",
+        "message": "ukunyakaziswa ",
         "description": "label for shaken gesture in gesture picker for micro:bit extension"
     },
     "microbit.isButtonPressed": {
-        "message": "[BTN] button pressed?",
+        "message": "[BTN] inkinobho icindezelwe?",
         "description": "is the selected button on the micro:bit pressed?"
     },
     "microbit.isTilted": {
-        "message": "tilted [DIRECTION]?",
+        "message": "Itshekile [DIRECTION]?",
         "description": "is the micro:bit is tilted in a direction?"
     },
     "microbit.pinStateMenu.off": {
@@ -88,11 +88,11 @@
         "description": "label for off element in pin state picker for micro:bit extension"
     },
     "microbit.pinStateMenu.on": {
-        "message": "ivulekile",
+        "message": "khanyile",
         "description": "label for on element in pin state picker for micro:bit extension"
     },
     "microbit.tiltAngle": {
-        "message": "tilt angle [DIRECTION]",
+        "message": "tshekisa engeli [DIRECTION]",
         "description": "how much the micro:bit is tilted in a direction"
     },
     "microbit.tiltDirectionMenu.any": {
@@ -116,19 +116,19 @@
         "description": "label for right element in tilt direction picker for micro:bit extension"
     },
     "microbit.whenButtonPressed": {
-        "message": "when [BTN] button pressed",
+        "message": "Inkinobho [BTN] mayicindezeliwe ",
         "description": "when the selected button on the micro:bit is pressed"
     },
     "microbit.whenGesture": {
-        "message": "when [GESTURE]",
+        "message": "uma [GESTURE]",
         "description": "when the selected gesture is detected by the micro:bit"
     },
     "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
+        "message": "uma uphini [PIN] uxhunyiwe ",
         "description": "when the pin detects a connection to Earth/Ground"
     },
     "microbit.whenTilted": {
-        "message": "when tilted [DIRECTION]",
+        "message": "uma kutshesiwe [DIRECTION]",
         "description": "when the micro:bit is tilted in a direction"
     },
     "music.categoryName": {
@@ -136,7 +136,7 @@
         "description": "Label for the Music extension category"
     },
     "music.changeTempo": {
-        "message": "change tempo by [TEMPO]",
+        "message": "shintsha iThempo nge [TEMPO]",
         "description": "change tempo (speed) for notes, drums, and rests played"
     },
     "music.drumBass": {
@@ -300,27 +300,27 @@
         "description": "Sound of a wooden flute being played"
     },
     "music.midiSetInstrument": {
-        "message": "set instrument to [INSTRUMENT]",
+        "message": "hlela isikhali sokusebenza [INSTRUMENT]",
         "description": "set the instrument for notes played according to a mapping of MIDI codes"
     },
     "music.playDrumForBeats": {
-        "message": "play drum [DRUM] for [BEATS] beats",
+        "message": "dlala idilamu [DRUM] le [BEATS] ibhithi",
         "description": "play drum sample for a number of beats"
     },
     "music.playNoteForBeats": {
-        "message": "play note [NOTE] for [BEATS] beats",
+        "message": "dlala inothi [NOTE] le [BEATS] bhithi",
         "description": "play a note for a number of beats"
     },
     "music.restForBeats": {
-        "message": "rest for [BEATS] beats",
+        "message": "okuseleyo nge [BEATS] bhithi  ",
         "description": "rest (play no sound) for a number of beats"
     },
     "music.setInstrument": {
-        "message": "set instrument to [INSTRUMENT]",
+        "message": "hlela isikhali sokusebenza [INSTRUMENT]",
         "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
     },
     "music.setTempo": {
-        "message": "set tempo to [TEMPO]",
+        "message": "hlela ithempo ku [TEMPO]",
         "description": "set tempo (speed) for notes, drums, and rests played"
     },
     "pen.categoryName": {
@@ -328,23 +328,23 @@
         "description": "Label for the pen extension category"
     },
     "pen.changeColorParam": {
-        "message": "change pen [COLOR_PARAM] by [VALUE]",
+        "message": "shintsha ipeni [COLOR_PARAM] nge [VALUE]",
         "description": "change the state of a pen color parameter"
     },
     "pen.changeHue": {
-        "message": "change pen color by [HUE]",
+        "message": "shintsha umbala wepeni nge [HUE]",
         "description": "legacy pen blocks - change pen color"
     },
     "pen.changeShade": {
-        "message": "change pen shade by [SHADE]",
+        "message": "shintsha ipeni usithe nge [SHADE]",
         "description": "legacy pen blocks - change pen shade"
     },
     "pen.changeSize": {
-        "message": "change pen size by [SIZE]",
+        "message": "shintsha usayizi wepeni ngo [SIZE]",
         "description": "change the diameter of the trail left by a sprite"
     },
     "pen.clear": {
-        "message": "erase all",
+        "message": "kususe konke ",
         "description": "erase all pen trails and stamps"
     },
     "pen.colorMenu.brightness": {
@@ -356,11 +356,11 @@
         "description": "label for color element in color picker for pen extension"
     },
     "pen.colorMenu.saturation": {
-        "message": "saturation",
+        "message": "ukukhanya kombala ",
         "description": "label for saturation element in color picker for pen extension"
     },
     "pen.colorMenu.transparency": {
-        "message": "transparency",
+        "message": "obala",
         "description": "label for transparency element in color picker for pen extension"
     },
     "pen.penDown": {
@@ -372,23 +372,23 @@
         "description": "stop leaving a trail behind the sprite"
     },
     "pen.setColor": {
-        "message": "set pen color to [COLOR]",
+        "message": "hlela umbala wepeni [COLOR]",
         "description": "set the pen color to a particular (RGB) value"
     },
     "pen.setColorParam": {
-        "message": "set pen [COLOR_PARAM] to [VALUE]",
+        "message": "hlela ipeni [COLOR_PARAM] uliyise kwi [VALUE]",
         "description": "set the state for a pen color parameter e.g. saturation"
     },
     "pen.setHue": {
-        "message": "set pen color to [HUE]",
+        "message": "hlela umbala wepeni uwuyise [HUE]",
         "description": "legacy pen blocks - set pen color to number"
     },
     "pen.setShade": {
-        "message": "set pen shade to [SHADE]",
+        "message": "hlela ukusitha ngepeni ukuyise [SHADE]",
         "description": "legacy pen blocks - set pen shade"
     },
     "pen.setSize": {
-        "message": "set pen size to [SIZE]",
+        "message": "hlela ubukhulu bepeni ubuyise [SIZE]",
         "description": "set the diameter of a trail left by a sprite"
     },
     "pen.stamp": {
@@ -396,19 +396,19 @@
         "description": "render current costume on the background"
     },
     "speech.defaultWhenIHearValue": {
-        "message": "let''s go",
+        "message": "asambe ",
         "description": "The default phrase/word that, when heard, triggers the event."
     },
     "speech.extensionName": {
-        "message": "Speech to Text",
+        "message": "Inkulumo eyiswa emagameni abhalwayo",
         "description": "Name of extension that adds speech recognition blocks."
     },
     "speech.listenAndWait": {
-        "message": "listen and wait",
+        "message": "lalela ulinde ",
         "description": "Start listening to the microphone and wait for a result from the speech recognition system."
     },
     "speech.speechReporter": {
-        "message": "speech",
+        "message": "inkulumo",
         "description": "Get the text of spoken words transcribed by the speech recognition system."
     },
     "speech.whenIHear": {
@@ -420,27 +420,27 @@
         "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.giant": {
-        "message": "giant",
+        "message": "isiqhwaga ",
         "description": "Name for a funny voice with a low pitch."
     },
     "text2speech.kitten": {
-        "message": "kitten",
+        "message": "Ingane yekati",
         "description": "A baby cat."
     },
     "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
+        "message": "hlela ulimi uliyise [LANGUAGE]",
         "description": "Set the language for speech synthesis."
     },
     "text2speech.setVoiceBlock": {
-        "message": "set voice to [VOICE]",
+        "message": "hlela izwi uliyise [VOICE]",
         "description": "Set the voice for speech synthesis."
     },
     "text2speech.speakAndWaitBlock": {
-        "message": "speak [WORDS]",
+        "message": "khuluma [WORDS]",
         "description": "Speak some words."
     },
     "text2speech.squeak": {
-        "message": "squeak",
+        "message": "Tswininiza",
         "description": "Name for a funny voice with a high pitch."
     },
     "text2speech.tenor": {
@@ -448,7 +448,7 @@
         "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
-        "message": "Translate",
+        "message": "Humusha ",
         "description": "Name of extension that adds translate blocks"
     },
     "translate.defaultTextToTranslate": {
@@ -456,15 +456,15 @@
         "description": "hello: the default text to translate"
     },
     "translate.translateBlock": {
-        "message": "translate [WORDS] to [LANGUAGE]",
+        "message": "humusha [WORDS] uyise [LANGUAGE]",
         "description": "translate some text to a different language"
     },
     "translate.viewerLanguage": {
-        "message": "language",
+        "message": "ulimi",
         "description": "the languge of the project viewer"
     },
     "videoSensing.categoryName": {
-        "message": "Video Sensing",
+        "message": "Ukubona ividiyo",
         "description": "Label for the video sensing extension category"
     },
     "videoSensing.direction": {
@@ -484,11 +484,11 @@
         "description": "Option for the \"turn video [STATE]\" block"
     },
     "videoSensing.onFlipped": {
-        "message": "on flipped",
+        "message": "kuphenyiwe ",
         "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
     },
     "videoSensing.setVideoTransparency": {
-        "message": "set video transparency to [TRANSPARENCY]",
+        "message": "hlela ukubonakala kweVidiyo ukuyise [TRANSPARENCY]",
         "description": "Controls transparency of the video preview layer"
     },
     "videoSensing.sprite": {
@@ -500,15 +500,15 @@
         "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
     },
     "videoSensing.videoOn": {
-        "message": "video [ATTRIBUTE] on [SUBJECT]",
+        "message": "vidiyo [ATTRIBUTE] ku [SUBJECT]",
         "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
     },
     "videoSensing.videoToggle": {
-        "message": "turn video [VIDEO_STATE]",
+        "message": "phendula ividiyo [VIDEO_STATE]",
         "description": "Controls display of the video preview layer"
     },
     "videoSensing.whenMotionGreaterThan": {
-        "message": "when video motion > [REFERENCE]",
+        "message": "umakunyakaza ividiyo > [REFERENCE]",
         "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
     },
     "wedo2.getDistance": {
@@ -516,11 +516,11 @@
         "description": "the value returned by the distance sensor"
     },
     "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
+        "message": "tshekisa engeli  [TILT_DIRECTION]",
         "description": "the angle returned by the tilt sensor"
     },
     "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
+        "message": "itshekile [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
     "wedo2.motorDirection.backward": {
@@ -536,47 +536,47 @@
         "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.a": {
-        "message": "motor A",
+        "message": "imotho A ",
         "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.all": {
-        "message": "all motors",
+        "message": "wonke amamotho ",
         "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.b": {
-        "message": "motor B",
+        "message": "imotho B",
         "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorId.default": {
-        "message": "motor",
+        "message": "imotho",
         "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
     },
     "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
+        "message": "yicishe [MOTOR_ID]",
         "description": "turn a motor off"
     },
     "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
+        "message": "yivule [MOTOR_ID]",
         "description": "turn a motor on indefinitely"
     },
     "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
+        "message": "yivule [MOTOR_ID] isikhathi [DURATION] imizuzwana",
         "description": "turn a motor on for some time"
     },
     "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
+        "message": "dlala inothi [NOTE] isikathi [DURATION] imizuzwana  ",
         "description": "play a certain note for some time"
     },
     "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
+        "message": "hlela ukhanya kombala ukuyise [HUE]",
         "description": "set the LED color"
     },
     "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
+        "message": "hlela indlela ye [MOTOR_ID] ukuyise [MOTOR_DIRECTION] ",
         "description": "set the motor's turn direction"
     },
     "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
+        "message": "hlela [MOTOR_ID] amandla uwayise [POWER]",
         "description": "set the motor's power and turn it on"
     },
     "wedo2.tiltDirection.any": {
@@ -600,11 +600,11 @@
         "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
+        "message": "uma ibanga [OP] [REFERENCE]",
         "description": "check for when distance is < or > than reference"
     },
     "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
+        "message": "Umakutshekisiwe [TILT_DIRECTION_ANY]",
         "description": "check when tilted in a certain direction"
     }
 }

@@ -1,4 +1,12 @@
 {
+    "gui.connection.reconnect": {
+        "message": "Reconnect",
+        "description": "Button to reconnect the device"
+    },
+    "gui.backpack.header": {
+        "message": "Tálca",
+        "description": "Button to open the backpack"
+    },
     "gui.backpack.errorBackpack": {
         "message": "Hiba a hátizsák betöltésekor",
         "description": "Error backpack message"
@@ -6,6 +14,10 @@
     "gui.backpack.loadingBackpack": {
         "message": "Betöltés...",
         "description": "Loading backpack message"
+    },
+    "gui.backpack.more": {
+        "message": "Több",
+        "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
         "message": "A hátizsák üres",
@@ -24,7 +36,7 @@
         "description": "Button to go back in unsupported browser modal"
     },
     "gui.unsupportedBrowser.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.unsupportedBrowser.previewfaqlinktext": {
@@ -300,7 +312,7 @@
         "description": "Label for button to back out of importing a project"
     },
     "gui.importInfo.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}.",
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
@@ -378,6 +390,22 @@
     "gui.accountMenu.signOut": {
         "message": "Kijelentkezés",
         "description": "Text to link to sign out, in the account navigation menu"
+    },
+    "general.username": {
+        "message": "Felhasználónév",
+        "description": "Label for login username input"
+    },
+    "general.password": {
+        "message": "Jelszó",
+        "description": "Label for login password input"
+    },
+    "general.signIn": {
+        "message": "Jelentkezz be",
+        "description": "Button text for user to sign in"
+    },
+    "login.needHelp": {
+        "message": "Segítséget szeretne?",
+        "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
         "message": "nyelv választó",
@@ -540,7 +568,7 @@
         "description": "Label for button to import a 2.0 project"
     },
     "gui.previewInfo.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}.",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
@@ -776,7 +804,7 @@
         "description": "Label for button go back when browser is unsupported"
     },
     "gui.webglModal.previewfaq": {
-        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}",
+        "message": "Ha szeretnél többet megtuni, menj ide {previewFaqLink}.",
         "description": "Scratch 3.0 FAQ description"
     },
     "gui.webglModal.previewfaqlinktext": {
@@ -936,8 +964,8 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose Which Character to Show",
-        "description": "Step name for 'Choose Which Character to Show' step"
+        "message": "Choose a Character to Show",
+        "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
         "message": "Mondj valamit",
@@ -945,35 +973,27 @@
     },
     "gui.howtos.cartoon-network.step_CNglide": {
         "message": "Elcsúszás körbe",
-        "description": "Step name for ' Glide Around' step"
+        "description": "Step name for 'Glide Around' step"
+    },
+    "gui.howtos.cartoon-network.step_CNpicksprite": {
+        "message": "Choose an Object to Chase",
+        "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects (In Gem Sprite)",
-        "description": "Step name for ' Collect Objects (In Gem Sprite)' step"
+        "message": "Collect Objects",
+        "description": "Step name for 'Collect Objects' step"
     },
-    "gui.howtos.cartoon-network.step_CNanimate": {
-        "message": "Add Score",
-        "description": "Step name for 'Add Score' step"
+    "gui.howtos.cartoon-network.step_CNvariable": {
+        "message": "Make a Score Variable",
+        "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
         "message": "Keep Score",
         "description": "Step name for 'Keep Score' step"
     },
-    "gui.howtos.cartoon-network.step_CNkeepscore": {
-        "message": "Level Up: Change Background",
-        "description": "Step name for 'Level Up: Change Background' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevel": {
-        "message": "Show A New Character",
-        "description": "Step name for 'Show A New Character' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter2": {
-        "message": "Level Up: Say Something",
-        "description": "Step name for 'Level Up: Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNlevelup": {
-        "message": "Animate A Run",
-        "description": "Step name for 'Animate A Run' step"
+    "gui.howtos.cartoon-network.step_CNbackdrop": {
+        "message": "Level Up: Change Backdrop",
+        "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
         "message": "Animálj egy nevet",
@@ -1402,9 +1422,5 @@
     "gui.sharedMessages.pop": {
         "message": "pukk",
         "description": "Name of the pop sound, the default sound added to a sprite"
-    },
-    "gui.backpack.header": {
-        "message": "Tálca",
-        "description": "Button to open the backpack"
     }
 }
