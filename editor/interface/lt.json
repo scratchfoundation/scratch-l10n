@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Prisijungti iš naujo",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -323,6 +323,14 @@
         "message": "Netrukus",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Paieška",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Atsijungti",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Žiūrėti bendruomenę",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Naudotojo vardas",
         "description": "Label for login username input"
@@ -404,7 +420,7 @@
         "description": "Button text for user to sign in"
     },
     "login.needHelp": {
-        "message": "Need Help?",
+        "message": "Reikia pagalbos?",
         "description": "Button text for user to indicate that they need help"
     },
     "gui.menuBar.LanguageSelector": {
@@ -447,14 +463,6 @@
         "message": "Naujas",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Bendrinti",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Bendrinama",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Failas",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Įjungti Turbo režimą",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Žiūrėti bendruomenę",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Prisiregistruoti Scratch",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Vieta projekto antraštei",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Bendrinama",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Bendrinti",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Pagalba",
@@ -895,6 +907,22 @@
         "message": "Pasirinkite pamoką",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Kuriama...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Išsaugoma...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "Miau",
         "description": "Name for the meow sound"
@@ -980,7 +1008,7 @@
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Surinkti objektus",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Pasakojimai",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Letters",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "kryptis",

@@ -1,10 +1,10 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Reconectar",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
-        "message": "Fondo",
+        "message": "Mochila",
         "description": "Button to open the backpack"
     },
     "gui.backpack.errorBackpack": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "gui.unsupportedBrowser.description": {
-        "message": "Sentímolo, mais Scratch 3.0 non admite Internet Explorer, Vivaldi, Opera ou Silk. Recomendamos utilizar un navegador máis moderno, como Google Chrome, Mozilla Firefox ou Microsoft Edge.",
+        "message": "Sentímolo, mais Scratch 3.0 non é compatíbel con Internet Explorer, Vivaldi, Opera nin Silk. Recomendamos utilizar un navegador máis moderno, como Google Chrome, Mozilla Firefox ou Microsoft Edge.",
         "description": "Unsupported browser description"
     },
     "gui.unsupportedBrowser.back": {
@@ -40,7 +40,7 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Pregunas Habituais",
+        "message": "Preguntas frecuentes",
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.cameraModal.cameraModalTitle": {
@@ -96,7 +96,7 @@
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.comingSoon.message2": {
-        "message": "Proximamente ...",
+        "message": "Proximamente...",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.comingSoon.message3": {
@@ -240,7 +240,7 @@
         "description": "Label for button to add a label"
     },
     "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Executar sen refrescar a pantalla",
+        "message": "Executar sen actualizar a pantalla",
         "description": "Label for checkbox to run without screen refresh"
     },
     "gui.customProcedures.cancel": {
@@ -268,7 +268,7 @@
         "description": "Button to change to the dont rotate rotation style"
     },
     "gui.gui.addExtension": {
-        "message": "Engadir Extensión",
+        "message": "Engadir extensión",
         "description": "Button to add an extension in the target pane"
     },
     "gui.gui.codeTab": {
@@ -316,12 +316,20 @@
         "description": "Invitation to try 3.0 preview"
     },
     "gui.importInfo.previewfaqlinktext": {
-        "message": "Pregunas Habituais",
+        "message": "Preguntas frecuentes",
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.extensionLibrary.comingSoon": {
         "message": "Proximamente",
         "description": "Label for extensions that are not yet implemented"
+    },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
     },
     "gui.library.filterPlaceholder": {
         "message": "Buscar",
@@ -391,6 +399,14 @@
         "message": "Saír",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Ver Comunidade ",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Nome de usuario",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "Novo",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Compartir",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Compartidos",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Ficheiro",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Activar Modo Turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Ver Comunidade ",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Únete a Scratch",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Aquí o título do proxecto",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Compartidos",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Compartir",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Axuda",
@@ -572,7 +584,7 @@
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.previewfaqlinktext": {
-        "message": "Pregunas Habituais",
+        "message": "Preguntas frecuentes",
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.gui.variableScopeOptionAllSprites": {
@@ -796,7 +808,7 @@
         "description": "WebGL missing message"
     },
     "gui.webglModal.webgllink": {
-        "message": "Non admite WebGL",
+        "message": "non é compatíbel con WebGL",
         "description": "link part of your browser does not support WebGL message"
     },
     "gui.webglModal.back": {
@@ -808,7 +820,7 @@
         "description": "Scratch 3.0 FAQ description"
     },
     "gui.webglModal.previewfaqlinktext": {
-        "message": "Preguntas habituais",
+        "message": "Preguntas frecuentes",
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeLibrary.chooseABackdrop": {
@@ -852,7 +864,7 @@
         "description": "Heading for the extension library"
     },
     "gui.extensionLibrary.extensionUrl": {
-        "message": "Introduce o URL da extensió",
+        "message": "Introduce o URL da extensión",
         "description": "Prompt for unoffical extension url"
     },
     "gui.gui.defaultProjectTitle": {
@@ -895,6 +907,22 @@
         "message": "Escolle un titorial",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Creando...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Gardando...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "Miau",
         "description": "Name for the meow sound"
@@ -924,7 +952,7 @@
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Decir Algo",
+        "message": "Dicir algo",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
@@ -944,7 +972,7 @@
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Canta unha canció",
+        "message": "Canta unha canción",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -964,11 +992,11 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Elixir un carácter para mostrar",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Decir Algo",
+        "message": "Dicir algo",
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNglide": {
@@ -976,15 +1004,15 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "Escoller un obxecto ao que seguir",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Recoller obxectos",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Crear unha variábel puntuación",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -1200,7 +1228,7 @@
         "description": "Name for the Translate extension"
     },
     "gui.extension.translate.description": {
-        "message": "Traducir texto a moitos idiomas",
+        "message": "Traducir texto a moitos idiomas.",
         "description": "Description for the Translate extension"
     },
     "gui.extension.microbit.description": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Historias",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Letras",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "dirección",

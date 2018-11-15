@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "重新连接",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -323,6 +323,14 @@
         "message": "即将启用",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "搜索",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "登出",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "查看社区",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "用户名称",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "新建项目",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "分享",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "已分享",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "文件",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "打开加速模式",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "查看社区",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "加入 Scratch",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "在此填写项目标题",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "已分享",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "分享",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "帮助",
@@ -895,6 +907,22 @@
         "message": "选择一个教程",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "正在创建…",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "正在保存...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "喵",
         "description": "Name for the meow sound"
@@ -964,7 +992,7 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "选择要显示的角色",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -976,7 +1004,7 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "选择要捕捉的目标",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
@@ -992,7 +1020,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "下一关：改变背景",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "故事",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "字母",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "方向",

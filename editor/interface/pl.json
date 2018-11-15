@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Połącz ponownie",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -28,7 +28,7 @@
         "description": ""
     },
     "gui.unsupportedBrowser.description": {
-        "message": "Bardzo nam przykro, ale program Scratch 3.0 nie wspiera przeglądarek Internet Explorer, Vivaldi, Opera ani Silk. Polecamy korzystanie z nowszych przeglądarek, takich jak Google Chrome, Mozilla Firefox lub Microsoft Edge.",
+        "message": "Bardzo nam przykro, ale Scratch 3.0 nie wspiera przeglądarek Internet Explorer, Vivaldi, Opera i Silk. Polecamy korzystanie z nowszych przeglądarek, takich jak Google Chrome, Mozilla Firefox lub Microsoft Edge.",
         "description": "Unsupported browser description"
     },
     "gui.unsupportedBrowser.back": {
@@ -212,7 +212,7 @@
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
-        "message": "Reload",
+        "message": "Załaduj ponownie",
         "description": "Button to reload the page when page crashes"
     },
     "gui.customProcedures.myblockModalTitle": {
@@ -323,6 +323,14 @@
         "message": "Już wkrótce",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Szukaj",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Wyloguj się",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Zobacz społeczność",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Nazwa użytkownika",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "Nowy",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Udostępnij",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Udostępnione",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Plik",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Włącz tryb turbo",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Zobacz społeczność",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Dołącz do Scratch",
         "description": "Link for creating a Scratch account"
@@ -496,8 +500,16 @@
         "description": "Label for feedback form modal button"
     },
     "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
+        "message": "Tutaj tytuł projektu",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Udostępnione",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Udostępnij",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Pomoc",
@@ -508,11 +520,11 @@
         "description": "Back button in modal"
     },
     "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
+        "message": "(puste)",
         "description": "Text shown on a list monitor when a list is empty"
     },
     "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
+        "message": "długość {length}",
         "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
     },
     "gui.monitor.contextMenu.default": {
@@ -624,15 +636,15 @@
         "description": "Recording modal title"
     },
     "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
+        "message": "Rozpocznij nagrywanie, klikając przycisk poniżej",
         "description": "Message for recording sound modal"
     },
     "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
+        "message": "{arrow}Potrzebujemy twojego pozwolenia na używanie mikrofonu",
         "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
     },
     "gui.recordingStep.stop": {
-        "message": "Stop recording",
+        "message": "Zatrzymaj nagrywanie",
         "description": "Stop recording button label"
     },
     "gui.recordingStep.record": {
@@ -856,7 +868,7 @@
         "description": "Prompt for unoffical extension url"
     },
     "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
+        "message": "Projekt Scratch",
         "description": "Default title for project"
     },
     "gui.recordingStep.alertMsg": {
@@ -895,12 +907,28 @@
         "message": "Wybierz tutorial",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Tworzenie...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Zapisywanie...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
-        "message": "Meow",
+        "message": "Miau",
         "description": "Name for the meow sound"
     },
     "gui.defaultProject.variable": {
-        "message": "my variable",
+        "message": "moja zmienna",
         "description": "Name for the default variable"
     },
     "gui.howtos.intro-move-sayhello-hat.name": {
@@ -916,7 +944,7 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Twórz animacje, które mówią",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
@@ -928,11 +956,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Ustaw głos",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Poruszać się",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -940,11 +968,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Dodaj inny znak",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Przedstaw piosenkę",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -952,11 +980,11 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Zakręć do okoła",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Rosnąć i kurczyć się",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
@@ -964,7 +992,7 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Wybierz postać do pokazania",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Opowiadania",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Litery",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "Kierunek",
