@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Переподключиться",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -323,6 +323,14 @@
         "message": "Скоро…",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Поиск",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Выйти",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Просмотр сообщества",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Имя пользователя",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "Новый",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Поделись",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Опубликован",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Файл",
         "description": "Text for file dropdown menu"
@@ -472,16 +480,12 @@
         "description": "Text for edit dropdown menu"
     },
     "gui.menuBar.turboModeOff": {
-        "message": "Выключить Турбо Режим",
+        "message": "Выключить Турбо режим",
         "description": "Menu bar item for turning off turbo mode"
     },
     "gui.menuBar.turboModeOn": {
-        "message": "Включить Турбо Режим",
+        "message": "Включить Турбо режим",
         "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Просмотр сообщества",
-        "description": "Label for see community button"
     },
     "gui.menuBar.joinScratch": {
         "message": "Присоединяйтесь",
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Название проекта",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Опубликован",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Поделись",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Помощь",
@@ -736,7 +748,7 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Загрузить Спрайт",
+        "message": "Загрузить спрайт",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
@@ -895,6 +907,22 @@
         "message": "Выбрать учебник",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Создание...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Сохранение...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "Мяу",
         "description": "Name for the meow sound"
@@ -920,7 +948,7 @@
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Добавить Блоки \"Текст в Речь\"",
+        "message": "Добавить блоки \"Текст в речь\"",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -928,11 +956,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Установить Голос",
+        "message": "Установить голос",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Кружить Вокруг",
+        "message": "Кружить вокруг",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -940,11 +968,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Добавить Другого Персонажа",
+        "message": "Добавить другого персонажа",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Выступить с Песней",
+        "message": "Выступить с песней",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -956,15 +984,15 @@
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Расти и Уменьшаться",
+        "message": "Расти и уменьшаться",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Сделай Игру Приключение",
+        "message": "Сделай игру-приключение",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Выбери какой герой появляется ",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -976,15 +1004,15 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "Выбери что собирать",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Собирай объекты",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Сделай Переменную Счёта",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -992,7 +1020,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "Новый уровень: Измени фон ",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1052,7 +1080,7 @@
         "description": "Name for the 'Make a Clicker Game' how-to"
     },
     "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Выбрать Спрайт",
+        "message": "Выбрать спрайт",
         "description": "Step name for 'Pick A Sprite' step"
     },
     "gui.howtos.make-a-game.step_GamePlaySound": {
@@ -1180,19 +1208,19 @@
         "description": "Description for the 'Pen' extension"
     },
     "gui.extension.videosensing.name": {
-        "message": "Видео Распознавание",
+        "message": "Видео распознавание",
         "description": "Name for the 'Video Sensing' extension"
     },
     "gui.extension.videosensing.description": {
-        "message": "Распознай Движение с видео камеры",
+        "message": "Распознай движение с видео камеры",
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Текст в Речь",
+        "message": "Текст в речь",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Оживи свои проеты речью.",
+        "message": "Оживи свои проекты речью.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Истории",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Буквы",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "направление",

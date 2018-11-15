@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "다시 연결",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -16,7 +16,7 @@
         "description": "Loading backpack message"
     },
     "gui.backpack.more": {
-        "message": "기타",
+        "message": "더 보기",
         "description": "Load more from backpack"
     },
     "gui.backpack.emptyBackpack": {
@@ -323,6 +323,14 @@
         "message": "곧 이용 가능",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "검색",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "로그 아웃",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "커뮤니티 방문하기",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "사용자 이름",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "새로 만들기",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "공유",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "공유됨",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "파일",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "터보 모드 켜기",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "커뮤니티 방문하기",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "스크래치 가입",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "프로젝트 제목을 입력하세요",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "공유됨",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "공유",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "도움말",
@@ -592,7 +604,7 @@
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
-        "message": "취소하기",
+        "message": "취소",
         "description": "Button in prompt for cancelling the dialog"
     },
     "gui.prompt.ok": {
@@ -895,6 +907,22 @@
         "message": "튜토리얼 고르기",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "생성중...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "저장중...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "야옹",
         "description": "Name for the meow sound"
@@ -920,7 +948,7 @@
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "말하기 블록에 텍스트 추가",
+        "message": "텍스트 음성 변환 블록 추가하기",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -928,7 +956,7 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "목소리 설정",
+        "message": "목소리 정하기",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
@@ -952,11 +980,11 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "돌기",
+        "message": "빙글빙글 돌기",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "커지고 사라지기",
+        "message": "커지고 작아지기",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
@@ -964,7 +992,7 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "보여줄 캐릭터 고르기",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -976,15 +1004,15 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "쫓아갈 물건 고르기",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "물건 모으기",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "점수 변수 만들기 ",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -992,7 +1020,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "레벨 업: 배경 바꾸기",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1188,11 +1216,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "글자를 말로",
+        "message": "텍스트 음성 변환(TTS)",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "당신의 프로젝트가 대화하게 해보기",
+        "message": "프로젝트가 말하게 만드세요.",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1320,8 +1348,12 @@
         "description": "Tag for filtering a library for games"
     },
     "gui.libraryTags.stories": {
-        "message": "스토리",
+        "message": "이야기",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "글자",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "방향",

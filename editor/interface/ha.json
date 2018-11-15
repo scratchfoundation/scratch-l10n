@@ -323,6 +323,14 @@
         "message": "Coming Soon",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Search",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Sign out",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "See Community",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Username",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "New",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Share",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Shared",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "File",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Turn on Turbo Mode",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "See Community",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Join Scratch",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Project title here",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Shared",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Share",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Help",
@@ -894,6 +906,22 @@
     "gui.tipsLibrary.tutorials": {
         "message": "Choose a Tutorial",
         "description": "Heading for the help/tutorials library"
+    },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Creating...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Saving...",
+        "description": "Message indicating that project is in process of saving"
     },
     "gui.defaultProject.meow": {
         "message": "Meow",
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Stories",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Letters",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "direction",

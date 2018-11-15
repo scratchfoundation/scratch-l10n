@@ -28,7 +28,7 @@
         "description": ""
     },
     "gui.unsupportedBrowser.description": {
-        "message": "\nAnyị nwere mwute, ma ọkọlọtọ 3.0 anaghị akwado Internet Explorer, Vivaldi, Opera ma ọ bụ Silk. Anyị na-akwado ịnwale ihe nchọgharị ọhụrụ dị ka Google Chrome, Mozilla Firefox, ma ọ bụ Microsoft Edge. ",
+        "message": "Ewela iwe, Scratch 3.0 anaghị akwado Internet Explorer, Vivaldi, Opera ma ọ bụ Silk. O ga-aka nma iji ihe nchọgharị ọhụrụ dị ka Google Chrome, Mozilla Firefox, ma ọ bụ Microsoft Edge. ",
         "description": "Unsupported browser description"
     },
     "gui.unsupportedBrowser.back": {
@@ -60,7 +60,7 @@
         "description": "A button that allows the user to take the picture again, replacing the old one"
     },
     "gui.cameraModal.save": {
-        "message": "Save",
+        "message": "Dozie",
         "description": "A button that allows the user to save the photo they took as a costume"
     },
     "gui.cameraModal.takePhoto": {
@@ -92,7 +92,7 @@
         "description": "Title for button to see more in how-to library"
     },
     "gui.comingSoon.message1": {
-        "message": "Ewela nchegbu ,anyi na-elebara anya na ya",
+        "message": "Enyela onwe gi nsogbu, anyi na-elebara ya anya {emoji}",
         "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
     },
     "gui.comingSoon.message2": {
@@ -152,7 +152,7 @@
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.error.helpbutton": {
-        "message": "Nyere aka",
+        "message": "Enyemaka",
         "description": "Button to view help content"
     },
     "gui.connection.peripheral-name-label": {
@@ -192,7 +192,7 @@
         "description": "Button to initiate trying the device connection again after an error"
     },
     "gui.connection.unavailable.helpbutton": {
-        "message": "Nyere aka",
+        "message": "Enyemaka",
         "description": "Button to view help content"
     },
     "gui.controls.go": {
@@ -244,11 +244,11 @@
         "description": "Label for checkbox to run without screen refresh"
     },
     "gui.customProcedures.cancel": {
-        "message": "Cancel",
+        "message": "Kagbuo",
         "description": "Label for button to cancel custom procedure edits"
     },
     "gui.customProcedures.ok": {
-        "message": "OK",
+        "message": "O dinma",
         "description": "Label for button to save new custom procedure"
     },
     "gui.SpriteInfo.direction": {
@@ -323,6 +323,14 @@
         "message": "Coming Soon",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Search",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Sign out",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Lee obodo",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Username",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "New",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Share",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Shared",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "File",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Turn on Turbo Mode",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Lee obodo",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Join Scratch",
         "description": "Link for creating a Scratch account"
@@ -499,8 +503,16 @@
         "message": "Project title here",
         "description": "Placeholder for project title when blank"
     },
+    "gui.menuBar.isShared": {
+        "message": "Shared",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Share",
+        "description": "Label for project share button"
+    },
     "gui.modal.help": {
-        "message": "Nyere aka",
+        "message": "Enyemaka",
         "description": "Help button in modal"
     },
     "gui.modal.back": {
@@ -536,11 +548,11 @@
         "description": "Header for Preview Info Modal"
     },
     "gui.previewModal.notnowtooltip": {
-        "message": "Ugbua ugbua",
+        "message": "O bughi ugbua",
         "description": "Tooltip for Not Now button"
     },
     "gui.previewModal.tryittooltip": {
-        "message": "Try It",
+        "message": "Nwaa ya",
         "description": "Tooltip for Try It button"
     },
     "gui.previewModal.viewprojecttooltip": {
@@ -552,15 +564,15 @@
         "description": "Header for Beta Info Modal"
     },
     "gui.previewInfo.invitation": {
-        "message": "We're working on the next generation of Scratch. We're excited for you to try it!",
+        "message": "Anyi na-aru oru iweputa Scratchi nke ohuru. O ga eme anyi obi uto ma inwale ya!",
         "description": "Invitation to try 3.0 Beta"
     },
     "gui.previewInfo.notnow": {
-        "message": "Ugbua ugbua",
+        "message": "Obughi ugbua",
         "description": "Label for button to back out of trying Scratch 3.0 Beta"
     },
     "gui.previewModal.tryit": {
-        "message": "Try It! {caticon}",
+        "message": "Nwaa ya!{caticon}",
         "description": "Label for button to try Scratch 3.0 Beta"
     },
     "gui.previewModal.viewproject": {
@@ -576,7 +588,7 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.gui.variableScopeOptionAllSprites": {
-        "message": "For all sprites",
+        "message": "Nke spraiti niile",
         "description": "Option message when creating a variable for making it available to all sprites"
     },
     "gui.gui.variableScopeOptionSpriteOnly": {
@@ -592,11 +604,11 @@
         "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
     },
     "gui.prompt.cancel": {
-        "message": "Cancel",
+        "message": "Kagbuo",
         "description": "Button in prompt for cancelling the dialog"
     },
     "gui.prompt.ok": {
-        "message": "OK",
+        "message": "O dinma",
         "description": "Button in prompt for confirming the dialog"
     },
     "gui.playbackStep.stopMsg": {
@@ -604,7 +616,7 @@
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.playMsg": {
-        "message": "Play",
+        "message": "Kpọọ",
         "description": "Stop/Play button in recording playback"
     },
     "gui.playbackStep.loadingMsg": {
@@ -612,7 +624,7 @@
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.saveMsg": {
-        "message": "Save",
+        "message": "Dozie",
         "description": "Loading/Save button in recording playback"
     },
     "gui.playbackStep.reRecordMsg": {
@@ -644,11 +656,11 @@
         "description": "Label for the name of the sound"
     },
     "gui.soundEditor.play": {
-        "message": "Play",
+        "message": "Kpọọ",
         "description": "Title of the button to start playing the sound"
     },
     "gui.soundEditor.stop": {
-        "message": "Kwusi",
+        "message": "Kwụsị",
         "description": "Title of the button to stop the sound"
     },
     "gui.soundEditor.trim": {
@@ -656,23 +668,23 @@
         "description": "Title of the button to start trimminging the sound"
     },
     "gui.soundEditor.save": {
-        "message": "Save",
+        "message": "Dozie",
         "description": "Title of the button to save trimmed sound"
     },
     "gui.soundEditor.undo": {
-        "message": "Megharia",
+        "message": "Megharia azu",
         "description": "Title of the button to undo"
     },
     "gui.soundEditor.redo": {
-        "message": "Megharia ilu",
+        "message": "Megharia ihu",
         "description": "Title of the button to redo"
     },
     "gui.soundEditor.faster": {
-        "message": "Faster",
+        "message": "Ọsọ-ọsọ",
         "description": "Title of the button to apply the faster effect"
     },
     "gui.soundEditor.slower": {
-        "message": "Nwayoo",
+        "message": "Nwayọọ",
         "description": "Title of the button to apply the slower effect"
     },
     "gui.soundEditor.echo": {
@@ -684,27 +696,27 @@
         "description": "Title of the button to apply the robot effect"
     },
     "gui.soundEditor.louder": {
-        "message": "Louder",
+        "message": "Welite olu",
         "description": "Title of the button to apply the louder effect"
     },
     "gui.soundEditor.softer": {
-        "message": "Softer",
+        "message": "Wedata olu",
         "description": "Title of the button to apply thr.softer effect"
     },
     "gui.soundEditor.reverse": {
-        "message": "Reverse",
+        "message": "Tụgharia azụ",
         "description": "Title of the button to apply the reverse effect"
     },
     "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Name",
+        "message": "Aha",
         "description": "Placeholder text for sprite name"
     },
     "gui.SpriteInfo.sprite": {
-        "message": "Sprite",
+        "message": "Spraiti",
         "description": "Sprite info label"
     },
     "gui.SpriteInfo.show": {
-        "message": "Show",
+        "message": "Gosi",
         "description": "Sprite info show label"
     },
     "gui.SpriteInfo.size": {
@@ -712,19 +724,19 @@
         "description": "Sprite info size label"
     },
     "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "duplicate",
+        "message": "mee oyiri",
         "description": "Menu item to duplicate in the right click menu"
     },
     "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "delete",
+        "message": "kpochapu",
         "description": "Menu item to delete in the right click menu"
     },
     "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "export",
+        "message": "zipu",
         "description": "Menu item to export the selected item"
     },
     "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Choose a Sprite",
+        "message": "Ghọrọ otu Spraiti",
         "description": "Button to add a sprite in the target pane from library"
     },
     "gui.spriteSelector.addSpriteFromPaint": {
@@ -736,15 +748,15 @@
         "description": "Button to add a random sprite in the target pane"
     },
     "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
+        "message": "Wegoro Spraịtị",
         "description": "Button to add a sprite in the target pane from file"
     },
     "gui.stageHeader.stageSizeLarge": {
-        "message": "Switch to large stage",
+        "message": "Gbanwee ka ọ bụrụ stagi nke ukwu",
         "description": "Button to change stage size to large"
     },
     "gui.stageHeader.stageSizeSmall": {
-        "message": "Switch to small stage",
+        "message": "Gbanwee ka ọ bụrụ stagi nke nta",
         "description": "Button to change stage size to small"
     },
     "gui.stageHeader.stageSizeFull": {
@@ -760,7 +772,7 @@
         "description": "Button to enter/exit full screen mode"
     },
     "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "Ghọrọ otu bakdrọpụ",
         "description": "Button to add a stage in the target pane from library"
     },
     "gui.stageSelector.addBackdropFromPaint": {
@@ -812,7 +824,7 @@
         "description": "link to Scratch 3.0 FAQ page"
     },
     "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Choose a Backdrop",
+        "message": "Ghọrọ otu bakdrọpụ",
         "description": "Heading for the backdrop library"
     },
     "gui.costumeLibrary.chooseACostume": {
@@ -820,7 +832,7 @@
         "description": "Heading for the costume library"
     },
     "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Choose a Backdrop",
+        "message": "Ghọrọ otu bakdrọpụ",
         "description": "Button to add a backdrop in the editor tab"
     },
     "gui.costumeTab.addCostumeFromLibrary": {
@@ -888,12 +900,28 @@
         "description": "Button to add a sound in the editor tab"
     },
     "gui.spriteLibrary.chooseASprite": {
-        "message": "Choose a Sprite",
+        "message": "Ghọrọ otu Spraiti",
         "description": "Heading for the sprite library"
     },
     "gui.tipsLibrary.tutorials": {
         "message": "Choose a Tutorial",
         "description": "Heading for the help/tutorials library"
+    },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Creating...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Saving...",
+        "description": "Message indicating that project is in process of saving"
     },
     "gui.defaultProject.meow": {
         "message": "Meow",
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Stories",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Letters",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "uzọ njem",

@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Återanslut",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -323,6 +323,14 @@
         "message": "Kommer snart",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Sök",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Logga ut",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Visa community",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Användarnamn",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "Nytt",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Dela",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Delade",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Arkiv",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Sätt på turboläge",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Visa community",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Gå med Scratch",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Projektets titel här",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Delade",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Dela",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Hjälp",
@@ -895,6 +907,22 @@
         "message": "Välj en handledning",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Skapar ...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Sparar...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "Mjau",
         "description": "Name for the meow sound"
@@ -964,7 +992,7 @@
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Välj en figur att visa",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -976,15 +1004,15 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "Välj någonting att jaga",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Samla saker",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Skapa en variabel för poäng",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -992,7 +1020,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "Levla upp: Byt bakgrund",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "Berättelser",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Bokstäver",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "riktning",

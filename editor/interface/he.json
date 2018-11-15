@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "התחברו שוב",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -323,6 +323,14 @@
         "message": "בקרוב",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "חיפוש",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "התנתקות",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "צפו בקהילה",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "שם משתמש",
         "description": "Label for login username input"
@@ -447,14 +463,6 @@
         "message": "חדש",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "שיתוף",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "משותף",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "קובץ",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "הפעילו מצב טורבו",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "צפו בקהילה",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "הצטרפו לסקראץ'",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "כתבו כאן את כותרת הפרויקט",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "משותף",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "שיתוף",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "עזרה",
@@ -895,6 +907,22 @@
         "message": "בחרו מדריך",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "מייצר...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "שומר...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "מיאו",
         "description": "Name for the meow sound"
@@ -932,7 +960,7 @@
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "תזוזה במרחב",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -952,7 +980,7 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "הסתובבו",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
@@ -960,11 +988,11 @@
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "הנפישו משחק הרפתקאות",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "בחרו דמות להראות",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -976,23 +1004,23 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "בחרו אובייקט לרדוף אחריו",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "איספו אובייקטים",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "צרו משתנה ניקוד",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
+        "message": "עקבו אחר התוצאה",
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "שלב הבא: רקע",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1192,7 +1220,7 @@
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "גרמו לפרויקט שלכם לדבר",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1322,6 +1350,10 @@
     "gui.libraryTags.stories": {
         "message": "סיפורים",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "אותיות",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "כיוון",

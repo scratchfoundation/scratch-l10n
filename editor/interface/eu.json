@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Birkonektatu",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -208,7 +208,7 @@
         "description": "Crash Message title"
     },
     "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
+        "message": "Asko sentitzen dugu, baina ematen du Scratch-ek huts egin duela. Intzidentzia hau era automatikoan bidali zaio Scratch taldeari. Freskatu orria berriro saiatzeko.",
         "description": "Message to inform the user that page has crashed."
     },
     "gui.crashMessage.reload": {
@@ -323,6 +323,14 @@
         "message": "Laster",
         "description": "Label for extensions that are not yet implemented"
     },
+    "gui.extensionLibrary.requires": {
+        "message": "Requires",
+        "description": "Label for extension hardware requirements"
+    },
+    "gui.extensionLibrary.collaboration": {
+        "message": "Collaboration with",
+        "description": "Label for extension collaboration"
+    },
     "gui.library.filterPlaceholder": {
         "message": "Bilatu",
         "description": "Placeholder text for library search field"
@@ -391,6 +399,14 @@
         "message": "Amaitu saioa",
         "description": "Text to link to sign out, in the account navigation menu"
     },
+    "gui.authorInfo.byUser": {
+        "message": "by {username}",
+        "description": "Shows that a project was created by this user"
+    },
+    "gui.menuBar.seeCommunity": {
+        "message": "Ikusi komunitatea",
+        "description": "Label for see community button"
+    },
     "general.username": {
         "message": "Erabiltzaile-izena",
         "description": "Label for login username input"
@@ -400,7 +416,7 @@
         "description": "Label for login password input"
     },
     "general.signIn": {
-        "message": "Eman izena",
+        "message": "Hasi saioa",
         "description": "Button text for user to sign in"
     },
     "login.needHelp": {
@@ -447,14 +463,6 @@
         "message": "Berria",
         "description": "Menu bar item for creating a new project"
     },
-    "gui.menuBar.share": {
-        "message": "Partekatu",
-        "description": "Label for project share button"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Partekatuak",
-        "description": "Label for shared project"
-    },
     "gui.menuBar.file": {
         "message": "Fitxategia",
         "description": "Text for file dropdown menu"
@@ -479,10 +487,6 @@
         "message": "Piztu turbo modua",
         "description": "Menu bar item for turning on turbo mode"
     },
-    "gui.menuBar.seeCommunity": {
-        "message": "Ikusi komunitatea",
-        "description": "Label for see community button"
-    },
     "gui.menuBar.joinScratch": {
         "message": "Batu Scratchera",
         "description": "Link for creating a Scratch account"
@@ -498,6 +502,14 @@
     "gui.gui.projectTitlePlaceholder": {
         "message": "Hemen proiektuaren titulua",
         "description": "Placeholder for project title when blank"
+    },
+    "gui.menuBar.isShared": {
+        "message": "Partekatuak",
+        "description": "Label for shared project"
+    },
+    "gui.menuBar.share": {
+        "message": "Partekatu",
+        "description": "Label for project share button"
     },
     "gui.modal.help": {
         "message": "Laguntza",
@@ -895,6 +907,22 @@
         "message": "Aukeratu tutorial bat",
         "description": "Heading for the help/tutorials library"
     },
+    "gui.alerts.createsuccess": {
+        "message": "Successfully created.",
+        "description": "Message indicating that project was successfully created"
+    },
+    "gui.alerts.creating": {
+        "message": "Sortzen...",
+        "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.savesuccess": {
+        "message": "Successfully saved.",
+        "description": "Message indicating that project was successfully saved"
+    },
+    "gui.alerts.saving": {
+        "message": "Gordetzen...",
+        "description": "Message indicating that project is in process of saving"
+    },
     "gui.defaultProject.meow": {
         "message": "Miau",
         "description": "Name for the meow sound"
@@ -916,11 +944,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Sortu hitz egiten duten animazioak",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Gehitu Testua irakurri blokeak",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -928,11 +956,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Ezarri ahots bat",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Mugitu inguruan",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -940,11 +968,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Gehitu beste karaktere bat",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Jo kantu bat",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -952,19 +980,19 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Biratu inguruan",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Hazi eta txikitu",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Sortu abentura jolas bat",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Hautatu karaktere bat erakusteko",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -972,19 +1000,19 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Txirrist egin inguruan",
+        "message": "Irristatu inguruan",
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "Hautatu objektu bat jarraitzeko",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Bildu objektuak",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Sortu puntuazio aldagai bat",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -992,7 +1020,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "Maila gora: Aldatu atzeko ohiala",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1188,11 +1216,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Testua irakurri",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Eman hitza zure proiektuei",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1316,12 +1344,16 @@
         "description": "Tag for filtering a library for art"
     },
     "gui.libraryTags.games": {
-        "message": "Jokoak",
+        "message": "Jolasak",
         "description": "Tag for filtering a library for games"
     },
     "gui.libraryTags.stories": {
         "message": "Istorioak",
         "description": "Tag for filtering a library for stories"
+    },
+    "gui.libraryTags.letters": {
+        "message": "Hizkiak",
+        "description": "Tag for filtering a library for letters"
     },
     "gui.opcodeLabels.direction": {
         "message": "norabidea",
