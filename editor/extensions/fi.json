@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Puhe tekstiksi",
-        "description": "Name of extension that adds speech recognition blocks."
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
         "message": "kuuntele ja odota",
@@ -415,9 +415,9 @@
         "message": "kun kuulen [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.alto": {
-        "message": "altto",
-        "description": "Name for a voice with ambiguous gender."
+    "text2speech.defaultTextToSpeak": {
+        "message": "hei",
+        "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
         "message": "jätti",
@@ -426,6 +426,14 @@
     "text2speech.kitten": {
         "message": "kissanpentu",
         "description": "A baby cat."
+    },
+    "text2speech.max": {
+        "message": "Max",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.quinn": {
+        "message": "Quinn",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "aseta kieleksi [LANGUAGE]",
@@ -442,10 +450,6 @@
     "text2speech.squeak": {
         "message": "vingahdus",
         "description": "Name for a funny voice with a high pitch."
-    },
-    "text2speech.tenor": {
-        "message": "tenori",
-        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Käännä",
@@ -523,34 +527,6 @@
         "message": "onko kallistettu suuntaan [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
-    "wedo2.motorDirection.backward": {
-        "message": "tuohon suuntaan",
-        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.forward": {
-        "message": "tähän suuntaan",
-        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.reverse": {
-        "message": "vaihda suuntaa",
-        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.a": {
-        "message": "moottori A",
-        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.all": {
-        "message": "kaikki moottorit",
-        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.b": {
-        "message": "moottori B",
-        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.default": {
-        "message": "moottori",
-        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
-    },
     "wedo2.motorOff": {
         "message": "laita [MOTOR_ID] pois päältä",
         "description": "turn a motor off"
@@ -578,26 +554,6 @@
     "wedo2.startMotorPower": {
         "message": "aseta moottorin [MOTOR_ID] teho arvoon [POWER]",
         "description": "set the motor's power and turn it on"
-    },
-    "wedo2.tiltDirection.any": {
-        "message": "mikä tahansa",
-        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.down": {
-        "message": "alas",
-        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.left": {
-        "message": "vasen",
-        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.right": {
-        "message": "oikea",
-        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.up": {
-        "message": "ylös",
-        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "kun etäisyys [OP] [REFERENCE]",

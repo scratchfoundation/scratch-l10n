@@ -595,9 +595,9 @@
         "message": "Абри анагӡаҩ мацара изы",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Апараметрқәа",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Аԥсҭҳәатә ҽеиҭак (асервер иҭагалоу)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Ари аҽеиҭак анагӡаҩцәа зегь ирызкуп.",
@@ -908,15 +908,23 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
+        "message": "Қәҿиарала иаԥҵоуп",
         "description": "Message indicating that project was successfully created"
     },
     "gui.alerts.creating": {
         "message": "Аԥҵара...",
         "description": "Message indicating that project is in process of creating"
     },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
+    },
     "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
+        "message": "Қәҿиарала еиқәырхоуп.",
         "description": "Message indicating that project was successfully saved"
     },
     "gui.alerts.saving": {
@@ -1421,7 +1429,7 @@
     },
     "gui.opcodeLabels.dayofweek": {
         "message": "амчыбжь амш",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "асааҭ",

@@ -595,9 +595,9 @@
         "message": "Sólo para este objeto",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Más opciones",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Variable de la nube (guardada en el servidor)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Esta variable estará disponible para todos los objetos.",
@@ -914,6 +914,14 @@
     "gui.alerts.creating": {
         "message": "Creando...",
         "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
     },
     "gui.alerts.savesuccess": {
         "message": "Successfully saved.",
@@ -1421,7 +1429,7 @@
     },
     "gui.opcodeLabels.dayofweek": {
         "message": "día de la semana",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "hora",

@@ -595,9 +595,9 @@
         "message": "Només per a aquest personatge",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Més opcions",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Variable al núvol (emmagatzemada en el servidor)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Aquesta variable estarà disponible per a tots els personatges.",
@@ -914,6 +914,14 @@
     "gui.alerts.creating": {
         "message": "S'està creant...",
         "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
     },
     "gui.alerts.savesuccess": {
         "message": "S'ha desat correctament.",
@@ -1420,8 +1428,8 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "diadesetmana",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "message": "dia de la setmana",
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "hora",

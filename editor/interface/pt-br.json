@@ -324,11 +324,11 @@
         "description": "Label for extensions that are not yet implemented"
     },
     "gui.extensionLibrary.requires": {
-        "message": "Requires",
+        "message": "Requer",
         "description": "Label for extension hardware requirements"
     },
     "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
+        "message": "Em colaboração com",
         "description": "Label for extension collaboration"
     },
     "gui.library.filterPlaceholder": {
@@ -400,7 +400,7 @@
         "description": "Text to link to sign out, in the account navigation menu"
     },
     "gui.authorInfo.byUser": {
-        "message": "by {username}",
+        "message": "por {username}",
         "description": "Shows that a project was created by this user"
     },
     "gui.menuBar.seeCommunity": {
@@ -595,9 +595,9 @@
         "message": "Apenas para este ator",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Mais Opções",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Variável na nuvem (armazenada no servidor)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Esta variável ficará disponível para todos os atores.",
@@ -908,15 +908,23 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
+        "message": "Criado com sucesso",
         "description": "Message indicating that project was successfully created"
     },
     "gui.alerts.creating": {
         "message": "Criando...",
         "description": "Message indicating that project is in process of creating"
     },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
+    },
     "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
+        "message": "Salvo com sucesso",
         "description": "Message indicating that project was successfully saved"
     },
     "gui.alerts.saving": {
@@ -1420,8 +1428,8 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "DiaDaSemana",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "message": "dia da semana",
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "hora",

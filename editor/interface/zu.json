@@ -24,11 +24,11 @@
         "description": "Empty backpack message"
     },
     "gui.unsupportedBrowser.label": {
-        "message": "Browser is not supported",
+        "message": "Ibrowza ayisekeliwe",
         "description": ""
     },
     "gui.unsupportedBrowser.description": {
-        "message": "We're very sorry, but Scratch 3.0 does not support Internet Explorer, Vivaldi, Opera or Silk. We recommend trying a newer browser such as Google Chrome, Mozilla Firefox, or Microsoft Edge.",
+        "message": "Siyaxolisa, uScratch 3.0 akayisekeli iInternet Explorer, Vivaldi, Opera noma Silk. Sincoma ukuthi uzame uGoogle Chrome, Mozilla noma Microsoft Edge.",
         "description": "Unsupported browser description"
     },
     "gui.unsupportedBrowser.back": {
@@ -292,11 +292,11 @@
         "description": "Scratch 2.0 import modal label - for accessibility"
     },
     "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+        "message": "Faka iLink kwenye yamaprojekthi kaScratch okwabelana. Ushintsho olwenziwe kulokhu 3.0 Beta ngeke lugcinwe. ",
         "description": "Import project message"
     },
     "gui.importInfo.message": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Preview will not be saved.",
+        "message": "Faka iLink kwenye yama projekthi ka-Scratch okwabelana. Ushintsho olwenziwe kulokhu 3.0 Previewe ngeke lugcinwe.",
         "description": "Import project message"
     },
     "gui.importInfo.invalidFormatError": {
@@ -352,7 +352,7 @@
         "description": "One of the loading messages"
     },
     "gui.loader.message4": {
-        "message": "Loading extensions …",
+        "message": "Isaloda okuxhunyiwe",
         "description": "One of the loading messages"
     },
     "gui.loader.message5": {
@@ -595,9 +595,9 @@
         "message": "Ngalomlingsi kuphela",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Okuningi Ongakukhetha",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Cloud variable (stored on server)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Lokuguquka kwenzeke kubo bonke",
@@ -915,6 +915,14 @@
         "message": "Ukuqamba...",
         "description": "Message indicating that project is in process of creating"
     },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
+    },
     "gui.alerts.savesuccess": {
         "message": "Successfully saved.",
         "description": "Message indicating that project was successfully saved"
@@ -1012,7 +1020,7 @@
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Yenza i-variable yescore",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -1288,7 +1296,7 @@
         "description": "Tag for filtering a library for indoors"
     },
     "gui.libraryTags.loops": {
-        "message": "Loops",
+        "message": "Amaluphu",
         "description": "Tag for filtering a library for loops"
     },
     "gui.libraryTags.music": {
@@ -1296,7 +1304,7 @@
         "description": "Tag for filtering a library for music"
     },
     "gui.libraryTags.notes": {
-        "message": "Notes",
+        "message": "Amanothi",
         "description": "Tag for filtering a library for notes"
     },
     "gui.libraryTags.outdoors": {
@@ -1304,7 +1312,7 @@
         "description": "Tag for filtering a library for outdoors"
     },
     "gui.libraryTags.patterns": {
-        "message": "Patterns",
+        "message": "Iphethini",
         "description": "Tag for filtering a library for patterns"
     },
     "gui.libraryTags.people": {
@@ -1421,7 +1429,7 @@
     },
     "gui.opcodeLabels.dayofweek": {
         "message": "usuku lwesonto",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "ihora",
