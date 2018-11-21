@@ -595,9 +595,9 @@
         "message": "僅適用當前角色",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "更多選項",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "雲端變數 (儲存於伺服器)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "這個變數適用於所有角色。",
@@ -914,6 +914,14 @@
     "gui.alerts.creating": {
         "message": "正在創建…",
         "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
     },
     "gui.alerts.savesuccess": {
         "message": "專案儲存成功。",
@@ -1420,8 +1428,8 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "星期",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "message": "週",
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "時",

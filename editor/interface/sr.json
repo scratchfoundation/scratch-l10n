@@ -1,6 +1,6 @@
 {
     "gui.connection.reconnect": {
-        "message": "Reconnect",
+        "message": "Поновно повезивање",
         "description": "Button to reconnect the device"
     },
     "gui.backpack.header": {
@@ -324,11 +324,11 @@
         "description": "Label for extensions that are not yet implemented"
     },
     "gui.extensionLibrary.requires": {
-        "message": "Requires",
+        "message": "Захтева",
         "description": "Label for extension hardware requirements"
     },
     "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
+        "message": "Сарадња са",
         "description": "Label for extension collaboration"
     },
     "gui.library.filterPlaceholder": {
@@ -400,7 +400,7 @@
         "description": "Text to link to sign out, in the account navigation menu"
     },
     "gui.authorInfo.byUser": {
-        "message": "by {username}",
+        "message": "по {username}",
         "description": "Shows that a project was created by this user"
     },
     "gui.menuBar.seeCommunity": {
@@ -595,9 +595,9 @@
         "message": "Само за овај лик",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "Више могућности",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "Променљива у облаку (чува се на серверу путем интернета)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "Променљива ће да буде доступна свим ликовима.",
@@ -908,15 +908,23 @@
         "description": "Heading for the help/tutorials library"
     },
     "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
+        "message": "Успешно направљено",
         "description": "Message indicating that project was successfully created"
     },
     "gui.alerts.creating": {
         "message": "Стварам...",
         "description": "Message indicating that project is in process of creating"
     },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
+    },
     "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
+        "message": "Успешно сачувано",
         "description": "Message indicating that project was successfully saved"
     },
     "gui.alerts.saving": {
@@ -944,11 +952,11 @@
         "description": "Step name for 'Add A Say Block' step"
     },
     "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
+        "message": "Направи анимације које причају",
         "description": "Name for the 'Create Animations That Talk' how-to"
     },
     "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
+        "message": "Додај текст у говорне блокове",
         "description": "Step name for 'Add the Text to Speech blocks' step"
     },
     "gui.howtos. say-it-out-loud.step_TXTSpeech": {
@@ -956,11 +964,11 @@
         "description": "Step name for 'Say Something' step"
     },
     "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
+        "message": "Подеси Глас",
         "description": "Step name for 'Set a Voice"
     },
     "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
+        "message": "Померај се унаоколо",
         "description": "Step name for 'Move Around' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
@@ -968,11 +976,11 @@
         "description": "Step name for 'Add a Backdrop' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
+        "message": "Додај још једног лика",
         "description": "Step name for 'Add Another Character' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
+        "message": "Отпевај песму",
         "description": "Step name for 'Perform a Song' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTColor": {
@@ -980,19 +988,19 @@
         "description": "Step name for 'Change Color' step"
     },
     "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
+        "message": "Врти се унаоколо",
         "description": "Step name for 'Spin Around"
     },
     "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
+        "message": "Повећавање и смањивање",
         "description": "Step name for 'Grow and Shrink' step"
     },
     "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
+        "message": "Анимирај Игрицу Авантуру",
         "description": "Animate an Adventure Game' how-to"
     },
     "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
+        "message": "Изабери и прикажи лика",
         "description": "Step name for 'Choose a Character to Show' step"
     },
     "gui.howtos.cartoon-network.step_CNsay": {
@@ -1004,15 +1012,15 @@
         "description": "Step name for 'Glide Around' step"
     },
     "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
+        "message": "Изабери предмет за праћење ",
         "description": "Step name for 'Choose an Object to Chase' step"
     },
     "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
+        "message": "Сакупи предмете",
         "description": "Step name for 'Collect Objects' step"
     },
     "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
+        "message": "Направи варијаблу за поене",
         "description": "Step name for 'Make a Score Variable' step"
     },
     "gui.howtos.cartoon-network.step_CNscore": {
@@ -1020,7 +1028,7 @@
         "description": "Step name for 'Keep Score' step"
     },
     "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
+        "message": "Level Up: Промени позадину",
         "description": "Step name for 'Level Up: Change Backdrop' step"
     },
     "gui.howtos.animate-a-name.name": {
@@ -1216,11 +1224,11 @@
         "description": "Description for the 'Video Sensing' extension"
     },
     "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
+        "message": "Текст у Говор",
         "description": "Name for the Text to Speech extension"
     },
     "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
+        "message": "Учини да пројекти пропричају",
         "description": "Description for the Text to speech extension"
     },
     "gui.extension.translate.name": {
@@ -1421,7 +1429,7 @@
     },
     "gui.opcodeLabels.dayofweek": {
         "message": "дан у недељи",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "сат",

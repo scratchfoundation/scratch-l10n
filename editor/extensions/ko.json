@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "음성 인식",
-        "description": "Name of extension that adds speech recognition blocks."
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
         "message": "듣고 기다리기",
@@ -415,9 +415,9 @@
         "message": "[PHRASE] 이(가) 들릴 때",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.alto": {
-        "message": "중고음",
-        "description": "Name for a voice with ambiguous gender."
+    "text2speech.defaultTextToSpeak": {
+        "message": "안녕 ",
+        "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
         "message": "저음",
@@ -426,6 +426,14 @@
     "text2speech.kitten": {
         "message": "고양이",
         "description": "A baby cat."
+    },
+    "text2speech.max": {
+        "message": "맥스",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.quinn": {
+        "message": "퀸",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "언어를 [LANGUAGE]로 정하기",
@@ -442,10 +450,6 @@
     "text2speech.squeak": {
         "message": "고음",
         "description": "Name for a funny voice with a high pitch."
-    },
-    "text2speech.tenor": {
-        "message": "중저음",
-        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "번역",
@@ -523,34 +527,6 @@
         "message": "[TILT_DIRECTION_ANY] 방향으로 기울어졌는가?",
         "description": "whether the tilt sensor is tilted"
     },
-    "wedo2.motorDirection.backward": {
-        "message": "저쪽",
-        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.forward": {
-        "message": "이쪽",
-        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.reverse": {
-        "message": "반대쪽",
-        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.a": {
-        "message": "모터 A",
-        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.all": {
-        "message": "모든 모터",
-        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.b": {
-        "message": "모터 B",
-        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.default": {
-        "message": "모터",
-        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
-    },
     "wedo2.motorOff": {
         "message": "[MOTOR_ID] 끄기",
         "description": "turn a motor off"
@@ -578,26 +554,6 @@
     "wedo2.startMotorPower": {
         "message": "[MOTOR_ID] 모터 강도를 [POWER]로 정하기",
         "description": "set the motor's power and turn it on"
-    },
-    "wedo2.tiltDirection.any": {
-        "message": "아무",
-        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.down": {
-        "message": "아래쪽",
-        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.left": {
-        "message": "왼쪽",
-        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.right": {
-        "message": "오른쪽",
-        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.up": {
-        "message": "위쪽",
-        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "거리 [OP] [REFERENCE] 일 때",

@@ -595,9 +595,9 @@
         "message": "لهذا الكائن فقط",
         "description": "Option message when creating a varaible for making it only available to the current sprite"
     },
-    "gui.gui.variablePrompt": {
-        "message": "مزيد من الخيارات",
-        "description": "Dropdown message for variable/list options"
+    "gui.gui.cloudVariableOption": {
+        "message": "متغير سحابي (مخزّن على المخدّم)",
+        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
     },
     "gui.gui.variablePromptAllSpritesMessage": {
         "message": "سيكون هذا المتغير متاحًا لجميع النقوش المتحركة.",
@@ -914,6 +914,14 @@
     "gui.alerts.creating": {
         "message": "الإنشاء جارٍ...",
         "description": "Message indicating that project is in process of creating"
+    },
+    "gui.alerts.creatingError": {
+        "message": "Could not create the project. Please try again!",
+        "description": "Message indicating that project could not be created"
+    },
+    "gui.alerts.savingError": {
+        "message": "Could not save the project. Please try again!",
+        "description": "Message indicating that project could not be saved"
     },
     "gui.alerts.savesuccess": {
         "message": "Successfully saved.",
@@ -1420,8 +1428,8 @@
         "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
     },
     "gui.opcodeLabels.dayofweek": {
-        "message": "يوم من الاسبوع",
-        "description": "Label for the current dayofweek monitor when shown on the stage"
+        "message": "يوم الأسبوع",
+        "description": "Label for the current day of week monitor when shown on the stage"
     },
     "gui.opcodeLabels.hour": {
         "message": "الساعة",

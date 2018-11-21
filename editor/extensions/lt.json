@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Skaityti tekstą",
-        "description": "Name of extension that adds speech recognition blocks."
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
         "message": "paklausyti ir laukti",
@@ -415,9 +415,9 @@
         "message": "kai išgirstu [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.alto": {
-        "message": "alto balsas",
-        "description": "Name for a voice with ambiguous gender."
+    "text2speech.defaultTextToSpeak": {
+        "message": "sveiki",
+        "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
         "message": "milžino balsas",
@@ -426,6 +426,14 @@
     "text2speech.kitten": {
         "message": "kačiukas",
         "description": "A baby cat."
+    },
+    "text2speech.max": {
+        "message": "Max",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.quinn": {
+        "message": "Quinn",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "keisti kalbą į [LANGUAGE]",
@@ -442,10 +450,6 @@
     "text2speech.squeak": {
         "message": "cyptelėjimas",
         "description": "Name for a funny voice with a high pitch."
-    },
-    "text2speech.tenor": {
-        "message": "tenoro balsas",
-        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Išversti",
@@ -523,34 +527,6 @@
         "message": "ar paversta [TILT_DIRECTION_ANY]?",
         "description": "whether the tilt sensor is tilted"
     },
-    "wedo2.motorDirection.backward": {
-        "message": "šen",
-        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.forward": {
-        "message": "ten",
-        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.reverse": {
-        "message": "atbulai",
-        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.a": {
-        "message": "variklis A",
-        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.all": {
-        "message": "visi varikliai",
-        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.b": {
-        "message": "variklis B",
-        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.default": {
-        "message": "variklis",
-        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
-    },
     "wedo2.motorOff": {
         "message": "išjungti [MOTOR_ID]",
         "description": "turn a motor off"
@@ -578,26 +554,6 @@
     "wedo2.startMotorPower": {
         "message": "keisti [MOTOR_ID] jėgą į [POWER]",
         "description": "set the motor's power and turn it on"
-    },
-    "wedo2.tiltDirection.any": {
-        "message": "bet kuris",
-        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.down": {
-        "message": "žemyn",
-        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.left": {
-        "message": "kairėn",
-        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.right": {
-        "message": "dešinėn",
-        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.up": {
-        "message": "aukštyn",
-        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "kai atstumas [OP] [REFERENCE]",

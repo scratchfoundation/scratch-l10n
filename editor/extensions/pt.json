@@ -401,7 +401,7 @@
     },
     "speech.extensionName": {
         "message": "Converter Fala para Texto",
-        "description": "Name of extension that adds speech recognition blocks."
+        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
     },
     "speech.listenAndWait": {
         "message": "ouve e espera",
@@ -415,9 +415,9 @@
         "message": "Quando eu ouvir [PHRASE]",
         "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
     },
-    "text2speech.alto": {
-        "message": "alto",
-        "description": "Name for a voice with ambiguous gender."
+    "text2speech.defaultTextToSpeak": {
+        "message": "olá",
+        "description": "hello: the default text to speak"
     },
     "text2speech.giant": {
         "message": "gigante",
@@ -426,6 +426,14 @@
     "text2speech.kitten": {
         "message": "gatinho",
         "description": "A baby cat."
+    },
+    "text2speech.max": {
+        "message": "alex",
+        "description": "Name for a voice with ambiguous gender."
+    },
+    "text2speech.quinn": {
+        "message": "luca",
+        "description": "Name for a voice with ambiguous gender."
     },
     "text2speech.setLanguageBlock": {
         "message": "altera a língua para [LANGUAGE]",
@@ -442,10 +450,6 @@
     "text2speech.squeak": {
         "message": "guincho",
         "description": "Name for a funny voice with a high pitch."
-    },
-    "text2speech.tenor": {
-        "message": "tenor",
-        "description": "Name for a voice with ambiguous gender."
     },
     "translate.categoryName": {
         "message": "Traduzir",
@@ -523,34 +527,6 @@
         "message": "está inclinado [TILT_DIRECTION_ANY]",
         "description": "whether the tilt sensor is tilted"
     },
-    "wedo2.motorDirection.backward": {
-        "message": "para ali",
-        "description": "label for backward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.forward": {
-        "message": "para aqui",
-        "description": "label for forward element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorDirection.reverse": {
-        "message": "para trás",
-        "description": "label for reverse element in motor direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.a": {
-        "message": "o motor A",
-        "description": "label for motor A element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.all": {
-        "message": "todos os motores",
-        "description": "label for all motors element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.b": {
-        "message": "o motor B",
-        "description": "label for motor B element in motor menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.motorId.default": {
-        "message": "o motor",
-        "description": "label for motor element in motor menu for LEGO WeDo 2 extension"
-    },
     "wedo2.motorOff": {
         "message": "desliga [MOTOR_ID]",
         "description": "turn a motor off"
@@ -578,26 +554,6 @@
     "wedo2.startMotorPower": {
         "message": "altera a potência de [MOTOR_ID] para [POWER]",
         "description": "set the motor's power and turn it on"
-    },
-    "wedo2.tiltDirection.any": {
-        "message": "para qualquer lado",
-        "description": "label for any element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.down": {
-        "message": "para baixo",
-        "description": "label for down element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.left": {
-        "message": "para a esquerda",
-        "description": "label for left element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.right": {
-        "message": "para a direita",
-        "description": "label for right element in tilt direction menu for LEGO WeDo 2 extension"
-    },
-    "wedo2.tiltDirection.up": {
-        "message": "para cima",
-        "description": "label for up element in tilt direction menu for LEGO WeDo 2 extension"
     },
     "wedo2.whenDistance": {
         "message": "Quando a distância for [OP] [REFERENCE]",
