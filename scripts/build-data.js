@@ -48,52 +48,22 @@ const MSGS_DIR = './locales/';
 mkdirpSync(MSGS_DIR);
 let missingLocales = [];
 
-// generate messages for gui components - files are Chrome i18n format json
-let components = ['interface', 'extensions', 'paint-editor'];
-let editorMsgs = {};
-components.forEach((component) => {
-    let messages = Object.keys(locales).reduce((collection, lang) => {
-        let langMessages = {};
+const combineJson = (component) => {
+    return Object.keys(locales).reduce((collection, lang) => {
         try {
             let langData = JSON.parse(
                 fs.readFileSync(path.resolve('editor', component, lang + '.json'), 'utf8')
             );
-            Object.keys(langData).forEach((id) => {
-                langMessages[id] = langData[id].message;
-            });
-            collection[lang] = langMessages;
+            collection[lang] = langData;
         } catch (e) {
-            missingLocales.push(lang);
+            missingLocales.push(component + ':' + lang + '\n');
         }
         return collection;
     }, {});
-    
-    let data =
-        '// GENERATED FILE:\n' +
-        'export default ' +
-        JSON.stringify(messages, null, 2) +
-        ';\n';
-    fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
-    defaultsDeep(editorMsgs, messages);
-
-    if (missingLocales.length > 0) {
-        process.stdout.write('missing locales: ' + missingLocales.toString());
-        process.exit(1);
-    }
-});
+};
 
 // generate the blocks messages: files are plain key-value JSON
-let blocksMessages = Object.keys(locales).reduce((collection, lang) => {
-    try {
-        let langData = JSON.parse(
-            fs.readFileSync(path.resolve('editor', 'blocks', lang + '.json'), 'utf8')
-        );
-        collection[lang] = langData;
-    } catch (e) {
-        missingLocales.push(lang);
-    }
-    return collection;
-}, {});
+let blocksMessages = combineJson('blocks');
 let blockData =
     '// GENERATED FILE:\n' +
     'export default ' +
@@ -102,6 +72,20 @@ let blockData =
 
 fs.writeFileSync(MSGS_DIR + 'blocks-msgs.js', blockData);
 
+// generate messages for gui components - all files are plain key-value JSON
+let components = ['interface', 'extensions', 'paint-editor'];
+let editorMsgs = {};
+components.forEach((component) => {
+    let messages = combineJson(component);
+    let data =
+        '// GENERATED FILE:\n' +
+        'export default ' +
+        JSON.stringify(messages, null, 2) +
+        ';\n';
+    fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data);
+    defaultsDeep(editorMsgs, messages);
+});
+
 // generate combined editor-msgs file
 let editorData =
     '// GENERATED FILE:\n' +
@@ -109,3 +93,8 @@ let editorData =
     JSON.stringify(editorMsgs, null, 2) +
     ';\n';
 fs.writeFileSync(MSGS_DIR + 'editor-msgs.js', editorData);
+
+if (missingLocales.length > 0) {
+    process.stdout.write('missing locales:\n' + missingLocales.toString());
+    process.exit(1);
+}

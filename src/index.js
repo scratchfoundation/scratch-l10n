@@ -43,7 +43,7 @@ import uk from 'react-intl/locale-data/uk';
 import vi from 'react-intl/locale-data/vi';
 import zh from 'react-intl/locale-data/zh';
 
-import locales, {customLocales, isRtl} from './supported-locales.js';
+import locales, {customLocales, localeMap, isRtl} from './supported-locales.js';
 /*
 locales = {
     'ab': {name: 'Аҧсшәа'},
@@ -127,6 +127,7 @@ for (const lang in customLocales) {
 
 export {
     locales as default,
+    localeMap,
     isRtl,
     localeData // data expected for initializing ReactIntl.addLocaleData
 };

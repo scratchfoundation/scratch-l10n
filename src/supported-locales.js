@@ -79,6 +79,15 @@ const customLocales = {
     }
 };
 
+const localeMap = {
+    'aa-dj': 'aa_DJ',
+    'es-419': 'es_419',
+    // ja-Hira: no map - it's 'ja-Hira' on transifex
+    'pt-br': 'pt_BR',
+    'zh-cn': 'zh_CN',
+    'zh-tw': 'zh_TW'
+};
+
 // list of RTL locales supported, and a function to check whether a locale is RTL
 const rtlLocales = [
     'ar',
@@ -165,4 +174,4 @@ const wwwLocales = {
     'zh-tw': {name: '繁體中文'}
 };
 
-export {locales as default, customLocales, rtlLocales, isRtl, wwwLocales};
+export {locales as default, customLocales, localeMap, rtlLocales, isRtl, wwwLocales};
