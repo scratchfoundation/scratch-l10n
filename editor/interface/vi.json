@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Ba lô",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Không thể tải lên ba lô",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Đang tải ...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Nhiều hơn",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Ba lô trống",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Trình duyệt web không hỗ trợ",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Chúng tôi rất tiếc, nhưng Scratch 3.0 không hỗ trợ trình duyệt Internet Explorer, Vivaldi, Opera or Silk. Chúng tôi khuyên bạn sử dụng một trình duyệt mới hơn như là Google Chrome, Mozilla Firefox, hoặc Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Trở về",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Những câu hỏi thường gặp",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Chụp ảnh ",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Đang tải Máy ảnh",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Chúng tôi cần được cấp quyền sử dụng máy ảnh",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Chụp lại ảnh",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Lưu",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Chụp ảnh ",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Đang tải ...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "cho phép sử dụng Máy ảnh",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Hướng dẫn",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Đóng",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Thêm nhiều thứ nữa để thử!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Xem thêm",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Đừng lo, chúng tôi làm việc với tính năng này {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Sắp có...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Chúng tôi đang làm việc với tính năng này {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Không tìm thấy thiết bị nào",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Đặt thiết bị của bạn ở gần, và bắt đầu tìm kiếm.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Bấm nút trên thiết bị của bạn",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Bắt đầu tìm kiếm",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Đang tìm kiếm...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Thử lại",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Đã kết nối",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Ngắt kết nối",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Đi đến trình biên tập",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Đang kết nối...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Ôi, có vấn đề gì đó xảy ra.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Thử lại",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Trợ giúp",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Tên thiết bị",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Kết nối",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Đang tìm kiếm thiết bị",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Không tìm thấy thiết bị nào",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Chọn thiết bị của bạn trong danh sách phía trên",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Làm mới",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Hãy chắc chắn rằng bạn đã cài và chạy Scratch Link",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Hãy kiểm tra kết nối Bluetooth bật hay chưa",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Thử lại",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Trợ giúp",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Đi",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Dừng lại",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Oops! Có vấn đề xảy ra.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Chúng tôi rất xin lỗi, nhưng có vẻ như Scratch đã gặp vấn đề. Lỗi này đã được thông báo đến đội ngũ của Scratch. Hãy thử tải lại trang của bạn",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Tải lại",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Tạo một khối",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Thêm dữ liệu đầu vào",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "số hay chữ",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Thêm dữ liệu đầu vào",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "điều kiện",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Thêm nhãn",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Chạy mà không làm mới màn hình",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Hủy",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Hướng di chuyển",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Xung quanh",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Trái/Phải",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Không quay",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Thêm phần mở rộng",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "code",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Phông nền",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Thiết kế",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Âm thanh",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Xem một dự án Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Nhập địa chỉ của một trong các dự án Scratch mà bạn đã chia sẻ. Các thay đổi được tạo ra ở bản 3.0 Beta sẽ không được lưu.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Nhập một đường dẫn tới một trong những dự án Scratch đã được chia sẻ của bạn. Những thay đổi tại ra trong bản 3.0 xem trước này sẽ không được lưu lại.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Ồ không, liên kết hay id dự án này dường như không đúng.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Xem",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Trở vè",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Những câu hỏi thường gặp",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Xuất hiện sớm",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Tìm kiếm",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Tất cả",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Tạo ra các khối ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Đang tải đối tượng",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Tải âm thanh ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Đang tải phần mở rộng",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "bầy mèo ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Đang tải trí tuệ của bạn ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Đang tải nhân vật ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Chuân bị emoji...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Đang tải dự án",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Trang cá nhân",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Chương trình của tôi",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Các lớp học của tôi",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Lớp học của tôi",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Thiết lập tài khoản",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Đăng xuất",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Xem cộng đồng",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Tên đăng nhập",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Mật khẩu",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Đăng nhập",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Cần trợ giúp?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "chọn ngôn ngữ",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Hướng dẫn",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Khôi phục đối tượng",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Khôi phục âm thanh",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Khôi phục hình dạng",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Khôi phục",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Lưu bây giờ",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Lưu bản sao ",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Phối lại",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Mới",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Tập tin",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Nạp từ máy tính",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Lưu về máy tính",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Chỉnh sửa",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Tắt chế độ Turbo",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Bật chế độ Turbo",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Tham gia Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Đăng nhập",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Cung cấp phản hồi",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Đề tên ở đây",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Đã chia sẻ",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Chia sẻ",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Trợ giúp",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Trở về",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "chế độ đọc bình thường",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "chế độ đọc lớn",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "thanh trượt",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Thủ Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Chào mừng đến với Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "không phải bây giờ",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Thử nào",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Xem dự án phiên bản 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Chào mừng đến với Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Chúng tôi đang làm việc cho phiên bản tiếp theo của Scratch. Chúng tôi rất mong các bạn sẽ sử dụng thử!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "không phải bây giờ",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Thử ngay! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Xem dự án phiên bản 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Để học thêm nhiều nữa, bấm chọn {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Những câu hỏi thường gặp",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Cho tất cả đối tượng",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Chỉ đối tượng này",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Biến số (lưu tại máy chủ)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Biến này sẽ có sẵn cho tất cả đối tượng.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Hủy",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Dừng lại",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Chơi",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Đang tải ...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Lưu",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "thu âm lại",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Thu lại âm thanh ",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Ghi lại",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Âm thanh",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Chơi",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Dừng lại",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "thu gọn ",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Lưu",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Hoàn tác",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Làm lại ",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Nhanh hơn",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "chậm hơn",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Tiếng vang",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "To hơn",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "nhẹ hơn",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Đảo ngược",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Tên",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Đối tượng",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Xuất hiện",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Kích thước ",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "nhân bản",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "xoá",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "xuất ra",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Chọn một Đối tượng",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Vẽ",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Bất ngờ",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Tải đối tượng lên",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Chuyển qua sân khấu lớn",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Chuyển sang phông nền nhỏ",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Chuyển đến chế độ toàn màn hình",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Thoát toàn màn hình",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "điều khiển toàn màn hình",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Chọn một Phông nền",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Vẽ",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Bất ngờ",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Tải lên ảnh nền",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Sân khấu",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Phông nền",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Chế độ Turbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Trình duyệt của bạn không hỗ trợ WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Có vẻ như tình duyệt của bạn hoặc máy tính {webGlLink}. Công nghệ mới này cần thiết để vận hành Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "không hỗ trợ WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Trở về",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Để biết thêm chi tiết, đi đến {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Những câu hỏi thường gặp",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Chọn một Phông nền",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Chọn một thiết kế",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Chọn một Phông nền",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "thay đổi trang phục ",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Vẽ",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Bất ngờ",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Tải lên ảnh nề",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "tải lên thiết kế",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Máy ảnh",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Chọn Phần mở rộng",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Thêm đường dẫn URL mở rộng",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Không thể bắt đầu thu âm",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Tải file dự án thất bại.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "chọn âm thanh ",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Tải âm thanh lên",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Bất ngờ",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Ghi lại",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "chọn âm thanh ",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Chọn một Đối tượng",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Chọn một bài hướng dẫn",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Đang tạo ...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Đang lưu...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meo",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "biến của tôi",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Bắt đầu",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Thêm một khối di chuyển",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Bấm vào cờ xanh để bắt đầu",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Nói gì đó",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Thêm vào Ảnh nền",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Thay đổi Màu sắc",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Xoay vòng",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Nói gì đó",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Trượt xung quanh",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Làm tên chuyển động",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Thêm một đối tượng là chữ cái",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Phát âm thanh khi bấm vào",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Thêm một đối tượng là chữ cái khác",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Thay đổi màu",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Thêm một đối tượng là chữ cái khác và làm cho nó quay",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Thêm đối tượng chữ cái khác & làm nó lớn lên",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Sáng tác âm nhạc",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Thêm một đối tượng là nhạc cụ",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Phát âm thanh khi được nhấn vào",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Tạo ra một bài hát",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Chọn trống & tạo nhịp điệu",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Chọn nhân vật Máy thu âm và Beatbox Ngạc nhiên",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Tạo một trò chơi Bấm và bấm",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Chọn một đối tượng",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Phát âm thanh khi được nhấn vào",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Thêm biến Điểm",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Khi được nhấn, tăng điểm số lên",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Đi đến vị trí ngẫu nhiên",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Thay đổi Màu sắc",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Đặt lại điểm",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Làm trò chơi đuổi bắt",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Thêm vào Ảnh nền",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Thêm một Đối tượng",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Di chuyển sang trái và phải bằng phím mũi tên",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Di chuyển lên xuống bằng phím mũi tên",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Thêm đối tượng khác",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Di chuyển một cách ngẫu nhiên",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Trong đối tượng con bạch tuộc, khi chạm vào phát âm thanh",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Thêm biến Điểm",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Trong đối tượng con bạch tuộc, khi chạm vào ghi thêm điểm",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Thêm một Đối tượng",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Thêm một Đối tượng",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Thêm vào Ảnh nền",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Thay đổi kích thước",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Trượt xung quanh",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Ghi lại âm thanh",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Làm nó Xoay",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Ẩn và hiện",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Tạo hiệu ứng chuyển động cho đối tượng",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Dùng các phím mũi tên",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Thêm Hiệu ứng",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Âm nhạc",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Chơi nhạc cụ và trống",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Bút vẽ",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Vẽ bằng đối tượng của bạn.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Cảm biến Video",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Nhận diện chuyển động với máy ảnh",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Dịch",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Dịch văn bản ra nhiều ngôn ngữ.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Kết nối dự án của bạn với thế giới.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Đang kết nối",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Làm những con rô-bốt tương tác và hơn thế nữa.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Đang kết nối. Hãy chắc chắn rằng mã PIN trên EV3 của bạn là 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Xây dựng với mô-tơ và cảm biến.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Đang kết nối",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Tất cả",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Động vật",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Khiêu vũ",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Hiệu ứng",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Tưởng tượng",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Thời trang",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Trong nhà",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Âm nhạc",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Các lưu ý",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Ngoài trời",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Con người",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Bộ gõ",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Khoảng trắng",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Thể thao",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Dưới nước",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Phim hoạt hình",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Nghệ thuật",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Trò chơi",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Những câu chuyện",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Ký tự",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "hướng",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "hoành độ",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "tung độ",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "kích thước",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "tên thiết kế",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "tên phông nền",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "âm lượng",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "nhịp độ",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "trả lời",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "độ ồn",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "tên đăng nhập",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "năm",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "tháng",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "ngày",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "ngày trong tuần",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "giờ",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "phút",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "giây",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "đồng hồ bấm giờ",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Ba lô",
+    "gui.backpack.errorBackpack": "Không thể tải lên ba lô",
+    "gui.backpack.loadingBackpack": "Đang tải ...",
+    "gui.backpack.more": "Nhiều hơn",
+    "gui.backpack.emptyBackpack": "Ba lô trống",
+    "gui.unsupportedBrowser.label": "Trình duyệt web không hỗ trợ",
+    "gui.unsupportedBrowser.description": "Chúng tôi rất tiếc, nhưng Scratch 3.0 không hỗ trợ trình duyệt Internet Explorer, Vivaldi, Opera or Silk. Chúng tôi khuyên bạn sử dụng một trình duyệt mới hơn như là Google Chrome, Mozilla Firefox, hoặc Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Trở về",
+    "gui.unsupportedBrowser.previewfaq": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Những câu hỏi thường gặp",
+    "gui.cameraModal.cameraModalTitle": "Chụp ảnh ",
+    "gui.cameraModal.loadingCameraMessage": "Đang tải Máy ảnh",
+    "gui.cameraModal.permissionRequest": "Chúng tôi cần được cấp quyền sử dụng máy ảnh",
+    "gui.cameraModal.retakePhoto": "Chụp lại ảnh",
+    "gui.cameraModal.save": "Lưu",
+    "gui.cameraModal.takePhoto": "Chụp ảnh ",
+    "gui.cameraModal.loadingCaption": "Đang tải ...",
+    "gui.cameraModal.enableCameraCaption": "cho phép sử dụng Máy ảnh",
+    "gui.cards.all-tutorials": "Hướng dẫn",
+    "gui.cards.close": "Đóng",
+    "gui.cards.more-things-to-try": "Thêm nhiều thứ nữa để thử!",
+    "gui.cards.see-more": "Xem thêm",
+    "gui.comingSoon.message1": "Đừng lo, chúng tôi làm việc với tính năng này {emoji}",
+    "gui.comingSoon.message2": "Sắp có...",
+    "gui.comingSoon.message3": "Chúng tôi đang làm việc với tính năng này {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Không tìm thấy thiết bị nào",
+    "gui.connection.auto-scanning.prescan": "Đặt thiết bị của bạn ở gần, và bắt đầu tìm kiếm.",
+    "gui.connection.auto-scanning.pressbutton": "Bấm nút trên thiết bị của bạn",
+    "gui.connection.auto-scanning.start-search": "Bắt đầu tìm kiếm",
+    "gui.connection.connecting-searchbutton": "Đang tìm kiếm...",
+    "gui.connection.auto-scanning.try-again": "Thử lại",
+    "gui.connection.connected": "Đã kết nối",
+    "gui.connection.disconnect": "Ngắt kết nối",
+    "gui.connection.go-to-editor": "Đi đến trình biên tập",
+    "gui.connection.connecting-cancelbutton": "Đang kết nối...",
+    "gui.connection.error.errorMessage": "Ôi, có vấn đề gì đó xảy ra.",
+    "gui.connection.error.tryagainbutton": "Thử lại",
+    "gui.connection.error.helpbutton": "Trợ giúp",
+    "gui.connection.peripheral-name-label": "Tên thiết bị",
+    "gui.connection.connect": "Kết nối",
+    "gui.connection.scanning.lookingforperipherals": "Đang tìm kiếm thiết bị",
+    "gui.connection.scanning.noPeripheralsFound": "Không tìm thấy thiết bị nào",
+    "gui.connection.scanning.instructions": "Chọn thiết bị của bạn trong danh sách phía trên",
+    "gui.connection.search": "Làm mới",
+    "gui.connection.unavailable.installscratchlink": "Hãy chắc chắn rằng bạn đã cài và chạy Scratch Link",
+    "gui.connection.unavailable.enablebluetooth": "Hãy kiểm tra kết nối Bluetooth bật hay chưa",
+    "gui.connection.unavailable.tryagainbutton": "Thử lại",
+    "gui.connection.unavailable.helpbutton": "Trợ giúp",
+    "gui.controls.go": "Đi",
+    "gui.controls.stop": "Dừng lại",
+    "gui.crashMessage.label": "Oops! Có vấn đề xảy ra.",
+    "gui.crashMessage.description": "Chúng tôi rất xin lỗi, nhưng có vẻ như Scratch đã gặp vấn đề. Lỗi này đã được thông báo đến đội ngũ của Scratch. Hãy thử tải lại trang của bạn",
+    "gui.crashMessage.reload": "Tải lại",
+    "gui.customProcedures.myblockModalTitle": "Tạo một khối",
+    "gui.customProcedures.addAnInputNumberText": "Thêm dữ liệu đầu vào",
+    "gui.customProcedures.numberTextType": "số hay chữ",
+    "gui.customProcedures.addAnInputBoolean": "Thêm dữ liệu đầu vào",
+    "gui.customProcedures.booleanType": "điều kiện",
+    "gui.customProcedures.addALabel": "Thêm nhãn",
+    "gui.customProcedures.runWithoutScreenRefresh": "Chạy mà không làm mới màn hình",
+    "gui.customProcedures.cancel": "Hủy",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Hướng di chuyển",
+    "gui.directionPicker.rotationStyles.allAround": "Xung quanh",
+    "gui.directionPicker.rotationStyles.leftRight": "Trái/Phải",
+    "gui.directionPicker.rotationStyles.dontRotate": "Không quay",
+    "gui.gui.addExtension": "Thêm phần mở rộng",
+    "gui.gui.codeTab": "code",
+    "gui.gui.backdropsTab": "Phông nền",
+    "gui.gui.costumesTab": "Thiết kế",
+    "gui.gui.soundsTab": "Âm thanh",
+    "gui.importInfo.title": "Xem một dự án Scratch 2.0",
+    "gui.importInfo.betamessage": "Nhập địa chỉ của một trong các dự án Scratch mà bạn đã chia sẻ. Các thay đổi được tạo ra ở bản 3.0 Beta sẽ không được lưu.",
+    "gui.importInfo.message": "Nhập một đường dẫn tới một trong những dự án Scratch đã được chia sẻ của bạn. Những thay đổi tại ra trong bản 3.0 xem trước này sẽ không được lưu lại.",
+    "gui.importInfo.invalidFormatError": "Ồ không, liên kết hay id dự án này dường như không đúng.",
+    "gui.importModal.viewproject": "Xem",
+    "gui.importInfo.goback": "Trở vè",
+    "gui.importInfo.previewfaq": "Để biết thêm chi tiết, truy cập {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Những câu hỏi thường gặp",
+    "gui.extensionLibrary.comingSoon": "Xuất hiện sớm",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Tìm kiếm",
+    "gui.library.allTag": "Tất cả",
+    "gui.loader.message1": "Tạo ra các khối ...",
+    "gui.loader.message2": "Đang tải đối tượng",
+    "gui.loader.message3": "Tải âm thanh ...",
+    "gui.loader.message4": "Đang tải phần mở rộng",
+    "gui.loader.message5": "bầy mèo ...",
+    "gui.loader.message6": "Đang tải trí tuệ của bạn ...",
+    "gui.loader.message7": "Đang tải nhân vật ...",
+    "gui.loader.message8": "Chuân bị emoji...",
+    "gui.loader.headline": "Đang tải dự án",
+    "gui.accountMenu.profile": "Trang cá nhân",
+    "gui.accountMenu.myStuff": "Chương trình của tôi",
+    "gui.accountMenu.myClasses": "Các lớp học của tôi",
+    "gui.accountMenu.myClass": "Lớp học của tôi",
+    "gui.accountMenu.accountSettings": "Thiết lập tài khoản",
+    "gui.accountMenu.signOut": "Đăng xuất",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Xem cộng đồng",
+    "general.username": "Tên đăng nhập",
+    "general.password": "Mật khẩu",
+    "general.signIn": "Đăng nhập",
+    "login.needHelp": "Cần trợ giúp?",
+    "gui.menuBar.LanguageSelector": "chọn ngôn ngữ",
+    "gui.menuBar.tutorialsLibrary": "Hướng dẫn",
+    "gui.menuBar.restoreSprite": "Khôi phục đối tượng",
+    "gui.menuBar.restoreSound": "Khôi phục âm thanh",
+    "gui.menuBar.restoreCostume": "Khôi phục hình dạng",
+    "gui.menuBar.restore": "Khôi phục",
+    "gui.menuBar.saveNow": "Lưu bây giờ",
+    "gui.menuBar.saveAsCopy": "Lưu bản sao ",
+    "gui.menuBar.remix": "Phối lại",
+    "gui.menuBar.new": "Mới",
+    "gui.menuBar.file": "Tập tin",
+    "gui.menuBar.uploadFromComputer": "Nạp từ máy tính",
+    "gui.menuBar.downloadToComputer": "Lưu về máy tính",
+    "gui.menuBar.edit": "Chỉnh sửa",
+    "gui.menuBar.turboModeOff": "Tắt chế độ Turbo",
+    "gui.menuBar.turboModeOn": "Bật chế độ Turbo",
+    "gui.menuBar.joinScratch": "Tham gia Scratch",
+    "gui.menuBar.signIn": "Đăng nhập",
+    "gui.menuBar.giveFeedback": "Cung cấp phản hồi",
+    "gui.gui.projectTitlePlaceholder": "Đề tên ở đây",
+    "gui.menuBar.isShared": "Đã chia sẻ",
+    "gui.menuBar.share": "Chia sẻ",
+    "gui.modal.help": "Trợ giúp",
+    "gui.modal.back": "Trở về",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "chế độ đọc bình thường",
+    "gui.monitor.contextMenu.large": "chế độ đọc lớn",
+    "gui.monitor.contextMenu.slider": "thanh trượt",
+    "gui.previewInfo.label": "Thủ Scratch 3.0",
+    "gui.previewInfo.welcome": "Chào mừng đến với Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "không phải bây giờ",
+    "gui.previewModal.tryittooltip": "Thử nào",
+    "gui.previewModal.viewprojecttooltip": "Xem dự án phiên bản 2.0",
+    "gui.previewInfo.betawelcome": "Chào mừng đến với Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Chúng tôi đang làm việc cho phiên bản tiếp theo của Scratch. Chúng tôi rất mong các bạn sẽ sử dụng thử!",
+    "gui.previewInfo.notnow": "không phải bây giờ",
+    "gui.previewModal.tryit": "Thử ngay! {caticon}",
+    "gui.previewModal.viewproject": "Xem dự án phiên bản 2.0",
+    "gui.previewInfo.previewfaq": "Để học thêm nhiều nữa, bấm chọn {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Những câu hỏi thường gặp",
+    "gui.gui.variableScopeOptionAllSprites": "Cho tất cả đối tượng",
+    "gui.gui.variableScopeOptionSpriteOnly": "Chỉ đối tượng này",
+    "gui.gui.cloudVariableOption": "Biến số (lưu tại máy chủ)",
+    "gui.gui.variablePromptAllSpritesMessage": "Biến này sẽ có sẵn cho tất cả đối tượng.",
+    "gui.prompt.cancel": "Hủy",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Dừng lại",
+    "gui.playbackStep.playMsg": "Chơi",
+    "gui.playbackStep.loadingMsg": "Đang tải ...",
+    "gui.playbackStep.saveMsg": "Lưu",
+    "gui.playbackStep.reRecordMsg": "thu âm lại",
+    "gui.recordModal.title": "Thu lại âm thanh ",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Ghi lại",
+    "gui.soundEditor.sound": "Âm thanh",
+    "gui.soundEditor.play": "Chơi",
+    "gui.soundEditor.stop": "Dừng lại",
+    "gui.soundEditor.trim": "thu gọn ",
+    "gui.soundEditor.save": "Lưu",
+    "gui.soundEditor.undo": "Hoàn tác",
+    "gui.soundEditor.redo": "Làm lại ",
+    "gui.soundEditor.faster": "Nhanh hơn",
+    "gui.soundEditor.slower": "chậm hơn",
+    "gui.soundEditor.echo": "Tiếng vang",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "To hơn",
+    "gui.soundEditor.softer": "nhẹ hơn",
+    "gui.soundEditor.reverse": "Đảo ngược",
+    "gui.SpriteInfo.spritePlaceholder": "Tên",
+    "gui.SpriteInfo.sprite": "Đối tượng",
+    "gui.SpriteInfo.show": "Xuất hiện",
+    "gui.SpriteInfo.size": "Kích thước ",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "nhân bản",
+    "gui.spriteSelectorItem.contextMenuDelete": "xoá",
+    "gui.spriteSelectorItem.contextMenuExport": "xuất ra",
+    "gui.spriteSelector.addSpriteFromLibrary": "Chọn một Đối tượng",
+    "gui.spriteSelector.addSpriteFromPaint": "Vẽ",
+    "gui.spriteSelector.addSpriteFromSurprise": "Bất ngờ",
+    "gui.spriteSelector.addSpriteFromFile": "Tải đối tượng lên",
+    "gui.stageHeader.stageSizeLarge": "Chuyển qua sân khấu lớn",
+    "gui.stageHeader.stageSizeSmall": "Chuyển sang phông nền nhỏ",
+    "gui.stageHeader.stageSizeFull": "Chuyển đến chế độ toàn màn hình",
+    "gui.stageHeader.stageSizeUnFull": "Thoát toàn màn hình",
+    "gui.stageHeader.fullscreenControl": "điều khiển toàn màn hình",
+    "gui.spriteSelector.addBackdropFromLibrary": "Chọn một Phông nền",
+    "gui.stageSelector.addBackdropFromPaint": "Vẽ",
+    "gui.stageSelector.addBackdropFromSurprise": "Bất ngờ",
+    "gui.stageSelector.addBackdropFromFile": "Tải lên ảnh nền",
+    "gui.stageSelector.stage": "Sân khấu",
+    "gui.stageSelector.backdrops": "Phông nền",
+    "gui.turboMode.active": "Chế độ Turbo",
+    "gui.webglModal.label": "Trình duyệt của bạn không hỗ trợ WebGL",
+    "gui.webglModal.description": "Có vẻ như tình duyệt của bạn hoặc máy tính {webGlLink}. Công nghệ mới này cần thiết để vận hành Scratch 3.0.",
+    "gui.webglModal.webgllink": "không hỗ trợ WebGL",
+    "gui.webglModal.back": "Trở về",
+    "gui.webglModal.previewfaq": "Để biết thêm chi tiết, đi đến {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Những câu hỏi thường gặp",
+    "gui.costumeLibrary.chooseABackdrop": "Chọn một Phông nền",
+    "gui.costumeLibrary.chooseACostume": "Chọn một thiết kế",
+    "gui.costumeTab.addBackdropFromLibrary": "Chọn một Phông nền",
+    "gui.costumeTab.addCostumeFromLibrary": "thay đổi trang phục ",
+    "gui.costumeTab.addBlankCostume": "Vẽ",
+    "gui.costumeTab.addSurpriseCostume": "Bất ngờ",
+    "gui.costumeTab.addFileBackdrop": "Tải lên ảnh nề",
+    "gui.costumeTab.addFileCostume": "tải lên thiết kế",
+    "gui.costumeTab.addCameraCostume": "Máy ảnh",
+    "gui.extensionLibrary.chooseAnExtension": "Chọn Phần mở rộng",
+    "gui.extensionLibrary.extensionUrl": "Thêm đường dẫn URL mở rộng",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Không thể bắt đầu thu âm",
+    "gui.projectLoader.loadError": "Tải file dự án thất bại.",
+    "gui.soundLibrary.chooseASound": "chọn âm thanh ",
+    "gui.soundTab.fileUploadSound": "Tải âm thanh lên",
+    "gui.soundTab.surpriseSound": "Bất ngờ",
+    "gui.soundTab.recordSound": "Ghi lại",
+    "gui.soundTab.addSoundFromLibrary": "chọn âm thanh ",
+    "gui.spriteLibrary.chooseASprite": "Chọn một Đối tượng",
+    "gui.tipsLibrary.tutorials": "Chọn một bài hướng dẫn",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Đang tạo ...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Đang lưu...",
+    "gui.defaultProject.meow": "Meo",
+    "gui.defaultProject.variable": "biến của tôi",
+    "gui.howtos.intro-move-sayhello-hat.name": "Bắt đầu",
+    "gui.howtos.intro-move.step_stepMove": "Thêm một khối di chuyển",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Bấm vào cờ xanh để bắt đầu",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Nói gì đó",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Thêm vào Ảnh nền",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Thay đổi Màu sắc",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Xoay vòng",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Nói gì đó",
+    "gui.howtos.cartoon-network.step_CNglide": "Trượt xung quanh",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Keep Score",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Làm tên chuyển động",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Thêm một đối tượng là chữ cái",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Phát âm thanh khi bấm vào",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Thêm một đối tượng là chữ cái khác",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Thay đổi màu",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Thêm một đối tượng là chữ cái khác và làm cho nó quay",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Thêm đối tượng chữ cái khác & làm nó lớn lên",
+    "gui.howtos.make-music.name": "Sáng tác âm nhạc",
+    "gui.howtos.Make-Music.step_PickInstrument": "Thêm một đối tượng là nhạc cụ",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Phát âm thanh khi được nhấn vào",
+    "gui.howtos.Make-Music.step_MakeSong": "Tạo ra một bài hát",
+    "gui.howtos.make-music.step_MakeBeat": "Chọn trống & tạo nhịp điệu",
+    "gui.howtos.make-music.step_MakeBeatBox": "Chọn nhân vật Máy thu âm và Beatbox Ngạc nhiên",
+    "gui.howtos.make-a-game.name": "Tạo một trò chơi Bấm và bấm",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Chọn một đối tượng",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Phát âm thanh khi được nhấn vào",
+    "gui.howtos.make-a-game.step_GameAddScore": "Thêm biến Điểm",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Khi được nhấn, tăng điểm số lên",
+    "gui.howtos.make-a-game.step_Random": "Đi đến vị trí ngẫu nhiên",
+    "gui.howtos.make-music.step_GameChangeColor": "Thay đổi Màu sắc",
+    "gui.howtos.make-music.step_ResetScore": "Đặt lại điểm",
+    "gui.howtos.make-a-chase-game.name": "Làm trò chơi đuổi bắt",
+    "gui.howtos.Chase-Game.step_BG": "Thêm vào Ảnh nền",
+    "gui.howtos.chase-game.step_AddOcto": "Thêm một Đối tượng",
+    "gui.howtos.make-music.step_LeftRight": "Di chuyển sang trái và phải bằng phím mũi tên",
+    "gui.howtos.Chase-Game.step_UpDown": "Di chuyển lên xuống bằng phím mũi tên",
+    "gui.howtos.Chase-Game.step_AddStar": "Thêm đối tượng khác",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Di chuyển một cách ngẫu nhiên",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Trong đối tượng con bạch tuộc, khi chạm vào phát âm thanh",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Thêm biến Điểm",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Trong đối tượng con bạch tuộc, khi chạm vào ghi thêm điểm",
+    "gui.howtos.add-sprite.name": "Thêm một Đối tượng",
+    "gui.howtos.add-sprite.step_addSprite": "Thêm một Đối tượng",
+    "gui.howtos.add-a-backdrop.name": "Thêm vào Ảnh nền",
+    "gui.howtos.change-size.name": "Thay đổi kích thước",
+    "gui.howtos.glide-around.name": "Trượt xung quanh",
+    "gui.howtos.record-a-sound.name": "Ghi lại âm thanh",
+    "gui.howtos.spin-video.name": "Làm nó Xoay",
+    "gui.howtos.hide-and-show.name": "Ẩn và hiện",
+    "gui.howtos.switch-costume.name": "Tạo hiệu ứng chuyển động cho đối tượng",
+    "gui.howtos.move-around-with-arrow-keys.name": "Dùng các phím mũi tên",
+    "gui.howtos.add-effects.name": "Thêm Hiệu ứng",
+    "gui.extension.music.name": "Âm nhạc",
+    "gui.extension.music.description": "Chơi nhạc cụ và trống",
+    "gui.extension.pen.name": "Bút vẽ",
+    "gui.extension.pen.description": "Vẽ bằng đối tượng của bạn.",
+    "gui.extension.videosensing.name": "Cảm biến Video",
+    "gui.extension.videosensing.description": "Nhận diện chuyển động với máy ảnh",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Dịch",
+    "gui.extension.translate.description": "Dịch văn bản ra nhiều ngôn ngữ.",
+    "gui.extension.microbit.description": "Kết nối dự án của bạn với thế giới.",
+    "gui.extension.microbit.connectingMessage": "Đang kết nối",
+    "gui.extension.ev3.description": "Làm những con rô-bốt tương tác và hơn thế nữa.",
+    "gui.extension.ev3.connectingMessage": "Đang kết nối. Hãy chắc chắn rằng mã PIN trên EV3 của bạn là 1234.",
+    "gui.extension.wedo2.description": "Xây dựng với mô-tơ và cảm biến.",
+    "gui.extension.wedo2.connectingMessage": "Đang kết nối",
+    "gui.libraryTags.all": "Tất cả",
+    "gui.libraryTags.animals": "Động vật",
+    "gui.libraryTags.dance": "Khiêu vũ",
+    "gui.libraryTags.effects": "Hiệu ứng",
+    "gui.libraryTags.fantasy": "Tưởng tượng",
+    "gui.libraryTags.fashion": "Thời trang",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "Trong nhà",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Âm nhạc",
+    "gui.libraryTags.notes": "Các lưu ý",
+    "gui.libraryTags.outdoors": "Ngoài trời",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Con người",
+    "gui.libraryTags.percussion": "Bộ gõ",
+    "gui.libraryTags.space": "Khoảng trắng",
+    "gui.libraryTags.sports": "Thể thao",
+    "gui.libraryTags.underwater": "Dưới nước",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Phim hoạt hình",
+    "gui.libraryTags.art": "Nghệ thuật",
+    "gui.libraryTags.games": "Trò chơi",
+    "gui.libraryTags.stories": "Những câu chuyện",
+    "gui.libraryTags.letters": "Ký tự",
+    "gui.opcodeLabels.direction": "hướng",
+    "gui.opcodeLabels.xposition": "hoành độ",
+    "gui.opcodeLabels.yposition": "tung độ",
+    "gui.opcodeLabels.size": "kích thước",
+    "gui.opcodeLabels.costumename": "tên thiết kế",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "tên phông nền",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "âm lượng",
+    "gui.opcodeLabels.tempo": "nhịp độ",
+    "gui.opcodeLabels.answer": "trả lời",
+    "gui.opcodeLabels.loudness": "độ ồn",
+    "gui.opcodeLabels.username": "tên đăng nhập",
+    "gui.opcodeLabels.year": "năm",
+    "gui.opcodeLabels.month": "tháng",
+    "gui.opcodeLabels.date": "ngày",
+    "gui.opcodeLabels.dayofweek": "ngày trong tuần",
+    "gui.opcodeLabels.hour": "giờ",
+    "gui.opcodeLabels.minute": "phút",
+    "gui.opcodeLabels.second": "giây",
+    "gui.opcodeLabels.timer": "đồng hồ bấm giờ",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "pop"
 }

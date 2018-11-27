@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Återanslut",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Ryggsäck",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Problem att ladda ryggsäcken",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Laddar...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Mer",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Ryggsäcken är tom",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Webbläsaren stöds ej",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Vi beklagar, men Scratch 3.0 fungerar inte på webbläsarna Explorer, Vivaldi, Opera eller Silk. Vi rekommenderar att du provar en nyare webbläsare som Google Chrome, Mozilla Firefox eller Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Placera längst bak",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "För att läsa mer, gå till {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Ta ett foto",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Laddar kamera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Vi behöver ditt tillstånd för att använda din kamera",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Ta om foto",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Spara",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Ta foto",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Laddar...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Aktivera kameran",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Handledningar",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Stäng",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Fler saker att pröva!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Läs mera",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Det är lugnt, vi jobbar på det {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Kommer snart...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Vi jobbar på det {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Enheter saknas",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Ha din enhet i närheten, sök sedan efter den.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Tryck på knappen på din enhet.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Börja söka",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Söker...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Försök igen",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Uppkopplad",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Koppla ur",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Gå till redigeraren",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Kopplar upp...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Hoppsan, det verkar som om något gick fel.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Försök igen",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Hjälp",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Enhetens namn",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Koppla upp",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Letar efter enheter",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Enheter saknas",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Välj din enhet i ovanstående lista.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Uppdatera",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Se till att du har Scratchkopplingen installerad och igång",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Kolla så att bluetooth är igång",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Försök igen",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Hjälp",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Starta",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stoppa",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Oj! Något gick fel.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Vi ber om ursäkt men det verkar som om Scratch har kraschat. Denna bugg har automatiskt rapporterats till Scratch teamet. Var snäll och uppdatera din sida för att försöka igen.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Uppdatera",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Skapa ett block",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Lägg till en indata",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "siffror eller text",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Lägg till en indata",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boolesk",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Lägg till en etikett",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Kör utan skärmuppdatering",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Avbryt",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Riktning",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Rotera",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Vänster/Höger",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Rotera inte",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Lägg till ett tillägg",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Kod",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Bakgrunder",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Klädslar",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Ljud",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Visa ett Scratch 2.0 projekt",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Ange en länk till ett av dina delade Scratchprojekt. Ändringar som gjorts i denna 3,0 Beta sparas inte.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Skriv in en länk till ett av dina delade Scratch projekt. Ändringar som görs i denna 3.0 förhandsvisning kommer inte att sparas. ",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Oj oj, projektlänken eller id:et ser inte riktigt bra ut.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Visa",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Tillbaka",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "För att läsa mer, gå till {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Kommer snart",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Sök",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Alla",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Skapa block ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Laddar sprajtar...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Laddar ljud...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Laddar tillägg...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Samlar katter...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Överför nanos...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Förstorar gobos...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Förbereder emojis ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Laddar projekt",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Mina grejer",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Mina klasser",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Min klass",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Kontoinställningar",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Logga ut",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Visa community",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Användarnamn",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Lösenord",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Logga in",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Behöver du hjälp?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "språkväljare",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Handledningar",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Återställ sprajt",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Ta tillbaka ljud",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Ta tillbaka sprajt",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Återställ",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Spara nu",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Spara som kopia",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Remix",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nytt",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Arkiv",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Ladda upp från din dator",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Spara till din dator",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Redigera",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Stäng av turboläge",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Sätt på turboläge",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Gå med Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Logga in",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Ge feedback",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Projektets titel här",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Delade",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Dela",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Hjälp",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Tillbaka",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(tom)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "längd {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "normal avläsning",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "stor avläsning",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "reglage",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Prova Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Välkommen till Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Inte nu",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Prova på",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Visa 2.0 projekt",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Välkommen till Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Vi arbetar på nästa generation av Scratch. Vi blir glada om du vill prova!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Inte nu",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Testa! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Visa 2.0 projekt",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "För att läsa mer, gå till {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "För alla sprajtar",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Enbart för denna sprajt",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Molnvariabel (sparad på servern)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Variabeln blir tillgänglig för alla sprajtar.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Avbryt",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stoppa",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Spela upp",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Laddar...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Spara",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Spela in igen",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Spela in nytt ljud",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Klicka på knappen nedan för att starta inspelningen",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Vi behöver ditt tillstånd för att använda mikrofonen",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stoppa inspelningen",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Spela in",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Ljud",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Spela upp",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stoppa",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Trimma",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Spara",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Ångra",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Gör om",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Snabbare",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Långsammare",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Eko",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Högre",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Lägre",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Baklänges",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Namn",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprajt",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Visa",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Storlek",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "kopiera",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "radera",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exportera",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Välj en sprajt",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Måla",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Överraska",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Ladda upp sprajt",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Byt till en större scen",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Byt till en mindre scen",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Byt till fullskärmsläge",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Gå ur fullskärmsläge",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Fullskärmsläge",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Välj en bakgrund",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Måla",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Överraska",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Ladda upp bakgrund",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Scen",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Bakgrunder",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turboläge",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Din webbläsare stödjer inte WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Tyvärr verkar det som om din webbläsare eller dator {webGlLink}. Tekniken behövs för att Scratch 3.0 ska fungera.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "stödjer inte webGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Tillbaka",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "För att läsa mer, gå till {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Välj en bakgrund",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Välj en klädsel",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Välj en bakgrund",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Välj en klädsel",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Måla",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Överraska",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Ladda upp bakgrund",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Ladda upp klädsel",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Välj ett tillägg",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Skriv in en URL till tillägget",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratchprojekt",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Kunde inte starta inspelning",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Den valda projektfilen misslyckades att ladda.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Välj ett ljud",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Ladda upp ljud från fil",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Överraska",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Spela in",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Välj ett ljud",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Välj en sprajt",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Välj en handledning",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Skapar ...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Sparar...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Mjau",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "min variabel",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Kom igång",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Lägg till ett rörelseblock",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Klicka på den gröna flaggan för att starta",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Skapa animationer som kan prata",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Lägg till text i ett tal-block",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Säg någonting",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Sätt upp röst",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Flytta runt",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Lägg till en bakgrund",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Lägg till en annan figur",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Spela upp en låt",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Ändra färg",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Snurra runt",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Växa och krympa",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animera ett äventyrsspel",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Välj en figur att visa",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Säg någonting",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Glid omkring",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Välj någonting att jaga",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Samla saker",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Skapa en variabel för poäng",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Håll reda på poäng",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Levla upp: Byt bakgrund",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animera ett namn",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Välj en bokstavssprajt",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Spela ett ljud när den klickas på",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Välj en annan bokstavssprajt",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Ändra färg",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Välj en annan bokstavssprajt & låt den snurra",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Välj en annan bokstavssprajt & låt den växa",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Skapa musik",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Välj en instrumentsprajt",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Spela ljud när den klickas på",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Skapa en sång",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Välj en Trumma & Skapa en rytm",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Välj mikrofonsprajten & överaskning beatbox",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Gör ett Klicka Spel",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Välj en sprajt",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Spela ljud när den klickas på",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Skapa poängvariabel",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "När klickad på öka poängen",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Gå till en slumpmässig position",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Ändra Färg",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Nollställ Poäng",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Gör ett Jaga Spel",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Lägg till en bakgrund",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Lägg till en sprajt",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Flytta höger & vänster med piltangenterna",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Flytta uppåt & nedåt med piltangenterna",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Lägg till en ny sprajt",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Slumpmässig rörelse",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "I bläckfisksprajten, när rör vid spela ljud",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Skapa poängvariabel",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "I bläckfisksprajten, när rör vid öka poäng",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Lägg till en sprajt",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Lägg till en sprajt",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Lägg till en bakgrund",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Ändra storlek",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Glid omkring",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Spela in ett ljud",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Få den att snurra",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Göm och visa",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animera en sprajt",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Använd piltangenterna",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Lägg till effekter",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Musik",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Spela instrument och trummor.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Penna",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Låt dina sprajts rita.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Video - Känna av",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Känn av rörelse med kameran.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text till tal",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Gör så att dina projekt pratar.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Översätta",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Översätt text till många språk.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Koppla upp dina projekt med världen.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Kopplar upp",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Bygg interaktiva robotar och annat.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Kopplar upp. Kolla att pinkoden på din EV3 är satt till 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Bygg med motorer och sensorer.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Kopplar upp",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Alla",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Djur",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dansa",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Effekter",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantasy",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Mode",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Mat",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Inomhus",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loopar",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Musik",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Anteckningar",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Utomhus",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Mönster",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Människor",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Slagverk",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Rymden",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sport",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Under vatten",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Röst",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Knäppt",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animation",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Konst",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Spel",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Berättelser",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Bokstäver",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "riktning",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x position",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y position",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "storlek",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "klädselnamn",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "klädselnummer",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "bakgrundsnamn",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "bakgrundsnummer",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "volym ",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "svar",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "ljudstyrka",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "användarnamn ",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "år ",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "månad ",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "dag ",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "veckodag ",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "timmar ",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minuter ",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "sekunder ",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "timer",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backgrund{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "klädsel{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprajt{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Återanslut",
+    "gui.backpack.header": "Ryggsäck",
+    "gui.backpack.errorBackpack": "Problem att ladda ryggsäcken",
+    "gui.backpack.loadingBackpack": "Laddar...",
+    "gui.backpack.more": "Mer",
+    "gui.backpack.emptyBackpack": "Ryggsäcken är tom",
+    "gui.unsupportedBrowser.label": "Webbläsaren stöds ej",
+    "gui.unsupportedBrowser.description": "Vi beklagar, men Scratch 3.0 fungerar inte på webbläsarna Explorer, Vivaldi, Opera eller Silk. Vi rekommenderar att du provar en nyare webbläsare som Google Chrome, Mozilla Firefox eller Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Placera längst bak",
+    "gui.unsupportedBrowser.previewfaq": "För att läsa mer, gå till {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "FAQ",
+    "gui.cameraModal.cameraModalTitle": "Ta ett foto",
+    "gui.cameraModal.loadingCameraMessage": "Laddar kamera...",
+    "gui.cameraModal.permissionRequest": "Vi behöver ditt tillstånd för att använda din kamera",
+    "gui.cameraModal.retakePhoto": "Ta om foto",
+    "gui.cameraModal.save": "Spara",
+    "gui.cameraModal.takePhoto": "Ta foto",
+    "gui.cameraModal.loadingCaption": "Laddar...",
+    "gui.cameraModal.enableCameraCaption": "Aktivera kameran",
+    "gui.cards.all-tutorials": "Handledningar",
+    "gui.cards.close": "Stäng",
+    "gui.cards.more-things-to-try": "Fler saker att pröva!",
+    "gui.cards.see-more": "Läs mera",
+    "gui.comingSoon.message1": "Det är lugnt, vi jobbar på det {emoji}",
+    "gui.comingSoon.message2": "Kommer snart...",
+    "gui.comingSoon.message3": "Vi jobbar på det {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Enheter saknas",
+    "gui.connection.auto-scanning.prescan": "Ha din enhet i närheten, sök sedan efter den.",
+    "gui.connection.auto-scanning.pressbutton": "Tryck på knappen på din enhet.",
+    "gui.connection.auto-scanning.start-search": "Börja söka",
+    "gui.connection.connecting-searchbutton": "Söker...",
+    "gui.connection.auto-scanning.try-again": "Försök igen",
+    "gui.connection.connected": "Uppkopplad",
+    "gui.connection.disconnect": "Koppla ur",
+    "gui.connection.go-to-editor": "Gå till redigeraren",
+    "gui.connection.connecting-cancelbutton": "Kopplar upp...",
+    "gui.connection.error.errorMessage": "Hoppsan, det verkar som om något gick fel.",
+    "gui.connection.error.tryagainbutton": "Försök igen",
+    "gui.connection.error.helpbutton": "Hjälp",
+    "gui.connection.peripheral-name-label": "Enhetens namn",
+    "gui.connection.connect": "Koppla upp",
+    "gui.connection.scanning.lookingforperipherals": "Letar efter enheter",
+    "gui.connection.scanning.noPeripheralsFound": "Enheter saknas",
+    "gui.connection.scanning.instructions": "Välj din enhet i ovanstående lista.",
+    "gui.connection.search": "Uppdatera",
+    "gui.connection.unavailable.installscratchlink": "Se till att du har Scratchkopplingen installerad och igång",
+    "gui.connection.unavailable.enablebluetooth": "Kolla så att bluetooth är igång",
+    "gui.connection.unavailable.tryagainbutton": "Försök igen",
+    "gui.connection.unavailable.helpbutton": "Hjälp",
+    "gui.controls.go": "Starta",
+    "gui.controls.stop": "Stoppa",
+    "gui.crashMessage.label": "Oj! Något gick fel.",
+    "gui.crashMessage.description": "Vi ber om ursäkt men det verkar som om Scratch har kraschat. Denna bugg har automatiskt rapporterats till Scratch teamet. Var snäll och uppdatera din sida för att försöka igen.",
+    "gui.crashMessage.reload": "Uppdatera",
+    "gui.customProcedures.myblockModalTitle": "Skapa ett block",
+    "gui.customProcedures.addAnInputNumberText": "Lägg till en indata",
+    "gui.customProcedures.numberTextType": "siffror eller text",
+    "gui.customProcedures.addAnInputBoolean": "Lägg till en indata",
+    "gui.customProcedures.booleanType": "boolesk",
+    "gui.customProcedures.addALabel": "Lägg till en etikett",
+    "gui.customProcedures.runWithoutScreenRefresh": "Kör utan skärmuppdatering",
+    "gui.customProcedures.cancel": "Avbryt",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Riktning",
+    "gui.directionPicker.rotationStyles.allAround": "Rotera",
+    "gui.directionPicker.rotationStyles.leftRight": "Vänster/Höger",
+    "gui.directionPicker.rotationStyles.dontRotate": "Rotera inte",
+    "gui.gui.addExtension": "Lägg till ett tillägg",
+    "gui.gui.codeTab": "Kod",
+    "gui.gui.backdropsTab": "Bakgrunder",
+    "gui.gui.costumesTab": "Klädslar",
+    "gui.gui.soundsTab": "Ljud",
+    "gui.importInfo.title": "Visa ett Scratch 2.0 projekt",
+    "gui.importInfo.betamessage": "Ange en länk till ett av dina delade Scratchprojekt. Ändringar som gjorts i denna 3,0 Beta sparas inte.",
+    "gui.importInfo.message": "Skriv in en länk till ett av dina delade Scratch projekt. Ändringar som görs i denna 3.0 förhandsvisning kommer inte att sparas. ",
+    "gui.importInfo.invalidFormatError": "Oj oj, projektlänken eller id:et ser inte riktigt bra ut.",
+    "gui.importModal.viewproject": "Visa",
+    "gui.importInfo.goback": "Tillbaka",
+    "gui.importInfo.previewfaq": "För att läsa mer, gå till {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "FAQ",
+    "gui.extensionLibrary.comingSoon": "Kommer snart",
+    "gui.extensionLibrary.requires": "Kräver",
+    "gui.extensionLibrary.collaboration": "Samarbetar med",
+    "gui.library.filterPlaceholder": "Sök",
+    "gui.library.allTag": "Alla",
+    "gui.loader.message1": "Skapa block ...",
+    "gui.loader.message2": "Laddar sprajtar...",
+    "gui.loader.message3": "Laddar ljud...",
+    "gui.loader.message4": "Laddar tillägg...",
+    "gui.loader.message5": "Samlar katter...",
+    "gui.loader.message6": "Överför nanos...",
+    "gui.loader.message7": "Förstorar gobos...",
+    "gui.loader.message8": "Förbereder emojis ...",
+    "gui.loader.headline": "Laddar projekt",
+    "gui.accountMenu.profile": "Profil",
+    "gui.accountMenu.myStuff": "Mina grejer",
+    "gui.accountMenu.myClasses": "Mina klasser",
+    "gui.accountMenu.myClass": "Min klass",
+    "gui.accountMenu.accountSettings": "Kontoinställningar",
+    "gui.accountMenu.signOut": "Logga ut",
+    "gui.authorInfo.byUser": "av {username}",
+    "gui.menuBar.seeCommunity": "Visa community",
+    "general.username": "Användarnamn",
+    "general.password": "Lösenord",
+    "general.signIn": "Logga in",
+    "login.needHelp": "Behöver du hjälp?",
+    "gui.menuBar.LanguageSelector": "språkväljare",
+    "gui.menuBar.tutorialsLibrary": "Handledningar",
+    "gui.menuBar.restoreSprite": "Återställ sprajt",
+    "gui.menuBar.restoreSound": "Ta tillbaka ljud",
+    "gui.menuBar.restoreCostume": "Ta tillbaka sprajt",
+    "gui.menuBar.restore": "Återställ",
+    "gui.menuBar.saveNow": "Spara nu",
+    "gui.menuBar.saveAsCopy": "Spara som kopia",
+    "gui.menuBar.remix": "Remix",
+    "gui.menuBar.new": "Nytt",
+    "gui.menuBar.file": "Arkiv",
+    "gui.menuBar.uploadFromComputer": "Ladda upp från din dator",
+    "gui.menuBar.downloadToComputer": "Spara till din dator",
+    "gui.menuBar.edit": "Redigera",
+    "gui.menuBar.turboModeOff": "Stäng av turboläge",
+    "gui.menuBar.turboModeOn": "Sätt på turboläge",
+    "gui.menuBar.joinScratch": "Gå med Scratch",
+    "gui.menuBar.signIn": "Logga in",
+    "gui.menuBar.giveFeedback": "Ge feedback",
+    "gui.gui.projectTitlePlaceholder": "Projektets titel här",
+    "gui.menuBar.isShared": "Delade",
+    "gui.menuBar.share": "Dela",
+    "gui.modal.help": "Hjälp",
+    "gui.modal.back": "Tillbaka",
+    "gui.monitor.listMonitor.empty": "(tom)",
+    "gui.monitor.listMonitor.listLength": "längd {length}",
+    "gui.monitor.contextMenu.default": "normal avläsning",
+    "gui.monitor.contextMenu.large": "stor avläsning",
+    "gui.monitor.contextMenu.slider": "reglage",
+    "gui.previewInfo.label": "Prova Scratch 3.0",
+    "gui.previewInfo.welcome": "Välkommen till Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Inte nu",
+    "gui.previewModal.tryittooltip": "Prova på",
+    "gui.previewModal.viewprojecttooltip": "Visa 2.0 projekt",
+    "gui.previewInfo.betawelcome": "Välkommen till Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Vi arbetar på nästa generation av Scratch. Vi blir glada om du vill prova!",
+    "gui.previewInfo.notnow": "Inte nu",
+    "gui.previewModal.tryit": "Testa! {caticon}",
+    "gui.previewModal.viewproject": "Visa 2.0 projekt",
+    "gui.previewInfo.previewfaq": "För att läsa mer, gå till {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "FAQ",
+    "gui.gui.variableScopeOptionAllSprites": "För alla sprajtar",
+    "gui.gui.variableScopeOptionSpriteOnly": "Enbart för denna sprajt",
+    "gui.gui.cloudVariableOption": "Molnvariabel (sparad på servern)",
+    "gui.gui.variablePromptAllSpritesMessage": "Variabeln blir tillgänglig för alla sprajtar.",
+    "gui.prompt.cancel": "Avbryt",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stoppa",
+    "gui.playbackStep.playMsg": "Spela upp",
+    "gui.playbackStep.loadingMsg": "Laddar...",
+    "gui.playbackStep.saveMsg": "Spara",
+    "gui.playbackStep.reRecordMsg": "Spela in igen",
+    "gui.recordModal.title": "Spela in nytt ljud",
+    "gui.recordingStep.beginRecord": "Klicka på knappen nedan för att starta inspelningen",
+    "gui.recordingStep.permission": "{arrow}Vi behöver ditt tillstånd för att använda mikrofonen",
+    "gui.recordingStep.stop": "Stoppa inspelningen",
+    "gui.recordingStep.record": "Spela in",
+    "gui.soundEditor.sound": "Ljud",
+    "gui.soundEditor.play": "Spela upp",
+    "gui.soundEditor.stop": "Stoppa",
+    "gui.soundEditor.trim": "Trimma",
+    "gui.soundEditor.save": "Spara",
+    "gui.soundEditor.undo": "Ångra",
+    "gui.soundEditor.redo": "Gör om",
+    "gui.soundEditor.faster": "Snabbare",
+    "gui.soundEditor.slower": "Långsammare",
+    "gui.soundEditor.echo": "Eko",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Högre",
+    "gui.soundEditor.softer": "Lägre",
+    "gui.soundEditor.reverse": "Baklänges",
+    "gui.SpriteInfo.spritePlaceholder": "Namn",
+    "gui.SpriteInfo.sprite": "Sprajt",
+    "gui.SpriteInfo.show": "Visa",
+    "gui.SpriteInfo.size": "Storlek",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "kopiera",
+    "gui.spriteSelectorItem.contextMenuDelete": "radera",
+    "gui.spriteSelectorItem.contextMenuExport": "exportera",
+    "gui.spriteSelector.addSpriteFromLibrary": "Välj en sprajt",
+    "gui.spriteSelector.addSpriteFromPaint": "Måla",
+    "gui.spriteSelector.addSpriteFromSurprise": "Överraska",
+    "gui.spriteSelector.addSpriteFromFile": "Ladda upp sprajt",
+    "gui.stageHeader.stageSizeLarge": "Byt till en större scen",
+    "gui.stageHeader.stageSizeSmall": "Byt till en mindre scen",
+    "gui.stageHeader.stageSizeFull": "Byt till fullskärmsläge",
+    "gui.stageHeader.stageSizeUnFull": "Gå ur fullskärmsläge",
+    "gui.stageHeader.fullscreenControl": "Fullskärmsläge",
+    "gui.spriteSelector.addBackdropFromLibrary": "Välj en bakgrund",
+    "gui.stageSelector.addBackdropFromPaint": "Måla",
+    "gui.stageSelector.addBackdropFromSurprise": "Överraska",
+    "gui.stageSelector.addBackdropFromFile": "Ladda upp bakgrund",
+    "gui.stageSelector.stage": "Scen",
+    "gui.stageSelector.backdrops": "Bakgrunder",
+    "gui.turboMode.active": "Turboläge",
+    "gui.webglModal.label": "Din webbläsare stödjer inte WebGL",
+    "gui.webglModal.description": "Tyvärr verkar det som om din webbläsare eller dator {webGlLink}. Tekniken behövs för att Scratch 3.0 ska fungera.",
+    "gui.webglModal.webgllink": "stödjer inte webGL",
+    "gui.webglModal.back": "Tillbaka",
+    "gui.webglModal.previewfaq": "För att läsa mer, gå till {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "FAQ",
+    "gui.costumeLibrary.chooseABackdrop": "Välj en bakgrund",
+    "gui.costumeLibrary.chooseACostume": "Välj en klädsel",
+    "gui.costumeTab.addBackdropFromLibrary": "Välj en bakgrund",
+    "gui.costumeTab.addCostumeFromLibrary": "Välj en klädsel",
+    "gui.costumeTab.addBlankCostume": "Måla",
+    "gui.costumeTab.addSurpriseCostume": "Överraska",
+    "gui.costumeTab.addFileBackdrop": "Ladda upp bakgrund",
+    "gui.costumeTab.addFileCostume": "Ladda upp klädsel",
+    "gui.costumeTab.addCameraCostume": "Kamera",
+    "gui.extensionLibrary.chooseAnExtension": "Välj ett tillägg",
+    "gui.extensionLibrary.extensionUrl": "Skriv in en URL till tillägget",
+    "gui.gui.defaultProjectTitle": "Scratchprojekt",
+    "gui.recordingStep.alertMsg": "Kunde inte starta inspelning",
+    "gui.projectLoader.loadError": "Den valda projektfilen misslyckades att ladda.",
+    "gui.soundLibrary.chooseASound": "Välj ett ljud",
+    "gui.soundTab.fileUploadSound": "Ladda upp ljud från fil",
+    "gui.soundTab.surpriseSound": "Överraska",
+    "gui.soundTab.recordSound": "Spela in",
+    "gui.soundTab.addSoundFromLibrary": "Välj ett ljud",
+    "gui.spriteLibrary.chooseASprite": "Välj en sprajt",
+    "gui.tipsLibrary.tutorials": "Välj en handledning",
+    "gui.alerts.createsuccess": "Skapades framgångsrikt.",
+    "gui.alerts.creating": "Skapar ...",
+    "gui.alerts.creatingError": "Kunde inte skapa projektet. Försök igen!",
+    "gui.alerts.savingError": "Kunde inte spara projektet. Försök igen!",
+    "gui.alerts.savesuccess": "Sparades framgångsrikt.",
+    "gui.alerts.saving": "Sparar...",
+    "gui.defaultProject.meow": "Mjau",
+    "gui.defaultProject.variable": "min variabel",
+    "gui.howtos.intro-move-sayhello-hat.name": "Kom igång",
+    "gui.howtos.intro-move.step_stepMove": "Lägg till ett rörelseblock",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Klicka på den gröna flaggan för att starta",
+    "gui.howtos.say-it-out-loud": "Skapa animationer som kan prata",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Lägg till text i ett tal-block",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Säg någonting",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Sätt upp röst",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Flytta runt",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Lägg till en bakgrund",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Lägg till en annan figur",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Spela upp en låt",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Ändra färg",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Snurra runt",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Växa och krympa",
+    "gui.howtos.cartoon-network": "Animera ett äventyrsspel",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Välj en figur att visa",
+    "gui.howtos.cartoon-network.step_CNsay": "Säg någonting",
+    "gui.howtos.cartoon-network.step_CNglide": "Glid omkring",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Välj någonting att jaga",
+    "gui.howtos.cartoon-network.step_CNcollect": "Samla saker",
+    "gui.howtos.cartoon-network.step_CNvariable": "Skapa en variabel för poäng",
+    "gui.howtos.cartoon-network.step_CNscore": "Håll reda på poäng",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Levla upp: Byt bakgrund",
+    "gui.howtos.animate-a-name.name": "Animera ett namn",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Välj en bokstavssprajt",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Spela ett ljud när den klickas på",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Välj en annan bokstavssprajt",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Ändra färg",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Välj en annan bokstavssprajt & låt den snurra",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Välj en annan bokstavssprajt & låt den växa",
+    "gui.howtos.make-music.name": "Skapa musik",
+    "gui.howtos.Make-Music.step_PickInstrument": "Välj en instrumentsprajt",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Spela ljud när den klickas på",
+    "gui.howtos.Make-Music.step_MakeSong": "Skapa en sång",
+    "gui.howtos.make-music.step_MakeBeat": "Välj en Trumma & Skapa en rytm",
+    "gui.howtos.make-music.step_MakeBeatBox": "Välj mikrofonsprajten & överaskning beatbox",
+    "gui.howtos.make-a-game.name": "Gör ett Klicka Spel",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Välj en sprajt",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Spela ljud när den klickas på",
+    "gui.howtos.make-a-game.step_GameAddScore": "Skapa poängvariabel",
+    "gui.howtos.make-a-game.step_GameChangeScore": "När klickad på öka poängen",
+    "gui.howtos.make-a-game.step_Random": "Gå till en slumpmässig position",
+    "gui.howtos.make-music.step_GameChangeColor": "Ändra Färg",
+    "gui.howtos.make-music.step_ResetScore": "Nollställ Poäng",
+    "gui.howtos.make-a-chase-game.name": "Gör ett Jaga Spel",
+    "gui.howtos.Chase-Game.step_BG": "Lägg till en bakgrund",
+    "gui.howtos.chase-game.step_AddOcto": "Lägg till en sprajt",
+    "gui.howtos.make-music.step_LeftRight": "Flytta höger & vänster med piltangenterna",
+    "gui.howtos.Chase-Game.step_UpDown": "Flytta uppåt & nedåt med piltangenterna",
+    "gui.howtos.Chase-Game.step_AddStar": "Lägg till en ny sprajt",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Slumpmässig rörelse",
+    "gui.howtos.Chase-Game.step_WhenTouch": "I bläckfisksprajten, när rör vid spela ljud",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Skapa poängvariabel",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "I bläckfisksprajten, när rör vid öka poäng",
+    "gui.howtos.add-sprite.name": "Lägg till en sprajt",
+    "gui.howtos.add-sprite.step_addSprite": "Lägg till en sprajt",
+    "gui.howtos.add-a-backdrop.name": "Lägg till en bakgrund",
+    "gui.howtos.change-size.name": "Ändra storlek",
+    "gui.howtos.glide-around.name": "Glid omkring",
+    "gui.howtos.record-a-sound.name": "Spela in ett ljud",
+    "gui.howtos.spin-video.name": "Få den att snurra",
+    "gui.howtos.hide-and-show.name": "Göm och visa",
+    "gui.howtos.switch-costume.name": "Animera en sprajt",
+    "gui.howtos.move-around-with-arrow-keys.name": "Använd piltangenterna",
+    "gui.howtos.add-effects.name": "Lägg till effekter",
+    "gui.extension.music.name": "Musik",
+    "gui.extension.music.description": "Spela instrument och trummor.",
+    "gui.extension.pen.name": "Penna",
+    "gui.extension.pen.description": "Låt dina sprajts rita.",
+    "gui.extension.videosensing.name": "Video - Känna av",
+    "gui.extension.videosensing.description": "Känn av rörelse med kameran.",
+    "gui.extension.text2speech.name": "Text till tal",
+    "gui.extension.text2speech.description": "Gör så att dina projekt pratar.",
+    "gui.extension.translate.name": "Översätta",
+    "gui.extension.translate.description": "Översätt text till många språk.",
+    "gui.extension.microbit.description": "Koppla upp dina projekt med världen.",
+    "gui.extension.microbit.connectingMessage": "Kopplar upp",
+    "gui.extension.ev3.description": "Bygg interaktiva robotar och annat.",
+    "gui.extension.ev3.connectingMessage": "Kopplar upp. Kolla att pinkoden på din EV3 är satt till 1234.",
+    "gui.extension.wedo2.description": "Bygg med motorer och sensorer.",
+    "gui.extension.wedo2.connectingMessage": "Kopplar upp",
+    "gui.libraryTags.all": "Alla",
+    "gui.libraryTags.animals": "Djur",
+    "gui.libraryTags.dance": "Dansa",
+    "gui.libraryTags.effects": "Effekter",
+    "gui.libraryTags.fantasy": "Fantasy",
+    "gui.libraryTags.fashion": "Mode",
+    "gui.libraryTags.food": "Mat",
+    "gui.libraryTags.indoors": "Inomhus",
+    "gui.libraryTags.loops": "Loopar",
+    "gui.libraryTags.music": "Musik",
+    "gui.libraryTags.notes": "Anteckningar",
+    "gui.libraryTags.outdoors": "Utomhus",
+    "gui.libraryTags.patterns": "Mönster",
+    "gui.libraryTags.people": "Människor",
+    "gui.libraryTags.percussion": "Slagverk",
+    "gui.libraryTags.space": "Rymden",
+    "gui.libraryTags.sports": "Sport",
+    "gui.libraryTags.underwater": "Under vatten",
+    "gui.libraryTags.voice": "Röst",
+    "gui.libraryTags.wacky": "Knäppt",
+    "gui.libraryTags.animation": "Animation",
+    "gui.libraryTags.art": "Konst",
+    "gui.libraryTags.games": "Spel",
+    "gui.libraryTags.stories": "Berättelser",
+    "gui.libraryTags.letters": "Bokstäver",
+    "gui.opcodeLabels.direction": "riktning",
+    "gui.opcodeLabels.xposition": "x position",
+    "gui.opcodeLabels.yposition": "y position",
+    "gui.opcodeLabels.size": "storlek",
+    "gui.opcodeLabels.costumename": "klädselnamn",
+    "gui.opcodeLabels.costumenumber": "klädselnummer",
+    "gui.opcodeLabels.backdropname": "bakgrundsnamn",
+    "gui.opcodeLabels.backdropnumber": "bakgrundsnummer",
+    "gui.opcodeLabels.volume": "volym ",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "svar",
+    "gui.opcodeLabels.loudness": "ljudstyrka",
+    "gui.opcodeLabels.username": "användarnamn ",
+    "gui.opcodeLabels.year": "år ",
+    "gui.opcodeLabels.month": "månad ",
+    "gui.opcodeLabels.date": "dag ",
+    "gui.opcodeLabels.dayofweek": "veckodag ",
+    "gui.opcodeLabels.hour": "timmar ",
+    "gui.opcodeLabels.minute": "minuter ",
+    "gui.opcodeLabels.second": "sekunder ",
+    "gui.opcodeLabels.timer": "timer",
+    "gui.sharedMessages.backdrop": "backgrund{index}",
+    "gui.sharedMessages.costume": "klädsel{index}",
+    "gui.sharedMessages.sprite": "Sprajt{index}",
+    "gui.sharedMessages.pop": "pop"
 }

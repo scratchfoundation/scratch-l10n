@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Torna a connectar",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Motxilla",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Error al carregar la motxilla",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Carregant...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Més",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "La motxilla està buida",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Aquest navegador no està suportat",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Ens sap greu, però Scratch 3.0 no suporta Internet Explorer, Vivaldi, Opera o Silk. Recomanem provar un navegador més nou com Google Chrome, Mozilla Firefox o Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Enrere",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Si vols saber-ne més, vés a la {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Preguntes freqüents",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Fes una foto",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Carregant la càmera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Necessitem el teu permís per utilitzar la teva càmera",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Repeteix la foto",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Desa",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Fes una foto",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Carregant...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Activa la càmera",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Tutorials",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Tanca",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Més coses per provar!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Veure més",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Hi estem treballant {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Properament...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Hi estem treballant {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "No s'ha trobat cap dispositiu",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Situa el dispositiu a prop i llavors inicia la cerca.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Prem el botó del teu dispositiu.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Comença a buscar",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Cercant...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Prova de nou",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Connectat",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Desconnecta",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Vés a l'Editor",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Connectant...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Vaja, alguna cosa ha anat malament.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Prova de nou",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Ajuda",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Nom del dispositiu",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Connecta",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Buscant dispositius",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "No s'ha trobat cap dispositiu",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Selecciona el teu dispositiu a la llista de dalt.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Actualitza",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Comprova que has instal·lat l'Enllaç de Scratch i s'està executant",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Comprova que el Bluetooth està habilitat",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Prova de nou",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Ajuda",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Vés",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Atura",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Vaja! Alguna cosa ha anat malament.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Ho sentim però sembla que l'Scratch ha fallat. Aquest error ha estat enviat a l'Equip de Scratch automàticament. Si us plau torna a carregar la pàgina per provar-ho de nou.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Recarrega",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Crea un bloc",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Afegeix una entrada",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "nombre o text",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Afegeix una entrada",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "booleà",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Afegeix una etiqueta",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Funciona sense refrescar la pantalla",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Cancel·la",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "D'acord",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Direcció",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Al voltant",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Esquerra/Dreta",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "No giris",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Afegeix una Extensió",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Codi",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Fons",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Vestits",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Sons",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Veure un projecte 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Introdueix l'enllaç a un dels teus projectes de Scratch compartits. Els canvis realitzats en aquesta Beta 3.0 no es desaran.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Escriu l'enllaç a algun dels teus projectes Scratch compartits. Els canvis fets en aquesta previsualització 3.0 no es guardaran.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Vaja, aquest enllaç de projecte o id no sembla correcte.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Veure",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Enrere",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Si vols saber-ne més, vés a la {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Preguntes freqüents",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Properament",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requereix",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "En colaboración con",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Cerca",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Tots",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Creant blocs ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "S'estan pujant els personatges ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "S'estan pujant els sons ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Carregant les extensions ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Activant els personatges...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Carregant: mans a la feina!",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Donant cos als personatges...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Preparant emojis ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "S'està carregant el projecte",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Perfil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Les Meves Coses",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Les meves classes",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "La meva classe",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Configuració del compte",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Finalitza la sessió",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "per {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Mira la comunitat",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Nom d'usuari",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Contrasenya",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Inicia la sessió",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Necessites ajuda?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "tria l'idioma",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Tutorials",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Recupera el personatge",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Recupera el so",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Recupera el vestit",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Recupera",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Desa ara",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Desa una còpia",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Reinventa",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nou",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Fitxer",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Carrega des del teu ordinador",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Desa al teu ordinador",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Edita",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Desactiva el Mode Turbo",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Activa el Mode Turbo",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Uneix-te a l'Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Inicia la sessió",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Envia retroacció",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Títol del projecte aquí",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Compartits",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Comparteix",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Ajuda",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Enrere",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(buida)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "llargada {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "pantalla normal",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "pantalla gran",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "lliscador",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Prova Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Benvingut/da a la versió Beta de Scratch 3.0",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Encara no",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Prova-ho",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Veure un projecte 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Benvingut/da a la versió Beta de Scratch 3.0",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Estem treballant en la pròxima generació de Scratch. Estem emocionats per a que ho provis!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Encara no",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Prova-ho! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Veure un projecte 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Si vols saber-ne més, vés a la {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Preguntes freqüents",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Per a tots els personatges",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Només per a aquest personatge",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Variable al núvol (emmagatzemada en el servidor)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Aquesta variable estarà disponible per a tots els personatges.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Cancel·la",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "D'acord",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Atura",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Reprodueix",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Carregant...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Desa",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Torna a gravar",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Grava un so",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Comença la gravació fent clic al botó de sota",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Necessitem el teu permís per utilitzar el teu micròfon",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Atura la gravació",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Enregistra",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "So",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Reprodueix",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Atura",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Retalla",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Desa",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Desfés",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Torna-hi",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Més ràpid",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Més lent",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Eco",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Més fort",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Més fluix",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Inverteix",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Nom",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Personatge",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Mostra",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Mida",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "duplica",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "esborra",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exporta",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Tria un personatge",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Dibuixa",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Sorpresa",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Puja un personatge",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Canvia a vista àmplia",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Canvia a vista petita",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Canvia a mode Pantalla completa",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Surt del mode Pantalla completa",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Control de pantalla completa",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Tria un fons",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Pintar",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Sorpresa",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Puja un fons",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Escenari",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Fons",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Mode Turbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "El teu navegador no suporta WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Malauradament sembla que el teu navegador o ordinador {webGlLink}. Aquesta tecnologia és necessària per a que Scratch 3.0 funcioni.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "no suporta WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Enrere",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Si vols saber-ne més, vés a la {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Preguntes freqüents",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Tria un fons",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Tria un vestit",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Tria un fons",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Tria un vestit",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Dibuixa un nou vestit",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Sorpresa",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Puja un fons",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Puja un vestit",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Càmera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Tria una extensió",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Escriu la URL de l'extensió",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Projecte de Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "No s'ha pogut començar a gravar",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "No s'ha pogut carregar el fitxer del projecte seleccionat.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Tria un so",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Puja un so",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Sorpresa",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Enregistra",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Tria un so",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Tria un personatge",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Tria un tutorial",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "S'ha creat correctament.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "S'està creant...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "S'ha desat correctament.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "S'està desant...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Mèu",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "la meva variable",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Comença",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Afegeix un bloc de moviment",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Prem la bandera verda per començar",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Crea animacions que parlin",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Afegeix els blocs De text a parla",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Digues alguna cosa",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Estableix una veu",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Mou-te a voltant",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Afegeix un fons",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Afegeix un altre personatge",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Realitza una cançó",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Canvia el color",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Gira al voltant",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Creix i encongeix",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Anima un joc d'aventures",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Tria un personatge a mostrar",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Digues alguna cosa",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Llisca al voltant",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Tria un objecte a capturar",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Recull objectes",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Crea una variable de puntuació",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Desa la puntuació",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Nivell superat: canvia el fons",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Anima un nom",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Tria un personatge de Lletra",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Reprodueix un so quan es cliqui",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Tria un altre personatge de Lletra",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Canvia el color",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Tria un altre personatge de Lletra i fes-lo girar",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Tria un altre personatge de Lletra i fes-lo créixer",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Crea música",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Tria un personatge d'Instrument",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Reprodueix un so quan es cliqui",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Crea una cançó",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Tria un tambor i fes un batec",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Tria el personatge Microphone & Surprise Beatbox",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Fes un joc de clics",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Tria un personatge",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Reprodueix un so quan es cliqui",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Crea una variable de puntuació",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Augmenta la puntuació quan es cliqui",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Vés a una posició aleatòria",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Canvia el color",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Reinicia la puntuació",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Fes un joc de persecució",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Afegeix un fons",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Afegeix un personatge",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Mou a dreta i esquerra amb les fletxes",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Mou amunt i avall amb les fletxes",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Afegeix un altre personatge",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Mou a l'atzar",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "En el personatge Octopus, quan es toqui reprodueix un so",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Crea una variable de puntuació",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "En el personatge Octopus, quan es toqui afegeix puntuació",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Afegeix un personatge",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Afegeix un personatge",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Afegeix un fons",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Augmenta la mida",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Llisca al voltant",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Grava un so",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Fes-lo girar",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Fet i Amagar",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Anima un personatge",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Utilitza les fletxes de direcció",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Afegeix efectes",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Música",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Toca instruments i tambors.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Llapis",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Dibuixa amb els teus personatges.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Captura de vídeo",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Detecta moviment amb la càmera.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "De text a parla",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Fes que els teus projectes parlin.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Tradueix",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Tradueix text en molts idiomes.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Connecta els teus projectes amb el món.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Connectant",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Construeix robots interactius i més.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Connectant. Assegura't que el codi en el teu EV3 és 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Construeix amb motors i sensors.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Connectant",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Tots",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Animals",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Balla",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Efectes",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantasia",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Moda",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Menjar",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Interiors",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Repeticions",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Música",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Anotacions",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Exteriors",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patrons",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Gent",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Percussió",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Espai",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Esports",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Sota l'aigua",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Veu",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Divertit",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animació",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Art",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Jocs",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Històries",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Lletres",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "direcció",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "posició x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "posició y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "mida",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "nom del vestit",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "número de vestit",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "nom del fons",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "número de fons",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "volum",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "resposta",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "volum del so",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "nom d'usuari",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "any",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mes",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "data",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "dia de la setmana",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "hora",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minut",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "segon",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "cronòmetre",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "fons{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "vestit{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Personatge{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Torna a connectar",
+    "gui.backpack.header": "Motxilla",
+    "gui.backpack.errorBackpack": "Error al carregar la motxilla",
+    "gui.backpack.loadingBackpack": "Carregant...",
+    "gui.backpack.more": "Més",
+    "gui.backpack.emptyBackpack": "La motxilla està buida",
+    "gui.unsupportedBrowser.label": "Aquest navegador no està suportat",
+    "gui.unsupportedBrowser.description": "Ens sap greu, però Scratch 3.0 no suporta Internet Explorer, Vivaldi, Opera o Silk. Recomanem provar un navegador més nou com Google Chrome, Mozilla Firefox o Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Enrere",
+    "gui.unsupportedBrowser.previewfaq": "Si vols saber-ne més, vés a la {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Preguntes freqüents",
+    "gui.cameraModal.cameraModalTitle": "Fes una foto",
+    "gui.cameraModal.loadingCameraMessage": "Carregant la càmera...",
+    "gui.cameraModal.permissionRequest": "Necessitem el teu permís per utilitzar la teva càmera",
+    "gui.cameraModal.retakePhoto": "Repeteix la foto",
+    "gui.cameraModal.save": "Desa",
+    "gui.cameraModal.takePhoto": "Fes una foto",
+    "gui.cameraModal.loadingCaption": "Carregant...",
+    "gui.cameraModal.enableCameraCaption": "Activa la càmera",
+    "gui.cards.all-tutorials": "Tutorials",
+    "gui.cards.close": "Tanca",
+    "gui.cards.more-things-to-try": "Més coses per provar!",
+    "gui.cards.see-more": "Veure més",
+    "gui.comingSoon.message1": "Hi estem treballant {emoji}",
+    "gui.comingSoon.message2": "Properament...",
+    "gui.comingSoon.message3": "Hi estem treballant {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "No s'ha trobat cap dispositiu",
+    "gui.connection.auto-scanning.prescan": "Situa el dispositiu a prop i llavors inicia la cerca.",
+    "gui.connection.auto-scanning.pressbutton": "Prem el botó del teu dispositiu.",
+    "gui.connection.auto-scanning.start-search": "Comença a buscar",
+    "gui.connection.connecting-searchbutton": "Cercant...",
+    "gui.connection.auto-scanning.try-again": "Prova de nou",
+    "gui.connection.connected": "Connectat",
+    "gui.connection.disconnect": "Desconnecta",
+    "gui.connection.go-to-editor": "Vés a l'Editor",
+    "gui.connection.connecting-cancelbutton": "Connectant...",
+    "gui.connection.error.errorMessage": "Vaja, alguna cosa ha anat malament.",
+    "gui.connection.error.tryagainbutton": "Prova de nou",
+    "gui.connection.error.helpbutton": "Ajuda",
+    "gui.connection.peripheral-name-label": "Nom del dispositiu",
+    "gui.connection.connect": "Connecta",
+    "gui.connection.scanning.lookingforperipherals": "Buscant dispositius",
+    "gui.connection.scanning.noPeripheralsFound": "No s'ha trobat cap dispositiu",
+    "gui.connection.scanning.instructions": "Selecciona el teu dispositiu a la llista de dalt.",
+    "gui.connection.search": "Actualitza",
+    "gui.connection.unavailable.installscratchlink": "Comprova que has instal·lat l'Enllaç de Scratch i s'està executant",
+    "gui.connection.unavailable.enablebluetooth": "Comprova que el Bluetooth està habilitat",
+    "gui.connection.unavailable.tryagainbutton": "Prova de nou",
+    "gui.connection.unavailable.helpbutton": "Ajuda",
+    "gui.controls.go": "Vés",
+    "gui.controls.stop": "Atura",
+    "gui.crashMessage.label": "Vaja! Alguna cosa ha anat malament.",
+    "gui.crashMessage.description": "Ho sentim però sembla que l'Scratch ha fallat. Aquest error ha estat enviat a l'Equip de Scratch automàticament. Si us plau torna a carregar la pàgina per provar-ho de nou.",
+    "gui.crashMessage.reload": "Recarrega",
+    "gui.customProcedures.myblockModalTitle": "Crea un bloc",
+    "gui.customProcedures.addAnInputNumberText": "Afegeix una entrada",
+    "gui.customProcedures.numberTextType": "nombre o text",
+    "gui.customProcedures.addAnInputBoolean": "Afegeix una entrada",
+    "gui.customProcedures.booleanType": "booleà",
+    "gui.customProcedures.addALabel": "Afegeix una etiqueta",
+    "gui.customProcedures.runWithoutScreenRefresh": "Funciona sense refrescar la pantalla",
+    "gui.customProcedures.cancel": "Cancel·la",
+    "gui.customProcedures.ok": "D'acord",
+    "gui.SpriteInfo.direction": "Direcció",
+    "gui.directionPicker.rotationStyles.allAround": "Al voltant",
+    "gui.directionPicker.rotationStyles.leftRight": "Esquerra/Dreta",
+    "gui.directionPicker.rotationStyles.dontRotate": "No giris",
+    "gui.gui.addExtension": "Afegeix una Extensió",
+    "gui.gui.codeTab": "Codi",
+    "gui.gui.backdropsTab": "Fons",
+    "gui.gui.costumesTab": "Vestits",
+    "gui.gui.soundsTab": "Sons",
+    "gui.importInfo.title": "Veure un projecte 2.0",
+    "gui.importInfo.betamessage": "Introdueix l'enllaç a un dels teus projectes de Scratch compartits. Els canvis realitzats en aquesta Beta 3.0 no es desaran.",
+    "gui.importInfo.message": "Escriu l'enllaç a algun dels teus projectes Scratch compartits. Els canvis fets en aquesta previsualització 3.0 no es guardaran.",
+    "gui.importInfo.invalidFormatError": "Vaja, aquest enllaç de projecte o id no sembla correcte.",
+    "gui.importModal.viewproject": "Veure",
+    "gui.importInfo.goback": "Enrere",
+    "gui.importInfo.previewfaq": "Si vols saber-ne més, vés a la {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Preguntes freqüents",
+    "gui.extensionLibrary.comingSoon": "Properament",
+    "gui.extensionLibrary.requires": "Requereix",
+    "gui.extensionLibrary.collaboration": "En col·laboració amb",
+    "gui.library.filterPlaceholder": "Cerca",
+    "gui.library.allTag": "Tots",
+    "gui.loader.message1": "Creant blocs ...",
+    "gui.loader.message2": "S'estan pujant els personatges ...",
+    "gui.loader.message3": "S'estan pujant els sons ...",
+    "gui.loader.message4": "Carregant les extensions ...",
+    "gui.loader.message5": "Activant els personatges...",
+    "gui.loader.message6": "Carregant: mans a la feina!",
+    "gui.loader.message7": "Donant cos als personatges...",
+    "gui.loader.message8": "Preparant emojis ...",
+    "gui.loader.headline": "S'està carregant el projecte",
+    "gui.accountMenu.profile": "Perfil",
+    "gui.accountMenu.myStuff": "Les Meves Coses",
+    "gui.accountMenu.myClasses": "Les meves classes",
+    "gui.accountMenu.myClass": "La meva classe",
+    "gui.accountMenu.accountSettings": "Configuració del compte",
+    "gui.accountMenu.signOut": "Finalitza la sessió",
+    "gui.authorInfo.byUser": "per {username}",
+    "gui.menuBar.seeCommunity": "Mira la comunitat",
+    "general.username": "Nom d'usuari",
+    "general.password": "Contrasenya",
+    "general.signIn": "Inicia la sessió",
+    "login.needHelp": "Necessites ajuda?",
+    "gui.menuBar.LanguageSelector": "tria l'idioma",
+    "gui.menuBar.tutorialsLibrary": "Tutorials",
+    "gui.menuBar.restoreSprite": "Recupera el personatge",
+    "gui.menuBar.restoreSound": "Recupera el so",
+    "gui.menuBar.restoreCostume": "Recupera el vestit",
+    "gui.menuBar.restore": "Recupera",
+    "gui.menuBar.saveNow": "Desa ara",
+    "gui.menuBar.saveAsCopy": "Desa una còpia",
+    "gui.menuBar.remix": "Reinventa",
+    "gui.menuBar.new": "Nou",
+    "gui.menuBar.file": "Fitxer",
+    "gui.menuBar.uploadFromComputer": "Carrega des del teu ordinador",
+    "gui.menuBar.downloadToComputer": "Desa al teu ordinador",
+    "gui.menuBar.edit": "Edita",
+    "gui.menuBar.turboModeOff": "Desactiva el Mode Turbo",
+    "gui.menuBar.turboModeOn": "Activa el Mode Turbo",
+    "gui.menuBar.joinScratch": "Uneix-te a l'Scratch",
+    "gui.menuBar.signIn": "Inicia la sessió",
+    "gui.menuBar.giveFeedback": "Envia retroacció",
+    "gui.gui.projectTitlePlaceholder": "Títol del projecte aquí",
+    "gui.menuBar.isShared": "Compartits",
+    "gui.menuBar.share": "Comparteix",
+    "gui.modal.help": "Ajuda",
+    "gui.modal.back": "Enrere",
+    "gui.monitor.listMonitor.empty": "(buida)",
+    "gui.monitor.listMonitor.listLength": "llargada {length}",
+    "gui.monitor.contextMenu.default": "pantalla normal",
+    "gui.monitor.contextMenu.large": "pantalla gran",
+    "gui.monitor.contextMenu.slider": "lliscador",
+    "gui.previewInfo.label": "Prova Scratch 3.0",
+    "gui.previewInfo.welcome": "Benvingut/da a la versió Beta de Scratch 3.0",
+    "gui.previewModal.notnowtooltip": "Encara no",
+    "gui.previewModal.tryittooltip": "Prova-ho",
+    "gui.previewModal.viewprojecttooltip": "Veure un projecte 2.0",
+    "gui.previewInfo.betawelcome": "Benvingut/da a la versió Beta de Scratch 3.0",
+    "gui.previewInfo.invitation": "Estem treballant en la pròxima generació de Scratch. Estem emocionats per a que ho provis!",
+    "gui.previewInfo.notnow": "Encara no",
+    "gui.previewModal.tryit": "Prova-ho! {caticon}",
+    "gui.previewModal.viewproject": "Veure un projecte 2.0",
+    "gui.previewInfo.previewfaq": "Si vols saber-ne més, vés a la {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Preguntes freqüents",
+    "gui.gui.variableScopeOptionAllSprites": "Per a tots els personatges",
+    "gui.gui.variableScopeOptionSpriteOnly": "Només per a aquest personatge",
+    "gui.gui.cloudVariableOption": "Variable al núvol (emmagatzemada en el servidor)",
+    "gui.gui.variablePromptAllSpritesMessage": "Aquesta variable estarà disponible per a tots els personatges.",
+    "gui.prompt.cancel": "Cancel·la",
+    "gui.prompt.ok": "D'acord",
+    "gui.playbackStep.stopMsg": "Atura",
+    "gui.playbackStep.playMsg": "Reprodueix",
+    "gui.playbackStep.loadingMsg": "Carregant...",
+    "gui.playbackStep.saveMsg": "Desa",
+    "gui.playbackStep.reRecordMsg": "Torna a gravar",
+    "gui.recordModal.title": "Grava un so",
+    "gui.recordingStep.beginRecord": "Comença la gravació fent clic al botó de sota",
+    "gui.recordingStep.permission": "{arrow}Necessitem el teu permís per utilitzar el teu micròfon",
+    "gui.recordingStep.stop": "Atura la gravació",
+    "gui.recordingStep.record": "Enregistra",
+    "gui.soundEditor.sound": "So",
+    "gui.soundEditor.play": "Reprodueix",
+    "gui.soundEditor.stop": "Atura",
+    "gui.soundEditor.trim": "Retalla",
+    "gui.soundEditor.save": "Desa",
+    "gui.soundEditor.undo": "Desfés",
+    "gui.soundEditor.redo": "Torna-hi",
+    "gui.soundEditor.faster": "Més ràpid",
+    "gui.soundEditor.slower": "Més lent",
+    "gui.soundEditor.echo": "Eco",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Més fort",
+    "gui.soundEditor.softer": "Més fluix",
+    "gui.soundEditor.reverse": "Inverteix",
+    "gui.SpriteInfo.spritePlaceholder": "Nom",
+    "gui.SpriteInfo.sprite": "Personatge",
+    "gui.SpriteInfo.show": "Mostra",
+    "gui.SpriteInfo.size": "Mida",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "duplica",
+    "gui.spriteSelectorItem.contextMenuDelete": "esborra",
+    "gui.spriteSelectorItem.contextMenuExport": "exporta",
+    "gui.spriteSelector.addSpriteFromLibrary": "Tria un personatge",
+    "gui.spriteSelector.addSpriteFromPaint": "Dibuixa",
+    "gui.spriteSelector.addSpriteFromSurprise": "Sorpresa",
+    "gui.spriteSelector.addSpriteFromFile": "Puja un personatge",
+    "gui.stageHeader.stageSizeLarge": "Canvia a vista àmplia",
+    "gui.stageHeader.stageSizeSmall": "Canvia a vista petita",
+    "gui.stageHeader.stageSizeFull": "Canvia a mode Pantalla completa",
+    "gui.stageHeader.stageSizeUnFull": "Surt del mode Pantalla completa",
+    "gui.stageHeader.fullscreenControl": "Control de pantalla completa",
+    "gui.spriteSelector.addBackdropFromLibrary": "Tria un fons",
+    "gui.stageSelector.addBackdropFromPaint": "Pintar",
+    "gui.stageSelector.addBackdropFromSurprise": "Sorpresa",
+    "gui.stageSelector.addBackdropFromFile": "Puja un fons",
+    "gui.stageSelector.stage": "Escenari",
+    "gui.stageSelector.backdrops": "Fons",
+    "gui.turboMode.active": "Mode Turbo",
+    "gui.webglModal.label": "El teu navegador no suporta WebGL",
+    "gui.webglModal.description": "Malauradament sembla que el teu navegador o ordinador {webGlLink}. Aquesta tecnologia és necessària per a que Scratch 3.0 funcioni.",
+    "gui.webglModal.webgllink": "no suporta WebGL",
+    "gui.webglModal.back": "Enrere",
+    "gui.webglModal.previewfaq": "Si vols saber-ne més, vés a la {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Preguntes freqüents",
+    "gui.costumeLibrary.chooseABackdrop": "Tria un fons",
+    "gui.costumeLibrary.chooseACostume": "Tria un vestit",
+    "gui.costumeTab.addBackdropFromLibrary": "Tria un fons",
+    "gui.costumeTab.addCostumeFromLibrary": "Tria un vestit",
+    "gui.costumeTab.addBlankCostume": "Dibuixa un nou vestit",
+    "gui.costumeTab.addSurpriseCostume": "Sorpresa",
+    "gui.costumeTab.addFileBackdrop": "Puja un fons",
+    "gui.costumeTab.addFileCostume": "Puja un vestit",
+    "gui.costumeTab.addCameraCostume": "Càmera",
+    "gui.extensionLibrary.chooseAnExtension": "Tria una extensió",
+    "gui.extensionLibrary.extensionUrl": "Escriu la URL de l'extensió",
+    "gui.gui.defaultProjectTitle": "Projecte de Scratch",
+    "gui.recordingStep.alertMsg": "No s'ha pogut començar a gravar",
+    "gui.projectLoader.loadError": "No s'ha pogut carregar el fitxer del projecte seleccionat.",
+    "gui.soundLibrary.chooseASound": "Tria un so",
+    "gui.soundTab.fileUploadSound": "Puja un so",
+    "gui.soundTab.surpriseSound": "Sorpresa",
+    "gui.soundTab.recordSound": "Enregistra",
+    "gui.soundTab.addSoundFromLibrary": "Tria un so",
+    "gui.spriteLibrary.chooseASprite": "Tria un personatge",
+    "gui.tipsLibrary.tutorials": "Tria un tutorial",
+    "gui.alerts.createsuccess": "S'ha creat correctament.",
+    "gui.alerts.creating": "S'està creant...",
+    "gui.alerts.creatingError": "No s'ha pogut crear el projecte. Torneu a intentar-ho.",
+    "gui.alerts.savingError": "No s'ha pogut desar el projecte. Torneu a intentar-ho.",
+    "gui.alerts.savesuccess": "S'ha desat correctament.",
+    "gui.alerts.saving": "S'està desant...",
+    "gui.defaultProject.meow": "Mèu",
+    "gui.defaultProject.variable": "la meva variable",
+    "gui.howtos.intro-move-sayhello-hat.name": "Comença",
+    "gui.howtos.intro-move.step_stepMove": "Afegeix un bloc de moviment",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Prem la bandera verda per començar",
+    "gui.howtos.say-it-out-loud": "Crea animacions que parlin",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Afegeix els blocs De text a parla",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Digues alguna cosa",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Estableix una veu",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Mou-te a voltant",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Afegeix un fons",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Afegeix un altre personatge",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Realitza una cançó",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Canvia el color",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Gira al voltant",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Creix i encongeix",
+    "gui.howtos.cartoon-network": "Anima un joc d'aventures",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Tria un personatge a mostrar",
+    "gui.howtos.cartoon-network.step_CNsay": "Digues alguna cosa",
+    "gui.howtos.cartoon-network.step_CNglide": "Llisca al voltant",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Tria un objecte a capturar",
+    "gui.howtos.cartoon-network.step_CNcollect": "Recull objectes",
+    "gui.howtos.cartoon-network.step_CNvariable": "Crea una variable de puntuació",
+    "gui.howtos.cartoon-network.step_CNscore": "Desa la puntuació",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Nivell superat: canvia el fons",
+    "gui.howtos.animate-a-name.name": "Anima un nom",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Tria un personatge de Lletra",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Reprodueix un so quan es cliqui",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Tria un altre personatge de Lletra",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Canvia el color",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Tria un altre personatge de Lletra i fes-lo girar",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Tria un altre personatge de Lletra i fes-lo créixer",
+    "gui.howtos.make-music.name": "Crea música",
+    "gui.howtos.Make-Music.step_PickInstrument": "Tria un personatge d'Instrument",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Reprodueix un so quan es cliqui",
+    "gui.howtos.Make-Music.step_MakeSong": "Crea una cançó",
+    "gui.howtos.make-music.step_MakeBeat": "Tria un tambor i fes un batec",
+    "gui.howtos.make-music.step_MakeBeatBox": "Tria el personatge Microphone & Surprise Beatbox",
+    "gui.howtos.make-a-game.name": "Fes un joc de clics",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Tria un personatge",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Reprodueix un so quan es cliqui",
+    "gui.howtos.make-a-game.step_GameAddScore": "Crea una variable de puntuació",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Augmenta la puntuació quan es cliqui",
+    "gui.howtos.make-a-game.step_Random": "Vés a una posició aleatòria",
+    "gui.howtos.make-music.step_GameChangeColor": "Canvia el color",
+    "gui.howtos.make-music.step_ResetScore": "Reinicia la puntuació",
+    "gui.howtos.make-a-chase-game.name": "Fes un joc de persecució",
+    "gui.howtos.Chase-Game.step_BG": "Afegeix un fons",
+    "gui.howtos.chase-game.step_AddOcto": "Afegeix un personatge",
+    "gui.howtos.make-music.step_LeftRight": "Mou a dreta i esquerra amb les fletxes",
+    "gui.howtos.Chase-Game.step_UpDown": "Mou amunt i avall amb les fletxes",
+    "gui.howtos.Chase-Game.step_AddStar": "Afegeix un altre personatge",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Mou a l'atzar",
+    "gui.howtos.Chase-Game.step_WhenTouch": "En el personatge Octopus, quan es toqui reprodueix un so",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Crea una variable de puntuació",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "En el personatge Octopus, quan es toqui afegeix puntuació",
+    "gui.howtos.add-sprite.name": "Afegeix un personatge",
+    "gui.howtos.add-sprite.step_addSprite": "Afegeix un personatge",
+    "gui.howtos.add-a-backdrop.name": "Afegeix un fons",
+    "gui.howtos.change-size.name": "Augmenta la mida",
+    "gui.howtos.glide-around.name": "Llisca al voltant",
+    "gui.howtos.record-a-sound.name": "Grava un so",
+    "gui.howtos.spin-video.name": "Fes-lo girar",
+    "gui.howtos.hide-and-show.name": "Fet i Amagar",
+    "gui.howtos.switch-costume.name": "Anima un personatge",
+    "gui.howtos.move-around-with-arrow-keys.name": "Utilitza les fletxes de direcció",
+    "gui.howtos.add-effects.name": "Afegeix efectes",
+    "gui.extension.music.name": "Música",
+    "gui.extension.music.description": "Toca instruments i tambors.",
+    "gui.extension.pen.name": "Llapis",
+    "gui.extension.pen.description": "Dibuixa amb els teus personatges.",
+    "gui.extension.videosensing.name": "Captura de vídeo",
+    "gui.extension.videosensing.description": "Detecta moviment amb la càmera.",
+    "gui.extension.text2speech.name": "De text a parla",
+    "gui.extension.text2speech.description": "Fes que els teus projectes parlin.",
+    "gui.extension.translate.name": "Tradueix",
+    "gui.extension.translate.description": "Tradueix text en molts idiomes.",
+    "gui.extension.microbit.description": "Connecta els teus projectes amb el món.",
+    "gui.extension.microbit.connectingMessage": "Connectant",
+    "gui.extension.ev3.description": "Construeix robots interactius i més.",
+    "gui.extension.ev3.connectingMessage": "Connectant. Assegura't que el codi en el teu EV3 és 1234.",
+    "gui.extension.wedo2.description": "Construeix amb motors i sensors.",
+    "gui.extension.wedo2.connectingMessage": "Connectant",
+    "gui.libraryTags.all": "Tots",
+    "gui.libraryTags.animals": "Animals",
+    "gui.libraryTags.dance": "Balla",
+    "gui.libraryTags.effects": "Efectes",
+    "gui.libraryTags.fantasy": "Fantasia",
+    "gui.libraryTags.fashion": "Moda",
+    "gui.libraryTags.food": "Menjar",
+    "gui.libraryTags.indoors": "Interiors",
+    "gui.libraryTags.loops": "Repeticions",
+    "gui.libraryTags.music": "Música",
+    "gui.libraryTags.notes": "Anotacions",
+    "gui.libraryTags.outdoors": "Exteriors",
+    "gui.libraryTags.patterns": "Patrons",
+    "gui.libraryTags.people": "Gent",
+    "gui.libraryTags.percussion": "Percussió",
+    "gui.libraryTags.space": "Espai",
+    "gui.libraryTags.sports": "Esports",
+    "gui.libraryTags.underwater": "Sota l'aigua",
+    "gui.libraryTags.voice": "Veu",
+    "gui.libraryTags.wacky": "Divertit",
+    "gui.libraryTags.animation": "Animació",
+    "gui.libraryTags.art": "Art",
+    "gui.libraryTags.games": "Jocs",
+    "gui.libraryTags.stories": "Històries",
+    "gui.libraryTags.letters": "Lletres",
+    "gui.opcodeLabels.direction": "direcció",
+    "gui.opcodeLabels.xposition": "posició x",
+    "gui.opcodeLabels.yposition": "posició y",
+    "gui.opcodeLabels.size": "mida",
+    "gui.opcodeLabels.costumename": "nom del vestit",
+    "gui.opcodeLabels.costumenumber": "número de vestit",
+    "gui.opcodeLabels.backdropname": "nom del fons",
+    "gui.opcodeLabels.backdropnumber": "número de fons",
+    "gui.opcodeLabels.volume": "volum",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "resposta",
+    "gui.opcodeLabels.loudness": "volum del so",
+    "gui.opcodeLabels.username": "nom d'usuari",
+    "gui.opcodeLabels.year": "any",
+    "gui.opcodeLabels.month": "mes",
+    "gui.opcodeLabels.date": "data",
+    "gui.opcodeLabels.dayofweek": "dia de la setmana",
+    "gui.opcodeLabels.hour": "hora",
+    "gui.opcodeLabels.minute": "minut",
+    "gui.opcodeLabels.second": "segon",
+    "gui.opcodeLabels.timer": "cronòmetre",
+    "gui.sharedMessages.backdrop": "fons{index}",
+    "gui.sharedMessages.costume": "vestit{index}",
+    "gui.sharedMessages.sprite": "Personatge{index}",
+    "gui.sharedMessages.pop": "pop"
 }

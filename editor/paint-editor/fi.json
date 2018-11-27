@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Väri",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Värikylläisyys",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Kirkkaus",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Älä huoli, toteutamme sitä {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Tulossa pian...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Toteutamme sitä {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Täytä",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Asuste",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Ryhmitä",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Pura ryhmitys",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Kumoa",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Tee uudelleen",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Eteenpäin",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Taaksepäin",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Eteen",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Taakse",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Enemmän",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Koko",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Kumin koko",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopioi",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Liitä",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Poista",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Kaartuva",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Teräväkärkinen",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Paksuus",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Käännä vaakasuoraan",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Käännä pystysuoraan",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Täytetty",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Ääriviivallinen",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Muunna bittikartaksi",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Muunna vektoriksi",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Ääriviiva",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Sivellin",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Pyyhekumi",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Täytä",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Viiva",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Ympyrä",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Suorakulmio",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Muotoile uudelleen",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Pyöristetty suorakulmio",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Valitse",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Teksti",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Vaihda",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Väri",
+    "paint.paintEditor.saturation": "Värikylläisyys",
+    "paint.paintEditor.brightness": "Kirkkaus",
+    "gui.comingSoon.message1": "Älä huoli, toteutamme sitä {emoji}",
+    "gui.comingSoon.message2": "Tulossa pian...",
+    "gui.comingSoon.message3": "Toteutamme sitä {emoji}",
+    "paint.paintEditor.fill": "Täytä",
+    "paint.paintEditor.costume": "Asuste",
+    "paint.paintEditor.group": "Ryhmitä",
+    "paint.paintEditor.ungroup": "Pura ryhmitys",
+    "paint.paintEditor.undo": "Kumoa",
+    "paint.paintEditor.redo": "Tee uudelleen",
+    "paint.paintEditor.forward": "Eteenpäin",
+    "paint.paintEditor.backward": "Taaksepäin",
+    "paint.paintEditor.front": "Eteen",
+    "paint.paintEditor.back": "Taakse",
+    "paint.paintEditor.more": "Enemmän",
+    "paint.modeTools.brushSize": "Koko",
+    "paint.modeTools.eraserSize": "Kumin koko",
+    "paint.modeTools.copy": "Kopioi",
+    "paint.modeTools.paste": "Liitä",
+    "paint.modeTools.delete": "Poista",
+    "paint.modeTools.curved": "Kaartuva",
+    "paint.modeTools.pointed": "Teräväkärkinen",
+    "paint.modeTools.thickness": "Paksuus",
+    "paint.modeTools.flipHorizontal": "Käännä vaakasuoraan",
+    "paint.modeTools.flipVertical": "Käännä pystysuoraan",
+    "paint.modeTools.filled": "Täytetty",
+    "paint.modeTools.outlined": "Ääriviivallinen",
+    "paint.paintEditor.bitmap": "Muunna bittikartaksi",
+    "paint.paintEditor.vector": "Muunna vektoriksi",
+    "paint.paintEditor.stroke": "Ääriviiva",
+    "paint.brushMode.brush": "Sivellin",
+    "paint.eraserMode.eraser": "Pyyhekumi",
+    "paint.fillMode.fill": "Täytä",
+    "paint.lineMode.line": "Viiva",
+    "paint.ovalMode.oval": "Ympyrä",
+    "paint.rectMode.rect": "Suorakulmio",
+    "paint.reshapeMode.reshape": "Muotoile uudelleen",
+    "paint.roundedRectMode.roundedRect": "Pyöristetty suorakulmio",
+    "paint.selectMode.select": "Valitse",
+    "paint.textMode.text": "Teksti",
+    "paint.colorPicker.swap": "Vaihda"
 }

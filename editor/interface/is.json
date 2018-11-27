@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Bakpoki",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Villa kom upp þegar reynt var að sækja bakpokann",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Hleð inn ...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Meira",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Bakpokinn er tómur",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Styður ekki vafra",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Því miður styður Scratch 3.0 ekki Internet Explorer, Vivaldi, Opera eða Silk. Við mælum með að prófa nýrri vafra eins og Google Chrome, Mozilla Firefox eða Microsoft Edge. ",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Til baka",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Til að læra meira {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Spurt & svarað",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Taka mynd",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Hleð inn myndavél ...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Við þurfum leyfi frá þér til að nota myndavélina þína",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Endurtaka mynd",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Vista",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Taka mynd",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Hleð inn ...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Leyfa myndavél",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Kennsluefni",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Loka",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Fleiri hlutir til að prófa!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Sjá fleiri",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ekki hafa áhyggjur, við erum að vinna í þessu {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Kemur bráðlega...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Við erum að vinna í þessu {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Engin tæki fundin",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Reyna aftur",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Tengt",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Aftengja",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Fara til baka í ritil",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Að tengjast...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Úps, eitthvað fór úrskeiðis",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Reyna aftur",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Hjálp",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Nafn tækis",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Tengjast",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Leitað að tækjum",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Engin tæki fundin",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Veldu tækið þitt í listanum að ofan.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Endurhlaða",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Vertu viss um að hafa sett upp Scratch Link og það sé í gangi",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Athugaðu hvort að það sé kveikt á Bluetooth",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Reyna aftur",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Hjálp",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Keyra",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stopp",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Úps! Eitthvað fór úrskeiðis. ",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Því miður hefur Scratch krassað. Þessi villa verður send sjálfkrafa til Scratch teymisins. Endurnýjaðu síðuna þína og reyndu aftur. ",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reload",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Búa til kubb",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Bæta við inntaki",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "Tala eða texti",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Bæta við inntaki",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boolean",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Bæta við merki",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Keyra án þess að uppfæra skjámynd",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Hætta við",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Í lagi",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Átt",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Allt í kring",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Vinstri/hægri",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Ekki snúast",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Bæta við viðbót",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Kóði",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Bakgrunnar",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Búningar",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Hljóð",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Skoða Scratch 2.0 verkefni",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Settu inn hlekk af Sratch verkefni sem þú hefur deilt. Breytingar gerðar í 3.0 sýnishorninu verða ekki vistaðar.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Settu inn hlekk af Sratch verkefni sem þú hefur deilt. Breytingar gerðar í 3.0 sýnishorninu verða ekki vistaðar. ",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Uh, ó, þessi hlekkur eða einkenni á verkefni er ekki alveg réttur. ",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Sjá",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Til baka",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Til að læra meira {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Spurt & svarað",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Kemur bráðlega",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Leita",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Öll",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Verið að búa til kubba ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Sæki teikningu ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Sæki hljóð ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Sæki viðbætur ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Safna saman köttunum ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Erum að vinna í þessu ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Erum að blása upp gobos ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Undirbúið broskalla ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Hleð inn verkefni ",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Yfirlit",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Dótið mitt",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Mínir áfangar",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Minn áfangi",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Stillingar reiknings",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Útskrá",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Sjá samfélag",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Notandanafn",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Lykilorð",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Skrá inn",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "velja tungumál",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Kennsluefni",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Restore",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Vista núna",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Vista sem afrit",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Endurblanda",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Ný",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Skrá",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Sækja úr tölvunni þinni",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Vista á tölvuna þína",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Breyta",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Slökkva á snöggham",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Kveikja á snöggham",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Taktu þátt í Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Skrá inn",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Gefa endurgjöf",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Deilt",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Deila",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Hjálp",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Til baka",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "venjuleg leturgerð",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "Stór leturgerð",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "renna",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Prófaðu Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Velkomin/n í Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Ekki núna",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Try It",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Skoða 2.0 verkefni",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Velkomin/n í Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Við erum að vinna í næstu kynslóð af Scratch. Við erum spennt fyrir þig að prófa!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Ekki núna",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Prófaðu! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Skoða 2.0 verkefni",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Til að vita meira {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Spurt & svarað",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Fyrir allar teikningar",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Aðeins fyrir þessa teikningu",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Skýjabreyta (geymd á miðlara)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Þessi breyta verður aðgengileg öllum teikningunum.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Hætta við",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "Í lagi",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stopp",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Spila",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Hleð inn ...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Vista",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Taka upp aftur",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Taka upp hljóð",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Taka upp",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Hljóð",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Spila",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stopp",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Klippa",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Vista",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Afgera",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Endurgera",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Hraðar",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Hægar",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Bergmál",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Vélmenni",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Hærra",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Mýkja",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Snúa við",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Nafn",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Teikning",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Sýna",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Stærð",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "tvöfalda",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "eyða",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "flytja út",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Veldu teikningu",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Mála",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Koma á óvart",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Sækja teikningu",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Skipta yfir á stórt svið",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Skipta yfir á lítið svið",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Fylla í skjáinn",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Minnka skjáinn",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Fylla í skjá stýring",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Veldu bakgrunn",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Málning",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Koma á óvart",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Sækja bakgrunn",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Svið",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Bakgrunnar",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Snögghamur",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Vafrinn þinn styður ekki WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Því miður vantar vafrann þinn eða tölvuna {webGlLink}. Það þarf þessa tækni til að nota Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "styður ekki WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Til baka",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Til að læra meira {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Spurt & svarað",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Veldu bakgrunn",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Velja búning",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Veldu bakgrunn",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Velja búning",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Málning",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Koma á óvart",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Sækja bakgrunn",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Sækja búning",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Myndavél",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Veldu viðbót",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Sett inn hlekk á viðbótinni",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Gat ekki hafið upptöku",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Tókst ekki að hlaða skránni með verkefninu sem var valið.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Veldu hljóð",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Sækja hljóð",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Koma á óvart",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Taka upp",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Veldu hljóð",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Veldu teikningu",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Veldu kennsuefni",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Smíða...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Vista...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meow",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "my variable",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Hefjast handa",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Bættu við hreyfi kubb",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Ýttu á græna fánann til að byrja",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Say Something",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Bæta við bakgrunn",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Breyta lit",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Say Something",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Svífa um",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Hreyfa nafn",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Veldu stafa teikningu",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Spila hljóð þegar það er klikkað",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Veldu aðra stafa teikningu",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Breyta lit",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Veldu aðra stafa teikningu & láttu hana snúast",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Veldu aðra stafa teikningu & láttu hana vaxa",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Búa til tónlist",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Veldu hljóðfæra teikningu",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Spila hljóð þegar það er smellt",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Búa til lag",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Veldu trommu og búðu til takt",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Veldu míkrafón teikninguna og taktkassa sem kemur á óvart",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Búðu til leik þar sem hægt er að smella á hluti",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Veldu teikningu",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Spila hljóð þegar það er smellt",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Búðu til stiga breytu",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Hækka stig það er smellt",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Fara á handahófskennda staðsetningu",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Breyta lit",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Endurstilla stig",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Búðu til eltingarleik",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Bæta við bakgrunn",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Bæta við teikningu",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Færa til hægri og vinstri með örvatökkunum",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Færa upp og niður með örvatökkunum",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Bæta við annari teikningu",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Færa handahófskennt",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Kolkrabba teikningin á að spila hljóð þegar hún snertir einhvað",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Búðu til stiga breytu",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Þegar kolkrabba teikningin snertir einhvað, er bætt við stigi",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Bæta við teikningu",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Bæta við teikningu",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Bæta við bakgrunn",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Breyta stærð",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Svífa um",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Taka upp hljóð",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Láta snúast",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Fela og sýna",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Hreyfa teikninguna",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Nota örvatakka",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Bæta við effektum",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Tónlist",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Spila hljóðfæri og trommur. ",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Penni",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Teiknaðu með teikningunum þínum. ",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Vídeó mæling",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Skynja hreyfingu með myndavélinni",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Translate",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Þýða texta á mörg tungumál. ",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Tengdu verkefnin þín við heiminn. ",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Tengjast",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Búðu til gagnvirk vélmenni og fleira. ",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Tengist. Passaðu að pinnið í EV3 sé 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Byggt með mótorum og skynjurum.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Tengjast",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Öll",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Dýr",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dans",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Effektar",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Ævintýri",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Fashion",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Innandyra",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Tónlist",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Notes",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Utandyra",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Fólk",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Ásláttur",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Geimurinn",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Íþróttir",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Neðansjávar",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animation",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "List",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Leikir",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Sögur",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Bókstafir",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "átt",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x hnit",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y hnit",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "stærð",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "nafn búnings",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "nafn bakgrunns",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "hljóðstyrkur",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "taktur",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "svar",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "hljóðstyrkur",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "notendanafn",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "ár",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mánuður",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "dagsetning",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "vikudagur",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "klukkustund",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "mínúta",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "sekúnda",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "skeiðklukka",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "popp",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Bakpoki",
+    "gui.backpack.errorBackpack": "Villa kom upp þegar reynt var að sækja bakpokann",
+    "gui.backpack.loadingBackpack": "Hleð inn ...",
+    "gui.backpack.more": "Meira",
+    "gui.backpack.emptyBackpack": "Bakpokinn er tómur",
+    "gui.unsupportedBrowser.label": "Styður ekki vafra",
+    "gui.unsupportedBrowser.description": "Því miður styður Scratch 3.0 ekki Internet Explorer, Vivaldi, Opera eða Silk. Við mælum með að prófa nýrri vafra eins og Google Chrome, Mozilla Firefox eða Microsoft Edge. ",
+    "gui.unsupportedBrowser.back": "Til baka",
+    "gui.unsupportedBrowser.previewfaq": "Til að læra meira {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Spurt & svarað",
+    "gui.cameraModal.cameraModalTitle": "Taka mynd",
+    "gui.cameraModal.loadingCameraMessage": "Hleð inn myndavél ...",
+    "gui.cameraModal.permissionRequest": "Við þurfum leyfi frá þér til að nota myndavélina þína",
+    "gui.cameraModal.retakePhoto": "Endurtaka mynd",
+    "gui.cameraModal.save": "Vista",
+    "gui.cameraModal.takePhoto": "Taka mynd",
+    "gui.cameraModal.loadingCaption": "Hleð inn ...",
+    "gui.cameraModal.enableCameraCaption": "Leyfa myndavél",
+    "gui.cards.all-tutorials": "Kennsluefni",
+    "gui.cards.close": "Loka",
+    "gui.cards.more-things-to-try": "Fleiri hlutir til að prófa!",
+    "gui.cards.see-more": "Sjá fleiri",
+    "gui.comingSoon.message1": "Ekki hafa áhyggjur, við erum að vinna í þessu {emoji}",
+    "gui.comingSoon.message2": "Kemur bráðlega...",
+    "gui.comingSoon.message3": "Við erum að vinna í þessu {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Engin tæki fundin",
+    "gui.connection.auto-scanning.prescan": "Have your device nearby, then begin searching.",
+    "gui.connection.auto-scanning.pressbutton": "Press the button on your device.",
+    "gui.connection.auto-scanning.start-search": "Start Searching",
+    "gui.connection.connecting-searchbutton": "Searching...",
+    "gui.connection.auto-scanning.try-again": "Reyna aftur",
+    "gui.connection.connected": "Tengt",
+    "gui.connection.disconnect": "Aftengja",
+    "gui.connection.go-to-editor": "Fara til baka í ritil",
+    "gui.connection.connecting-cancelbutton": "Að tengjast...",
+    "gui.connection.error.errorMessage": "Úps, eitthvað fór úrskeiðis",
+    "gui.connection.error.tryagainbutton": "Reyna aftur",
+    "gui.connection.error.helpbutton": "Hjálp",
+    "gui.connection.peripheral-name-label": "Nafn tækis",
+    "gui.connection.connect": "Tengjast",
+    "gui.connection.scanning.lookingforperipherals": "Leitað að tækjum",
+    "gui.connection.scanning.noPeripheralsFound": "Engin tæki fundin",
+    "gui.connection.scanning.instructions": "Veldu tækið þitt í listanum að ofan.",
+    "gui.connection.search": "Endurhlaða",
+    "gui.connection.unavailable.installscratchlink": "Vertu viss um að hafa sett upp Scratch Link og það sé í gangi",
+    "gui.connection.unavailable.enablebluetooth": "Athugaðu hvort að það sé kveikt á Bluetooth",
+    "gui.connection.unavailable.tryagainbutton": "Reyna aftur",
+    "gui.connection.unavailable.helpbutton": "Hjálp",
+    "gui.controls.go": "Keyra",
+    "gui.controls.stop": "Stopp",
+    "gui.crashMessage.label": "Úps! Eitthvað fór úrskeiðis. ",
+    "gui.crashMessage.description": "Því miður hefur Scratch krassað. Þessi villa verður send sjálfkrafa til Scratch teymisins. Endurnýjaðu síðuna þína og reyndu aftur. ",
+    "gui.crashMessage.reload": "Reload",
+    "gui.customProcedures.myblockModalTitle": "Búa til kubb",
+    "gui.customProcedures.addAnInputNumberText": "Bæta við inntaki",
+    "gui.customProcedures.numberTextType": "Tala eða texti",
+    "gui.customProcedures.addAnInputBoolean": "Bæta við inntaki",
+    "gui.customProcedures.booleanType": "boolean",
+    "gui.customProcedures.addALabel": "Bæta við merki",
+    "gui.customProcedures.runWithoutScreenRefresh": "Keyra án þess að uppfæra skjámynd",
+    "gui.customProcedures.cancel": "Hætta við",
+    "gui.customProcedures.ok": "Í lagi",
+    "gui.SpriteInfo.direction": "Átt",
+    "gui.directionPicker.rotationStyles.allAround": "Allt í kring",
+    "gui.directionPicker.rotationStyles.leftRight": "Vinstri/hægri",
+    "gui.directionPicker.rotationStyles.dontRotate": "Ekki snúast",
+    "gui.gui.addExtension": "Bæta við viðbót",
+    "gui.gui.codeTab": "Kóði",
+    "gui.gui.backdropsTab": "Bakgrunnar",
+    "gui.gui.costumesTab": "Búningar",
+    "gui.gui.soundsTab": "Hljóð",
+    "gui.importInfo.title": "Skoða Scratch 2.0 verkefni",
+    "gui.importInfo.betamessage": "Settu inn hlekk af Sratch verkefni sem þú hefur deilt. Breytingar gerðar í 3.0 sýnishorninu verða ekki vistaðar.",
+    "gui.importInfo.message": "Settu inn hlekk af Sratch verkefni sem þú hefur deilt. Breytingar gerðar í 3.0 sýnishorninu verða ekki vistaðar. ",
+    "gui.importInfo.invalidFormatError": "Uh, ó, þessi hlekkur eða einkenni á verkefni er ekki alveg réttur. ",
+    "gui.importModal.viewproject": "Sjá",
+    "gui.importInfo.goback": "Til baka",
+    "gui.importInfo.previewfaq": "Til að læra meira {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Spurt & svarað",
+    "gui.extensionLibrary.comingSoon": "Kemur bráðlega",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Leita",
+    "gui.library.allTag": "Öll",
+    "gui.loader.message1": "Verið að búa til kubba ...",
+    "gui.loader.message2": "Sæki teikningu ...",
+    "gui.loader.message3": "Sæki hljóð ...",
+    "gui.loader.message4": "Sæki viðbætur ...",
+    "gui.loader.message5": "Safna saman köttunum ...",
+    "gui.loader.message6": "Erum að vinna í þessu ...",
+    "gui.loader.message7": "Erum að blása upp gobos ...",
+    "gui.loader.message8": "Undirbúið broskalla ...",
+    "gui.loader.headline": "Hleð inn verkefni ",
+    "gui.accountMenu.profile": "Yfirlit",
+    "gui.accountMenu.myStuff": "Dótið mitt",
+    "gui.accountMenu.myClasses": "Mínir áfangar",
+    "gui.accountMenu.myClass": "Minn áfangi",
+    "gui.accountMenu.accountSettings": "Stillingar reiknings",
+    "gui.accountMenu.signOut": "Útskrá",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Sjá samfélag",
+    "general.username": "Notandanafn",
+    "general.password": "Lykilorð",
+    "general.signIn": "Skrá inn",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "velja tungumál",
+    "gui.menuBar.tutorialsLibrary": "Kennsluefni",
+    "gui.menuBar.restoreSprite": "Restore Sprite",
+    "gui.menuBar.restoreSound": "Restore Sound",
+    "gui.menuBar.restoreCostume": "Restore Costume",
+    "gui.menuBar.restore": "Restore",
+    "gui.menuBar.saveNow": "Vista núna",
+    "gui.menuBar.saveAsCopy": "Vista sem afrit",
+    "gui.menuBar.remix": "Endurblanda",
+    "gui.menuBar.new": "Ný",
+    "gui.menuBar.file": "Skrá",
+    "gui.menuBar.uploadFromComputer": "Sækja úr tölvunni þinni",
+    "gui.menuBar.downloadToComputer": "Vista á tölvuna þína",
+    "gui.menuBar.edit": "Breyta",
+    "gui.menuBar.turboModeOff": "Slökkva á snöggham",
+    "gui.menuBar.turboModeOn": "Kveikja á snöggham",
+    "gui.menuBar.joinScratch": "Taktu þátt í Scratch",
+    "gui.menuBar.signIn": "Skrá inn",
+    "gui.menuBar.giveFeedback": "Gefa endurgjöf",
+    "gui.gui.projectTitlePlaceholder": "Project title here",
+    "gui.menuBar.isShared": "Deilt",
+    "gui.menuBar.share": "Deila",
+    "gui.modal.help": "Hjálp",
+    "gui.modal.back": "Til baka",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "venjuleg leturgerð",
+    "gui.monitor.contextMenu.large": "Stór leturgerð",
+    "gui.monitor.contextMenu.slider": "renna",
+    "gui.previewInfo.label": "Prófaðu Scratch 3.0",
+    "gui.previewInfo.welcome": "Velkomin/n í Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Ekki núna",
+    "gui.previewModal.tryittooltip": "Try It",
+    "gui.previewModal.viewprojecttooltip": "Skoða 2.0 verkefni",
+    "gui.previewInfo.betawelcome": "Velkomin/n í Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Við erum að vinna í næstu kynslóð af Scratch. Við erum spennt fyrir þig að prófa!",
+    "gui.previewInfo.notnow": "Ekki núna",
+    "gui.previewModal.tryit": "Prófaðu! {caticon}",
+    "gui.previewModal.viewproject": "Skoða 2.0 verkefni",
+    "gui.previewInfo.previewfaq": "Til að vita meira {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Spurt & svarað",
+    "gui.gui.variableScopeOptionAllSprites": "Fyrir allar teikningar",
+    "gui.gui.variableScopeOptionSpriteOnly": "Aðeins fyrir þessa teikningu",
+    "gui.gui.cloudVariableOption": "Skýjabreyta (geymd á miðlara)",
+    "gui.gui.variablePromptAllSpritesMessage": "Þessi breyta verður aðgengileg öllum teikningunum.",
+    "gui.prompt.cancel": "Hætta við",
+    "gui.prompt.ok": "Í lagi",
+    "gui.playbackStep.stopMsg": "Stopp",
+    "gui.playbackStep.playMsg": "Spila",
+    "gui.playbackStep.loadingMsg": "Hleð inn ...",
+    "gui.playbackStep.saveMsg": "Vista",
+    "gui.playbackStep.reRecordMsg": "Taka upp aftur",
+    "gui.recordModal.title": "Taka upp hljóð",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Taka upp",
+    "gui.soundEditor.sound": "Hljóð",
+    "gui.soundEditor.play": "Spila",
+    "gui.soundEditor.stop": "Stopp",
+    "gui.soundEditor.trim": "Klippa",
+    "gui.soundEditor.save": "Vista",
+    "gui.soundEditor.undo": "Afgera",
+    "gui.soundEditor.redo": "Endurgera",
+    "gui.soundEditor.faster": "Hraðar",
+    "gui.soundEditor.slower": "Hægar",
+    "gui.soundEditor.echo": "Bergmál",
+    "gui.soundEditor.robot": "Vélmenni",
+    "gui.soundEditor.louder": "Hærra",
+    "gui.soundEditor.softer": "Mýkja",
+    "gui.soundEditor.reverse": "Snúa við",
+    "gui.SpriteInfo.spritePlaceholder": "Nafn",
+    "gui.SpriteInfo.sprite": "Teikning",
+    "gui.SpriteInfo.show": "Sýna",
+    "gui.SpriteInfo.size": "Stærð",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "tvöfalda",
+    "gui.spriteSelectorItem.contextMenuDelete": "eyða",
+    "gui.spriteSelectorItem.contextMenuExport": "flytja út",
+    "gui.spriteSelector.addSpriteFromLibrary": "Veldu teikningu",
+    "gui.spriteSelector.addSpriteFromPaint": "Mála",
+    "gui.spriteSelector.addSpriteFromSurprise": "Koma á óvart",
+    "gui.spriteSelector.addSpriteFromFile": "Sækja teikningu",
+    "gui.stageHeader.stageSizeLarge": "Skipta yfir á stórt svið",
+    "gui.stageHeader.stageSizeSmall": "Skipta yfir á lítið svið",
+    "gui.stageHeader.stageSizeFull": "Fylla í skjáinn",
+    "gui.stageHeader.stageSizeUnFull": "Minnka skjáinn",
+    "gui.stageHeader.fullscreenControl": "Fylla í skjá stýring",
+    "gui.spriteSelector.addBackdropFromLibrary": "Veldu bakgrunn",
+    "gui.stageSelector.addBackdropFromPaint": "Málning",
+    "gui.stageSelector.addBackdropFromSurprise": "Koma á óvart",
+    "gui.stageSelector.addBackdropFromFile": "Sækja bakgrunn",
+    "gui.stageSelector.stage": "Svið",
+    "gui.stageSelector.backdrops": "Bakgrunnar",
+    "gui.turboMode.active": "Snögghamur",
+    "gui.webglModal.label": "Vafrinn þinn styður ekki WebGL",
+    "gui.webglModal.description": "Því miður vantar vafrann þinn eða tölvuna {webGlLink}. Það þarf þessa tækni til að nota Scratch 3.0.",
+    "gui.webglModal.webgllink": "styður ekki WebGL",
+    "gui.webglModal.back": "Til baka",
+    "gui.webglModal.previewfaq": "Til að læra meira {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Spurt & svarað",
+    "gui.costumeLibrary.chooseABackdrop": "Veldu bakgrunn",
+    "gui.costumeLibrary.chooseACostume": "Velja búning",
+    "gui.costumeTab.addBackdropFromLibrary": "Veldu bakgrunn",
+    "gui.costumeTab.addCostumeFromLibrary": "Velja búning",
+    "gui.costumeTab.addBlankCostume": "Málning",
+    "gui.costumeTab.addSurpriseCostume": "Koma á óvart",
+    "gui.costumeTab.addFileBackdrop": "Sækja bakgrunn",
+    "gui.costumeTab.addFileCostume": "Sækja búning",
+    "gui.costumeTab.addCameraCostume": "Myndavél",
+    "gui.extensionLibrary.chooseAnExtension": "Veldu viðbót",
+    "gui.extensionLibrary.extensionUrl": "Sett inn hlekk á viðbótinni",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Gat ekki hafið upptöku",
+    "gui.projectLoader.loadError": "Tókst ekki að hlaða skránni með verkefninu sem var valið.",
+    "gui.soundLibrary.chooseASound": "Veldu hljóð",
+    "gui.soundTab.fileUploadSound": "Sækja hljóð",
+    "gui.soundTab.surpriseSound": "Koma á óvart",
+    "gui.soundTab.recordSound": "Taka upp",
+    "gui.soundTab.addSoundFromLibrary": "Veldu hljóð",
+    "gui.spriteLibrary.chooseASprite": "Veldu teikningu",
+    "gui.tipsLibrary.tutorials": "Veldu kennsuefni",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Smíða...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Vista...",
+    "gui.defaultProject.meow": "Meow",
+    "gui.defaultProject.variable": "my variable",
+    "gui.howtos.intro-move-sayhello-hat.name": "Hefjast handa",
+    "gui.howtos.intro-move.step_stepMove": "Bættu við hreyfi kubb",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Ýttu á græna fánann til að byrja",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Say Something",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Bæta við bakgrunn",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Breyta lit",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Spin Around",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Say Something",
+    "gui.howtos.cartoon-network.step_CNglide": "Svífa um",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Keep Score",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Hreyfa nafn",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Veldu stafa teikningu",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Spila hljóð þegar það er klikkað",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Veldu aðra stafa teikningu",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Breyta lit",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Veldu aðra stafa teikningu & láttu hana snúast",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Veldu aðra stafa teikningu & láttu hana vaxa",
+    "gui.howtos.make-music.name": "Búa til tónlist",
+    "gui.howtos.Make-Music.step_PickInstrument": "Veldu hljóðfæra teikningu",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Spila hljóð þegar það er smellt",
+    "gui.howtos.Make-Music.step_MakeSong": "Búa til lag",
+    "gui.howtos.make-music.step_MakeBeat": "Veldu trommu og búðu til takt",
+    "gui.howtos.make-music.step_MakeBeatBox": "Veldu míkrafón teikninguna og taktkassa sem kemur á óvart",
+    "gui.howtos.make-a-game.name": "Búðu til leik þar sem hægt er að smella á hluti",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Veldu teikningu",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Spila hljóð þegar það er smellt",
+    "gui.howtos.make-a-game.step_GameAddScore": "Búðu til stiga breytu",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Hækka stig það er smellt",
+    "gui.howtos.make-a-game.step_Random": "Fara á handahófskennda staðsetningu",
+    "gui.howtos.make-music.step_GameChangeColor": "Breyta lit",
+    "gui.howtos.make-music.step_ResetScore": "Endurstilla stig",
+    "gui.howtos.make-a-chase-game.name": "Búðu til eltingarleik",
+    "gui.howtos.Chase-Game.step_BG": "Bæta við bakgrunn",
+    "gui.howtos.chase-game.step_AddOcto": "Bæta við teikningu",
+    "gui.howtos.make-music.step_LeftRight": "Færa til hægri og vinstri með örvatökkunum",
+    "gui.howtos.Chase-Game.step_UpDown": "Færa upp og niður með örvatökkunum",
+    "gui.howtos.Chase-Game.step_AddStar": "Bæta við annari teikningu",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Færa handahófskennt",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Kolkrabba teikningin á að spila hljóð þegar hún snertir einhvað",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Búðu til stiga breytu",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Þegar kolkrabba teikningin snertir einhvað, er bætt við stigi",
+    "gui.howtos.add-sprite.name": "Bæta við teikningu",
+    "gui.howtos.add-sprite.step_addSprite": "Bæta við teikningu",
+    "gui.howtos.add-a-backdrop.name": "Bæta við bakgrunn",
+    "gui.howtos.change-size.name": "Breyta stærð",
+    "gui.howtos.glide-around.name": "Svífa um",
+    "gui.howtos.record-a-sound.name": "Taka upp hljóð",
+    "gui.howtos.spin-video.name": "Láta snúast",
+    "gui.howtos.hide-and-show.name": "Fela og sýna",
+    "gui.howtos.switch-costume.name": "Hreyfa teikninguna",
+    "gui.howtos.move-around-with-arrow-keys.name": "Nota örvatakka",
+    "gui.howtos.add-effects.name": "Bæta við effektum",
+    "gui.extension.music.name": "Tónlist",
+    "gui.extension.music.description": "Spila hljóðfæri og trommur. ",
+    "gui.extension.pen.name": "Penni",
+    "gui.extension.pen.description": "Teiknaðu með teikningunum þínum. ",
+    "gui.extension.videosensing.name": "Vídeó mæling",
+    "gui.extension.videosensing.description": "Skynja hreyfingu með myndavélinni",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Translate",
+    "gui.extension.translate.description": "Þýða texta á mörg tungumál. ",
+    "gui.extension.microbit.description": "Tengdu verkefnin þín við heiminn. ",
+    "gui.extension.microbit.connectingMessage": "Tengjast",
+    "gui.extension.ev3.description": "Búðu til gagnvirk vélmenni og fleira. ",
+    "gui.extension.ev3.connectingMessage": "Tengist. Passaðu að pinnið í EV3 sé 1234.",
+    "gui.extension.wedo2.description": "Byggt með mótorum og skynjurum.",
+    "gui.extension.wedo2.connectingMessage": "Tengjast",
+    "gui.libraryTags.all": "Öll",
+    "gui.libraryTags.animals": "Dýr",
+    "gui.libraryTags.dance": "Dans",
+    "gui.libraryTags.effects": "Effektar",
+    "gui.libraryTags.fantasy": "Ævintýri",
+    "gui.libraryTags.fashion": "Fashion",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "Innandyra",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Tónlist",
+    "gui.libraryTags.notes": "Notes",
+    "gui.libraryTags.outdoors": "Utandyra",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Fólk",
+    "gui.libraryTags.percussion": "Ásláttur",
+    "gui.libraryTags.space": "Geimurinn",
+    "gui.libraryTags.sports": "Íþróttir",
+    "gui.libraryTags.underwater": "Neðansjávar",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Animation",
+    "gui.libraryTags.art": "List",
+    "gui.libraryTags.games": "Leikir",
+    "gui.libraryTags.stories": "Sögur",
+    "gui.libraryTags.letters": "Bókstafir",
+    "gui.opcodeLabels.direction": "átt",
+    "gui.opcodeLabels.xposition": "x hnit",
+    "gui.opcodeLabels.yposition": "y hnit",
+    "gui.opcodeLabels.size": "stærð",
+    "gui.opcodeLabels.costumename": "nafn búnings",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "nafn bakgrunns",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "hljóðstyrkur",
+    "gui.opcodeLabels.tempo": "taktur",
+    "gui.opcodeLabels.answer": "svar",
+    "gui.opcodeLabels.loudness": "hljóðstyrkur",
+    "gui.opcodeLabels.username": "notendanafn",
+    "gui.opcodeLabels.year": "ár",
+    "gui.opcodeLabels.month": "mánuður",
+    "gui.opcodeLabels.date": "dagsetning",
+    "gui.opcodeLabels.dayofweek": "vikudagur",
+    "gui.opcodeLabels.hour": "klukkustund",
+    "gui.opcodeLabels.minute": "mínúta",
+    "gui.opcodeLabels.second": "sekúnda",
+    "gui.opcodeLabels.timer": "skeiðklukka",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "popp"
 }

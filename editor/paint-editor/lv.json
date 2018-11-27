@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Krāsa",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Piesātinājums",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Gaišums",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Neuztraucies, mēs strādājam {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Turpinājumā...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Mēs vēl strādājam {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Piepildīt",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Tērps",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grupa",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Izjaukt grupu",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Atsaukt",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Pārtaisīt",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Uz priekšu",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Atpakaļ",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Priekšpuse",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Atpakaļ",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Vairāk",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Izmērs",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Dzēšgumijas izmērs",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopēt",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Ielīmēt",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Dzēst",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Izliekts",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Centrēts",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Biezums",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Apmest horizontāli",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Apmest vertikāli",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Pildīts",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Riņķa līnija",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Pārvērst rastra grafikā",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Pārvērst vektorgrafikā",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Kontūra",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Ota",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Džēšgumija",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Piepildīt",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Līnija",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Aplis",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Taisnstūris",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Pārveidot",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Noapaļots taisnstūris",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Izvēlēties",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Teksts",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Mainīt",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Krāsa",
+    "paint.paintEditor.saturation": "Piesātinājums",
+    "paint.paintEditor.brightness": "Gaišums",
+    "gui.comingSoon.message1": "Neuztraucies, mēs strādājam {emoji}",
+    "gui.comingSoon.message2": "Turpinājumā...",
+    "gui.comingSoon.message3": "Mēs vēl strādājam {emoji}",
+    "paint.paintEditor.fill": "Piepildīt",
+    "paint.paintEditor.costume": "Tērps",
+    "paint.paintEditor.group": "Grupa",
+    "paint.paintEditor.ungroup": "Izjaukt grupu",
+    "paint.paintEditor.undo": "Atsaukt",
+    "paint.paintEditor.redo": "Pārtaisīt",
+    "paint.paintEditor.forward": "Uz priekšu",
+    "paint.paintEditor.backward": "Atpakaļ",
+    "paint.paintEditor.front": "Priekšpuse",
+    "paint.paintEditor.back": "Atpakaļ",
+    "paint.paintEditor.more": "Vairāk",
+    "paint.modeTools.brushSize": "Izmērs",
+    "paint.modeTools.eraserSize": "Dzēšgumijas izmērs",
+    "paint.modeTools.copy": "Kopēt",
+    "paint.modeTools.paste": "Ielīmēt",
+    "paint.modeTools.delete": "Dzēst",
+    "paint.modeTools.curved": "Izliekts",
+    "paint.modeTools.pointed": "Centrēts",
+    "paint.modeTools.thickness": "Biezums",
+    "paint.modeTools.flipHorizontal": "Apmest horizontāli",
+    "paint.modeTools.flipVertical": "Apmest vertikāli",
+    "paint.modeTools.filled": "Pildīts",
+    "paint.modeTools.outlined": "Riņķa līnija",
+    "paint.paintEditor.bitmap": "Pārvērst rastra grafikā",
+    "paint.paintEditor.vector": "Pārvērst vektorgrafikā",
+    "paint.paintEditor.stroke": "Kontūra",
+    "paint.brushMode.brush": "Ota",
+    "paint.eraserMode.eraser": "Džēšgumija",
+    "paint.fillMode.fill": "Piepildīt",
+    "paint.lineMode.line": "Līnija",
+    "paint.ovalMode.oval": "Aplis",
+    "paint.rectMode.rect": "Taisnstūris",
+    "paint.reshapeMode.reshape": "Pārveidot",
+    "paint.roundedRectMode.roundedRect": "Noapaļots taisnstūris",
+    "paint.selectMode.select": "Izvēlēties",
+    "paint.textMode.text": "Teksts",
+    "paint.colorPicker.swap": "Mainīt"
 }

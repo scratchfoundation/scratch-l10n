@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Dath",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Sáithiú",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Gile",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ná buair do cheann, táimid ag plé leis {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Le teacht go luath...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Táimid ag plé leis {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Líon",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Culaith",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grúpa",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Díghrúpáil",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Cealaigh",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Athdhéan",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Ar aghaidh",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Ar gcúl",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Chun tosaigh",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Chun deiridh",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Tuilleadh",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Méid",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Méid an léirscriosáin",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Cóipeáil",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Greamaigh",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Scrios",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Cuartha",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Bioraithe",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Leithead",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Smeach go cothrománach",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Smeach go hingearach",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Líonta",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Imlínithe",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Tiontaigh go mapa giotán",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Mód Veicteora",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Imlíne",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Scuab",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Léirscriosán",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Líon",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Líne",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Ciorcal",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Dronuilleog",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Athdheilbhigh",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Dronuilleog Chruinn",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Roghnaigh",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Téacs",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Babhtáil",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Dath",
+    "paint.paintEditor.saturation": "Sáithiú",
+    "paint.paintEditor.brightness": "Gile",
+    "gui.comingSoon.message1": "Ná buair do cheann, táimid ag plé leis {emoji}",
+    "gui.comingSoon.message2": "Le teacht go luath...",
+    "gui.comingSoon.message3": "Táimid ag plé leis {emoji}",
+    "paint.paintEditor.fill": "Líon",
+    "paint.paintEditor.costume": "Culaith",
+    "paint.paintEditor.group": "Grúpa",
+    "paint.paintEditor.ungroup": "Díghrúpáil",
+    "paint.paintEditor.undo": "Cealaigh",
+    "paint.paintEditor.redo": "Athdhéan",
+    "paint.paintEditor.forward": "Ar aghaidh",
+    "paint.paintEditor.backward": "Ar gcúl",
+    "paint.paintEditor.front": "Chun tosaigh",
+    "paint.paintEditor.back": "Chun deiridh",
+    "paint.paintEditor.more": "Tuilleadh",
+    "paint.modeTools.brushSize": "Méid",
+    "paint.modeTools.eraserSize": "Méid an léirscriosáin",
+    "paint.modeTools.copy": "Cóipeáil",
+    "paint.modeTools.paste": "Greamaigh",
+    "paint.modeTools.delete": "Scrios",
+    "paint.modeTools.curved": "Cuartha",
+    "paint.modeTools.pointed": "Bioraithe",
+    "paint.modeTools.thickness": "Leithead",
+    "paint.modeTools.flipHorizontal": "Smeach go cothrománach",
+    "paint.modeTools.flipVertical": "Smeach go hingearach",
+    "paint.modeTools.filled": "Líonta",
+    "paint.modeTools.outlined": "Imlínithe",
+    "paint.paintEditor.bitmap": "Tiontaigh go mapa giotán",
+    "paint.paintEditor.vector": "Mód Veicteora",
+    "paint.paintEditor.stroke": "Imlíne",
+    "paint.brushMode.brush": "Scuab",
+    "paint.eraserMode.eraser": "Léirscriosán",
+    "paint.fillMode.fill": "Líon",
+    "paint.lineMode.line": "Líne",
+    "paint.ovalMode.oval": "Ciorcal",
+    "paint.rectMode.rect": "Dronuilleog",
+    "paint.reshapeMode.reshape": "Athdheilbhigh",
+    "paint.roundedRectMode.roundedRect": "Dronuilleog Chruinn",
+    "paint.selectMode.select": "Roghnaigh",
+    "paint.textMode.text": "Téacs",
+    "paint.colorPicker.swap": "Babhtáil"
 }

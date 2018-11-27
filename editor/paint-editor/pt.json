@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Matiz",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Saturação",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Brilho",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Não se preocupe, estamos a trabalhar afincadamente nisto {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Em Breve…",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Estamos a trabalhar afincadamente nisto {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Interior",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Traje",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Agrupar",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Desagrupar",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Desfazer",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Refazer",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Avançar",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Recuar",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Para a Frente",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Para Trás",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Mais",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Tamanho",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Tamanho da borracha",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Copiar",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Colar",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Remover",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Arredondado",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Em Ângulo",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Espessura",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Inverter Horizontalmente",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Inverter Verticalmente",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "A cheio",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Com contorno",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Converter para Bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Converter para Vectorial",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Contorno",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pincel",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Borracha",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Preencher",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Linha",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Círculo",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Rectângulo",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Remodelar",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Rectângulo Arredondado",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Seleccionar",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Texto",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Trocar",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Matiz",
+    "paint.paintEditor.saturation": "Saturação",
+    "paint.paintEditor.brightness": "Brilho",
+    "gui.comingSoon.message1": "Não se preocupe, estamos a trabalhar afincadamente nisto {emoji}",
+    "gui.comingSoon.message2": "Em Breve…",
+    "gui.comingSoon.message3": "Estamos a trabalhar afincadamente nisto {emoji}",
+    "paint.paintEditor.fill": "Interior",
+    "paint.paintEditor.costume": "Traje",
+    "paint.paintEditor.group": "Agrupar",
+    "paint.paintEditor.ungroup": "Desagrupar",
+    "paint.paintEditor.undo": "Desfazer",
+    "paint.paintEditor.redo": "Refazer",
+    "paint.paintEditor.forward": "Avançar",
+    "paint.paintEditor.backward": "Recuar",
+    "paint.paintEditor.front": "Para a Frente",
+    "paint.paintEditor.back": "Para Trás",
+    "paint.paintEditor.more": "Mais",
+    "paint.modeTools.brushSize": "Tamanho",
+    "paint.modeTools.eraserSize": "Tamanho da borracha",
+    "paint.modeTools.copy": "Copiar",
+    "paint.modeTools.paste": "Colar",
+    "paint.modeTools.delete": "Remover",
+    "paint.modeTools.curved": "Arredondado",
+    "paint.modeTools.pointed": "Em Ângulo",
+    "paint.modeTools.thickness": "Espessura",
+    "paint.modeTools.flipHorizontal": "Inverter Horizontalmente",
+    "paint.modeTools.flipVertical": "Inverter Verticalmente",
+    "paint.modeTools.filled": "A cheio",
+    "paint.modeTools.outlined": "Com contorno",
+    "paint.paintEditor.bitmap": "Converter para Bitmap",
+    "paint.paintEditor.vector": "Converter para Vectorial",
+    "paint.paintEditor.stroke": "Contorno",
+    "paint.brushMode.brush": "Pincel",
+    "paint.eraserMode.eraser": "Borracha",
+    "paint.fillMode.fill": "Preencher",
+    "paint.lineMode.line": "Linha",
+    "paint.ovalMode.oval": "Círculo",
+    "paint.rectMode.rect": "Rectângulo",
+    "paint.reshapeMode.reshape": "Remodelar",
+    "paint.roundedRectMode.roundedRect": "Rectângulo Arredondado",
+    "paint.selectMode.select": "Seleccionar",
+    "paint.textMode.text": "Texto",
+    "paint.colorPicker.swap": "Trocar"
 }

@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "バックパック",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "バックパックのよみこみじにエラーがはっせいしました",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "よみこみちゅう...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "もっと",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "バックパックはからです",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": " ブラウザーはサポートされていません",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "もうしわけありません。Scratch 3.0はInternet Explorer、Vivaldi、Opera、Silkをサポートしていません。Google Chrome、Mozilla Firefox、Microsoft Edgeのようなあたらしいブラウザのりようをおすすめします。",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "もどる",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "くわしくは、{previewFaqLink}をごらんください。",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "しゃしんをとる",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "カメラをよみこみちゅう...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "カメラをつかうきょかがひつようです",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "しゃしんをとりなおす",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "ほぞん",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "しゃしんをとる",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "よみこみちゅう...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "カメラをゆうこうにする",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "チュートリアル",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "とじる",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "もっとやってみる!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "もっとみる",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "ごあんしんください。かいはつちゅうです {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "きんじつこうかい",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "かいはつちゅうです {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "デバイスがみつかりませんでした",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "もういちどくりかえす",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "せつぞくされました",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "せつだんする",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "エディターへいく",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "せつぞくちゅうです...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "うわっ! なにか、もんだいがおきたようです。",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "もういちどくりかえす",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "ヘルプ",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "デバイスめい",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "せつぞくする",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "デバイスをさがしています",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "デバイスがみつかりませんでした",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "うえのリストからデバイスをえらんでください。",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "こうしん",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Scratchリンクがインストールされ、うごいていることをかくにんしてください",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Bluetoothがゆうこうになっていることを、かくにんしてください",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "もういちどくりかえす",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "ヘルプ",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "じっこう",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "とめる",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "うわっ! なにかもんだいがはっせいしました。",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "もうしわけありません。Scratchがクラッシュしたようです。このもんだいはScratchチームにじどうてきにそうしんされました。ページをさいよみこみしてください。",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reload",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "ブロックをつくる",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "ひきすうをついか",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "すうちまたはテキスト",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "ひきすうをついか",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "しんぎち",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "ラベルのテキストをついか",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "がめんをさいびょうがせずにじっこうする",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "キャンセル",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "むき",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "かくちょうきのうをついか",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "コード",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "はいけい",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "コスチューム",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "おと",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Scratch 2.0のプロジェクトをみる",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "あなたがきょうゆうしたプロジェクトのリンクをにゅうりょくしてください。3.0プレビューばんでのへんこうはほぞんされません。",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "プロジェクトのリンクかIDがただしくないようです。",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "みる",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "もどる",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "くわしくは、{previewFaqLink}をごらんください。",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "きんじつこうかい",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "けんさく",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "すべて",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "ブロックをさくせいちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "スプライトをよみこみちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "おとをよみこみちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "かくちょうきのうをよみこみちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "ねこのむれをあつめています…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nanoをそうしんちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Goboをふくらませています…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "えもじをじゅんびちゅう…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "プロジェクトをよみこみちゅう…",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "プロフィール",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "わたしのさくひん",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "わたしのクラス",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "わたしのクラス",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "アカウントせってい",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "サインアウト",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "コミュニティーをみる",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "ユーザーめい",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "パスワード",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "サインイン",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "げんごのせんたく",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "チュートリアル",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Restore",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "ただちにほぞん",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "コピーをほぞん",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "リミックス",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "しんき",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "ファイル",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "コンピューターからよみこむ",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "コンピューターにほぞんする",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "へんしゅう",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Scratchで作成",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "サインイン",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "いけんをおくる",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "きょうゆうされたもの",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "きょうゆうする",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "ヘルプ",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "もどる",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "ふつうのひょうじ",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "おおきなひょうじ",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "スライダー",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Scratch 3.0をためしてみる",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "いまはやめておく",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Try It",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "2.0のプロジェクトをみる",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "わたしたちはじせだいのScratchをかいはつちゅうです。おためしください!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "いまはやめておく",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "ためす! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "2.0のプロジェクトをみる",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "くわしくは、{previewFaqLink}をごらんください。",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "すべてのスプライトよう",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "このスプライトのみ",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "クラウドへんすう (サーバーにほぞんされます)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "このへんすうは、すべてのスプライトでつかえます。",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "キャンセル",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "ていし",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "さいせい",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "よみこみちゅう...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "ほぞん",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "さいろくおん",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "ろくおん",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "ろくおんする",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "おと",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "さいせい",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "とめる",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "カット",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "ほぞん",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "もとにもどす",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "やりなおす",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "はやく",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "おそく",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "エコー",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "ロボット",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "おおきく",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "ちいさく",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "ぎゃくむき",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "なまえ",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "スプライト",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "ひょうじする",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "おおきさ",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "ふくせい",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "さくじょ",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "かきだし",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "スプライトをえらぶ",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "えがく",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "サプライズ",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "おおきなステージにきりかえ",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "ちいさいステージにきりかえる",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "ぜんがめんひょうじにする",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "ぜんがめんひょうじをやめる",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "ぜんがめんひょうじ",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "はいけいをえらぶ",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "えがく",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "サプライズ",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "はいけいをアップロード",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "ステージ",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "はいけい",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "ターボモード",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "ブラウザーはWebGLをサポートしていないようです",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "ざんねんながら、ブラウザーやコンピューターが{webGlLink}ようです。このぎじゅつはScratch 3.0のじっこうにひっすです。",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "WebGLをサポートしていない",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "もどる",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "くわしくは、{previewFaqLink}をごらんください。",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "はいけいをえらぶ",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "コスチュームをえらぶ",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "はいけいをえらぶ",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "コスチュームをえらぶ",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": " えがく",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "サプライズ",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "はいけいをアップロード",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "コスチュームをアップロード",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "カメラ",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "かくちょうきのうをえらぶ",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "かくちょうきのうのURLをにゅうりょく",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "ろくおんをかいしできません",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "せんたくされたプロジェクトファイルのよみこみに、しっぱいしました。",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "おとをえらぶ",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "おとをアップロードする",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "サプライズ",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "ろくおんする",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": " おとをえらぶ",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "スプライトをえらぶ",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "チュートリアルをえらぶ",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "さくせいちゅう...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "ほぞんちゅう...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meow",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "つくったへんすう",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "さあ、はじめましょう",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "うごきブロックをついかする",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "みどりのはたをクリックしてかいしする",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "なにかおしゃべりする",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "はいけいをついかする",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "いろをかえる",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "回転（かいてん）させる",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "なにかおしゃべりする",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "なめらかにうごかす",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "なまえをうごかしてみよう",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "もじのスプライトをえらぶ",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "クリックしたらおとをならす",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "ほかのもじのスプライトをえらぶ",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "いろをかえる",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "ほかのもじのスプライトをえらんでまわす",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "ほかのもじのスプライトをえらんでおおきくする",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "おんがくをつくろう",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "がっきのスプライトをえらぶ",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "クリックしたらおとをならす",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "きょくをつくる",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "ドラムをえらんで、ビートをつくる",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "マイクのスプライトとサプライズ・ビートボックスをえらぶ",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "クリッカーゲームをつくる",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "スプライトをえらぶ",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "クリックしたらおとをならす",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "スコアのへんすうをつくる",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "クリックしたらスコアをくわえる",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "ランダムなばしょへいく",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "いろをかえる",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "スコアをリセットする",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "おいかけっこゲームをつくる",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "はいけいをついかする",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "スプライトをついかする",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "やじるしキーでさゆうにうごかす",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "やじるしキーでじょうげにうごかす",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "ほかのスプライトをついかする",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "ランダムにうごかす",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "タコのスプライトをふれたときにおとをならす",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "スコアのへんすうをつくる",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "タコのスプライトにふれたときにスコアをふやす",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "スプライトをついかする",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "スプライトをついかする",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "はいけいのついか",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "おおきさをへんこうする",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "なめらかにうごかす",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "おとをろくおんする",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "文字（もじ）を回転（かいてん）させる",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "かくすとひょうじする",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "スプライトをアニメかする",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "こうかをついかする",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "おんがく",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "がっきやドラムをえんそうする。",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "ペン",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "スプライトで、えをかく。",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "ビデオモーションセンサー",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "カメラでうごきをしらべる。",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "ほんやく",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "いろいろなことばにテキストをほんやくします。",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "あなたのプロジェクトを、ほんとうのせかいと、つなぎます。",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "せつぞくちゅう",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "やりとりできるロボットなどをつくる。",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "せつぞくちゅうです。EV3のピンが1234にせっていされていることを、かくにんしてください。",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "モーターとセンサーをつかってつくる。",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "せつぞくちゅう",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "すべて",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "どうぶつ",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "ダンス",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "効果（こうか）",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "ファンタジー",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Fashion",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "おくない",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "おんがく",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "ノート",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "おくがい",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "ひと",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "だがっき",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "うちゅう",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "スポーツ",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "かいちゅう",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "アニメーション",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "アート",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "ゲーム",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "物語（ものがたり）",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "もじ",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "むき",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "xざひょう",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "yざひょう",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "おおきさ",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "コスチュームめい",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "はいけいのなまえ",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "おんりょう",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "テンポ",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "こたえ",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "おんりょう",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "ユーザーめい",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "とし",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "つき",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "ひ",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "ようび",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "とき",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "ぶん",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "びょう",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "タイマー",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "ポップ",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "バックパック",
+    "gui.backpack.errorBackpack": "バックパックのよみこみじにエラーがはっせいしました",
+    "gui.backpack.loadingBackpack": "よみこみちゅう...",
+    "gui.backpack.more": "もっと",
+    "gui.backpack.emptyBackpack": "バックパックはからです",
+    "gui.unsupportedBrowser.label": " ブラウザーはサポートされていません",
+    "gui.unsupportedBrowser.description": "もうしわけありません。Scratch 3.0はInternet Explorer、Vivaldi、Opera、Silkをサポートしていません。Google Chrome、Mozilla Firefox、Microsoft Edgeのようなあたらしいブラウザのりようをおすすめします。",
+    "gui.unsupportedBrowser.back": "もどる",
+    "gui.unsupportedBrowser.previewfaq": "くわしくは、{previewFaqLink}をごらんください。",
+    "gui.unsupportedBrowser.previewfaqlinktext": "FAQ",
+    "gui.cameraModal.cameraModalTitle": "しゃしんをとる",
+    "gui.cameraModal.loadingCameraMessage": "カメラをよみこみちゅう...",
+    "gui.cameraModal.permissionRequest": "カメラをつかうきょかがひつようです",
+    "gui.cameraModal.retakePhoto": "しゃしんをとりなおす",
+    "gui.cameraModal.save": "ほぞん",
+    "gui.cameraModal.takePhoto": "しゃしんをとる",
+    "gui.cameraModal.loadingCaption": "よみこみちゅう...",
+    "gui.cameraModal.enableCameraCaption": "カメラをゆうこうにする",
+    "gui.cards.all-tutorials": "チュートリアル",
+    "gui.cards.close": "とじる",
+    "gui.cards.more-things-to-try": "もっとやってみる!",
+    "gui.cards.see-more": "もっとみる",
+    "gui.comingSoon.message1": "ごあんしんください。かいはつちゅうです {emoji}",
+    "gui.comingSoon.message2": "きんじつこうかい",
+    "gui.comingSoon.message3": "かいはつちゅうです {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "デバイスがみつかりませんでした",
+    "gui.connection.auto-scanning.prescan": "Have your device nearby, then begin searching.",
+    "gui.connection.auto-scanning.pressbutton": "Press the button on your device.",
+    "gui.connection.auto-scanning.start-search": "Start Searching",
+    "gui.connection.connecting-searchbutton": "Searching...",
+    "gui.connection.auto-scanning.try-again": "もういちどくりかえす",
+    "gui.connection.connected": "せつぞくされました",
+    "gui.connection.disconnect": "せつだんする",
+    "gui.connection.go-to-editor": "エディターへいく",
+    "gui.connection.connecting-cancelbutton": "せつぞくちゅうです...",
+    "gui.connection.error.errorMessage": "うわっ! なにか、もんだいがおきたようです。",
+    "gui.connection.error.tryagainbutton": "もういちどくりかえす",
+    "gui.connection.error.helpbutton": "ヘルプ",
+    "gui.connection.peripheral-name-label": "デバイスめい",
+    "gui.connection.connect": "せつぞくする",
+    "gui.connection.scanning.lookingforperipherals": "デバイスをさがしています",
+    "gui.connection.scanning.noPeripheralsFound": "デバイスがみつかりませんでした",
+    "gui.connection.scanning.instructions": "うえのリストからデバイスをえらんでください。",
+    "gui.connection.search": "こうしん",
+    "gui.connection.unavailable.installscratchlink": "Scratchリンクがインストールされ、うごいていることをかくにんしてください",
+    "gui.connection.unavailable.enablebluetooth": "Bluetoothがゆうこうになっていることを、かくにんしてください",
+    "gui.connection.unavailable.tryagainbutton": "もういちどくりかえす",
+    "gui.connection.unavailable.helpbutton": "ヘルプ",
+    "gui.controls.go": "じっこう",
+    "gui.controls.stop": "とめる",
+    "gui.crashMessage.label": "うわっ! なにかもんだいがはっせいしました。",
+    "gui.crashMessage.description": "もうしわけありません。Scratchがクラッシュしたようです。このもんだいはScratchチームにじどうてきにそうしんされました。ページをさいよみこみしてください。",
+    "gui.crashMessage.reload": "Reload",
+    "gui.customProcedures.myblockModalTitle": "ブロックをつくる",
+    "gui.customProcedures.addAnInputNumberText": "ひきすうをついか",
+    "gui.customProcedures.numberTextType": "すうちまたはテキスト",
+    "gui.customProcedures.addAnInputBoolean": "ひきすうをついか",
+    "gui.customProcedures.booleanType": "しんぎち",
+    "gui.customProcedures.addALabel": "ラベルのテキストをついか",
+    "gui.customProcedures.runWithoutScreenRefresh": "がめんをさいびょうがせずにじっこうする",
+    "gui.customProcedures.cancel": "キャンセル",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "むき",
+    "gui.directionPicker.rotationStyles.allAround": "All Around",
+    "gui.directionPicker.rotationStyles.leftRight": "Left/Right",
+    "gui.directionPicker.rotationStyles.dontRotate": "Do not rotate",
+    "gui.gui.addExtension": "かくちょうきのうをついか",
+    "gui.gui.codeTab": "コード",
+    "gui.gui.backdropsTab": "はいけい",
+    "gui.gui.costumesTab": "コスチューム",
+    "gui.gui.soundsTab": "おと",
+    "gui.importInfo.title": "Scratch 2.0のプロジェクトをみる",
+    "gui.importInfo.betamessage": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+    "gui.importInfo.message": "あなたがきょうゆうしたプロジェクトのリンクをにゅうりょくしてください。3.0プレビューばんでのへんこうはほぞんされません。",
+    "gui.importInfo.invalidFormatError": "プロジェクトのリンクかIDがただしくないようです。",
+    "gui.importModal.viewproject": "みる",
+    "gui.importInfo.goback": "もどる",
+    "gui.importInfo.previewfaq": "くわしくは、{previewFaqLink}をごらんください。",
+    "gui.importInfo.previewfaqlinktext": "FAQ",
+    "gui.extensionLibrary.comingSoon": "きんじつこうかい",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "けんさく",
+    "gui.library.allTag": "すべて",
+    "gui.loader.message1": "ブロックをさくせいちゅう…",
+    "gui.loader.message2": "スプライトをよみこみちゅう…",
+    "gui.loader.message3": "おとをよみこみちゅう…",
+    "gui.loader.message4": "かくちょうきのうをよみこみちゅう…",
+    "gui.loader.message5": "ねこのむれをあつめています…",
+    "gui.loader.message6": "Nanoをそうしんちゅう…",
+    "gui.loader.message7": "Goboをふくらませています…",
+    "gui.loader.message8": "えもじをじゅんびちゅう…",
+    "gui.loader.headline": "プロジェクトをよみこみちゅう…",
+    "gui.accountMenu.profile": "プロフィール",
+    "gui.accountMenu.myStuff": "わたしのさくひん",
+    "gui.accountMenu.myClasses": "わたしのクラス",
+    "gui.accountMenu.myClass": "わたしのクラス",
+    "gui.accountMenu.accountSettings": "アカウントせってい",
+    "gui.accountMenu.signOut": "サインアウト",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "コミュニティーをみる",
+    "general.username": "ユーザーめい",
+    "general.password": "パスワード",
+    "general.signIn": "サインイン",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "げんごのせんたく",
+    "gui.menuBar.tutorialsLibrary": "チュートリアル",
+    "gui.menuBar.restoreSprite": "Restore Sprite",
+    "gui.menuBar.restoreSound": "Restore Sound",
+    "gui.menuBar.restoreCostume": "Restore Costume",
+    "gui.menuBar.restore": "Restore",
+    "gui.menuBar.saveNow": "ただちにほぞん",
+    "gui.menuBar.saveAsCopy": "コピーをほぞん",
+    "gui.menuBar.remix": "リミックス",
+    "gui.menuBar.new": "しんき",
+    "gui.menuBar.file": "ファイル",
+    "gui.menuBar.uploadFromComputer": "コンピューターからよみこむ",
+    "gui.menuBar.downloadToComputer": "コンピューターにほぞんする",
+    "gui.menuBar.edit": "へんしゅう",
+    "gui.menuBar.turboModeOff": "Turn off Turbo Mode",
+    "gui.menuBar.turboModeOn": "Turn on Turbo Mode",
+    "gui.menuBar.joinScratch": "Scratchで作成",
+    "gui.menuBar.signIn": "サインイン",
+    "gui.menuBar.giveFeedback": "いけんをおくる",
+    "gui.gui.projectTitlePlaceholder": "Project title here",
+    "gui.menuBar.isShared": "きょうゆうされたもの",
+    "gui.menuBar.share": "きょうゆうする",
+    "gui.modal.help": "ヘルプ",
+    "gui.modal.back": "もどる",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "ふつうのひょうじ",
+    "gui.monitor.contextMenu.large": "おおきなひょうじ",
+    "gui.monitor.contextMenu.slider": "スライダー",
+    "gui.previewInfo.label": "Scratch 3.0をためしてみる",
+    "gui.previewInfo.welcome": "Welcome to the Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "いまはやめておく",
+    "gui.previewModal.tryittooltip": "Try It",
+    "gui.previewModal.viewprojecttooltip": "2.0のプロジェクトをみる",
+    "gui.previewInfo.betawelcome": "Welcome to the Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "わたしたちはじせだいのScratchをかいはつちゅうです。おためしください!",
+    "gui.previewInfo.notnow": "いまはやめておく",
+    "gui.previewModal.tryit": "ためす! {caticon}",
+    "gui.previewModal.viewproject": "2.0のプロジェクトをみる",
+    "gui.previewInfo.previewfaq": "くわしくは、{previewFaqLink}をごらんください。",
+    "gui.previewInfo.previewfaqlinktext": "FAQ",
+    "gui.gui.variableScopeOptionAllSprites": "すべてのスプライトよう",
+    "gui.gui.variableScopeOptionSpriteOnly": "このスプライトのみ",
+    "gui.gui.cloudVariableOption": "クラウドへんすう (サーバーにほぞんされます)",
+    "gui.gui.variablePromptAllSpritesMessage": "このへんすうは、すべてのスプライトでつかえます。",
+    "gui.prompt.cancel": "キャンセル",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "ていし",
+    "gui.playbackStep.playMsg": "さいせい",
+    "gui.playbackStep.loadingMsg": "よみこみちゅう...",
+    "gui.playbackStep.saveMsg": "ほぞん",
+    "gui.playbackStep.reRecordMsg": "さいろくおん",
+    "gui.recordModal.title": "ろくおん",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "ろくおんする",
+    "gui.soundEditor.sound": "おと",
+    "gui.soundEditor.play": "さいせい",
+    "gui.soundEditor.stop": "とめる",
+    "gui.soundEditor.trim": "カット",
+    "gui.soundEditor.save": "ほぞん",
+    "gui.soundEditor.undo": "もとにもどす",
+    "gui.soundEditor.redo": "やりなおす",
+    "gui.soundEditor.faster": "はやく",
+    "gui.soundEditor.slower": "おそく",
+    "gui.soundEditor.echo": "エコー",
+    "gui.soundEditor.robot": "ロボット",
+    "gui.soundEditor.louder": "おおきく",
+    "gui.soundEditor.softer": "ちいさく",
+    "gui.soundEditor.reverse": "ぎゃくむき",
+    "gui.SpriteInfo.spritePlaceholder": "なまえ",
+    "gui.SpriteInfo.sprite": "スプライト",
+    "gui.SpriteInfo.show": "ひょうじする",
+    "gui.SpriteInfo.size": "おおきさ",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "ふくせい",
+    "gui.spriteSelectorItem.contextMenuDelete": "さくじょ",
+    "gui.spriteSelectorItem.contextMenuExport": "かきだし",
+    "gui.spriteSelector.addSpriteFromLibrary": "スプライトをえらぶ",
+    "gui.spriteSelector.addSpriteFromPaint": "えがく",
+    "gui.spriteSelector.addSpriteFromSurprise": "サプライズ",
+    "gui.spriteSelector.addSpriteFromFile": "Upload Sprite",
+    "gui.stageHeader.stageSizeLarge": "おおきなステージにきりかえ",
+    "gui.stageHeader.stageSizeSmall": "ちいさいステージにきりかえる",
+    "gui.stageHeader.stageSizeFull": "ぜんがめんひょうじにする",
+    "gui.stageHeader.stageSizeUnFull": "ぜんがめんひょうじをやめる",
+    "gui.stageHeader.fullscreenControl": "ぜんがめんひょうじ",
+    "gui.spriteSelector.addBackdropFromLibrary": "はいけいをえらぶ",
+    "gui.stageSelector.addBackdropFromPaint": "えがく",
+    "gui.stageSelector.addBackdropFromSurprise": "サプライズ",
+    "gui.stageSelector.addBackdropFromFile": "はいけいをアップロード",
+    "gui.stageSelector.stage": "ステージ",
+    "gui.stageSelector.backdrops": "はいけい",
+    "gui.turboMode.active": "ターボモード",
+    "gui.webglModal.label": "ブラウザーはWebGLをサポートしていないようです",
+    "gui.webglModal.description": "ざんねんながら、ブラウザーやコンピューターが{webGlLink}ようです。このぎじゅつはScratch 3.0のじっこうにひっすです。",
+    "gui.webglModal.webgllink": "WebGLをサポートしていない",
+    "gui.webglModal.back": "もどる",
+    "gui.webglModal.previewfaq": "くわしくは、{previewFaqLink}をごらんください。",
+    "gui.webglModal.previewfaqlinktext": "FAQ",
+    "gui.costumeLibrary.chooseABackdrop": "はいけいをえらぶ",
+    "gui.costumeLibrary.chooseACostume": "コスチュームをえらぶ",
+    "gui.costumeTab.addBackdropFromLibrary": "はいけいをえらぶ",
+    "gui.costumeTab.addCostumeFromLibrary": "コスチュームをえらぶ",
+    "gui.costumeTab.addBlankCostume": " えがく",
+    "gui.costumeTab.addSurpriseCostume": "サプライズ",
+    "gui.costumeTab.addFileBackdrop": "はいけいをアップロード",
+    "gui.costumeTab.addFileCostume": "コスチュームをアップロード",
+    "gui.costumeTab.addCameraCostume": "カメラ",
+    "gui.extensionLibrary.chooseAnExtension": "かくちょうきのうをえらぶ",
+    "gui.extensionLibrary.extensionUrl": "かくちょうきのうのURLをにゅうりょく",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "ろくおんをかいしできません",
+    "gui.projectLoader.loadError": "せんたくされたプロジェクトファイルのよみこみに、しっぱいしました。",
+    "gui.soundLibrary.chooseASound": "おとをえらぶ",
+    "gui.soundTab.fileUploadSound": "おとをアップロードする",
+    "gui.soundTab.surpriseSound": "サプライズ",
+    "gui.soundTab.recordSound": "ろくおんする",
+    "gui.soundTab.addSoundFromLibrary": " おとをえらぶ",
+    "gui.spriteLibrary.chooseASprite": "スプライトをえらぶ",
+    "gui.tipsLibrary.tutorials": "チュートリアルをえらぶ",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "さくせいちゅう...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "ほぞんちゅう...",
+    "gui.defaultProject.meow": "Meow",
+    "gui.defaultProject.variable": "つくったへんすう",
+    "gui.howtos.intro-move-sayhello-hat.name": "さあ、はじめましょう",
+    "gui.howtos.intro-move.step_stepMove": "うごきブロックをついかする",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "みどりのはたをクリックしてかいしする",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "なにかおしゃべりする",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "はいけいをついかする",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "いろをかえる",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "回転（かいてん）させる",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "なにかおしゃべりする",
+    "gui.howtos.cartoon-network.step_CNglide": "なめらかにうごかす",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Keep Score",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "なまえをうごかしてみよう",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "もじのスプライトをえらぶ",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "クリックしたらおとをならす",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "ほかのもじのスプライトをえらぶ",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "いろをかえる",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "ほかのもじのスプライトをえらんでまわす",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "ほかのもじのスプライトをえらんでおおきくする",
+    "gui.howtos.make-music.name": "おんがくをつくろう",
+    "gui.howtos.Make-Music.step_PickInstrument": "がっきのスプライトをえらぶ",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "クリックしたらおとをならす",
+    "gui.howtos.Make-Music.step_MakeSong": "きょくをつくる",
+    "gui.howtos.make-music.step_MakeBeat": "ドラムをえらんで、ビートをつくる",
+    "gui.howtos.make-music.step_MakeBeatBox": "マイクのスプライトとサプライズ・ビートボックスをえらぶ",
+    "gui.howtos.make-a-game.name": "クリッカーゲームをつくる",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "スプライトをえらぶ",
+    "gui.howtos.make-a-game.step_GamePlaySound": "クリックしたらおとをならす",
+    "gui.howtos.make-a-game.step_GameAddScore": "スコアのへんすうをつくる",
+    "gui.howtos.make-a-game.step_GameChangeScore": "クリックしたらスコアをくわえる",
+    "gui.howtos.make-a-game.step_Random": "ランダムなばしょへいく",
+    "gui.howtos.make-music.step_GameChangeColor": "いろをかえる",
+    "gui.howtos.make-music.step_ResetScore": "スコアをリセットする",
+    "gui.howtos.make-a-chase-game.name": "おいかけっこゲームをつくる",
+    "gui.howtos.Chase-Game.step_BG": "はいけいをついかする",
+    "gui.howtos.chase-game.step_AddOcto": "スプライトをついかする",
+    "gui.howtos.make-music.step_LeftRight": "やじるしキーでさゆうにうごかす",
+    "gui.howtos.Chase-Game.step_UpDown": "やじるしキーでじょうげにうごかす",
+    "gui.howtos.Chase-Game.step_AddStar": "ほかのスプライトをついかする",
+    "gui.howtos.Chase-Game.step_MoveRandom": "ランダムにうごかす",
+    "gui.howtos.Chase-Game.step_WhenTouch": "タコのスプライトをふれたときにおとをならす",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "スコアのへんすうをつくる",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "タコのスプライトにふれたときにスコアをふやす",
+    "gui.howtos.add-sprite.name": "スプライトをついかする",
+    "gui.howtos.add-sprite.step_addSprite": "スプライトをついかする",
+    "gui.howtos.add-a-backdrop.name": "はいけいのついか",
+    "gui.howtos.change-size.name": "おおきさをへんこうする",
+    "gui.howtos.glide-around.name": "なめらかにうごかす",
+    "gui.howtos.record-a-sound.name": "おとをろくおんする",
+    "gui.howtos.spin-video.name": "文字（もじ）を回転（かいてん）させる",
+    "gui.howtos.hide-and-show.name": "かくすとひょうじする",
+    "gui.howtos.switch-costume.name": "スプライトをアニメかする",
+    "gui.howtos.move-around-with-arrow-keys.name": "Use Arrow Keys",
+    "gui.howtos.add-effects.name": "こうかをついかする",
+    "gui.extension.music.name": "おんがく",
+    "gui.extension.music.description": "がっきやドラムをえんそうする。",
+    "gui.extension.pen.name": "ペン",
+    "gui.extension.pen.description": "スプライトで、えをかく。",
+    "gui.extension.videosensing.name": "ビデオモーションセンサー",
+    "gui.extension.videosensing.description": "カメラでうごきをしらべる。",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "ほんやく",
+    "gui.extension.translate.description": "いろいろなことばにテキストをほんやくします。",
+    "gui.extension.microbit.description": "あなたのプロジェクトを、ほんとうのせかいと、つなぎます。",
+    "gui.extension.microbit.connectingMessage": "せつぞくちゅう",
+    "gui.extension.ev3.description": "やりとりできるロボットなどをつくる。",
+    "gui.extension.ev3.connectingMessage": "せつぞくちゅうです。EV3のピンが1234にせっていされていることを、かくにんしてください。",
+    "gui.extension.wedo2.description": "モーターとセンサーをつかってつくる。",
+    "gui.extension.wedo2.connectingMessage": "せつぞくちゅう",
+    "gui.libraryTags.all": "すべて",
+    "gui.libraryTags.animals": "どうぶつ",
+    "gui.libraryTags.dance": "ダンス",
+    "gui.libraryTags.effects": "効果（こうか）",
+    "gui.libraryTags.fantasy": "ファンタジー",
+    "gui.libraryTags.fashion": "Fashion",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "おくない",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "おんがく",
+    "gui.libraryTags.notes": "ノート",
+    "gui.libraryTags.outdoors": "おくがい",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "ひと",
+    "gui.libraryTags.percussion": "だがっき",
+    "gui.libraryTags.space": "うちゅう",
+    "gui.libraryTags.sports": "スポーツ",
+    "gui.libraryTags.underwater": "かいちゅう",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "アニメーション",
+    "gui.libraryTags.art": "アート",
+    "gui.libraryTags.games": "ゲーム",
+    "gui.libraryTags.stories": "物語（ものがたり）",
+    "gui.libraryTags.letters": "もじ",
+    "gui.opcodeLabels.direction": "むき",
+    "gui.opcodeLabels.xposition": "xざひょう",
+    "gui.opcodeLabels.yposition": "yざひょう",
+    "gui.opcodeLabels.size": "おおきさ",
+    "gui.opcodeLabels.costumename": "コスチュームめい",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "はいけいのなまえ",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "おんりょう",
+    "gui.opcodeLabels.tempo": "テンポ",
+    "gui.opcodeLabels.answer": "こたえ",
+    "gui.opcodeLabels.loudness": "おんりょう",
+    "gui.opcodeLabels.username": "ユーザーめい",
+    "gui.opcodeLabels.year": "とし",
+    "gui.opcodeLabels.month": "つき",
+    "gui.opcodeLabels.date": "ひ",
+    "gui.opcodeLabels.dayofweek": "ようび",
+    "gui.opcodeLabels.hour": "とき",
+    "gui.opcodeLabels.minute": "ぶん",
+    "gui.opcodeLabels.second": "びょう",
+    "gui.opcodeLabels.timer": "タイマー",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "ポップ"
 }

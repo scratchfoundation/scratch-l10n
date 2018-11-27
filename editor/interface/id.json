@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Ransel",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Gagal memuat ransel",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Memuat...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Lebih",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Ransel kosong",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Peramban tidak didukung",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Kami minta maaf, Scratch 3.0 tidak mendukung Internet Explorer, Vivaldi, Opera, ataupun Silk. Kami menyarankan mencoba peramban yang lebih baru seperti Google Chrome, Mozilla Firefox, atau Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Kembali",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Ambil Sebuah Foto",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Memuat Kamera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Kami perlu izinmu untuk menggunakan kameramu",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Ambil Ulang Foto",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Simpan",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Ambil Foto",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Memuat...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Perbolehkan Kamera",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Tutorial",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Tutup",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Lebih banyak hal untuk dicoba!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Lihat lebih banyak",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Jangan khawatir, kami sedang mengerjakannya {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Akan Segera Datang",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Kami sedang mengerjakannya {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "No devices found",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Try again",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Terhubung",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Disconnect",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Oops, looks like something went wrong.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Bantuan",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Device name",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Connect",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Looking for devices",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "No devices found",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Refresh",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Bantuan",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Jalankan",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Hentikan",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Ups! Suatu kesalahan terjadi",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Kami minta maaf, tampaknya Scratch sedang macet. Kesalahan ini akan secara otomatis dilaporkan ke Scratch Team. Tolong perbarui halamanmu untuk mencoba lagi.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reload",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Buat sebuah Balok",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Tambahkan input",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "angka atau teks",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Tambahkan input",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boolean",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Tambahkan label",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Bekerja secara instan",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Batal",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Arah",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Tambahkan Ekstension",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Kode",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Latar",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Kostum",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Suara",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Lihat sebuah Karya Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Masukkan sebuah tautan ke salah satu karya Scratch terbagikanmu. Perubah-perubahan yang dibuat di Pratinjau 3.0 tidak akan disimpan.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Uh oh, tautan atau id karya itu tidak tampak benar.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Lihat",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Kembali",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Akan Segera Datang",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Cari",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Semua",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Membuat balok-balok …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Memuat sprite-sprite …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Memuat suara …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Memuat ekstension …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Menggembala kucing-kucing …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Mengirim nano-nano …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Memompa gobo-gobo …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Menyiapkan emoji-emoji …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Memuat Karya",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Karyaku",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Kelas Saya",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Kelas Saya",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Pengaturan akun",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Keluar",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Lihat Komunitas",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Nama Pengguna",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Sandi",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Masuk",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "pemilih bahasa",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Tutorial",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Restore",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Simpan sekarang",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Simpan sebagai salinan",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Remix",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Baru",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Berkas",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Muat dari komputermu",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Simpan ke komputermu",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Sunting",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Bergabung dengan Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Masuk",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Berikan Masukan",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Terbagikan",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Bagikan",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Bantuan",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Kembali",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "tampilan normal",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "tampilan besar",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "slider",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Coba Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Selamat datang di Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Tidak Sekarang",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Cobalah",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Lihat Karya 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Selamat datang di Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Kami sedang mengerjakan generasi Scratch yang berikutnya. Kami ingin kamu mencobanya!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Tidak Sekarang",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Cobalah! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Lihat Karya 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Untuk semua sprite",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Hanya untuk sprite ini",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Variabel Cloud (disimpan di server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Variabel ini bakal tersedia untuk semua sprite.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Batal",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Hentikan",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Mainkan",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Memuat...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Simpan",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Rekam ulang",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Rekam Suara",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Rekam",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Suara",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Mainkan",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Berhenti",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Potong",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Simpan",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Batalkan",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Ulangi",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Lebih cepat",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Lebih lambat",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Gema",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Lebih nyaring",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Lebih lembut",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Balikkan arah",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Judul",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprite",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Tampilkan",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Ukuran",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "gandakan",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "hapus",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "ekspor",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Pilih Sprite",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Lukis",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Kejutan",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Ganti ke panggung besar",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Ganti ke panggung kecil",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Masuk mode layar penuh",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Keluar dari mode seluruh layar",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Kendali Layar Penuh",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Pilih Latar",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Lukis",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Kejutan",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Unggah Latar",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Panggung",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Latar",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Mode Turbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Perambanmu Tidak Mendukung WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Sayangnya tampaknya peramban atau komputermu {webGlLink}. Teknologi ini diperlukan untuk menjalankan Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "tidak mendukung WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Kembali",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Pilih Latar",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Pilih Kostum",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Pilih Latar",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Pilih Kostum",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Lukis",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Kejutan",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Unggah Latar",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Unggah Kostum",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Pilih Ekstension",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Masukkan URL ekstension",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Tidak dapat mulai merekam",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Pilih Suara",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Unggah Suara",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Kejutan",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Rekam",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Pilih Suara",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Pilih Sprite",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Pilih sebuah Tutorial",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Membuat...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Menyimpan...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meow",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "variabel saya",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Memulai Scratch",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Tambahkan sebuah balok gerakan",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Klik bendera hijau untuk memulai",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Katakan Sesuatu",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Tambahkan sebuah Latar",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Ubah Warna",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Berputar",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Katakan Sesuatu",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Meluncur Keliling",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Simpan Nilai",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animasikan sebuah Nama",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Pilih Sebuah Sprite Huruf",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Mainkan Sebuah Suara Ketika Diklik",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Pilih Sprite Huruf Lainnya",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Ubah warna",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Pilih Sprite Huruf Lainnya & Buatnya Berputar",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Pilih Sprite Huruf Lainnya & Buatnya Tumbuh",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Membuat Musik",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Pilih Sebuah Sprite Instrumen",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Mainkan Suara Ketika Dikli",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Buat Sebuah Lagu",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Pilih Sebuah Drum % Buat Sebuah Ketukan",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Pilih Sprite Mikrofon & Beatbox Kejutan",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Buat Sebuah Permainan Klik-Klikan",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Mainkan Suara Ketika Dikli",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Buat Variabel Nilai",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Pergi ke posisi sembarang",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Ubah Warna",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Kosongkan Nilai",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Buat Sebuah Permainan Kejar-Kejaran",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Tambahkan sebuah Latar",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Tambahkan sebuah Sprite",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Bergerak Kanan & Kiri Dengan Tombol Panah",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Bergerak Naik & Turun Dengan Tombol Panah",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Tambahkan Sprite Lain",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Bergerak Secara Sembarang",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Di Sprite Gurita, Ketika Menyentuh Mainkan Suara",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Buat Variabel Nilai",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Di Sprite Gurita, Ketika Menyentuh Tambahkan Nilai",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Tambahkan sebuah Sprite",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Tambahkan sebuah Sprite",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Tambahkan sebuah Latar",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Ubah Ukuran",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Meluncur Keliling",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Rekam Sebuah Suara",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Buat Mereka Berputar",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Sembunyikan dan Munculkan",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animasikan Sebuah Sprite",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Tambahkan Efek",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Musik",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Mainkan instrumen dan drum.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pena",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Menggambar dengan sprite-spritemu.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Sensor Video",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Terjemahkan",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Terjemahkan teks menjadi berbagai bahasa.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Buat robot-robot interaktif dan lebih banyak lagi.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Berkreasi dengan motor dan sensor.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Semua",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Hewan",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Menari",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Efek",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantasi",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Fashion",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Makanan",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Dalam ruangan",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Musik",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Catatan",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Luar Ruangan",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Orang",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Perkusi",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Luar angkasa",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Olahraga",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Di bawah laut",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Suara",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animasi",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Kesenian",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Permainan",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Cerita",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Huruf",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "arah",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "posisi x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "posisi y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "ukuran",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "nama kostum",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "nama latar",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "volume",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "jawaban",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "kenyaringan",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "nama pengguna",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "tahun",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "bulan",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "tanggal",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "nama hari",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "jam",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "menit",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "detik",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "pengatur waktu",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Ransel",
+    "gui.backpack.errorBackpack": "Gagal memuat ransel",
+    "gui.backpack.loadingBackpack": "Memuat...",
+    "gui.backpack.more": "Lebih",
+    "gui.backpack.emptyBackpack": "Ransel kosong",
+    "gui.unsupportedBrowser.label": "Peramban tidak didukung",
+    "gui.unsupportedBrowser.description": "Kami minta maaf, Scratch 3.0 tidak mendukung Internet Explorer, Vivaldi, Opera, ataupun Silk. Kami menyarankan mencoba peramban yang lebih baru seperti Google Chrome, Mozilla Firefox, atau Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Kembali",
+    "gui.unsupportedBrowser.previewfaq": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "FAQ",
+    "gui.cameraModal.cameraModalTitle": "Ambil Sebuah Foto",
+    "gui.cameraModal.loadingCameraMessage": "Memuat Kamera...",
+    "gui.cameraModal.permissionRequest": "Kami perlu izinmu untuk menggunakan kameramu",
+    "gui.cameraModal.retakePhoto": "Ambil Ulang Foto",
+    "gui.cameraModal.save": "Simpan",
+    "gui.cameraModal.takePhoto": "Ambil Foto",
+    "gui.cameraModal.loadingCaption": "Memuat...",
+    "gui.cameraModal.enableCameraCaption": "Perbolehkan Kamera",
+    "gui.cards.all-tutorials": "Tutorial",
+    "gui.cards.close": "Tutup",
+    "gui.cards.more-things-to-try": "Lebih banyak hal untuk dicoba!",
+    "gui.cards.see-more": "Lihat lebih banyak",
+    "gui.comingSoon.message1": "Jangan khawatir, kami sedang mengerjakannya {emoji}",
+    "gui.comingSoon.message2": "Akan Segera Datang",
+    "gui.comingSoon.message3": "Kami sedang mengerjakannya {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "No devices found",
+    "gui.connection.auto-scanning.prescan": "Have your device nearby, then begin searching.",
+    "gui.connection.auto-scanning.pressbutton": "Press the button on your device.",
+    "gui.connection.auto-scanning.start-search": "Start Searching",
+    "gui.connection.connecting-searchbutton": "Searching...",
+    "gui.connection.auto-scanning.try-again": "Try again",
+    "gui.connection.connected": "Terhubung",
+    "gui.connection.disconnect": "Disconnect",
+    "gui.connection.go-to-editor": "Go to Editor",
+    "gui.connection.connecting-cancelbutton": "Connecting...",
+    "gui.connection.error.errorMessage": "Oops, looks like something went wrong.",
+    "gui.connection.error.tryagainbutton": "Try again",
+    "gui.connection.error.helpbutton": "Bantuan",
+    "gui.connection.peripheral-name-label": "Device name",
+    "gui.connection.connect": "Connect",
+    "gui.connection.scanning.lookingforperipherals": "Looking for devices",
+    "gui.connection.scanning.noPeripheralsFound": "No devices found",
+    "gui.connection.scanning.instructions": "Select your device in the list above.",
+    "gui.connection.search": "Refresh",
+    "gui.connection.unavailable.installscratchlink": "Make sure you have Scratch Link installed and running",
+    "gui.connection.unavailable.enablebluetooth": "Check that Bluetooth is enabled",
+    "gui.connection.unavailable.tryagainbutton": "Try again",
+    "gui.connection.unavailable.helpbutton": "Bantuan",
+    "gui.controls.go": "Jalankan",
+    "gui.controls.stop": "Hentikan",
+    "gui.crashMessage.label": "Ups! Suatu kesalahan terjadi",
+    "gui.crashMessage.description": "Kami minta maaf, tampaknya Scratch sedang macet. Kesalahan ini akan secara otomatis dilaporkan ke Scratch Team. Tolong perbarui halamanmu untuk mencoba lagi.",
+    "gui.crashMessage.reload": "Reload",
+    "gui.customProcedures.myblockModalTitle": "Buat sebuah Balok",
+    "gui.customProcedures.addAnInputNumberText": "Tambahkan input",
+    "gui.customProcedures.numberTextType": "angka atau teks",
+    "gui.customProcedures.addAnInputBoolean": "Tambahkan input",
+    "gui.customProcedures.booleanType": "boolean",
+    "gui.customProcedures.addALabel": "Tambahkan label",
+    "gui.customProcedures.runWithoutScreenRefresh": "Bekerja secara instan",
+    "gui.customProcedures.cancel": "Batal",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Arah",
+    "gui.directionPicker.rotationStyles.allAround": "All Around",
+    "gui.directionPicker.rotationStyles.leftRight": "Left/Right",
+    "gui.directionPicker.rotationStyles.dontRotate": "Do not rotate",
+    "gui.gui.addExtension": "Tambahkan Ekstension",
+    "gui.gui.codeTab": "Kode",
+    "gui.gui.backdropsTab": "Latar",
+    "gui.gui.costumesTab": "Kostum",
+    "gui.gui.soundsTab": "Suara",
+    "gui.importInfo.title": "Lihat sebuah Karya Scratch 2.0",
+    "gui.importInfo.betamessage": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+    "gui.importInfo.message": "Masukkan sebuah tautan ke salah satu karya Scratch terbagikanmu. Perubah-perubahan yang dibuat di Pratinjau 3.0 tidak akan disimpan.",
+    "gui.importInfo.invalidFormatError": "Uh oh, tautan atau id karya itu tidak tampak benar.",
+    "gui.importModal.viewproject": "Lihat",
+    "gui.importInfo.goback": "Kembali",
+    "gui.importInfo.previewfaq": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "FAQ",
+    "gui.extensionLibrary.comingSoon": "Akan Segera Datang",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Cari",
+    "gui.library.allTag": "Semua",
+    "gui.loader.message1": "Membuat balok-balok …",
+    "gui.loader.message2": "Memuat sprite-sprite …",
+    "gui.loader.message3": "Memuat suara …",
+    "gui.loader.message4": "Memuat ekstension …",
+    "gui.loader.message5": "Menggembala kucing-kucing …",
+    "gui.loader.message6": "Mengirim nano-nano …",
+    "gui.loader.message7": "Memompa gobo-gobo …",
+    "gui.loader.message8": "Menyiapkan emoji-emoji …",
+    "gui.loader.headline": "Memuat Karya",
+    "gui.accountMenu.profile": "Profil",
+    "gui.accountMenu.myStuff": "Karyaku",
+    "gui.accountMenu.myClasses": "Kelas Saya",
+    "gui.accountMenu.myClass": "Kelas Saya",
+    "gui.accountMenu.accountSettings": "Pengaturan akun",
+    "gui.accountMenu.signOut": "Keluar",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Lihat Komunitas",
+    "general.username": "Nama Pengguna",
+    "general.password": "Sandi",
+    "general.signIn": "Masuk",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "pemilih bahasa",
+    "gui.menuBar.tutorialsLibrary": "Tutorial",
+    "gui.menuBar.restoreSprite": "Restore Sprite",
+    "gui.menuBar.restoreSound": "Restore Sound",
+    "gui.menuBar.restoreCostume": "Restore Costume",
+    "gui.menuBar.restore": "Restore",
+    "gui.menuBar.saveNow": "Simpan sekarang",
+    "gui.menuBar.saveAsCopy": "Simpan sebagai salinan",
+    "gui.menuBar.remix": "Remix",
+    "gui.menuBar.new": "Baru",
+    "gui.menuBar.file": "Berkas",
+    "gui.menuBar.uploadFromComputer": "Muat dari komputermu",
+    "gui.menuBar.downloadToComputer": "Simpan ke komputermu",
+    "gui.menuBar.edit": "Sunting",
+    "gui.menuBar.turboModeOff": "Turn off Turbo Mode",
+    "gui.menuBar.turboModeOn": "Turn on Turbo Mode",
+    "gui.menuBar.joinScratch": "Bergabung dengan Scratch",
+    "gui.menuBar.signIn": "Masuk",
+    "gui.menuBar.giveFeedback": "Berikan Masukan",
+    "gui.gui.projectTitlePlaceholder": "Project title here",
+    "gui.menuBar.isShared": "Terbagikan",
+    "gui.menuBar.share": "Bagikan",
+    "gui.modal.help": "Bantuan",
+    "gui.modal.back": "Kembali",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "tampilan normal",
+    "gui.monitor.contextMenu.large": "tampilan besar",
+    "gui.monitor.contextMenu.slider": "slider",
+    "gui.previewInfo.label": "Coba Scratch 3.0",
+    "gui.previewInfo.welcome": "Selamat datang di Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Tidak Sekarang",
+    "gui.previewModal.tryittooltip": "Cobalah",
+    "gui.previewModal.viewprojecttooltip": "Lihat Karya 2.0",
+    "gui.previewInfo.betawelcome": "Selamat datang di Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Kami sedang mengerjakan generasi Scratch yang berikutnya. Kami ingin kamu mencobanya!",
+    "gui.previewInfo.notnow": "Tidak Sekarang",
+    "gui.previewModal.tryit": "Cobalah! {caticon}",
+    "gui.previewModal.viewproject": "Lihat Karya 2.0",
+    "gui.previewInfo.previewfaq": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "FAQ",
+    "gui.gui.variableScopeOptionAllSprites": "Untuk semua sprite",
+    "gui.gui.variableScopeOptionSpriteOnly": "Hanya untuk sprite ini",
+    "gui.gui.cloudVariableOption": "Variabel Cloud (disimpan di server)",
+    "gui.gui.variablePromptAllSpritesMessage": "Variabel ini bakal tersedia untuk semua sprite.",
+    "gui.prompt.cancel": "Batal",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Hentikan",
+    "gui.playbackStep.playMsg": "Mainkan",
+    "gui.playbackStep.loadingMsg": "Memuat...",
+    "gui.playbackStep.saveMsg": "Simpan",
+    "gui.playbackStep.reRecordMsg": "Rekam ulang",
+    "gui.recordModal.title": "Rekam Suara",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Rekam",
+    "gui.soundEditor.sound": "Suara",
+    "gui.soundEditor.play": "Mainkan",
+    "gui.soundEditor.stop": "Berhenti",
+    "gui.soundEditor.trim": "Potong",
+    "gui.soundEditor.save": "Simpan",
+    "gui.soundEditor.undo": "Batalkan",
+    "gui.soundEditor.redo": "Ulangi",
+    "gui.soundEditor.faster": "Lebih cepat",
+    "gui.soundEditor.slower": "Lebih lambat",
+    "gui.soundEditor.echo": "Gema",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Lebih nyaring",
+    "gui.soundEditor.softer": "Lebih lembut",
+    "gui.soundEditor.reverse": "Balikkan arah",
+    "gui.SpriteInfo.spritePlaceholder": "Judul",
+    "gui.SpriteInfo.sprite": "Sprite",
+    "gui.SpriteInfo.show": "Tampilkan",
+    "gui.SpriteInfo.size": "Ukuran",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "gandakan",
+    "gui.spriteSelectorItem.contextMenuDelete": "hapus",
+    "gui.spriteSelectorItem.contextMenuExport": "ekspor",
+    "gui.spriteSelector.addSpriteFromLibrary": "Pilih Sprite",
+    "gui.spriteSelector.addSpriteFromPaint": "Lukis",
+    "gui.spriteSelector.addSpriteFromSurprise": "Kejutan",
+    "gui.spriteSelector.addSpriteFromFile": "Upload Sprite",
+    "gui.stageHeader.stageSizeLarge": "Ganti ke panggung besar",
+    "gui.stageHeader.stageSizeSmall": "Ganti ke panggung kecil",
+    "gui.stageHeader.stageSizeFull": "Masuk mode layar penuh",
+    "gui.stageHeader.stageSizeUnFull": "Keluar dari mode seluruh layar",
+    "gui.stageHeader.fullscreenControl": "Kendali Layar Penuh",
+    "gui.spriteSelector.addBackdropFromLibrary": "Pilih Latar",
+    "gui.stageSelector.addBackdropFromPaint": "Lukis",
+    "gui.stageSelector.addBackdropFromSurprise": "Kejutan",
+    "gui.stageSelector.addBackdropFromFile": "Unggah Latar",
+    "gui.stageSelector.stage": "Panggung",
+    "gui.stageSelector.backdrops": "Latar",
+    "gui.turboMode.active": "Mode Turbo",
+    "gui.webglModal.label": "Perambanmu Tidak Mendukung WebGL",
+    "gui.webglModal.description": "Sayangnya tampaknya peramban atau komputermu {webGlLink}. Teknologi ini diperlukan untuk menjalankan Scratch 3.0.",
+    "gui.webglModal.webgllink": "tidak mendukung WebGL",
+    "gui.webglModal.back": "Kembali",
+    "gui.webglModal.previewfaq": "Untuk belajar lebih lanjut, pergi ke {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "FAQ",
+    "gui.costumeLibrary.chooseABackdrop": "Pilih Latar",
+    "gui.costumeLibrary.chooseACostume": "Pilih Kostum",
+    "gui.costumeTab.addBackdropFromLibrary": "Pilih Latar",
+    "gui.costumeTab.addCostumeFromLibrary": "Pilih Kostum",
+    "gui.costumeTab.addBlankCostume": "Lukis",
+    "gui.costumeTab.addSurpriseCostume": "Kejutan",
+    "gui.costumeTab.addFileBackdrop": "Unggah Latar",
+    "gui.costumeTab.addFileCostume": "Unggah Kostum",
+    "gui.costumeTab.addCameraCostume": "Kamera",
+    "gui.extensionLibrary.chooseAnExtension": "Pilih Ekstension",
+    "gui.extensionLibrary.extensionUrl": "Masukkan URL ekstension",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Tidak dapat mulai merekam",
+    "gui.projectLoader.loadError": "The project file that was selected failed to load.",
+    "gui.soundLibrary.chooseASound": "Pilih Suara",
+    "gui.soundTab.fileUploadSound": "Unggah Suara",
+    "gui.soundTab.surpriseSound": "Kejutan",
+    "gui.soundTab.recordSound": "Rekam",
+    "gui.soundTab.addSoundFromLibrary": "Pilih Suara",
+    "gui.spriteLibrary.chooseASprite": "Pilih Sprite",
+    "gui.tipsLibrary.tutorials": "Pilih sebuah Tutorial",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Membuat...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Menyimpan...",
+    "gui.defaultProject.meow": "Meow",
+    "gui.defaultProject.variable": "variabel saya",
+    "gui.howtos.intro-move-sayhello-hat.name": "Memulai Scratch",
+    "gui.howtos.intro-move.step_stepMove": "Tambahkan sebuah balok gerakan",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Klik bendera hijau untuk memulai",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Katakan Sesuatu",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Tambahkan sebuah Latar",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Ubah Warna",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Berputar",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Katakan Sesuatu",
+    "gui.howtos.cartoon-network.step_CNglide": "Meluncur Keliling",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Simpan Nilai",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Animasikan sebuah Nama",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Pilih Sebuah Sprite Huruf",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Mainkan Sebuah Suara Ketika Diklik",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Pilih Sprite Huruf Lainnya",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Ubah warna",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Pilih Sprite Huruf Lainnya & Buatnya Berputar",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Pilih Sprite Huruf Lainnya & Buatnya Tumbuh",
+    "gui.howtos.make-music.name": "Membuat Musik",
+    "gui.howtos.Make-Music.step_PickInstrument": "Pilih Sebuah Sprite Instrumen",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Mainkan Suara Ketika Dikli",
+    "gui.howtos.Make-Music.step_MakeSong": "Buat Sebuah Lagu",
+    "gui.howtos.make-music.step_MakeBeat": "Pilih Sebuah Drum % Buat Sebuah Ketukan",
+    "gui.howtos.make-music.step_MakeBeatBox": "Pilih Sprite Mikrofon & Beatbox Kejutan",
+    "gui.howtos.make-a-game.name": "Buat Sebuah Permainan Klik-Klikan",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Pick A Sprite",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Mainkan Suara Ketika Dikli",
+    "gui.howtos.make-a-game.step_GameAddScore": "Buat Variabel Nilai",
+    "gui.howtos.make-a-game.step_GameChangeScore": "When Clicked Increase Score",
+    "gui.howtos.make-a-game.step_Random": "Pergi ke posisi sembarang",
+    "gui.howtos.make-music.step_GameChangeColor": "Ubah Warna",
+    "gui.howtos.make-music.step_ResetScore": "Kosongkan Nilai",
+    "gui.howtos.make-a-chase-game.name": "Buat Sebuah Permainan Kejar-Kejaran",
+    "gui.howtos.Chase-Game.step_BG": "Tambahkan sebuah Latar",
+    "gui.howtos.chase-game.step_AddOcto": "Tambahkan sebuah Sprite",
+    "gui.howtos.make-music.step_LeftRight": "Bergerak Kanan & Kiri Dengan Tombol Panah",
+    "gui.howtos.Chase-Game.step_UpDown": "Bergerak Naik & Turun Dengan Tombol Panah",
+    "gui.howtos.Chase-Game.step_AddStar": "Tambahkan Sprite Lain",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Bergerak Secara Sembarang",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Di Sprite Gurita, Ketika Menyentuh Mainkan Suara",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Buat Variabel Nilai",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Di Sprite Gurita, Ketika Menyentuh Tambahkan Nilai",
+    "gui.howtos.add-sprite.name": "Tambahkan sebuah Sprite",
+    "gui.howtos.add-sprite.step_addSprite": "Tambahkan sebuah Sprite",
+    "gui.howtos.add-a-backdrop.name": "Tambahkan sebuah Latar",
+    "gui.howtos.change-size.name": "Ubah Ukuran",
+    "gui.howtos.glide-around.name": "Meluncur Keliling",
+    "gui.howtos.record-a-sound.name": "Rekam Sebuah Suara",
+    "gui.howtos.spin-video.name": "Buat Mereka Berputar",
+    "gui.howtos.hide-and-show.name": "Sembunyikan dan Munculkan",
+    "gui.howtos.switch-costume.name": "Animasikan Sebuah Sprite",
+    "gui.howtos.move-around-with-arrow-keys.name": "Use Arrow Keys",
+    "gui.howtos.add-effects.name": "Tambahkan Efek",
+    "gui.extension.music.name": "Musik",
+    "gui.extension.music.description": "Mainkan instrumen dan drum.",
+    "gui.extension.pen.name": "Pena",
+    "gui.extension.pen.description": "Menggambar dengan sprite-spritemu.",
+    "gui.extension.videosensing.name": "Sensor Video",
+    "gui.extension.videosensing.description": "Sense motion with the camera.",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Terjemahkan",
+    "gui.extension.translate.description": "Terjemahkan teks menjadi berbagai bahasa.",
+    "gui.extension.microbit.description": "Connect your projects with the world.",
+    "gui.extension.microbit.connectingMessage": "Connecting",
+    "gui.extension.ev3.description": "Buat robot-robot interaktif dan lebih banyak lagi.",
+    "gui.extension.ev3.connectingMessage": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+    "gui.extension.wedo2.description": "Berkreasi dengan motor dan sensor.",
+    "gui.extension.wedo2.connectingMessage": "Connecting",
+    "gui.libraryTags.all": "Semua",
+    "gui.libraryTags.animals": "Hewan",
+    "gui.libraryTags.dance": "Menari",
+    "gui.libraryTags.effects": "Efek",
+    "gui.libraryTags.fantasy": "Fantasi",
+    "gui.libraryTags.fashion": "Fashion",
+    "gui.libraryTags.food": "Makanan",
+    "gui.libraryTags.indoors": "Dalam ruangan",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Musik",
+    "gui.libraryTags.notes": "Catatan",
+    "gui.libraryTags.outdoors": "Luar Ruangan",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Orang",
+    "gui.libraryTags.percussion": "Perkusi",
+    "gui.libraryTags.space": "Luar angkasa",
+    "gui.libraryTags.sports": "Olahraga",
+    "gui.libraryTags.underwater": "Di bawah laut",
+    "gui.libraryTags.voice": "Suara",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Animasi",
+    "gui.libraryTags.art": "Kesenian",
+    "gui.libraryTags.games": "Permainan",
+    "gui.libraryTags.stories": "Cerita",
+    "gui.libraryTags.letters": "Huruf",
+    "gui.opcodeLabels.direction": "arah",
+    "gui.opcodeLabels.xposition": "posisi x",
+    "gui.opcodeLabels.yposition": "posisi y",
+    "gui.opcodeLabels.size": "ukuran",
+    "gui.opcodeLabels.costumename": "nama kostum",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "nama latar",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "volume",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "jawaban",
+    "gui.opcodeLabels.loudness": "kenyaringan",
+    "gui.opcodeLabels.username": "nama pengguna",
+    "gui.opcodeLabels.year": "tahun",
+    "gui.opcodeLabels.month": "bulan",
+    "gui.opcodeLabels.date": "tanggal",
+    "gui.opcodeLabels.dayofweek": "nama hari",
+    "gui.opcodeLabels.hour": "jam",
+    "gui.opcodeLabels.minute": "menit",
+    "gui.opcodeLabels.second": "detik",
+    "gui.opcodeLabels.timer": "pengatur waktu",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "pop"
 }

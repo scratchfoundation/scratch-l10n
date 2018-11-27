@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Kleur",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Verzadiging",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Helderheid",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Geen zorgen; we zijn er mee bezig {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Binnenkort beschikbaar...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "We werken er aan {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Vulling",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Uiterlijk",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Groeperen",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Groep opheffen",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Ongedaan maken",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Opnieuw",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Naar voren",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Naar achteren",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Naar voorgrond",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Naar achtergrond",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Meer",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Grootte",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Gum-breedte",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopie maken ",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Plakken",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Verwijder",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Gebogen",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Puntig",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Dikte",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Links-rechts omdraaien",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Boven-onder omdraaien",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Gevuld",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Omtrek",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Zet om naar bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Zet om naar vector",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Omtrek",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Kwast",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Gum",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Vulling",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Lijn",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Cirkel",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Rechthoek",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Opnieuw vormen",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Afgeronde rechthoek",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Selecteren",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Tekst",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Wissel",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Kleur",
+    "paint.paintEditor.saturation": "Verzadiging",
+    "paint.paintEditor.brightness": "Helderheid",
+    "gui.comingSoon.message1": "Geen zorgen; we zijn er mee bezig {emoji}",
+    "gui.comingSoon.message2": "Binnenkort beschikbaar...",
+    "gui.comingSoon.message3": "We werken er aan {emoji}",
+    "paint.paintEditor.fill": "Vulling",
+    "paint.paintEditor.costume": "Uiterlijk",
+    "paint.paintEditor.group": "Groeperen",
+    "paint.paintEditor.ungroup": "Groep opheffen",
+    "paint.paintEditor.undo": "Ongedaan maken",
+    "paint.paintEditor.redo": "Opnieuw",
+    "paint.paintEditor.forward": "Naar voren",
+    "paint.paintEditor.backward": "Naar achteren",
+    "paint.paintEditor.front": "Naar voorgrond",
+    "paint.paintEditor.back": "Naar achtergrond",
+    "paint.paintEditor.more": "Meer",
+    "paint.modeTools.brushSize": "Grootte",
+    "paint.modeTools.eraserSize": "Gum-breedte",
+    "paint.modeTools.copy": "Kopie maken ",
+    "paint.modeTools.paste": "Plakken",
+    "paint.modeTools.delete": "Verwijder",
+    "paint.modeTools.curved": "Gebogen",
+    "paint.modeTools.pointed": "Puntig",
+    "paint.modeTools.thickness": "Dikte",
+    "paint.modeTools.flipHorizontal": "Links-rechts omdraaien",
+    "paint.modeTools.flipVertical": "Boven-onder omdraaien",
+    "paint.modeTools.filled": "Gevuld",
+    "paint.modeTools.outlined": "Omtrek",
+    "paint.paintEditor.bitmap": "Zet om naar bitmap",
+    "paint.paintEditor.vector": "Zet om naar vector",
+    "paint.paintEditor.stroke": "Omtrek",
+    "paint.brushMode.brush": "Kwast",
+    "paint.eraserMode.eraser": "Gum",
+    "paint.fillMode.fill": "Vulling",
+    "paint.lineMode.line": "Lijn",
+    "paint.ovalMode.oval": "Cirkel",
+    "paint.rectMode.rect": "Rechthoek",
+    "paint.reshapeMode.reshape": "Opnieuw vormen",
+    "paint.roundedRectMode.roundedRect": "Afgeronde rechthoek",
+    "paint.selectMode.select": "Selecteren",
+    "paint.textMode.text": "Tekst",
+    "paint.colorPicker.swap": "Wissel"
 }

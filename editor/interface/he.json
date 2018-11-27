@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "התחברו שוב",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "תרמיל",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "אירעה שגיאה בטעינת התרמיל",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "טוען...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "עוד",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "התרמיל ריק",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "הדפדפן אינו נתמך",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "אנחנו מצטערים מאד, אך סקראץ' 3.0 אינו תומך ב־Internet Explorer, ב־Opera או ב־Silk. אנו ממליצים לנסות דפדפן חדש יותר כמו Google Chrome, Mozila Firefox, או Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "אחורה",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "למידע נוסף, עברו אל {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "שאלות נפוצות",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "צלמו תמונה",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "טוען מצלמה...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "אנחנו צריכים את רשותך כדי להשתמש במצלמה שלך",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "צלמו תמונה מחדש",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "שמירה",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "צלמו תמונה",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "טוען...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "אפשר מצלמה",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "מדריכים",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "סגירה",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "עוד דברים לנסות!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "ראו עוד",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "אל דאגה, אנחנו מטפלים בזה {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "בקרוב ...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "אנחנו עובדים על זה {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "לא נמצאו מכשירים",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "במשכיר שלך בסמוך אליך אז התחל בחיפוש",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "לחץ את הכפתור על המכשיר שלך",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "התחל חיפוש",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "מחפש...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "נסו שוב",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "מחובר",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "התנתקו",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "עברו לעורך",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "מתחבר...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "אופס, נראה שמשהו השתבש.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "נסו שוב",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "עזרה",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "שם מכשיר",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "התחברו",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "מחפש מכשירים",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "לא נמצאו מכשירים",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "בחרו את המכשיר שלכם מהרשימה למעלה",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "ריענון",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "וודאו שיש לכם Scratch Link מותקן ופועל.",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "וודאו שה־Bluetooth דלוק",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "נסו שוב",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "עזרה",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "הפעל",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "עצירה",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "אופס! משהו השתבש",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "מצטערים, אבל נראה שסקראץ' קרס. הבאג הזה דווח באופן אוטומטי לצוות סקראץ'. אנא רעננו את העמוד כדי לנסות שוב.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "טעינה מחדש",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "צרו לבנה",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "הוסיפו קלט",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "מספר או טקסט",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "הוסיפו קלט",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "בוליאני",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "הוסיפו תווית",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "הפעלה ללא רענון מסך",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "ביטול",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "אישור",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "כיוון",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "כל הכיוונים",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "שמאל-ימין",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "לא לסובב",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "הוסיפו הרחבה",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "קוד",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "רקעים",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "תלבושות",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "צלילים",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "צפו בפרויקט של סקראץ' 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "הכניסו קישור לאחד מהפרויקטים ששיתפתם בסקראץ'. שינויים שנעשים בגרסת בטא זו של סקראץ' 3.0 לא יישמרו.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "הכנס קישור לאחד מהפרויקטים ששיתפת בסקראץ'. שינויים שנעשים בתצוגה המקדימה הזאת של סקראץ' 3.0 לא יישמרו.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "אופס, משהו לא בסדר עם כתובת או מספר הפרויקט.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "צפו",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "חזרו אחורה",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "למידע נוסף, עבור אל {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "שאלות נפוצות",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "בקרוב",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "חיפוש",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "הכל",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "יצירת לבנים …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "טוען דמויות …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "טוען צלילים …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "טוען הרחבות …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "מבריש את פרוות החתולים …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "מעביר ננואים ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "מנפח גובואים …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "מכין אימוג'ים ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "העלו פרוייקט",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "פרופיל",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "הדברים שלי",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "הכיתות שלי",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "הכיתה שלי",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "הגדרות חשבון",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "התנתקות",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "צפו בקהילה",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "שם משתמש",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "סיסמה",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "כניסה",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "צריך עזרה?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "בחירת שפה",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "מדריכים",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "שחזר דמות",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "שחזר שמע",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "שחזר תלבושת",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "שחזר",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "שמור עכשיו",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "שמירה כעותק",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "עריכה מחדש",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "חדש",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "קובץ",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "טעינה מהמחשב שלך",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "הורידו למחשב",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "עריכה",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "כבו מצב טורבו",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "הפעילו מצב טורבו",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "הצטרפו לסקראץ'",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "כניסה",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "תנו משוב",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "כתבו כאן את כותרת הפרויקט",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "משותף",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "שיתוף",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "עזרה",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "אחורה",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(ריק)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "אורך {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "תצוגה רגילה",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "תצוגה גדולה",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "סרגל גרירה",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "נסו את  Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "ברוכים הבאים לגרסת בטא של סקראץ' 3.0",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "לא עכשיו",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "נסו את זה",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "צפו בפרויקט מסקראץ' 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "ברוך הבא לבטא של סקראץ' 3.0",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "אנחנו עובדים על הדור הבא של סקראץ'. נשמח אם תנסו אותו!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "לא עכשיו",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "נסו זאת! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "צפו בפרויקט מסקראץ' 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "למידע נוסף, עברו אל {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "שאלות נפוצות",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "לכל הדמויות",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "רק לדמות זו",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "משתנה ענן (מאוחסן בשרת)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "המשתנה הזה יהיה זמין לכל הדמויות",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "ביטול",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "אישור",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "עצירה",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "נגינה",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "טוען...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "שמירה",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "הקליטו מחדש",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "הקליטו צליל",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "לחצו על הכפתור למטה להתחלת הקלטה",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}אנו זקוקים לרשות להשתמש במיקרופון",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "עצירת הקלטה",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "הקלטה",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "צליל",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "נגינה",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "עצירה",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "חיתוך",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "שמירה",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "ביטול",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "שחזור",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "מהר יותר",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "איטי יותר",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "הד",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "רובוט",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "חזק יותר",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "חלש יותר",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "הפוך",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "שם",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "דמות",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "הצגה",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "גודל",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "שכפול",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "מחיקה",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "יצוא",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "בחרו דמות",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "צייר",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "הפתעה",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "העלו דמות",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "עברו לבמה גדולה",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "עברו לבמה קטנה",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "כניסה למסך מלא",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "יציאה ממסך מלא",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "בקרת מסך מלא",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "בחרו רקע",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "צייר",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "הפתעה",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "העלו רקע",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "במה",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "רקע",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "מצב טורבו",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "הדפדפן שלך אינו תומך ב־WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "לרוע המזל, נראה שהדפדפן או המחשב שלך {webGlLink}. טכנולוגיה זו דרושה להרצת סקראץ' 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "אינו תומך ב־WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "חזרה",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "למידע נוסף, עברו אל {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "שאלות נפוצות",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "בחרו רקע",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "בחרו תלבושת",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "בחרו רקע",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "בחרו תלבושת",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "צייר",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "הפתעות",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "העלו רקע",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "העלו תלבושת",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "מצלמה",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "בחרו הרחבה",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "הכניסו את ה־URL של ההרחבה",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "פרויקט סקראץ'",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "לא ניתן להתחיל הקלטה",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "טעינת הפרויקט שנבחר נכשלה",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "בחרו צליל",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "העלו צליל",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "הפתעה",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "הקלטה",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "בחרו צליל",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "בחרו דמות",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "בחרו מדריך",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "מייצר...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "שומר...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "מיאו",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "המשתנה שלי",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "מתחילים",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "הוסיפו לבנת תנועה",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "לחצו על הדגל הירוק כדי להתחיל",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "צור הנפשות מדברות",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "הוסיפו את הלבנים של טקסט לדיבור",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "אמור דבר מה",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "קבע קול",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "תזוזה במרחב",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "הוסיפו רקע",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "הוסף תו נוסף",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "בצע שיר",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "שינוי צבע",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "הסתובבו",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "הגדל והקטן",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "הנפישו משחק הרפתקאות",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "בחרו דמות להראות",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "אמור דבר מה",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "החליקו סביב",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "בחרו אובייקט לרדוף אחריו",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "איספו אובייקטים",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "צרו משתנה ניקוד",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "עקבו אחר התוצאה",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "שלב הבא: רקע",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "הנפשת שם",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "בחרו בדמות של אות",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "השמעת צליל בלחיצה",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "בחרו דמות אות נוספת",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "שינוי צבע",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "בחרו אות נוספת וגרמו לה להסתובב",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "בחרו עוד אות וגרמו לה לגדול",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "צרו מוזיקה",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "בחרו בדמות של כלי נגינה",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "השמעת צליל בלחיצה",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "חברו שיר",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "בחרו תוף וצרו קצב",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "בחר בדמות המיקרופון ובהפתעת Beatbox ",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "צרו משחק לחיצות",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "בחרו דמות",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "השמעת צליל בלחיצה",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "צרו משתנה ניקוד",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "כאשר נלחץ העלה ניקוד",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "קפיצה אל מקום אקראי",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "שינוי צבע",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "איפוס ניקוד",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "בנו משחק תופסת",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "הוסיפו רקע",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "הוסיפו דמות",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": " זוזו ימינה ושמאלה באמצעות לחצני החיצים",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "זוזו למעלה ולמטה באמצעות לחצני החיצים",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "הוסיפו דמות נוספת",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "תנועה אקראית",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "בדמות התמנון, כאשר היא נוגעת נגן צליל",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "צרו משתנה ניקוד",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "בדמות התמנון, כאשר היא נוגעת הוסף ניקוד",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "הוסיפו דמות",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "הוסיפו דמות",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "הוסיפו רקע",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "שינוי גודל",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "החליקו סביב",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "הקלטת צליל",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "גרום לזה להסתובב",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "הסתרה והצגה",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "הנפשת דמות",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "השתמשו במקשי החצים",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "הוסיפו אפקטים",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "מוזיקה",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "נגנו בכלי נגינה ובתופים",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "עט",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "ציירו עם הדמות שלכם",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "חיישן מצלמה",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "זיהוי תנועה באמצעות המצלמה",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "טקסט לדיבור",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "גרמו לפרויקט שלכם לדבר",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "תרגם",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "תרגום טקסט להרבה שפות",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "חברו את הפרויקטים שלכם לעולם",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "מתחבר",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "בנה רובוטים אינטראקטיביים ועוד.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "מתחבר. וודאו שקוד ה־PIN שמוגדר ב־EV3 הוא 1234",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "בנו עם מנועים וחיישנים",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "מתחבר",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "הכל",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "חיות",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "ריקוד",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "אפקטים",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "פנטסיה",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "אופנה",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "אוכל",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "בפנים",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "לולאות",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "מוזיקה",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "רשימות",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "בחוץ",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "תבניות",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "אנשים",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "כלי הקשה",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "רווח",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "ספורט",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "תת-מימי",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "קול",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "משוגע",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "הנפשה",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "אומנות",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "משחקים",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "סיפורים",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "אותיות",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "כיוון",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "מיקום על ציר x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "מיקום על ציר y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "גודל",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "שם תלבושת",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "מספר תלבושת",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "שם רקע",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "מספר רקע",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "עוצמה",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "קצב",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "תשובה",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "קולניות",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "שם משתמש",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "שנה",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "חודש",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "תאריך",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "יום בשבוע",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "שעה",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "דקה",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "שניה",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "שעון עצר",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "רקע{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "תלבושת{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "דמות{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "פופ",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "התחברו שוב",
+    "gui.backpack.header": "תרמיל",
+    "gui.backpack.errorBackpack": "אירעה שגיאה בטעינת התרמיל",
+    "gui.backpack.loadingBackpack": "טוען...",
+    "gui.backpack.more": "עוד",
+    "gui.backpack.emptyBackpack": "התרמיל ריק",
+    "gui.unsupportedBrowser.label": "הדפדפן אינו נתמך",
+    "gui.unsupportedBrowser.description": "אנחנו מצטערים מאד, אך סקראץ' 3.0 אינו תומך ב־Internet Explorer, ב־Opera או ב־Silk. אנו ממליצים לנסות דפדפן חדש יותר כמו Google Chrome, Mozila Firefox, או Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "אחורה",
+    "gui.unsupportedBrowser.previewfaq": "למידע נוסף, עברו אל {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "שאלות נפוצות",
+    "gui.cameraModal.cameraModalTitle": "צלמו תמונה",
+    "gui.cameraModal.loadingCameraMessage": "טוען מצלמה...",
+    "gui.cameraModal.permissionRequest": "אנחנו צריכים את רשותך כדי להשתמש במצלמה שלך",
+    "gui.cameraModal.retakePhoto": "צלמו תמונה מחדש",
+    "gui.cameraModal.save": "שמירה",
+    "gui.cameraModal.takePhoto": "צלמו תמונה",
+    "gui.cameraModal.loadingCaption": "טוען...",
+    "gui.cameraModal.enableCameraCaption": "אפשר מצלמה",
+    "gui.cards.all-tutorials": "מדריכים",
+    "gui.cards.close": "סגירה",
+    "gui.cards.more-things-to-try": "עוד דברים לנסות!",
+    "gui.cards.see-more": "ראו עוד",
+    "gui.comingSoon.message1": "אל דאגה, אנחנו מטפלים בזה {emoji}",
+    "gui.comingSoon.message2": "בקרוב ...",
+    "gui.comingSoon.message3": "אנחנו עובדים על זה {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "לא נמצאו מכשירים",
+    "gui.connection.auto-scanning.prescan": "במשכיר שלך בסמוך אליך אז התחל בחיפוש",
+    "gui.connection.auto-scanning.pressbutton": "לחץ את הכפתור על המכשיר שלך",
+    "gui.connection.auto-scanning.start-search": "התחל חיפוש",
+    "gui.connection.connecting-searchbutton": "מחפש...",
+    "gui.connection.auto-scanning.try-again": "נסו שוב",
+    "gui.connection.connected": "מחובר",
+    "gui.connection.disconnect": "התנתקו",
+    "gui.connection.go-to-editor": "עברו לעורך",
+    "gui.connection.connecting-cancelbutton": "מתחבר...",
+    "gui.connection.error.errorMessage": "אופס, נראה שמשהו השתבש.",
+    "gui.connection.error.tryagainbutton": "נסו שוב",
+    "gui.connection.error.helpbutton": "עזרה",
+    "gui.connection.peripheral-name-label": "שם מכשיר",
+    "gui.connection.connect": "התחברו",
+    "gui.connection.scanning.lookingforperipherals": "מחפש מכשירים",
+    "gui.connection.scanning.noPeripheralsFound": "לא נמצאו מכשירים",
+    "gui.connection.scanning.instructions": "בחרו את המכשיר שלכם מהרשימה למעלה",
+    "gui.connection.search": "ריענון",
+    "gui.connection.unavailable.installscratchlink": "וודאו שיש לכם Scratch Link מותקן ופועל.",
+    "gui.connection.unavailable.enablebluetooth": "וודאו שה־Bluetooth דלוק",
+    "gui.connection.unavailable.tryagainbutton": "נסו שוב",
+    "gui.connection.unavailable.helpbutton": "עזרה",
+    "gui.controls.go": "הפעל",
+    "gui.controls.stop": "עצירה",
+    "gui.crashMessage.label": "אופס! משהו השתבש",
+    "gui.crashMessage.description": "מצטערים, אבל נראה שסקראץ' קרס. הבאג הזה דווח באופן אוטומטי לצוות סקראץ'. אנא רעננו את העמוד כדי לנסות שוב.",
+    "gui.crashMessage.reload": "טעינה מחדש",
+    "gui.customProcedures.myblockModalTitle": "צרו לבנה",
+    "gui.customProcedures.addAnInputNumberText": "הוסיפו קלט",
+    "gui.customProcedures.numberTextType": "מספר או טקסט",
+    "gui.customProcedures.addAnInputBoolean": "הוסיפו קלט",
+    "gui.customProcedures.booleanType": "בוליאני",
+    "gui.customProcedures.addALabel": "הוסיפו תווית",
+    "gui.customProcedures.runWithoutScreenRefresh": "הפעלה ללא רענון מסך",
+    "gui.customProcedures.cancel": "ביטול",
+    "gui.customProcedures.ok": "אישור",
+    "gui.SpriteInfo.direction": "כיוון",
+    "gui.directionPicker.rotationStyles.allAround": "כל הכיוונים",
+    "gui.directionPicker.rotationStyles.leftRight": "שמאל-ימין",
+    "gui.directionPicker.rotationStyles.dontRotate": "לא לסובב",
+    "gui.gui.addExtension": "הוסיפו הרחבה",
+    "gui.gui.codeTab": "קוד",
+    "gui.gui.backdropsTab": "רקעים",
+    "gui.gui.costumesTab": "תלבושות",
+    "gui.gui.soundsTab": "צלילים",
+    "gui.importInfo.title": "צפו בפרויקט של סקראץ' 2.0",
+    "gui.importInfo.betamessage": "הכניסו קישור לאחד מהפרויקטים ששיתפתם בסקראץ'. שינויים שנעשים בגרסת בטא זו של סקראץ' 3.0 לא יישמרו.",
+    "gui.importInfo.message": "הכנס קישור לאחד מהפרויקטים ששיתפת בסקראץ'. שינויים שנעשים בתצוגה המקדימה הזאת של סקראץ' 3.0 לא יישמרו.",
+    "gui.importInfo.invalidFormatError": "אופס, משהו לא בסדר עם כתובת או מספר הפרויקט.",
+    "gui.importModal.viewproject": "צפו",
+    "gui.importInfo.goback": "חזרו אחורה",
+    "gui.importInfo.previewfaq": "למידע נוסף, עבור אל {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "שאלות נפוצות",
+    "gui.extensionLibrary.comingSoon": "בקרוב",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "חיפוש",
+    "gui.library.allTag": "הכל",
+    "gui.loader.message1": "יצירת לבנים …",
+    "gui.loader.message2": "טוען דמויות …",
+    "gui.loader.message3": "טוען צלילים …",
+    "gui.loader.message4": "טוען הרחבות …",
+    "gui.loader.message5": "מבריש את פרוות החתולים …",
+    "gui.loader.message6": "מעביר ננואים ...",
+    "gui.loader.message7": "מנפח גובואים …",
+    "gui.loader.message8": "מכין אימוג'ים ...",
+    "gui.loader.headline": "העלו פרוייקט",
+    "gui.accountMenu.profile": "פרופיל",
+    "gui.accountMenu.myStuff": "הדברים שלי",
+    "gui.accountMenu.myClasses": "הכיתות שלי",
+    "gui.accountMenu.myClass": "הכיתה שלי",
+    "gui.accountMenu.accountSettings": "הגדרות חשבון",
+    "gui.accountMenu.signOut": "התנתקות",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "צפו בקהילה",
+    "general.username": "שם משתמש",
+    "general.password": "סיסמה",
+    "general.signIn": "כניסה",
+    "login.needHelp": "צריך עזרה?",
+    "gui.menuBar.LanguageSelector": "בחירת שפה",
+    "gui.menuBar.tutorialsLibrary": "מדריכים",
+    "gui.menuBar.restoreSprite": "שחזר דמות",
+    "gui.menuBar.restoreSound": "שחזר שמע",
+    "gui.menuBar.restoreCostume": "שחזר תלבושת",
+    "gui.menuBar.restore": "שחזר",
+    "gui.menuBar.saveNow": "שמור עכשיו",
+    "gui.menuBar.saveAsCopy": "שמירה כעותק",
+    "gui.menuBar.remix": "עריכה מחדש",
+    "gui.menuBar.new": "חדש",
+    "gui.menuBar.file": "קובץ",
+    "gui.menuBar.uploadFromComputer": "טעינה מהמחשב שלך",
+    "gui.menuBar.downloadToComputer": "הורידו למחשב",
+    "gui.menuBar.edit": "עריכה",
+    "gui.menuBar.turboModeOff": "כבו מצב טורבו",
+    "gui.menuBar.turboModeOn": "הפעילו מצב טורבו",
+    "gui.menuBar.joinScratch": "הצטרפו לסקראץ'",
+    "gui.menuBar.signIn": "כניסה",
+    "gui.menuBar.giveFeedback": "תנו משוב",
+    "gui.gui.projectTitlePlaceholder": "כתבו כאן את כותרת הפרויקט",
+    "gui.menuBar.isShared": "משותף",
+    "gui.menuBar.share": "שיתוף",
+    "gui.modal.help": "עזרה",
+    "gui.modal.back": "אחורה",
+    "gui.monitor.listMonitor.empty": "(ריק)",
+    "gui.monitor.listMonitor.listLength": "אורך {length}",
+    "gui.monitor.contextMenu.default": "תצוגה רגילה",
+    "gui.monitor.contextMenu.large": "תצוגה גדולה",
+    "gui.monitor.contextMenu.slider": "סרגל גרירה",
+    "gui.previewInfo.label": "נסו את  Scratch 3.0",
+    "gui.previewInfo.welcome": "ברוכים הבאים לגרסת בטא של סקראץ' 3.0",
+    "gui.previewModal.notnowtooltip": "לא עכשיו",
+    "gui.previewModal.tryittooltip": "נסו את זה",
+    "gui.previewModal.viewprojecttooltip": "צפו בפרויקט מסקראץ' 2.0",
+    "gui.previewInfo.betawelcome": "ברוך הבא לבטא של סקראץ' 3.0",
+    "gui.previewInfo.invitation": "אנחנו עובדים על הדור הבא של סקראץ'. נשמח אם תנסו אותו!",
+    "gui.previewInfo.notnow": "לא עכשיו",
+    "gui.previewModal.tryit": "נסו זאת! {caticon}",
+    "gui.previewModal.viewproject": "צפו בפרויקט מסקראץ' 2.0",
+    "gui.previewInfo.previewfaq": "למידע נוסף, עברו אל {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "שאלות נפוצות",
+    "gui.gui.variableScopeOptionAllSprites": "לכל הדמויות",
+    "gui.gui.variableScopeOptionSpriteOnly": "רק לדמות זו",
+    "gui.gui.cloudVariableOption": "משתנה ענן (מאוחסן בשרת)",
+    "gui.gui.variablePromptAllSpritesMessage": "המשתנה הזה יהיה זמין לכל הדמויות",
+    "gui.prompt.cancel": "ביטול",
+    "gui.prompt.ok": "אישור",
+    "gui.playbackStep.stopMsg": "עצירה",
+    "gui.playbackStep.playMsg": "נגינה",
+    "gui.playbackStep.loadingMsg": "טוען...",
+    "gui.playbackStep.saveMsg": "שמירה",
+    "gui.playbackStep.reRecordMsg": "הקליטו מחדש",
+    "gui.recordModal.title": "הקליטו צליל",
+    "gui.recordingStep.beginRecord": "לחצו על הכפתור למטה להתחלת הקלטה",
+    "gui.recordingStep.permission": "{arrow}אנו זקוקים לרשות להשתמש במיקרופון",
+    "gui.recordingStep.stop": "עצירת הקלטה",
+    "gui.recordingStep.record": "הקלטה",
+    "gui.soundEditor.sound": "צליל",
+    "gui.soundEditor.play": "נגינה",
+    "gui.soundEditor.stop": "עצירה",
+    "gui.soundEditor.trim": "חיתוך",
+    "gui.soundEditor.save": "שמירה",
+    "gui.soundEditor.undo": "ביטול",
+    "gui.soundEditor.redo": "שחזור",
+    "gui.soundEditor.faster": "מהר יותר",
+    "gui.soundEditor.slower": "איטי יותר",
+    "gui.soundEditor.echo": "הד",
+    "gui.soundEditor.robot": "רובוט",
+    "gui.soundEditor.louder": "חזק יותר",
+    "gui.soundEditor.softer": "חלש יותר",
+    "gui.soundEditor.reverse": "הפוך",
+    "gui.SpriteInfo.spritePlaceholder": "שם",
+    "gui.SpriteInfo.sprite": "דמות",
+    "gui.SpriteInfo.show": "הצגה",
+    "gui.SpriteInfo.size": "גודל",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "שכפול",
+    "gui.spriteSelectorItem.contextMenuDelete": "מחיקה",
+    "gui.spriteSelectorItem.contextMenuExport": "יצוא",
+    "gui.spriteSelector.addSpriteFromLibrary": "בחרו דמות",
+    "gui.spriteSelector.addSpriteFromPaint": "צייר",
+    "gui.spriteSelector.addSpriteFromSurprise": "הפתעה",
+    "gui.spriteSelector.addSpriteFromFile": "העלו דמות",
+    "gui.stageHeader.stageSizeLarge": "עברו לבמה גדולה",
+    "gui.stageHeader.stageSizeSmall": "עברו לבמה קטנה",
+    "gui.stageHeader.stageSizeFull": "כניסה למסך מלא",
+    "gui.stageHeader.stageSizeUnFull": "יציאה ממסך מלא",
+    "gui.stageHeader.fullscreenControl": "בקרת מסך מלא",
+    "gui.spriteSelector.addBackdropFromLibrary": "בחרו רקע",
+    "gui.stageSelector.addBackdropFromPaint": "צייר",
+    "gui.stageSelector.addBackdropFromSurprise": "הפתעה",
+    "gui.stageSelector.addBackdropFromFile": "העלו רקע",
+    "gui.stageSelector.stage": "במה",
+    "gui.stageSelector.backdrops": "רקע",
+    "gui.turboMode.active": "מצב טורבו",
+    "gui.webglModal.label": "הדפדפן שלך אינו תומך ב־WebGL",
+    "gui.webglModal.description": "לרוע המזל, נראה שהדפדפן או המחשב שלך {webGlLink}. טכנולוגיה זו דרושה להרצת סקראץ' 3.0.",
+    "gui.webglModal.webgllink": "אינו תומך ב־WebGL",
+    "gui.webglModal.back": "חזרה",
+    "gui.webglModal.previewfaq": "למידע נוסף, עברו אל {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "שאלות נפוצות",
+    "gui.costumeLibrary.chooseABackdrop": "בחרו רקע",
+    "gui.costumeLibrary.chooseACostume": "בחרו תלבושת",
+    "gui.costumeTab.addBackdropFromLibrary": "בחרו רקע",
+    "gui.costumeTab.addCostumeFromLibrary": "בחרו תלבושת",
+    "gui.costumeTab.addBlankCostume": "צייר",
+    "gui.costumeTab.addSurpriseCostume": "הפתעות",
+    "gui.costumeTab.addFileBackdrop": "העלו רקע",
+    "gui.costumeTab.addFileCostume": "העלו תלבושת",
+    "gui.costumeTab.addCameraCostume": "מצלמה",
+    "gui.extensionLibrary.chooseAnExtension": "בחרו הרחבה",
+    "gui.extensionLibrary.extensionUrl": "הכניסו את ה־URL של ההרחבה",
+    "gui.gui.defaultProjectTitle": "פרויקט סקראץ'",
+    "gui.recordingStep.alertMsg": "לא ניתן להתחיל הקלטה",
+    "gui.projectLoader.loadError": "טעינת הפרויקט שנבחר נכשלה",
+    "gui.soundLibrary.chooseASound": "בחרו צליל",
+    "gui.soundTab.fileUploadSound": "העלו צליל",
+    "gui.soundTab.surpriseSound": "הפתעה",
+    "gui.soundTab.recordSound": "הקלטה",
+    "gui.soundTab.addSoundFromLibrary": "בחרו צליל",
+    "gui.spriteLibrary.chooseASprite": "בחרו דמות",
+    "gui.tipsLibrary.tutorials": "בחרו מדריך",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "מייצר...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "שומר...",
+    "gui.defaultProject.meow": "מיאו",
+    "gui.defaultProject.variable": "המשתנה שלי",
+    "gui.howtos.intro-move-sayhello-hat.name": "מתחילים",
+    "gui.howtos.intro-move.step_stepMove": "הוסיפו לבנת תנועה",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "לחצו על הדגל הירוק כדי להתחיל",
+    "gui.howtos.say-it-out-loud": "צור הנפשות מדברות",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "הוסיפו את הלבנים של טקסט לדיבור",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "אמור דבר מה",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "קבע קול",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "תזוזה במרחב",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "הוסיפו רקע",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "הוסף תו נוסף",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "בצע שיר",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "שינוי צבע",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "הסתובבו",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "הגדל והקטן",
+    "gui.howtos.cartoon-network": "הנפישו משחק הרפתקאות",
+    "gui.howtos.cartoon-network.step_CNcharacter": "בחרו דמות להראות",
+    "gui.howtos.cartoon-network.step_CNsay": "אמור דבר מה",
+    "gui.howtos.cartoon-network.step_CNglide": "החליקו סביב",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "בחרו אובייקט לרדוף אחריו",
+    "gui.howtos.cartoon-network.step_CNcollect": "איספו אובייקטים",
+    "gui.howtos.cartoon-network.step_CNvariable": "צרו משתנה ניקוד",
+    "gui.howtos.cartoon-network.step_CNscore": "עקבו אחר התוצאה",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "שלב הבא: רקע",
+    "gui.howtos.animate-a-name.name": "הנפשת שם",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "בחרו בדמות של אות",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "השמעת צליל בלחיצה",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "בחרו דמות אות נוספת",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "שינוי צבע",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "בחרו אות נוספת וגרמו לה להסתובב",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "בחרו עוד אות וגרמו לה לגדול",
+    "gui.howtos.make-music.name": "צרו מוזיקה",
+    "gui.howtos.Make-Music.step_PickInstrument": "בחרו בדמות של כלי נגינה",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "השמעת צליל בלחיצה",
+    "gui.howtos.Make-Music.step_MakeSong": "חברו שיר",
+    "gui.howtos.make-music.step_MakeBeat": "בחרו תוף וצרו קצב",
+    "gui.howtos.make-music.step_MakeBeatBox": "בחר בדמות המיקרופון ובהפתעת Beatbox ",
+    "gui.howtos.make-a-game.name": "צרו משחק לחיצות",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "בחרו דמות",
+    "gui.howtos.make-a-game.step_GamePlaySound": "השמעת צליל בלחיצה",
+    "gui.howtos.make-a-game.step_GameAddScore": "צרו משתנה ניקוד",
+    "gui.howtos.make-a-game.step_GameChangeScore": "כאשר נלחץ העלה ניקוד",
+    "gui.howtos.make-a-game.step_Random": "קפיצה אל מקום אקראי",
+    "gui.howtos.make-music.step_GameChangeColor": "שינוי צבע",
+    "gui.howtos.make-music.step_ResetScore": "איפוס ניקוד",
+    "gui.howtos.make-a-chase-game.name": "בנו משחק תופסת",
+    "gui.howtos.Chase-Game.step_BG": "הוסיפו רקע",
+    "gui.howtos.chase-game.step_AddOcto": "הוסיפו דמות",
+    "gui.howtos.make-music.step_LeftRight": " זוזו ימינה ושמאלה באמצעות לחצני החיצים",
+    "gui.howtos.Chase-Game.step_UpDown": "זוזו למעלה ולמטה באמצעות לחצני החיצים",
+    "gui.howtos.Chase-Game.step_AddStar": "הוסיפו דמות נוספת",
+    "gui.howtos.Chase-Game.step_MoveRandom": "תנועה אקראית",
+    "gui.howtos.Chase-Game.step_WhenTouch": "בדמות התמנון, כאשר היא נוגעת נגן צליל",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "צרו משתנה ניקוד",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "בדמות התמנון, כאשר היא נוגעת הוסף ניקוד",
+    "gui.howtos.add-sprite.name": "הוסיפו דמות",
+    "gui.howtos.add-sprite.step_addSprite": "הוסיפו דמות",
+    "gui.howtos.add-a-backdrop.name": "הוסיפו רקע",
+    "gui.howtos.change-size.name": "שינוי גודל",
+    "gui.howtos.glide-around.name": "החליקו סביב",
+    "gui.howtos.record-a-sound.name": "הקלטת צליל",
+    "gui.howtos.spin-video.name": "גרום לזה להסתובב",
+    "gui.howtos.hide-and-show.name": "הסתרה והצגה",
+    "gui.howtos.switch-costume.name": "הנפשת דמות",
+    "gui.howtos.move-around-with-arrow-keys.name": "השתמשו במקשי החצים",
+    "gui.howtos.add-effects.name": "הוסיפו אפקטים",
+    "gui.extension.music.name": "מוזיקה",
+    "gui.extension.music.description": "נגנו בכלי נגינה ובתופים",
+    "gui.extension.pen.name": "עט",
+    "gui.extension.pen.description": "ציירו עם הדמות שלכם",
+    "gui.extension.videosensing.name": "חיישן מצלמה",
+    "gui.extension.videosensing.description": "זיהוי תנועה באמצעות המצלמה",
+    "gui.extension.text2speech.name": "טקסט לדיבור",
+    "gui.extension.text2speech.description": "גרמו לפרויקט שלכם לדבר",
+    "gui.extension.translate.name": "תרגם",
+    "gui.extension.translate.description": "תרגום טקסט להרבה שפות",
+    "gui.extension.microbit.description": "חברו את הפרויקטים שלכם לעולם",
+    "gui.extension.microbit.connectingMessage": "מתחבר",
+    "gui.extension.ev3.description": "בנה רובוטים אינטראקטיביים ועוד.",
+    "gui.extension.ev3.connectingMessage": "מתחבר. וודאו שקוד ה־PIN שמוגדר ב־EV3 הוא 1234",
+    "gui.extension.wedo2.description": "בנו עם מנועים וחיישנים",
+    "gui.extension.wedo2.connectingMessage": "מתחבר",
+    "gui.libraryTags.all": "הכל",
+    "gui.libraryTags.animals": "חיות",
+    "gui.libraryTags.dance": "ריקוד",
+    "gui.libraryTags.effects": "אפקטים",
+    "gui.libraryTags.fantasy": "פנטסיה",
+    "gui.libraryTags.fashion": "אופנה",
+    "gui.libraryTags.food": "אוכל",
+    "gui.libraryTags.indoors": "בפנים",
+    "gui.libraryTags.loops": "לולאות",
+    "gui.libraryTags.music": "מוזיקה",
+    "gui.libraryTags.notes": "רשימות",
+    "gui.libraryTags.outdoors": "בחוץ",
+    "gui.libraryTags.patterns": "תבניות",
+    "gui.libraryTags.people": "אנשים",
+    "gui.libraryTags.percussion": "כלי הקשה",
+    "gui.libraryTags.space": "רווח",
+    "gui.libraryTags.sports": "ספורט",
+    "gui.libraryTags.underwater": "תת-מימי",
+    "gui.libraryTags.voice": "קול",
+    "gui.libraryTags.wacky": "משוגע",
+    "gui.libraryTags.animation": "הנפשה",
+    "gui.libraryTags.art": "אומנות",
+    "gui.libraryTags.games": "משחקים",
+    "gui.libraryTags.stories": "סיפורים",
+    "gui.libraryTags.letters": "אותיות",
+    "gui.opcodeLabels.direction": "כיוון",
+    "gui.opcodeLabels.xposition": "מיקום על ציר x",
+    "gui.opcodeLabels.yposition": "מיקום על ציר y",
+    "gui.opcodeLabels.size": "גודל",
+    "gui.opcodeLabels.costumename": "שם תלבושת",
+    "gui.opcodeLabels.costumenumber": "מספר תלבושת",
+    "gui.opcodeLabels.backdropname": "שם רקע",
+    "gui.opcodeLabels.backdropnumber": "מספר רקע",
+    "gui.opcodeLabels.volume": "עוצמה",
+    "gui.opcodeLabels.tempo": "קצב",
+    "gui.opcodeLabels.answer": "תשובה",
+    "gui.opcodeLabels.loudness": "קולניות",
+    "gui.opcodeLabels.username": "שם משתמש",
+    "gui.opcodeLabels.year": "שנה",
+    "gui.opcodeLabels.month": "חודש",
+    "gui.opcodeLabels.date": "תאריך",
+    "gui.opcodeLabels.dayofweek": "יום בשבוע",
+    "gui.opcodeLabels.hour": "שעה",
+    "gui.opcodeLabels.minute": "דקה",
+    "gui.opcodeLabels.second": "שניה",
+    "gui.opcodeLabels.timer": "שעון עצר",
+    "gui.sharedMessages.backdrop": "רקע{index}",
+    "gui.sharedMessages.costume": "תלבושת{index}",
+    "gui.sharedMessages.sprite": "דמות{index}",
+    "gui.sharedMessages.pop": "פופ"
 }

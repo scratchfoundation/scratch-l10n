@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Tekrar bağlan",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Sırt Çantası",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Sırt çantası yüklenirken hata oluştu",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Yükleniyor...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Daha Fazla",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Sırt Çantası boş",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Web tarayıcınız desteklenmiyor",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Çok üzgünüz, ancak Scratch 3.0, Internet Explorer, Vivaldi, Opera veya Silk'i desteklemiyor. Google Chrome, Mozilla Firefox veya Microsoft Edge gibi daha yeni bir tarayıcıyı kullanmanızı öneririz.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Geri",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Daha fazlası öğrenmek için, {previewFaqLink} bağlantısını ziyaret edin.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "SSS",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Bir fotoğraf çek",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Kamera yükleniyor...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Kameranızı kullanmak için izninize ihtiyacımız var",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Yeniden fotoğraf çek",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Kaydet",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Fotoğraf çek",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Yükleniyor...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Kamerayı etkinleştir",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Eğitici Dersler",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Kapat",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Denemek için daha fazla şey!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Daha fazla görüntüle",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Endişelenmeyin, üzerinde çalışıyoruz {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Çok Yakında...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Üzerinde çalışıyoruz {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Cihaz bulunamadı",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Aramayı başlatmak için cihazını yakınında bulundur.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Cihazındaki düğmeye bas.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Aramaya Başla",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Aranıyor...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Tekrar dene",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Bağlandı",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Bağlantıyı Kes",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Editöre Git",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Bağlanıyor...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Hoop! Bir şeyler yanlış gitti.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Tekrar dene",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Yardım",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Cihaz adı",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Bağlan",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Cihazlar aranıyor",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Cihaz bulunamadı",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Yukarıdaki listeden cihazını seç.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Yenile",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Scratch Link programının kurulduğundan ve çalıştığından emin ol",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Bluetooth'un etkinleştirildiğini kontrol et",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Tekrar dene",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Yardım",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Git",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Durdur",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Hoop! Bir şeyler yanlış gitti.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Çok üzgünüz,  Scratch çökmüş görünüyor. Bu sorun Scratch Takımına otomatik olarak iletildi. Lütfen sayfayı yenileyerek tekrar deneyiniz.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Yeniden yükle",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Bir Blok Oluştur",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Bir girdi ekle",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "sayı veya metin",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Bir girdi ekle",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "mantıksal",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Bir etiket ekle",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Ekranı yenilemeden çalışsın",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Vazgeç",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Tamam",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Yön",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "serbestçe dön",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "sağa-sola",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "döndürme",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Eklenti Ekle",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Kod",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Dekorlar",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Kostümler",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Sesler",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Bir Scratch 2.0 Projesi Görüntüle",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Paylaştığınız Scratch projelerinizden birine bir link girin. Scratch 3.0 Beta'da sürümünde yaptığınız değişiklikler kaydedilmeyecektir.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Paylaştığınız Scratch projelerinizden birine bir link girin. Scratch 3.0 Önizleme sürümünde yaptığınız değişiklikler kaydedilmeyecektir.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Hay aksi, bu proje bağlantısı veya kimliği doğru görünmüyor.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Görüntüle",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Geri Git",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Daha fazla öğrenmek için, {previewFaqLink} bağlantısını ziyaret edin.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "SSS",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Çok Yakında",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Gereksinimler",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "İşbirliği ile",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Ara",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Tümü",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Bloklar yaratılıyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Kuklalar yükleniyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Sesler yükleniyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Eklentiler yükleniyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Kediler toplanıyor...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nanolar iletiliyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Gobolar şişiriliyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Emojiler hazırlanıyor ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Proje Yükleniyor",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Kendiminkiler",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Sınıflarım",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Sınıfım",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Hesap ayarları",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Çıkış",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "{username} tarafından",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Topluluğu Gör",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Kullanıcı Adı",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Şifre",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Giriş",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Yardım mı Lazım?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "dil seçici",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Eğitici Dersler",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Kuklayı Yenile",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Sesi Yenile",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Kostümü Yenile",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Yenilemek",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Şimdi kaydet",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Kopya olarak kaydet",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Katkı Yap",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Yeni",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Dosya",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Bilgisayarından yükle",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Bilgisayarına kaydet",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Düzenle",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Bir Turbo Modu kapat",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Bir Turbo Modu açık",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Scratch'a Katıl",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Giriş",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Geribildirim ver",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Proje başlığı buraya",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Paylaşılan",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Paylaş",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Yardım",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Geri",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(boş)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "uzunluğu{length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "normal görünüm",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "geniş görünüm",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "slider",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Scratch 3.0'ı Dene",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Scratch 3.0 Beta'ya hoş geldiniz",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Daha Sonra",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Dene!",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "2.0 Projesi Görüntüle",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Scratch 3.0 Beta'ya hoş geldiniz",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Yeni nesil Scratch üzerinde çalışıyoruz. Deneyeceğiniz için heyecanlıyız!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Daha Sonra",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Deneyin! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "2.0 Projesi Görüntüle",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Daha fazlası için, {previewFaqLink} bağlantısını ziyaret edin.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "SSS",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Tüm kuklalar için",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Sadece bu kukla için",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Bulut değişkeni (sunucuda saklanır)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Bu değişken tüm kuklalar için geçerli olacak.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Vazgeç",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Durdur",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Oynat",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Yükleniyor...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Kaydet",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Yeniden kaydet",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Ses Kaydet",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Aşağıdaki düğmeye tıklayarak kayda başlayın",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Mikrofonunuzu kullanmak için izninize ihtiyacımız var",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Kaydı durdur",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Kaydet",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Ses",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Oynat",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Durdur",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Kırp",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Kaydet",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Geri Al",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Geri Al",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Daha hızlı",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Yavaşlat",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Yankı",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Daha sesli",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Daha Yumuşak",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Tersi",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "İsim",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Kukla",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Göster",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Büyüklük",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "kopyasını çıkart",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "sil",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "Dışarıya aktar",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Kukla Seçimi",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Çizim",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Sürpriz",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Kuklayı yükle",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Geniş ekrana geç",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Küçük sahneye geç",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Tam ekran moduna geç",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Tam ekran modundan çık",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Tam Ekran Kontrolü",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Bir Dekor Seç",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Çizim",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Sürpriz",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Dekor Yükle",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Sahne",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Dekorlar",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turbo Modu",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Web Tarayıcınızın WebGL Desteği Bulunmamaktadır",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Maalesef tarayıcınız veya bilgisayarınız {webGlLink} gibi görünüyor. Scratch 3.0'ın çalışması için bu teknoloji gereklidir.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "WebGL desteğiniz bulunmamaktadır",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Geri",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Daha fazlası için, {previewFaqLink} bağlantısını ziyaret edin.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "SSS",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Bir Dekor Seç",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Bir Kostüm Seç",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Bir Dekor Seç",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Bir Kostüm Seç",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Çizim",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Sürpriz",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Dekor Yükle",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Kostüm Yükle",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Bir Eklenti Seç",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Uzantının URL'ini giriniz",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Projesi",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Kayıda başlanamıyor",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Seçilen proje dosyası yüklenemedi.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Bir Ses Seç",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Ses Yükle",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Sürpriz",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Kaydet",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Bir Ses Seç",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Bir Kukla Seç",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Bir Eğitici Ders Seç",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Başarıyla oluşturuldu.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Oluşturuyorum...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Başarıyla kaydedildi.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Kaydediyorum...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miyav",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "değişkenim",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Başlayalım",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Bir hareket bloğu ekle",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Başlamak için yeşil bayrağa tıkla",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Konuşan Animasyonlar Yaratın",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Metni Konuşma bloklarına ekle",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Birşeyler Söyle",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Bir Ses Ayarla",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Etrafında yürü",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Bir Dekor Ekle",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Başka Karakter Ekle",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Şarkı söyle",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Renk Değiştir",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Etrafında dön",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Büyü ve Küçül",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Bir Macera Oyununu Canlandırmak",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Gösterilecek Kukla Seç",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Birşeyler Söyle",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Etrafta Süzül",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Takip için Bir Nesne Seçin",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Nesneleri Topla",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Puan Değişkeni Oluşturun",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Puanı Koru",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Seviye Atla: Arka Planı Değiştir",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Bir ismi Hareketlendir",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Bir Harf Kuklası Seç",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Tıklandığında Bir Ses Çal",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Başka Bir Harf Kuklası Seç",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Renk değiştir",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Başka Bir Harf Kuklası Seç ve Döndür",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Başka Bir Harf Kuklası Seç ve Büyüt",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Müzik Yap",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Bir Enstrüman Kuklası Seç",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Tıklandığında Ses Çal",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Bir Şarkı Oluştur",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Bir Davul Seç & Bir Vuruş Yap",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Mikrofon Kuklası  ve Sürpriz Beatbox Seç",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Bir Tıkırtı Oyunu Yap",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Bir Kukla Seç",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Tıklandığında Ses Çal",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Skor Değişkeni Oluştur",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Tıklandığında Sokuru Artır",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Rastgele bir konuma git",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Renk Değiştir",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Skoru Sıfırla",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Bir Takip Oyunu Yap",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Bir Dekor Ekle",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Bir Kukla Ekle",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Ok Tuşlarıyla Sağa ve Sola Hareket Et",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Ok Tuşları ile Aşağı ve Yukarı Hareket Et",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Başka Bir Kukla Ekle",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Rastgele Hareket Et",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Ahtapot kuklasında, ses çala tıklandığında",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Skor Değişkeni Oluştur",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Ahtaopot Kuklada Skor Ekleye Dokununca",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Bir Kukla Ekle",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Bir Kukla Ekle",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Bir Dekor Ekle",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Boyutu değiştir",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Etrafta Süzül",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Bir Ses Kaydet",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Takla Attır",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Gizle & Göster",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Bir Kostümü Hareketlendir",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Ok tuşlarını kullan",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Etkiler ekle",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Müzik",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Çalgıları ve davulları çal.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Kalem",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Kuklan ile çiz.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Video Algılama",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Kamera ile hareketi algıla.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Metinden Sese",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Projeni konuştur.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Çeviri",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Metni birçok dile çevir.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Projelerini dünya ile paylaş.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Bağlanıyor",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Etkileşimli robotlar ve daha fazlasını oluştur.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Bağlanıyor. EV3'teki Pinin 1234 olarak ayarlandığından emin ol.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Motorlar ve sensörler ile yap.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Bağlanıyor",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Tümü",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Hayvanlar",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dans",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Etkiler",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantezi",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Moda",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Yiyecek",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Bina içi",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Döngüler",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Müzik",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Notalar",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Bina dışı",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Desenler",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "İnsanlar",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Vurmalılar",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Uzay",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sporlar",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Su altı",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Ses",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Kaçık",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Çizgi Film",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Sanat",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Oyunlar",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Hikayeler",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Harfler",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "yön",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x konumu",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y konumu",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "büyüklük",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "kostüm ismi",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "kostüm numarası",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "dekorun adı",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "dekor numarası",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "ses düzeyi",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "cevap",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "gürültü",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "kullanıcı adı",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "yıl",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "ay",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "tarih",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "haftanın günü",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "saat",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "dakika",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "saniye",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "kronometre",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "{index}dekoru",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "kostüm {index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Kukla {index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Tekrar bağlan",
+    "gui.backpack.header": "Sırt Çantası",
+    "gui.backpack.errorBackpack": "Sırt çantası yüklenirken hata oluştu",
+    "gui.backpack.loadingBackpack": "Yükleniyor...",
+    "gui.backpack.more": "Daha Fazla",
+    "gui.backpack.emptyBackpack": "Sırt Çantası boş",
+    "gui.unsupportedBrowser.label": "Web tarayıcınız desteklenmiyor",
+    "gui.unsupportedBrowser.description": "Çok üzgünüz, ancak Scratch 3.0, Internet Explorer, Vivaldi, Opera veya Silk'i desteklemiyor. Google Chrome, Mozilla Firefox veya Microsoft Edge gibi daha yeni bir tarayıcıyı kullanmanızı öneririz.",
+    "gui.unsupportedBrowser.back": "Geri",
+    "gui.unsupportedBrowser.previewfaq": "Daha fazlası öğrenmek için, {previewFaqLink} bağlantısını ziyaret edin.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "SSS",
+    "gui.cameraModal.cameraModalTitle": "Bir fotoğraf çek",
+    "gui.cameraModal.loadingCameraMessage": "Kamera yükleniyor...",
+    "gui.cameraModal.permissionRequest": "Kameranızı kullanmak için izninize ihtiyacımız var",
+    "gui.cameraModal.retakePhoto": "Yeniden fotoğraf çek",
+    "gui.cameraModal.save": "Kaydet",
+    "gui.cameraModal.takePhoto": "Fotoğraf çek",
+    "gui.cameraModal.loadingCaption": "Yükleniyor...",
+    "gui.cameraModal.enableCameraCaption": "Kamerayı etkinleştir",
+    "gui.cards.all-tutorials": "Eğitici Dersler",
+    "gui.cards.close": "Kapat",
+    "gui.cards.more-things-to-try": "Denemek için daha fazla şey!",
+    "gui.cards.see-more": "Daha fazla görüntüle",
+    "gui.comingSoon.message1": "Endişelenmeyin, üzerinde çalışıyoruz {emoji}",
+    "gui.comingSoon.message2": "Çok Yakında...",
+    "gui.comingSoon.message3": "Üzerinde çalışıyoruz {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Cihaz bulunamadı",
+    "gui.connection.auto-scanning.prescan": "Aramayı başlatmak için cihazını yakınında bulundur.",
+    "gui.connection.auto-scanning.pressbutton": "Cihazındaki düğmeye bas.",
+    "gui.connection.auto-scanning.start-search": "Aramaya Başla",
+    "gui.connection.connecting-searchbutton": "Aranıyor...",
+    "gui.connection.auto-scanning.try-again": "Tekrar dene",
+    "gui.connection.connected": "Bağlandı",
+    "gui.connection.disconnect": "Bağlantıyı Kes",
+    "gui.connection.go-to-editor": "Editöre Git",
+    "gui.connection.connecting-cancelbutton": "Bağlanıyor...",
+    "gui.connection.error.errorMessage": "Hoop! Bir şeyler yanlış gitti.",
+    "gui.connection.error.tryagainbutton": "Tekrar dene",
+    "gui.connection.error.helpbutton": "Yardım",
+    "gui.connection.peripheral-name-label": "Cihaz adı",
+    "gui.connection.connect": "Bağlan",
+    "gui.connection.scanning.lookingforperipherals": "Cihazlar aranıyor",
+    "gui.connection.scanning.noPeripheralsFound": "Cihaz bulunamadı",
+    "gui.connection.scanning.instructions": "Yukarıdaki listeden cihazını seç.",
+    "gui.connection.search": "Yenile",
+    "gui.connection.unavailable.installscratchlink": "Scratch Link programının kurulduğundan ve çalıştığından emin ol",
+    "gui.connection.unavailable.enablebluetooth": "Bluetooth'un etkinleştirildiğini kontrol et",
+    "gui.connection.unavailable.tryagainbutton": "Tekrar dene",
+    "gui.connection.unavailable.helpbutton": "Yardım",
+    "gui.controls.go": "Git",
+    "gui.controls.stop": "Durdur",
+    "gui.crashMessage.label": "Hoop! Bir şeyler yanlış gitti.",
+    "gui.crashMessage.description": "Çok üzgünüz,  Scratch çökmüş görünüyor. Bu sorun Scratch Takımına otomatik olarak iletildi. Lütfen sayfayı yenileyerek tekrar deneyiniz.",
+    "gui.crashMessage.reload": "Yeniden yükle",
+    "gui.customProcedures.myblockModalTitle": "Bir Blok Oluştur",
+    "gui.customProcedures.addAnInputNumberText": "Bir girdi ekle",
+    "gui.customProcedures.numberTextType": "sayı veya metin",
+    "gui.customProcedures.addAnInputBoolean": "Bir girdi ekle",
+    "gui.customProcedures.booleanType": "mantıksal",
+    "gui.customProcedures.addALabel": "Bir etiket ekle",
+    "gui.customProcedures.runWithoutScreenRefresh": "Ekranı yenilemeden çalışsın",
+    "gui.customProcedures.cancel": "Vazgeç",
+    "gui.customProcedures.ok": "Tamam",
+    "gui.SpriteInfo.direction": "Yön",
+    "gui.directionPicker.rotationStyles.allAround": "serbestçe dön",
+    "gui.directionPicker.rotationStyles.leftRight": "sağa-sola",
+    "gui.directionPicker.rotationStyles.dontRotate": "döndürme",
+    "gui.gui.addExtension": "Eklenti Ekle",
+    "gui.gui.codeTab": "Kod",
+    "gui.gui.backdropsTab": "Dekorlar",
+    "gui.gui.costumesTab": "Kostümler",
+    "gui.gui.soundsTab": "Sesler",
+    "gui.importInfo.title": "Bir Scratch 2.0 Projesi Görüntüle",
+    "gui.importInfo.betamessage": "Paylaştığınız Scratch projelerinizden birine bir link girin. Scratch 3.0 Beta'da sürümünde yaptığınız değişiklikler kaydedilmeyecektir.",
+    "gui.importInfo.message": "Paylaştığınız Scratch projelerinizden birine bir link girin. Scratch 3.0 Önizleme sürümünde yaptığınız değişiklikler kaydedilmeyecektir.",
+    "gui.importInfo.invalidFormatError": "Hay aksi, bu proje bağlantısı veya kimliği doğru görünmüyor.",
+    "gui.importModal.viewproject": "Görüntüle",
+    "gui.importInfo.goback": "Geri Git",
+    "gui.importInfo.previewfaq": "Daha fazla öğrenmek için, {previewFaqLink} bağlantısını ziyaret edin.",
+    "gui.importInfo.previewfaqlinktext": "SSS",
+    "gui.extensionLibrary.comingSoon": "Çok Yakında",
+    "gui.extensionLibrary.requires": "Gereksinimler",
+    "gui.extensionLibrary.collaboration": "İşbirliği ile",
+    "gui.library.filterPlaceholder": "Ara",
+    "gui.library.allTag": "Tümü",
+    "gui.loader.message1": "Bloklar yaratılıyor ...",
+    "gui.loader.message2": "Kuklalar yükleniyor ...",
+    "gui.loader.message3": "Sesler yükleniyor ...",
+    "gui.loader.message4": "Eklentiler yükleniyor ...",
+    "gui.loader.message5": "Kediler toplanıyor...",
+    "gui.loader.message6": "Nanolar iletiliyor ...",
+    "gui.loader.message7": "Gobolar şişiriliyor ...",
+    "gui.loader.message8": "Emojiler hazırlanıyor ...",
+    "gui.loader.headline": "Proje Yükleniyor",
+    "gui.accountMenu.profile": "Profil",
+    "gui.accountMenu.myStuff": "Kendiminkiler",
+    "gui.accountMenu.myClasses": "Sınıflarım",
+    "gui.accountMenu.myClass": "Sınıfım",
+    "gui.accountMenu.accountSettings": "Hesap ayarları",
+    "gui.accountMenu.signOut": "Çıkış",
+    "gui.authorInfo.byUser": "{username} tarafından",
+    "gui.menuBar.seeCommunity": "Topluluğu Gör",
+    "general.username": "Kullanıcı Adı",
+    "general.password": "Şifre",
+    "general.signIn": "Giriş",
+    "login.needHelp": "Yardım mı Lazım?",
+    "gui.menuBar.LanguageSelector": "dil seçici",
+    "gui.menuBar.tutorialsLibrary": "Eğitici Dersler",
+    "gui.menuBar.restoreSprite": "Kuklayı Yenile",
+    "gui.menuBar.restoreSound": "Sesi Yenile",
+    "gui.menuBar.restoreCostume": "Kostümü Yenile",
+    "gui.menuBar.restore": "Yenilemek",
+    "gui.menuBar.saveNow": "Şimdi kaydet",
+    "gui.menuBar.saveAsCopy": "Kopya olarak kaydet",
+    "gui.menuBar.remix": "Katkı Yap",
+    "gui.menuBar.new": "Yeni",
+    "gui.menuBar.file": "Dosya",
+    "gui.menuBar.uploadFromComputer": "Bilgisayarından yükle",
+    "gui.menuBar.downloadToComputer": "Bilgisayarına kaydet",
+    "gui.menuBar.edit": "Düzenle",
+    "gui.menuBar.turboModeOff": "Bir Turbo Modu kapat",
+    "gui.menuBar.turboModeOn": "Bir Turbo Modu açık",
+    "gui.menuBar.joinScratch": "Scratch'a Katıl",
+    "gui.menuBar.signIn": "Giriş",
+    "gui.menuBar.giveFeedback": "Geribildirim ver",
+    "gui.gui.projectTitlePlaceholder": "Proje başlığı buraya",
+    "gui.menuBar.isShared": "Paylaşılan",
+    "gui.menuBar.share": "Paylaş",
+    "gui.modal.help": "Yardım",
+    "gui.modal.back": "Geri",
+    "gui.monitor.listMonitor.empty": "(boş)",
+    "gui.monitor.listMonitor.listLength": "uzunluğu{length}",
+    "gui.monitor.contextMenu.default": "normal görünüm",
+    "gui.monitor.contextMenu.large": "geniş görünüm",
+    "gui.monitor.contextMenu.slider": "slider",
+    "gui.previewInfo.label": "Scratch 3.0'ı Dene",
+    "gui.previewInfo.welcome": "Scratch 3.0 Beta'ya hoş geldiniz",
+    "gui.previewModal.notnowtooltip": "Daha Sonra",
+    "gui.previewModal.tryittooltip": "Dene!",
+    "gui.previewModal.viewprojecttooltip": "2.0 Projesi Görüntüle",
+    "gui.previewInfo.betawelcome": "Scratch 3.0 Beta'ya hoş geldiniz",
+    "gui.previewInfo.invitation": "Yeni nesil Scratch üzerinde çalışıyoruz. Deneyeceğiniz için heyecanlıyız!",
+    "gui.previewInfo.notnow": "Daha Sonra",
+    "gui.previewModal.tryit": "Deneyin! {caticon}",
+    "gui.previewModal.viewproject": "2.0 Projesi Görüntüle",
+    "gui.previewInfo.previewfaq": "Daha fazlası için, {previewFaqLink} bağlantısını ziyaret edin.",
+    "gui.previewInfo.previewfaqlinktext": "SSS",
+    "gui.gui.variableScopeOptionAllSprites": "Tüm kuklalar için",
+    "gui.gui.variableScopeOptionSpriteOnly": "Sadece bu kukla için",
+    "gui.gui.cloudVariableOption": "Bulut değişkeni (sunucuda saklanır)",
+    "gui.gui.variablePromptAllSpritesMessage": "Bu değişken tüm kuklalar için geçerli olacak.",
+    "gui.prompt.cancel": "Vazgeç",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Durdur",
+    "gui.playbackStep.playMsg": "Oynat",
+    "gui.playbackStep.loadingMsg": "Yükleniyor...",
+    "gui.playbackStep.saveMsg": "Kaydet",
+    "gui.playbackStep.reRecordMsg": "Yeniden kaydet",
+    "gui.recordModal.title": "Ses Kaydet",
+    "gui.recordingStep.beginRecord": "Aşağıdaki düğmeye tıklayarak kayda başlayın",
+    "gui.recordingStep.permission": "{arrow}Mikrofonunuzu kullanmak için izninize ihtiyacımız var",
+    "gui.recordingStep.stop": "Kaydı durdur",
+    "gui.recordingStep.record": "Kaydet",
+    "gui.soundEditor.sound": "Ses",
+    "gui.soundEditor.play": "Oynat",
+    "gui.soundEditor.stop": "Durdur",
+    "gui.soundEditor.trim": "Kırp",
+    "gui.soundEditor.save": "Kaydet",
+    "gui.soundEditor.undo": "Geri Al",
+    "gui.soundEditor.redo": "Geri Al",
+    "gui.soundEditor.faster": "Daha hızlı",
+    "gui.soundEditor.slower": "Yavaşlat",
+    "gui.soundEditor.echo": "Yankı",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Daha sesli",
+    "gui.soundEditor.softer": "Daha Yumuşak",
+    "gui.soundEditor.reverse": "Tersi",
+    "gui.SpriteInfo.spritePlaceholder": "İsim",
+    "gui.SpriteInfo.sprite": "Kukla",
+    "gui.SpriteInfo.show": "Göster",
+    "gui.SpriteInfo.size": "Büyüklük",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "kopyasını çıkart",
+    "gui.spriteSelectorItem.contextMenuDelete": "sil",
+    "gui.spriteSelectorItem.contextMenuExport": "Dışarıya aktar",
+    "gui.spriteSelector.addSpriteFromLibrary": "Kukla Seçimi",
+    "gui.spriteSelector.addSpriteFromPaint": "Çizim",
+    "gui.spriteSelector.addSpriteFromSurprise": "Sürpriz",
+    "gui.spriteSelector.addSpriteFromFile": "Kuklayı yükle",
+    "gui.stageHeader.stageSizeLarge": "Geniş ekrana geç",
+    "gui.stageHeader.stageSizeSmall": "Küçük sahneye geç",
+    "gui.stageHeader.stageSizeFull": "Tam ekran moduna geç",
+    "gui.stageHeader.stageSizeUnFull": "Tam ekran modundan çık",
+    "gui.stageHeader.fullscreenControl": "Tam Ekran Kontrolü",
+    "gui.spriteSelector.addBackdropFromLibrary": "Bir Dekor Seç",
+    "gui.stageSelector.addBackdropFromPaint": "Çizim",
+    "gui.stageSelector.addBackdropFromSurprise": "Sürpriz",
+    "gui.stageSelector.addBackdropFromFile": "Dekor Yükle",
+    "gui.stageSelector.stage": "Sahne",
+    "gui.stageSelector.backdrops": "Dekorlar",
+    "gui.turboMode.active": "Turbo Modu",
+    "gui.webglModal.label": "Web Tarayıcınızın WebGL Desteği Bulunmamaktadır",
+    "gui.webglModal.description": "Maalesef tarayıcınız veya bilgisayarınız {webGlLink} gibi görünüyor. Scratch 3.0'ın çalışması için bu teknoloji gereklidir.",
+    "gui.webglModal.webgllink": "WebGL desteğiniz bulunmamaktadır",
+    "gui.webglModal.back": "Geri",
+    "gui.webglModal.previewfaq": "Daha fazlası için, {previewFaqLink} bağlantısını ziyaret edin.",
+    "gui.webglModal.previewfaqlinktext": "SSS",
+    "gui.costumeLibrary.chooseABackdrop": "Bir Dekor Seç",
+    "gui.costumeLibrary.chooseACostume": "Bir Kostüm Seç",
+    "gui.costumeTab.addBackdropFromLibrary": "Bir Dekor Seç",
+    "gui.costumeTab.addCostumeFromLibrary": "Bir Kostüm Seç",
+    "gui.costumeTab.addBlankCostume": "Çizim",
+    "gui.costumeTab.addSurpriseCostume": "Sürpriz",
+    "gui.costumeTab.addFileBackdrop": "Dekor Yükle",
+    "gui.costumeTab.addFileCostume": "Kostüm Yükle",
+    "gui.costumeTab.addCameraCostume": "Kamera",
+    "gui.extensionLibrary.chooseAnExtension": "Bir Eklenti Seç",
+    "gui.extensionLibrary.extensionUrl": "Uzantının URL'ini giriniz",
+    "gui.gui.defaultProjectTitle": "Scratch Projesi",
+    "gui.recordingStep.alertMsg": "Kayıda başlanamıyor",
+    "gui.projectLoader.loadError": "Seçilen proje dosyası yüklenemedi.",
+    "gui.soundLibrary.chooseASound": "Bir Ses Seç",
+    "gui.soundTab.fileUploadSound": "Ses Yükle",
+    "gui.soundTab.surpriseSound": "Sürpriz",
+    "gui.soundTab.recordSound": "Kaydet",
+    "gui.soundTab.addSoundFromLibrary": "Bir Ses Seç",
+    "gui.spriteLibrary.chooseASprite": "Bir Kukla Seç",
+    "gui.tipsLibrary.tutorials": "Bir Eğitici Ders Seç",
+    "gui.alerts.createsuccess": "Başarıyla oluşturuldu.",
+    "gui.alerts.creating": "Oluşturuyorum...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Başarıyla kaydedildi.",
+    "gui.alerts.saving": "Kaydediyorum...",
+    "gui.defaultProject.meow": "Miyav",
+    "gui.defaultProject.variable": "değişkenim",
+    "gui.howtos.intro-move-sayhello-hat.name": "Başlayalım",
+    "gui.howtos.intro-move.step_stepMove": "Bir hareket bloğu ekle",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Başlamak için yeşil bayrağa tıkla",
+    "gui.howtos.say-it-out-loud": "Konuşan Animasyonlar Yaratın",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Metni Konuşma bloklarına ekle",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Birşeyler Söyle",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Bir Ses Ayarla",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Etrafında yürü",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Bir Dekor Ekle",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Başka Karakter Ekle",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Şarkı söyle",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Renk Değiştir",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Etrafında dön",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Büyü ve Küçül",
+    "gui.howtos.cartoon-network": "Bir Macera Oyununu Canlandırmak",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Gösterilecek Kukla Seç",
+    "gui.howtos.cartoon-network.step_CNsay": "Birşeyler Söyle",
+    "gui.howtos.cartoon-network.step_CNglide": "Etrafta Süzül",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Takip için Bir Nesne Seçin",
+    "gui.howtos.cartoon-network.step_CNcollect": "Nesneleri Topla",
+    "gui.howtos.cartoon-network.step_CNvariable": "Puan Değişkeni Oluşturun",
+    "gui.howtos.cartoon-network.step_CNscore": "Puanı Koru",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Seviye Atla: Arka Planı Değiştir",
+    "gui.howtos.animate-a-name.name": "Bir ismi Hareketlendir",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Bir Harf Kuklası Seç",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Tıklandığında Bir Ses Çal",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Başka Bir Harf Kuklası Seç",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Renk değiştir",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Başka Bir Harf Kuklası Seç ve Döndür",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Başka Bir Harf Kuklası Seç ve Büyüt",
+    "gui.howtos.make-music.name": "Müzik Yap",
+    "gui.howtos.Make-Music.step_PickInstrument": "Bir Enstrüman Kuklası Seç",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Tıklandığında Ses Çal",
+    "gui.howtos.Make-Music.step_MakeSong": "Bir Şarkı Oluştur",
+    "gui.howtos.make-music.step_MakeBeat": "Bir Davul Seç & Bir Vuruş Yap",
+    "gui.howtos.make-music.step_MakeBeatBox": "Mikrofon Kuklası  ve Sürpriz Beatbox Seç",
+    "gui.howtos.make-a-game.name": "Bir Tıkırtı Oyunu Yap",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Bir Kukla Seç",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Tıklandığında Ses Çal",
+    "gui.howtos.make-a-game.step_GameAddScore": "Skor Değişkeni Oluştur",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Tıklandığında Sokuru Artır",
+    "gui.howtos.make-a-game.step_Random": "Rastgele bir konuma git",
+    "gui.howtos.make-music.step_GameChangeColor": "Renk Değiştir",
+    "gui.howtos.make-music.step_ResetScore": "Skoru Sıfırla",
+    "gui.howtos.make-a-chase-game.name": "Bir Takip Oyunu Yap",
+    "gui.howtos.Chase-Game.step_BG": "Bir Dekor Ekle",
+    "gui.howtos.chase-game.step_AddOcto": "Bir Kukla Ekle",
+    "gui.howtos.make-music.step_LeftRight": "Ok Tuşlarıyla Sağa ve Sola Hareket Et",
+    "gui.howtos.Chase-Game.step_UpDown": "Ok Tuşları ile Aşağı ve Yukarı Hareket Et",
+    "gui.howtos.Chase-Game.step_AddStar": "Başka Bir Kukla Ekle",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Rastgele Hareket Et",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Ahtapot kuklasında, ses çala tıklandığında",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Skor Değişkeni Oluştur",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Ahtaopot Kuklada Skor Ekleye Dokununca",
+    "gui.howtos.add-sprite.name": "Bir Kukla Ekle",
+    "gui.howtos.add-sprite.step_addSprite": "Bir Kukla Ekle",
+    "gui.howtos.add-a-backdrop.name": "Bir Dekor Ekle",
+    "gui.howtos.change-size.name": "Boyutu değiştir",
+    "gui.howtos.glide-around.name": "Etrafta Süzül",
+    "gui.howtos.record-a-sound.name": "Bir Ses Kaydet",
+    "gui.howtos.spin-video.name": "Takla Attır",
+    "gui.howtos.hide-and-show.name": "Gizle & Göster",
+    "gui.howtos.switch-costume.name": "Bir Kostümü Hareketlendir",
+    "gui.howtos.move-around-with-arrow-keys.name": "Ok tuşlarını kullan",
+    "gui.howtos.add-effects.name": "Etkiler ekle",
+    "gui.extension.music.name": "Müzik",
+    "gui.extension.music.description": "Çalgıları ve davulları çal.",
+    "gui.extension.pen.name": "Kalem",
+    "gui.extension.pen.description": "Kuklan ile çiz.",
+    "gui.extension.videosensing.name": "Video Algılama",
+    "gui.extension.videosensing.description": "Kamera ile hareketi algıla.",
+    "gui.extension.text2speech.name": "Metinden Sese",
+    "gui.extension.text2speech.description": "Projeni konuştur.",
+    "gui.extension.translate.name": "Çeviri",
+    "gui.extension.translate.description": "Metni birçok dile çevir.",
+    "gui.extension.microbit.description": "Projelerini dünya ile paylaş.",
+    "gui.extension.microbit.connectingMessage": "Bağlanıyor",
+    "gui.extension.ev3.description": "Etkileşimli robotlar ve daha fazlasını oluştur.",
+    "gui.extension.ev3.connectingMessage": "Bağlanıyor. EV3'teki Pinin 1234 olarak ayarlandığından emin ol.",
+    "gui.extension.wedo2.description": "Motorlar ve sensörler ile yap.",
+    "gui.extension.wedo2.connectingMessage": "Bağlanıyor",
+    "gui.libraryTags.all": "Tümü",
+    "gui.libraryTags.animals": "Hayvanlar",
+    "gui.libraryTags.dance": "Dans",
+    "gui.libraryTags.effects": "Etkiler",
+    "gui.libraryTags.fantasy": "Fantezi",
+    "gui.libraryTags.fashion": "Moda",
+    "gui.libraryTags.food": "Yiyecek",
+    "gui.libraryTags.indoors": "Bina içi",
+    "gui.libraryTags.loops": "Döngüler",
+    "gui.libraryTags.music": "Müzik",
+    "gui.libraryTags.notes": "Notalar",
+    "gui.libraryTags.outdoors": "Bina dışı",
+    "gui.libraryTags.patterns": "Desenler",
+    "gui.libraryTags.people": "İnsanlar",
+    "gui.libraryTags.percussion": "Vurmalılar",
+    "gui.libraryTags.space": "Uzay",
+    "gui.libraryTags.sports": "Sporlar",
+    "gui.libraryTags.underwater": "Su altı",
+    "gui.libraryTags.voice": "Ses",
+    "gui.libraryTags.wacky": "Kaçık",
+    "gui.libraryTags.animation": "Çizgi Film",
+    "gui.libraryTags.art": "Sanat",
+    "gui.libraryTags.games": "Oyunlar",
+    "gui.libraryTags.stories": "Hikayeler",
+    "gui.libraryTags.letters": "Harfler",
+    "gui.opcodeLabels.direction": "yön",
+    "gui.opcodeLabels.xposition": "x konumu",
+    "gui.opcodeLabels.yposition": "y konumu",
+    "gui.opcodeLabels.size": "büyüklük",
+    "gui.opcodeLabels.costumename": "kostüm ismi",
+    "gui.opcodeLabels.costumenumber": "kostüm numarası",
+    "gui.opcodeLabels.backdropname": "dekorun adı",
+    "gui.opcodeLabels.backdropnumber": "dekor numarası",
+    "gui.opcodeLabels.volume": "ses düzeyi",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "cevap",
+    "gui.opcodeLabels.loudness": "gürültü",
+    "gui.opcodeLabels.username": "kullanıcı adı",
+    "gui.opcodeLabels.year": "yıl",
+    "gui.opcodeLabels.month": "ay",
+    "gui.opcodeLabels.date": "tarih",
+    "gui.opcodeLabels.dayofweek": "haftanın günü",
+    "gui.opcodeLabels.hour": "saat",
+    "gui.opcodeLabels.minute": "dakika",
+    "gui.opcodeLabels.second": "saniye",
+    "gui.opcodeLabels.timer": "kronometre",
+    "gui.sharedMessages.backdrop": "{index}dekoru",
+    "gui.sharedMessages.costume": "kostüm {index}",
+    "gui.sharedMessages.sprite": "Kukla {index}",
+    "gui.sharedMessages.pop": "pop"
 }

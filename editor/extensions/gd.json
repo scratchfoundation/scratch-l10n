@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "bìd pong [NOTE] fad [TIME] diog",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "putan [PORT] ga bhrùthadh",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "soilleireachd",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "astar",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "ionad a’ mhotair [PORT]",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "suidhich cumhachd motar [PORT] air [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "gluais motar [PORT] dhan dàrna taobh fad [TIME] diog",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "gluais motar [PORT] dhan taobh eile fad [TIME] diog",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "nuair a thèid an t-soilleireachd < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "le brùthadh air putan [PORT]",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "nuair a thèid an t-astar < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "sam bith",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "falamhaich an sgrìn",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Shin thu!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "seall [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "seall an teacsa [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "air a leum",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "air a ghluasad",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "air a chrith",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "putan [BTN] ga bhrùthadh",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "claonadh [DIRECTION] air",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "dheth",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "air",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "ceàrn claonaidh [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "sam bith",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "an fhìor-chùlaibh",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "an fhìor-bheulaibh",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "gu clì",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "gu deas",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "le brùthadh air [BTN]",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "le mothachadh air [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "nuair a thèid prìne [PIN] a cheangal",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "le claonadh [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Ceòl",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "atharraich an luaths le [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Beus-dhruma",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Bongo",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Cabasa",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Claves",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Hi-hat dùinte",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Conga",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Clag bà",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Ciombal crash",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Cuíca",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Güiro",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Bualadh bhasan",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Hi-hat fosgailte",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Taobh biorain",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Druma-tormain",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Guit-dhruma",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Triantan",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Crith-sgleog",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Bloca fiodha",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "luaths",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Beus",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Torm-fheadan",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Beus-fhìdheall",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Còisir",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Clàirneid",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Giotàr dealain",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Piàno dealain",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Duiseal",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Giotàr",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Marimba",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Bogsa-ciùil",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Organ",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Piàno",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Pizzicato",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Sacsafon",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Druma stàillinn",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Sinteisear seirme",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Sinteisear pada",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Trompan",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Critheafon",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Duiseal fiodha",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "suidhich an t‑inneal-ciùil air [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "cluich druma [DRUM] fad [BEATS] buille",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "cluich pong [NOTE] fad [BEATS] buille",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "tost fad [BEATS] buille",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "suidhich an t‑inneal-ciùil air [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "suidhich an luaths air [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Peann",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "atharraich [COLOR_PARAM] a’ phinn le [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "atharraich dath a’ phinn le [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "atharraich tuar a’ phinn le [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "atharraich meud a’ phinn le [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "suath às na h‑uile",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "soilleireachd",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "dath",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "sàthachd",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "trìd-shoillearachd",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "peann sìos",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "peann suas",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "suidhich dath a’ phinn air [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "suidhich [COLOR_PARAM] a’ phinn air [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "suidhich dath a’ phinn air [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "suidhich tuar a’ phinn air [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "suidhich meud a’ phinn air [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "stampa",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "tiugainn",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Cainnt na theacsa",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "èist is fan",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "cainnt",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "nuair a chluinneas mi [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "shin thu",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "famhair",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "piseag",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "as motha",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "neach",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "suidhich an cànan air [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "suidhich a’ ghuth air [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "can [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "bìog",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Eadar-theangaich",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "shin thu",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "eadar-theangaich [WORDS] gu [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "cànan",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "Mothachadh video",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "comhair",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "gluasad",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "dheth",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "air",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "air, le flip",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "suidhich trìd-shoillse a’ video air [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "an sprìd",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "an àrd-ùrlar",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "[ATTRIBUTE] a’ video air [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "cuir a’ video [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "nuair a thèid gluasad a’ video > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "astar",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "ceàrn claonaidh [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "claonadh [TILT_DIRECTION_ANY] air",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "cuir [MOTOR_ID] dheth",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "cuir [MOTOR_ID] air",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "cuir [MOTOR_ID] air fad [DURATION] diog",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "cluich pong [NOTE] fad [DURATION] diog",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "suidhich dath an t-solais air [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "suidhich comhair [MOTOR_ID] air [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "suidhich cumhachd [MOTOR_ID] air [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "nuair a thèid an t-astar [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "le claonadh [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "bìd pong [NOTE] fad [TIME] diog",
+    "ev3.buttonPressed": "putan [PORT] ga bhrùthadh",
+    "ev3.getBrightness": "soilleireachd",
+    "ev3.getDistance": "astar",
+    "ev3.getMotorPosition": "ionad a’ mhotair [PORT]",
+    "ev3.motorSetPower": "suidhich cumhachd motar [PORT] air [POWER] %",
+    "ev3.motorTurnClockwise": "gluais motar [PORT] dhan dàrna taobh fad [TIME] diog",
+    "ev3.motorTurnCounterClockwise": "gluais motar [PORT] dhan taobh eile fad [TIME] diog",
+    "ev3.whenBrightnessLessThan": "nuair a thèid an t-soilleireachd < [DISTANCE]",
+    "ev3.whenButtonPressed": "le brùthadh air putan [PORT]",
+    "ev3.whenDistanceLessThan": "nuair a thèid an t-astar < [DISTANCE]",
+    "microbit.buttonsMenu.any": "sam bith",
+    "microbit.clearDisplay": "falamhaich an sgrìn",
+    "microbit.defaultTextToDisplay": "Shin thu!",
+    "microbit.displaySymbol": "seall [MATRIX]",
+    "microbit.displayText": "seall an teacsa [TEXT]",
+    "microbit.gesturesMenu.jumped": "air a leum",
+    "microbit.gesturesMenu.moved": "air a ghluasad",
+    "microbit.gesturesMenu.shaken": "air a chrith",
+    "microbit.isButtonPressed": "putan [BTN] ga bhrùthadh",
+    "microbit.isTilted": "claonadh [DIRECTION] air",
+    "microbit.pinStateMenu.off": "dheth",
+    "microbit.pinStateMenu.on": "air",
+    "microbit.tiltAngle": "ceàrn claonaidh [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "sam bith",
+    "microbit.tiltDirectionMenu.back": "an fhìor-chùlaibh",
+    "microbit.tiltDirectionMenu.front": "an fhìor-bheulaibh",
+    "microbit.tiltDirectionMenu.left": "gu clì",
+    "microbit.tiltDirectionMenu.right": "gu deas",
+    "microbit.whenButtonPressed": "le brùthadh air [BTN]",
+    "microbit.whenGesture": "le mothachadh air [GESTURE]",
+    "microbit.whenPinConnected": "nuair a thèid prìne [PIN] a cheangal",
+    "microbit.whenTilted": "le claonadh [DIRECTION]",
+    "music.categoryName": "Ceòl",
+    "music.changeTempo": "atharraich an luaths le [TEMPO]",
+    "music.drumBass": "(2) Beus-dhruma",
+    "music.drumBongo": "(13) Bongo",
+    "music.drumCabasa": "(15) Cabasa",
+    "music.drumClaves": "(9) Claves",
+    "music.drumClosedHiHat": "(6) Hi-hat dùinte",
+    "music.drumConga": "(14) Conga",
+    "music.drumCowbell": "(11) Clag bà",
+    "music.drumCrashCymbal": "(4) Ciombal crash",
+    "music.drumCuica": "(18) Cuíca",
+    "music.drumGuiro": "(16) Güiro",
+    "music.drumHandClap": "(8) Bualadh bhasan",
+    "music.drumOpenHiHat": "(5) Hi-hat fosgailte",
+    "music.drumSideStick": "(3) Taobh biorain",
+    "music.drumSnare": "(1) Druma-tormain",
+    "music.drumTambourine": "(7) Guit-dhruma",
+    "music.drumTriangle": "(12) Triantan",
+    "music.drumVibraslap": "(17) Crith-sgleog",
+    "music.drumWoodBlock": "(10) Bloca fiodha",
+    "music.getTempo": "luaths",
+    "music.instrumentBass": "(6) Beus",
+    "music.instrumentBassoon": "(14) Torm-fheadan",
+    "music.instrumentCello": "(8) Beus-fhìdheall",
+    "music.instrumentChoir": "(15) Còisir",
+    "music.instrumentClarinet": "(10) Clàirneid",
+    "music.instrumentElectricGuitar": "(5) Giotàr dealain",
+    "music.instrumentElectricPiano": "(2) Piàno dealain",
+    "music.instrumentFlute": "(12) Duiseal",
+    "music.instrumentGuitar": "(4) Giotàr",
+    "music.instrumentMarimba": "(19) Marimba",
+    "music.instrumentMusicBox": "(17) Bogsa-ciùil",
+    "music.instrumentOrgan": "(3) Organ",
+    "music.instrumentPiano": "(1) Piàno",
+    "music.instrumentPizzicato": "(7) Pizzicato",
+    "music.instrumentSaxophone": "(11) Sacsafon",
+    "music.instrumentSteelDrum": "(18) Druma stàillinn",
+    "music.instrumentSynthLead": "(20) Sinteisear seirme",
+    "music.instrumentSynthPad": "(21) Sinteisear pada",
+    "music.instrumentTrombone": "(9) Trompan",
+    "music.instrumentVibraphone": "(16) Critheafon",
+    "music.instrumentWoodenFlute": "(13) Duiseal fiodha",
+    "music.midiSetInstrument": "suidhich an t‑inneal-ciùil air [INSTRUMENT]",
+    "music.playDrumForBeats": "cluich druma [DRUM] fad [BEATS] buille",
+    "music.playNoteForBeats": "cluich pong [NOTE] fad [BEATS] buille",
+    "music.restForBeats": "tost fad [BEATS] buille",
+    "music.setInstrument": "suidhich an t‑inneal-ciùil air [INSTRUMENT]",
+    "music.setTempo": "suidhich an luaths air [TEMPO]",
+    "pen.categoryName": "Peann",
+    "pen.changeColorParam": "atharraich [COLOR_PARAM] a’ phinn le [VALUE]",
+    "pen.changeHue": "atharraich dath a’ phinn le [HUE]",
+    "pen.changeShade": "atharraich tuar a’ phinn le [SHADE]",
+    "pen.changeSize": "atharraich meud a’ phinn le [SIZE]",
+    "pen.clear": "suath às na h‑uile",
+    "pen.colorMenu.brightness": "soilleireachd",
+    "pen.colorMenu.color": "dath",
+    "pen.colorMenu.saturation": "sàthachd",
+    "pen.colorMenu.transparency": "trìd-shoillearachd",
+    "pen.penDown": "peann sìos",
+    "pen.penUp": "peann suas",
+    "pen.setColor": "suidhich dath a’ phinn air [COLOR]",
+    "pen.setColorParam": "suidhich [COLOR_PARAM] a’ phinn air [VALUE]",
+    "pen.setHue": "suidhich dath a’ phinn air [HUE]",
+    "pen.setShade": "suidhich tuar a’ phinn air [SHADE]",
+    "pen.setSize": "suidhich meud a’ phinn air [SIZE]",
+    "pen.stamp": "stampa",
+    "speech.defaultWhenIHearValue": "tiugainn",
+    "speech.extensionName": "Cainnt na theacsa",
+    "speech.listenAndWait": "èist is fan",
+    "speech.speechReporter": "cainnt",
+    "speech.whenIHear": "nuair a chluinneas mi [PHRASE]",
+    "text2speech.defaultTextToSpeak": "shin thu",
+    "text2speech.giant": "famhair",
+    "text2speech.kitten": "piseag",
+    "text2speech.max": "as motha",
+    "text2speech.quinn": "neach",
+    "text2speech.setLanguageBlock": "suidhich an cànan air [LANGUAGE]",
+    "text2speech.setVoiceBlock": "suidhich a’ ghuth air [VOICE]",
+    "text2speech.speakAndWaitBlock": "can [WORDS]",
+    "text2speech.squeak": "bìog",
+    "translate.categoryName": "Eadar-theangaich",
+    "translate.defaultTextToTranslate": "shin thu",
+    "translate.translateBlock": "eadar-theangaich [WORDS] gu [LANGUAGE]",
+    "translate.viewerLanguage": "cànan",
+    "videoSensing.categoryName": "Mothachadh video",
+    "videoSensing.direction": "comhair",
+    "videoSensing.motion": "gluasad",
+    "videoSensing.off": "dheth",
+    "videoSensing.on": "air",
+    "videoSensing.onFlipped": "air, le flip",
+    "videoSensing.setVideoTransparency": "suidhich trìd-shoillse a’ video air [TRANSPARENCY]",
+    "videoSensing.sprite": "an sprìd",
+    "videoSensing.stage": "an àrd-ùrlar",
+    "videoSensing.videoOn": "[ATTRIBUTE] a’ video air [SUBJECT]",
+    "videoSensing.videoToggle": "cuir a’ video [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "nuair a thèid gluasad a’ video > [REFERENCE]",
+    "wedo2.getDistance": "astar",
+    "wedo2.getTiltAngle": "ceàrn claonaidh [TILT_DIRECTION]",
+    "wedo2.isTilted": "claonadh [TILT_DIRECTION_ANY] air",
+    "wedo2.motorOff": "cuir [MOTOR_ID] dheth",
+    "wedo2.motorOn": "cuir [MOTOR_ID] air",
+    "wedo2.motorOnFor": "cuir [MOTOR_ID] air fad [DURATION] diog",
+    "wedo2.playNoteFor": "cluich pong [NOTE] fad [DURATION] diog",
+    "wedo2.setLightHue": "suidhich dath an t-solais air [HUE]",
+    "wedo2.setMotorDirection": "suidhich comhair [MOTOR_ID] air [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "suidhich cumhachd [MOTOR_ID] air [POWER]",
+    "wedo2.whenDistance": "nuair a thèid an t-astar [OP] [REFERENCE]",
+    "wedo2.whenTilted": "le claonadh [TILT_DIRECTION_ANY]"
 }

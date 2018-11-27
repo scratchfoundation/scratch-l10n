@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Mála Droma",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Earráid agus an mála droma á lódáil",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Á Lódáil...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Tuilleadh",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Tá an mála droma folamh",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Ní thacaímid leis an mbrabhsálaí seo",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Ár leithscéal, ach ní thacaíonn Scratch 3.0 leis na brabhsálaithe Internet Explorer, Vivaldi, Opera, nó Silk. Molaimid duit triail a bhaint as brabhsálaí nua-aimseartha lán-Ghaeilge, mar shampla Mozilla Firefox.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Chun deiridh",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Ceisteanna Coitianta",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Glac Pictiúr",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Ceamara á Lódáil...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Caithfidh tú cead a thabhairt dúinn do cheamara a úsáid",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Glac Pictiúr Arís",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Sábháil",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Glac Pictiúr",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Á Lódáil...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Cumasaigh an Ceamara",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Ranganna Teagaisc",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Dún",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Tuilleadh rudaí le triail a bhaint astu!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Tuilleadh",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ná buair do cheann, táimid ag plé leis {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Le teacht go luath...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Táimid ag plé leis {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Níor aimsíodh aon ghléas",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Coinnigh do ghléas in aice láimhe, ansin déan cuardach.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Brúigh an cnaipe ar do ghléas.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Déan Cuardach",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Cuardach ar siúl...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Bain triail eile as",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Ceangailte",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Dícheangail",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Fill ar an Eagarthóir",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Ag ceangal...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Úps, dealraíonn sé go ndeachaigh rud éigin in abar.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Bain triail eile as",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Cabhair",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Ainm an ghléis",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Ceangail",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Ag lorg gléasanna",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Níor aimsíodh aon ghléas",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Roghnaigh do ghléas sa liosta thuas.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Athnuaigh",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Deimhnigh gur shuiteáil tú Scratch Link agus go bhfuil sé ar siúl",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Deimhnigh go bhfuil Bluetooth cumasaithe",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Bain triail eile as",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Cabhair",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Tosaigh",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stop",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Úps! Tharla earráid.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Ár leithscéal, ach tá Scratch tar éis tuairteála de réir cosúlachta. Seoladh na mionsonraí chuig Foireann Scratch go huathoibríoch. Athlódáil an leathanach agus bain triail eile as.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Athlódáil",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Cruthaigh Bloc",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Cuir réimse ionchurtha leis",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "uimhir nó téacs",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Cuir réimse ionchurtha leis",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "athróg Boole",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Cuir lipéad leis",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Rith gan an scáileán a athnuachan",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Cealaigh",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Treo",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Timpeall ar fad",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Clé/Deas",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Ná rothlaigh",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Cuir Breiseán Leis",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Cód",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Cúlraí",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Cultacha",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Fuaimeanna",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Oscail Tionscadal Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Cuir isteach nasc le tionscadal Scratch de do chuid. Ní shábhálfar athruithe a dhéanfaidh tú sa leagan béite seo de 3.0.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Cuir isteach nasc le tionscadal Scratch de do chuid. Ní shábhálfar athruithe a dhéanfaidh tú sa Réamhamharc 3.0 seo.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Hmm... tá cuma aisteach ar an nasc nó aitheantas sin.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Amharc",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Siar",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Ceisteanna Coitianta",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Le teacht go luath",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Cuardaigh",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Uile",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Blocanna á gcruthú...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Sprideanna á lódáil...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Fuaimeanna á lódáil...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Breiseáin á lódáil...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Cait á gcluicheadh...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nanónna á dtarchur...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Góbónna á séideadh...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Emoji á n-ullmhú...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Tionscadal á Lódáil",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Próifíl",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Mo Chuid Stuif",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Mo Ranganna",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Mo Rang",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Socruithe an chuntais",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Logáil amach",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Féach an Comhphobal",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Ainm úsáideora",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Focal Faire",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Logáil isteach",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Cabhair uait?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "roghnóir teanga",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Ranganna Teagaisc",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Athchóirigh an Sprid",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Athchóirigh an Fhuaim Scriosta",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Athchóirigh an Chulaith Scriosta",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Athchóirigh",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Sábháil anois",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Sábháil mar chóip",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Athmheasc",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nua",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Comhad",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Lódáil ó do ríomhaire",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Sábháil ar do ríomhaire",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Eagar",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Múch an Mód Turbó",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Tosaigh an Mód Turbó",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Cláraigh le Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Logáil isteach",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Tabhair Aiseolas",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Teideal an tionscadail anseo",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Comhroinnte",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Comhroinn",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Cabhair",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Chun deiridh",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "gnáth-asléamh",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "asléamh mór",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "sleamhnán",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Bain Triail as Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Fáilte go dtí an leagan béite de Scratch 3.0",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Níl Anois",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Bain Triail As",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Oscail Tionscadal 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Fáilte go dtí an leagan béite de Scratch 3.0",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Táimid ag obair ar an chéad ghlúin eile de Scratch. Tá súil againn go mbainfidh tú taitneamh as!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Níl Anois",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Bain triail as! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Oscail Tionscadal 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Ceisteanna Coitianta",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Na sprideanna go léir",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "An sprid seo amháin",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Néalathróg (sábháilte ar an bhfreastalaí)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Beidh an athróg seo ar fáil do gach sprid.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Cealaigh",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stop",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Seinn",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Á Lódáil...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Sábháil",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Ataifead",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Taifeadadh",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Taifead",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Fuaim",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Seinn",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stop",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Bearr",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Sábháil",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Cealaigh",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Athdhéan",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Níos Sciobtha",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Níos moille",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Macalla",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Róbat",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Níos Airde",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Níos Ciúine",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Aisiompaigh",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Ainm",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprid",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Taispeáin",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Méid",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "cóip",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "scrios",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "easpórtáil",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Roghnaigh Sprid",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Péint",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Randamach",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Uaslódáil Sprid",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Úsáid stáitse mór",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Úsáid stáitse beag",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Mód lánscáileáin",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Scoir den lánscáileán",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Rialú Lánscáileáin",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Roghnaigh Cúlra",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Péint",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Randamach",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Uaslódáil Cúlra",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Stáitse",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Cúlraí",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Mód Turbó",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Ní thacaíonn do bhrabhsálaí le WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Faraor is cosúil {webGlLink}. Tá an teicneolaíocht seo ag teastáil le Scratch 3.0 a úsáid.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "nach dtacaíonn do bhrabhsálaí le WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Siar",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Ceisteanna Coitianta",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Roghnaigh Cúlra",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Roghnaigh Culaith",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Roghnaigh Cúlra",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Roghnaigh Culaith",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Péint",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Randamach",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Uaslódáil Cúlra",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Uaslódáil Culaith",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Ceamara",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Roghnaigh Breiseán",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Cuir isteach URL an bhreiseáin",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Tionscadal Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Níorbh fhéidir taifead a thosú",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Níorbh fhéidir an comhad tionscadail sin a lódáil.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Roghnaigh Fuaim",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Uaslódáil Comhad Fuaime",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Randamach",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Taifead",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Roghnaigh Fuaim",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Roghnaigh Sprid",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Roghnaigh Cúrsa Teagaisc",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Á Chruthú...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Á Shábháil...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Míáú",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "m'athróg",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Tús Maith",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Bloc \"bog\" a chur leis",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Cliceáil an bhratach uaine le tosú",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Abair Rud Éigin",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Cúlraí",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "An dath a athrú",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Cas Timpeall",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Abair Rud Éigin",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Sleamhnú thart",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Marcáil an Scór",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Beochan a chur le d'ainm",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Litir a roghnú",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Fuaim a chasadh nuair a chliceáiltear",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Litir eile a roghnú",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "An dath a athrú",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Litir eile a roghnú agus a chur ar casadh",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Litir eile a roghnú agus a chur ag fás",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Ceol a chumadh",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Ionstraim a roghnú",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Fuaim a chasadh nuair a chliceáiltear",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Amhrán a chumadh",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Druma a roghnú agus buille a dhéanamh",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Sprid micreafón agus buillebhosca randamach a roghnú",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Cluiche cliceála",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Sprid a roghnú",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Fuaim a chasadh nuair a chliceáiltear",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Athróg scóir a chruthú",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "An scór a mhéadú nuair a chliceáiltear",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Léim go háit randamach",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "An dath a athrú",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "An scór a athshocrú",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Cluiche leaisteanna",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Cúlra a chur leis",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Sprid nua a chur leis",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Bogadh ar dheis agus ar chlé leis na saigheada",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Bogadh suas anuas leis na saigheada",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Sprid eile a chur leis",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Bogadh randamach",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Fuaim a sheinm nuair a theagmhaíonn an t-ochtapas rud éigin",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Athróg scóir a chruthú",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Fuaim a sheinm nuair a theagmhaíonn an t-ochtapas rud éigin",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Sprid nua a chur leis",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Sprid nua a chur leis",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Cúlraí",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Méideanna a athrú",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Sleamhnú thart",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Fuaim a thaifeadadh",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Cur ar Casadh",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Folú agus Taispeáint",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Beochan a chur le sprid",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Na Saigheada",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Maisíochtaí",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Ceol",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Casadh ceoil le hionstraimí agus le drumaí.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Peann",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Dearadh le do chuid sprideanna.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Físbhraiteacht",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Gluaiseacht a bhrath leis an gceamara.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Aistriúchán",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Aistriúcháin i mórán teangacha.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Cuir do chuid tionscadal os comhair an domhain.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Ceangal",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Róbait idirghníomhacha agus tuilleadh.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Ag ceangal. Deimhnigh gurb é 1234 an PIN ar do EV3.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Tógáil le mótair agus le braiteoirí.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Ceangal",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Uile",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Ainmhithe",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Damhsa",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Maisíochtaí",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantaisíocht",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Faisean",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Taobh Istigh",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Ceol",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Nótaí",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Amuigh Faoin Aer",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Daoine",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Cnaguirlisí",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Spás",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Spórt",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Faoi uisce",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Beochan",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Ealaín",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Cluichí",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Scéalta",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Litreacha",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "treo",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "ionad x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "ionad y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "méid",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "ainm na culaithe",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "ainm an chúlra",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "airde",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "luas",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "freagra",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "treise",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "ainm úsáideora",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "bliain",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mí",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "dáta",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "lá den tseachtain",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "uair",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "nóiméad",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "soicind",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "amadóir",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "cúlra{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "culaith{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprid{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pléasc",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Mála Droma",
+    "gui.backpack.errorBackpack": "Earráid agus an mála droma á lódáil",
+    "gui.backpack.loadingBackpack": "Á Lódáil...",
+    "gui.backpack.more": "Tuilleadh",
+    "gui.backpack.emptyBackpack": "Tá an mála droma folamh",
+    "gui.unsupportedBrowser.label": "Ní thacaímid leis an mbrabhsálaí seo",
+    "gui.unsupportedBrowser.description": "Ár leithscéal, ach ní thacaíonn Scratch 3.0 leis na brabhsálaithe Internet Explorer, Vivaldi, Opera, nó Silk. Molaimid duit triail a bhaint as brabhsálaí nua-aimseartha lán-Ghaeilge, mar shampla Mozilla Firefox.",
+    "gui.unsupportedBrowser.back": "Chun deiridh",
+    "gui.unsupportedBrowser.previewfaq": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Ceisteanna Coitianta",
+    "gui.cameraModal.cameraModalTitle": "Glac Pictiúr",
+    "gui.cameraModal.loadingCameraMessage": "Ceamara á Lódáil...",
+    "gui.cameraModal.permissionRequest": "Caithfidh tú cead a thabhairt dúinn do cheamara a úsáid",
+    "gui.cameraModal.retakePhoto": "Glac Pictiúr Arís",
+    "gui.cameraModal.save": "Sábháil",
+    "gui.cameraModal.takePhoto": "Glac Pictiúr",
+    "gui.cameraModal.loadingCaption": "Á Lódáil...",
+    "gui.cameraModal.enableCameraCaption": "Cumasaigh an Ceamara",
+    "gui.cards.all-tutorials": "Ranganna Teagaisc",
+    "gui.cards.close": "Dún",
+    "gui.cards.more-things-to-try": "Tuilleadh rudaí le triail a bhaint astu!",
+    "gui.cards.see-more": "Tuilleadh",
+    "gui.comingSoon.message1": "Ná buair do cheann, táimid ag plé leis {emoji}",
+    "gui.comingSoon.message2": "Le teacht go luath...",
+    "gui.comingSoon.message3": "Táimid ag plé leis {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Níor aimsíodh aon ghléas",
+    "gui.connection.auto-scanning.prescan": "Coinnigh do ghléas in aice láimhe, ansin déan cuardach.",
+    "gui.connection.auto-scanning.pressbutton": "Brúigh an cnaipe ar do ghléas.",
+    "gui.connection.auto-scanning.start-search": "Déan Cuardach",
+    "gui.connection.connecting-searchbutton": "Cuardach ar siúl...",
+    "gui.connection.auto-scanning.try-again": "Bain triail eile as",
+    "gui.connection.connected": "Ceangailte",
+    "gui.connection.disconnect": "Dícheangail",
+    "gui.connection.go-to-editor": "Fill ar an Eagarthóir",
+    "gui.connection.connecting-cancelbutton": "Ag ceangal...",
+    "gui.connection.error.errorMessage": "Úps, dealraíonn sé go ndeachaigh rud éigin in abar.",
+    "gui.connection.error.tryagainbutton": "Bain triail eile as",
+    "gui.connection.error.helpbutton": "Cabhair",
+    "gui.connection.peripheral-name-label": "Ainm an ghléis",
+    "gui.connection.connect": "Ceangail",
+    "gui.connection.scanning.lookingforperipherals": "Ag lorg gléasanna",
+    "gui.connection.scanning.noPeripheralsFound": "Níor aimsíodh aon ghléas",
+    "gui.connection.scanning.instructions": "Roghnaigh do ghléas sa liosta thuas.",
+    "gui.connection.search": "Athnuaigh",
+    "gui.connection.unavailable.installscratchlink": "Deimhnigh gur shuiteáil tú Scratch Link agus go bhfuil sé ar siúl",
+    "gui.connection.unavailable.enablebluetooth": "Deimhnigh go bhfuil Bluetooth cumasaithe",
+    "gui.connection.unavailable.tryagainbutton": "Bain triail eile as",
+    "gui.connection.unavailable.helpbutton": "Cabhair",
+    "gui.controls.go": "Tosaigh",
+    "gui.controls.stop": "Stop",
+    "gui.crashMessage.label": "Úps! Tharla earráid.",
+    "gui.crashMessage.description": "Ár leithscéal, ach tá Scratch tar éis tuairteála de réir cosúlachta. Seoladh na mionsonraí chuig Foireann Scratch go huathoibríoch. Athlódáil an leathanach agus bain triail eile as.",
+    "gui.crashMessage.reload": "Athlódáil",
+    "gui.customProcedures.myblockModalTitle": "Cruthaigh Bloc",
+    "gui.customProcedures.addAnInputNumberText": "Cuir réimse ionchurtha leis",
+    "gui.customProcedures.numberTextType": "uimhir nó téacs",
+    "gui.customProcedures.addAnInputBoolean": "Cuir réimse ionchurtha leis",
+    "gui.customProcedures.booleanType": "athróg Boole",
+    "gui.customProcedures.addALabel": "Cuir lipéad leis",
+    "gui.customProcedures.runWithoutScreenRefresh": "Rith gan an scáileán a athnuachan",
+    "gui.customProcedures.cancel": "Cealaigh",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Treo",
+    "gui.directionPicker.rotationStyles.allAround": "Timpeall ar fad",
+    "gui.directionPicker.rotationStyles.leftRight": "Clé/Deas",
+    "gui.directionPicker.rotationStyles.dontRotate": "Ná rothlaigh",
+    "gui.gui.addExtension": "Cuir Breiseán Leis",
+    "gui.gui.codeTab": "Cód",
+    "gui.gui.backdropsTab": "Cúlraí",
+    "gui.gui.costumesTab": "Cultacha",
+    "gui.gui.soundsTab": "Fuaimeanna",
+    "gui.importInfo.title": "Oscail Tionscadal Scratch 2.0",
+    "gui.importInfo.betamessage": "Cuir isteach nasc le tionscadal Scratch de do chuid. Ní shábhálfar athruithe a dhéanfaidh tú sa leagan béite seo de 3.0.",
+    "gui.importInfo.message": "Cuir isteach nasc le tionscadal Scratch de do chuid. Ní shábhálfar athruithe a dhéanfaidh tú sa Réamhamharc 3.0 seo.",
+    "gui.importInfo.invalidFormatError": "Hmm... tá cuma aisteach ar an nasc nó aitheantas sin.",
+    "gui.importModal.viewproject": "Amharc",
+    "gui.importInfo.goback": "Siar",
+    "gui.importInfo.previewfaq": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
+    "gui.importInfo.previewfaqlinktext": "Ceisteanna Coitianta",
+    "gui.extensionLibrary.comingSoon": "Le teacht go luath",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Cuardaigh",
+    "gui.library.allTag": "Uile",
+    "gui.loader.message1": "Blocanna á gcruthú...",
+    "gui.loader.message2": "Sprideanna á lódáil...",
+    "gui.loader.message3": "Fuaimeanna á lódáil...",
+    "gui.loader.message4": "Breiseáin á lódáil...",
+    "gui.loader.message5": "Cait á gcluicheadh...",
+    "gui.loader.message6": "Nanónna á dtarchur...",
+    "gui.loader.message7": "Góbónna á séideadh...",
+    "gui.loader.message8": "Emoji á n-ullmhú...",
+    "gui.loader.headline": "Tionscadal á Lódáil",
+    "gui.accountMenu.profile": "Próifíl",
+    "gui.accountMenu.myStuff": "Mo Chuid Stuif",
+    "gui.accountMenu.myClasses": "Mo Ranganna",
+    "gui.accountMenu.myClass": "Mo Rang",
+    "gui.accountMenu.accountSettings": "Socruithe an chuntais",
+    "gui.accountMenu.signOut": "Logáil amach",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Féach an Comhphobal",
+    "general.username": "Ainm úsáideora",
+    "general.password": "Focal Faire",
+    "general.signIn": "Logáil isteach",
+    "login.needHelp": "Cabhair uait?",
+    "gui.menuBar.LanguageSelector": "roghnóir teanga",
+    "gui.menuBar.tutorialsLibrary": "Ranganna Teagaisc",
+    "gui.menuBar.restoreSprite": "Athchóirigh an Sprid",
+    "gui.menuBar.restoreSound": "Athchóirigh an Fhuaim Scriosta",
+    "gui.menuBar.restoreCostume": "Athchóirigh an Chulaith Scriosta",
+    "gui.menuBar.restore": "Athchóirigh",
+    "gui.menuBar.saveNow": "Sábháil anois",
+    "gui.menuBar.saveAsCopy": "Sábháil mar chóip",
+    "gui.menuBar.remix": "Athmheasc",
+    "gui.menuBar.new": "Nua",
+    "gui.menuBar.file": "Comhad",
+    "gui.menuBar.uploadFromComputer": "Lódáil ó do ríomhaire",
+    "gui.menuBar.downloadToComputer": "Sábháil ar do ríomhaire",
+    "gui.menuBar.edit": "Eagar",
+    "gui.menuBar.turboModeOff": "Múch an Mód Turbó",
+    "gui.menuBar.turboModeOn": "Tosaigh an Mód Turbó",
+    "gui.menuBar.joinScratch": "Cláraigh le Scratch",
+    "gui.menuBar.signIn": "Logáil isteach",
+    "gui.menuBar.giveFeedback": "Tabhair Aiseolas",
+    "gui.gui.projectTitlePlaceholder": "Teideal an tionscadail anseo",
+    "gui.menuBar.isShared": "Comhroinnte",
+    "gui.menuBar.share": "Comhroinn",
+    "gui.modal.help": "Cabhair",
+    "gui.modal.back": "Chun deiridh",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "gnáth-asléamh",
+    "gui.monitor.contextMenu.large": "asléamh mór",
+    "gui.monitor.contextMenu.slider": "sleamhnán",
+    "gui.previewInfo.label": "Bain Triail as Scratch 3.0",
+    "gui.previewInfo.welcome": "Fáilte go dtí an leagan béite de Scratch 3.0",
+    "gui.previewModal.notnowtooltip": "Níl Anois",
+    "gui.previewModal.tryittooltip": "Bain Triail As",
+    "gui.previewModal.viewprojecttooltip": "Oscail Tionscadal 2.0",
+    "gui.previewInfo.betawelcome": "Fáilte go dtí an leagan béite de Scratch 3.0",
+    "gui.previewInfo.invitation": "Táimid ag obair ar an chéad ghlúin eile de Scratch. Tá súil againn go mbainfidh tú taitneamh as!",
+    "gui.previewInfo.notnow": "Níl Anois",
+    "gui.previewModal.tryit": "Bain triail as! {caticon}",
+    "gui.previewModal.viewproject": "Oscail Tionscadal 2.0",
+    "gui.previewInfo.previewfaq": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
+    "gui.previewInfo.previewfaqlinktext": "Ceisteanna Coitianta",
+    "gui.gui.variableScopeOptionAllSprites": "Na sprideanna go léir",
+    "gui.gui.variableScopeOptionSpriteOnly": "An sprid seo amháin",
+    "gui.gui.cloudVariableOption": "Néalathróg (sábháilte ar an bhfreastalaí)",
+    "gui.gui.variablePromptAllSpritesMessage": "Beidh an athróg seo ar fáil do gach sprid.",
+    "gui.prompt.cancel": "Cealaigh",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stop",
+    "gui.playbackStep.playMsg": "Seinn",
+    "gui.playbackStep.loadingMsg": "Á Lódáil...",
+    "gui.playbackStep.saveMsg": "Sábháil",
+    "gui.playbackStep.reRecordMsg": "Ataifead",
+    "gui.recordModal.title": "Taifeadadh",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Taifead",
+    "gui.soundEditor.sound": "Fuaim",
+    "gui.soundEditor.play": "Seinn",
+    "gui.soundEditor.stop": "Stop",
+    "gui.soundEditor.trim": "Bearr",
+    "gui.soundEditor.save": "Sábháil",
+    "gui.soundEditor.undo": "Cealaigh",
+    "gui.soundEditor.redo": "Athdhéan",
+    "gui.soundEditor.faster": "Níos Sciobtha",
+    "gui.soundEditor.slower": "Níos moille",
+    "gui.soundEditor.echo": "Macalla",
+    "gui.soundEditor.robot": "Róbat",
+    "gui.soundEditor.louder": "Níos Airde",
+    "gui.soundEditor.softer": "Níos Ciúine",
+    "gui.soundEditor.reverse": "Aisiompaigh",
+    "gui.SpriteInfo.spritePlaceholder": "Ainm",
+    "gui.SpriteInfo.sprite": "Sprid",
+    "gui.SpriteInfo.show": "Taispeáin",
+    "gui.SpriteInfo.size": "Méid",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "cóip",
+    "gui.spriteSelectorItem.contextMenuDelete": "scrios",
+    "gui.spriteSelectorItem.contextMenuExport": "easpórtáil",
+    "gui.spriteSelector.addSpriteFromLibrary": "Roghnaigh Sprid",
+    "gui.spriteSelector.addSpriteFromPaint": "Péint",
+    "gui.spriteSelector.addSpriteFromSurprise": "Randamach",
+    "gui.spriteSelector.addSpriteFromFile": "Uaslódáil Sprid",
+    "gui.stageHeader.stageSizeLarge": "Úsáid stáitse mór",
+    "gui.stageHeader.stageSizeSmall": "Úsáid stáitse beag",
+    "gui.stageHeader.stageSizeFull": "Mód lánscáileáin",
+    "gui.stageHeader.stageSizeUnFull": "Scoir den lánscáileán",
+    "gui.stageHeader.fullscreenControl": "Rialú Lánscáileáin",
+    "gui.spriteSelector.addBackdropFromLibrary": "Roghnaigh Cúlra",
+    "gui.stageSelector.addBackdropFromPaint": "Péint",
+    "gui.stageSelector.addBackdropFromSurprise": "Randamach",
+    "gui.stageSelector.addBackdropFromFile": "Uaslódáil Cúlra",
+    "gui.stageSelector.stage": "Stáitse",
+    "gui.stageSelector.backdrops": "Cúlraí",
+    "gui.turboMode.active": "Mód Turbó",
+    "gui.webglModal.label": "Ní thacaíonn do bhrabhsálaí le WebGL",
+    "gui.webglModal.description": "Faraor is cosúil {webGlLink}. Tá an teicneolaíocht seo ag teastáil le Scratch 3.0 a úsáid.",
+    "gui.webglModal.webgllink": "nach dtacaíonn do bhrabhsálaí le WebGL",
+    "gui.webglModal.back": "Siar",
+    "gui.webglModal.previewfaq": "Féach ar {previewFaqLink} le tuilleadh eolais a fháil.",
+    "gui.webglModal.previewfaqlinktext": "Ceisteanna Coitianta",
+    "gui.costumeLibrary.chooseABackdrop": "Roghnaigh Cúlra",
+    "gui.costumeLibrary.chooseACostume": "Roghnaigh Culaith",
+    "gui.costumeTab.addBackdropFromLibrary": "Roghnaigh Cúlra",
+    "gui.costumeTab.addCostumeFromLibrary": "Roghnaigh Culaith",
+    "gui.costumeTab.addBlankCostume": "Péint",
+    "gui.costumeTab.addSurpriseCostume": "Randamach",
+    "gui.costumeTab.addFileBackdrop": "Uaslódáil Cúlra",
+    "gui.costumeTab.addFileCostume": "Uaslódáil Culaith",
+    "gui.costumeTab.addCameraCostume": "Ceamara",
+    "gui.extensionLibrary.chooseAnExtension": "Roghnaigh Breiseán",
+    "gui.extensionLibrary.extensionUrl": "Cuir isteach URL an bhreiseáin",
+    "gui.gui.defaultProjectTitle": "Tionscadal Scratch",
+    "gui.recordingStep.alertMsg": "Níorbh fhéidir taifead a thosú",
+    "gui.projectLoader.loadError": "Níorbh fhéidir an comhad tionscadail sin a lódáil.",
+    "gui.soundLibrary.chooseASound": "Roghnaigh Fuaim",
+    "gui.soundTab.fileUploadSound": "Uaslódáil Comhad Fuaime",
+    "gui.soundTab.surpriseSound": "Randamach",
+    "gui.soundTab.recordSound": "Taifead",
+    "gui.soundTab.addSoundFromLibrary": "Roghnaigh Fuaim",
+    "gui.spriteLibrary.chooseASprite": "Roghnaigh Sprid",
+    "gui.tipsLibrary.tutorials": "Roghnaigh Cúrsa Teagaisc",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Á Chruthú...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Á Shábháil...",
+    "gui.defaultProject.meow": "Míáú",
+    "gui.defaultProject.variable": "m'athróg",
+    "gui.howtos.intro-move-sayhello-hat.name": "Tús Maith",
+    "gui.howtos.intro-move.step_stepMove": "Bloc \"bog\" a chur leis",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Cliceáil an bhratach uaine le tosú",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Abair Rud Éigin",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Cúlraí",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "An dath a athrú",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Cas Timpeall",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Abair Rud Éigin",
+    "gui.howtos.cartoon-network.step_CNglide": "Sleamhnú thart",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Marcáil an Scór",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Beochan a chur le d'ainm",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Litir a roghnú",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Fuaim a chasadh nuair a chliceáiltear",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Litir eile a roghnú",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "An dath a athrú",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Litir eile a roghnú agus a chur ar casadh",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Litir eile a roghnú agus a chur ag fás",
+    "gui.howtos.make-music.name": "Ceol a chumadh",
+    "gui.howtos.Make-Music.step_PickInstrument": "Ionstraim a roghnú",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Fuaim a chasadh nuair a chliceáiltear",
+    "gui.howtos.Make-Music.step_MakeSong": "Amhrán a chumadh",
+    "gui.howtos.make-music.step_MakeBeat": "Druma a roghnú agus buille a dhéanamh",
+    "gui.howtos.make-music.step_MakeBeatBox": "Sprid micreafón agus buillebhosca randamach a roghnú",
+    "gui.howtos.make-a-game.name": "Cluiche cliceála",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Sprid a roghnú",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Fuaim a chasadh nuair a chliceáiltear",
+    "gui.howtos.make-a-game.step_GameAddScore": "Athróg scóir a chruthú",
+    "gui.howtos.make-a-game.step_GameChangeScore": "An scór a mhéadú nuair a chliceáiltear",
+    "gui.howtos.make-a-game.step_Random": "Léim go háit randamach",
+    "gui.howtos.make-music.step_GameChangeColor": "An dath a athrú",
+    "gui.howtos.make-music.step_ResetScore": "An scór a athshocrú",
+    "gui.howtos.make-a-chase-game.name": "Cluiche leaisteanna",
+    "gui.howtos.Chase-Game.step_BG": "Cúlra a chur leis",
+    "gui.howtos.chase-game.step_AddOcto": "Sprid nua a chur leis",
+    "gui.howtos.make-music.step_LeftRight": "Bogadh ar dheis agus ar chlé leis na saigheada",
+    "gui.howtos.Chase-Game.step_UpDown": "Bogadh suas anuas leis na saigheada",
+    "gui.howtos.Chase-Game.step_AddStar": "Sprid eile a chur leis",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Bogadh randamach",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Fuaim a sheinm nuair a theagmhaíonn an t-ochtapas rud éigin",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Athróg scóir a chruthú",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Fuaim a sheinm nuair a theagmhaíonn an t-ochtapas rud éigin",
+    "gui.howtos.add-sprite.name": "Sprid nua a chur leis",
+    "gui.howtos.add-sprite.step_addSprite": "Sprid nua a chur leis",
+    "gui.howtos.add-a-backdrop.name": "Cúlraí",
+    "gui.howtos.change-size.name": "Méideanna a athrú",
+    "gui.howtos.glide-around.name": "Sleamhnú thart",
+    "gui.howtos.record-a-sound.name": "Fuaim a thaifeadadh",
+    "gui.howtos.spin-video.name": "Cur ar Casadh",
+    "gui.howtos.hide-and-show.name": "Folú agus Taispeáint",
+    "gui.howtos.switch-costume.name": "Beochan a chur le sprid",
+    "gui.howtos.move-around-with-arrow-keys.name": "Na Saigheada",
+    "gui.howtos.add-effects.name": "Maisíochtaí",
+    "gui.extension.music.name": "Ceol",
+    "gui.extension.music.description": "Casadh ceoil le hionstraimí agus le drumaí.",
+    "gui.extension.pen.name": "Peann",
+    "gui.extension.pen.description": "Dearadh le do chuid sprideanna.",
+    "gui.extension.videosensing.name": "Físbhraiteacht",
+    "gui.extension.videosensing.description": "Gluaiseacht a bhrath leis an gceamara.",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Aistriúchán",
+    "gui.extension.translate.description": "Aistriúcháin i mórán teangacha.",
+    "gui.extension.microbit.description": "Cuir do chuid tionscadal os comhair an domhain.",
+    "gui.extension.microbit.connectingMessage": "Ceangal",
+    "gui.extension.ev3.description": "Róbait idirghníomhacha agus tuilleadh.",
+    "gui.extension.ev3.connectingMessage": "Ag ceangal. Deimhnigh gurb é 1234 an PIN ar do EV3.",
+    "gui.extension.wedo2.description": "Tógáil le mótair agus le braiteoirí.",
+    "gui.extension.wedo2.connectingMessage": "Ceangal",
+    "gui.libraryTags.all": "Uile",
+    "gui.libraryTags.animals": "Ainmhithe",
+    "gui.libraryTags.dance": "Damhsa",
+    "gui.libraryTags.effects": "Maisíochtaí",
+    "gui.libraryTags.fantasy": "Fantaisíocht",
+    "gui.libraryTags.fashion": "Faisean",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "Taobh Istigh",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Ceol",
+    "gui.libraryTags.notes": "Nótaí",
+    "gui.libraryTags.outdoors": "Amuigh Faoin Aer",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Daoine",
+    "gui.libraryTags.percussion": "Cnaguirlisí",
+    "gui.libraryTags.space": "Spás",
+    "gui.libraryTags.sports": "Spórt",
+    "gui.libraryTags.underwater": "Faoi uisce",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Beochan",
+    "gui.libraryTags.art": "Ealaín",
+    "gui.libraryTags.games": "Cluichí",
+    "gui.libraryTags.stories": "Scéalta",
+    "gui.libraryTags.letters": "Litreacha",
+    "gui.opcodeLabels.direction": "treo",
+    "gui.opcodeLabels.xposition": "ionad x",
+    "gui.opcodeLabels.yposition": "ionad y",
+    "gui.opcodeLabels.size": "méid",
+    "gui.opcodeLabels.costumename": "ainm na culaithe",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "ainm an chúlra",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "airde",
+    "gui.opcodeLabels.tempo": "luas",
+    "gui.opcodeLabels.answer": "freagra",
+    "gui.opcodeLabels.loudness": "treise",
+    "gui.opcodeLabels.username": "ainm úsáideora",
+    "gui.opcodeLabels.year": "bliain",
+    "gui.opcodeLabels.month": "mí",
+    "gui.opcodeLabels.date": "dáta",
+    "gui.opcodeLabels.dayofweek": "lá den tseachtain",
+    "gui.opcodeLabels.hour": "uair",
+    "gui.opcodeLabels.minute": "nóiméad",
+    "gui.opcodeLabels.second": "soicind",
+    "gui.opcodeLabels.timer": "amadóir",
+    "gui.sharedMessages.backdrop": "cúlra{index}",
+    "gui.sharedMessages.costume": "culaith{index}",
+    "gui.sharedMessages.sprite": "Sprid{index}",
+    "gui.sharedMessages.pop": "pléasc"
 }

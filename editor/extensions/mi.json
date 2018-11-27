@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "whakatangihia te oro [NOTE] mō ngā hēkona [TIME]",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "kua pēhia te pātuhi [PORT]?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "pīataata",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "tawhiti",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "ahunga pūkaha[PORT]",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "pūkaha[PORT] tautuhia te kaha ki[POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "pūkaha [PORT] huri pēnei mō ngā hēkona [TIME]",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "pūkaha [PORT]huri pērā mō ngā hēkona [TIME]",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "ina pīataata < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "inā pāwhiria te pātene [PORT]",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "ina tawhiti < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "noa",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "ūkuia te mata",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Tēnā koe!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "whakaaturia [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "whakaaturia [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "i peke",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "i neke",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "i rūrū",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "[BTN] pātene i pēhia?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "kua tītaha ki[DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "weto",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "kā",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "koki tītaha [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "noa",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "muri",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "mua",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "mauī",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "katau",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "ina pēhia pātene [BTN] ",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "ina [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "whakamātautau, ina honoa ki te pine [PIN]",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "ina tītaha ki [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Puoro",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "panonitia te tere mā te [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Pahū Nguru",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Pahū tamarua",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Cabasa",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Poro rākau",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Hi-Hat kua Katia",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Conga",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Pere-kau",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Tīwēwē Wheoro",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Cuica",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Guiro",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Pakipaki-ā-ringa",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Hi-Hat kua Huakina",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Rākau Taha Pahū",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Pahū Rarā",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Tatangi",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Tapatoru",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Vibraslap",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Paraka Rākau",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "tere",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Reo Nguru",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Pūhoru",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Whiranui",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Tira Waiata",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Rehu Matangi",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Kitā Hiko",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Piana Hiko",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Pūtōrino",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Kitā",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Pakakau",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Pouaka Puoro",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Ōkena",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Piana",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Pizzicato",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Pūtohe",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Pahū Rino",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Kōtui Arataki",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Kōtui Papatū",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Pūkumekume",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Vibraphone",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Pūtorino",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "tautuhia te taonga puoro ki te [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "whakatangihia te pahū [DRUM] mō ngā taki [BEATS] ",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "whakatangihia te oro [NOTE] mō ngā taki [BEATS]",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "tatari mō ngā taki [BEATS]",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "tautuhia te taonga puoro ki te [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "tautuhia te tere kia [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Pene",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "panonitia te [COLOR_PARAM] o te pene mā te [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "panonitia te tae o te pene mā te [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "panonitia te kauruku o te pene mā te [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "panonitia te nui o te pene mā te [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "Kōmurutia te katoa",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "pīataata",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "tae",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "waiwai",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "pūatatata",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "pene ki raro",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "pene ki runga",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "tautuhia te tae o te pene kia [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "tautuhia te [COLOR_PARAM] o te pene kia [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "tautuhia te tae o te pene kia [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "tautuhia te kauruku o te pene kia [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "tautuhia te nui o te pene kia [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "waitohu",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "me haere tātou",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Google Kōrero",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "whakarongo, tatari hoki",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "kōrero",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "ina rongo ahau i [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "kia ora",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "kākarepō",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "punua ngeru",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "mōrahi",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "kiri",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "tautuhia te reo kia[LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "tautuhia te reo ki [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "kīia [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "koekoe",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Google Translate",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "kia ora",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "whakawhitiwhitia [WORDS] ki te reo [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "reo",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "He Tairongo Ataata",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "ahunga",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "nekenekehanga",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "weto",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "kā",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "ina whakawhitia",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "tautuhia te pūatatata o te ataata kia [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "parehe",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "atamira",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "ataata [ATTRIBUTE] kei [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "hurihia te ataata kia [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "ina te nekenekehanga o te ataata > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "tawhiti",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "koki tītaha [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "kua tītaha ki [TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "whakaweto [MOTOR_ID]",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "whakakā [MOTOR_ID]",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "whakakā[MOTOR_ID] mō ngā hēkona [DURATION]",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "whakatangihia te oro [NOTE] mō ngā hēkona[DURATION]",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "tautuhia te tae māmā ki te [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "tautuhia te pūkaha [MOTOR_ID] kia huri [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "tautuhia te pūkaha [MOTOR_ID] kia [POWER] te kaha",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "ina tawhiti [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "ina tītaha [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "whakatangihia te oro [NOTE] mō ngā hēkona [TIME]",
+    "ev3.buttonPressed": "kua pēhia te pātuhi [PORT]?",
+    "ev3.getBrightness": "pīataata",
+    "ev3.getDistance": "tawhiti",
+    "ev3.getMotorPosition": "ahunga pūkaha[PORT]",
+    "ev3.motorSetPower": "pūkaha[PORT] tautuhia te kaha ki[POWER] %",
+    "ev3.motorTurnClockwise": "pūkaha [PORT] huri pēnei mō ngā hēkona [TIME]",
+    "ev3.motorTurnCounterClockwise": "pūkaha [PORT]huri pērā mō ngā hēkona [TIME]",
+    "ev3.whenBrightnessLessThan": "ina pīataata < [DISTANCE]",
+    "ev3.whenButtonPressed": "inā pāwhiria te pātene [PORT]",
+    "ev3.whenDistanceLessThan": "ina tawhiti < [DISTANCE]",
+    "microbit.buttonsMenu.any": "noa",
+    "microbit.clearDisplay": "ūkuia te mata",
+    "microbit.defaultTextToDisplay": "Tēnā koe!",
+    "microbit.displaySymbol": "whakaaturia [MATRIX]",
+    "microbit.displayText": "whakaaturia [TEXT]",
+    "microbit.gesturesMenu.jumped": "i peke",
+    "microbit.gesturesMenu.moved": "i neke",
+    "microbit.gesturesMenu.shaken": "i rūrū",
+    "microbit.isButtonPressed": "[BTN] pātene i pēhia?",
+    "microbit.isTilted": "kua tītaha ki[DIRECTION]?",
+    "microbit.pinStateMenu.off": "weto",
+    "microbit.pinStateMenu.on": "kā",
+    "microbit.tiltAngle": "koki tītaha [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "noa",
+    "microbit.tiltDirectionMenu.back": "muri",
+    "microbit.tiltDirectionMenu.front": "mua",
+    "microbit.tiltDirectionMenu.left": "mauī",
+    "microbit.tiltDirectionMenu.right": "katau",
+    "microbit.whenButtonPressed": "ina pēhia pātene [BTN] ",
+    "microbit.whenGesture": "ina [GESTURE]",
+    "microbit.whenPinConnected": "whakamātautau, ina honoa ki te pine [PIN]",
+    "microbit.whenTilted": "ina tītaha ki [DIRECTION]",
+    "music.categoryName": "Puoro",
+    "music.changeTempo": "panonitia te tere mā te [TEMPO]",
+    "music.drumBass": "(2) Pahū Nguru",
+    "music.drumBongo": "(13) Pahū tamarua",
+    "music.drumCabasa": "(15) Cabasa",
+    "music.drumClaves": "(9) Poro rākau",
+    "music.drumClosedHiHat": "(6) Hi-Hat kua Katia",
+    "music.drumConga": "(14) Conga",
+    "music.drumCowbell": "(11) Pere-kau",
+    "music.drumCrashCymbal": "(4) Tīwēwē Wheoro",
+    "music.drumCuica": "(18) Cuica",
+    "music.drumGuiro": "(16) Guiro",
+    "music.drumHandClap": "(8) Pakipaki-ā-ringa",
+    "music.drumOpenHiHat": "(5) Hi-Hat kua Huakina",
+    "music.drumSideStick": "(3) Rākau Taha Pahū",
+    "music.drumSnare": "(1) Pahū Rarā",
+    "music.drumTambourine": "(7) Tatangi",
+    "music.drumTriangle": "(12) Tapatoru",
+    "music.drumVibraslap": "(17) Vibraslap",
+    "music.drumWoodBlock": "(10) Paraka Rākau",
+    "music.getTempo": "tere",
+    "music.instrumentBass": "(6) Reo Nguru",
+    "music.instrumentBassoon": "(14) Pūhoru",
+    "music.instrumentCello": "(8) Whiranui",
+    "music.instrumentChoir": "(15) Tira Waiata",
+    "music.instrumentClarinet": "(10) Rehu Matangi",
+    "music.instrumentElectricGuitar": "(5) Kitā Hiko",
+    "music.instrumentElectricPiano": "(2) Piana Hiko",
+    "music.instrumentFlute": "(12) Pūtōrino",
+    "music.instrumentGuitar": "(4) Kitā",
+    "music.instrumentMarimba": "(19) Pakakau",
+    "music.instrumentMusicBox": "(17) Pouaka Puoro",
+    "music.instrumentOrgan": "(3) Ōkena",
+    "music.instrumentPiano": "(1) Piana",
+    "music.instrumentPizzicato": "(7) Pizzicato",
+    "music.instrumentSaxophone": "(11) Pūtohe",
+    "music.instrumentSteelDrum": "(18) Pahū Rino",
+    "music.instrumentSynthLead": "(20) Kōtui Arataki",
+    "music.instrumentSynthPad": "(21) Kōtui Papatū",
+    "music.instrumentTrombone": "(9) Pūkumekume",
+    "music.instrumentVibraphone": "(16) Vibraphone",
+    "music.instrumentWoodenFlute": "(13) Pūtorino",
+    "music.midiSetInstrument": "tautuhia te taonga puoro ki te [INSTRUMENT]",
+    "music.playDrumForBeats": "whakatangihia te pahū [DRUM] mō ngā taki [BEATS] ",
+    "music.playNoteForBeats": "whakatangihia te oro [NOTE] mō ngā taki [BEATS]",
+    "music.restForBeats": "tatari mō ngā taki [BEATS]",
+    "music.setInstrument": "tautuhia te taonga puoro ki te [INSTRUMENT]",
+    "music.setTempo": "tautuhia te tere kia [TEMPO]",
+    "pen.categoryName": "Pene",
+    "pen.changeColorParam": "panonitia te [COLOR_PARAM] o te pene mā te [VALUE]",
+    "pen.changeHue": "panonitia te tae o te pene mā te [HUE]",
+    "pen.changeShade": "panonitia te kauruku o te pene mā te [SHADE]",
+    "pen.changeSize": "panonitia te nui o te pene mā te [SIZE]",
+    "pen.clear": "Kōmurutia te katoa",
+    "pen.colorMenu.brightness": "pīataata",
+    "pen.colorMenu.color": "tae",
+    "pen.colorMenu.saturation": "waiwai",
+    "pen.colorMenu.transparency": "pūatatata",
+    "pen.penDown": "pene ki raro",
+    "pen.penUp": "pene ki runga",
+    "pen.setColor": "tautuhia te tae o te pene kia [COLOR]",
+    "pen.setColorParam": "tautuhia te [COLOR_PARAM] o te pene kia [VALUE]",
+    "pen.setHue": "tautuhia te tae o te pene kia [HUE]",
+    "pen.setShade": "tautuhia te kauruku o te pene kia [SHADE]",
+    "pen.setSize": "tautuhia te nui o te pene kia [SIZE]",
+    "pen.stamp": "waitohu",
+    "speech.defaultWhenIHearValue": "me haere tātou",
+    "speech.extensionName": "Google Kōrero",
+    "speech.listenAndWait": "whakarongo, tatari hoki",
+    "speech.speechReporter": "kōrero",
+    "speech.whenIHear": "ina rongo ahau i [PHRASE]",
+    "text2speech.defaultTextToSpeak": "kia ora",
+    "text2speech.giant": "kākarepō",
+    "text2speech.kitten": "punua ngeru",
+    "text2speech.max": "mōrahi",
+    "text2speech.quinn": "kiri",
+    "text2speech.setLanguageBlock": "tautuhia te reo kia[LANGUAGE]",
+    "text2speech.setVoiceBlock": "tautuhia te reo ki [VOICE]",
+    "text2speech.speakAndWaitBlock": "kīia [WORDS]",
+    "text2speech.squeak": "koekoe",
+    "translate.categoryName": "Google Translate",
+    "translate.defaultTextToTranslate": "kia ora",
+    "translate.translateBlock": "whakawhitiwhitia [WORDS] ki te reo [LANGUAGE]",
+    "translate.viewerLanguage": "reo",
+    "videoSensing.categoryName": "He Tairongo Ataata",
+    "videoSensing.direction": "ahunga",
+    "videoSensing.motion": "nekenekehanga",
+    "videoSensing.off": "weto",
+    "videoSensing.on": "kā",
+    "videoSensing.onFlipped": "ina whakawhitia",
+    "videoSensing.setVideoTransparency": "tautuhia te pūatatata o te ataata kia [TRANSPARENCY]",
+    "videoSensing.sprite": "parehe",
+    "videoSensing.stage": "atamira",
+    "videoSensing.videoOn": "ataata [ATTRIBUTE] kei [SUBJECT]",
+    "videoSensing.videoToggle": "hurihia te ataata kia [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "ina te nekenekehanga o te ataata > [REFERENCE]",
+    "wedo2.getDistance": "tawhiti",
+    "wedo2.getTiltAngle": "koki tītaha [TILT_DIRECTION]",
+    "wedo2.isTilted": "kua tītaha ki [TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "whakaweto [MOTOR_ID]",
+    "wedo2.motorOn": "whakakā [MOTOR_ID]",
+    "wedo2.motorOnFor": "whakakā[MOTOR_ID] mō ngā hēkona [DURATION]",
+    "wedo2.playNoteFor": "whakatangihia te oro [NOTE] mō ngā hēkona[DURATION]",
+    "wedo2.setLightHue": "tautuhia te tae māmā ki te [HUE]",
+    "wedo2.setMotorDirection": "tautuhia te pūkaha [MOTOR_ID] kia huri [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "tautuhia te pūkaha [MOTOR_ID] kia [POWER] te kaha",
+    "wedo2.whenDistance": "ina tawhiti [OP] [REFERENCE]",
+    "wedo2.whenTilted": "ina tītaha [TILT_DIRECTION_ANY]"
 }

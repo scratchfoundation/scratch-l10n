@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Barva",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "nasičenost",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Svetlost",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ne skrbi, delamo na tem {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Kmalu ...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Delamo na tem {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Zapolni",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Videz",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Združi",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Razdruži",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Razveljavi",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Uveljavi",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "naprej",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "nazaj",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Spredaj",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Nazaj",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Več",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Velikost",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Širina radirke",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopiraj",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "prilepi",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Izbriši",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Zaobljeno",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Točkovno",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "debelina",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Obrni vodoravno",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Obrni navpično",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "polnitev",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "očrtano",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Pretvori v bitno sliko",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Pretvori v vektorsko sliko",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Obroba",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Čopič",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Radirka",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Zapolni",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Črta",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Krog",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Pravokotnik",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Preoblikuj",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Zaokrožen pravokotnik",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Izberi",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Besedilo",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "zamenjaj",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Barva",
+    "paint.paintEditor.saturation": "nasičenost",
+    "paint.paintEditor.brightness": "Svetlost",
+    "gui.comingSoon.message1": "Ne skrbi, delamo na tem {emoji}",
+    "gui.comingSoon.message2": "Kmalu ...",
+    "gui.comingSoon.message3": "Delamo na tem {emoji}",
+    "paint.paintEditor.fill": "Zapolni",
+    "paint.paintEditor.costume": "Videz",
+    "paint.paintEditor.group": "Združi",
+    "paint.paintEditor.ungroup": "Razdruži",
+    "paint.paintEditor.undo": "Razveljavi",
+    "paint.paintEditor.redo": "Uveljavi",
+    "paint.paintEditor.forward": "naprej",
+    "paint.paintEditor.backward": "nazaj",
+    "paint.paintEditor.front": "Spredaj",
+    "paint.paintEditor.back": "Nazaj",
+    "paint.paintEditor.more": "Več",
+    "paint.modeTools.brushSize": "Velikost",
+    "paint.modeTools.eraserSize": "Širina radirke",
+    "paint.modeTools.copy": "Kopiraj",
+    "paint.modeTools.paste": "prilepi",
+    "paint.modeTools.delete": "Izbriši",
+    "paint.modeTools.curved": "Zaobljeno",
+    "paint.modeTools.pointed": "Točkovno",
+    "paint.modeTools.thickness": "debelina",
+    "paint.modeTools.flipHorizontal": "Obrni vodoravno",
+    "paint.modeTools.flipVertical": "Obrni navpično",
+    "paint.modeTools.filled": "polnitev",
+    "paint.modeTools.outlined": "očrtano",
+    "paint.paintEditor.bitmap": "Pretvori v bitno sliko",
+    "paint.paintEditor.vector": "Pretvori v vektorsko sliko",
+    "paint.paintEditor.stroke": "Obroba",
+    "paint.brushMode.brush": "Čopič",
+    "paint.eraserMode.eraser": "Radirka",
+    "paint.fillMode.fill": "Zapolni",
+    "paint.lineMode.line": "Črta",
+    "paint.ovalMode.oval": "Krog",
+    "paint.rectMode.rect": "Pravokotnik",
+    "paint.reshapeMode.reshape": "Preoblikuj",
+    "paint.roundedRectMode.roundedRect": "Zaokrožen pravokotnik",
+    "paint.selectMode.select": "Izberi",
+    "paint.textMode.text": "Besedilo",
+    "paint.colorPicker.swap": "zamenjaj"
 }

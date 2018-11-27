@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Χρώμα",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Κορεσμός",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Φωτεινότητα",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Μην ανησυχείτε, το 'χουμε {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Έρχεται Σύντομα...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Το δουλεύουμε {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Γέμισμα",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Ενδυμασία",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Ομαδοποίηση",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Διαχωρισμός",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Αναίρεση",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Ακύρωση αναίρεσης",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Προς τα μπροστά",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Προς τα πίσω",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Εμπρός",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Πίσω",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Περισσότερα",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Μέγεθος",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Μέγεθος γόμας",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Αντιγραφή",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Επικόλληση",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Διαγραφή",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Καμπύλες",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Μυτερό",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Πάχος",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Οριζόντια Αναστροφή",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Κατακόρυφη Αναστροφή",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Γεμάτο",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "με περίγραμμα",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Μετατροπή σε Γραφικά Ψηφίδων (bitmap)",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Μετατροπή σε Διάνυσμα",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Περίγραμμα",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Πινέλο",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Γόμα",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Γέμισμα",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Γραμμή",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Κύκλος",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Ορθογώνιο",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Αλλαγή του σχήματος",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Στρογγυλεμένο Ορθογώνιο",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Επιλογή",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Κείμενο",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Αντιμετάθεση",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Χρώμα",
+    "paint.paintEditor.saturation": "Κορεσμός",
+    "paint.paintEditor.brightness": "Φωτεινότητα",
+    "gui.comingSoon.message1": "Μην ανησυχείτε, το 'χουμε {emoji}",
+    "gui.comingSoon.message2": "Έρχεται Σύντομα...",
+    "gui.comingSoon.message3": "Το δουλεύουμε {emoji}",
+    "paint.paintEditor.fill": "Γέμισμα",
+    "paint.paintEditor.costume": "Ενδυμασία",
+    "paint.paintEditor.group": "Ομαδοποίηση",
+    "paint.paintEditor.ungroup": "Διαχωρισμός",
+    "paint.paintEditor.undo": "Αναίρεση",
+    "paint.paintEditor.redo": "Ακύρωση αναίρεσης",
+    "paint.paintEditor.forward": "Προς τα μπροστά",
+    "paint.paintEditor.backward": "Προς τα πίσω",
+    "paint.paintEditor.front": "Εμπρός",
+    "paint.paintEditor.back": "Πίσω",
+    "paint.paintEditor.more": "Περισσότερα",
+    "paint.modeTools.brushSize": "Μέγεθος",
+    "paint.modeTools.eraserSize": "Μέγεθος γόμας",
+    "paint.modeTools.copy": "Αντιγραφή",
+    "paint.modeTools.paste": "Επικόλληση",
+    "paint.modeTools.delete": "Διαγραφή",
+    "paint.modeTools.curved": "Καμπύλες",
+    "paint.modeTools.pointed": "Μυτερό",
+    "paint.modeTools.thickness": "Πάχος",
+    "paint.modeTools.flipHorizontal": "Οριζόντια Αναστροφή",
+    "paint.modeTools.flipVertical": "Κατακόρυφη Αναστροφή",
+    "paint.modeTools.filled": "Γεμάτο",
+    "paint.modeTools.outlined": "με περίγραμμα",
+    "paint.paintEditor.bitmap": "Μετατροπή σε Γραφικά Ψηφίδων (bitmap)",
+    "paint.paintEditor.vector": "Μετατροπή σε Διάνυσμα",
+    "paint.paintEditor.stroke": "Περίγραμμα",
+    "paint.brushMode.brush": "Πινέλο",
+    "paint.eraserMode.eraser": "Γόμα",
+    "paint.fillMode.fill": "Γέμισμα",
+    "paint.lineMode.line": "Γραμμή",
+    "paint.ovalMode.oval": "Κύκλος",
+    "paint.rectMode.rect": "Ορθογώνιο",
+    "paint.reshapeMode.reshape": "Αλλαγή του σχήματος",
+    "paint.roundedRectMode.roundedRect": "Στρογγυλεμένο Ορθογώνιο",
+    "paint.selectMode.select": "Επιλογή",
+    "paint.textMode.text": "Κείμενο",
+    "paint.colorPicker.swap": "Αντιμετάθεση"
 }

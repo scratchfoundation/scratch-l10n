@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "spela ton [NOTE] i [TIME]sekunder",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "knapp [PORT] nedtryckt?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "ljusstyrka",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "avstånd",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "motor [PORT] position",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "motor [PORT] sätt kraft [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "motor [PORT] rotera medsols i [TIME] sekunder",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "motor [PORT] rotera motsols i [TIME] sekunder",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "om ljusstyrka < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "när knapp [PORT] trycks ned",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "när avstånd < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "någon",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "rensa skärmen",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Hej!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "visa [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "visa text [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "hoppa",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "rör sig",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "skaka",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "[BTN] knappen nedtryckt?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "luta [DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "av",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "på",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "luta riktning [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "någon",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "tillbaka",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "översta",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "vänster",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "höger",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "om knapp [BTN] trycks ned",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "om [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "När pin [PIN] är kopplad",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "om lutar [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Musik",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "ändra tempo med [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Bastrumma",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Bongo",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Cabasa",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Claves",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Stängd Hi-Hat",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Congas",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Koskälla",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Crashcymbal",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Cuica",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Guiro",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Handklapp",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Öppen Hi-Hat",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Kantslag",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Virveltrumma",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Tamburin",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Triangel",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Vibraslap",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Träblock",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "tempo",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Bas",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Fagott",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Cello",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Kör",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Klarinett",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Elgitarr",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Elpiano",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Flöjt",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Gitarr",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Marimba",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Speldosa",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Orgel",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Piano",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Pizzicato",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Saxofon",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Steel Drum",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Synth Lead",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Synth Pad",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Trombon",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Vibrafon",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Träflöjt",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "sätt instrument till [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "spela trumma [DRUM]i [BEATS] takter",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "spela not [NOTE]i [BEATS]takter",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "pausa i [BEATS]takter",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "sätt instrument till [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "sätt tempo till [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Penna",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "ändra pennans [COLOR_PARAM]med [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "ändra pennans färg med [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "ändra pennans skugga med [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "ändra pennans storlek med [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "radera allt",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "ljusstyrka",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "färg",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "mättnad",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "genomskinlighet",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "penna ned",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "penna upp",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "sätt pennans färg [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "sätt penna [COLOR_PARAM]till [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "sätt pennans färg till [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "sätt pennans skugga till [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "sätt pennans storlek [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "stämpla",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "kör igång",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Tal till text",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "lyssna och vänta",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "tala",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "när jag hör [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "hej",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "jätte",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "kattunge",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "sätt språk till [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "sätt röst till [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "säg [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "pip",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Översätta",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "hej",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "översätt [WORDS] till [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "språk",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "Video - Känna av",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "riktning",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "rörelse",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "av",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "på",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "vid förändring",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "sätt videotransparens till [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "sprajt",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "scen",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "video [ATTRIBUTE]på [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "sätt video till [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "när videorörelse > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "avstånd",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "lutningsvinkel [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "lutar [TILT_DIRECTION_ANY] ?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "stoppa [MOTOR_ID]",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "starta [MOTOR_ID]",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "starta [MOTOR_ID] i [DURATION] sekunder",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "spela ton [NOTE] i [DURATION] sekunder",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "sätt ljusets färg till [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "sätt [MOTOR_ID] riktning till [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "sätt kraften på [MOTOR_ID] till [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "om avstånd [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "om lutar [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "spela ton [NOTE] i [TIME]sekunder",
+    "ev3.buttonPressed": "knapp [PORT] nedtryckt?",
+    "ev3.getBrightness": "ljusstyrka",
+    "ev3.getDistance": "avstånd",
+    "ev3.getMotorPosition": "motor [PORT] position",
+    "ev3.motorSetPower": "motor [PORT] sätt kraft [POWER] %",
+    "ev3.motorTurnClockwise": "motor [PORT] rotera medsols i [TIME] sekunder",
+    "ev3.motorTurnCounterClockwise": "motor [PORT] rotera motsols i [TIME] sekunder",
+    "ev3.whenBrightnessLessThan": "om ljusstyrka < [DISTANCE]",
+    "ev3.whenButtonPressed": "när knapp [PORT] trycks ned",
+    "ev3.whenDistanceLessThan": "när avstånd < [DISTANCE]",
+    "microbit.buttonsMenu.any": "någon",
+    "microbit.clearDisplay": "rensa skärmen",
+    "microbit.defaultTextToDisplay": "Hej!",
+    "microbit.displaySymbol": "visa [MATRIX]",
+    "microbit.displayText": "visa text [TEXT]",
+    "microbit.gesturesMenu.jumped": "hoppa",
+    "microbit.gesturesMenu.moved": "rör sig",
+    "microbit.gesturesMenu.shaken": "skaka",
+    "microbit.isButtonPressed": "[BTN] knappen nedtryckt?",
+    "microbit.isTilted": "luta [DIRECTION]?",
+    "microbit.pinStateMenu.off": "av",
+    "microbit.pinStateMenu.on": "på",
+    "microbit.tiltAngle": "luta riktning [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "någon",
+    "microbit.tiltDirectionMenu.back": "tillbaka",
+    "microbit.tiltDirectionMenu.front": "översta",
+    "microbit.tiltDirectionMenu.left": "vänster",
+    "microbit.tiltDirectionMenu.right": "höger",
+    "microbit.whenButtonPressed": "om knapp [BTN] trycks ned",
+    "microbit.whenGesture": "om [GESTURE]",
+    "microbit.whenPinConnected": "När pin [PIN] är kopplad",
+    "microbit.whenTilted": "om lutar [DIRECTION]",
+    "music.categoryName": "Musik",
+    "music.changeTempo": "ändra tempo med [TEMPO]",
+    "music.drumBass": "(2) Bastrumma",
+    "music.drumBongo": "(13) Bongo",
+    "music.drumCabasa": "(15) Cabasa",
+    "music.drumClaves": "(9) Claves",
+    "music.drumClosedHiHat": "(6) Stängd Hi-Hat",
+    "music.drumConga": "(14) Congas",
+    "music.drumCowbell": "(11) Koskälla",
+    "music.drumCrashCymbal": "(4) Crashcymbal",
+    "music.drumCuica": "(18) Cuica",
+    "music.drumGuiro": "(16) Guiro",
+    "music.drumHandClap": "(8) Handklapp",
+    "music.drumOpenHiHat": "(5) Öppen Hi-Hat",
+    "music.drumSideStick": "(3) Kantslag",
+    "music.drumSnare": "(1) Virveltrumma",
+    "music.drumTambourine": "(7) Tamburin",
+    "music.drumTriangle": "(12) Triangel",
+    "music.drumVibraslap": "(17) Vibraslap",
+    "music.drumWoodBlock": "(10) Träblock",
+    "music.getTempo": "tempo",
+    "music.instrumentBass": "(6) Bas",
+    "music.instrumentBassoon": "(14) Fagott",
+    "music.instrumentCello": "(8) Cello",
+    "music.instrumentChoir": "(15) Kör",
+    "music.instrumentClarinet": "(10) Klarinett",
+    "music.instrumentElectricGuitar": "(5) Elgitarr",
+    "music.instrumentElectricPiano": "(2) Elpiano",
+    "music.instrumentFlute": "(12) Flöjt",
+    "music.instrumentGuitar": "(4) Gitarr",
+    "music.instrumentMarimba": "(19) Marimba",
+    "music.instrumentMusicBox": "(17) Speldosa",
+    "music.instrumentOrgan": "(3) Orgel",
+    "music.instrumentPiano": "(1) Piano",
+    "music.instrumentPizzicato": "(7) Pizzicato",
+    "music.instrumentSaxophone": "(11) Saxofon",
+    "music.instrumentSteelDrum": "(18) Steel Drum",
+    "music.instrumentSynthLead": "(20) Synth Lead",
+    "music.instrumentSynthPad": "(21) Synth Pad",
+    "music.instrumentTrombone": "(9) Trombon",
+    "music.instrumentVibraphone": "(16) Vibrafon",
+    "music.instrumentWoodenFlute": "(13) Träflöjt",
+    "music.midiSetInstrument": "sätt instrument till [INSTRUMENT]",
+    "music.playDrumForBeats": "spela trumma [DRUM]i [BEATS] takter",
+    "music.playNoteForBeats": "spela not [NOTE]i [BEATS]takter",
+    "music.restForBeats": "pausa i [BEATS]takter",
+    "music.setInstrument": "sätt instrument till [INSTRUMENT]",
+    "music.setTempo": "sätt tempo till [TEMPO]",
+    "pen.categoryName": "Penna",
+    "pen.changeColorParam": "ändra pennans [COLOR_PARAM]med [VALUE]",
+    "pen.changeHue": "ändra pennans färg med [HUE]",
+    "pen.changeShade": "ändra pennans skugga med [SHADE]",
+    "pen.changeSize": "ändra pennans storlek med [SIZE]",
+    "pen.clear": "radera allt",
+    "pen.colorMenu.brightness": "ljusstyrka",
+    "pen.colorMenu.color": "färg",
+    "pen.colorMenu.saturation": "mättnad",
+    "pen.colorMenu.transparency": "genomskinlighet",
+    "pen.penDown": "penna ned",
+    "pen.penUp": "penna upp",
+    "pen.setColor": "sätt pennans färg [COLOR]",
+    "pen.setColorParam": "sätt penna [COLOR_PARAM]till [VALUE]",
+    "pen.setHue": "sätt pennans färg till [HUE]",
+    "pen.setShade": "sätt pennans skugga till [SHADE]",
+    "pen.setSize": "sätt pennans storlek [SIZE]",
+    "pen.stamp": "stämpla",
+    "speech.defaultWhenIHearValue": "kör igång",
+    "speech.extensionName": "Tal till text",
+    "speech.listenAndWait": "lyssna och vänta",
+    "speech.speechReporter": "tala",
+    "speech.whenIHear": "när jag hör [PHRASE]",
+    "text2speech.defaultTextToSpeak": "hej",
+    "text2speech.giant": "jätte",
+    "text2speech.kitten": "kattunge",
+    "text2speech.max": "max",
+    "text2speech.quinn": "quinn",
+    "text2speech.setLanguageBlock": "sätt språk till [LANGUAGE]",
+    "text2speech.setVoiceBlock": "sätt röst till [VOICE]",
+    "text2speech.speakAndWaitBlock": "säg [WORDS]",
+    "text2speech.squeak": "pip",
+    "translate.categoryName": "Översätta",
+    "translate.defaultTextToTranslate": "hej",
+    "translate.translateBlock": "översätt [WORDS] till [LANGUAGE]",
+    "translate.viewerLanguage": "språk",
+    "videoSensing.categoryName": "Video - Känna av",
+    "videoSensing.direction": "riktning",
+    "videoSensing.motion": "rörelse",
+    "videoSensing.off": "av",
+    "videoSensing.on": "på",
+    "videoSensing.onFlipped": "vid förändring",
+    "videoSensing.setVideoTransparency": "sätt videotransparens till [TRANSPARENCY]",
+    "videoSensing.sprite": "sprajt",
+    "videoSensing.stage": "scen",
+    "videoSensing.videoOn": "video [ATTRIBUTE]på [SUBJECT]",
+    "videoSensing.videoToggle": "sätt video till [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "när videorörelse > [REFERENCE]",
+    "wedo2.getDistance": "avstånd",
+    "wedo2.getTiltAngle": "lutningsvinkel [TILT_DIRECTION]",
+    "wedo2.isTilted": "lutar [TILT_DIRECTION_ANY] ?",
+    "wedo2.motorOff": "stoppa [MOTOR_ID]",
+    "wedo2.motorOn": "starta [MOTOR_ID]",
+    "wedo2.motorOnFor": "starta [MOTOR_ID] i [DURATION] sekunder",
+    "wedo2.playNoteFor": "spela ton [NOTE] i [DURATION] sekunder",
+    "wedo2.setLightHue": "sätt ljusets färg till [HUE]",
+    "wedo2.setMotorDirection": "sätt [MOTOR_ID] riktning till [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "sätt kraften på [MOTOR_ID] till [POWER]",
+    "wedo2.whenDistance": "om avstånd [OP] [REFERENCE]",
+    "wedo2.whenTilted": "om lutar [TILT_DIRECTION_ANY]"
 }

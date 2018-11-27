@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "изведи ноту [NOTE] током [TIME] секунди",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "дугме [PORT] је притиснуто?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "осветљеност",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "растојање",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "мотор [PORT]: место",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "мотор [PORT]: подеси снагу [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "мотор [PORT]: окрени овако током [TIME] секунди",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "мотор [PORT]: окрени овако током [TIME] секунди",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "кад је осветљеност < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "када је дугме [PORT] притиснуто",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "када је растојање < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "било који",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "обриши екран",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Здраво!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "прикажи [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "прикажи текст [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "скок",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "померен",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "протресен",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "[BTN] дугме притиснуто?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "нагнуто [DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "искључено",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "укључено",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "угао нагиба [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "било који",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "назад",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "напред",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "лево",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "десно",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "када је [BTN] дугме притиснуто",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "када је [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "када је пин [PIN] повезан",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "када је нагнуто [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Музика",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "промени темпо за [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Бас бубањ",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Бонго",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Кабаса",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Клавес",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Затворена контра-чинела",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Конга",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Звоно за краве",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Креш чинела",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Куика",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Гиро",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Пљесак дланом",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Отворена контра-чинела",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Ивица добоша",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Добош",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Даире",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Троугао",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Вибраслап",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Дрвени блок",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "темпо",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Бас",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Фагот",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Виолончело",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Хор",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Кларинет",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Електрична гитара",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Електрични клавир",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Флаута",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Гитара",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Маримба",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Музичка кутија",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Оргуље",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Клавир",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Пицикато",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Саксофон",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Метални бубањ",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Синти вођица",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Синти педала",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Тромбон",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Вибрафон",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Дрвена флаута",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "нека инструмент буде [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "удараљка [DRUM] током [BEATS] откуцаја",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "свирај ноту [NOTE] током [BEATS] откуцаја",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "пауза [BEATS] откуцаја",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "нека инструмент буде [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "нека темпо буде [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Оловка",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "промени [COLOR_PARAM] оловке за [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "промени боју оловке за [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "промени сенку оловке за [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "промени дебљину оловке за [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "обриши све",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "осветљеност",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "боја",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "засићење",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "провидност",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "спусти оловку",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "подигни оловку",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "нека боја оловке буде [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "нека [COLOR_PARAM] оловке буде [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "нека боја оловке буде [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "нека сенка оловке буде [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "нека дебљина оловке буде [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "печат",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "хајдемо",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Говор у текст",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "слушај и чекај",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "говор",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "када чујем [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "здраво",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "џин",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "маца",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "макс",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "нека језик буде [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "нека глас буде [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "изговори [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "писак",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Преведи",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "здраво",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "преведи [WORDS] на [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "језик",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "Видео детекција",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "смер",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "кретање",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "искључено",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "укључено",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "измени укљученост",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "нека провидност видеа буде  [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "лик",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "позорница",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "видео [ATTRIBUTE] на [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "нека видео буде [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "када је кретање видеа > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "растојање",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "угао нагиба [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "нагнуто [TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "искључи [MOTOR_ID]",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "укључи [MOTOR_ID]",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "укључи [MOTOR_ID] током [DURATION] секунди",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "свирај ноту [NOTE] током [DURATION] секунди",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "подеси боју светлости на [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "подеси смер [MOTOR_ID] у [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "подеси снагу [MOTOR_ID] на [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "када је растојање [OP] од [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "када је нагнуто [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "изведи ноту [NOTE] током [TIME] секунди",
+    "ev3.buttonPressed": "дугме [PORT] је притиснуто?",
+    "ev3.getBrightness": "осветљеност",
+    "ev3.getDistance": "растојање",
+    "ev3.getMotorPosition": "мотор [PORT]: место",
+    "ev3.motorSetPower": "мотор [PORT]: подеси снагу [POWER] %",
+    "ev3.motorTurnClockwise": "мотор [PORT]: окрени овако током [TIME] секунди",
+    "ev3.motorTurnCounterClockwise": "мотор [PORT]: окрени овако током [TIME] секунди",
+    "ev3.whenBrightnessLessThan": "кад је осветљеност < [DISTANCE]",
+    "ev3.whenButtonPressed": "када је дугме [PORT] притиснуто",
+    "ev3.whenDistanceLessThan": "када је растојање < [DISTANCE]",
+    "microbit.buttonsMenu.any": "било који",
+    "microbit.clearDisplay": "обриши екран",
+    "microbit.defaultTextToDisplay": "Здраво!",
+    "microbit.displaySymbol": "прикажи [MATRIX]",
+    "microbit.displayText": "прикажи текст [TEXT]",
+    "microbit.gesturesMenu.jumped": "скок",
+    "microbit.gesturesMenu.moved": "померен",
+    "microbit.gesturesMenu.shaken": "протресен",
+    "microbit.isButtonPressed": "[BTN] дугме притиснуто?",
+    "microbit.isTilted": "нагнуто [DIRECTION]?",
+    "microbit.pinStateMenu.off": "искључено",
+    "microbit.pinStateMenu.on": "укључено",
+    "microbit.tiltAngle": "угао нагиба [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "било који",
+    "microbit.tiltDirectionMenu.back": "назад",
+    "microbit.tiltDirectionMenu.front": "напред",
+    "microbit.tiltDirectionMenu.left": "лево",
+    "microbit.tiltDirectionMenu.right": "десно",
+    "microbit.whenButtonPressed": "када је [BTN] дугме притиснуто",
+    "microbit.whenGesture": "када је [GESTURE]",
+    "microbit.whenPinConnected": "када је пин [PIN] повезан",
+    "microbit.whenTilted": "када је нагнуто [DIRECTION]",
+    "music.categoryName": "Музика",
+    "music.changeTempo": "промени темпо за [TEMPO]",
+    "music.drumBass": "(2) Бас бубањ",
+    "music.drumBongo": "(13) Бонго",
+    "music.drumCabasa": "(15) Кабаса",
+    "music.drumClaves": "(9) Клавес",
+    "music.drumClosedHiHat": "(6) Затворена контра-чинела",
+    "music.drumConga": "(14) Конга",
+    "music.drumCowbell": "(11) Звоно за краве",
+    "music.drumCrashCymbal": "(4) Креш чинела",
+    "music.drumCuica": "(18) Куика",
+    "music.drumGuiro": "(16) Гиро",
+    "music.drumHandClap": "(8) Пљесак дланом",
+    "music.drumOpenHiHat": "(5) Отворена контра-чинела",
+    "music.drumSideStick": "(3) Ивица добоша",
+    "music.drumSnare": "(1) Добош",
+    "music.drumTambourine": "(7) Даире",
+    "music.drumTriangle": "(12) Троугао",
+    "music.drumVibraslap": "(17) Вибраслап",
+    "music.drumWoodBlock": "(10) Дрвени блок",
+    "music.getTempo": "темпо",
+    "music.instrumentBass": "(6) Бас",
+    "music.instrumentBassoon": "(14) Фагот",
+    "music.instrumentCello": "(8) Виолончело",
+    "music.instrumentChoir": "(15) Хор",
+    "music.instrumentClarinet": "(10) Кларинет",
+    "music.instrumentElectricGuitar": "(5) Електрична гитара",
+    "music.instrumentElectricPiano": "(2) Електрични клавир",
+    "music.instrumentFlute": "(12) Флаута",
+    "music.instrumentGuitar": "(4) Гитара",
+    "music.instrumentMarimba": "(19) Маримба",
+    "music.instrumentMusicBox": "(17) Музичка кутија",
+    "music.instrumentOrgan": "(3) Оргуље",
+    "music.instrumentPiano": "(1) Клавир",
+    "music.instrumentPizzicato": "(7) Пицикато",
+    "music.instrumentSaxophone": "(11) Саксофон",
+    "music.instrumentSteelDrum": "(18) Метални бубањ",
+    "music.instrumentSynthLead": "(20) Синти вођица",
+    "music.instrumentSynthPad": "(21) Синти педала",
+    "music.instrumentTrombone": "(9) Тромбон",
+    "music.instrumentVibraphone": "(16) Вибрафон",
+    "music.instrumentWoodenFlute": "(13) Дрвена флаута",
+    "music.midiSetInstrument": "нека инструмент буде [INSTRUMENT]",
+    "music.playDrumForBeats": "удараљка [DRUM] током [BEATS] откуцаја",
+    "music.playNoteForBeats": "свирај ноту [NOTE] током [BEATS] откуцаја",
+    "music.restForBeats": "пауза [BEATS] откуцаја",
+    "music.setInstrument": "нека инструмент буде [INSTRUMENT]",
+    "music.setTempo": "нека темпо буде [TEMPO]",
+    "pen.categoryName": "Оловка",
+    "pen.changeColorParam": "промени [COLOR_PARAM] оловке за [VALUE]",
+    "pen.changeHue": "промени боју оловке за [HUE]",
+    "pen.changeShade": "промени сенку оловке за [SHADE]",
+    "pen.changeSize": "промени дебљину оловке за [SIZE]",
+    "pen.clear": "обриши све",
+    "pen.colorMenu.brightness": "осветљеност",
+    "pen.colorMenu.color": "боја",
+    "pen.colorMenu.saturation": "засићење",
+    "pen.colorMenu.transparency": "провидност",
+    "pen.penDown": "спусти оловку",
+    "pen.penUp": "подигни оловку",
+    "pen.setColor": "нека боја оловке буде [COLOR]",
+    "pen.setColorParam": "нека [COLOR_PARAM] оловке буде [VALUE]",
+    "pen.setHue": "нека боја оловке буде [HUE]",
+    "pen.setShade": "нека сенка оловке буде [SHADE]",
+    "pen.setSize": "нека дебљина оловке буде [SIZE]",
+    "pen.stamp": "печат",
+    "speech.defaultWhenIHearValue": "хајдемо",
+    "speech.extensionName": "Говор у текст",
+    "speech.listenAndWait": "слушај и чекај",
+    "speech.speechReporter": "говор",
+    "speech.whenIHear": "када чујем [PHRASE]",
+    "text2speech.defaultTextToSpeak": "здраво",
+    "text2speech.giant": "џин",
+    "text2speech.kitten": "маца",
+    "text2speech.max": "макс",
+    "text2speech.quinn": "quinn",
+    "text2speech.setLanguageBlock": "нека језик буде [LANGUAGE]",
+    "text2speech.setVoiceBlock": "нека глас буде [VOICE]",
+    "text2speech.speakAndWaitBlock": "изговори [WORDS]",
+    "text2speech.squeak": "писак",
+    "translate.categoryName": "Преведи",
+    "translate.defaultTextToTranslate": "здраво",
+    "translate.translateBlock": "преведи [WORDS] на [LANGUAGE]",
+    "translate.viewerLanguage": "језик",
+    "videoSensing.categoryName": "Видео детекција",
+    "videoSensing.direction": "смер",
+    "videoSensing.motion": "кретање",
+    "videoSensing.off": "искључено",
+    "videoSensing.on": "укључено",
+    "videoSensing.onFlipped": "измени укљученост",
+    "videoSensing.setVideoTransparency": "нека провидност видеа буде  [TRANSPARENCY]",
+    "videoSensing.sprite": "лик",
+    "videoSensing.stage": "позорница",
+    "videoSensing.videoOn": "видео [ATTRIBUTE] на [SUBJECT]",
+    "videoSensing.videoToggle": "нека видео буде [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "када је кретање видеа > [REFERENCE]",
+    "wedo2.getDistance": "растојање",
+    "wedo2.getTiltAngle": "угао нагиба [TILT_DIRECTION]",
+    "wedo2.isTilted": "нагнуто [TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "искључи [MOTOR_ID]",
+    "wedo2.motorOn": "укључи [MOTOR_ID]",
+    "wedo2.motorOnFor": "укључи [MOTOR_ID] током [DURATION] секунди",
+    "wedo2.playNoteFor": "свирај ноту [NOTE] током [DURATION] секунди",
+    "wedo2.setLightHue": "подеси боју светлости на [HUE]",
+    "wedo2.setMotorDirection": "подеси смер [MOTOR_ID] у [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "подеси снагу [MOTOR_ID] на [POWER]",
+    "wedo2.whenDistance": "када је растојање [OP] од [REFERENCE]",
+    "wedo2.whenTilted": "када је нагнуто [TILT_DIRECTION_ANY]"
 }

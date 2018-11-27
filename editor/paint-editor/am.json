@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "ቀለም",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "ርኬት",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "ብሩህነት",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "አትጨነቁ፣ የሰራንበት ነው {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "በቅርቡ ይደርሳል...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "የሰራንበት ነው {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "ምላት",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "ልብስ",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "ቡድን",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "በቡድን የተመደበውን በተን",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "መልስ",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "ድጋሜ አድርግ",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "ወደፊት",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "ወደኋላ",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "ፊት",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "ኋላ",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "ተጨማሪ",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "ልክ",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "የላጲስ ልክ",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "ቅዳ",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "ለጥፍ",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "አጥፋ",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "የታጠፈ",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "ሾለ",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "ውፍረት",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "በግድምታ አሽከርክር",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "በሽቅብዮሽ አሽከርክር",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "የተሟላ",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "የተቀረፀ",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "ወደ ንድፈ ቅንጣት ለውጥ",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "ወደ ቬክተር ለውጥ",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "ቅረፅ",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "ብሩሽ",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "ላጲስ",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "ምላት",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "መስመር",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "ክብ",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "አራት ማዕዘን",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "እንደገና ቅረጽ",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "የተድበለበለ አራት ማዕዘን",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "ምረጥ",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "ጽሀፍ",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "ለዋውጥ",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "ቀለም",
+    "paint.paintEditor.saturation": "ርኬት",
+    "paint.paintEditor.brightness": "ብሩህነት",
+    "gui.comingSoon.message1": "አትጨነቁ፣ የሰራንበት ነው {emoji}",
+    "gui.comingSoon.message2": "በቅርቡ ይደርሳል...",
+    "gui.comingSoon.message3": "የሰራንበት ነው {emoji}",
+    "paint.paintEditor.fill": "ምላት",
+    "paint.paintEditor.costume": "ልብስ",
+    "paint.paintEditor.group": "ቡድን",
+    "paint.paintEditor.ungroup": "በቡድን የተመደበውን በተን",
+    "paint.paintEditor.undo": "መልስ",
+    "paint.paintEditor.redo": "ድጋሜ አድርግ",
+    "paint.paintEditor.forward": "ወደፊት",
+    "paint.paintEditor.backward": "ወደኋላ",
+    "paint.paintEditor.front": "ፊት",
+    "paint.paintEditor.back": "ኋላ",
+    "paint.paintEditor.more": "ተጨማሪ",
+    "paint.modeTools.brushSize": "ልክ",
+    "paint.modeTools.eraserSize": "የላጲስ ልክ",
+    "paint.modeTools.copy": "ቅዳ",
+    "paint.modeTools.paste": "ለጥፍ",
+    "paint.modeTools.delete": "አጥፋ",
+    "paint.modeTools.curved": "የታጠፈ",
+    "paint.modeTools.pointed": "ሾለ",
+    "paint.modeTools.thickness": "ውፍረት",
+    "paint.modeTools.flipHorizontal": "በግድምታ አሽከርክር",
+    "paint.modeTools.flipVertical": "በሽቅብዮሽ አሽከርክር",
+    "paint.modeTools.filled": "የተሟላ",
+    "paint.modeTools.outlined": "የተቀረፀ",
+    "paint.paintEditor.bitmap": "ወደ ንድፈ ቅንጣት ለውጥ",
+    "paint.paintEditor.vector": "ወደ ቬክተር ለውጥ",
+    "paint.paintEditor.stroke": "ቅረፅ",
+    "paint.brushMode.brush": "ብሩሽ",
+    "paint.eraserMode.eraser": "ላጲስ",
+    "paint.fillMode.fill": "ምላት",
+    "paint.lineMode.line": "መስመር",
+    "paint.ovalMode.oval": "ክብ",
+    "paint.rectMode.rect": "አራት ማዕዘን",
+    "paint.reshapeMode.reshape": "እንደገና ቅረጽ",
+    "paint.roundedRectMode.roundedRect": "የተድበለበለ አራት ማዕዘን",
+    "paint.selectMode.select": "ምረጥ",
+    "paint.textMode.text": "ጽሀፍ",
+    "paint.colorPicker.swap": "ለዋውጥ"
 }

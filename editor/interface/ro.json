@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Rucsac",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Eroare încărcare rucsac",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Se încarcă...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Altele",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Rucsacul este gol",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Browser incompatibil",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Ne pare rău, dar Scratch 3.0 nu este compatibil cu Internet Explorer, Vivaldi, Opera sau Silk. Vă recomandăm să încercați un browser mai nou, ca Google Chrome, Mozilla Firefox sau Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Înapoi",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Pentru mai multe detalii, accesați {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Întrebări frecvente",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Fă o poză",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Încărcare cameră...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Este necesară permisiunea pentru folosirea camerei",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Refă poza",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Salvează",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Fă o poză",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Se încarcă...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Activează camera",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Tutoriale",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Închide",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Mai multe lucruri de încercat !",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Vezi mai multe",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Nu-ți face griji, ne ocupăm de asta {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "În curând...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Lucrăm la asta {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Nu s-au găsit dispozitive.",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Plasează dispozitivul în apropiere, apoi începe căutarea.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Apasă butonul de pe dispozitiv.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Începe căutarea",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Se caută...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Încearcă din nou",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Conectat",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Deconectează",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Mergi la Editor",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Se conectează...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Hopa! Ceva nu a mers bine.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Încearcă din nou",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Ajutor",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Nume dispozitiv",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Conectează",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Se caută dispozitive",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Nu s-au găsit dispozitive.",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Selectează dispozitivul tău din listă.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Actualizează",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Asigură-te că ai Scratch Link instalat și pornit",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Verifică dacă Bluetooth e activat",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Încearcă din nou",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Ajutor",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Mergi",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stop",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Hopa! Ceva nu a mers bine.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reîncarcă",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Creaza un bloc",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Adaugă o intrare",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "număr sau text",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Adaugă o intrare",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boolean",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Adaugă o etichetă",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Rulează fără împrospătarea ecranului",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Renunţă",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Direcția",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "de jur împrejur",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "stânga-dreapta",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "nu roti",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Adaugă o Extensie",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Cod",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Decoruri",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Costume",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Sunete",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Vizualizează un proiect Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Beta nu vor fi salvate.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Preview nu vor fi salvate.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Atenție, link-ul sau id-ul proiectului nu este corect.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Vizualizare",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Înapoi",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Pentru mai multe detalii, accesați {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Întrebări frecvente",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "În curând",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Caută",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Tot",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Creare blocuri ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Se încarcă personaje...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Se încarcă sunete...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Se încarcă extensii...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Adunăm pisici ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Îl pieptănăm pe Nano...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Îl umflăm pe Gobo ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Se pregătesc emoji-urile ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Se încarcă proiectul",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Materialele mele",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Clasele Mele",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Clasa mea",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Setările contului",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Iesire",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Vezi Comunitatea",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Utilizator",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Parola",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Logare",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Ai nevoie de ajutor?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "Selectare limbă",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Tutoriale",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Anulează ștergere personaj",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Anulează ștergere sunet",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Anulează ștergere costum",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Anulează ștergere",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Salvează acum",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Salveaza o copie",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Remixează",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nou",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Fișier",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Încarcă de pe calculator",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Salvează pe calculatorul tău",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Editează",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Dezactivează modul Turbo",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Activează modul Turbo",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Alatura-te Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Logare",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Oferă feedback",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Titlul proiectului se scrie aici",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Partajat",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Partajează",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Ajutor",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Înapoi",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(gol)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "lungime {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "afișaj normal",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "afișare in format mare",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "indicator",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Încearcă Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Bun venit în Scratch 3.0 Beta !",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Nu acum",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Incearca",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Vezi proiect 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Bun venit în Scratch 3.0 Beta !",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Lucrăm la următoarea generație de Scratch. Abia așteptăm să o încerci !",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Nu acum",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Încearcă ! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Vezi proiect 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Pentru mai multe detalii, accesează {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Întrebări frecvente",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Pentru toate personajele",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Doar pentru acest personaj",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Variabilă Cloud (stocată pe server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Această variabilă va fi accesibilă tuturor personajelor.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Renunţă",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stop",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Redare",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Se încarcă...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Salvează",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Re-înregistrare",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Înregistrare sunet",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Înregistrare",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Sunet",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Redare",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stop",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Decupează",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Salvează",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Anulează ultima modificare",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Refă acțiunea anulată",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Mai rapid",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Mai lent",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Ecou",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Mai puternic",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Mai încet",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Inversează",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Numele",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Personaj",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Arată",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Dimensiune",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "duplică",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "șterge",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exportă",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Alege un personaj",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Desenează",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Surpriză",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Încarcă personaj",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Comută scenă mare",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Comută scenă mică",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Intră în mod ecran complet",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Ieși din mod ecran complet",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Control ecran complet",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Alege un Decor",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Desenează",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Surpriză",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Încarcă fundal",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Scenă",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Decoruri",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Modul Turbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Browser-ul tău nu e compatibil cu WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Din păcate se pare că browser-ul sau computerul tău {webGlLink}. Această tehnologie este necesară pentru a rula Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "nu e compatibil cu WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Înapoi",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Pentru mai multe detalii, accesați {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Întrebări frecvente",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Alege un Decor",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Alege un costum",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Alege un Decor",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Alege un costum",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Desenează",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Surpriză",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Încarcă fundal",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Încarcă un costum",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Cameră",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Alege o extensie",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Introdu URL-ul extensiei",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Proiect Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Nu s-a putut înregistra",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Fișierul proiectului selectat nu a putut fi încărcat.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Alege un sunet",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Încarcă sunet",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Surpriză",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Înregistrare",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Alege un sunet",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Alege un personaj",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Alege un tutorial",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Se creează...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Se salvează...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miau",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "variabila mea",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Să începem",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Adaugă un bloc de mișcare",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Fă clic pe steagul verde pentru a porni",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Crează o animație care vorbește",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Adaugă blocuri Text în Vorbire",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Spune ceva",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Setează o voce",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Mișcă jur împrejur",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Adaugă un Decor",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Adaugă încă un personaj",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Cântă un cântec",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Schimbă culoarea",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Rotește jur împrejur",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Crește și Micșorează",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animează un joc de aventuri",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Spune ceva",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Alunecă ici-colo",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Ține scorul",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animează un nume",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Alege o literă ca personaj",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Redă un sunet când se face clic",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Alege o altă literă ca personaj",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Schimbă culoarea",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Alege încă o literă și fă-o să se rotească",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Alege o altă literă și fă-o să se mărească",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Creează Muzică",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Alege un instrument muzical ca personaj",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Redă un sunet când se face clic",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Creează un cântec",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Alege o tobă și fă un ritm",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Alege personajul Microfon (Microphone) și un beatbox aleator",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Creează un joc de îndemânare",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Alege un personaj",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Redă un sunet când se face clic",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Creează o variabilă pentru scor",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Mărește scorul când se dă clic pe personaj",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Mergi la o poziție aleatoare",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Schimbă culoarea",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Resetează scorul",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Creează un joc de urmărire",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Adaugă un Decor",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Adaugă un Personaj",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Deplasare stânga-dreapta cu tastele săgeți",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Deplasare sus-jos cu tastele săgeți",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Mai adaugă un personaj",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Deplasare aleatoare",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Pentru personajul Caracatiță (Octopus), redă sunet la atingerea cu celălalt personaj",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Creează o variabilă pentru scor",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Pentru personajul Caracatiță (Octopus), la atingere crește scorul",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Adaugă un Personaj",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Adaugă un Personaj",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Adaugă un Decor",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Modifică mărimea",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Alunecă ici-colo",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Înregistrează un sunet",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Fă-l să se răsucească",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Dispare și apare",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animează un personaj",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Folosește tastele săgeți",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Adaugă Efecte",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Muzica",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Cântă la instrumente și tobe",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Stilou",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Desenează cu personajele tale.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Detectare video",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Detectează mișcarea cu ajutorul camerei.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text în Vorbire",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Fă-ți proiectul să vorbească",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Traducere",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Tradu texte în alte limbi.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Conectează-ți proiectele cu lumea.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Conectare",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Construiește roboți interactivi și mai mult decât atât.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Conectare. Asigură-te că pin-ul dispozitivului EV3 este 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Construiește cu motorașe și senzori.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Conectare",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Tot",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Animale",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dans",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Efecte",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantezie",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Moda",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Mâncare",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Interioare",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Repetitive",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Muzica",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Note",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Exterioare",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Șabloane",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Oameni",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Percuție",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Spațiu",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sporturi",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Subacvatic",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voce",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Trăznite",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animatii",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Arta",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Jocuri",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Povesti",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Litere",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "directia",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "pozitia lui x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "pozitia lui y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "mărime",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "denumirea costumului",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "Numărul costumului",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "denumire fundal",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "Numărul fundalului",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "volum",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "ritmul",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "raspuns",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "putere",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "nume utilizator",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "anul",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "luna",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "data",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "ziua săptămânii",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "ora",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minutul",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "secunda",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "cronometru",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "decor{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costum{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Personaj{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Rucsac",
+    "gui.backpack.errorBackpack": "Eroare încărcare rucsac",
+    "gui.backpack.loadingBackpack": "Se încarcă...",
+    "gui.backpack.more": "Altele",
+    "gui.backpack.emptyBackpack": "Rucsacul este gol",
+    "gui.unsupportedBrowser.label": "Browser incompatibil",
+    "gui.unsupportedBrowser.description": "Ne pare rău, dar Scratch 3.0 nu este compatibil cu Internet Explorer, Vivaldi, Opera sau Silk. Vă recomandăm să încercați un browser mai nou, ca Google Chrome, Mozilla Firefox sau Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Înapoi",
+    "gui.unsupportedBrowser.previewfaq": "Pentru mai multe detalii, accesați {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Întrebări frecvente",
+    "gui.cameraModal.cameraModalTitle": "Fă o poză",
+    "gui.cameraModal.loadingCameraMessage": "Încărcare cameră...",
+    "gui.cameraModal.permissionRequest": "Este necesară permisiunea pentru folosirea camerei",
+    "gui.cameraModal.retakePhoto": "Refă poza",
+    "gui.cameraModal.save": "Salvează",
+    "gui.cameraModal.takePhoto": "Fă o poză",
+    "gui.cameraModal.loadingCaption": "Se încarcă...",
+    "gui.cameraModal.enableCameraCaption": "Activează camera",
+    "gui.cards.all-tutorials": "Tutoriale",
+    "gui.cards.close": "Închide",
+    "gui.cards.more-things-to-try": "Mai multe lucruri de încercat !",
+    "gui.cards.see-more": "Vezi mai multe",
+    "gui.comingSoon.message1": "Nu-ți face griji, ne ocupăm de asta {emoji}",
+    "gui.comingSoon.message2": "În curând...",
+    "gui.comingSoon.message3": "Lucrăm la asta {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Nu s-au găsit dispozitive.",
+    "gui.connection.auto-scanning.prescan": "Plasează dispozitivul în apropiere, apoi începe căutarea.",
+    "gui.connection.auto-scanning.pressbutton": "Apasă butonul de pe dispozitiv.",
+    "gui.connection.auto-scanning.start-search": "Începe căutarea",
+    "gui.connection.connecting-searchbutton": "Se caută...",
+    "gui.connection.auto-scanning.try-again": "Încearcă din nou",
+    "gui.connection.connected": "Conectat",
+    "gui.connection.disconnect": "Deconectează",
+    "gui.connection.go-to-editor": "Mergi la Editor",
+    "gui.connection.connecting-cancelbutton": "Se conectează...",
+    "gui.connection.error.errorMessage": "Hopa! Ceva nu a mers bine.",
+    "gui.connection.error.tryagainbutton": "Încearcă din nou",
+    "gui.connection.error.helpbutton": "Ajutor",
+    "gui.connection.peripheral-name-label": "Nume dispozitiv",
+    "gui.connection.connect": "Conectează",
+    "gui.connection.scanning.lookingforperipherals": "Se caută dispozitive",
+    "gui.connection.scanning.noPeripheralsFound": "Nu s-au găsit dispozitive.",
+    "gui.connection.scanning.instructions": "Selectează dispozitivul tău din listă.",
+    "gui.connection.search": "Actualizează",
+    "gui.connection.unavailable.installscratchlink": "Asigură-te că ai Scratch Link instalat și pornit",
+    "gui.connection.unavailable.enablebluetooth": "Verifică dacă Bluetooth e activat",
+    "gui.connection.unavailable.tryagainbutton": "Încearcă din nou",
+    "gui.connection.unavailable.helpbutton": "Ajutor",
+    "gui.controls.go": "Mergi",
+    "gui.controls.stop": "Stop",
+    "gui.crashMessage.label": "Hopa! Ceva nu a mers bine.",
+    "gui.crashMessage.description": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
+    "gui.crashMessage.reload": "Reîncarcă",
+    "gui.customProcedures.myblockModalTitle": "Creaza un bloc",
+    "gui.customProcedures.addAnInputNumberText": "Adaugă o intrare",
+    "gui.customProcedures.numberTextType": "număr sau text",
+    "gui.customProcedures.addAnInputBoolean": "Adaugă o intrare",
+    "gui.customProcedures.booleanType": "boolean",
+    "gui.customProcedures.addALabel": "Adaugă o etichetă",
+    "gui.customProcedures.runWithoutScreenRefresh": "Rulează fără împrospătarea ecranului",
+    "gui.customProcedures.cancel": "Renunţă",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Direcția",
+    "gui.directionPicker.rotationStyles.allAround": "de jur împrejur",
+    "gui.directionPicker.rotationStyles.leftRight": "stânga-dreapta",
+    "gui.directionPicker.rotationStyles.dontRotate": "nu roti",
+    "gui.gui.addExtension": "Adaugă o Extensie",
+    "gui.gui.codeTab": "Cod",
+    "gui.gui.backdropsTab": "Decoruri",
+    "gui.gui.costumesTab": "Costume",
+    "gui.gui.soundsTab": "Sunete",
+    "gui.importInfo.title": "Vizualizează un proiect Scratch 2.0",
+    "gui.importInfo.betamessage": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Beta nu vor fi salvate.",
+    "gui.importInfo.message": "Introdu un link al unui proiect Scratch partajat de tine. Modificările făcute în această versiune 3.0 Preview nu vor fi salvate.",
+    "gui.importInfo.invalidFormatError": "Atenție, link-ul sau id-ul proiectului nu este corect.",
+    "gui.importModal.viewproject": "Vizualizare",
+    "gui.importInfo.goback": "Înapoi",
+    "gui.importInfo.previewfaq": "Pentru mai multe detalii, accesați {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Întrebări frecvente",
+    "gui.extensionLibrary.comingSoon": "În curând",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Caută",
+    "gui.library.allTag": "Tot",
+    "gui.loader.message1": "Creare blocuri ...",
+    "gui.loader.message2": "Se încarcă personaje...",
+    "gui.loader.message3": "Se încarcă sunete...",
+    "gui.loader.message4": "Se încarcă extensii...",
+    "gui.loader.message5": "Adunăm pisici ...",
+    "gui.loader.message6": "Îl pieptănăm pe Nano...",
+    "gui.loader.message7": "Îl umflăm pe Gobo ...",
+    "gui.loader.message8": "Se pregătesc emoji-urile ...",
+    "gui.loader.headline": "Se încarcă proiectul",
+    "gui.accountMenu.profile": "Profil",
+    "gui.accountMenu.myStuff": "Materialele mele",
+    "gui.accountMenu.myClasses": "Clasele Mele",
+    "gui.accountMenu.myClass": "Clasa mea",
+    "gui.accountMenu.accountSettings": "Setările contului",
+    "gui.accountMenu.signOut": "Iesire",
+    "gui.authorInfo.byUser": "de {username}",
+    "gui.menuBar.seeCommunity": "Vezi Comunitatea",
+    "general.username": "Utilizator",
+    "general.password": "Parola",
+    "general.signIn": "Logare",
+    "login.needHelp": "Ai nevoie de ajutor?",
+    "gui.menuBar.LanguageSelector": "Selectare limbă",
+    "gui.menuBar.tutorialsLibrary": "Tutoriale",
+    "gui.menuBar.restoreSprite": "Anulează ștergere personaj",
+    "gui.menuBar.restoreSound": "Anulează ștergere sunet",
+    "gui.menuBar.restoreCostume": "Anulează ștergere costum",
+    "gui.menuBar.restore": "Anulează ștergere",
+    "gui.menuBar.saveNow": "Salvează acum",
+    "gui.menuBar.saveAsCopy": "Salveaza o copie",
+    "gui.menuBar.remix": "Remixează",
+    "gui.menuBar.new": "Nou",
+    "gui.menuBar.file": "Fișier",
+    "gui.menuBar.uploadFromComputer": "Încarcă de pe calculator",
+    "gui.menuBar.downloadToComputer": "Salvează pe calculatorul tău",
+    "gui.menuBar.edit": "Editează",
+    "gui.menuBar.turboModeOff": "Dezactivează modul Turbo",
+    "gui.menuBar.turboModeOn": "Activează modul Turbo",
+    "gui.menuBar.joinScratch": "Alatura-te Scratch",
+    "gui.menuBar.signIn": "Logare",
+    "gui.menuBar.giveFeedback": "Oferă feedback",
+    "gui.gui.projectTitlePlaceholder": "Titlul proiectului se scrie aici",
+    "gui.menuBar.isShared": "Partajat",
+    "gui.menuBar.share": "Partajează",
+    "gui.modal.help": "Ajutor",
+    "gui.modal.back": "Înapoi",
+    "gui.monitor.listMonitor.empty": "(gol)",
+    "gui.monitor.listMonitor.listLength": "lungime {length}",
+    "gui.monitor.contextMenu.default": "afișaj normal",
+    "gui.monitor.contextMenu.large": "afișare in format mare",
+    "gui.monitor.contextMenu.slider": "indicator",
+    "gui.previewInfo.label": "Încearcă Scratch 3.0",
+    "gui.previewInfo.welcome": "Bun venit în Scratch 3.0 Beta !",
+    "gui.previewModal.notnowtooltip": "Nu acum",
+    "gui.previewModal.tryittooltip": "Incearca",
+    "gui.previewModal.viewprojecttooltip": "Vezi proiect 2.0",
+    "gui.previewInfo.betawelcome": "Bun venit în Scratch 3.0 Beta !",
+    "gui.previewInfo.invitation": "Lucrăm la următoarea generație de Scratch. Abia așteptăm să o încerci !",
+    "gui.previewInfo.notnow": "Nu acum",
+    "gui.previewModal.tryit": "Încearcă ! {caticon}",
+    "gui.previewModal.viewproject": "Vezi proiect 2.0",
+    "gui.previewInfo.previewfaq": "Pentru mai multe detalii, accesează {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Întrebări frecvente",
+    "gui.gui.variableScopeOptionAllSprites": "Pentru toate personajele",
+    "gui.gui.variableScopeOptionSpriteOnly": "Doar pentru acest personaj",
+    "gui.gui.cloudVariableOption": "Variabilă Cloud (stocată pe server)",
+    "gui.gui.variablePromptAllSpritesMessage": "Această variabilă va fi accesibilă tuturor personajelor.",
+    "gui.prompt.cancel": "Renunţă",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stop",
+    "gui.playbackStep.playMsg": "Redare",
+    "gui.playbackStep.loadingMsg": "Se încarcă...",
+    "gui.playbackStep.saveMsg": "Salvează",
+    "gui.playbackStep.reRecordMsg": "Re-înregistrare",
+    "gui.recordModal.title": "Înregistrare sunet",
+    "gui.recordingStep.beginRecord": "Începe înregistrarea apăsând butonul de mai jos",
+    "gui.recordingStep.permission": "{arrow}Este necesară permisiunea pentru folosirea microfonului",
+    "gui.recordingStep.stop": "Oprește inregistrarea",
+    "gui.recordingStep.record": "Înregistrare",
+    "gui.soundEditor.sound": "Sunet",
+    "gui.soundEditor.play": "Redare",
+    "gui.soundEditor.stop": "Stop",
+    "gui.soundEditor.trim": "Decupează",
+    "gui.soundEditor.save": "Salvează",
+    "gui.soundEditor.undo": "Anulează ultima modificare",
+    "gui.soundEditor.redo": "Refă acțiunea anulată",
+    "gui.soundEditor.faster": "Mai rapid",
+    "gui.soundEditor.slower": "Mai lent",
+    "gui.soundEditor.echo": "Ecou",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Mai puternic",
+    "gui.soundEditor.softer": "Mai încet",
+    "gui.soundEditor.reverse": "Inversează",
+    "gui.SpriteInfo.spritePlaceholder": "Numele",
+    "gui.SpriteInfo.sprite": "Personaj",
+    "gui.SpriteInfo.show": "Arată",
+    "gui.SpriteInfo.size": "Dimensiune",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "duplică",
+    "gui.spriteSelectorItem.contextMenuDelete": "șterge",
+    "gui.spriteSelectorItem.contextMenuExport": "exportă",
+    "gui.spriteSelector.addSpriteFromLibrary": "Alege un personaj",
+    "gui.spriteSelector.addSpriteFromPaint": "Desenează",
+    "gui.spriteSelector.addSpriteFromSurprise": "Surpriză",
+    "gui.spriteSelector.addSpriteFromFile": "Încarcă personaj",
+    "gui.stageHeader.stageSizeLarge": "Comută scenă mare",
+    "gui.stageHeader.stageSizeSmall": "Comută scenă mică",
+    "gui.stageHeader.stageSizeFull": "Intră în mod ecran complet",
+    "gui.stageHeader.stageSizeUnFull": "Ieși din mod ecran complet",
+    "gui.stageHeader.fullscreenControl": "Control ecran complet",
+    "gui.spriteSelector.addBackdropFromLibrary": "Alege un Decor",
+    "gui.stageSelector.addBackdropFromPaint": "Desenează",
+    "gui.stageSelector.addBackdropFromSurprise": "Surpriză",
+    "gui.stageSelector.addBackdropFromFile": "Încarcă fundal",
+    "gui.stageSelector.stage": "Scenă",
+    "gui.stageSelector.backdrops": "Decoruri",
+    "gui.turboMode.active": "Modul Turbo",
+    "gui.webglModal.label": "Browser-ul tău nu e compatibil cu WebGL",
+    "gui.webglModal.description": "Din păcate se pare că browser-ul sau computerul tău {webGlLink}. Această tehnologie este necesară pentru a rula Scratch 3.0.",
+    "gui.webglModal.webgllink": "nu e compatibil cu WebGL",
+    "gui.webglModal.back": "Înapoi",
+    "gui.webglModal.previewfaq": "Pentru mai multe detalii, accesați {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Întrebări frecvente",
+    "gui.costumeLibrary.chooseABackdrop": "Alege un Decor",
+    "gui.costumeLibrary.chooseACostume": "Alege un costum",
+    "gui.costumeTab.addBackdropFromLibrary": "Alege un Decor",
+    "gui.costumeTab.addCostumeFromLibrary": "Alege un costum",
+    "gui.costumeTab.addBlankCostume": "Desenează",
+    "gui.costumeTab.addSurpriseCostume": "Surpriză",
+    "gui.costumeTab.addFileBackdrop": "Încarcă fundal",
+    "gui.costumeTab.addFileCostume": "Încarcă un costum",
+    "gui.costumeTab.addCameraCostume": "Cameră",
+    "gui.extensionLibrary.chooseAnExtension": "Alege o extensie",
+    "gui.extensionLibrary.extensionUrl": "Introdu URL-ul extensiei",
+    "gui.gui.defaultProjectTitle": "Proiect Scratch",
+    "gui.recordingStep.alertMsg": "Nu s-a putut înregistra",
+    "gui.projectLoader.loadError": "Fișierul proiectului selectat nu a putut fi încărcat.",
+    "gui.soundLibrary.chooseASound": "Alege un sunet",
+    "gui.soundTab.fileUploadSound": "Încarcă sunet",
+    "gui.soundTab.surpriseSound": "Surpriză",
+    "gui.soundTab.recordSound": "Înregistrare",
+    "gui.soundTab.addSoundFromLibrary": "Alege un sunet",
+    "gui.spriteLibrary.chooseASprite": "Alege un personaj",
+    "gui.tipsLibrary.tutorials": "Alege un tutorial",
+    "gui.alerts.createsuccess": "Creat cu succes",
+    "gui.alerts.creating": "Se creează...",
+    "gui.alerts.creatingError": "Proiectul nu a putut fi creat. Încercați din nou!",
+    "gui.alerts.savingError": "Proiectul nu a putut fi salvat. Încercați din nou!",
+    "gui.alerts.savesuccess": "Salvat cu succes",
+    "gui.alerts.saving": "Se salvează...",
+    "gui.defaultProject.meow": "Miau",
+    "gui.defaultProject.variable": "variabila mea",
+    "gui.howtos.intro-move-sayhello-hat.name": "Să începem",
+    "gui.howtos.intro-move.step_stepMove": "Adaugă un bloc de mișcare",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Fă clic pe steagul verde pentru a porni",
+    "gui.howtos.say-it-out-loud": "Crează o animație care vorbește",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Adaugă blocuri Text în Vorbire",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Spune ceva",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Setează o voce",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Mișcă jur împrejur",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Adaugă un Decor",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Adaugă încă un personaj",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Cântă un cântec",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Schimbă culoarea",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Rotește jur împrejur",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Crește și Micșorează",
+    "gui.howtos.cartoon-network": "Animează un joc de aventuri",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Spune ceva",
+    "gui.howtos.cartoon-network.step_CNglide": "Alunecă ici-colo",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Colectează obiecte",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Ține scorul",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Animează un nume",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Alege o literă ca personaj",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Redă un sunet când se face clic",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Alege o altă literă ca personaj",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Schimbă culoarea",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Alege încă o literă și fă-o să se rotească",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Alege o altă literă și fă-o să se mărească",
+    "gui.howtos.make-music.name": "Creează Muzică",
+    "gui.howtos.Make-Music.step_PickInstrument": "Alege un instrument muzical ca personaj",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Redă un sunet când se face clic",
+    "gui.howtos.Make-Music.step_MakeSong": "Creează un cântec",
+    "gui.howtos.make-music.step_MakeBeat": "Alege o tobă și fă un ritm",
+    "gui.howtos.make-music.step_MakeBeatBox": "Alege personajul Microfon (Microphone) și un beatbox aleator",
+    "gui.howtos.make-a-game.name": "Creează un joc de îndemânare",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Alege un personaj",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Redă un sunet când se face clic",
+    "gui.howtos.make-a-game.step_GameAddScore": "Creează o variabilă pentru scor",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Mărește scorul când se dă clic pe personaj",
+    "gui.howtos.make-a-game.step_Random": "Mergi la o poziție aleatoare",
+    "gui.howtos.make-music.step_GameChangeColor": "Schimbă culoarea",
+    "gui.howtos.make-music.step_ResetScore": "Resetează scorul",
+    "gui.howtos.make-a-chase-game.name": "Creează un joc de urmărire",
+    "gui.howtos.Chase-Game.step_BG": "Adaugă un Decor",
+    "gui.howtos.chase-game.step_AddOcto": "Adaugă un Personaj",
+    "gui.howtos.make-music.step_LeftRight": "Deplasare stânga-dreapta cu tastele săgeți",
+    "gui.howtos.Chase-Game.step_UpDown": "Deplasare sus-jos cu tastele săgeți",
+    "gui.howtos.Chase-Game.step_AddStar": "Mai adaugă un personaj",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Deplasare aleatoare",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Pentru personajul Caracatiță (Octopus), redă sunet la atingerea cu celălalt personaj",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Creează o variabilă pentru scor",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Pentru personajul Caracatiță (Octopus), la atingere crește scorul",
+    "gui.howtos.add-sprite.name": "Adaugă un Personaj",
+    "gui.howtos.add-sprite.step_addSprite": "Adaugă un Personaj",
+    "gui.howtos.add-a-backdrop.name": "Adaugă un Decor",
+    "gui.howtos.change-size.name": "Modifică mărimea",
+    "gui.howtos.glide-around.name": "Alunecă ici-colo",
+    "gui.howtos.record-a-sound.name": "Înregistrează un sunet",
+    "gui.howtos.spin-video.name": "Fă-l să se răsucească",
+    "gui.howtos.hide-and-show.name": "Dispare și apare",
+    "gui.howtos.switch-costume.name": "Animează un personaj",
+    "gui.howtos.move-around-with-arrow-keys.name": "Folosește tastele săgeți",
+    "gui.howtos.add-effects.name": "Adaugă Efecte",
+    "gui.extension.music.name": "Muzica",
+    "gui.extension.music.description": "Cântă la instrumente și tobe",
+    "gui.extension.pen.name": "Stilou",
+    "gui.extension.pen.description": "Desenează cu personajele tale.",
+    "gui.extension.videosensing.name": "Detectare video",
+    "gui.extension.videosensing.description": "Detectează mișcarea cu ajutorul camerei.",
+    "gui.extension.text2speech.name": "Text în Vorbire",
+    "gui.extension.text2speech.description": "Fă-ți proiectul să vorbească",
+    "gui.extension.translate.name": "Traducere",
+    "gui.extension.translate.description": "Tradu texte în alte limbi.",
+    "gui.extension.microbit.description": "Conectează-ți proiectele cu lumea.",
+    "gui.extension.microbit.connectingMessage": "Conectare",
+    "gui.extension.ev3.description": "Construiește roboți interactivi și mai mult decât atât.",
+    "gui.extension.ev3.connectingMessage": "Conectare. Asigură-te că pin-ul dispozitivului EV3 este 1234.",
+    "gui.extension.wedo2.description": "Construiește cu motorașe și senzori.",
+    "gui.extension.wedo2.connectingMessage": "Conectare",
+    "gui.libraryTags.all": "Tot",
+    "gui.libraryTags.animals": "Animale",
+    "gui.libraryTags.dance": "Dans",
+    "gui.libraryTags.effects": "Efecte",
+    "gui.libraryTags.fantasy": "Fantezie",
+    "gui.libraryTags.fashion": "Moda",
+    "gui.libraryTags.food": "Mâncare",
+    "gui.libraryTags.indoors": "Interioare",
+    "gui.libraryTags.loops": "Repetitive",
+    "gui.libraryTags.music": "Muzica",
+    "gui.libraryTags.notes": "Note",
+    "gui.libraryTags.outdoors": "Exterioare",
+    "gui.libraryTags.patterns": "Șabloane",
+    "gui.libraryTags.people": "Oameni",
+    "gui.libraryTags.percussion": "Percuție",
+    "gui.libraryTags.space": "Spațiu",
+    "gui.libraryTags.sports": "Sporturi",
+    "gui.libraryTags.underwater": "Subacvatic",
+    "gui.libraryTags.voice": "Voce",
+    "gui.libraryTags.wacky": "Trăznite",
+    "gui.libraryTags.animation": "Animatii",
+    "gui.libraryTags.art": "Arta",
+    "gui.libraryTags.games": "Jocuri",
+    "gui.libraryTags.stories": "Povesti",
+    "gui.libraryTags.letters": "Litere",
+    "gui.opcodeLabels.direction": "directia",
+    "gui.opcodeLabels.xposition": "pozitia lui x",
+    "gui.opcodeLabels.yposition": "pozitia lui y",
+    "gui.opcodeLabels.size": "mărime",
+    "gui.opcodeLabels.costumename": "denumirea costumului",
+    "gui.opcodeLabels.costumenumber": "Numărul costumului",
+    "gui.opcodeLabels.backdropname": "denumire fundal",
+    "gui.opcodeLabels.backdropnumber": "Numărul fundalului",
+    "gui.opcodeLabels.volume": "volum",
+    "gui.opcodeLabels.tempo": "ritmul",
+    "gui.opcodeLabels.answer": "raspuns",
+    "gui.opcodeLabels.loudness": "putere",
+    "gui.opcodeLabels.username": "nume utilizator",
+    "gui.opcodeLabels.year": "anul",
+    "gui.opcodeLabels.month": "luna",
+    "gui.opcodeLabels.date": "data",
+    "gui.opcodeLabels.dayofweek": "ziua săptămânii",
+    "gui.opcodeLabels.hour": "ora",
+    "gui.opcodeLabels.minute": "minutul",
+    "gui.opcodeLabels.second": "secunda",
+    "gui.opcodeLabels.timer": "cronometru",
+    "gui.sharedMessages.backdrop": "decor{index}",
+    "gui.sharedMessages.costume": "costum{index}",
+    "gui.sharedMessages.sprite": "Personaj{index}",
+    "gui.sharedMessages.pop": "pop"
 }

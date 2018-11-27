@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Spalva",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Sodrumas",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Šviesumas",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ramybės, mes šį bei tą tobuliname {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Netrukus...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Šį bei tą tobuliname {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Užpildymas",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kaukė",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grupuoti",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Išgrupuoti",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Atšaukti",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Grąžinti",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Persiųsti",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Į galą",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Į priekį",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Atgal",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Daugiau",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Dydis",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Trintuko dydis",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopijuoti",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Įklijuoti",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Šalinti",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Kreivinti",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Punktyrinė",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Storis",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Apversti horizontaliai",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Apversti vertikaliai",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Užpildyta",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Su kontūru",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Keisti į piešinį taškais",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Keisti į piešinį linijomis",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Kontūrai",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Teptukas",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Trintukas",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Užpildyti",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Linija",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Apskritimas",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Stačiakampis",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Pakeisti formą",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Užapvalintas stačiakampis",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Pažymėti",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Tekstas",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Apkeisti",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Spalva",
+    "paint.paintEditor.saturation": "Sodrumas",
+    "paint.paintEditor.brightness": "Šviesumas",
+    "gui.comingSoon.message1": "Ramybės, mes šį bei tą tobuliname {emoji}",
+    "gui.comingSoon.message2": "Netrukus...",
+    "gui.comingSoon.message3": "Šį bei tą tobuliname {emoji}",
+    "paint.paintEditor.fill": "Užpildymas",
+    "paint.paintEditor.costume": "Kaukė",
+    "paint.paintEditor.group": "Grupuoti",
+    "paint.paintEditor.ungroup": "Išgrupuoti",
+    "paint.paintEditor.undo": "Atšaukti",
+    "paint.paintEditor.redo": "Grąžinti",
+    "paint.paintEditor.forward": "Persiųsti",
+    "paint.paintEditor.backward": "Į galą",
+    "paint.paintEditor.front": "Į priekį",
+    "paint.paintEditor.back": "Atgal",
+    "paint.paintEditor.more": "Daugiau",
+    "paint.modeTools.brushSize": "Dydis",
+    "paint.modeTools.eraserSize": "Trintuko dydis",
+    "paint.modeTools.copy": "Kopijuoti",
+    "paint.modeTools.paste": "Įklijuoti",
+    "paint.modeTools.delete": "Šalinti",
+    "paint.modeTools.curved": "Kreivinti",
+    "paint.modeTools.pointed": "Punktyrinė",
+    "paint.modeTools.thickness": "Storis",
+    "paint.modeTools.flipHorizontal": "Apversti horizontaliai",
+    "paint.modeTools.flipVertical": "Apversti vertikaliai",
+    "paint.modeTools.filled": "Užpildyta",
+    "paint.modeTools.outlined": "Su kontūru",
+    "paint.paintEditor.bitmap": "Keisti į piešinį taškais",
+    "paint.paintEditor.vector": "Keisti į piešinį linijomis",
+    "paint.paintEditor.stroke": "Kontūrai",
+    "paint.brushMode.brush": "Teptukas",
+    "paint.eraserMode.eraser": "Trintukas",
+    "paint.fillMode.fill": "Užpildyti",
+    "paint.lineMode.line": "Linija",
+    "paint.ovalMode.oval": "Apskritimas",
+    "paint.rectMode.rect": "Stačiakampis",
+    "paint.reshapeMode.reshape": "Pakeisti formą",
+    "paint.roundedRectMode.roundedRect": "Užapvalintas stačiakampis",
+    "paint.selectMode.select": "Pažymėti",
+    "paint.textMode.text": "Tekstas",
+    "paint.colorPicker.swap": "Apkeisti"
 }

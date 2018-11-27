@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Pīkau",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Kua raru te tāuta pīkau",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Kei te utaina...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Anō",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Kua kautahanga te Pīkau",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Kāore e tautokona te pūtirotiro",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Aroha mai, kāore i te tautokona e te Scratch 3.0 te Internet Explorer, Vivaldi rānei, Opera rānei, Silk rānei. Ko tā mātou tūtohunga kia huri ki tētahi pūtirotiro hou pērā ki te Google Chrome, Mozilla Firefox rānei, Microsoft Edge rānei.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Hoki atu",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Haere ki {previewFaqLink} ki te ako tonu.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "He Pātai Auau",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Tangohia tētahi Whakaahua",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Kei te utaina te Kāmera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Me whai whakaaetanga mātou i a koe kia whakamahia tō kāmera",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Tangohia anōtia te Whakaahua",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Tiakina",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Tangohia he Whakaahua",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Kei te utaina...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Whakaāheitia te Kāmera",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Ngā Akoranga",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Katia",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Ētahi mahinga kē kia whakamātauria!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Tirohia anōtia",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Kaua e māharahara, kei te ū tonu mātou {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Ākuanei kei konei...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Kei te hanga tonu mātou i tēnei {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Kāore i kitea te pūrere",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Whakatata mai tō pūrere, kātahi tīmatahia te rapu.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Panaia te pātene o tō pūrere.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Tīmatahia te Rapu",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Kei te rapu...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Whakamātauria anōtia",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Kua honoa",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Kua motukia",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Haere ki te Taupānga Whakatika",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Kei te hono...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Auē! Kua puta mai he raru.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Whakamātauria anōtia",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Āwhina",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Ingoa pūrere",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Honoa",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Kei te rapu i ngā pūrere",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Kāore i kitea te pūrere",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Tīpakongia tō pūrere i te rārangi kei runga nei.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Whakahoua",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Āta titiro mēnā kua tāutahia te Scratch Link, kua whakahaerehia hoki.",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Kātahi, Whakakā i a Nihokikorangi",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Whakamātauria anōtia",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Āwhina",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Haere",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Katia",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Auē! Kua puta mai he raru.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Aroha mai, ko te āhua nei kua hinga te Scratch. Kua tukuna atu he pūrongo mō tēnei iro ki te Scratch Team. Tēnā, whakahoungia te whārangi ki te whakamātau anō.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Whakahou",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Hangaia tētahi Paraka",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Tāpirihia tētahi tāuru",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "he nama, he kupu rānei",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Whakaurua tētahi tāuru",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boolean",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Tāpirihia tētahi kupu tapanga:",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Whakahaeretia, kāore he whakahounga o te mata",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Whakakore",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Ka pai",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Ahunga",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Huri Noa",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Mauī/Katau",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Kaua e takahuri",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Tāpirihia tētahi Torohanga",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Waehere",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Ngā Ārai Tuarongo",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Ngā Kākahu",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Ngā oro",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Tirohia tētahi Kaupapa Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Tāurutia he hononga ki tētahi o ngā kaupapa Scratch kua tuari kētia e koe. Kāore e tiakina ngā panoni e whakamahia ana i tēnei 3.0 Beta.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Tāurutia he hononga ki tētahi o ōu kaupapa Scratch. Kāore e tiakina ngā panoni e whakamahia ana i tēnei Tiro Wawe 3.0.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Auē! Ko te āhua nei, kāore i te tika taua ID, hononga rānei.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Tirohia:",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Hoki atu",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Haere ki {previewFaqLink} ki te ako tonu.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "He Pātai Auau",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Ākuanei kei konei",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Rapua",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Te Katoa",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Kei te waihanga i ngā paraka … ",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Kei te utaina ngā parehe ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Kei te utaina ngā oro …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Kei te utaina ngā torohanga ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Kei te āngia ngā ngeru …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Kei te whakawhiti i ngā nano ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Kei te koeketia ngā gobo...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Kei te whakarite i ngā ata pūāhua …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Kei te Utaina te Kaupapa",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Huanga",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Aku Mea",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Aku Akomanga",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Taku Akomanga",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Ngā tautuhinga pūkete",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Takiputa",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Tirohia te Hapori",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Tohu Tuakiri",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Kupu Hipa",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Takiuru",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "E Hia Āwhina Ana?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "kōwhiringa reo",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Ngā Akoranga",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Whakaora Parehe",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Whakaora Oro",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Whakaora Kākahu",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Whakaora",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Tiakina ināianei",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Tiakina hei tārua",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Whakarākeitia",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Hou",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Kōnae",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Utaina mai i tō rorohiko",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Tiakina ki tō rorohiko",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Whakatikaina",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Wetohia te Aratau Kapongao",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Whakakāngia te Aratau Kapongao",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Hono mai ki te Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Takiuru",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Tukua he Urupare",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Ingoa kaupapa ki konei",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Kua tuaritia",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Tuaritia",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Āwhina",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Hoki atu",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(kāore he mea kei roto)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "roanga {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "pānui māori",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "pānui rahi",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "rēreti",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Whakamātauria te Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Nau mai ki te Scratch 3.0 Beta!",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Kāore, mō nāianei",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Whakamātauria",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Tirohia Kaupapa 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Nau mai ki te Scratch 3.0 Beta!",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Kei te waihanga mātou i te putanga hou o Scratch. E hīkaka ana mātou, kia whakamātauria e koutou!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Kāore, mō nāianei",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Whakamātauria! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Tirohia Kaupapa 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Haere ki {previewFaqLink} ki te ako anō.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "He Pātai Auau",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Mō ngā parehe katoa",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Mō tēnei parehe anake",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Taurangi Raraunga Kapua (kei te tūmau)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ka wātea tēnei taurangi mō ngā parehe katoa.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Whakakore",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "Ka pai",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Katia",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Whakatangihia",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Kei te utaina...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Tiakina",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Hopukina anōtia",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Hopu Oro",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Tīmatahia te hopuoro mā te pāwhiri i te pātene kei raro nei",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Me whai whakaaetanga mātou i a koe kia whakamahia tō hopuoro",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Katia te hopuoro",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Rēkoata",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Oro",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Whakatangihia",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Katia",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Poroa",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Tiakina",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Wetekia",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Mahia anōtia",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Tere ake",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Pōturi ake",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Pāorooro",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Karetao",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Whakakaha i te oro",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Ririki",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Hurikōaro",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Ingoa",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Parehe",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Whakaaturia",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Rahi",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "tāruatia",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "mukua",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "kaweake",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Kōwhiria tētahi Parehe",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Peita",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Ohorere",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Tukuatu Parehe",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Panoni ki te atamira nui",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Panoni ki te atamira iti",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Panoni ki te aratau mata katoa",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Puta atu i te aratau mata katoa",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Whakatina Mata Katoa",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Kōwhiria tētahi Ārai Tuarongo",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Peita",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Ohorere",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Tukuatu Ārai Tuarongo",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Atamira",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Ngā Ārai Tuarongo",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Te Aratau Kapongao",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Kāore a WebGL i te tautokona e tō pūtirotiro",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Aroha mai, ko te āhua nei, he {webGlLink} nā tō rorohiko, pūtirotiro rānei. He herenga tērā kia taea ai te whakahaere i te Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "kāore e tautokona te WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Hoki atu",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Haere ki {previewFaqLink} ki te ako tonu.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "He Pātai Auau",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Kōwhiria tētahi Ārai Tuarongo",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Kōwhiria he Kākahu",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Kōwhiria tētahi Ārai Tuarongo",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Kōwhiria he Kākahu",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Peita",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Ohorere",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Tukuatu Ārai Tuarongo",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Tukuatu Kākahu",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kāmera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Kōwhiria tētahi Torohanga",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Tāurutia te URL mō te torohanga",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Kaupapa Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Kāore i taea te tīmata i te hopu oro",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Kāore i taea te uta i tēnā o ngā kōnae kaupapa.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Kōwhiria tētahi Oro",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Tukuatu oro",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Ohorere",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Rēkoata",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Kōwhiria tētahi Oro",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Kōwhiria tētahi Parehe",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Kōwhiria he Akoranga",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Kei te waihanga...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Kei te tiaki...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miao",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "taku taurangi",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Hei Tīmatanga",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Tāpirihia tetahi Paraka Neke me tētahi Paraka Kī",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Tāpirihia tētahi Paraka Haki Kākāriki, kātahi pāwhiritia te haki",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Kī Atu Tētahi Mea",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Tāpiritia he Ārai Tuarongo",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Panoni Tae",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Tāwhiowhio te Haere",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Kī Atu Tētahi Mea",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Wania Noatia",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Whakahākoritia tētahi Ingoa",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Kōwhiria tētahi Parehe Pū",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Whakatangihia Tētahi Oro Ina Pāwhiria",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Kōwhiria tētahi Parehe Pū anō",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Panoni tae",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Kōwhiria tētahi Pū, ā, Tukua kia Tāwhiowhio",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Kōwhiria tētahi pū, ā, tukuna kia tipu!",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Hanga Pūoro",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Kōwhiria tētahi Parehe Taonga Puoro",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Whakatangihia Oro Ina Pāwhiria",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Tito Waiata",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Kōwhiria tētahi Pahū, ā, Titoa tētahi Taki",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Kōwhiria te Parehe Hopuoro me te Pūrere Taki Whakaohorere",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Waihangatia tētahi Kēmu Pāwhiri",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Kōwhiria tētahi Parehe",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Whakatangihia Oro Ina Pāwhiria",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Waihangatia tētahi Taurangi Piro",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Ina Pāwhiritia, Whakapiki i ngā Piro ",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Haere ki tētahi tūnga matapōkere",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Panoni Tae",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Tautuhia anō ngā Piro",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Waihangatia tētahi Kēmu Whaiwhai",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Tāpiritia he Ārai Tuarongo",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Tāpiritia he Parehe",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Nekehia, Katau, Mauī rānei mā ngā Pātuhi Pere",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Nekehia ki Runga, ki Raro rānei mā ngā Pātuhi Pere",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Tāpirihia Tētahi Parehe Anō",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Nekeneke Matapōkere",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Mō te Parehe Wheke, Ina Pā atu, Whakatangihia te Oro",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Waihangatia tētahi Taurangi Piro",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Mō te Parehe Wheke, Ina Pā atu, Tāpirihia he Piro",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Tāpiritia he Parehe",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Tāpiritia he Parehe",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Tāpiritia he Ārai Tuarongo",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Panonitia te Nui",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Wania Noatia",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Hopu Tētahi Oro",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Tukuna kia Tāwhiowhio",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Huna me te Whakaatu",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Whakahākoritia tētahi Parehe",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Whakamahia ngā Pātuhi Pere",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Tāpiritia he Pānga",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Puoro",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Whakatangi i ngā tāonga puoro me ngā pahū.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pene",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Mā te parehe e tuhi.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "He Tairongo Ataata",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Mā te kāmera te mahi paerongo nekenekehanga.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Whakawhitiwhiti Reo Ā-tuhi",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Whakahuri ngā tuhinga ki ngā reo maha.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Honohonoa ō kaupapa ki te ao.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Kei te hono",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Hangaia he karetao tauwhitiwhiti, te aha rānei.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Kei te hono. Kia tika te tautuhi i te pine EV3 ki te 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Hanga me ngā pūkaha me ngā paerongo.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Kei te hono",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Te Katoa",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Ngā Kararehe",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Kanikani",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Ngā pānga",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Wawata",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Kākahu",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Kai",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Rō-whare",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Koromeke",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Puoro",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Tuhipoka",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "O Waho",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Tauira",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Tāngata",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Taonga papā",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Ātea",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Hākinakina",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Raro wai",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Reo",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Pukuhohe",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Hākoritanga",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Toi",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Ngā Kēmu",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Ngā Pakiwaitara",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Ngā reta",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "ahunga",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "tūnga x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "tūnga y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "rahi",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "ingoa kākahu",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "nama kākahu",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "ingoa ārai tuarongo",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "nama ārai tuarongo",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "kahaoro",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tere",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "whakautu",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "hoihoi",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "ingoa kaiwhakamahi",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "tau",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "marama",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "te rā",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "te rangi o te wiki",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "haora",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "miniti",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "hēkona",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "taima",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "ārai tuarongo{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "kākahu{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Parehe{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pakō",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Pīkau",
+    "gui.backpack.errorBackpack": "Kua raru te tāuta pīkau",
+    "gui.backpack.loadingBackpack": "Kei te utaina...",
+    "gui.backpack.more": "Anō",
+    "gui.backpack.emptyBackpack": "Kua kautahanga te Pīkau",
+    "gui.unsupportedBrowser.label": "Kāore e tautokona te pūtirotiro",
+    "gui.unsupportedBrowser.description": "Aroha mai, kāore i te tautokona e te Scratch 3.0 te Internet Explorer, Vivaldi rānei, Opera rānei, Silk rānei. Ko tā mātou tūtohunga kia huri ki tētahi pūtirotiro hou pērā ki te Google Chrome, Mozilla Firefox rānei, Microsoft Edge rānei.",
+    "gui.unsupportedBrowser.back": "Hoki atu",
+    "gui.unsupportedBrowser.previewfaq": "Haere ki {previewFaqLink} ki te ako tonu.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "He Pātai Auau",
+    "gui.cameraModal.cameraModalTitle": "Tangohia tētahi Whakaahua",
+    "gui.cameraModal.loadingCameraMessage": "Kei te utaina te Kāmera...",
+    "gui.cameraModal.permissionRequest": "Me whai whakaaetanga mātou i a koe kia whakamahia tō kāmera",
+    "gui.cameraModal.retakePhoto": "Tangohia anōtia te Whakaahua",
+    "gui.cameraModal.save": "Tiakina",
+    "gui.cameraModal.takePhoto": "Tangohia he Whakaahua",
+    "gui.cameraModal.loadingCaption": "Kei te utaina...",
+    "gui.cameraModal.enableCameraCaption": "Whakaāheitia te Kāmera",
+    "gui.cards.all-tutorials": "Ngā Akoranga",
+    "gui.cards.close": "Katia",
+    "gui.cards.more-things-to-try": "Ētahi mahinga kē kia whakamātauria!",
+    "gui.cards.see-more": "Tirohia anōtia",
+    "gui.comingSoon.message1": "Kaua e māharahara, kei te ū tonu mātou {emoji}",
+    "gui.comingSoon.message2": "Ākuanei kei konei...",
+    "gui.comingSoon.message3": "Kei te hanga tonu mātou i tēnei {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Kāore i kitea te pūrere",
+    "gui.connection.auto-scanning.prescan": "Whakatata mai tō pūrere, kātahi tīmatahia te rapu.",
+    "gui.connection.auto-scanning.pressbutton": "Panaia te pātene o tō pūrere.",
+    "gui.connection.auto-scanning.start-search": "Tīmatahia te Rapu",
+    "gui.connection.connecting-searchbutton": "Kei te rapu...",
+    "gui.connection.auto-scanning.try-again": "Whakamātauria anōtia",
+    "gui.connection.connected": "Kua honoa",
+    "gui.connection.disconnect": "Kua motukia",
+    "gui.connection.go-to-editor": "Haere ki te Taupānga Whakatika",
+    "gui.connection.connecting-cancelbutton": "Kei te hono...",
+    "gui.connection.error.errorMessage": "Auē! Kua puta mai he raru.",
+    "gui.connection.error.tryagainbutton": "Whakamātauria anōtia",
+    "gui.connection.error.helpbutton": "Āwhina",
+    "gui.connection.peripheral-name-label": "Ingoa pūrere",
+    "gui.connection.connect": "Honoa",
+    "gui.connection.scanning.lookingforperipherals": "Kei te rapu i ngā pūrere",
+    "gui.connection.scanning.noPeripheralsFound": "Kāore i kitea te pūrere",
+    "gui.connection.scanning.instructions": "Tīpakongia tō pūrere i te rārangi kei runga nei.",
+    "gui.connection.search": "Whakahoua",
+    "gui.connection.unavailable.installscratchlink": "Āta titiro mēnā kua tāutahia te Scratch Link, kua whakahaerehia hoki.",
+    "gui.connection.unavailable.enablebluetooth": "Kātahi, Whakakā i a Nihokikorangi",
+    "gui.connection.unavailable.tryagainbutton": "Whakamātauria anōtia",
+    "gui.connection.unavailable.helpbutton": "Āwhina",
+    "gui.controls.go": "Haere",
+    "gui.controls.stop": "Katia",
+    "gui.crashMessage.label": "Auē! Kua puta mai he raru.",
+    "gui.crashMessage.description": "Aroha mai, ko te āhua nei kua hinga te Scratch. Kua tukuna atu he pūrongo mō tēnei iro ki te Scratch Team. Tēnā, whakahoungia te whārangi ki te whakamātau anō.",
+    "gui.crashMessage.reload": "Whakahou",
+    "gui.customProcedures.myblockModalTitle": "Hangaia tētahi Paraka",
+    "gui.customProcedures.addAnInputNumberText": "Tāpirihia tētahi tāuru",
+    "gui.customProcedures.numberTextType": "he nama, he kupu rānei",
+    "gui.customProcedures.addAnInputBoolean": "Whakaurua tētahi tāuru",
+    "gui.customProcedures.booleanType": "boolean",
+    "gui.customProcedures.addALabel": "Tāpirihia tētahi kupu tapanga:",
+    "gui.customProcedures.runWithoutScreenRefresh": "Whakahaeretia, kāore he whakahounga o te mata",
+    "gui.customProcedures.cancel": "Whakakore",
+    "gui.customProcedures.ok": "Ka pai",
+    "gui.SpriteInfo.direction": "Ahunga",
+    "gui.directionPicker.rotationStyles.allAround": "Huri Noa",
+    "gui.directionPicker.rotationStyles.leftRight": "Mauī/Katau",
+    "gui.directionPicker.rotationStyles.dontRotate": "Kaua e takahuri",
+    "gui.gui.addExtension": "Tāpirihia tētahi Torohanga",
+    "gui.gui.codeTab": "Waehere",
+    "gui.gui.backdropsTab": "Ngā Ārai Tuarongo",
+    "gui.gui.costumesTab": "Ngā Kākahu",
+    "gui.gui.soundsTab": "Ngā oro",
+    "gui.importInfo.title": "Tirohia tētahi Kaupapa Scratch 2.0",
+    "gui.importInfo.betamessage": "Tāurutia he hononga ki tētahi o ngā kaupapa Scratch kua tuari kētia e koe. Kāore e tiakina ngā panoni e whakamahia ana i tēnei 3.0 Beta.",
+    "gui.importInfo.message": "Tāurutia he hononga ki tētahi o ōu kaupapa Scratch. Kāore e tiakina ngā panoni e whakamahia ana i tēnei Tiro Wawe 3.0.",
+    "gui.importInfo.invalidFormatError": "Auē! Ko te āhua nei, kāore i te tika taua ID, hononga rānei.",
+    "gui.importModal.viewproject": "Tirohia:",
+    "gui.importInfo.goback": "Hoki atu",
+    "gui.importInfo.previewfaq": "Haere ki {previewFaqLink} ki te ako tonu.",
+    "gui.importInfo.previewfaqlinktext": "He Pātai Auau",
+    "gui.extensionLibrary.comingSoon": "Ākuanei kei konei",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Rapua",
+    "gui.library.allTag": "Te Katoa",
+    "gui.loader.message1": "Kei te waihanga i ngā paraka … ",
+    "gui.loader.message2": "Kei te utaina ngā parehe ...",
+    "gui.loader.message3": "Kei te utaina ngā oro …",
+    "gui.loader.message4": "Kei te utaina ngā torohanga ...",
+    "gui.loader.message5": "Kei te āngia ngā ngeru …",
+    "gui.loader.message6": "Kei te whakawhiti i ngā nano ...",
+    "gui.loader.message7": "Kei te koeketia ngā gobo...",
+    "gui.loader.message8": "Kei te whakarite i ngā ata pūāhua …",
+    "gui.loader.headline": "Kei te Utaina te Kaupapa",
+    "gui.accountMenu.profile": "Huanga",
+    "gui.accountMenu.myStuff": "Aku Mea",
+    "gui.accountMenu.myClasses": "Aku Akomanga",
+    "gui.accountMenu.myClass": "Taku Akomanga",
+    "gui.accountMenu.accountSettings": "Ngā tautuhinga pūkete",
+    "gui.accountMenu.signOut": "Takiputa",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Tirohia te Hapori",
+    "general.username": "Tohu Tuakiri",
+    "general.password": "Kupu Hipa",
+    "general.signIn": "Takiuru",
+    "login.needHelp": "E Hia Āwhina Ana?",
+    "gui.menuBar.LanguageSelector": "kōwhiringa reo",
+    "gui.menuBar.tutorialsLibrary": "Ngā Akoranga",
+    "gui.menuBar.restoreSprite": "Whakaora Parehe",
+    "gui.menuBar.restoreSound": "Whakaora Oro",
+    "gui.menuBar.restoreCostume": "Whakaora Kākahu",
+    "gui.menuBar.restore": "Whakaora",
+    "gui.menuBar.saveNow": "Tiakina ināianei",
+    "gui.menuBar.saveAsCopy": "Tiakina hei tārua",
+    "gui.menuBar.remix": "Whakarākeitia",
+    "gui.menuBar.new": "Hou",
+    "gui.menuBar.file": "Kōnae",
+    "gui.menuBar.uploadFromComputer": "Utaina mai i tō rorohiko",
+    "gui.menuBar.downloadToComputer": "Tiakina ki tō rorohiko",
+    "gui.menuBar.edit": "Whakatikaina",
+    "gui.menuBar.turboModeOff": "Wetohia te Aratau Kapongao",
+    "gui.menuBar.turboModeOn": "Whakakāngia te Aratau Kapongao",
+    "gui.menuBar.joinScratch": "Hono mai ki te Scratch",
+    "gui.menuBar.signIn": "Takiuru",
+    "gui.menuBar.giveFeedback": "Tukua he Urupare",
+    "gui.gui.projectTitlePlaceholder": "Ingoa kaupapa ki konei",
+    "gui.menuBar.isShared": "Kua tuaritia",
+    "gui.menuBar.share": "Tuaritia",
+    "gui.modal.help": "Āwhina",
+    "gui.modal.back": "Hoki atu",
+    "gui.monitor.listMonitor.empty": "(kāore he mea kei roto)",
+    "gui.monitor.listMonitor.listLength": "roanga {length}",
+    "gui.monitor.contextMenu.default": "pānui māori",
+    "gui.monitor.contextMenu.large": "pānui rahi",
+    "gui.monitor.contextMenu.slider": "rēreti",
+    "gui.previewInfo.label": "Whakamātauria te Scratch 3.0",
+    "gui.previewInfo.welcome": "Nau mai ki te Scratch 3.0 Beta!",
+    "gui.previewModal.notnowtooltip": "Kāore, mō nāianei",
+    "gui.previewModal.tryittooltip": "Whakamātauria",
+    "gui.previewModal.viewprojecttooltip": "Tirohia Kaupapa 2.0",
+    "gui.previewInfo.betawelcome": "Nau mai ki te Scratch 3.0 Beta!",
+    "gui.previewInfo.invitation": "Kei te waihanga mātou i te putanga hou o Scratch. E hīkaka ana mātou, kia whakamātauria e koutou!",
+    "gui.previewInfo.notnow": "Kāore, mō nāianei",
+    "gui.previewModal.tryit": "Whakamātauria! {caticon}",
+    "gui.previewModal.viewproject": "Tirohia Kaupapa 2.0",
+    "gui.previewInfo.previewfaq": "Haere ki {previewFaqLink} ki te ako anō.",
+    "gui.previewInfo.previewfaqlinktext": "He Pātai Auau",
+    "gui.gui.variableScopeOptionAllSprites": "Mō ngā parehe katoa",
+    "gui.gui.variableScopeOptionSpriteOnly": "Mō tēnei parehe anake",
+    "gui.gui.cloudVariableOption": "Taurangi Raraunga Kapua (kei te tūmau)",
+    "gui.gui.variablePromptAllSpritesMessage": "Ka wātea tēnei taurangi mō ngā parehe katoa.",
+    "gui.prompt.cancel": "Whakakore",
+    "gui.prompt.ok": "Ka pai",
+    "gui.playbackStep.stopMsg": "Katia",
+    "gui.playbackStep.playMsg": "Whakatangihia",
+    "gui.playbackStep.loadingMsg": "Kei te utaina...",
+    "gui.playbackStep.saveMsg": "Tiakina",
+    "gui.playbackStep.reRecordMsg": "Hopukina anōtia",
+    "gui.recordModal.title": "Hopu Oro",
+    "gui.recordingStep.beginRecord": "Tīmatahia te hopuoro mā te pāwhiri i te pātene kei raro nei",
+    "gui.recordingStep.permission": "{arrow}Me whai whakaaetanga mātou i a koe kia whakamahia tō hopuoro",
+    "gui.recordingStep.stop": "Katia te hopuoro",
+    "gui.recordingStep.record": "Rēkoata",
+    "gui.soundEditor.sound": "Oro",
+    "gui.soundEditor.play": "Whakatangihia",
+    "gui.soundEditor.stop": "Katia",
+    "gui.soundEditor.trim": "Poroa",
+    "gui.soundEditor.save": "Tiakina",
+    "gui.soundEditor.undo": "Wetekia",
+    "gui.soundEditor.redo": "Mahia anōtia",
+    "gui.soundEditor.faster": "Tere ake",
+    "gui.soundEditor.slower": "Pōturi ake",
+    "gui.soundEditor.echo": "Pāorooro",
+    "gui.soundEditor.robot": "Karetao",
+    "gui.soundEditor.louder": "Whakakaha i te oro",
+    "gui.soundEditor.softer": "Ririki",
+    "gui.soundEditor.reverse": "Hurikōaro",
+    "gui.SpriteInfo.spritePlaceholder": "Ingoa",
+    "gui.SpriteInfo.sprite": "Parehe",
+    "gui.SpriteInfo.show": "Whakaaturia",
+    "gui.SpriteInfo.size": "Rahi",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "tāruatia",
+    "gui.spriteSelectorItem.contextMenuDelete": "mukua",
+    "gui.spriteSelectorItem.contextMenuExport": "kaweake",
+    "gui.spriteSelector.addSpriteFromLibrary": "Kōwhiria tētahi Parehe",
+    "gui.spriteSelector.addSpriteFromPaint": "Peita",
+    "gui.spriteSelector.addSpriteFromSurprise": "Ohorere",
+    "gui.spriteSelector.addSpriteFromFile": "Tukuatu Parehe",
+    "gui.stageHeader.stageSizeLarge": "Panoni ki te atamira nui",
+    "gui.stageHeader.stageSizeSmall": "Panoni ki te atamira iti",
+    "gui.stageHeader.stageSizeFull": "Panoni ki te aratau mata katoa",
+    "gui.stageHeader.stageSizeUnFull": "Puta atu i te aratau mata katoa",
+    "gui.stageHeader.fullscreenControl": "Whakatina Mata Katoa",
+    "gui.spriteSelector.addBackdropFromLibrary": "Kōwhiria tētahi Ārai Tuarongo",
+    "gui.stageSelector.addBackdropFromPaint": "Peita",
+    "gui.stageSelector.addBackdropFromSurprise": "Ohorere",
+    "gui.stageSelector.addBackdropFromFile": "Tukuatu Ārai Tuarongo",
+    "gui.stageSelector.stage": "Atamira",
+    "gui.stageSelector.backdrops": "Ngā Ārai Tuarongo",
+    "gui.turboMode.active": "Te Aratau Kapongao",
+    "gui.webglModal.label": "Kāore a WebGL i te tautokona e tō pūtirotiro",
+    "gui.webglModal.description": "Aroha mai, ko te āhua nei, he {webGlLink} nā tō rorohiko, pūtirotiro rānei. He herenga tērā kia taea ai te whakahaere i te Scratch 3.0.",
+    "gui.webglModal.webgllink": "kāore e tautokona te WebGL",
+    "gui.webglModal.back": "Hoki atu",
+    "gui.webglModal.previewfaq": "Haere ki {previewFaqLink} ki te ako tonu.",
+    "gui.webglModal.previewfaqlinktext": "He Pātai Auau",
+    "gui.costumeLibrary.chooseABackdrop": "Kōwhiria tētahi Ārai Tuarongo",
+    "gui.costumeLibrary.chooseACostume": "Kōwhiria he Kākahu",
+    "gui.costumeTab.addBackdropFromLibrary": "Kōwhiria tētahi Ārai Tuarongo",
+    "gui.costumeTab.addCostumeFromLibrary": "Kōwhiria he Kākahu",
+    "gui.costumeTab.addBlankCostume": "Peita",
+    "gui.costumeTab.addSurpriseCostume": "Ohorere",
+    "gui.costumeTab.addFileBackdrop": "Tukuatu Ārai Tuarongo",
+    "gui.costumeTab.addFileCostume": "Tukuatu Kākahu",
+    "gui.costumeTab.addCameraCostume": "Kāmera",
+    "gui.extensionLibrary.chooseAnExtension": "Kōwhiria tētahi Torohanga",
+    "gui.extensionLibrary.extensionUrl": "Tāurutia te URL mō te torohanga",
+    "gui.gui.defaultProjectTitle": "Kaupapa Scratch",
+    "gui.recordingStep.alertMsg": "Kāore i taea te tīmata i te hopu oro",
+    "gui.projectLoader.loadError": "Kāore i taea te uta i tēnā o ngā kōnae kaupapa.",
+    "gui.soundLibrary.chooseASound": "Kōwhiria tētahi Oro",
+    "gui.soundTab.fileUploadSound": "Tukuatu oro",
+    "gui.soundTab.surpriseSound": "Ohorere",
+    "gui.soundTab.recordSound": "Rēkoata",
+    "gui.soundTab.addSoundFromLibrary": "Kōwhiria tētahi Oro",
+    "gui.spriteLibrary.chooseASprite": "Kōwhiria tētahi Parehe",
+    "gui.tipsLibrary.tutorials": "Kōwhiria he Akoranga",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Kei te waihanga...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Kei te tiaki...",
+    "gui.defaultProject.meow": "Miao",
+    "gui.defaultProject.variable": "taku taurangi",
+    "gui.howtos.intro-move-sayhello-hat.name": "Hei Tīmatanga",
+    "gui.howtos.intro-move.step_stepMove": "Tāpirihia tetahi Paraka Neke me tētahi Paraka Kī",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Tāpirihia tētahi Paraka Haki Kākāriki, kātahi pāwhiritia te haki",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Kī Atu Tētahi Mea",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Tāpiritia he Ārai Tuarongo",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Panoni Tae",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Tāwhiowhio te Haere",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Kī Atu Tētahi Mea",
+    "gui.howtos.cartoon-network.step_CNglide": "Wania Noatia",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Keep Score",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Whakahākoritia tētahi Ingoa",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Kōwhiria tētahi Parehe Pū",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Whakatangihia Tētahi Oro Ina Pāwhiria",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Kōwhiria tētahi Parehe Pū anō",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Panoni tae",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Kōwhiria tētahi Pū, ā, Tukua kia Tāwhiowhio",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Kōwhiria tētahi pū, ā, tukuna kia tipu!",
+    "gui.howtos.make-music.name": "Hanga Pūoro",
+    "gui.howtos.Make-Music.step_PickInstrument": "Kōwhiria tētahi Parehe Taonga Puoro",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Whakatangihia Oro Ina Pāwhiria",
+    "gui.howtos.Make-Music.step_MakeSong": "Tito Waiata",
+    "gui.howtos.make-music.step_MakeBeat": "Kōwhiria tētahi Pahū, ā, Titoa tētahi Taki",
+    "gui.howtos.make-music.step_MakeBeatBox": "Kōwhiria te Parehe Hopuoro me te Pūrere Taki Whakaohorere",
+    "gui.howtos.make-a-game.name": "Waihangatia tētahi Kēmu Pāwhiri",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Kōwhiria tētahi Parehe",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Whakatangihia Oro Ina Pāwhiria",
+    "gui.howtos.make-a-game.step_GameAddScore": "Waihangatia tētahi Taurangi Piro",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Ina Pāwhiritia, Whakapiki i ngā Piro ",
+    "gui.howtos.make-a-game.step_Random": "Haere ki tētahi tūnga matapōkere",
+    "gui.howtos.make-music.step_GameChangeColor": "Panoni Tae",
+    "gui.howtos.make-music.step_ResetScore": "Tautuhia anō ngā Piro",
+    "gui.howtos.make-a-chase-game.name": "Waihangatia tētahi Kēmu Whaiwhai",
+    "gui.howtos.Chase-Game.step_BG": "Tāpiritia he Ārai Tuarongo",
+    "gui.howtos.chase-game.step_AddOcto": "Tāpiritia he Parehe",
+    "gui.howtos.make-music.step_LeftRight": "Nekehia, Katau, Mauī rānei mā ngā Pātuhi Pere",
+    "gui.howtos.Chase-Game.step_UpDown": "Nekehia ki Runga, ki Raro rānei mā ngā Pātuhi Pere",
+    "gui.howtos.Chase-Game.step_AddStar": "Tāpirihia Tētahi Parehe Anō",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Nekeneke Matapōkere",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Mō te Parehe Wheke, Ina Pā atu, Whakatangihia te Oro",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Waihangatia tētahi Taurangi Piro",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Mō te Parehe Wheke, Ina Pā atu, Tāpirihia he Piro",
+    "gui.howtos.add-sprite.name": "Tāpiritia he Parehe",
+    "gui.howtos.add-sprite.step_addSprite": "Tāpiritia he Parehe",
+    "gui.howtos.add-a-backdrop.name": "Tāpiritia he Ārai Tuarongo",
+    "gui.howtos.change-size.name": "Panonitia te Nui",
+    "gui.howtos.glide-around.name": "Wania Noatia",
+    "gui.howtos.record-a-sound.name": "Hopu Tētahi Oro",
+    "gui.howtos.spin-video.name": "Tukuna kia Tāwhiowhio",
+    "gui.howtos.hide-and-show.name": "Huna me te Whakaatu",
+    "gui.howtos.switch-costume.name": "Whakahākoritia tētahi Parehe",
+    "gui.howtos.move-around-with-arrow-keys.name": "Whakamahia ngā Pātuhi Pere",
+    "gui.howtos.add-effects.name": "Tāpiritia he Pānga",
+    "gui.extension.music.name": "Puoro",
+    "gui.extension.music.description": "Whakatangi i ngā tāonga puoro me ngā pahū.",
+    "gui.extension.pen.name": "Pene",
+    "gui.extension.pen.description": "Mā te parehe e tuhi.",
+    "gui.extension.videosensing.name": "He Tairongo Ataata",
+    "gui.extension.videosensing.description": "Mā te kāmera te mahi paerongo nekenekehanga.",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Whakawhitiwhiti Reo Ā-tuhi",
+    "gui.extension.translate.description": "Whakahuri ngā tuhinga ki ngā reo maha.",
+    "gui.extension.microbit.description": "Honohonoa ō kaupapa ki te ao.",
+    "gui.extension.microbit.connectingMessage": "Kei te hono",
+    "gui.extension.ev3.description": "Hangaia he karetao tauwhitiwhiti, te aha rānei.",
+    "gui.extension.ev3.connectingMessage": "Kei te hono. Kia tika te tautuhi i te pine EV3 ki te 1234.",
+    "gui.extension.wedo2.description": "Hanga me ngā pūkaha me ngā paerongo.",
+    "gui.extension.wedo2.connectingMessage": "Kei te hono",
+    "gui.libraryTags.all": "Te Katoa",
+    "gui.libraryTags.animals": "Ngā Kararehe",
+    "gui.libraryTags.dance": "Kanikani",
+    "gui.libraryTags.effects": "Ngā pānga",
+    "gui.libraryTags.fantasy": "Wawata",
+    "gui.libraryTags.fashion": "Kākahu",
+    "gui.libraryTags.food": "Kai",
+    "gui.libraryTags.indoors": "Rō-whare",
+    "gui.libraryTags.loops": "Koromeke",
+    "gui.libraryTags.music": "Puoro",
+    "gui.libraryTags.notes": "Tuhipoka",
+    "gui.libraryTags.outdoors": "O Waho",
+    "gui.libraryTags.patterns": "Tauira",
+    "gui.libraryTags.people": "Tāngata",
+    "gui.libraryTags.percussion": "Taonga papā",
+    "gui.libraryTags.space": "Ātea",
+    "gui.libraryTags.sports": "Hākinakina",
+    "gui.libraryTags.underwater": "Raro wai",
+    "gui.libraryTags.voice": "Reo",
+    "gui.libraryTags.wacky": "Pukuhohe",
+    "gui.libraryTags.animation": "Hākoritanga",
+    "gui.libraryTags.art": "Toi",
+    "gui.libraryTags.games": "Ngā Kēmu",
+    "gui.libraryTags.stories": "Ngā Pakiwaitara",
+    "gui.libraryTags.letters": "Ngā reta",
+    "gui.opcodeLabels.direction": "ahunga",
+    "gui.opcodeLabels.xposition": "tūnga x",
+    "gui.opcodeLabels.yposition": "tūnga y",
+    "gui.opcodeLabels.size": "rahi",
+    "gui.opcodeLabels.costumename": "ingoa kākahu",
+    "gui.opcodeLabels.costumenumber": "nama kākahu",
+    "gui.opcodeLabels.backdropname": "ingoa ārai tuarongo",
+    "gui.opcodeLabels.backdropnumber": "nama ārai tuarongo",
+    "gui.opcodeLabels.volume": "kahaoro",
+    "gui.opcodeLabels.tempo": "tere",
+    "gui.opcodeLabels.answer": "whakautu",
+    "gui.opcodeLabels.loudness": "hoihoi",
+    "gui.opcodeLabels.username": "ingoa kaiwhakamahi",
+    "gui.opcodeLabels.year": "tau",
+    "gui.opcodeLabels.month": "marama",
+    "gui.opcodeLabels.date": "te rā",
+    "gui.opcodeLabels.dayofweek": "te rangi o te wiki",
+    "gui.opcodeLabels.hour": "haora",
+    "gui.opcodeLabels.minute": "miniti",
+    "gui.opcodeLabels.second": "hēkona",
+    "gui.opcodeLabels.timer": "taima",
+    "gui.sharedMessages.backdrop": "ārai tuarongo{index}",
+    "gui.sharedMessages.costume": "kākahu{index}",
+    "gui.sharedMessages.sprite": "Parehe{index}",
+    "gui.sharedMessages.pop": "pakō"
 }

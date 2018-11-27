@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Warna",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Saturasi",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Keterangan",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Jangan khawatir, kami sedang mengerjakannya {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Akan Segera Datang",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Kami sedang mengerjakannya {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Isi",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kostum",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Kelompok",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Pisahkan",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Undo",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Ulangi",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Maju",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Mundur",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Depan",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Kembali",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Lebih",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Ukuran",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Ukuran penghapus",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Salin",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Tempel",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Hapus",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Bundar",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Tajam",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Thickness",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Balikkan Secara Horisontal",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Balikkan Secara Vertikal",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Filled",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Outlined",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Sesuaikan ke Bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Sesuaikan ke Vektor",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Garis besar",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Kuas",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Eraser",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Isi",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Garis",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Lingkaran",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Persegi panjang",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Bentuk ulang",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Rounded Rectangle",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Pilih",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Teks",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Swap",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Warna",
+    "paint.paintEditor.saturation": "Saturasi",
+    "paint.paintEditor.brightness": "Keterangan",
+    "gui.comingSoon.message1": "Jangan khawatir, kami sedang mengerjakannya {emoji}",
+    "gui.comingSoon.message2": "Akan Segera Datang",
+    "gui.comingSoon.message3": "Kami sedang mengerjakannya {emoji}",
+    "paint.paintEditor.fill": "Isi",
+    "paint.paintEditor.costume": "Kostum",
+    "paint.paintEditor.group": "Kelompok",
+    "paint.paintEditor.ungroup": "Pisahkan",
+    "paint.paintEditor.undo": "Undo",
+    "paint.paintEditor.redo": "Ulangi",
+    "paint.paintEditor.forward": "Maju",
+    "paint.paintEditor.backward": "Mundur",
+    "paint.paintEditor.front": "Depan",
+    "paint.paintEditor.back": "Kembali",
+    "paint.paintEditor.more": "Lebih",
+    "paint.modeTools.brushSize": "Ukuran",
+    "paint.modeTools.eraserSize": "Ukuran penghapus",
+    "paint.modeTools.copy": "Salin",
+    "paint.modeTools.paste": "Tempel",
+    "paint.modeTools.delete": "Hapus",
+    "paint.modeTools.curved": "Bundar",
+    "paint.modeTools.pointed": "Tajam",
+    "paint.modeTools.thickness": "Thickness",
+    "paint.modeTools.flipHorizontal": "Balikkan Secara Horisontal",
+    "paint.modeTools.flipVertical": "Balikkan Secara Vertikal",
+    "paint.modeTools.filled": "Filled",
+    "paint.modeTools.outlined": "Outlined",
+    "paint.paintEditor.bitmap": "Sesuaikan ke Bitmap",
+    "paint.paintEditor.vector": "Sesuaikan ke Vektor",
+    "paint.paintEditor.stroke": "Garis besar",
+    "paint.brushMode.brush": "Kuas",
+    "paint.eraserMode.eraser": "Eraser",
+    "paint.fillMode.fill": "Isi",
+    "paint.lineMode.line": "Garis",
+    "paint.ovalMode.oval": "Lingkaran",
+    "paint.rectMode.rect": "Persegi panjang",
+    "paint.reshapeMode.reshape": "Bentuk ulang",
+    "paint.roundedRectMode.roundedRect": "Rounded Rectangle",
+    "paint.selectMode.select": "Pilih",
+    "paint.textMode.text": "Teks",
+    "paint.colorPicker.swap": "Swap"
 }
