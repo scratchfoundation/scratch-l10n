@@ -12,7 +12,7 @@ const args = process.argv.slice(2);
 
 const usage = `
  Pull blocks translations from Transifex. Usage:
-   node sync_tx_blocks.js path
+   node tx-pull-blocks.js path
      path: where to put the downloaded json files
    NOTE: TX_TOKEN environment variable needs to be set with a Transifex API token. See
    the Localization page on the GUI wiki for information about setting up Transifex.

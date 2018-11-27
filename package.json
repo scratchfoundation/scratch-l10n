@@ -6,7 +6,7 @@
   "browser": "./src/index.js",
   "bin": {
     "build-i18n-src": "./scripts/build-i18n-src.js",
-    "sync-tx-src": "./scripts/sync_tx_src.js"
+    "tx-push-src": "./scripts/tx-push-src.js"
   },
   "scripts": {
     "build:data": "babel-node scripts/build-data",
@@ -15,17 +15,17 @@
     "lint:js": "eslint . --ext .js",
     "lint:json": "jshint -e .json www editor/blocks editor/extensions editor/interface editor/paint-editor",
     "lint": "npm run lint:js && npm run lint:json",
-    "sync:gui": "babel-node scripts/sync_tx_translations scratch-editor interface ./editor/interface/",
-    "sync:paint": "babel-node scripts/sync_tx_translations scratch-editor paint-editor ./editor/paint-editor/",
-    "sync:extensions": "babel-node scripts/sync_tx_translations scratch-editor extensions ./editor/extensions/",
-    "sync:blocks": "babel-node scripts/sync_tx_blocks ./editor/blocks/",
-    "sync:editor": "npm run sync:blocks && npm run sync:extensions && npm run sync:paint && npm run sync:gui",
+    "pull:interface": "babel-node scripts/tx-pull-translations scratch-editor interface ./editor/interface/",
+    "pull:paint": "babel-node scripts/tx-pull-translations scratch-editor paint-editor ./editor/paint-editor/",
+    "pull:extensions": "babel-node scripts/tx-pull-translations scratch-editor extensions ./editor/extensions/",
+    "pull:blocks": "babel-node scripts/tx-pull-blocks ./editor/blocks/",
+    "pull:editor": "npm run pull:blocks && npm run pull:extensions && npm run pull:paint && npm run pull:interface",
     "test": "npm run lint:js && npm run validate:editor && npm run build && npm run lint:json",
-    "validate:blocks": "babel-node scripts/validate_translations ./editor/blocks/",
-    "validate:extensions": "babel-node scripts/validate_translations ./editor/extensions/",
-    "validate:gui": "babel-node scripts/validate_translations ./editor/interface/",
-    "validate:paint": "babel-node scripts/validate_translations ./editor/paint-editor/",
-    "validate:editor": "npm run validate:blocks && npm run validate:extensions && npm run validate:gui && npm run validate:paint"
+    "validate:blocks": "babel-node scripts/validate-translations ./editor/blocks/",
+    "validate:extensions": "babel-node scripts/validate-translations ./editor/extensions/",
+    "validate:interface": "babel-node scripts/validate-translations ./editor/interface/",
+    "validate:paint": "babel-node scripts/validate-translations ./editor/paint-editor/",
+    "validate:editor": "npm run validate:blocks && npm run validate:extensions && npm run validate:interface && npm run validate:paint"
   },
   "repository": {
     "type": "git",

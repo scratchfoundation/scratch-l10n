@@ -15,8 +15,8 @@ const transifex = require('transifex');
 const args = process.argv.slice(2);
 
 const usage = `
-Sync English source strings with Transifex. Usage:
-  node sync_tx_src.js tx-project tx-resource english-json-file
+Push English source strings to Transifex. Usage:
+  node tx-push-src.js tx-project tx-resource english-json-file
       tx-project:        the project slug on transifex
       tx-resource:       the resource slug on transifex
       english-json-file: path to the en.json source

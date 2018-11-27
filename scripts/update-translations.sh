@@ -4,7 +4,7 @@
 
 git checkout master
 
-npm run sync:editor
+npm run pull:editor
 
 npm run test
 

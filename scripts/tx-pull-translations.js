@@ -12,7 +12,7 @@ const args = process.argv.slice(2);
 
 const usage = `
  Pull supported language translations from Transifex. Usage:
-   node sync_tx_translations.js tx-project tx-resource path
+   node tx-pull-translations.js tx-project tx-resource path
      tx-project: project on Transifex (e.g., scratch-editor)
      tx-resource: resource within the project (e.g., interface)
      path: where to put the downloaded json files
@@ -29,7 +29,7 @@ import fs from 'fs';
 import path from 'path';
 import transifex from 'transifex';
 import async from 'async';
-import {flattenJson, validateTranslations} from './tx_util.js';
+import {flattenJson, validateTranslations} from './tx-util.js';
 import locales, {localeMap} from '../src/supported-locales.js';
 
 // Globals
