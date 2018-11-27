@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "顏色",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "彩度",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "亮度",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "別擔心，我們在做囉 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "即將推出...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "努力趕工中 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "填滿",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "造型",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "建立群組",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "解散群組",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "復原",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "重做",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "上移一層",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "下移一層",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "移到最上層",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "移到最下層",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "更多",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "尺寸",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "擦子寬度",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "複製",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "貼上",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "刪除",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "圓弧",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "尖角",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "線條寬度",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "橫向翻轉",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "直向翻轉",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "填滿",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "外框",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "轉換成點陣圖",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "轉換成向量圖",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "外框",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "筆刷",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "擦子",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "填滿",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "線條",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "圓形",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "方形",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "重新塑形",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "圓角方形",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "選取",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "文字",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "交換",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "顏色",
+    "paint.paintEditor.saturation": "彩度",
+    "paint.paintEditor.brightness": "亮度",
+    "gui.comingSoon.message1": "別擔心，我們在做囉 {emoji}",
+    "gui.comingSoon.message2": "即將推出...",
+    "gui.comingSoon.message3": "努力趕工中 {emoji}",
+    "paint.paintEditor.fill": "填滿",
+    "paint.paintEditor.costume": "造型",
+    "paint.paintEditor.group": "建立群組",
+    "paint.paintEditor.ungroup": "解散群組",
+    "paint.paintEditor.undo": "復原",
+    "paint.paintEditor.redo": "重做",
+    "paint.paintEditor.forward": "上移一層",
+    "paint.paintEditor.backward": "下移一層",
+    "paint.paintEditor.front": "移到最上層",
+    "paint.paintEditor.back": "移到最下層",
+    "paint.paintEditor.more": "更多",
+    "paint.modeTools.brushSize": "尺寸",
+    "paint.modeTools.eraserSize": "擦子寬度",
+    "paint.modeTools.copy": "複製",
+    "paint.modeTools.paste": "貼上",
+    "paint.modeTools.delete": "刪除",
+    "paint.modeTools.curved": "圓弧",
+    "paint.modeTools.pointed": "尖角",
+    "paint.modeTools.thickness": "線條寬度",
+    "paint.modeTools.flipHorizontal": "橫向翻轉",
+    "paint.modeTools.flipVertical": "直向翻轉",
+    "paint.modeTools.filled": "填滿",
+    "paint.modeTools.outlined": "外框",
+    "paint.paintEditor.bitmap": "轉換成點陣圖",
+    "paint.paintEditor.vector": "轉換成向量圖",
+    "paint.paintEditor.stroke": "外框",
+    "paint.brushMode.brush": "筆刷",
+    "paint.eraserMode.eraser": "擦子",
+    "paint.fillMode.fill": "填滿",
+    "paint.lineMode.line": "線條",
+    "paint.ovalMode.oval": "圓形",
+    "paint.rectMode.rect": "方形",
+    "paint.reshapeMode.reshape": "重新塑形",
+    "paint.roundedRectMode.roundedRect": "圓角方形",
+    "paint.selectMode.select": "選取",
+    "paint.textMode.text": "文字",
+    "paint.colorPicker.swap": "交換"
 }

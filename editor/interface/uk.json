@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Перепід'єднання",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Сховок",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Збій завантаження сховку",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Завантаження",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Більше",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Сховок порожній",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Оглядач не підтримується",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Нам дуже шкода, але Scratch 3.0 не підтримує Internet Explorer, Opera або Silk. Радимо спробувати новий браузер, такий як Google Chrome, Mozilla Firefox або Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Назад",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Що запитують?",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Зробити фото",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Камера завантажується...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Вам потрібен дозвіл на користування камерою",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Перезняти фото",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Зберегти",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Зняти фото",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Завантаження",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Ввімкнути камеру",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Посібники",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Закрити",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Спробуй більше!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Дивитись ще",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Не хвилюйтесь, ми над цим {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Незабаром...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Ми над цим працюємо {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Пристроїв не знайдено",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Розмістіть пристрій поблизу, а потім розпочніть пошук.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Натисніть кнопку на своєму пристрої.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Розпочати пошук",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Пошук...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Спробуйте ще раз",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Під'єднано",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Роз'єднати",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "До Редактора",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Під'єднання...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "На жаль, щось пішло не так.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Спробуйте ще раз",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Допомога",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Ім'я пристрою",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Під'єднати",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Пошук пристроїв",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Пристроїв не знайдено",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Оберіть ваш пристрій зі списку",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Оновити",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Переконайтеся, що Scratch Link встановлено та запущено",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Перевірте, що Bluetooth увімкнено",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Спробуйте ще раз",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Допомога",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Виконати",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Зупинити",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Ой! Щось пішло не так.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Схоже на те, що в Скретчі, на жаль, трапилась аварія. Повідомлення про цей недолік автоматично надіслано до Команди розробників Скретчу. Оновіть сторінку, щоб спробувати ще раз.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Перезавантажити",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Створити блок",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Отримати",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "число або текст",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Отримувати",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "логічне значення",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Додати напис",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Виконання без оновлення екрану",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Скасувати",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Гаразд",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Напрям",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Навколо",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Зліва-направо",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Не обертати",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Додати розширення",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Код",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Тло",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Образи",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Звуки",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Переглянути проект 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Введіть посилання на один з ваших опублікованих проектів у Скретчі. Зміни, внесені в цій бета-версії 3.0, не будуть збережені.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Введіть посилання на один з ваших опублікованих проектів Scratch. Зміни, внесені в цій пробній версії 3.0, не будуть збережені.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Отакої! Посилання на проект або ідентифікатор виглядає не зовсім правильно.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Переглянути",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Назад",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Що запитують?",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Незабаром",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Необхідно",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Співпраця з",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Шукати",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Усі",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Створення блоків ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Завантаження спрайтів...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Завантаження звуків ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Завантаження розширень ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Випасання котів …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Передавання нано …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Надування гобо …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Готуємо емоджі ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Завантаження проекту",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Профіль",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Мої проекти",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Мої класи",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Мій клас",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Налаштування облікового запису",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Вийти",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "{username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Спільнота",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Ім'я користувача",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Пароль",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Увійти",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Потрібна допомога?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "вибір мови",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Посібники",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Відновити спрайт",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Відновити звук",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Відновити образ",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Відновити",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Зберегти негайно",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Зберегти як копію",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Ремікс",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Новий",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Файл",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Завантажити з вашого комп’ютера",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Вивантажити на ваш комп’ютер",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Правка",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Вимкнути турбо-режим",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Ввімкнути турбо-режим",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Приєднатись",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Увійти",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Зв'язатися з нами",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Тут назва проекту",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Опубліковане",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Поділитись",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Допомога",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Назад",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(порожньо)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "всього {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "з назвою",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "тільки дані",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "слайдер",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Спробуйте Скретч 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Вітаємо у бета-версії Scratch 3.0",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Не зараз",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Спробуйте це!",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Переглянути проект 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Вітаємо у бета-версії Scratch 3.0",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Ми працюємо над наступним поколінням Scratch. Ми раді, що ви випробуєте його!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Не зараз",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Спробувати! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Переглянути проект 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Що запитують?",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Для усіх спрайтів",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Тільки для цього спрайту",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "\"Хмарна\" змінна (зберігається на сервері)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ця змінна буде доступна для всіх спрайтів.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Скасувати",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "Гаразд",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Зупинити",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Відтворити",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Завантаження",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Зберегти",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Перезаписати",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Запис звуку",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Почніть запис, натиснувши кнопку нижче",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Нам потрібен ваш дозвіл на використання мікрофону",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Зупинити запис",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Записати",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Звук",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Відтворити",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Зупинити",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Обрізати",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Зберегти",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Скасувати",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Повернути",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Швидше",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Повільніше",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Відлуння",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Робот",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Голосніше",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Тихіше",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Обернути",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Назва",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Спрайт",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Показати",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Розмір",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "дублювати",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "вилучити",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "експорт",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Обрати спрайт",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Малювати",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Сюрприз",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Вивантажити спрайт",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Перемкнути на велику сцену",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Перемкнути на малу сцену",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Увімкнути повноекранний режим",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Вийти з повноекранного режиму",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Повноекранний режим",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Обрати тло",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Намалювати",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Сюрприз",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Вивантажити тло",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Сцена",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Тло",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Режим турбо",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Ваш оглядач не підтримує WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "На жаль, ваш оглядач або комп'ютер {webGlLink}. Ця технологія потрібна для запуску Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "не підтримує WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Назад",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Що запитують?",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Оберіть тло",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Обрати образ",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Обрати тло",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Обрати образ",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Малювати",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Сюрприз",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Вивантажити тло",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Вивантажити образ",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Камера",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Оберіть розширення",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Введи URL розширення",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Скретч-проект",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Не вдалось розпочати запис",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Не вдалося завантажити обраний файл проекту.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Оберіть звук",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Завантажити звуки",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Сюрприз",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Записати",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Обрати звук",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Оберіть спрайт",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Обрати посібник",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Створено успішно",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Створення...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Збережено успішно",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Збереження...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Няв",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "моя змінна",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Розпочати",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Додати блок руху",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Натисни Зелений прапор для старту",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Створити анімації, що говорять",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Додати блоки \"Текст у мову\"",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Скажи щось",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Встановити голос",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Рухатись навколо",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Додати тло",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Додати інший персонаж",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Виконати пісню",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Змінити колір",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Обертатися навколо",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Збільшити та зменшити",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Анімація у пригодницькій грі",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Обрати персонаж для показу",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Скажи щось",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Ковзати навколо",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Обрати об'єкт для переслідування",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Збирання об'єктів",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Створити змінну-лічильник",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Зберегти рахунок",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Поглиблений рівень: Змінити тло",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Анімувати ім'я",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Оберіть літеру-спрайт",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Відтворити звук по натиску",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Оберіть іншу літеру-спрайт",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Зміна кольору",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Оберіть спрайти для літер та обертайте їх",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Оберіть спрайти для літер та збільшіть їх",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Створити музику",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Обрати інструмент спрайту",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Відтворити звук по натиску",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Створити пісню",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Оберіть барабан і зробіть удар",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Обрати мікрофон для спрайту та створити бітбокс",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Зробіть ігри-натискання",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Обрати спрайт",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Відтворити звук по натиску",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Створити змінну-лічильник",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "При натисканні збільшити рахунок",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Перейти у випадкову позиціцю",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Змінити колір",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Скинути рахунок",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Зробіть ігри-переслідування",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Додати тло",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Додайте спрайт",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Рух праворуч-ліворуч клавішами зі стрілками",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Рух вгору-вниз клавішами зі стрілками",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Додати ще один спрайт",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Випадковий рух",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Спрайт \"Восьминіг\" відтворює звуки при торканні",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Створити змінну-лічильник",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Для спрайта Восьминіг торкання збільшує рахунок",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Додайте спрайт",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Додайте спрайт",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Додати тло",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Змінити розмір",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Ковзати навколо",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Запис звуку",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Змусити обертатись",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Сховати й показати",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Анімувати спрайт",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Використання клавіш-стрілок",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Додати ефекти",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Музика",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Грати на інструментах та барабанах.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Олівець",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Малювати за допомогою спрайтів.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Відеоспостереження",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Визначити рух за допомогою камери.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Текст у мову",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Розмови в ваших проектах",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Перекласти",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Переклад тексту на різні мови.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Під'єднати ваші проекти до навколишнього світу",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Під'єднання",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Створити інтерактивних роботів і більше.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Під'єднання. Переконайтеся, що пін на вашому EV3 встановлено на 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Працюємо з двигунами та сенсорами",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Під'єднання",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Усі",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Тварини",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Танцювальна музика",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Ефекти",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Фантазії",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Мода",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Їжа",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "У приміщенні",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Фрагменти",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Музика",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Примітки",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Поза приміщенням",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Візерунки",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Люди",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Перкусія",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Космос",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Спорт",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Під водою",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Голос",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Дивне",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Анімації",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Арт",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Ігри",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Історії",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Літери",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "напрям",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "значення x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "значення y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "розмір",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "ім’я образу",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "образ #",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "ім’я тла",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "тло #",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "гучність",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "темп",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "відповідь",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "гучність",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "користувач",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "рік",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "місяць",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "дата",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "день тижня",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "година",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "хвилина ",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "секунда",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "таймер",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "тло{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "образ{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Спрайт{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "поп",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Перепід'єднання",
+    "gui.backpack.header": "Сховок",
+    "gui.backpack.errorBackpack": "Збій завантаження сховку",
+    "gui.backpack.loadingBackpack": "Завантаження",
+    "gui.backpack.more": "Більше",
+    "gui.backpack.emptyBackpack": "Сховок порожній",
+    "gui.unsupportedBrowser.label": "Оглядач не підтримується",
+    "gui.unsupportedBrowser.description": "Нам дуже шкода, але Scratch 3.0 не підтримує Internet Explorer, Opera або Silk. Радимо спробувати новий браузер, такий як Google Chrome, Mozilla Firefox або Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Назад",
+    "gui.unsupportedBrowser.previewfaq": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Що запитують?",
+    "gui.cameraModal.cameraModalTitle": "Зробити фото",
+    "gui.cameraModal.loadingCameraMessage": "Камера завантажується...",
+    "gui.cameraModal.permissionRequest": "Вам потрібен дозвіл на користування камерою",
+    "gui.cameraModal.retakePhoto": "Перезняти фото",
+    "gui.cameraModal.save": "Зберегти",
+    "gui.cameraModal.takePhoto": "Зняти фото",
+    "gui.cameraModal.loadingCaption": "Завантаження",
+    "gui.cameraModal.enableCameraCaption": "Ввімкнути камеру",
+    "gui.cards.all-tutorials": "Посібники",
+    "gui.cards.close": "Закрити",
+    "gui.cards.more-things-to-try": "Спробуй більше!",
+    "gui.cards.see-more": "Дивитись ще",
+    "gui.comingSoon.message1": "Не хвилюйтесь, ми над цим {emoji}",
+    "gui.comingSoon.message2": "Незабаром...",
+    "gui.comingSoon.message3": "Ми над цим працюємо {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Пристроїв не знайдено",
+    "gui.connection.auto-scanning.prescan": "Розмістіть пристрій поблизу, а потім розпочніть пошук.",
+    "gui.connection.auto-scanning.pressbutton": "Натисніть кнопку на своєму пристрої.",
+    "gui.connection.auto-scanning.start-search": "Розпочати пошук",
+    "gui.connection.connecting-searchbutton": "Пошук...",
+    "gui.connection.auto-scanning.try-again": "Спробуйте ще раз",
+    "gui.connection.connected": "Під'єднано",
+    "gui.connection.disconnect": "Роз'єднати",
+    "gui.connection.go-to-editor": "До Редактора",
+    "gui.connection.connecting-cancelbutton": "Під'єднання...",
+    "gui.connection.error.errorMessage": "На жаль, щось пішло не так.",
+    "gui.connection.error.tryagainbutton": "Спробуйте ще раз",
+    "gui.connection.error.helpbutton": "Допомога",
+    "gui.connection.peripheral-name-label": "Ім'я пристрою",
+    "gui.connection.connect": "Під'єднати",
+    "gui.connection.scanning.lookingforperipherals": "Пошук пристроїв",
+    "gui.connection.scanning.noPeripheralsFound": "Пристроїв не знайдено",
+    "gui.connection.scanning.instructions": "Оберіть ваш пристрій зі списку",
+    "gui.connection.search": "Оновити",
+    "gui.connection.unavailable.installscratchlink": "Переконайтеся, що Scratch Link встановлено та запущено",
+    "gui.connection.unavailable.enablebluetooth": "Перевірте, що Bluetooth увімкнено",
+    "gui.connection.unavailable.tryagainbutton": "Спробуйте ще раз",
+    "gui.connection.unavailable.helpbutton": "Допомога",
+    "gui.controls.go": "Виконати",
+    "gui.controls.stop": "Зупинити",
+    "gui.crashMessage.label": "Ой! Щось пішло не так.",
+    "gui.crashMessage.description": "Схоже на те, що в Скретчі, на жаль, трапилась аварія. Повідомлення про цей недолік автоматично надіслано до Команди розробників Скретчу. Оновіть сторінку, щоб спробувати ще раз.",
+    "gui.crashMessage.reload": "Перезавантажити",
+    "gui.customProcedures.myblockModalTitle": "Створити блок",
+    "gui.customProcedures.addAnInputNumberText": "Отримати",
+    "gui.customProcedures.numberTextType": "число або текст",
+    "gui.customProcedures.addAnInputBoolean": "Отримувати",
+    "gui.customProcedures.booleanType": "логічне значення",
+    "gui.customProcedures.addALabel": "Додати напис",
+    "gui.customProcedures.runWithoutScreenRefresh": "Виконання без оновлення екрану",
+    "gui.customProcedures.cancel": "Скасувати",
+    "gui.customProcedures.ok": "Гаразд",
+    "gui.SpriteInfo.direction": "Напрям",
+    "gui.directionPicker.rotationStyles.allAround": "Навколо",
+    "gui.directionPicker.rotationStyles.leftRight": "Зліва-направо",
+    "gui.directionPicker.rotationStyles.dontRotate": "Не обертати",
+    "gui.gui.addExtension": "Додати розширення",
+    "gui.gui.codeTab": "Код",
+    "gui.gui.backdropsTab": "Тло",
+    "gui.gui.costumesTab": "Образи",
+    "gui.gui.soundsTab": "Звуки",
+    "gui.importInfo.title": "Переглянути проект 2.0",
+    "gui.importInfo.betamessage": "Введіть посилання на один з ваших опублікованих проектів у Скретчі. Зміни, внесені в цій бета-версії 3.0, не будуть збережені.",
+    "gui.importInfo.message": "Введіть посилання на один з ваших опублікованих проектів Scratch. Зміни, внесені в цій пробній версії 3.0, не будуть збережені.",
+    "gui.importInfo.invalidFormatError": "Отакої! Посилання на проект або ідентифікатор виглядає не зовсім правильно.",
+    "gui.importModal.viewproject": "Переглянути",
+    "gui.importInfo.goback": "Назад",
+    "gui.importInfo.previewfaq": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Що запитують?",
+    "gui.extensionLibrary.comingSoon": "Незабаром",
+    "gui.extensionLibrary.requires": "Необхідно",
+    "gui.extensionLibrary.collaboration": "Співпраця з",
+    "gui.library.filterPlaceholder": "Шукати",
+    "gui.library.allTag": "Усі",
+    "gui.loader.message1": "Створення блоків ...",
+    "gui.loader.message2": "Завантаження спрайтів...",
+    "gui.loader.message3": "Завантаження звуків ...",
+    "gui.loader.message4": "Завантаження розширень ...",
+    "gui.loader.message5": "Випасання котів …",
+    "gui.loader.message6": "Передавання нано …",
+    "gui.loader.message7": "Надування гобо …",
+    "gui.loader.message8": "Готуємо емоджі ...",
+    "gui.loader.headline": "Завантаження проекту",
+    "gui.accountMenu.profile": "Профіль",
+    "gui.accountMenu.myStuff": "Мої проекти",
+    "gui.accountMenu.myClasses": "Мої класи",
+    "gui.accountMenu.myClass": "Мій клас",
+    "gui.accountMenu.accountSettings": "Налаштування облікового запису",
+    "gui.accountMenu.signOut": "Вийти",
+    "gui.authorInfo.byUser": " {username}",
+    "gui.menuBar.seeCommunity": "Спільнота",
+    "general.username": "Ім'я користувача",
+    "general.password": "Пароль",
+    "general.signIn": "Увійти",
+    "login.needHelp": "Потрібна допомога?",
+    "gui.menuBar.LanguageSelector": "вибір мови",
+    "gui.menuBar.tutorialsLibrary": "Посібники",
+    "gui.menuBar.restoreSprite": "Відновити спрайт",
+    "gui.menuBar.restoreSound": "Відновити звук",
+    "gui.menuBar.restoreCostume": "Відновити образ",
+    "gui.menuBar.restore": "Відновити",
+    "gui.menuBar.saveNow": "Зберегти негайно",
+    "gui.menuBar.saveAsCopy": "Зберегти як копію",
+    "gui.menuBar.remix": "Ремікс",
+    "gui.menuBar.new": "Новий",
+    "gui.menuBar.file": "Файл",
+    "gui.menuBar.uploadFromComputer": "Завантажити з вашого комп’ютера",
+    "gui.menuBar.downloadToComputer": "Вивантажити на ваш комп’ютер",
+    "gui.menuBar.edit": "Правка",
+    "gui.menuBar.turboModeOff": "Вимкнути турбо-режим",
+    "gui.menuBar.turboModeOn": "Ввімкнути турбо-режим",
+    "gui.menuBar.joinScratch": "Приєднатись",
+    "gui.menuBar.signIn": "Увійти",
+    "gui.menuBar.giveFeedback": "Зв'язатися з нами",
+    "gui.gui.projectTitlePlaceholder": "Тут назва проекту",
+    "gui.menuBar.isShared": "Опубліковане",
+    "gui.menuBar.share": "Поділитись",
+    "gui.modal.help": "Допомога",
+    "gui.modal.back": "Назад",
+    "gui.monitor.listMonitor.empty": "(порожньо)",
+    "gui.monitor.listMonitor.listLength": "всього {length}",
+    "gui.monitor.contextMenu.default": "з назвою",
+    "gui.monitor.contextMenu.large": "тільки дані",
+    "gui.monitor.contextMenu.slider": "слайдер",
+    "gui.previewInfo.label": "Спробуйте Скретч 3.0",
+    "gui.previewInfo.welcome": "Вітаємо у бета-версії Scratch 3.0",
+    "gui.previewModal.notnowtooltip": "Не зараз",
+    "gui.previewModal.tryittooltip": "Спробуйте це!",
+    "gui.previewModal.viewprojecttooltip": "Переглянути проект 2.0",
+    "gui.previewInfo.betawelcome": "Вітаємо у бета-версії Scratch 3.0",
+    "gui.previewInfo.invitation": "Ми працюємо над наступним поколінням Scratch. Ми раді, що ви випробуєте його!",
+    "gui.previewInfo.notnow": "Не зараз",
+    "gui.previewModal.tryit": "Спробувати! {caticon}",
+    "gui.previewModal.viewproject": "Переглянути проект 2.0",
+    "gui.previewInfo.previewfaq": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Що запитують?",
+    "gui.gui.variableScopeOptionAllSprites": "Для усіх спрайтів",
+    "gui.gui.variableScopeOptionSpriteOnly": "Тільки для цього спрайту",
+    "gui.gui.cloudVariableOption": "\"Хмарна\" змінна (зберігається на сервері)",
+    "gui.gui.variablePromptAllSpritesMessage": "Ця змінна буде доступна для всіх спрайтів.",
+    "gui.prompt.cancel": "Скасувати",
+    "gui.prompt.ok": "Гаразд",
+    "gui.playbackStep.stopMsg": "Зупинити",
+    "gui.playbackStep.playMsg": "Відтворити",
+    "gui.playbackStep.loadingMsg": "Завантаження",
+    "gui.playbackStep.saveMsg": "Зберегти",
+    "gui.playbackStep.reRecordMsg": "Перезаписати",
+    "gui.recordModal.title": "Запис звуку",
+    "gui.recordingStep.beginRecord": "Почніть запис, натиснувши кнопку нижче",
+    "gui.recordingStep.permission": "{arrow}Нам потрібен ваш дозвіл на використання мікрофону",
+    "gui.recordingStep.stop": "Зупинити запис",
+    "gui.recordingStep.record": "Записати",
+    "gui.soundEditor.sound": "Звук",
+    "gui.soundEditor.play": "Відтворити",
+    "gui.soundEditor.stop": "Зупинити",
+    "gui.soundEditor.trim": "Обрізати",
+    "gui.soundEditor.save": "Зберегти",
+    "gui.soundEditor.undo": "Скасувати",
+    "gui.soundEditor.redo": "Повернути",
+    "gui.soundEditor.faster": "Швидше",
+    "gui.soundEditor.slower": "Повільніше",
+    "gui.soundEditor.echo": "Відлуння",
+    "gui.soundEditor.robot": "Робот",
+    "gui.soundEditor.louder": "Голосніше",
+    "gui.soundEditor.softer": "Тихіше",
+    "gui.soundEditor.reverse": "Обернути",
+    "gui.SpriteInfo.spritePlaceholder": "Назва",
+    "gui.SpriteInfo.sprite": "Спрайт",
+    "gui.SpriteInfo.show": "Показати",
+    "gui.SpriteInfo.size": "Розмір",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "дублювати",
+    "gui.spriteSelectorItem.contextMenuDelete": "вилучити",
+    "gui.spriteSelectorItem.contextMenuExport": "експорт",
+    "gui.spriteSelector.addSpriteFromLibrary": "Обрати спрайт",
+    "gui.spriteSelector.addSpriteFromPaint": "Малювати",
+    "gui.spriteSelector.addSpriteFromSurprise": "Сюрприз",
+    "gui.spriteSelector.addSpriteFromFile": "Вивантажити спрайт",
+    "gui.stageHeader.stageSizeLarge": "Перемкнути на велику сцену",
+    "gui.stageHeader.stageSizeSmall": "Перемкнути на малу сцену",
+    "gui.stageHeader.stageSizeFull": "Увімкнути повноекранний режим",
+    "gui.stageHeader.stageSizeUnFull": "Вийти з повноекранного режиму",
+    "gui.stageHeader.fullscreenControl": "Повноекранний режим",
+    "gui.spriteSelector.addBackdropFromLibrary": "Обрати тло",
+    "gui.stageSelector.addBackdropFromPaint": "Намалювати",
+    "gui.stageSelector.addBackdropFromSurprise": "Сюрприз",
+    "gui.stageSelector.addBackdropFromFile": "Вивантажити тло",
+    "gui.stageSelector.stage": "Сцена",
+    "gui.stageSelector.backdrops": "Тло",
+    "gui.turboMode.active": "Режим турбо",
+    "gui.webglModal.label": "Ваш оглядач не підтримує WebGL",
+    "gui.webglModal.description": "На жаль, ваш оглядач або комп'ютер {webGlLink}. Ця технологія потрібна для запуску Scratch 3.0.",
+    "gui.webglModal.webgllink": "не підтримує WebGL",
+    "gui.webglModal.back": "Назад",
+    "gui.webglModal.previewfaq": "Щоб дізнатись більше, перейдіть на {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Що запитують?",
+    "gui.costumeLibrary.chooseABackdrop": "Оберіть тло",
+    "gui.costumeLibrary.chooseACostume": "Обрати образ",
+    "gui.costumeTab.addBackdropFromLibrary": "Обрати тло",
+    "gui.costumeTab.addCostumeFromLibrary": "Обрати образ",
+    "gui.costumeTab.addBlankCostume": "Малювати",
+    "gui.costumeTab.addSurpriseCostume": "Сюрприз",
+    "gui.costumeTab.addFileBackdrop": "Вивантажити тло",
+    "gui.costumeTab.addFileCostume": "Вивантажити образ",
+    "gui.costumeTab.addCameraCostume": "Камера",
+    "gui.extensionLibrary.chooseAnExtension": "Оберіть розширення",
+    "gui.extensionLibrary.extensionUrl": "Введи URL розширення",
+    "gui.gui.defaultProjectTitle": "Скретч-проект",
+    "gui.recordingStep.alertMsg": "Не вдалось розпочати запис",
+    "gui.projectLoader.loadError": "Не вдалося завантажити обраний файл проекту.",
+    "gui.soundLibrary.chooseASound": "Оберіть звук",
+    "gui.soundTab.fileUploadSound": "Завантажити звуки",
+    "gui.soundTab.surpriseSound": "Сюрприз",
+    "gui.soundTab.recordSound": "Записати",
+    "gui.soundTab.addSoundFromLibrary": "Обрати звук",
+    "gui.spriteLibrary.chooseASprite": "Оберіть спрайт",
+    "gui.tipsLibrary.tutorials": "Обрати посібник",
+    "gui.alerts.createsuccess": "Створено успішно",
+    "gui.alerts.creating": "Створення...",
+    "gui.alerts.creatingError": "Не вдалося створити проект. Будь ласка спробуйте ще раз!",
+    "gui.alerts.savingError": "Не вдалося зберегти проект. Будь ласка спробуйте ще раз!",
+    "gui.alerts.savesuccess": "Збережено успішно",
+    "gui.alerts.saving": "Збереження...",
+    "gui.defaultProject.meow": "Няв",
+    "gui.defaultProject.variable": "моя змінна",
+    "gui.howtos.intro-move-sayhello-hat.name": "Розпочати",
+    "gui.howtos.intro-move.step_stepMove": "Додати блок руху",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Натисни Зелений прапор для старту",
+    "gui.howtos.say-it-out-loud": "Створити анімації, що говорять",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Додати блоки \"Текст у мову\"",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Скажи щось",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Встановити голос",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Рухатись навколо",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Додати тло",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Додати інший персонаж",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Виконати пісню",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Змінити колір",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Обертатися навколо",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Збільшити та зменшити",
+    "gui.howtos.cartoon-network": "Анімація у пригодницькій грі",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Обрати персонаж для показу",
+    "gui.howtos.cartoon-network.step_CNsay": "Скажи щось",
+    "gui.howtos.cartoon-network.step_CNglide": "Ковзати навколо",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Обрати об'єкт для переслідування",
+    "gui.howtos.cartoon-network.step_CNcollect": "Збирання об'єктів",
+    "gui.howtos.cartoon-network.step_CNvariable": "Створити змінну-лічильник",
+    "gui.howtos.cartoon-network.step_CNscore": "Зберегти рахунок",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Поглиблений рівень: Змінити тло",
+    "gui.howtos.animate-a-name.name": "Анімувати ім'я",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Оберіть літеру-спрайт",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Відтворити звук по натиску",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Оберіть іншу літеру-спрайт",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Зміна кольору",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Оберіть спрайти для літер та обертайте їх",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Оберіть спрайти для літер та збільшіть їх",
+    "gui.howtos.make-music.name": "Створити музику",
+    "gui.howtos.Make-Music.step_PickInstrument": "Обрати інструмент спрайту",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Відтворити звук по натиску",
+    "gui.howtos.Make-Music.step_MakeSong": "Створити пісню",
+    "gui.howtos.make-music.step_MakeBeat": "Оберіть барабан і зробіть удар",
+    "gui.howtos.make-music.step_MakeBeatBox": "Обрати мікрофон для спрайту та створити бітбокс",
+    "gui.howtos.make-a-game.name": "Зробіть ігри-натискання",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Обрати спрайт",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Відтворити звук по натиску",
+    "gui.howtos.make-a-game.step_GameAddScore": "Створити змінну-лічильник",
+    "gui.howtos.make-a-game.step_GameChangeScore": "При натисканні збільшити рахунок",
+    "gui.howtos.make-a-game.step_Random": "Перейти у випадкову позиціцю",
+    "gui.howtos.make-music.step_GameChangeColor": "Змінити колір",
+    "gui.howtos.make-music.step_ResetScore": "Скинути рахунок",
+    "gui.howtos.make-a-chase-game.name": "Зробіть ігри-переслідування",
+    "gui.howtos.Chase-Game.step_BG": "Додати тло",
+    "gui.howtos.chase-game.step_AddOcto": "Додайте спрайт",
+    "gui.howtos.make-music.step_LeftRight": "Рух праворуч-ліворуч клавішами зі стрілками",
+    "gui.howtos.Chase-Game.step_UpDown": "Рух вгору-вниз клавішами зі стрілками",
+    "gui.howtos.Chase-Game.step_AddStar": "Додати ще один спрайт",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Випадковий рух",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Спрайт \"Восьминіг\" відтворює звуки при торканні",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Створити змінну-лічильник",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Для спрайта Восьминіг торкання збільшує рахунок",
+    "gui.howtos.add-sprite.name": "Додайте спрайт",
+    "gui.howtos.add-sprite.step_addSprite": "Додайте спрайт",
+    "gui.howtos.add-a-backdrop.name": "Додати тло",
+    "gui.howtos.change-size.name": "Змінити розмір",
+    "gui.howtos.glide-around.name": "Ковзати навколо",
+    "gui.howtos.record-a-sound.name": "Запис звуку",
+    "gui.howtos.spin-video.name": "Змусити обертатись",
+    "gui.howtos.hide-and-show.name": "Сховати й показати",
+    "gui.howtos.switch-costume.name": "Анімувати спрайт",
+    "gui.howtos.move-around-with-arrow-keys.name": "Використання клавіш-стрілок",
+    "gui.howtos.add-effects.name": "Додати ефекти",
+    "gui.extension.music.name": "Музика",
+    "gui.extension.music.description": "Грати на інструментах та барабанах.",
+    "gui.extension.pen.name": "Олівець",
+    "gui.extension.pen.description": "Малювати за допомогою спрайтів.",
+    "gui.extension.videosensing.name": "Відеоспостереження",
+    "gui.extension.videosensing.description": "Визначити рух за допомогою камери.",
+    "gui.extension.text2speech.name": "Текст у мову",
+    "gui.extension.text2speech.description": "Розмови в ваших проектах",
+    "gui.extension.translate.name": "Перекласти",
+    "gui.extension.translate.description": "Переклад тексту на різні мови.",
+    "gui.extension.microbit.description": "Під'єднати ваші проекти до навколишнього світу",
+    "gui.extension.microbit.connectingMessage": "Під'єднання",
+    "gui.extension.ev3.description": "Створити інтерактивних роботів і більше.",
+    "gui.extension.ev3.connectingMessage": "Під'єднання. Переконайтеся, що пін на вашому EV3 встановлено на 1234.",
+    "gui.extension.wedo2.description": "Працюємо з двигунами та сенсорами",
+    "gui.extension.wedo2.connectingMessage": "Під'єднання",
+    "gui.libraryTags.all": "Усі",
+    "gui.libraryTags.animals": "Тварини",
+    "gui.libraryTags.dance": "Танцювальна музика",
+    "gui.libraryTags.effects": "Ефекти",
+    "gui.libraryTags.fantasy": "Фантазії",
+    "gui.libraryTags.fashion": "Мода",
+    "gui.libraryTags.food": "Їжа",
+    "gui.libraryTags.indoors": "У приміщенні",
+    "gui.libraryTags.loops": "Фрагменти",
+    "gui.libraryTags.music": "Музика",
+    "gui.libraryTags.notes": "Примітки",
+    "gui.libraryTags.outdoors": "Поза приміщенням",
+    "gui.libraryTags.patterns": "Візерунки",
+    "gui.libraryTags.people": "Люди",
+    "gui.libraryTags.percussion": "Перкусія",
+    "gui.libraryTags.space": "Космос",
+    "gui.libraryTags.sports": "Спорт",
+    "gui.libraryTags.underwater": "Під водою",
+    "gui.libraryTags.voice": "Голос",
+    "gui.libraryTags.wacky": "Дивне",
+    "gui.libraryTags.animation": "Анімації",
+    "gui.libraryTags.art": "Арт",
+    "gui.libraryTags.games": "Ігри",
+    "gui.libraryTags.stories": "Історії",
+    "gui.libraryTags.letters": "Літери",
+    "gui.opcodeLabels.direction": "напрям",
+    "gui.opcodeLabels.xposition": "значення x",
+    "gui.opcodeLabels.yposition": "значення y",
+    "gui.opcodeLabels.size": "розмір",
+    "gui.opcodeLabels.costumename": "ім’я образу",
+    "gui.opcodeLabels.costumenumber": "образ #",
+    "gui.opcodeLabels.backdropname": "ім’я тла",
+    "gui.opcodeLabels.backdropnumber": "тло #",
+    "gui.opcodeLabels.volume": "гучність",
+    "gui.opcodeLabels.tempo": "темп",
+    "gui.opcodeLabels.answer": "відповідь",
+    "gui.opcodeLabels.loudness": "гучність",
+    "gui.opcodeLabels.username": "користувач",
+    "gui.opcodeLabels.year": "рік",
+    "gui.opcodeLabels.month": "місяць",
+    "gui.opcodeLabels.date": "дата",
+    "gui.opcodeLabels.dayofweek": "день тижня",
+    "gui.opcodeLabels.hour": "година",
+    "gui.opcodeLabels.minute": "хвилина ",
+    "gui.opcodeLabels.second": "секунда",
+    "gui.opcodeLabels.timer": "таймер",
+    "gui.sharedMessages.backdrop": "тло{index}",
+    "gui.sharedMessages.costume": "образ{index}",
+    "gui.sharedMessages.sprite": "Спрайт{index}",
+    "gui.sharedMessages.pop": "поп"
 }

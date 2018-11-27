@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Farba",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Sýtosť",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Svetelnosť",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Na tomto ešte pracujeme {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Čoskoro to bude hotové...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Na tomto ešte pracujeme {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Výplň",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kostým",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Zoskupiť",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Rozdeliť skupinu",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Naspäť",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Znova",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Do popredia",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Do pozadia",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Navrch",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Naspodok",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Viac",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Hrúbka",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Hrúbka gumy",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopírovať",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Vložiť",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Zmazať",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Na krivky",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Na body",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Hrúbka",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Zrkadliť vodorovne",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Zrkadliť zvisle",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Vyplnené",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Obrys",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Zmeniť na raster",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Zmeniť na vektory",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Obrys",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Štetec",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Guma",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Výplň",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Úsečka",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Kružnica",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Obdĺžnik",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Upraviť tvar",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Zaoblený obdĺžnik",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Označiť",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Text",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Vymeniť farby",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Farba",
+    "paint.paintEditor.saturation": "Sýtosť",
+    "paint.paintEditor.brightness": "Svetelnosť",
+    "gui.comingSoon.message1": "Na tomto ešte pracujeme {emoji}",
+    "gui.comingSoon.message2": "Čoskoro to bude hotové...",
+    "gui.comingSoon.message3": "Na tomto ešte pracujeme {emoji}",
+    "paint.paintEditor.fill": "Výplň",
+    "paint.paintEditor.costume": "Kostým",
+    "paint.paintEditor.group": "Zoskupiť",
+    "paint.paintEditor.ungroup": "Rozdeliť skupinu",
+    "paint.paintEditor.undo": "Naspäť",
+    "paint.paintEditor.redo": "Znova",
+    "paint.paintEditor.forward": "Do popredia",
+    "paint.paintEditor.backward": "Do pozadia",
+    "paint.paintEditor.front": "Navrch",
+    "paint.paintEditor.back": "Naspodok",
+    "paint.paintEditor.more": "Viac",
+    "paint.modeTools.brushSize": "Hrúbka",
+    "paint.modeTools.eraserSize": "Hrúbka gumy",
+    "paint.modeTools.copy": "Kopírovať",
+    "paint.modeTools.paste": "Vložiť",
+    "paint.modeTools.delete": "Zmazať",
+    "paint.modeTools.curved": "Na krivky",
+    "paint.modeTools.pointed": "Na body",
+    "paint.modeTools.thickness": "Hrúbka",
+    "paint.modeTools.flipHorizontal": "Zrkadliť vodorovne",
+    "paint.modeTools.flipVertical": "Zrkadliť zvisle",
+    "paint.modeTools.filled": "Vyplnené",
+    "paint.modeTools.outlined": "Obrys",
+    "paint.paintEditor.bitmap": "Zmeniť na raster",
+    "paint.paintEditor.vector": "Zmeniť na vektory",
+    "paint.paintEditor.stroke": "Obrys",
+    "paint.brushMode.brush": "Štetec",
+    "paint.eraserMode.eraser": "Guma",
+    "paint.fillMode.fill": "Výplň",
+    "paint.lineMode.line": "Úsečka",
+    "paint.ovalMode.oval": "Kružnica",
+    "paint.rectMode.rect": "Obdĺžnik",
+    "paint.reshapeMode.reshape": "Upraviť tvar",
+    "paint.roundedRectMode.roundedRect": "Zaoblený obdĺžnik",
+    "paint.selectMode.select": "Označiť",
+    "paint.textMode.text": "Text",
+    "paint.colorPicker.swap": "Vymeniť farby"
 }

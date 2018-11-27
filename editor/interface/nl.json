@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Opnieuw verbinden",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Rugzak",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Fout bij laden van de rugzak",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Laden ...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Meer",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Rugzak is leeg",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Browser wordt niet ondersteund",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Het spijt ons, maar Scratch 3.0 biedt geen ondersteuning voor Internet Explorer, Vivaldi, Opera of Silk. We raden aan een nieuwere browser te proberen, zoals Google Chrome, Mozilla Firefox of Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Terug",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Meer weten? Ga naar {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Neem een foto",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Camera laden...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "We hebben jouw toestemming nodig om jouw camera te gebruiken",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Foto opnieuw nemen",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Bewaar",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Foto nemen",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Laden ...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Camera inschakelen",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Lessen",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Sluiten",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Meer om uit te proberen!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Bekijk meer",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Geen zorgen, wij zijn ermee bezig {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Binnenkort beschikbaar",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Wordt aan gewerkt {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Geen apparaten gevonden",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Houd je apparaat in de buurt, begin dan met zoeken",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Druk op de knop op je apparaat",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Start met zoeken",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Zoeken ...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Probeer opnieuw",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Verbonden",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Verbinding verbreken",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Ga naar de editor",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Bezig te verbinden ...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Oeps, het lijkt dat er iets mis gegaan is.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Probeer opnieuw",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Help",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Apparaatnaam",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Verbind",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Zoeken naar apparaten",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Geen apparaten gevonden",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Kies je apparaat in de lijst hierboven.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Ververs",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Zorg ervoor Scratch Link geinstalleerd is en draait.",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Controleer dat Bluetooth aan staat",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Probeer opnieuw",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Help",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Ga",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stop",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Oeps! Er is iets fout gegaan.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Het spijt ons, maar het ziet er naar uit dat Scratch het heeft begeven. Deze fout wordt automatisch gerapporteerd aan het Scratch Team. Ververs je pagina om opnieuw te proberen.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Herladen",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Maak een blok",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Voeg een invoer toe",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "getal of tekst",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Voeg een invoer toe",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "booleaan",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Voeg een label toe",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Voer uit zonder het scherm te verversen",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": " Annuleren",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Richting",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Helemaal meedraaien",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Links/rechts",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Niet meedraaien",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Voeg een uitbreiding toe",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Code",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Achtergronden",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Uiterlijken",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Geluiden",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Bekijk een Scratch 2.0 Project",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Geef een link naar een van je gedeelde Scratch projecten. Wijzigingen die in deze 3.0 Beta worden gemaakt, worden niet opgeslagen.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Voer een link in naar een van je gedeelde Scratch projecten. Veranderingen gemaakt in deze 3.0 Preview worden niet opgeslagen.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Uh oh, die project link of id ziet er niet helemaal goed uit.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Bekijk",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Ga terug",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Ga voor meer informatie naar {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Binnenkort beschikbaar",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Vereist",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Samenwerking met",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Zoek",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Alles",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Blokken maken ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Bezig sprites te laden ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Bezig geluiden te laden ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Uitbreiding laden ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Katten verzamelen ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nano's doorgeven",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Gobo's opblazen ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Emojis voorbereiden …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Project laden...",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profiel",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Mijn projecten",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Mijn groepen",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Mijn groep",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Accountinstellingen",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Afmelden",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "door {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Zie Gemeenschap",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Gebruikersnaam",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Wachtwoord",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Inloggen",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Hulp nodig?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "taalkiezer",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Lessen",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Herstel sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Herstel geluid",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Herstel uiterlijk",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Herstel",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Nu opslaan",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Opslaan als",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Remix",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nieuw",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Bestand",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Uploaden vanaf je computer",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Opslaan op je computer",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Bewerk",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Zet turbo modus uit",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Zet turbo modus aan",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Word Scratcher",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Inloggen",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Geef feedback",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project titel hier",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Gedeeld",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Delen",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Help",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Terug",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(leeg)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "lengte {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "normaal uitlezen",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "groot uitlezen",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "schuif",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Probeer Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Welkom bij de Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Nu niet",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Probeer het",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Bekijk 2.0 project",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Welkom bij de Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "We werken aan de volgende versie van Scratch. We zijn blij dat je het al kunt proberen!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Nu niet",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Probeer het! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Bekijk 2.0 project",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Meer leren? Ga naar {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Voor alle sprites",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Alleen voor deze sprite",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Cloud variabele (opgeslagen op server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Deze variabele is beschikbaar in alle sprites.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": " Annuleren",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stop",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Spelen",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Laden ...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Bewaar",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Opnieuw opnemen",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Geluid opnemen",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin met opnemen door op de onderstaande knop te klikken",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We hebben je toestemming nodig om je microfoon te gebruiken",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop met opnemen",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Opnemen",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Geluid",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Spelen",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stop",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Knippen",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Opslaan",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Ongedaan maken",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Opnieuw",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Sneller",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Trager",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Echo",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Luider",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Zachter",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Keer om",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Naam",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprite",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Toon",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Grootte",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "dupliceren",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "verwijderen",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "exporteren",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Kies een sprite",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Teken",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Verrassing",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload sprite",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Schakel naar groot speelveld",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Schakel naar klein speelveld",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Ga naar volledig scherm",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Verlaat full screen mode",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Volledig scherm besturing",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Kies een achtergrond",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Tekenen",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Verrassing",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Upload achtergrond",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Speelveld",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Achtergronden",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turbomodus",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "WebGL wordt niet door jouw browser ondersteund",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Helaas lijkt het erop dat jouw browser of computer {webGlLink}. Dit heb je nodig om met Scratch 3.0 te werken.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "WebGL wordt niet ondersteund",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Terug",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Meer weten? Ga naar {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "FAQ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Kies een achtergrond",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Kies een uiterlijk",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Kies een achtergrond",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Kies een uiterlijk",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Tekenen",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Verrassing",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Upload achtergrond",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Upload uiterlijk",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Camera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Kies een uitbreiding",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Geef de URL van de uitbreiding",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Kon opname niet starten",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Het geselecteerde projectbestand kon niet geladen worden.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Kies een geluid",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Upload geluid",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Verrassing",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Opnemen",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Kies een geluid",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Kies een sprite",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Kies een handleiding",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Succesvol gemaakt.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Maken...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Succesvol opgeslagen.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Opslaan...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miauw",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "mijn variabele",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Aan de slag",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Voeg een bewegingsblok toe",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Klik op de groene vlag om te starten",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Maak animaties die praten",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Voeg de Tekst naar Spraak blokken toe",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Zeg iets",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Stel een stem in",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Beweeg",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Voeg een achtergrond toe",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Voeg een sprite toe",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Voer een lied uit",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Verander de kleur",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Draai rond",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Groei en krimp",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animeer een avonturenspel",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Kies een sprite om te verschijnen",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Zeg iets",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Glijd rond",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Kies een sprite om achterna te jagen",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Verzamel voorwerpen",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Maak een variabele Score",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Houd score bij",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Maak mooier: Verander de achtergrond",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animeer een naam",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Kies een letter sprite",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Klik om een geluid te spelen",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Kies een andere letter sprite",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Verander kleur",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Kies een andere letter sprite & laat hem draaien",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Kies een andere letter sprite & laat die groeien",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Maak muziek",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Kies een instrument sprite",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Klik om een geluid te spelen",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Maak een liedje",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Kies een trommel & maak een beat",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Kies de microfoon sprite & de verrassingsbeatbox",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Maak een klikspel",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Kies een sprite",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Klik om een geluid te spelen",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Maak een  variabele met de naam score",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Klik om Score te verhogen",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Ga naar een willekeurige positie",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Verander de kleur",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Score resetten",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Maak een achtervolgingsspel",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Voeg een achtergrond toe",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Voeg een sprite toe",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Beweeg rechts & links met de pijltjestoetsen",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Beweeg op & neer met de pijltjestoetsen",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Voeg nog een andere sprite toe",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Beweeg willekeurig",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "In de inktvis sprite, speel geluid bij aanraken",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Maak een  variabele met de naam score",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "In de inktvis sprite, verhoog score bij aanraken",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Voeg een sprite toe",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Voeg een sprite toe",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Voeg een achtergrond toe",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Verander grootte",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Glijd rond",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Neem een geluid op",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Laat 'm draaien",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Kiekeboe",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animeer een sprite",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Gebruik pijltoetsen",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Voeg effecten toe",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Muziek",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Speel instrumenten en drums.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pen",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Teken met je sprites.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Video",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Neem beweging waar met de camera",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Tekst naar spraak",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Laat je projecten praten",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Vertaal",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Vertaal tekst naar vele talen.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Verbind je projecten met de wereld.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Bezig te verbinden",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Bouw interactieve robots en meer.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Bezig te verbinden. Zorg dat de pin op je EV3 op 1234 gezet is.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Bouw met motoren en sensoren.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Bezig te verbinden",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Alles",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Dieren",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dansen",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Effecten",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantasie",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Mode",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Voedsel",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Binnen",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Lussen",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Muziek",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Noten",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Buiten",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patronen",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Mensen",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Slagwerk",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Ruimte",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sport",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Onder water",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Stem",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Gek",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animatie",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Kunst",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Spelletjes",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Verhalen",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Letters",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "richting",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x-positie",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y-positie",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "grootte",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "uiterlijk naam",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "uiterlijk nummer",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "achtergrond naam",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "achtergrond nummer",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "volume",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "antwoord",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "volume",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "gebruikersnaam",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "jaar",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "maand",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "datum",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "dag van de week",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "uur",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minuut",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "seconde",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "klok",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "achtergrond{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "uiterlijk{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "plop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Opnieuw verbinden",
+    "gui.backpack.header": "Rugzak",
+    "gui.backpack.errorBackpack": "Fout bij laden van de rugzak",
+    "gui.backpack.loadingBackpack": "Laden ...",
+    "gui.backpack.more": "Meer",
+    "gui.backpack.emptyBackpack": "Rugzak is leeg",
+    "gui.unsupportedBrowser.label": "Browser wordt niet ondersteund",
+    "gui.unsupportedBrowser.description": "Het spijt ons, maar Scratch 3.0 biedt geen ondersteuning voor Internet Explorer, Vivaldi, Opera of Silk. We raden aan een nieuwere browser te proberen, zoals Google Chrome, Mozilla Firefox of Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Terug",
+    "gui.unsupportedBrowser.previewfaq": "Meer weten? Ga naar {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "FAQ",
+    "gui.cameraModal.cameraModalTitle": "Neem een foto",
+    "gui.cameraModal.loadingCameraMessage": "Camera laden...",
+    "gui.cameraModal.permissionRequest": "We hebben jouw toestemming nodig om jouw camera te gebruiken",
+    "gui.cameraModal.retakePhoto": "Foto opnieuw nemen",
+    "gui.cameraModal.save": "Bewaar",
+    "gui.cameraModal.takePhoto": "Foto nemen",
+    "gui.cameraModal.loadingCaption": "Laden ...",
+    "gui.cameraModal.enableCameraCaption": "Camera inschakelen",
+    "gui.cards.all-tutorials": "Lessen",
+    "gui.cards.close": "Sluiten",
+    "gui.cards.more-things-to-try": "Meer om uit te proberen!",
+    "gui.cards.see-more": "Bekijk meer",
+    "gui.comingSoon.message1": "Geen zorgen, wij zijn ermee bezig {emoji}",
+    "gui.comingSoon.message2": "Binnenkort beschikbaar",
+    "gui.comingSoon.message3": "Wordt aan gewerkt {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Geen apparaten gevonden",
+    "gui.connection.auto-scanning.prescan": "Houd je apparaat in de buurt, begin dan met zoeken",
+    "gui.connection.auto-scanning.pressbutton": "Druk op de knop op je apparaat",
+    "gui.connection.auto-scanning.start-search": "Start met zoeken",
+    "gui.connection.connecting-searchbutton": "Zoeken ...",
+    "gui.connection.auto-scanning.try-again": "Probeer opnieuw",
+    "gui.connection.connected": "Verbonden",
+    "gui.connection.disconnect": "Verbinding verbreken",
+    "gui.connection.go-to-editor": "Ga naar de editor",
+    "gui.connection.connecting-cancelbutton": "Bezig te verbinden ...",
+    "gui.connection.error.errorMessage": "Oeps, het lijkt dat er iets mis gegaan is.",
+    "gui.connection.error.tryagainbutton": "Probeer opnieuw",
+    "gui.connection.error.helpbutton": "Help",
+    "gui.connection.peripheral-name-label": "Apparaatnaam",
+    "gui.connection.connect": "Verbind",
+    "gui.connection.scanning.lookingforperipherals": "Zoeken naar apparaten",
+    "gui.connection.scanning.noPeripheralsFound": "Geen apparaten gevonden",
+    "gui.connection.scanning.instructions": "Kies je apparaat in de lijst hierboven.",
+    "gui.connection.search": "Ververs",
+    "gui.connection.unavailable.installscratchlink": "Zorg ervoor Scratch Link geïnstalleerd is en draait.",
+    "gui.connection.unavailable.enablebluetooth": "Controleer dat Bluetooth aan staat",
+    "gui.connection.unavailable.tryagainbutton": "Probeer opnieuw",
+    "gui.connection.unavailable.helpbutton": "Help",
+    "gui.controls.go": "Ga",
+    "gui.controls.stop": "Stop",
+    "gui.crashMessage.label": "Oeps! Er is iets fout gegaan.",
+    "gui.crashMessage.description": "Het spijt ons, maar het ziet er naar uit dat Scratch het heeft begeven. Deze fout wordt automatisch gerapporteerd aan het Scratch Team. Ververs je pagina om opnieuw te proberen.",
+    "gui.crashMessage.reload": "Herladen",
+    "gui.customProcedures.myblockModalTitle": "Maak een blok",
+    "gui.customProcedures.addAnInputNumberText": "Voeg een invoer toe",
+    "gui.customProcedures.numberTextType": "getal of tekst",
+    "gui.customProcedures.addAnInputBoolean": "Voeg een invoer toe",
+    "gui.customProcedures.booleanType": "booleaan",
+    "gui.customProcedures.addALabel": "Voeg een label toe",
+    "gui.customProcedures.runWithoutScreenRefresh": "Voer uit zonder het scherm te verversen",
+    "gui.customProcedures.cancel": " Annuleren",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Richting",
+    "gui.directionPicker.rotationStyles.allAround": "Helemaal meedraaien",
+    "gui.directionPicker.rotationStyles.leftRight": "Links/rechts",
+    "gui.directionPicker.rotationStyles.dontRotate": "Niet meedraaien",
+    "gui.gui.addExtension": "Voeg een uitbreiding toe",
+    "gui.gui.codeTab": "Code",
+    "gui.gui.backdropsTab": "Achtergronden",
+    "gui.gui.costumesTab": "Uiterlijken",
+    "gui.gui.soundsTab": "Geluiden",
+    "gui.importInfo.title": "Bekijk een Scratch 2.0 Project",
+    "gui.importInfo.betamessage": "Geef een link naar een van je gedeelde Scratch projecten. Wijzigingen die in deze 3.0 Beta worden gemaakt, worden niet opgeslagen.",
+    "gui.importInfo.message": "Voer een link in naar een van je gedeelde Scratch projecten. Veranderingen gemaakt in deze 3.0 Preview worden niet opgeslagen.",
+    "gui.importInfo.invalidFormatError": "Uh oh, die project link of id ziet er niet helemaal goed uit.",
+    "gui.importModal.viewproject": "Bekijk",
+    "gui.importInfo.goback": "Ga terug",
+    "gui.importInfo.previewfaq": "Ga voor meer informatie naar {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "FAQ",
+    "gui.extensionLibrary.comingSoon": "Binnenkort beschikbaar",
+    "gui.extensionLibrary.requires": "Vereist",
+    "gui.extensionLibrary.collaboration": "Samenwerking met",
+    "gui.library.filterPlaceholder": "Zoek",
+    "gui.library.allTag": "Alles",
+    "gui.loader.message1": "Blokken maken ...",
+    "gui.loader.message2": "Bezig sprites te laden ...",
+    "gui.loader.message3": "Bezig geluiden te laden ...",
+    "gui.loader.message4": "Uitbreiding laden ...",
+    "gui.loader.message5": "Katten verzamelen ...",
+    "gui.loader.message6": "Nano's doorgeven",
+    "gui.loader.message7": "Gobo's opblazen ...",
+    "gui.loader.message8": "Emojis voorbereiden …",
+    "gui.loader.headline": "Project laden...",
+    "gui.accountMenu.profile": "Profiel",
+    "gui.accountMenu.myStuff": "Mijn projecten",
+    "gui.accountMenu.myClasses": "Mijn groepen",
+    "gui.accountMenu.myClass": "Mijn groep",
+    "gui.accountMenu.accountSettings": "Accountinstellingen",
+    "gui.accountMenu.signOut": "Afmelden",
+    "gui.authorInfo.byUser": "door {username}",
+    "gui.menuBar.seeCommunity": "Zie Gemeenschap",
+    "general.username": "Gebruikersnaam",
+    "general.password": "Wachtwoord",
+    "general.signIn": "Inloggen",
+    "login.needHelp": "Hulp nodig?",
+    "gui.menuBar.LanguageSelector": "taalkiezer",
+    "gui.menuBar.tutorialsLibrary": "Lessen",
+    "gui.menuBar.restoreSprite": "Herstel sprite",
+    "gui.menuBar.restoreSound": "Herstel geluid",
+    "gui.menuBar.restoreCostume": "Herstel uiterlijk",
+    "gui.menuBar.restore": "Herstel",
+    "gui.menuBar.saveNow": "Nu opslaan",
+    "gui.menuBar.saveAsCopy": "Opslaan als",
+    "gui.menuBar.remix": "Remix",
+    "gui.menuBar.new": "Nieuw",
+    "gui.menuBar.file": "Bestand",
+    "gui.menuBar.uploadFromComputer": "Uploaden vanaf je computer",
+    "gui.menuBar.downloadToComputer": "Opslaan op je computer",
+    "gui.menuBar.edit": "Bewerk",
+    "gui.menuBar.turboModeOff": "Zet turbo modus uit",
+    "gui.menuBar.turboModeOn": "Zet turbo modus aan",
+    "gui.menuBar.joinScratch": "Word Scratcher",
+    "gui.menuBar.signIn": "Inloggen",
+    "gui.menuBar.giveFeedback": "Geef feedback",
+    "gui.gui.projectTitlePlaceholder": "Project titel hier",
+    "gui.menuBar.isShared": "Gedeeld",
+    "gui.menuBar.share": "Delen",
+    "gui.modal.help": "Help",
+    "gui.modal.back": "Terug",
+    "gui.monitor.listMonitor.empty": "(leeg)",
+    "gui.monitor.listMonitor.listLength": "lengte {length}",
+    "gui.monitor.contextMenu.default": "normaal uitlezen",
+    "gui.monitor.contextMenu.large": "groot uitlezen",
+    "gui.monitor.contextMenu.slider": "schuif",
+    "gui.previewInfo.label": "Probeer Scratch 3.0",
+    "gui.previewInfo.welcome": "Welkom bij de Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Nu niet",
+    "gui.previewModal.tryittooltip": "Probeer het",
+    "gui.previewModal.viewprojecttooltip": "Bekijk 2.0 project",
+    "gui.previewInfo.betawelcome": "Welkom bij de Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "We werken aan de volgende versie van Scratch. We zijn blij dat je het al kunt proberen!",
+    "gui.previewInfo.notnow": "Nu niet",
+    "gui.previewModal.tryit": "Probeer het! {caticon}",
+    "gui.previewModal.viewproject": "Bekijk 2.0 project",
+    "gui.previewInfo.previewfaq": "Meer leren? Ga naar {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "FAQ",
+    "gui.gui.variableScopeOptionAllSprites": "Voor alle sprites",
+    "gui.gui.variableScopeOptionSpriteOnly": "Alleen voor deze sprite",
+    "gui.gui.cloudVariableOption": "Cloud variabele (opgeslagen op de server)",
+    "gui.gui.variablePromptAllSpritesMessage": "Deze variabele is beschikbaar in alle sprites.",
+    "gui.prompt.cancel": " Annuleren",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stop",
+    "gui.playbackStep.playMsg": "Spelen",
+    "gui.playbackStep.loadingMsg": "Laden ...",
+    "gui.playbackStep.saveMsg": "Bewaar",
+    "gui.playbackStep.reRecordMsg": "Opnieuw opnemen",
+    "gui.recordModal.title": "Geluid opnemen",
+    "gui.recordingStep.beginRecord": "Begin met opnemen door op de onderstaande knop te klikken",
+    "gui.recordingStep.permission": "{arrow}We hebben je toestemming nodig om je microfoon te gebruiken",
+    "gui.recordingStep.stop": "Stop met opnemen",
+    "gui.recordingStep.record": "Opnemen",
+    "gui.soundEditor.sound": "Geluid",
+    "gui.soundEditor.play": "Spelen",
+    "gui.soundEditor.stop": "Stop",
+    "gui.soundEditor.trim": "Knippen",
+    "gui.soundEditor.save": "Opslaan",
+    "gui.soundEditor.undo": "Ongedaan maken",
+    "gui.soundEditor.redo": "Opnieuw",
+    "gui.soundEditor.faster": "Sneller",
+    "gui.soundEditor.slower": "Trager",
+    "gui.soundEditor.echo": "Echo",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Luider",
+    "gui.soundEditor.softer": "Zachter",
+    "gui.soundEditor.reverse": "Keer om",
+    "gui.SpriteInfo.spritePlaceholder": "Naam",
+    "gui.SpriteInfo.sprite": "Sprite",
+    "gui.SpriteInfo.show": "Toon",
+    "gui.SpriteInfo.size": "Grootte",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "dupliceren",
+    "gui.spriteSelectorItem.contextMenuDelete": "verwijderen",
+    "gui.spriteSelectorItem.contextMenuExport": "exporteren",
+    "gui.spriteSelector.addSpriteFromLibrary": "Kies een sprite",
+    "gui.spriteSelector.addSpriteFromPaint": "Teken",
+    "gui.spriteSelector.addSpriteFromSurprise": "Verrassing",
+    "gui.spriteSelector.addSpriteFromFile": "Upload sprite",
+    "gui.stageHeader.stageSizeLarge": "Schakel naar groot speelveld",
+    "gui.stageHeader.stageSizeSmall": "Schakel naar klein speelveld",
+    "gui.stageHeader.stageSizeFull": "Ga naar volledig scherm",
+    "gui.stageHeader.stageSizeUnFull": "Verlaat full screen mode",
+    "gui.stageHeader.fullscreenControl": "Volledig scherm besturing",
+    "gui.spriteSelector.addBackdropFromLibrary": "Kies een achtergrond",
+    "gui.stageSelector.addBackdropFromPaint": "Tekenen",
+    "gui.stageSelector.addBackdropFromSurprise": "Verrassing",
+    "gui.stageSelector.addBackdropFromFile": "Upload achtergrond",
+    "gui.stageSelector.stage": "Speelveld",
+    "gui.stageSelector.backdrops": "Achtergronden",
+    "gui.turboMode.active": "Turbomodus",
+    "gui.webglModal.label": "WebGL wordt niet door jouw browser ondersteund",
+    "gui.webglModal.description": "Helaas lijkt het erop dat jouw browser of computer {webGlLink}. Dit heb je nodig om met Scratch 3.0 te werken.",
+    "gui.webglModal.webgllink": "WebGL wordt niet ondersteund",
+    "gui.webglModal.back": "Terug",
+    "gui.webglModal.previewfaq": "Meer weten? Ga naar {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "FAQ",
+    "gui.costumeLibrary.chooseABackdrop": "Kies een achtergrond",
+    "gui.costumeLibrary.chooseACostume": "Kies een uiterlijk",
+    "gui.costumeTab.addBackdropFromLibrary": "Kies een achtergrond",
+    "gui.costumeTab.addCostumeFromLibrary": "Kies een uiterlijk",
+    "gui.costumeTab.addBlankCostume": "Tekenen",
+    "gui.costumeTab.addSurpriseCostume": "Verrassing",
+    "gui.costumeTab.addFileBackdrop": "Upload achtergrond",
+    "gui.costumeTab.addFileCostume": "Upload uiterlijk",
+    "gui.costumeTab.addCameraCostume": "Camera",
+    "gui.extensionLibrary.chooseAnExtension": "Kies een uitbreiding",
+    "gui.extensionLibrary.extensionUrl": "Geef de URL van de uitbreiding",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Kon opname niet starten",
+    "gui.projectLoader.loadError": "Het geselecteerde projectbestand kon niet geladen worden.",
+    "gui.soundLibrary.chooseASound": "Kies een geluid",
+    "gui.soundTab.fileUploadSound": "Upload geluid",
+    "gui.soundTab.surpriseSound": "Verrassing",
+    "gui.soundTab.recordSound": "Opnemen",
+    "gui.soundTab.addSoundFromLibrary": "Kies een geluid",
+    "gui.spriteLibrary.chooseASprite": "Kies een sprite",
+    "gui.tipsLibrary.tutorials": "Kies een handleiding",
+    "gui.alerts.createsuccess": "Succesvol gemaakt.",
+    "gui.alerts.creating": "Maken...",
+    "gui.alerts.creatingError": "Kon het project niet maken. Probeer opnieuw!",
+    "gui.alerts.savingError": "Kon het project niet opslaan. Probeer opnieuw!",
+    "gui.alerts.savesuccess": "Succesvol opgeslagen.",
+    "gui.alerts.saving": "Opslaan...",
+    "gui.defaultProject.meow": "Miauw",
+    "gui.defaultProject.variable": "mijn variabele",
+    "gui.howtos.intro-move-sayhello-hat.name": "Aan de slag",
+    "gui.howtos.intro-move.step_stepMove": "Voeg een bewegingsblok toe",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Klik op de groene vlag om te starten",
+    "gui.howtos.say-it-out-loud": "Maak animaties die praten",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Voeg de Tekst naar Spraak blokken toe",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Zeg iets",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Stel een stem in",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Beweeg",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Voeg een achtergrond toe",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Voeg een sprite toe",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Voer een lied uit",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Verander de kleur",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Draai rond",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Groei en krimp",
+    "gui.howtos.cartoon-network": "Animeer een avonturenspel",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Kies een sprite om te verschijnen",
+    "gui.howtos.cartoon-network.step_CNsay": "Zeg iets",
+    "gui.howtos.cartoon-network.step_CNglide": "Glijd rond",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Kies een sprite om achterna te jagen",
+    "gui.howtos.cartoon-network.step_CNcollect": "Verzamel voorwerpen",
+    "gui.howtos.cartoon-network.step_CNvariable": "Maak een variabele Score",
+    "gui.howtos.cartoon-network.step_CNscore": "Houd score bij",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Maak mooier: Verander de achtergrond",
+    "gui.howtos.animate-a-name.name": "Animeer een naam",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Kies een letter sprite",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Klik om een geluid te spelen",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Kies een andere letter sprite",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Verander kleur",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Kies een andere letter sprite & laat hem draaien",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Kies een andere letter sprite & laat die groeien",
+    "gui.howtos.make-music.name": "Maak muziek",
+    "gui.howtos.Make-Music.step_PickInstrument": "Kies een instrument sprite",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Klik om een geluid te spelen",
+    "gui.howtos.Make-Music.step_MakeSong": "Maak een liedje",
+    "gui.howtos.make-music.step_MakeBeat": "Kies een trommel & maak een beat",
+    "gui.howtos.make-music.step_MakeBeatBox": "Kies de microfoon sprite & de verrassingsbeatbox",
+    "gui.howtos.make-a-game.name": "Maak een klikspel",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Kies een sprite",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Klik om een geluid te spelen",
+    "gui.howtos.make-a-game.step_GameAddScore": "Maak een  variabele met de naam score",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Klik om Score te verhogen",
+    "gui.howtos.make-a-game.step_Random": "Ga naar een willekeurige positie",
+    "gui.howtos.make-music.step_GameChangeColor": "Verander de kleur",
+    "gui.howtos.make-music.step_ResetScore": "Score resetten",
+    "gui.howtos.make-a-chase-game.name": "Maak een achtervolgingsspel",
+    "gui.howtos.Chase-Game.step_BG": "Voeg een achtergrond toe",
+    "gui.howtos.chase-game.step_AddOcto": "Voeg een sprite toe",
+    "gui.howtos.make-music.step_LeftRight": "Beweeg rechts & links met de pijltjestoetsen",
+    "gui.howtos.Chase-Game.step_UpDown": "Beweeg op & neer met de pijltjestoetsen",
+    "gui.howtos.Chase-Game.step_AddStar": "Voeg nog een andere sprite toe",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Beweeg willekeurig",
+    "gui.howtos.Chase-Game.step_WhenTouch": "In de inktvis sprite, speel geluid bij aanraken",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Maak een  variabele met de naam score",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "In de inktvis sprite, verhoog score bij aanraken",
+    "gui.howtos.add-sprite.name": "Voeg een sprite toe",
+    "gui.howtos.add-sprite.step_addSprite": "Voeg een sprite toe",
+    "gui.howtos.add-a-backdrop.name": "Voeg een achtergrond toe",
+    "gui.howtos.change-size.name": "Verander grootte",
+    "gui.howtos.glide-around.name": "Glijd rond",
+    "gui.howtos.record-a-sound.name": "Neem een geluid op",
+    "gui.howtos.spin-video.name": "Laat 'm draaien",
+    "gui.howtos.hide-and-show.name": "Kiekeboe",
+    "gui.howtos.switch-costume.name": "Animeer een sprite",
+    "gui.howtos.move-around-with-arrow-keys.name": "Gebruik pijltoetsen",
+    "gui.howtos.add-effects.name": "Voeg effecten toe",
+    "gui.extension.music.name": "Muziek",
+    "gui.extension.music.description": "Speel instrumenten en drums.",
+    "gui.extension.pen.name": "Pen",
+    "gui.extension.pen.description": "Teken met je sprites.",
+    "gui.extension.videosensing.name": "Video",
+    "gui.extension.videosensing.description": "Neem beweging waar met de camera",
+    "gui.extension.text2speech.name": "Tekst naar spraak",
+    "gui.extension.text2speech.description": "Laat je projecten praten",
+    "gui.extension.translate.name": "Vertaal",
+    "gui.extension.translate.description": "Vertaal tekst naar vele talen.",
+    "gui.extension.microbit.description": "Verbind je projecten met de wereld.",
+    "gui.extension.microbit.connectingMessage": "Bezig te verbinden",
+    "gui.extension.ev3.description": "Bouw interactieve robots en meer.",
+    "gui.extension.ev3.connectingMessage": "Bezig te verbinden. Zorg dat de pin op je EV3 op 1234 gezet is.",
+    "gui.extension.wedo2.description": "Bouw met motoren en sensoren.",
+    "gui.extension.wedo2.connectingMessage": "Bezig te verbinden",
+    "gui.libraryTags.all": "Alles",
+    "gui.libraryTags.animals": "Dieren",
+    "gui.libraryTags.dance": "Dansen",
+    "gui.libraryTags.effects": "Effecten",
+    "gui.libraryTags.fantasy": "Fantasie",
+    "gui.libraryTags.fashion": "Mode",
+    "gui.libraryTags.food": "Voedsel",
+    "gui.libraryTags.indoors": "Binnen",
+    "gui.libraryTags.loops": "Lussen",
+    "gui.libraryTags.music": "Muziek",
+    "gui.libraryTags.notes": "Noten",
+    "gui.libraryTags.outdoors": "Buiten",
+    "gui.libraryTags.patterns": "Patronen",
+    "gui.libraryTags.people": "Mensen",
+    "gui.libraryTags.percussion": "Slagwerk",
+    "gui.libraryTags.space": "Ruimte",
+    "gui.libraryTags.sports": "Sport",
+    "gui.libraryTags.underwater": "Onder water",
+    "gui.libraryTags.voice": "Stem",
+    "gui.libraryTags.wacky": "Gek",
+    "gui.libraryTags.animation": "Animatie",
+    "gui.libraryTags.art": "Kunst",
+    "gui.libraryTags.games": "Spelletjes",
+    "gui.libraryTags.stories": "Verhalen",
+    "gui.libraryTags.letters": "Letters",
+    "gui.opcodeLabels.direction": "richting",
+    "gui.opcodeLabels.xposition": "x-positie",
+    "gui.opcodeLabels.yposition": "y-positie",
+    "gui.opcodeLabels.size": "grootte",
+    "gui.opcodeLabels.costumename": "uiterlijk naam",
+    "gui.opcodeLabels.costumenumber": "uiterlijk nummer",
+    "gui.opcodeLabels.backdropname": "achtergrond naam",
+    "gui.opcodeLabels.backdropnumber": "achtergrond nummer",
+    "gui.opcodeLabels.volume": "volume",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "antwoord",
+    "gui.opcodeLabels.loudness": "volume",
+    "gui.opcodeLabels.username": "gebruikersnaam",
+    "gui.opcodeLabels.year": "jaar",
+    "gui.opcodeLabels.month": "maand",
+    "gui.opcodeLabels.date": "datum",
+    "gui.opcodeLabels.dayofweek": "dag van de week",
+    "gui.opcodeLabels.hour": "uur",
+    "gui.opcodeLabels.minute": "minuut",
+    "gui.opcodeLabels.second": "seconde",
+    "gui.opcodeLabels.timer": "klok",
+    "gui.sharedMessages.backdrop": "achtergrond{index}",
+    "gui.sharedMessages.costume": "uiterlijk{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "plop"
 }

@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "пищати [NOTE] [TIME] секунд",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "кнопку [PORT] натиснуто?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "яскравість",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "відстань",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "позиція двигуна [PORT]",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "встановити потужність [PORT] в [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "увімкнути двигун [PORT] у такому напрямі на [TIME] секунд",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "увімкнути двигун [PORT] у  зворотньому напрямі на [TIME] секунд",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "якщо яскравість < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "якщо кнопку [PORT] натиснуто",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "якщо дистанція < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "будь-який",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "очистити дисплей",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Привіт!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "показати [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "показати текст [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "підкинуто",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "рухається",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "струснуто",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "кнопку [BTN] натиснуто?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "нахил [DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "Вимк",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "Увімкн",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "кут нахилу [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "будь-який",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "назад",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "вперед",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "ліворуч",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "праворуч",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "коли кнопку [BTN] натиснуто",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "коли [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "коли контакт [PIN] приєднано",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "коли нахил [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Музика",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "змінити темп на [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Великий басовий барабан",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Бонго",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Кабаса",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Клавесин",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Закритий хет",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Конга",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Дзвіночок",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Удар тарілок",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Куїка",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Гуїро",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Плескіт долонь",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Відкритий високий хет",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Удар по ободу",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Малий барабан",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Тамбурин",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Трикутник",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Вібруючий слеп",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Дерев’яна коробка",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "темп",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Бас",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Фагот",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Віолончель",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Хор",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Кларнет",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Електрогітара",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Електропіаніно",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Флейта",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Гітара",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Марімба",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Музична скринька",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Орган",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Піаніно",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Піцикато",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Саксофон",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Стальний барабан",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Ведучий синтезатор",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Синтезатор Pad",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Тромбон",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Вібрафон",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Дерев’яна флейта",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "грати інструментом [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "програти на барабані [DRUM] [BEATS] ударів",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "програти ноту [NOTE] [BEATS] тактів",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "пауза [BEATS] тактів",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "грати інструментом [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "встановити темп в [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Олівець",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "змінити [COLOR_PARAM] олівця на [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "змінити колір олівця на [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "змінити тінь олівця на [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "змінити розмір олівця на [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "очистити все",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "яскравість",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "колір",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "насиченість",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "прозорість",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "опустити олівець",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "підняти олівець",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "надати олівцю колір [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "надати [COLOR_PARAM] олівця значення [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "задати колір олівця [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "задати тінь олівця [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "задати розмір олівця [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "штамп",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "вперед",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Проказати текст",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "слухати і чекати",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "мовлення",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "коли я чую [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "привіт",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "гігант",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "котик",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "альт",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "квін",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "встановити мову [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "встановити голос як [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "говорити [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "писк",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Перекласти",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "привіт",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "перекласти [WORDS] на [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "мова",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "Відеоспостереження",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "напрям",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "рух",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "Вимк",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "Увімкн",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "перевернуто",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "встановити прозорість відео в [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "спрайт",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "сцена",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "відео [ATTRIBUTE] на [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "перемкнути відео [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "коли рух відео > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "відстань",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "кут нахилу [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "нахилено [TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "[MOTOR_ID] вимкнути",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "[MOTOR_ID] увімкнути",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "увімкнути [MOTOR_ID] на [DURATION] секунд",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "грати ноту [NOTE] [DURATION] секунд",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "встановити колір світла в [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "встановити напрям [MOTOR_ID] [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "встановити потужність [MOTOR_ID] [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "коли дистанція [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "коли нахил [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "пищати [NOTE] [TIME] секунд",
+    "ev3.buttonPressed": "кнопку [PORT] натиснуто?",
+    "ev3.getBrightness": "яскравість",
+    "ev3.getDistance": "відстань",
+    "ev3.getMotorPosition": "позиція двигуна [PORT]",
+    "ev3.motorSetPower": "встановити потужність [PORT] в [POWER] %",
+    "ev3.motorTurnClockwise": "увімкнути двигун [PORT] у такому напрямі на [TIME] секунд",
+    "ev3.motorTurnCounterClockwise": "увімкнути двигун [PORT] у  зворотньому напрямі на [TIME] секунд",
+    "ev3.whenBrightnessLessThan": "якщо яскравість < [DISTANCE]",
+    "ev3.whenButtonPressed": "якщо кнопку [PORT] натиснуто",
+    "ev3.whenDistanceLessThan": "якщо дистанція < [DISTANCE]",
+    "microbit.buttonsMenu.any": "будь-який",
+    "microbit.clearDisplay": "очистити дисплей",
+    "microbit.defaultTextToDisplay": "Привіт!",
+    "microbit.displaySymbol": "показати [MATRIX]",
+    "microbit.displayText": "показати текст [TEXT]",
+    "microbit.gesturesMenu.jumped": "підкинуто",
+    "microbit.gesturesMenu.moved": "рухається",
+    "microbit.gesturesMenu.shaken": "струснуто",
+    "microbit.isButtonPressed": "кнопку [BTN] натиснуто?",
+    "microbit.isTilted": "нахил [DIRECTION]?",
+    "microbit.pinStateMenu.off": "Вимк",
+    "microbit.pinStateMenu.on": "Увімкн",
+    "microbit.tiltAngle": "кут нахилу [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "будь-який",
+    "microbit.tiltDirectionMenu.back": "назад",
+    "microbit.tiltDirectionMenu.front": "вперед",
+    "microbit.tiltDirectionMenu.left": "ліворуч",
+    "microbit.tiltDirectionMenu.right": "праворуч",
+    "microbit.whenButtonPressed": "коли кнопку [BTN] натиснуто",
+    "microbit.whenGesture": "коли [GESTURE]",
+    "microbit.whenPinConnected": "коли контакт [PIN] приєднано",
+    "microbit.whenTilted": "коли нахил [DIRECTION]",
+    "music.categoryName": "Музика",
+    "music.changeTempo": "змінити темп на [TEMPO]",
+    "music.drumBass": "(2) Великий басовий барабан",
+    "music.drumBongo": "(13) Бонго",
+    "music.drumCabasa": "(15) Кабаса",
+    "music.drumClaves": "(9) Клавесин",
+    "music.drumClosedHiHat": "(6) Закритий хет",
+    "music.drumConga": "(14) Конга",
+    "music.drumCowbell": "(11) Дзвіночок",
+    "music.drumCrashCymbal": "(4) Удар тарілок",
+    "music.drumCuica": "(18) Куїка",
+    "music.drumGuiro": "(16) Гуїро",
+    "music.drumHandClap": "(8) Плескіт долонь",
+    "music.drumOpenHiHat": "(5) Відкритий високий хет",
+    "music.drumSideStick": "(3) Удар по ободу",
+    "music.drumSnare": "(1) Малий барабан",
+    "music.drumTambourine": "(7) Тамбурин",
+    "music.drumTriangle": "(12) Трикутник",
+    "music.drumVibraslap": "(17) Вібруючий слеп",
+    "music.drumWoodBlock": "(10) Дерев’яна коробка",
+    "music.getTempo": "темп",
+    "music.instrumentBass": "(6) Бас",
+    "music.instrumentBassoon": "(14) Фагот",
+    "music.instrumentCello": "(8) Віолончель",
+    "music.instrumentChoir": "(15) Хор",
+    "music.instrumentClarinet": "(10) Кларнет",
+    "music.instrumentElectricGuitar": "(5) Електрогітара",
+    "music.instrumentElectricPiano": "(2) Електропіаніно",
+    "music.instrumentFlute": "(12) Флейта",
+    "music.instrumentGuitar": "(4) Гітара",
+    "music.instrumentMarimba": "(19) Марімба",
+    "music.instrumentMusicBox": "(17) Музична скринька",
+    "music.instrumentOrgan": "(3) Орган",
+    "music.instrumentPiano": "(1) Піаніно",
+    "music.instrumentPizzicato": "(7) Піцикато",
+    "music.instrumentSaxophone": "(11) Саксофон",
+    "music.instrumentSteelDrum": "(18) Стальний барабан",
+    "music.instrumentSynthLead": "(20) Ведучий синтезатор",
+    "music.instrumentSynthPad": "(21) Синтезатор Pad",
+    "music.instrumentTrombone": "(9) Тромбон",
+    "music.instrumentVibraphone": "(16) Вібрафон",
+    "music.instrumentWoodenFlute": "(13) Дерев’яна флейта",
+    "music.midiSetInstrument": "грати інструментом [INSTRUMENT]",
+    "music.playDrumForBeats": "програти на барабані [DRUM] [BEATS] ударів",
+    "music.playNoteForBeats": "програти ноту [NOTE] [BEATS] тактів",
+    "music.restForBeats": "пауза [BEATS] тактів",
+    "music.setInstrument": "грати інструментом [INSTRUMENT]",
+    "music.setTempo": "встановити темп в [TEMPO]",
+    "pen.categoryName": "Олівець",
+    "pen.changeColorParam": "змінити [COLOR_PARAM] олівця на [VALUE]",
+    "pen.changeHue": "змінити колір олівця на [HUE]",
+    "pen.changeShade": "змінити тінь олівця на [SHADE]",
+    "pen.changeSize": "змінити розмір олівця на [SIZE]",
+    "pen.clear": "очистити все",
+    "pen.colorMenu.brightness": "яскравість",
+    "pen.colorMenu.color": "колір",
+    "pen.colorMenu.saturation": "насиченість",
+    "pen.colorMenu.transparency": "прозорість",
+    "pen.penDown": "опустити олівець",
+    "pen.penUp": "підняти олівець",
+    "pen.setColor": "надати олівцю колір [COLOR]",
+    "pen.setColorParam": "надати [COLOR_PARAM] олівця значення [VALUE]",
+    "pen.setHue": "задати колір олівця [HUE]",
+    "pen.setShade": "задати тінь олівця [SHADE]",
+    "pen.setSize": "задати розмір олівця [SIZE]",
+    "pen.stamp": "штамп",
+    "speech.defaultWhenIHearValue": "вперед",
+    "speech.extensionName": "Проказати текст",
+    "speech.listenAndWait": "слухати і чекати",
+    "speech.speechReporter": "мовлення",
+    "speech.whenIHear": "коли я чую [PHRASE]",
+    "text2speech.defaultTextToSpeak": "привіт",
+    "text2speech.giant": "гігант",
+    "text2speech.kitten": "котик",
+    "text2speech.max": "альт",
+    "text2speech.quinn": "квін",
+    "text2speech.setLanguageBlock": "встановити мову [LANGUAGE]",
+    "text2speech.setVoiceBlock": "встановити голос як [VOICE]",
+    "text2speech.speakAndWaitBlock": "говорити [WORDS]",
+    "text2speech.squeak": "писк",
+    "translate.categoryName": "Перекласти",
+    "translate.defaultTextToTranslate": "привіт",
+    "translate.translateBlock": "перекласти [WORDS] на [LANGUAGE]",
+    "translate.viewerLanguage": "мова",
+    "videoSensing.categoryName": "Відеоспостереження",
+    "videoSensing.direction": "напрям",
+    "videoSensing.motion": "рух",
+    "videoSensing.off": "Вимк",
+    "videoSensing.on": "Увімкн",
+    "videoSensing.onFlipped": "перевернуто",
+    "videoSensing.setVideoTransparency": "встановити прозорість відео в [TRANSPARENCY]",
+    "videoSensing.sprite": "спрайт",
+    "videoSensing.stage": "сцена",
+    "videoSensing.videoOn": "відео [ATTRIBUTE] на [SUBJECT]",
+    "videoSensing.videoToggle": "перемкнути відео [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "коли рух відео > [REFERENCE]",
+    "wedo2.getDistance": "відстань",
+    "wedo2.getTiltAngle": "кут нахилу [TILT_DIRECTION]",
+    "wedo2.isTilted": "нахилено [TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "[MOTOR_ID] вимкнути",
+    "wedo2.motorOn": "[MOTOR_ID] увімкнути",
+    "wedo2.motorOnFor": "увімкнути [MOTOR_ID] на [DURATION] секунд",
+    "wedo2.playNoteFor": "грати ноту [NOTE] [DURATION] секунд",
+    "wedo2.setLightHue": "встановити колір світла в [HUE]",
+    "wedo2.setMotorDirection": "встановити напрям [MOTOR_ID] [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "встановити потужність [MOTOR_ID] [POWER]",
+    "wedo2.whenDistance": "коли дистанція [OP] [REFERENCE]",
+    "wedo2.whenTilted": "коли нахил [TILT_DIRECTION_ANY]"
 }

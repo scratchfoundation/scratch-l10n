@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "สี",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "ความอิ่มตัว",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "ความสว่าง",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "ไม่ต้องกังวล เรากำลังทำอยู่ {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "เร็วๆ นี้...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "เรากำลังทำอยู่ {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "สีพื้น",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "คอสตูม",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "กลุ่ม",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "แยกกลุ่ม",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "ย้อนกลับ",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "ทำซ้ำ",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "มาข้างหน้า",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "ไปข้างหลัง",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "หน้าสุด",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "หลังสุด",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "เพิ่มเติม",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "ขนาด",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "ขนาดยางลบ",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "คัดลอก",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "วาง",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "ลบ",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "โค้ง",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "แหลม",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "ความหนา",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "พลิกแนวนอน",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "พลิกแนวตั้ง",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Filled",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "สีขอบ",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "แปลงเป็นบิตแมป",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "แปลงเป็นเวกเตอร์",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "สีขอบ",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "แปรง",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "ยางลบ",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "สีพื้น",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "เส้น",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "วงกลม",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "สี่เหลี่ยม",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "จัดรูปร่างใหม่",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "สี่เหลี่ยมขอบมน",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "เลือก",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "ข้อความ",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "สลับสี",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "สี",
+    "paint.paintEditor.saturation": "ความอิ่มตัว",
+    "paint.paintEditor.brightness": "ความสว่าง",
+    "gui.comingSoon.message1": "ไม่ต้องกังวล เรากำลังทำอยู่ {emoji}",
+    "gui.comingSoon.message2": "เร็วๆ นี้...",
+    "gui.comingSoon.message3": "เรากำลังทำอยู่ {emoji}",
+    "paint.paintEditor.fill": "สีพื้น",
+    "paint.paintEditor.costume": "คอสตูม",
+    "paint.paintEditor.group": "กลุ่ม",
+    "paint.paintEditor.ungroup": "แยกกลุ่ม",
+    "paint.paintEditor.undo": "ย้อนกลับ",
+    "paint.paintEditor.redo": "ทำซ้ำ",
+    "paint.paintEditor.forward": "มาข้างหน้า",
+    "paint.paintEditor.backward": "ไปข้างหลัง",
+    "paint.paintEditor.front": "หน้าสุด",
+    "paint.paintEditor.back": "หลังสุด",
+    "paint.paintEditor.more": "เพิ่มเติม",
+    "paint.modeTools.brushSize": "ขนาด",
+    "paint.modeTools.eraserSize": "ขนาดยางลบ",
+    "paint.modeTools.copy": "คัดลอก",
+    "paint.modeTools.paste": "วาง",
+    "paint.modeTools.delete": "ลบ",
+    "paint.modeTools.curved": "โค้ง",
+    "paint.modeTools.pointed": "แหลม",
+    "paint.modeTools.thickness": "ความหนา",
+    "paint.modeTools.flipHorizontal": "พลิกแนวนอน",
+    "paint.modeTools.flipVertical": "พลิกแนวตั้ง",
+    "paint.modeTools.filled": "เติมสี",
+    "paint.modeTools.outlined": "สีขอบ",
+    "paint.paintEditor.bitmap": "แปลงเป็นบิตแมป",
+    "paint.paintEditor.vector": "แปลงเป็นเวกเตอร์",
+    "paint.paintEditor.stroke": "สีขอบ",
+    "paint.brushMode.brush": "แปรง",
+    "paint.eraserMode.eraser": "ยางลบ",
+    "paint.fillMode.fill": "สีพื้น",
+    "paint.lineMode.line": "เส้น",
+    "paint.ovalMode.oval": "วงกลม",
+    "paint.rectMode.rect": "สี่เหลี่ยม",
+    "paint.reshapeMode.reshape": "จัดรูปร่างใหม่",
+    "paint.roundedRectMode.roundedRect": "สี่เหลี่ยมขอบมน",
+    "paint.selectMode.select": "เลือก",
+    "paint.textMode.text": "ข้อความ",
+    "paint.colorPicker.swap": "สลับสี"
 }

@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Lliw",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Dirlawnder",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Disgleirdeb",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Peidiwch poeni, rydym wrthi {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Yn Dod Cyn Bo Hir...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Rydym yn gweithio arno {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Llanw",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Gwisg",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grŵp",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Dad-grwpio",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Dadwneud",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Ailwneud",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Ymlaen",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Nôl",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Blaen",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Nôl",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Rhagor",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Maint",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Maint rhwbiwr",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Copïo",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Gludo",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Dileu",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Crwm",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Gyda Blaen",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Trwch",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Fflipio'n Llorweddol",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Fflipio'n Fertigol",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Llanwyd",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Amlinellwyd",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Trosi i Ddidfap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Trosi i Fector",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Amlinell",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Brwsh",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Rhwbiwr",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Llanw",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Llinell",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Cylch",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Petryal",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Ail siapio",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Petryal Crwm",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Dewis",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Testun",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Cyfnewid",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Lliw",
+    "paint.paintEditor.saturation": "Dirlawnder",
+    "paint.paintEditor.brightness": "Disgleirdeb",
+    "gui.comingSoon.message1": "Peidiwch poeni, rydym wrthi {emoji}",
+    "gui.comingSoon.message2": "Yn Dod Cyn Bo Hir...",
+    "gui.comingSoon.message3": "Rydym yn gweithio arno {emoji}",
+    "paint.paintEditor.fill": "Llanw",
+    "paint.paintEditor.costume": "Gwisg",
+    "paint.paintEditor.group": "Grŵp",
+    "paint.paintEditor.ungroup": "Dad-grwpio",
+    "paint.paintEditor.undo": "Dadwneud",
+    "paint.paintEditor.redo": "Ailwneud",
+    "paint.paintEditor.forward": "Ymlaen",
+    "paint.paintEditor.backward": "Nôl",
+    "paint.paintEditor.front": "Blaen",
+    "paint.paintEditor.back": "Nôl",
+    "paint.paintEditor.more": "Rhagor",
+    "paint.modeTools.brushSize": "Maint",
+    "paint.modeTools.eraserSize": "Maint rhwbiwr",
+    "paint.modeTools.copy": "Copïo",
+    "paint.modeTools.paste": "Gludo",
+    "paint.modeTools.delete": "Dileu",
+    "paint.modeTools.curved": "Crwm",
+    "paint.modeTools.pointed": "Gyda Blaen",
+    "paint.modeTools.thickness": "Trwch",
+    "paint.modeTools.flipHorizontal": "Fflipio'n Llorweddol",
+    "paint.modeTools.flipVertical": "Fflipio'n Fertigol",
+    "paint.modeTools.filled": "Llanwyd",
+    "paint.modeTools.outlined": "Amlinellwyd",
+    "paint.paintEditor.bitmap": "Trosi i Ddidfap",
+    "paint.paintEditor.vector": "Trosi i Fector",
+    "paint.paintEditor.stroke": "Amlinell",
+    "paint.brushMode.brush": "Brwsh",
+    "paint.eraserMode.eraser": "Rhwbiwr",
+    "paint.fillMode.fill": "Llanw",
+    "paint.lineMode.line": "Llinell",
+    "paint.ovalMode.oval": "Cylch",
+    "paint.rectMode.rect": "Petryal",
+    "paint.reshapeMode.reshape": "Ail siapio",
+    "paint.roundedRectMode.roundedRect": "Petryal Crwm",
+    "paint.selectMode.select": "Dewis",
+    "paint.textMode.text": "Testun",
+    "paint.colorPicker.swap": "Cyfnewid"
 }

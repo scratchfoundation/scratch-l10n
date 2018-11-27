@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Seljakott",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Viga seljakoti laadimisel",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Laadib...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Rohkem",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Seljakott on tühi",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Veebilehitsejat ei toetata",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Väga kahju, kuid Scratch 3.0 ei toeta Internet Explorerit, Vivaldit, Operat või Silki. Soovitame kasutada uuemaid veebilehitsejaid Google Chrome, Mozilla, Firefox või Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Tagasi",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Lisainfoks mine {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "KKK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Tee foto",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Laadib kaamerat...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Vajame kaamera kasutamise luba.",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Tee uus foto",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Salvesta",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Tee foto",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Laadib...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Luba kaamerat kasutada",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Õpetused",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Sulge",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Proovi veel asju!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Vaata veel",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ära muretse, tegeleme sellega {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Ilmub varsti...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Tegeleme sellega {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "No devices found",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Have your device nearby, then begin searching.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Press the button on your device.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Start Searching",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Searching...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Try again",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Connected",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Disconnect",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Go to Editor",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Connecting...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Oih! Midagi läks valesti.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Abi",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Device name",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Connect",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Looking for devices",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "No devices found",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Select your device in the list above.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Refresh",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Make sure you have Scratch Link installed and running",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Check that Bluetooth is enabled",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Try again",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Abi",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Mine",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stopp",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Oih! Midagi läks valesti.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Väga kahju, kuid Scratch on kokku jooksnud. Scratchi meeskond saab sellest veast automaatteate. Värskenda lehte ja proovi uuesti.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reload",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Tee plokk",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Lisa parameeter",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "Arv või tekst",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Lisa parameeter",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "Tõeväärtus",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Lisa märgend",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Täida ekraanikuva uuendamata",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Katkesta",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Suund",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "All Around",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Left/Right",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Do not rotate",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Lisa laiend",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Kood",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Taustad",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Kostüümid",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Helindid",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Vaata Scratchi 2.0 projekti",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Lisa enda Scratchi projekti link. 3.0 eelvaates tehtud muudatused pole salvestatud.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Oih, selle projekti link või ID ei tundu õige.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Vaata",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Mine tagasi",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Lisainfoks mine {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "KKK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Ilmub varsti...",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Otsing",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Kõik",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Plokkide loomine...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Laadib spraite...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Laadib helisid...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Laadib laiendeid...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Karjata kasse...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nanode loomine...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Gobod suurenevad",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Valmistab emotikone...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Laadib projekti",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profiil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Minu asjad",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "My Classes",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "My Class",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Konto seaded",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Logi välja",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Vaata kogukonda",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Kasutajanimi",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Parool",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Logi sisse",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "Vali keel",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Õpetused",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Restore Sprite",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Restore Sound",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Restore Costume",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Restore",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Salvesta nüüd",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Salvesta koopiana",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Remiksi",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Uus",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Fail",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Laadi oma arvutist",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Salvesta oma arvutisse",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Redigeeri",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Turn off Turbo Mode",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Turn on Turbo Mode",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Ühine Scratchiga",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Logi sisse",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Anna tagasisidet",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Jagatud",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Jaga",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Abi",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Tagasi",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "tavaline näidik",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "suur näidik",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "liugur",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Proovi Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Mitte praegu",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Try It",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Vaata Scratchi 2.0 projekti",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Welcome to the Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Tegeleme uue põlvkonna Scratchiga. Ootame väga, et seda prooviksid!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Mitte praegu",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Proovi seda! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Vaata Scratchi 2.0 projekti",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Lisainfoks mine {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "KKK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Kõikide spraitide jaoks",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Ainult selle spraidi jaoks",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Cloud variable (stored on server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "See muutuja on saadaval kõigi spraitidega",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Katkesta",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stopp",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Käivita",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Laadib...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Salvesta",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Salvesta uuesti",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Salvesta heli",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Lindista",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Helind",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Käivita",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stopp",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Kärbi",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Salvesta",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Võta tagasi",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Tee uuesti",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Kiiremini",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Aeglasemalt",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Kaja",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Valjemini",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Pehmemalt",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Pööra ümber",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Nimi",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Sprait",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Näita",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Suurus",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "paljunda",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "eemalda",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "eksport",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Vali sprait",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Joonista",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Juhuslik",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Upload Sprite",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Vali suurem lava",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Vali väiksem lava",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Täisekraan",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Sulge täisekraan",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Täisekraani kontroll",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Vali taust",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Joonista",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Juhuslik",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Laadi taust",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Lava",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Taustad",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turborežiim",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Su veebilehitseja ei toeta WebGL-i",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Kahjuks su veebilehtiseja või arvuti {webGlLink}. Seda tehnoloogiat on vaja Scratch 3.0 käimapanemiseks.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "Ei toeta WebGL-i",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Tagasi",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Lisainfoks mine {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "KKK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Vali taust",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Vali kostüüm",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Vali taust",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Vali kostüüm",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Joonista",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Juhuslik",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Laadi taust",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Laadi kostüüm",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kaamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Vali laiend",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Lisa laienduse URL",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Ei saa salvestada...",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "The project file that was selected failed to load.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Vali heli",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Laadi heli",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Juhuslik",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Lindista",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Vali heli",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Vali sprait",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Choose a Tutorial",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Loomine...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Salvestamine ...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meow",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "minu muutuja",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Alustamine",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Lisa liikumisplokk",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Alustamiseks klõpsa rohelisele lipule",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Ütle midagi",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Lisa taust",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Muuda värvi",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Ütle midagi",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Liigu",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Säilita tulemus",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Lisa nimele efekt",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Vali tähesprait",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Mängi heli, kui klõpsatakse",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Vali muu tähesprait",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Muuda värvi",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Vali muu tähesprait ja pane see keerlema",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Vali muu tähesprait ja pane see kasvama",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Tee muusikat",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Vali instrumendisprait",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Mängi heli, kui klõpsatakse",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Loo laul",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Vali trumm ja mängi biiti",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Vali mikrofonisprait",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Loo klõpsamismäng",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pick A Sprite",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Mängi heli, kui klõpsatakse",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Loo skoorimuutuja",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "When Clicked Increase Score",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Mine juhuslikku asendisse",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Muuda värvi",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Nulli skoor",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Loo kullimäng",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Lisa taust",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Lisa sprait",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Liiguta paremale ja vasakule nooleklahviga",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Liiguta üles ja alla nooleklahviga",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Lisa uus sprait",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Liiguta juhuslikult",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Kui täht puudutab kaheksajalga, siis mängib heli",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Loo skoorimuutuja",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Kui täht puudutab kaheksajalga, saab lisapunkti",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Lisa sprait",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Lisa sprait",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Lisa taust",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Muuda suurust",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Liigu",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Salvesta heli",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Make It Spin",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Peida ja näita",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animeeri sprait",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Use Arrow Keys",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Lisa efektid",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Muusika",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Mängi instrumente ja trumme.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pliiats",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Joonista spraitidega",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Videoandurid",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Sense motion with the camera.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "tõlgi",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Tõlgi tekst eri keeltesse",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Connect your projects with the world.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Connecting",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Ehita interaktiivseid roboteid ja muud",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Connecting. Make sure the pin on your EV3 is set to 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Ehita mootorite ja sensoritega.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Connecting",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Kõik",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Loomad",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dance",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Efektid",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantaasia",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Fashion",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Ruumis",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Muusika",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Notes",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Õues",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Inimesed",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Löökriistad",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Kosmos",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sport",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Vee all",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animatsioon",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Kunst",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Mängud",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Lood",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Letters",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "suund",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "suurus",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "kostüümi nimi",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "tausta nimi",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "helitugevus",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "vastus",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "valjus",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "kasutajanimi",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "aasta",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "kuu",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "kuupäev",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "nädalapäev",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "tunnid",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minutid",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "sekundid",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "taimer",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Seljakott",
+    "gui.backpack.errorBackpack": "Viga seljakoti laadimisel",
+    "gui.backpack.loadingBackpack": "Laadib...",
+    "gui.backpack.more": "Rohkem",
+    "gui.backpack.emptyBackpack": "Seljakott on tühi",
+    "gui.unsupportedBrowser.label": "Veebilehitsejat ei toetata",
+    "gui.unsupportedBrowser.description": "Väga kahju, kuid Scratch 3.0 ei toeta Internet Explorerit, Vivaldit, Operat või Silki. Soovitame kasutada uuemaid veebilehitsejaid Google Chrome, Mozilla, Firefox või Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Tagasi",
+    "gui.unsupportedBrowser.previewfaq": "Lisainfoks mine {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "KKK",
+    "gui.cameraModal.cameraModalTitle": "Tee foto",
+    "gui.cameraModal.loadingCameraMessage": "Laadib kaamerat...",
+    "gui.cameraModal.permissionRequest": "Vajame kaamera kasutamise luba.",
+    "gui.cameraModal.retakePhoto": "Tee uus foto",
+    "gui.cameraModal.save": "Salvesta",
+    "gui.cameraModal.takePhoto": "Tee foto",
+    "gui.cameraModal.loadingCaption": "Laadib...",
+    "gui.cameraModal.enableCameraCaption": "Luba kaamerat kasutada",
+    "gui.cards.all-tutorials": "Õpetused",
+    "gui.cards.close": "Sulge",
+    "gui.cards.more-things-to-try": "Proovi veel asju!",
+    "gui.cards.see-more": "Vaata veel",
+    "gui.comingSoon.message1": "Ära muretse, tegeleme sellega {emoji}",
+    "gui.comingSoon.message2": "Ilmub varsti...",
+    "gui.comingSoon.message3": "Tegeleme sellega {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "No devices found",
+    "gui.connection.auto-scanning.prescan": "Have your device nearby, then begin searching.",
+    "gui.connection.auto-scanning.pressbutton": "Press the button on your device.",
+    "gui.connection.auto-scanning.start-search": "Start Searching",
+    "gui.connection.connecting-searchbutton": "Searching...",
+    "gui.connection.auto-scanning.try-again": "Try again",
+    "gui.connection.connected": "Connected",
+    "gui.connection.disconnect": "Disconnect",
+    "gui.connection.go-to-editor": "Go to Editor",
+    "gui.connection.connecting-cancelbutton": "Connecting...",
+    "gui.connection.error.errorMessage": "Oih! Midagi läks valesti.",
+    "gui.connection.error.tryagainbutton": "Try again",
+    "gui.connection.error.helpbutton": "Abi",
+    "gui.connection.peripheral-name-label": "Device name",
+    "gui.connection.connect": "Connect",
+    "gui.connection.scanning.lookingforperipherals": "Looking for devices",
+    "gui.connection.scanning.noPeripheralsFound": "No devices found",
+    "gui.connection.scanning.instructions": "Select your device in the list above.",
+    "gui.connection.search": "Refresh",
+    "gui.connection.unavailable.installscratchlink": "Make sure you have Scratch Link installed and running",
+    "gui.connection.unavailable.enablebluetooth": "Check that Bluetooth is enabled",
+    "gui.connection.unavailable.tryagainbutton": "Try again",
+    "gui.connection.unavailable.helpbutton": "Abi",
+    "gui.controls.go": "Mine",
+    "gui.controls.stop": "Stopp",
+    "gui.crashMessage.label": "Oih! Midagi läks valesti.",
+    "gui.crashMessage.description": "Väga kahju, kuid Scratch on kokku jooksnud. Scratchi meeskond saab sellest veast automaatteate. Värskenda lehte ja proovi uuesti.",
+    "gui.crashMessage.reload": "Reload",
+    "gui.customProcedures.myblockModalTitle": "Tee plokk",
+    "gui.customProcedures.addAnInputNumberText": "Lisa parameeter",
+    "gui.customProcedures.numberTextType": "Arv või tekst",
+    "gui.customProcedures.addAnInputBoolean": "Lisa parameeter",
+    "gui.customProcedures.booleanType": "Tõeväärtus",
+    "gui.customProcedures.addALabel": "Lisa märgend",
+    "gui.customProcedures.runWithoutScreenRefresh": "Täida ekraanikuva uuendamata",
+    "gui.customProcedures.cancel": "Katkesta",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Suund",
+    "gui.directionPicker.rotationStyles.allAround": "All Around",
+    "gui.directionPicker.rotationStyles.leftRight": "Left/Right",
+    "gui.directionPicker.rotationStyles.dontRotate": "Do not rotate",
+    "gui.gui.addExtension": "Lisa laiend",
+    "gui.gui.codeTab": "Kood",
+    "gui.gui.backdropsTab": "Taustad",
+    "gui.gui.costumesTab": "Kostüümid",
+    "gui.gui.soundsTab": "Helindid",
+    "gui.importInfo.title": "Vaata Scratchi 2.0 projekti",
+    "gui.importInfo.betamessage": "Enter a link to one of your shared Scratch projects. Changes made in this 3.0 Beta will not be saved.",
+    "gui.importInfo.message": "Lisa enda Scratchi projekti link. 3.0 eelvaates tehtud muudatused pole salvestatud.",
+    "gui.importInfo.invalidFormatError": "Oih, selle projekti link või ID ei tundu õige.",
+    "gui.importModal.viewproject": "Vaata",
+    "gui.importInfo.goback": "Mine tagasi",
+    "gui.importInfo.previewfaq": "Lisainfoks mine {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "KKK",
+    "gui.extensionLibrary.comingSoon": "Ilmub varsti...",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Otsing",
+    "gui.library.allTag": "Kõik",
+    "gui.loader.message1": "Plokkide loomine...",
+    "gui.loader.message2": "Laadib spraite...",
+    "gui.loader.message3": "Laadib helisid...",
+    "gui.loader.message4": "Laadib laiendeid...",
+    "gui.loader.message5": "Karjata kasse...",
+    "gui.loader.message6": "Nanode loomine...",
+    "gui.loader.message7": "Gobod suurenevad",
+    "gui.loader.message8": "Valmistab emotikone...",
+    "gui.loader.headline": "Laadib projekti",
+    "gui.accountMenu.profile": "Profiil",
+    "gui.accountMenu.myStuff": "Minu asjad",
+    "gui.accountMenu.myClasses": "My Classes",
+    "gui.accountMenu.myClass": "My Class",
+    "gui.accountMenu.accountSettings": "Konto seaded",
+    "gui.accountMenu.signOut": "Logi välja",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Vaata kogukonda",
+    "general.username": "Kasutajanimi",
+    "general.password": "Parool",
+    "general.signIn": "Logi sisse",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "Vali keel",
+    "gui.menuBar.tutorialsLibrary": "Õpetused",
+    "gui.menuBar.restoreSprite": "Restore Sprite",
+    "gui.menuBar.restoreSound": "Restore Sound",
+    "gui.menuBar.restoreCostume": "Restore Costume",
+    "gui.menuBar.restore": "Restore",
+    "gui.menuBar.saveNow": "Salvesta nüüd",
+    "gui.menuBar.saveAsCopy": "Salvesta koopiana",
+    "gui.menuBar.remix": "Remiksi",
+    "gui.menuBar.new": "Uus",
+    "gui.menuBar.file": "Fail",
+    "gui.menuBar.uploadFromComputer": "Laadi oma arvutist",
+    "gui.menuBar.downloadToComputer": "Salvesta oma arvutisse",
+    "gui.menuBar.edit": "Redigeeri",
+    "gui.menuBar.turboModeOff": "Turn off Turbo Mode",
+    "gui.menuBar.turboModeOn": "Turn on Turbo Mode",
+    "gui.menuBar.joinScratch": "Ühine Scratchiga",
+    "gui.menuBar.signIn": "Logi sisse",
+    "gui.menuBar.giveFeedback": "Anna tagasisidet",
+    "gui.gui.projectTitlePlaceholder": "Project title here",
+    "gui.menuBar.isShared": "Jagatud",
+    "gui.menuBar.share": "Jaga",
+    "gui.modal.help": "Abi",
+    "gui.modal.back": "Tagasi",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "tavaline näidik",
+    "gui.monitor.contextMenu.large": "suur näidik",
+    "gui.monitor.contextMenu.slider": "liugur",
+    "gui.previewInfo.label": "Proovi Scratch 3.0",
+    "gui.previewInfo.welcome": "Welcome to the Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Mitte praegu",
+    "gui.previewModal.tryittooltip": "Try It",
+    "gui.previewModal.viewprojecttooltip": "Vaata Scratchi 2.0 projekti",
+    "gui.previewInfo.betawelcome": "Welcome to the Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Tegeleme uue põlvkonna Scratchiga. Ootame väga, et seda prooviksid!",
+    "gui.previewInfo.notnow": "Mitte praegu",
+    "gui.previewModal.tryit": "Proovi seda! {caticon}",
+    "gui.previewModal.viewproject": "Vaata Scratchi 2.0 projekti",
+    "gui.previewInfo.previewfaq": "Lisainfoks mine {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "KKK",
+    "gui.gui.variableScopeOptionAllSprites": "Kõikide spraitide jaoks",
+    "gui.gui.variableScopeOptionSpriteOnly": "Ainult selle spraidi jaoks",
+    "gui.gui.cloudVariableOption": "Cloud variable (stored on server)",
+    "gui.gui.variablePromptAllSpritesMessage": "See muutuja on saadaval kõigi spraitidega",
+    "gui.prompt.cancel": "Katkesta",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stopp",
+    "gui.playbackStep.playMsg": "Käivita",
+    "gui.playbackStep.loadingMsg": "Laadib...",
+    "gui.playbackStep.saveMsg": "Salvesta",
+    "gui.playbackStep.reRecordMsg": "Salvesta uuesti",
+    "gui.recordModal.title": "Salvesta heli",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Lindista",
+    "gui.soundEditor.sound": "Helind",
+    "gui.soundEditor.play": "Käivita",
+    "gui.soundEditor.stop": "Stopp",
+    "gui.soundEditor.trim": "Kärbi",
+    "gui.soundEditor.save": "Salvesta",
+    "gui.soundEditor.undo": "Võta tagasi",
+    "gui.soundEditor.redo": "Tee uuesti",
+    "gui.soundEditor.faster": "Kiiremini",
+    "gui.soundEditor.slower": "Aeglasemalt",
+    "gui.soundEditor.echo": "Kaja",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Valjemini",
+    "gui.soundEditor.softer": "Pehmemalt",
+    "gui.soundEditor.reverse": "Pööra ümber",
+    "gui.SpriteInfo.spritePlaceholder": "Nimi",
+    "gui.SpriteInfo.sprite": "Sprait",
+    "gui.SpriteInfo.show": "Näita",
+    "gui.SpriteInfo.size": "Suurus",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "paljunda",
+    "gui.spriteSelectorItem.contextMenuDelete": "eemalda",
+    "gui.spriteSelectorItem.contextMenuExport": "eksport",
+    "gui.spriteSelector.addSpriteFromLibrary": "Vali sprait",
+    "gui.spriteSelector.addSpriteFromPaint": "Joonista",
+    "gui.spriteSelector.addSpriteFromSurprise": "Juhuslik",
+    "gui.spriteSelector.addSpriteFromFile": "Upload Sprite",
+    "gui.stageHeader.stageSizeLarge": "Vali suurem lava",
+    "gui.stageHeader.stageSizeSmall": "Vali väiksem lava",
+    "gui.stageHeader.stageSizeFull": "Täisekraan",
+    "gui.stageHeader.stageSizeUnFull": "Sulge täisekraan",
+    "gui.stageHeader.fullscreenControl": "Täisekraani kontroll",
+    "gui.spriteSelector.addBackdropFromLibrary": "Vali taust",
+    "gui.stageSelector.addBackdropFromPaint": "Joonista",
+    "gui.stageSelector.addBackdropFromSurprise": "Juhuslik",
+    "gui.stageSelector.addBackdropFromFile": "Laadi taust",
+    "gui.stageSelector.stage": "Lava",
+    "gui.stageSelector.backdrops": "Taustad",
+    "gui.turboMode.active": "Turborežiim",
+    "gui.webglModal.label": "Su veebilehitseja ei toeta WebGL-i",
+    "gui.webglModal.description": "Kahjuks su veebilehtiseja või arvuti {webGlLink}. Seda tehnoloogiat on vaja Scratch 3.0 käimapanemiseks.",
+    "gui.webglModal.webgllink": "Ei toeta WebGL-i",
+    "gui.webglModal.back": "Tagasi",
+    "gui.webglModal.previewfaq": "Lisainfoks mine {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "KKK",
+    "gui.costumeLibrary.chooseABackdrop": "Vali taust",
+    "gui.costumeLibrary.chooseACostume": "Vali kostüüm",
+    "gui.costumeTab.addBackdropFromLibrary": "Vali taust",
+    "gui.costumeTab.addCostumeFromLibrary": "Vali kostüüm",
+    "gui.costumeTab.addBlankCostume": "Joonista",
+    "gui.costumeTab.addSurpriseCostume": "Juhuslik",
+    "gui.costumeTab.addFileBackdrop": "Laadi taust",
+    "gui.costumeTab.addFileCostume": "Laadi kostüüm",
+    "gui.costumeTab.addCameraCostume": "Kaamera",
+    "gui.extensionLibrary.chooseAnExtension": "Vali laiend",
+    "gui.extensionLibrary.extensionUrl": "Lisa laienduse URL",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Ei saa salvestada...",
+    "gui.projectLoader.loadError": "The project file that was selected failed to load.",
+    "gui.soundLibrary.chooseASound": "Vali heli",
+    "gui.soundTab.fileUploadSound": "Laadi heli",
+    "gui.soundTab.surpriseSound": "Juhuslik",
+    "gui.soundTab.recordSound": "Lindista",
+    "gui.soundTab.addSoundFromLibrary": "Vali heli",
+    "gui.spriteLibrary.chooseASprite": "Vali sprait",
+    "gui.tipsLibrary.tutorials": "Choose a Tutorial",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Loomine...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Salvestamine ...",
+    "gui.defaultProject.meow": "Meow",
+    "gui.defaultProject.variable": "minu muutuja",
+    "gui.howtos.intro-move-sayhello-hat.name": "Alustamine",
+    "gui.howtos.intro-move.step_stepMove": "Lisa liikumisplokk",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Alustamiseks klõpsa rohelisele lipule",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Ütle midagi",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Lisa taust",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Muuda värvi",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Spin Around",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Ütle midagi",
+    "gui.howtos.cartoon-network.step_CNglide": "Liigu",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Säilita tulemus",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Lisa nimele efekt",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Vali tähesprait",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Mängi heli, kui klõpsatakse",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Vali muu tähesprait",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Muuda värvi",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Vali muu tähesprait ja pane see keerlema",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Vali muu tähesprait ja pane see kasvama",
+    "gui.howtos.make-music.name": "Tee muusikat",
+    "gui.howtos.Make-Music.step_PickInstrument": "Vali instrumendisprait",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Mängi heli, kui klõpsatakse",
+    "gui.howtos.Make-Music.step_MakeSong": "Loo laul",
+    "gui.howtos.make-music.step_MakeBeat": "Vali trumm ja mängi biiti",
+    "gui.howtos.make-music.step_MakeBeatBox": "Vali mikrofonisprait",
+    "gui.howtos.make-a-game.name": "Loo klõpsamismäng",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Pick A Sprite",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Mängi heli, kui klõpsatakse",
+    "gui.howtos.make-a-game.step_GameAddScore": "Loo skoorimuutuja",
+    "gui.howtos.make-a-game.step_GameChangeScore": "When Clicked Increase Score",
+    "gui.howtos.make-a-game.step_Random": "Mine juhuslikku asendisse",
+    "gui.howtos.make-music.step_GameChangeColor": "Muuda värvi",
+    "gui.howtos.make-music.step_ResetScore": "Nulli skoor",
+    "gui.howtos.make-a-chase-game.name": "Loo kullimäng",
+    "gui.howtos.Chase-Game.step_BG": "Lisa taust",
+    "gui.howtos.chase-game.step_AddOcto": "Lisa sprait",
+    "gui.howtos.make-music.step_LeftRight": "Liiguta paremale ja vasakule nooleklahviga",
+    "gui.howtos.Chase-Game.step_UpDown": "Liiguta üles ja alla nooleklahviga",
+    "gui.howtos.Chase-Game.step_AddStar": "Lisa uus sprait",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Liiguta juhuslikult",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Kui täht puudutab kaheksajalga, siis mängib heli",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Loo skoorimuutuja",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Kui täht puudutab kaheksajalga, saab lisapunkti",
+    "gui.howtos.add-sprite.name": "Lisa sprait",
+    "gui.howtos.add-sprite.step_addSprite": "Lisa sprait",
+    "gui.howtos.add-a-backdrop.name": "Lisa taust",
+    "gui.howtos.change-size.name": "Muuda suurust",
+    "gui.howtos.glide-around.name": "Liigu",
+    "gui.howtos.record-a-sound.name": "Salvesta heli",
+    "gui.howtos.spin-video.name": "Make It Spin",
+    "gui.howtos.hide-and-show.name": "Peida ja näita",
+    "gui.howtos.switch-costume.name": "Animeeri sprait",
+    "gui.howtos.move-around-with-arrow-keys.name": "Use Arrow Keys",
+    "gui.howtos.add-effects.name": "Lisa efektid",
+    "gui.extension.music.name": "Muusika",
+    "gui.extension.music.description": "Mängi instrumente ja trumme.",
+    "gui.extension.pen.name": "Pliiats",
+    "gui.extension.pen.description": "Joonista spraitidega",
+    "gui.extension.videosensing.name": "Videoandurid",
+    "gui.extension.videosensing.description": "Sense motion with the camera.",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "tõlgi",
+    "gui.extension.translate.description": "Tõlgi tekst eri keeltesse",
+    "gui.extension.microbit.description": "Connect your projects with the world.",
+    "gui.extension.microbit.connectingMessage": "Connecting",
+    "gui.extension.ev3.description": "Ehita interaktiivseid roboteid ja muud",
+    "gui.extension.ev3.connectingMessage": "Connecting. Make sure the pin on your EV3 is set to 1234.",
+    "gui.extension.wedo2.description": "Ehita mootorite ja sensoritega.",
+    "gui.extension.wedo2.connectingMessage": "Connecting",
+    "gui.libraryTags.all": "Kõik",
+    "gui.libraryTags.animals": "Loomad",
+    "gui.libraryTags.dance": "Dance",
+    "gui.libraryTags.effects": "Efektid",
+    "gui.libraryTags.fantasy": "Fantaasia",
+    "gui.libraryTags.fashion": "Fashion",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "Ruumis",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Muusika",
+    "gui.libraryTags.notes": "Notes",
+    "gui.libraryTags.outdoors": "Õues",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Inimesed",
+    "gui.libraryTags.percussion": "Löökriistad",
+    "gui.libraryTags.space": "Kosmos",
+    "gui.libraryTags.sports": "Sport",
+    "gui.libraryTags.underwater": "Vee all",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Animatsioon",
+    "gui.libraryTags.art": "Kunst",
+    "gui.libraryTags.games": "Mängud",
+    "gui.libraryTags.stories": "Lood",
+    "gui.libraryTags.letters": "Letters",
+    "gui.opcodeLabels.direction": "suund",
+    "gui.opcodeLabels.xposition": "x",
+    "gui.opcodeLabels.yposition": "y",
+    "gui.opcodeLabels.size": "suurus",
+    "gui.opcodeLabels.costumename": "kostüümi nimi",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "tausta nimi",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "helitugevus",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "vastus",
+    "gui.opcodeLabels.loudness": "valjus",
+    "gui.opcodeLabels.username": "kasutajanimi",
+    "gui.opcodeLabels.year": "aasta",
+    "gui.opcodeLabels.month": "kuu",
+    "gui.opcodeLabels.date": "kuupäev",
+    "gui.opcodeLabels.dayofweek": "nädalapäev",
+    "gui.opcodeLabels.hour": "tunnid",
+    "gui.opcodeLabels.minute": "minutid",
+    "gui.opcodeLabels.second": "sekundid",
+    "gui.opcodeLabels.timer": "taimer",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "pop"
 }

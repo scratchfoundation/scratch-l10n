@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "重新连接",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "书包",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "载入书包时出错了",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "载入中……",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "更多",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "书包是空的",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "不支持当前浏览器",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "我们很抱歉，Scratch 3.0不支持IE、Vivaldi、Opera或Silk浏览器。我们推荐较新的浏览器，例如谷歌Chrome浏览器，Mozilla火狐浏览器或微软Edge。",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "返回",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "访问{previewFaqLink}，了解更多。",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "常见问题",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "拍摄",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "摄像头加载中……",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "需要你的同意才能使用摄像头",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "重新拍摄",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "保存",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "拍摄照片",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "载入中……",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "启用摄像头",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "教程",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "关闭",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "再试试这些！",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "更多技巧",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "别急，我们还在做这个 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "即将启用...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "还在开发 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "没有发现任何设备",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "把设备放在边上，然后开始搜索",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "按下设备上的按钮",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "开始搜索",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "正在搜索……",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "重试",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "已连接",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "断开连接",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "返回编辑器",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "正在连接……",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "呀，好像出错了。",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "重试",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "帮助",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "设备名称",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "连接",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "正在查找设备",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "没有发现任何设备",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "选择上面列出的设备。",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "刷新",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "确保已安装并正在运行Scratch Link",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "请检查蓝牙已经开启",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "重试",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "帮助",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "运行",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "停止",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "呀，出错了。",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "很抱歉，Scratch出故障了。这个问题已经自动报告给Scratch开发团队。请刷新页面再试试。",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "重新载入",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "制作新的积木",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "添加输入项",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "数字或文本",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "添加输入项",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "布尔值",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "添加文本标签：",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "运行时不刷新屏幕",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "取消",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "完成",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "方向",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "任意旋转",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "左右翻转",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "不旋转",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "添加扩展",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "代码",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "背景",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "造型",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "声音",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "观看2.0项目",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "键入一个你分享过的Scratch项目链接。在Scratch 3.0 Beta版中做出的更改将无法保存。",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "键入一个你分享过的Scratch项目链接。在Scratch 3.0预览版中做出的更改将无法保存。",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "啊哦，这个项目链接/编号好像不对。",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "观看",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "返回",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "访问{previewFaqLink}，了解更多。",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "常见问题",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "即将启用",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "搜索",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "所有",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "正在创建积木……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "载入角色……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "载入声音……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "加载扩展……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "呼唤小猫……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "传送Nano……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "给Gobo充气 …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "准备表情……",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "载入项目",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "个人资料",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "我的项目中心",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "我的所有班级",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "我的班级",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "账号设置",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "登出",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "查看社区",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "用户名称",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "密码",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "登录",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "需要帮助？",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "语言菜单",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "教程",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "复原删除的角色",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "复原删除的声音",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "复原删除的造型",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "恢复",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "立即保存",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "保存副本",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "改编",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "新建项目",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "文件",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "从电脑中上传",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "保存到电脑",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "编辑",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "关闭加速模式",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "打开加速模式",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "加入 Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "登录",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "意见反馈",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "在此填写项目标题",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "已分享",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "分享",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "帮助",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "返回",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(空)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "长度{length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "正常显示",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "大字显示",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "滑杆",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "尝试一下 Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "欢迎来到Scratch 3.0 Beta版",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "下次吧",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "试一试",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "观看2.0项目",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "欢迎来到Scratch 3.0 Beta版",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "我们正在开发下一代Scratch。我们很想让你试试它！",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "下次吧",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "试用！ {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "观看2.0项目",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "访问{previewFaqLink}，了解更多。",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "常见问题",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "适用于所有角色",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "仅适用于当前角色",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "云变量 (存储在服务器上)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "所有角色都可使用该变量。",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "取消",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "确定",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "停止",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "播放",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "载入中……",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "保存",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "重新录制",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "录制声音",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "点击下方的按钮开始录制",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}我们需要你的许可才能使用麦克风。",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "停止录制",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "录制",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "声音",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "播放",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "停止",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "修剪",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "保存",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "撤销",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "重做",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "快一点",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "慢一点",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "回声",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "机械化",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "响一点",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "轻一点",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "反转",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "名字",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "角色",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "显示",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "大小",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "复制",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "删除",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "导出",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "选择一个角色",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "绘制",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "随机",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "上传角色",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "放大舞台",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "缩小舞台",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "进入全屏模式",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "退出全屏模式",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "全屏模式",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "选择一个背景",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "绘制",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "随机",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "上传背景",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "舞台",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "背景",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "加速模式",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "你的浏览器不支持WenGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "非常遗憾，你的电脑或浏览器{webGlLink}。Scratch 3.0需要该技术才能运行。",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "不支持WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "返回",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "访问{previewFaqLink}，了解更多。",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "常见问题",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "选择一个背景",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "选择一个造型",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "选择一个背景",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "选择一个造型",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "绘制",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "随机",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "上传背景",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "上传造型",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "摄像头",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "选择一个扩展",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "键入扩展的URL",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch项目",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "无法启动录音",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "加载项目文件失败。",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "选择一个声音",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "上传声音",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "随机",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "录制",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "选择一个声音",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "选择一个角色",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "选择一个教程",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "正在创建…",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "正在保存...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "喵",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "我的变量",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "入门",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "添加「移动」积木",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "点击绿旗运行",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "创建会说话的动画",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "添加文字朗读扩展积木",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "让角色说些话",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "设置语音",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "四处移动",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "添加一个背景",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "添加另一个角色",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "演奏一首歌",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "改变颜色",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "原地转动",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "变大变小",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "冒险游戏动画",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "选择要显示的角色",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "让角色说些话",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "滑来滑去",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "选择要捕捉的目标",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "保存成绩",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "下一关：改变背景",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "姓名动画",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "选一个字母角色",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "点击时播放声音",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "另选一个字母角色",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "改变颜色",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "选一个字母，让它旋转",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "另选一个字母，让它变大",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "制作音乐",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "选一个乐器角色",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "点击时播放声音",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "创作乐曲",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "选一种鼓，演奏鼓点",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "用麦克风角色演唱节奏口技",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "制作消除游戏",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "挑选一个角色",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "点击时播放声音",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "建立一个得分变量",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "被点击时增加分数",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "移动到随机位置",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "改变颜色",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "把得分清零",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "制作追赶游戏",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "添加一个背景",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "添加一个角色",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "用方向键控制左右移动",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "用方向键控制上下移动",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "添加另一个角色",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "随机移动",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "让章鱼被碰到的时候发出声音",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "建立一个得分变量",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "让章鱼被碰到时，增加得分",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "添加一个角色",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "添加一个角色",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "添加一个背景",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "变大变小",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "滑来滑去",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "录制声音",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "让字母旋转",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "隐藏和出现",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "角色动画",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "使用方向键",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "添加一些效果",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "音乐",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "演奏乐器，敲锣打鼓。",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "画笔",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "绘制角色。",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "视频侦测",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "使用摄像头侦测运动。",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "文字朗读",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "让你的项目开口说话",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "翻译",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "把文字翻译成多种语言。",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "把项目连接到实体世界。",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "正在连接",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "搭建交互机器人等。",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "正在连接。请确保EV3上的识别码(PIN)已经设置为1234。",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "支持马达和传感器。",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "正在连接",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "所有",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "动物",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "舞蹈",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "效果",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "奇幻",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "时尚",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "食物",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "室内",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "可循环",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "音乐",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "音符",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "户外",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "图案",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "人物",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "打击乐器",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "太空",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "运动",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "水下",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "人声",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "古怪",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "动画",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "艺术",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "游戏",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "故事",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "字母",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "方向",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x 坐标",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y 坐标",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "大小",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "造型名称",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "造型编号",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "背景名称",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "背景编号",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "音量",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "演奏速度",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "回答",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "响度",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "用户名",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "年",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "月",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "日",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "星期",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "时",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "分",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "秒",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "计时器",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "背景{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "造型{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "角色{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "啵",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "重新连接",
+    "gui.backpack.header": "书包",
+    "gui.backpack.errorBackpack": "载入书包时出错了",
+    "gui.backpack.loadingBackpack": "载入中……",
+    "gui.backpack.more": "更多",
+    "gui.backpack.emptyBackpack": "书包是空的",
+    "gui.unsupportedBrowser.label": "不支持当前浏览器",
+    "gui.unsupportedBrowser.description": "我们很抱歉，Scratch 3.0不支持IE、Vivaldi、Opera或Silk浏览器。我们推荐较新的浏览器，例如谷歌Chrome浏览器，Mozilla火狐浏览器或微软Edge。",
+    "gui.unsupportedBrowser.back": "返回",
+    "gui.unsupportedBrowser.previewfaq": "访问{previewFaqLink}，了解更多。",
+    "gui.unsupportedBrowser.previewfaqlinktext": "常见问题",
+    "gui.cameraModal.cameraModalTitle": "拍摄",
+    "gui.cameraModal.loadingCameraMessage": "摄像头加载中……",
+    "gui.cameraModal.permissionRequest": "需要你的同意才能使用摄像头",
+    "gui.cameraModal.retakePhoto": "重新拍摄",
+    "gui.cameraModal.save": "保存",
+    "gui.cameraModal.takePhoto": "拍摄照片",
+    "gui.cameraModal.loadingCaption": "载入中……",
+    "gui.cameraModal.enableCameraCaption": "启用摄像头",
+    "gui.cards.all-tutorials": "教程",
+    "gui.cards.close": "关闭",
+    "gui.cards.more-things-to-try": "再试试这些！",
+    "gui.cards.see-more": "更多技巧",
+    "gui.comingSoon.message1": "别急，我们还在做这个 {emoji}",
+    "gui.comingSoon.message2": "即将启用...",
+    "gui.comingSoon.message3": "还在开发 {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "没有发现任何设备",
+    "gui.connection.auto-scanning.prescan": "把设备放在边上，然后开始搜索",
+    "gui.connection.auto-scanning.pressbutton": "按下设备上的按钮",
+    "gui.connection.auto-scanning.start-search": "开始搜索",
+    "gui.connection.connecting-searchbutton": "正在搜索……",
+    "gui.connection.auto-scanning.try-again": "重试",
+    "gui.connection.connected": "已连接",
+    "gui.connection.disconnect": "断开连接",
+    "gui.connection.go-to-editor": "返回编辑器",
+    "gui.connection.connecting-cancelbutton": "正在连接……",
+    "gui.connection.error.errorMessage": "呀，好像出错了。",
+    "gui.connection.error.tryagainbutton": "重试",
+    "gui.connection.error.helpbutton": "帮助",
+    "gui.connection.peripheral-name-label": "设备名称",
+    "gui.connection.connect": "连接",
+    "gui.connection.scanning.lookingforperipherals": "正在查找设备",
+    "gui.connection.scanning.noPeripheralsFound": "没有发现任何设备",
+    "gui.connection.scanning.instructions": "选择上面列出的设备。",
+    "gui.connection.search": "刷新",
+    "gui.connection.unavailable.installscratchlink": "确保已安装并正在运行Scratch Link",
+    "gui.connection.unavailable.enablebluetooth": "请检查蓝牙已经开启",
+    "gui.connection.unavailable.tryagainbutton": "重试",
+    "gui.connection.unavailable.helpbutton": "帮助",
+    "gui.controls.go": "运行",
+    "gui.controls.stop": "停止",
+    "gui.crashMessage.label": "呀，出错了。",
+    "gui.crashMessage.description": "很抱歉，Scratch出故障了。这个问题已经自动报告给Scratch开发团队。请刷新页面再试试。",
+    "gui.crashMessage.reload": "重新载入",
+    "gui.customProcedures.myblockModalTitle": "制作新的积木",
+    "gui.customProcedures.addAnInputNumberText": "添加输入项",
+    "gui.customProcedures.numberTextType": "数字或文本",
+    "gui.customProcedures.addAnInputBoolean": "添加输入项",
+    "gui.customProcedures.booleanType": "布尔值",
+    "gui.customProcedures.addALabel": "添加文本标签：",
+    "gui.customProcedures.runWithoutScreenRefresh": "运行时不刷新屏幕",
+    "gui.customProcedures.cancel": "取消",
+    "gui.customProcedures.ok": "完成",
+    "gui.SpriteInfo.direction": "方向",
+    "gui.directionPicker.rotationStyles.allAround": "任意旋转",
+    "gui.directionPicker.rotationStyles.leftRight": "左右翻转",
+    "gui.directionPicker.rotationStyles.dontRotate": "不旋转",
+    "gui.gui.addExtension": "添加扩展",
+    "gui.gui.codeTab": "代码",
+    "gui.gui.backdropsTab": "背景",
+    "gui.gui.costumesTab": "造型",
+    "gui.gui.soundsTab": "声音",
+    "gui.importInfo.title": "观看2.0项目",
+    "gui.importInfo.betamessage": "键入一个你分享过的Scratch项目链接。在Scratch 3.0 Beta版中做出的更改将无法保存。",
+    "gui.importInfo.message": "键入一个你分享过的Scratch项目链接。在Scratch 3.0预览版中做出的更改将无法保存。",
+    "gui.importInfo.invalidFormatError": "啊哦，这个项目链接/编号好像不对。",
+    "gui.importModal.viewproject": "观看",
+    "gui.importInfo.goback": "返回",
+    "gui.importInfo.previewfaq": "访问{previewFaqLink}，了解更多。",
+    "gui.importInfo.previewfaqlinktext": "常见问题",
+    "gui.extensionLibrary.comingSoon": "即将启用",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "搜索",
+    "gui.library.allTag": "所有",
+    "gui.loader.message1": "正在创建积木……",
+    "gui.loader.message2": "载入角色……",
+    "gui.loader.message3": "载入声音……",
+    "gui.loader.message4": "加载扩展……",
+    "gui.loader.message5": "呼唤小猫……",
+    "gui.loader.message6": "传送Nano……",
+    "gui.loader.message7": "给Gobo充气 …",
+    "gui.loader.message8": "准备表情……",
+    "gui.loader.headline": "载入项目",
+    "gui.accountMenu.profile": "个人资料",
+    "gui.accountMenu.myStuff": "我的项目中心",
+    "gui.accountMenu.myClasses": "我的所有班级",
+    "gui.accountMenu.myClass": "我的班级",
+    "gui.accountMenu.accountSettings": "账号设置",
+    "gui.accountMenu.signOut": "登出",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "查看社区",
+    "general.username": "用户名称",
+    "general.password": "密码",
+    "general.signIn": "登录",
+    "login.needHelp": "需要帮助？",
+    "gui.menuBar.LanguageSelector": "语言菜单",
+    "gui.menuBar.tutorialsLibrary": "教程",
+    "gui.menuBar.restoreSprite": "复原删除的角色",
+    "gui.menuBar.restoreSound": "复原删除的声音",
+    "gui.menuBar.restoreCostume": "复原删除的造型",
+    "gui.menuBar.restore": "恢复",
+    "gui.menuBar.saveNow": "立即保存",
+    "gui.menuBar.saveAsCopy": "保存副本",
+    "gui.menuBar.remix": "改编",
+    "gui.menuBar.new": "新建项目",
+    "gui.menuBar.file": "文件",
+    "gui.menuBar.uploadFromComputer": "从电脑中上传",
+    "gui.menuBar.downloadToComputer": "保存到电脑",
+    "gui.menuBar.edit": "编辑",
+    "gui.menuBar.turboModeOff": "关闭加速模式",
+    "gui.menuBar.turboModeOn": "打开加速模式",
+    "gui.menuBar.joinScratch": "加入 Scratch",
+    "gui.menuBar.signIn": "登录",
+    "gui.menuBar.giveFeedback": "意见反馈",
+    "gui.gui.projectTitlePlaceholder": "在此填写项目标题",
+    "gui.menuBar.isShared": "已分享",
+    "gui.menuBar.share": "分享",
+    "gui.modal.help": "帮助",
+    "gui.modal.back": "返回",
+    "gui.monitor.listMonitor.empty": "(空)",
+    "gui.monitor.listMonitor.listLength": "长度{length}",
+    "gui.monitor.contextMenu.default": "正常显示",
+    "gui.monitor.contextMenu.large": "大字显示",
+    "gui.monitor.contextMenu.slider": "滑杆",
+    "gui.previewInfo.label": "尝试一下 Scratch 3.0",
+    "gui.previewInfo.welcome": "欢迎来到Scratch 3.0 Beta版",
+    "gui.previewModal.notnowtooltip": "下次吧",
+    "gui.previewModal.tryittooltip": "试一试",
+    "gui.previewModal.viewprojecttooltip": "观看2.0项目",
+    "gui.previewInfo.betawelcome": "欢迎来到Scratch 3.0 Beta版",
+    "gui.previewInfo.invitation": "我们正在开发下一代Scratch。我们很想让你试试它！",
+    "gui.previewInfo.notnow": "下次吧",
+    "gui.previewModal.tryit": "试用！ {caticon}",
+    "gui.previewModal.viewproject": "观看2.0项目",
+    "gui.previewInfo.previewfaq": "访问{previewFaqLink}，了解更多。",
+    "gui.previewInfo.previewfaqlinktext": "常见问题",
+    "gui.gui.variableScopeOptionAllSprites": "适用于所有角色",
+    "gui.gui.variableScopeOptionSpriteOnly": "仅适用于当前角色",
+    "gui.gui.cloudVariableOption": "云变量 (存储在服务器上)",
+    "gui.gui.variablePromptAllSpritesMessage": "所有角色都可使用该变量。",
+    "gui.prompt.cancel": "取消",
+    "gui.prompt.ok": "确定",
+    "gui.playbackStep.stopMsg": "停止",
+    "gui.playbackStep.playMsg": "播放",
+    "gui.playbackStep.loadingMsg": "载入中……",
+    "gui.playbackStep.saveMsg": "保存",
+    "gui.playbackStep.reRecordMsg": "重新录制",
+    "gui.recordModal.title": "录制声音",
+    "gui.recordingStep.beginRecord": "点击下方的按钮开始录制",
+    "gui.recordingStep.permission": "{arrow}我们需要你的许可才能使用麦克风。",
+    "gui.recordingStep.stop": "停止录制",
+    "gui.recordingStep.record": "录制",
+    "gui.soundEditor.sound": "声音",
+    "gui.soundEditor.play": "播放",
+    "gui.soundEditor.stop": "停止",
+    "gui.soundEditor.trim": "修剪",
+    "gui.soundEditor.save": "保存",
+    "gui.soundEditor.undo": "撤销",
+    "gui.soundEditor.redo": "重做",
+    "gui.soundEditor.faster": "快一点",
+    "gui.soundEditor.slower": "慢一点",
+    "gui.soundEditor.echo": "回声",
+    "gui.soundEditor.robot": "机械化",
+    "gui.soundEditor.louder": "响一点",
+    "gui.soundEditor.softer": "轻一点",
+    "gui.soundEditor.reverse": "反转",
+    "gui.SpriteInfo.spritePlaceholder": "名字",
+    "gui.SpriteInfo.sprite": "角色",
+    "gui.SpriteInfo.show": "显示",
+    "gui.SpriteInfo.size": "大小",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "复制",
+    "gui.spriteSelectorItem.contextMenuDelete": "删除",
+    "gui.spriteSelectorItem.contextMenuExport": "导出",
+    "gui.spriteSelector.addSpriteFromLibrary": "选择一个角色",
+    "gui.spriteSelector.addSpriteFromPaint": "绘制",
+    "gui.spriteSelector.addSpriteFromSurprise": "随机",
+    "gui.spriteSelector.addSpriteFromFile": "上传角色",
+    "gui.stageHeader.stageSizeLarge": "放大舞台",
+    "gui.stageHeader.stageSizeSmall": "缩小舞台",
+    "gui.stageHeader.stageSizeFull": "进入全屏模式",
+    "gui.stageHeader.stageSizeUnFull": "退出全屏模式",
+    "gui.stageHeader.fullscreenControl": "全屏模式",
+    "gui.spriteSelector.addBackdropFromLibrary": "选择一个背景",
+    "gui.stageSelector.addBackdropFromPaint": "绘制",
+    "gui.stageSelector.addBackdropFromSurprise": "随机",
+    "gui.stageSelector.addBackdropFromFile": "上传背景",
+    "gui.stageSelector.stage": "舞台",
+    "gui.stageSelector.backdrops": "背景",
+    "gui.turboMode.active": "加速模式",
+    "gui.webglModal.label": "你的浏览器不支持WenGL",
+    "gui.webglModal.description": "非常遗憾，你的电脑或浏览器{webGlLink}。Scratch 3.0需要该技术才能运行。",
+    "gui.webglModal.webgllink": "不支持WebGL",
+    "gui.webglModal.back": "返回",
+    "gui.webglModal.previewfaq": "访问{previewFaqLink}，了解更多。",
+    "gui.webglModal.previewfaqlinktext": "常见问题",
+    "gui.costumeLibrary.chooseABackdrop": "选择一个背景",
+    "gui.costumeLibrary.chooseACostume": "选择一个造型",
+    "gui.costumeTab.addBackdropFromLibrary": "选择一个背景",
+    "gui.costumeTab.addCostumeFromLibrary": "选择一个造型",
+    "gui.costumeTab.addBlankCostume": "绘制",
+    "gui.costumeTab.addSurpriseCostume": "随机",
+    "gui.costumeTab.addFileBackdrop": "上传背景",
+    "gui.costumeTab.addFileCostume": "上传造型",
+    "gui.costumeTab.addCameraCostume": "摄像头",
+    "gui.extensionLibrary.chooseAnExtension": "选择一个扩展",
+    "gui.extensionLibrary.extensionUrl": "键入扩展的URL",
+    "gui.gui.defaultProjectTitle": "Scratch项目",
+    "gui.recordingStep.alertMsg": "无法启动录音",
+    "gui.projectLoader.loadError": "加载项目文件失败。",
+    "gui.soundLibrary.chooseASound": "选择一个声音",
+    "gui.soundTab.fileUploadSound": "上传声音",
+    "gui.soundTab.surpriseSound": "随机",
+    "gui.soundTab.recordSound": "录制",
+    "gui.soundTab.addSoundFromLibrary": "选择一个声音",
+    "gui.spriteLibrary.chooseASprite": "选择一个角色",
+    "gui.tipsLibrary.tutorials": "选择一个教程",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "正在创建…",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "正在保存...",
+    "gui.defaultProject.meow": "喵",
+    "gui.defaultProject.variable": "我的变量",
+    "gui.howtos.intro-move-sayhello-hat.name": "入门",
+    "gui.howtos.intro-move.step_stepMove": "添加「移动」积木",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "点击绿旗运行",
+    "gui.howtos.say-it-out-loud": "创建会说话的动画",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "添加文字朗读扩展积木",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "让角色说些话",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "设置语音",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "四处移动",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "添加一个背景",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "添加另一个角色",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "演奏一首歌",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "改变颜色",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "原地转动",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "变大变小",
+    "gui.howtos.cartoon-network": "冒险游戏动画",
+    "gui.howtos.cartoon-network.step_CNcharacter": "选择要显示的角色",
+    "gui.howtos.cartoon-network.step_CNsay": "让角色说些话",
+    "gui.howtos.cartoon-network.step_CNglide": "滑来滑去",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "选择要捕捉的目标",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "保存成绩",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "下一关：改变背景",
+    "gui.howtos.animate-a-name.name": "姓名动画",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "选一个字母角色",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "点击时播放声音",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "另选一个字母角色",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "改变颜色",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "选一个字母，让它旋转",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "另选一个字母，让它变大",
+    "gui.howtos.make-music.name": "制作音乐",
+    "gui.howtos.Make-Music.step_PickInstrument": "选一个乐器角色",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "点击时播放声音",
+    "gui.howtos.Make-Music.step_MakeSong": "创作乐曲",
+    "gui.howtos.make-music.step_MakeBeat": "选一种鼓，演奏鼓点",
+    "gui.howtos.make-music.step_MakeBeatBox": "用麦克风角色演唱节奏口技",
+    "gui.howtos.make-a-game.name": "制作消除游戏",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "挑选一个角色",
+    "gui.howtos.make-a-game.step_GamePlaySound": "点击时播放声音",
+    "gui.howtos.make-a-game.step_GameAddScore": "建立一个得分变量",
+    "gui.howtos.make-a-game.step_GameChangeScore": "被点击时增加分数",
+    "gui.howtos.make-a-game.step_Random": "移动到随机位置",
+    "gui.howtos.make-music.step_GameChangeColor": "改变颜色",
+    "gui.howtos.make-music.step_ResetScore": "把得分清零",
+    "gui.howtos.make-a-chase-game.name": "制作追赶游戏",
+    "gui.howtos.Chase-Game.step_BG": "添加一个背景",
+    "gui.howtos.chase-game.step_AddOcto": "添加一个角色",
+    "gui.howtos.make-music.step_LeftRight": "用方向键控制左右移动",
+    "gui.howtos.Chase-Game.step_UpDown": "用方向键控制上下移动",
+    "gui.howtos.Chase-Game.step_AddStar": "添加另一个角色",
+    "gui.howtos.Chase-Game.step_MoveRandom": "随机移动",
+    "gui.howtos.Chase-Game.step_WhenTouch": "让章鱼被碰到的时候发出声音",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "建立一个得分变量",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "让章鱼被碰到时，增加得分",
+    "gui.howtos.add-sprite.name": "添加一个角色",
+    "gui.howtos.add-sprite.step_addSprite": "添加一个角色",
+    "gui.howtos.add-a-backdrop.name": "添加一个背景",
+    "gui.howtos.change-size.name": "变大变小",
+    "gui.howtos.glide-around.name": "滑来滑去",
+    "gui.howtos.record-a-sound.name": "录制声音",
+    "gui.howtos.spin-video.name": "让字母旋转",
+    "gui.howtos.hide-and-show.name": "隐藏和出现",
+    "gui.howtos.switch-costume.name": "角色动画",
+    "gui.howtos.move-around-with-arrow-keys.name": "使用方向键",
+    "gui.howtos.add-effects.name": "添加一些效果",
+    "gui.extension.music.name": "音乐",
+    "gui.extension.music.description": "演奏乐器，敲锣打鼓。",
+    "gui.extension.pen.name": "画笔",
+    "gui.extension.pen.description": "绘制角色。",
+    "gui.extension.videosensing.name": "视频侦测",
+    "gui.extension.videosensing.description": "使用摄像头侦测运动。",
+    "gui.extension.text2speech.name": "文字朗读",
+    "gui.extension.text2speech.description": "让你的项目开口说话",
+    "gui.extension.translate.name": "翻译",
+    "gui.extension.translate.description": "把文字翻译成多种语言。",
+    "gui.extension.microbit.description": "把项目连接到实体世界。",
+    "gui.extension.microbit.connectingMessage": "正在连接",
+    "gui.extension.ev3.description": "搭建交互机器人等。",
+    "gui.extension.ev3.connectingMessage": "正在连接。请确保EV3上的识别码(PIN)已经设置为1234。",
+    "gui.extension.wedo2.description": "支持马达和传感器。",
+    "gui.extension.wedo2.connectingMessage": "正在连接",
+    "gui.libraryTags.all": "所有",
+    "gui.libraryTags.animals": "动物",
+    "gui.libraryTags.dance": "舞蹈",
+    "gui.libraryTags.effects": "效果",
+    "gui.libraryTags.fantasy": "奇幻",
+    "gui.libraryTags.fashion": "时尚",
+    "gui.libraryTags.food": "食物",
+    "gui.libraryTags.indoors": "室内",
+    "gui.libraryTags.loops": "可循环",
+    "gui.libraryTags.music": "音乐",
+    "gui.libraryTags.notes": "音符",
+    "gui.libraryTags.outdoors": "户外",
+    "gui.libraryTags.patterns": "图案",
+    "gui.libraryTags.people": "人物",
+    "gui.libraryTags.percussion": "打击乐器",
+    "gui.libraryTags.space": "太空",
+    "gui.libraryTags.sports": "运动",
+    "gui.libraryTags.underwater": "水下",
+    "gui.libraryTags.voice": "人声",
+    "gui.libraryTags.wacky": "古怪",
+    "gui.libraryTags.animation": "动画",
+    "gui.libraryTags.art": "艺术",
+    "gui.libraryTags.games": "游戏",
+    "gui.libraryTags.stories": "故事",
+    "gui.libraryTags.letters": "字母",
+    "gui.opcodeLabels.direction": "方向",
+    "gui.opcodeLabels.xposition": "x 坐标",
+    "gui.opcodeLabels.yposition": "y 坐标",
+    "gui.opcodeLabels.size": "大小",
+    "gui.opcodeLabels.costumename": "造型名称",
+    "gui.opcodeLabels.costumenumber": "造型编号",
+    "gui.opcodeLabels.backdropname": "背景名称",
+    "gui.opcodeLabels.backdropnumber": "背景编号",
+    "gui.opcodeLabels.volume": "音量",
+    "gui.opcodeLabels.tempo": "演奏速度",
+    "gui.opcodeLabels.answer": "回答",
+    "gui.opcodeLabels.loudness": "响度",
+    "gui.opcodeLabels.username": "用户名",
+    "gui.opcodeLabels.year": "年",
+    "gui.opcodeLabels.month": "月",
+    "gui.opcodeLabels.date": "日",
+    "gui.opcodeLabels.dayofweek": "星期",
+    "gui.opcodeLabels.hour": "时",
+    "gui.opcodeLabels.minute": "分",
+    "gui.opcodeLabels.second": "秒",
+    "gui.opcodeLabels.timer": "计时器",
+    "gui.sharedMessages.backdrop": "背景{index}",
+    "gui.sharedMessages.costume": "造型{index}",
+    "gui.sharedMessages.sprite": "角色{index}",
+    "gui.sharedMessages.pop": "啵"
 }

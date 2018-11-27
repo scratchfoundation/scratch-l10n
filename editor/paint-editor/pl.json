@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Kolor",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Nasycenie",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Jasność",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Nie martw się, pracujemy nad tym {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Już wkrótce",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Pracujemy nad tym {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Wypełnij",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kostium",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grupuj",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Rozgrupuj",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Cofnij",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Zrób ponownie",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Do przodu",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Z powrotem",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Przód",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Powrót",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Więcej",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Rozmiar",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Wielkość gumki",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopiuj",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Wklej",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Usuń",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Wygięty",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Wskazane",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Grubość",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Odwróć w płaszczyźnie poziomej",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Odwróć w płaszczyźnie pionowej",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Wypełniony",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Wypełnienie",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Przekształć w bitmapę",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Konwertuj na wektor",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Zarys",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pędzel",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Gumka",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Wypełnij",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Linia",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Okrąg",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Prostokąt",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Przekształć",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Zaokrąglony prostokąt",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Wybierz",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Tekst",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Zamień",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Kolor",
+    "paint.paintEditor.saturation": "Nasycenie",
+    "paint.paintEditor.brightness": "Jasność",
+    "gui.comingSoon.message1": "Nie martw się, pracujemy nad tym {emoji}",
+    "gui.comingSoon.message2": "Już wkrótce",
+    "gui.comingSoon.message3": "Pracujemy nad tym {emoji}",
+    "paint.paintEditor.fill": "Wypełnij",
+    "paint.paintEditor.costume": "Kostium",
+    "paint.paintEditor.group": "Grupuj",
+    "paint.paintEditor.ungroup": "Rozgrupuj",
+    "paint.paintEditor.undo": "Cofnij",
+    "paint.paintEditor.redo": "Zrób ponownie",
+    "paint.paintEditor.forward": "Do przodu",
+    "paint.paintEditor.backward": "Z powrotem",
+    "paint.paintEditor.front": "Przód",
+    "paint.paintEditor.back": "Powrót",
+    "paint.paintEditor.more": "Więcej",
+    "paint.modeTools.brushSize": "Rozmiar",
+    "paint.modeTools.eraserSize": "Wielkość gumki",
+    "paint.modeTools.copy": "Kopiuj",
+    "paint.modeTools.paste": "Wklej",
+    "paint.modeTools.delete": "Usuń",
+    "paint.modeTools.curved": "Wygięty",
+    "paint.modeTools.pointed": "Wskazane",
+    "paint.modeTools.thickness": "Grubość",
+    "paint.modeTools.flipHorizontal": "Odwróć w płaszczyźnie poziomej",
+    "paint.modeTools.flipVertical": "Odwróć w płaszczyźnie pionowej",
+    "paint.modeTools.filled": "Wypełniony",
+    "paint.modeTools.outlined": "Wypełnienie",
+    "paint.paintEditor.bitmap": "Przekształć w bitmapę",
+    "paint.paintEditor.vector": "Konwertuj na wektor",
+    "paint.paintEditor.stroke": "Zarys",
+    "paint.brushMode.brush": "Pędzel",
+    "paint.eraserMode.eraser": "Gumka",
+    "paint.fillMode.fill": "Wypełnij",
+    "paint.lineMode.line": "Linia",
+    "paint.ovalMode.oval": "Okrąg",
+    "paint.rectMode.rect": "Prostokąt",
+    "paint.reshapeMode.reshape": "Przekształć",
+    "paint.roundedRectMode.roundedRect": "Zaokrąglony prostokąt",
+    "paint.selectMode.select": "Wybierz",
+    "paint.textMode.text": "Tekst",
+    "paint.colorPicker.swap": "Zamień"
 }

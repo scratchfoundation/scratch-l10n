@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Värv",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Küllastust",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Valgustatus",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ära muretse, tegeleme sellega {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Ilmub varsti...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Tegeleme sellega {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Täitevärv",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kostüüm",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grupp",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Lahtigrupeerimine",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Võta tagasi",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Tee uuesti",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Too ettepoole",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Saada tagasi",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Too esiplaanile",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Tagasi",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Rohkem",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Suurus",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Kustutaja suurus",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopeeri",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Kleebi",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Kustuta",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Kõver",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Teravatipuline",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Paksus",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Horisontaalne peegeldus",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Vertikaalne peegeldus",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Täidetud",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Äärise joonega",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Rastergraafikasse",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Vektorgraafikasse",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Äärise värv",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pintsel",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Kustuta",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Täitevärv",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Joon",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Ring",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Ristkülik",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Kuju muutmine",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Ümarate servadega ristkülik",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Vali",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Tekst",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Vaheta",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Värv",
+    "paint.paintEditor.saturation": "Küllastust",
+    "paint.paintEditor.brightness": "Valgustatus",
+    "gui.comingSoon.message1": "Ära muretse, tegeleme sellega {emoji}",
+    "gui.comingSoon.message2": "Ilmub varsti...",
+    "gui.comingSoon.message3": "Tegeleme sellega {emoji}",
+    "paint.paintEditor.fill": "Täitevärv",
+    "paint.paintEditor.costume": "Kostüüm",
+    "paint.paintEditor.group": "Grupp",
+    "paint.paintEditor.ungroup": "Lahtigrupeerimine",
+    "paint.paintEditor.undo": "Võta tagasi",
+    "paint.paintEditor.redo": "Tee uuesti",
+    "paint.paintEditor.forward": "Too ettepoole",
+    "paint.paintEditor.backward": "Saada tagasi",
+    "paint.paintEditor.front": "Too esiplaanile",
+    "paint.paintEditor.back": "Tagasi",
+    "paint.paintEditor.more": "Rohkem",
+    "paint.modeTools.brushSize": "Suurus",
+    "paint.modeTools.eraserSize": "Kustutaja suurus",
+    "paint.modeTools.copy": "Kopeeri",
+    "paint.modeTools.paste": "Kleebi",
+    "paint.modeTools.delete": "Kustuta",
+    "paint.modeTools.curved": "Kõver",
+    "paint.modeTools.pointed": "Teravatipuline",
+    "paint.modeTools.thickness": "Paksus",
+    "paint.modeTools.flipHorizontal": "Horisontaalne peegeldus",
+    "paint.modeTools.flipVertical": "Vertikaalne peegeldus",
+    "paint.modeTools.filled": "Täidetud",
+    "paint.modeTools.outlined": "Äärise joonega",
+    "paint.paintEditor.bitmap": "Rastergraafikasse",
+    "paint.paintEditor.vector": "Vektorgraafikasse",
+    "paint.paintEditor.stroke": "Äärise värv",
+    "paint.brushMode.brush": "Pintsel",
+    "paint.eraserMode.eraser": "Kustuta",
+    "paint.fillMode.fill": "Täitevärv",
+    "paint.lineMode.line": "Joon",
+    "paint.ovalMode.oval": "Ring",
+    "paint.rectMode.rect": "Ristkülik",
+    "paint.reshapeMode.reshape": "Kuju muutmine",
+    "paint.roundedRectMode.roundedRect": "Ümarate servadega ristkülik",
+    "paint.selectMode.select": "Vali",
+    "paint.textMode.text": "Tekst",
+    "paint.colorPicker.swap": "Vaheta"
 }

@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Color",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Saturació",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Lluminositat",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "No et preocupis, hi estem treballant {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Properament...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Hi estem treballant {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Omple",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Vestit",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Agrupa",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Desagrupa",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Desfés",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Torna-hi",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Endavant",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Enrere",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Al davant",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Al darrere",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Més",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Mida",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Ample de l'esborrador",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Copia",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Enganxa",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Elimina",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Corbat",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Afila conjunt de punts",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Gruix",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Gira horitzontalment",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Gira verticalment",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Omplert",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Contorn",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Converteix a mapa de bits",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Converteix a vectorial",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Línia exterior",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pinzell",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Goma d'esborrar",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Omple",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Línia",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Cercle",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Rectangle",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Redibuixa",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Rectangle amb cantonades arrodonides",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Selecciona",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Text",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Intercanvia",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Color",
+    "paint.paintEditor.saturation": "Saturació",
+    "paint.paintEditor.brightness": "Lluminositat",
+    "gui.comingSoon.message1": "No et preocupis, hi estem treballant {emoji}",
+    "gui.comingSoon.message2": "Properament...",
+    "gui.comingSoon.message3": "Hi estem treballant {emoji}",
+    "paint.paintEditor.fill": "Omple",
+    "paint.paintEditor.costume": "Vestit",
+    "paint.paintEditor.group": "Agrupa",
+    "paint.paintEditor.ungroup": "Desagrupa",
+    "paint.paintEditor.undo": "Desfés",
+    "paint.paintEditor.redo": "Torna-hi",
+    "paint.paintEditor.forward": "Endavant",
+    "paint.paintEditor.backward": "Enrere",
+    "paint.paintEditor.front": "Al davant",
+    "paint.paintEditor.back": "Al darrere",
+    "paint.paintEditor.more": "Més",
+    "paint.modeTools.brushSize": "Mida",
+    "paint.modeTools.eraserSize": "Ample de l'esborrador",
+    "paint.modeTools.copy": "Copia",
+    "paint.modeTools.paste": "Enganxa",
+    "paint.modeTools.delete": "Elimina",
+    "paint.modeTools.curved": "Corbat",
+    "paint.modeTools.pointed": "Afila conjunt de punts",
+    "paint.modeTools.thickness": "Gruix",
+    "paint.modeTools.flipHorizontal": "Gira horitzontalment",
+    "paint.modeTools.flipVertical": "Gira verticalment",
+    "paint.modeTools.filled": "Omplert",
+    "paint.modeTools.outlined": "Contorn",
+    "paint.paintEditor.bitmap": "Converteix a mapa de bits",
+    "paint.paintEditor.vector": "Converteix a vectorial",
+    "paint.paintEditor.stroke": "Línia exterior",
+    "paint.brushMode.brush": "Pinzell",
+    "paint.eraserMode.eraser": "Goma d'esborrar",
+    "paint.fillMode.fill": "Omple",
+    "paint.lineMode.line": "Línia",
+    "paint.ovalMode.oval": "Cercle",
+    "paint.rectMode.rect": "Rectangle",
+    "paint.reshapeMode.reshape": "Redibuixa",
+    "paint.roundedRectMode.roundedRect": "Rectangle amb cantonades arrodonides",
+    "paint.selectMode.select": "Selecciona",
+    "paint.textMode.text": "Text",
+    "paint.colorPicker.swap": "Intercanvia"
 }

@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "الحقيبة",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "خطأ في تحميل حقيبة الظهر",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "جاري التحميل",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "المزيد",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "حقيبة الظهر فارغة",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "المتصفح لا يدعم",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "نحن آسفون جداً ، ولكن سكراتش 3.0 لا يدعم متصفح الانترنت  Internet Explorer أو Vivaldi أو Opera أو Silk. نوصي بتجربة متصفح أحدث مثل Google Chrome أو Mozilla Firefox أو Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "ارجع الى الخلف",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "الأسئلة متكررة الطرح",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "التقط صورة",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "جاري تحميل الكاميرا",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "الرجاء السماح بتفعيل الكاميرا",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "التقط صورة مرة اخرى",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "حفظ",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "التقط صورة",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "جاري التحميل ...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "شغل الكاميرا",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "دروس",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "إغلاق",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "المزيد من الأشياء للتجربة!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "شاهد المزيد",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "لا تقلق ، فنحن نستخدمها {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "قريبا...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "نحن نعمل على ذلك {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "لم تجد الأجهزة",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "اجعل جهازك قريبًا ، ثم ابدأ البحث.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "انقر على الزر الموجود على جهازك.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "بدء البحث",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "جاري البحث ...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "حاول ثانية",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "متصل",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "قطع الاتصال",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "اذهب إلى المحرر",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "جاري الاتصال...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "عفوًا ، يبدو أن هناك خطأ ما.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "حاول ثانية",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "مساعدة",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "اسم الجهاز",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "متصل",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "البحث عن الأجهزة",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "لم تجد الأجهزة",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "اختر جهازك في القائمة أعلاه.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "تحديث",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "تأكد من تثبيت Scratch Link وتشغيله",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "تحقق من تمكين Bluetooth",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "حاول ثانية",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "المساعدة",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "اذهب",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "توقف",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "هناك خطأ ما.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "إعادة تحميل",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "إنشاء لبنة",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "أضف مدخلا",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "رقم أو نص",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "أضف مدخلا",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "منطقية",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "أضف تسمية",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "تشغيل دون تحديث الشاشة",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "الغاء",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "موافق",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "اتجاه",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "في كل مكان",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "يسار / يمين",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "لا تدور",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "كتبة الاضافات",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "رمز",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "الخلفيات",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "المظاهر",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "الأصوات",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "عرض مشروع سكراتش 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "أدخل رابطًا لأحدى مشروعات Scratch المشتركة. لن يتم حفظ التغييرات التي تم إجراؤها في الإصدار بيتا 3.0 هذا.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "أدخل رابطًا لأحد مشاريعك في الـ Scratch المشتركة. لن يتم حفظ التغييرات التي تم إجراؤها في هذه المعاينة 3.0.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "عذرًا ، هذا رابط المشروع او اسم المستخدم لا يبدو صحيحًا تمامًا.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "اظهر",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "ارجع الى الخلف",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "الأسئلة متكررة الطرح",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "قريبا",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "ابحث",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "الكل",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "أنشاء لبنات",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "جارٍ تحميل الكائنات ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "جارٍ تحميل الأصوات ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "جار تحميل الإضافات ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "مجموعة قطط",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "يحول نانوس ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "تضخيم جوبو ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "جارٍ تحضير الرموز التعبيرية ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "تحميل المشروع",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "الملف الشخصي",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "أغراضي",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "صفوفي",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "فصلي",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "إعدادات الحساب",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "تسجيل الخروج",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "انظر المجتمع",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "اسم المستخدم",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "كلمة المرور",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "تسجيل الدخول",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "اختيار اللغة",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "دروس",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "استعادة الكائن",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "استعادة الصوت",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "استعادة المظهر",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "استعادة ",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "احفظ الآن",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "حفظ كنسخة",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "مزج",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "جديد",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "ملف",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "تحميل من جهاز الكمبيوتر الخاص بك",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "أحفظ على جهاز الحاسوب الخاص بك",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "تحرير",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "ايقاف تشغيل وضع التوربو ",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "تشغيل وضع التوربو ",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "انضم إلى سكراتش",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "تسجيل الدخول",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "إعطاء رد الفعل",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "عنوان المشروع هنا",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "المشاركة",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "مشاركة",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "مساعدة",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "ارجع الى الخلف",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(فارغ)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "طول{length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "عرض عادي",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "عرض كبير",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "المنزلقة",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "جرب سكراتش 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "مرحبًا بك في الإصدار التجربي لسكراتش 3.0",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "ليس الآن",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "جربها!",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "عرض 2.0 المشروع",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "مرحبًا بك في الإصدار التجربي لسكراتش 3.0",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "نحن نعمل على الجيل التالي من سكراتش. نحن متحمسون لتجربتك!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "ليس الآن",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "جربها! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "عرض 2.0 المشروع",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "الأسئلة متكررة الطرح",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "لجميع الكائنات",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "لهذا الكائن فقط",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "متغير سحابي (مخزّن على المخدّم)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "سيكون هذا المتغير متاحًا لجميع النقوش المتحركة.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "الغاء",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "موافق",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "أوقف",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "شغّل",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "جار التحميل...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "حفظ",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "إعادة تسجيل",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "تسجيل الصوت",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "ابدا التسجيل عند النقر على الزر 1%",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow} نحتاج إلى إذنك لاستخدام الميكروفون",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "إيقاف التسجيل",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "تسجيل",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "الصوت",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "عزف",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "توقف",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "قص",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Save",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "تراجع",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "إعادة",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "اسرع",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "أبطأ",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "صدى صوت",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "روبوت ",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "أعلى",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "أنعم",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "عكس ",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "اسم",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "كائن",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "أظهر",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "الحجم",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "مضاعفة",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "حذف",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "تصدير",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "اختيار كائن",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "رسام",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "مفاجأة ",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "تحميل الكائن",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "تحول إلى مسرح اكبر ",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "تحول الى منصة صغيرة",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "أدخل الى وضعية الشاشة الكاملة",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "اخرج من وضع ملء الشاشة ",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "تحكم كامل في الشاشة",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "اختيار خلفية",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "رسام",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "مفاجأة ",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "تحميل الخلفية",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "المنصة",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "الخلفيات",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "الوضع السريع",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "متصفحك لا يدعم WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "للأسف ، يبدو الأمر مثل المتصفح أو جهاز الكمبيوتر {webGlLink}. هناك حاجة إلى هذه التقنية لتشغيل سكراتش 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "لا يدعم WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "ارجع الى الخلف",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "الأسئلة متكررة الطرح",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "اختيار خلفية",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "اختر مظهر",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "اختيار خلفية",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "اختر كائن",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "رسام",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "مفاجأة ",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "تحميل الخلفية",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "تحميل  مظهر",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "آلة التصوير",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "اختر الاضافات",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "أدخل عنوان URL الخاص بالملحق",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "مشروع سكراتش",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "لا يمكن بدء تسجيل",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "فشل تحميل ملف المشروع الذي تم تحديده.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "اختر صوتًا ",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "تحميل الصوت",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "مفاجأة ",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "تسجيل",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "اختر صوتًا ",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "اختيار كائن",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "اختر البرنامج التعليمي",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "الإنشاء جارٍ...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "الحفظ جارٍ...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "مواء ",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "متغيري",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "الشروع في العمل",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "أضف لبنة حركة",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "انقر على العلم الاخضر للبدء",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "قل شيئًا",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "أضف خلفية",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "غيِّر اللون",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Spin Around",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "قل شيئًا",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "انزلاق حول",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Keep Score",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "أضِف حركة لأسم",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "اختر حرفًا متحركًا",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "تشغيل الصوت عند النقر",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "اختر رسالة اخرى للكائن",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "غيّر اللون",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "اختيار حرف  آخر متحرك واجعله يدور",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "اختيار حرف آخر متحرك واجعله ينمو",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "اصنع موسيقى",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "اختر أداة ",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "تشغيل الصوت عند النقر",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "إنشاء أغنية ",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "اختر طبل واصنع ضربات",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "اختر الميكروفون والبيتبوكي المفاجئ",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "جعل لعبة الفرس",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "اختر الكائن",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "شغل الصوت عند النقر",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": " انشئ متغير يعد مجموع النقاط ",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "عند النقر على زيادة النقاط ",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "اذهب الى موضع عشوائي",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "غيِّر اللون",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "إعادة ضبط النتيجة",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "إبني لعبة مطاردة",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "أضف خلفية",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "أضف كائنًا",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "حرك يمين ويسار مع مفاتيح الأسهم",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "تحرك صعودا وهبوطا مع مفاتيح الأسهم",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "اضف كائن آخر",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "التحرك عشوائيا",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "عند نقر على كائن الاخطبوط شغل صوت",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "خلق درجة المتغير",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "عند نقر على كائن الاخطبوط، زد نقطة",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "أضف كائنًا",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "أضف كائنًا",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "أضف خلفية",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "تغيير الحجم ",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "انزلاق حول",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "تسجيل صوت",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "اجعلها تدور",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "إخفاء وإظهار",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "تحريك الكائن",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "استخدام مفاتيح الأسهم",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "إضافة تأثيرات",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "الموسيقى",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "تلعب الصكوك والطبول.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "القلم",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "ارسم مع العفاريت الخاصة بك.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "استشعار الفيديو",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "تحسس الحركة بالكاميرا.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "ترجم",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "ترجمة النص إلى العديد من اللغات.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "ربط مشاريعك مع العالم.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "جاري التوصيل",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "بناء الروبوتات التفاعلية وأكثر من ذلك.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "جاري التوصيل. تأكد من ان الرقم السري على جهاز EV3 الخاص بك هو 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "بناء مع المحركات وأجهزة الاستشعار.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "توصيل",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "الكل",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "حيوانات",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "حفلة راقصة",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "المؤثرات",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "خيال",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "أزياء ",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "طعام",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "داخلي",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "الحلقات",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "الموسيقى",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "ملاحظات",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "خارجي",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "أنماط ",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "ناس",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "إيقاع",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "الفضاء",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "الرياضة",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "تحت الماء",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "صوت",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "أحمق",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "الرسوم المتحركة",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "الفنون",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "الألعاب",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "القصص",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "الحروف",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "الاتجاه",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "الموضع س",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "الموضع ص",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "الحجم",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "اسم المظهر",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "رقم المظهر",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "اسم الخلفية",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "رقم الخلفية",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "شدة الصوت",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "سرعة الأيقاع",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "الإجابة",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "شدة الصوت",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "اسم المستخدم",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "السنة",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "الشهر",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "تاريخ",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "يوم الأسبوع",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "الساعة",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "الدقيقة",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "الثانية",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "المؤقت",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "خلفية {index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "مظهر{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "الكائن {index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "بُب",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "الحقيبة",
+    "gui.backpack.errorBackpack": "خطأ في تحميل حقيبة الظهر",
+    "gui.backpack.loadingBackpack": "جاري التحميل",
+    "gui.backpack.more": "المزيد",
+    "gui.backpack.emptyBackpack": "حقيبة الظهر فارغة",
+    "gui.unsupportedBrowser.label": "المتصفح لا يدعم",
+    "gui.unsupportedBrowser.description": "نحن آسفون جداً ، ولكن سكراتش 3.0 لا يدعم متصفح الانترنت  Internet Explorer أو Vivaldi أو Opera أو Silk. نوصي بتجربة متصفح أحدث مثل Google Chrome أو Mozilla Firefox أو Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "ارجع الى الخلف",
+    "gui.unsupportedBrowser.previewfaq": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "الأسئلة متكررة الطرح",
+    "gui.cameraModal.cameraModalTitle": "التقط صورة",
+    "gui.cameraModal.loadingCameraMessage": "جاري تحميل الكاميرا",
+    "gui.cameraModal.permissionRequest": "الرجاء السماح بتفعيل الكاميرا",
+    "gui.cameraModal.retakePhoto": "التقط صورة مرة اخرى",
+    "gui.cameraModal.save": "حفظ",
+    "gui.cameraModal.takePhoto": "التقط صورة",
+    "gui.cameraModal.loadingCaption": "جاري التحميل ...",
+    "gui.cameraModal.enableCameraCaption": "شغل الكاميرا",
+    "gui.cards.all-tutorials": "دروس",
+    "gui.cards.close": "إغلاق",
+    "gui.cards.more-things-to-try": "المزيد من الأشياء للتجربة!",
+    "gui.cards.see-more": "شاهد المزيد",
+    "gui.comingSoon.message1": "لا تقلق ، فنحن نستخدمها {emoji}",
+    "gui.comingSoon.message2": "قريبا...",
+    "gui.comingSoon.message3": "نحن نعمل على ذلك {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "لم تجد الأجهزة",
+    "gui.connection.auto-scanning.prescan": "اجعل جهازك قريبًا ، ثم ابدأ البحث.",
+    "gui.connection.auto-scanning.pressbutton": "انقر على الزر الموجود على جهازك.",
+    "gui.connection.auto-scanning.start-search": "بدء البحث",
+    "gui.connection.connecting-searchbutton": "جاري البحث ...",
+    "gui.connection.auto-scanning.try-again": "حاول ثانية",
+    "gui.connection.connected": "متصل",
+    "gui.connection.disconnect": "قطع الاتصال",
+    "gui.connection.go-to-editor": "اذهب إلى المحرر",
+    "gui.connection.connecting-cancelbutton": "جاري الاتصال...",
+    "gui.connection.error.errorMessage": "عفوًا ، يبدو أن هناك خطأ ما.",
+    "gui.connection.error.tryagainbutton": "حاول ثانية",
+    "gui.connection.error.helpbutton": "مساعدة",
+    "gui.connection.peripheral-name-label": "اسم الجهاز",
+    "gui.connection.connect": "متصل",
+    "gui.connection.scanning.lookingforperipherals": "البحث عن الأجهزة",
+    "gui.connection.scanning.noPeripheralsFound": "لم تجد الأجهزة",
+    "gui.connection.scanning.instructions": "اختر جهازك في القائمة أعلاه.",
+    "gui.connection.search": "تحديث",
+    "gui.connection.unavailable.installscratchlink": "تأكد من تثبيت Scratch Link وتشغيله",
+    "gui.connection.unavailable.enablebluetooth": "تحقق من تمكين Bluetooth",
+    "gui.connection.unavailable.tryagainbutton": "حاول ثانية",
+    "gui.connection.unavailable.helpbutton": "المساعدة",
+    "gui.controls.go": "اذهب",
+    "gui.controls.stop": "توقف",
+    "gui.crashMessage.label": "هناك خطأ ما.",
+    "gui.crashMessage.description": "We are so sorry, but it looks like Scratch has crashed. This bug has been automatically reported to the Scratch Team. Please refresh your page to try again.",
+    "gui.crashMessage.reload": "إعادة تحميل",
+    "gui.customProcedures.myblockModalTitle": "إنشاء لبنة",
+    "gui.customProcedures.addAnInputNumberText": "أضف مدخلا",
+    "gui.customProcedures.numberTextType": "رقم أو نص",
+    "gui.customProcedures.addAnInputBoolean": "أضف مدخلا",
+    "gui.customProcedures.booleanType": "منطقية",
+    "gui.customProcedures.addALabel": "أضف تسمية",
+    "gui.customProcedures.runWithoutScreenRefresh": "تشغيل دون تحديث الشاشة",
+    "gui.customProcedures.cancel": "الغاء",
+    "gui.customProcedures.ok": "موافق",
+    "gui.SpriteInfo.direction": "اتجاه",
+    "gui.directionPicker.rotationStyles.allAround": "في كل مكان",
+    "gui.directionPicker.rotationStyles.leftRight": "يسار / يمين",
+    "gui.directionPicker.rotationStyles.dontRotate": "لا تدور",
+    "gui.gui.addExtension": "كتبة الاضافات",
+    "gui.gui.codeTab": "رمز",
+    "gui.gui.backdropsTab": "الخلفيات",
+    "gui.gui.costumesTab": "المظاهر",
+    "gui.gui.soundsTab": "الأصوات",
+    "gui.importInfo.title": "عرض مشروع سكراتش 2.0",
+    "gui.importInfo.betamessage": "أدخل رابطًا لأحدى مشروعات Scratch المشتركة. لن يتم حفظ التغييرات التي تم إجراؤها في الإصدار بيتا 3.0 هذا.",
+    "gui.importInfo.message": "أدخل رابطًا لأحد مشاريعك في الـ Scratch المشتركة. لن يتم حفظ التغييرات التي تم إجراؤها في هذه المعاينة 3.0.",
+    "gui.importInfo.invalidFormatError": "عذرًا ، هذا رابط المشروع او اسم المستخدم لا يبدو صحيحًا تمامًا.",
+    "gui.importModal.viewproject": "اظهر",
+    "gui.importInfo.goback": "ارجع الى الخلف",
+    "gui.importInfo.previewfaq": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "الأسئلة متكررة الطرح",
+    "gui.extensionLibrary.comingSoon": "قريبا",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "ابحث",
+    "gui.library.allTag": "الكل",
+    "gui.loader.message1": "أنشاء لبنات",
+    "gui.loader.message2": "جارٍ تحميل الكائنات ...",
+    "gui.loader.message3": "جارٍ تحميل الأصوات ...",
+    "gui.loader.message4": "جار تحميل الإضافات ...",
+    "gui.loader.message5": "مجموعة قطط",
+    "gui.loader.message6": "يحول نانوس ...",
+    "gui.loader.message7": "تضخيم جوبو ...",
+    "gui.loader.message8": "جارٍ تحضير الرموز التعبيرية ...",
+    "gui.loader.headline": "تحميل المشروع",
+    "gui.accountMenu.profile": "الملف الشخصي",
+    "gui.accountMenu.myStuff": "أغراضي",
+    "gui.accountMenu.myClasses": "صفوفي",
+    "gui.accountMenu.myClass": "فصلي",
+    "gui.accountMenu.accountSettings": "إعدادات الحساب",
+    "gui.accountMenu.signOut": "تسجيل الخروج",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "انظر المجتمع",
+    "general.username": "اسم المستخدم",
+    "general.password": "كلمة المرور",
+    "general.signIn": "تسجيل الدخول",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "اختيار اللغة",
+    "gui.menuBar.tutorialsLibrary": "دروس",
+    "gui.menuBar.restoreSprite": "استعادة الكائن",
+    "gui.menuBar.restoreSound": "استعادة الصوت",
+    "gui.menuBar.restoreCostume": "استعادة المظهر",
+    "gui.menuBar.restore": "استعادة ",
+    "gui.menuBar.saveNow": "احفظ الآن",
+    "gui.menuBar.saveAsCopy": "حفظ كنسخة",
+    "gui.menuBar.remix": "مزج",
+    "gui.menuBar.new": "جديد",
+    "gui.menuBar.file": "ملف",
+    "gui.menuBar.uploadFromComputer": "تحميل من جهاز الكمبيوتر الخاص بك",
+    "gui.menuBar.downloadToComputer": "أحفظ على جهاز الحاسوب الخاص بك",
+    "gui.menuBar.edit": "تحرير",
+    "gui.menuBar.turboModeOff": "ايقاف تشغيل وضع التوربو ",
+    "gui.menuBar.turboModeOn": "تشغيل وضع التوربو ",
+    "gui.menuBar.joinScratch": "انضم إلى سكراتش",
+    "gui.menuBar.signIn": "تسجيل الدخول",
+    "gui.menuBar.giveFeedback": "إعطاء رد الفعل",
+    "gui.gui.projectTitlePlaceholder": "عنوان المشروع هنا",
+    "gui.menuBar.isShared": "المشاركة",
+    "gui.menuBar.share": "مشاركة",
+    "gui.modal.help": "مساعدة",
+    "gui.modal.back": "ارجع الى الخلف",
+    "gui.monitor.listMonitor.empty": "(فارغ)",
+    "gui.monitor.listMonitor.listLength": "طول{length}",
+    "gui.monitor.contextMenu.default": "عرض عادي",
+    "gui.monitor.contextMenu.large": "عرض كبير",
+    "gui.monitor.contextMenu.slider": "المنزلقة",
+    "gui.previewInfo.label": "جرب سكراتش 3.0",
+    "gui.previewInfo.welcome": "مرحبًا بك في الإصدار التجربي لسكراتش 3.0",
+    "gui.previewModal.notnowtooltip": "ليس الآن",
+    "gui.previewModal.tryittooltip": "جربها!",
+    "gui.previewModal.viewprojecttooltip": "عرض 2.0 المشروع",
+    "gui.previewInfo.betawelcome": "مرحبًا بك في الإصدار التجربي لسكراتش 3.0",
+    "gui.previewInfo.invitation": "نحن نعمل على الجيل التالي من سكراتش. نحن متحمسون لتجربتك!",
+    "gui.previewInfo.notnow": "ليس الآن",
+    "gui.previewModal.tryit": "جربها! {caticon}",
+    "gui.previewModal.viewproject": "عرض 2.0 المشروع",
+    "gui.previewInfo.previewfaq": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "الأسئلة متكررة الطرح",
+    "gui.gui.variableScopeOptionAllSprites": "لجميع الكائنات",
+    "gui.gui.variableScopeOptionSpriteOnly": "لهذا الكائن فقط",
+    "gui.gui.cloudVariableOption": "متغير سحابي (مخزّن على المخدّم)",
+    "gui.gui.variablePromptAllSpritesMessage": "سيكون هذا المتغير متاحًا لجميع النقوش المتحركة.",
+    "gui.prompt.cancel": "الغاء",
+    "gui.prompt.ok": "موافق",
+    "gui.playbackStep.stopMsg": "أوقف",
+    "gui.playbackStep.playMsg": "شغّل",
+    "gui.playbackStep.loadingMsg": "جار التحميل...",
+    "gui.playbackStep.saveMsg": "حفظ",
+    "gui.playbackStep.reRecordMsg": "إعادة تسجيل",
+    "gui.recordModal.title": "تسجيل الصوت",
+    "gui.recordingStep.beginRecord": "ابدا التسجيل عند النقر على الزر 1%",
+    "gui.recordingStep.permission": "{arrow} نحتاج إلى إذنك لاستخدام الميكروفون",
+    "gui.recordingStep.stop": "إيقاف التسجيل",
+    "gui.recordingStep.record": "تسجيل",
+    "gui.soundEditor.sound": "الصوت",
+    "gui.soundEditor.play": "عزف",
+    "gui.soundEditor.stop": "توقف",
+    "gui.soundEditor.trim": "قص",
+    "gui.soundEditor.save": "Save",
+    "gui.soundEditor.undo": "تراجع",
+    "gui.soundEditor.redo": "إعادة",
+    "gui.soundEditor.faster": "اسرع",
+    "gui.soundEditor.slower": "أبطأ",
+    "gui.soundEditor.echo": "صدى صوت",
+    "gui.soundEditor.robot": "روبوت ",
+    "gui.soundEditor.louder": "أعلى",
+    "gui.soundEditor.softer": "أنعم",
+    "gui.soundEditor.reverse": "عكس ",
+    "gui.SpriteInfo.spritePlaceholder": "اسم",
+    "gui.SpriteInfo.sprite": "كائن",
+    "gui.SpriteInfo.show": "أظهر",
+    "gui.SpriteInfo.size": "الحجم",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "مضاعفة",
+    "gui.spriteSelectorItem.contextMenuDelete": "حذف",
+    "gui.spriteSelectorItem.contextMenuExport": "تصدير",
+    "gui.spriteSelector.addSpriteFromLibrary": "اختيار كائن",
+    "gui.spriteSelector.addSpriteFromPaint": "رسام",
+    "gui.spriteSelector.addSpriteFromSurprise": "مفاجأة ",
+    "gui.spriteSelector.addSpriteFromFile": "تحميل الكائن",
+    "gui.stageHeader.stageSizeLarge": "تحول إلى مسرح اكبر ",
+    "gui.stageHeader.stageSizeSmall": "تحول الى منصة صغيرة",
+    "gui.stageHeader.stageSizeFull": "أدخل الى وضعية الشاشة الكاملة",
+    "gui.stageHeader.stageSizeUnFull": "اخرج من وضع ملء الشاشة ",
+    "gui.stageHeader.fullscreenControl": "تحكم كامل في الشاشة",
+    "gui.spriteSelector.addBackdropFromLibrary": "اختيار خلفية",
+    "gui.stageSelector.addBackdropFromPaint": "رسام",
+    "gui.stageSelector.addBackdropFromSurprise": "مفاجأة ",
+    "gui.stageSelector.addBackdropFromFile": "تحميل الخلفية",
+    "gui.stageSelector.stage": "المنصة",
+    "gui.stageSelector.backdrops": "الخلفيات",
+    "gui.turboMode.active": "الوضع السريع",
+    "gui.webglModal.label": "متصفحك لا يدعم WebGL",
+    "gui.webglModal.description": "للأسف ، يبدو الأمر مثل المتصفح أو جهاز الكمبيوتر {webGlLink}. هناك حاجة إلى هذه التقنية لتشغيل سكراتش 3.0.",
+    "gui.webglModal.webgllink": "لا يدعم WebGL",
+    "gui.webglModal.back": "ارجع الى الخلف",
+    "gui.webglModal.previewfaq": "لمعرفة المزيد ، انتقل إلى {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "الأسئلة متكررة الطرح",
+    "gui.costumeLibrary.chooseABackdrop": "اختيار خلفية",
+    "gui.costumeLibrary.chooseACostume": "اختر مظهر",
+    "gui.costumeTab.addBackdropFromLibrary": "اختيار خلفية",
+    "gui.costumeTab.addCostumeFromLibrary": "اختر كائن",
+    "gui.costumeTab.addBlankCostume": "رسام",
+    "gui.costumeTab.addSurpriseCostume": "مفاجأة ",
+    "gui.costumeTab.addFileBackdrop": "تحميل الخلفية",
+    "gui.costumeTab.addFileCostume": "تحميل  مظهر",
+    "gui.costumeTab.addCameraCostume": "آلة التصوير",
+    "gui.extensionLibrary.chooseAnExtension": "اختر الاضافات",
+    "gui.extensionLibrary.extensionUrl": "أدخل عنوان URL الخاص بالملحق",
+    "gui.gui.defaultProjectTitle": "مشروع سكراتش",
+    "gui.recordingStep.alertMsg": "لا يمكن بدء تسجيل",
+    "gui.projectLoader.loadError": "فشل تحميل ملف المشروع الذي تم تحديده.",
+    "gui.soundLibrary.chooseASound": "اختر صوتًا ",
+    "gui.soundTab.fileUploadSound": "تحميل الصوت",
+    "gui.soundTab.surpriseSound": "مفاجأة ",
+    "gui.soundTab.recordSound": "تسجيل",
+    "gui.soundTab.addSoundFromLibrary": "اختر صوتًا ",
+    "gui.spriteLibrary.chooseASprite": "اختيار كائن",
+    "gui.tipsLibrary.tutorials": "اختر البرنامج التعليمي",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "الإنشاء جارٍ...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "الحفظ جارٍ...",
+    "gui.defaultProject.meow": "مواء ",
+    "gui.defaultProject.variable": "متغيري",
+    "gui.howtos.intro-move-sayhello-hat.name": "الشروع في العمل",
+    "gui.howtos.intro-move.step_stepMove": "أضف لبنة حركة",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "انقر على العلم الاخضر للبدء",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "قل شيئًا",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "أضف خلفية",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "غيِّر اللون",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Spin Around",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "قل شيئًا",
+    "gui.howtos.cartoon-network.step_CNglide": "انزلاق حول",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Keep Score",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "أضِف حركة لأسم",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "اختر حرفًا متحركًا",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "تشغيل الصوت عند النقر",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "اختر رسالة اخرى للكائن",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "غيّر اللون",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "اختيار حرف  آخر متحرك واجعله يدور",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "اختيار حرف آخر متحرك واجعله ينمو",
+    "gui.howtos.make-music.name": "اصنع موسيقى",
+    "gui.howtos.Make-Music.step_PickInstrument": "اختر أداة ",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "تشغيل الصوت عند النقر",
+    "gui.howtos.Make-Music.step_MakeSong": "إنشاء أغنية ",
+    "gui.howtos.make-music.step_MakeBeat": "اختر طبل واصنع ضربات",
+    "gui.howtos.make-music.step_MakeBeatBox": "اختر الميكروفون والبيتبوكي المفاجئ",
+    "gui.howtos.make-a-game.name": "جعل لعبة الفرس",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "اختر الكائن",
+    "gui.howtos.make-a-game.step_GamePlaySound": "شغل الصوت عند النقر",
+    "gui.howtos.make-a-game.step_GameAddScore": " انشئ متغير يعد مجموع النقاط ",
+    "gui.howtos.make-a-game.step_GameChangeScore": "عند النقر على زيادة النقاط ",
+    "gui.howtos.make-a-game.step_Random": "اذهب الى موضع عشوائي",
+    "gui.howtos.make-music.step_GameChangeColor": "غيِّر اللون",
+    "gui.howtos.make-music.step_ResetScore": "إعادة ضبط النتيجة",
+    "gui.howtos.make-a-chase-game.name": "إبني لعبة مطاردة",
+    "gui.howtos.Chase-Game.step_BG": "أضف خلفية",
+    "gui.howtos.chase-game.step_AddOcto": "أضف كائنًا",
+    "gui.howtos.make-music.step_LeftRight": "حرك يمين ويسار مع مفاتيح الأسهم",
+    "gui.howtos.Chase-Game.step_UpDown": "تحرك صعودا وهبوطا مع مفاتيح الأسهم",
+    "gui.howtos.Chase-Game.step_AddStar": "اضف كائن آخر",
+    "gui.howtos.Chase-Game.step_MoveRandom": "التحرك عشوائيا",
+    "gui.howtos.Chase-Game.step_WhenTouch": "عند نقر على كائن الاخطبوط شغل صوت",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "خلق درجة المتغير",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "عند نقر على كائن الاخطبوط، زد نقطة",
+    "gui.howtos.add-sprite.name": "أضف كائنًا",
+    "gui.howtos.add-sprite.step_addSprite": "أضف كائنًا",
+    "gui.howtos.add-a-backdrop.name": "أضف خلفية",
+    "gui.howtos.change-size.name": "تغيير الحجم ",
+    "gui.howtos.glide-around.name": "انزلاق حول",
+    "gui.howtos.record-a-sound.name": "تسجيل صوت",
+    "gui.howtos.spin-video.name": "اجعلها تدور",
+    "gui.howtos.hide-and-show.name": "إخفاء وإظهار",
+    "gui.howtos.switch-costume.name": "تحريك الكائن",
+    "gui.howtos.move-around-with-arrow-keys.name": "استخدام مفاتيح الأسهم",
+    "gui.howtos.add-effects.name": "إضافة تأثيرات",
+    "gui.extension.music.name": "الموسيقى",
+    "gui.extension.music.description": "تلعب الصكوك والطبول.",
+    "gui.extension.pen.name": "القلم",
+    "gui.extension.pen.description": "ارسم مع العفاريت الخاصة بك.",
+    "gui.extension.videosensing.name": "استشعار الفيديو",
+    "gui.extension.videosensing.description": "تحسس الحركة بالكاميرا.",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "ترجم",
+    "gui.extension.translate.description": "ترجمة النص إلى العديد من اللغات.",
+    "gui.extension.microbit.description": "ربط مشاريعك مع العالم.",
+    "gui.extension.microbit.connectingMessage": "جاري التوصيل",
+    "gui.extension.ev3.description": "بناء الروبوتات التفاعلية وأكثر من ذلك.",
+    "gui.extension.ev3.connectingMessage": "جاري التوصيل. تأكد من ان الرقم السري على جهاز EV3 الخاص بك هو 1234.",
+    "gui.extension.wedo2.description": "بناء مع المحركات وأجهزة الاستشعار.",
+    "gui.extension.wedo2.connectingMessage": "توصيل",
+    "gui.libraryTags.all": "الكل",
+    "gui.libraryTags.animals": "حيوانات",
+    "gui.libraryTags.dance": "حفلة راقصة",
+    "gui.libraryTags.effects": "المؤثرات",
+    "gui.libraryTags.fantasy": "خيال",
+    "gui.libraryTags.fashion": "أزياء ",
+    "gui.libraryTags.food": "طعام",
+    "gui.libraryTags.indoors": "داخلي",
+    "gui.libraryTags.loops": "الحلقات",
+    "gui.libraryTags.music": "الموسيقى",
+    "gui.libraryTags.notes": "ملاحظات",
+    "gui.libraryTags.outdoors": "خارجي",
+    "gui.libraryTags.patterns": "أنماط ",
+    "gui.libraryTags.people": "ناس",
+    "gui.libraryTags.percussion": "إيقاع",
+    "gui.libraryTags.space": "الفضاء",
+    "gui.libraryTags.sports": "الرياضة",
+    "gui.libraryTags.underwater": "تحت الماء",
+    "gui.libraryTags.voice": "صوت",
+    "gui.libraryTags.wacky": "أحمق",
+    "gui.libraryTags.animation": "الرسوم المتحركة",
+    "gui.libraryTags.art": "الفنون",
+    "gui.libraryTags.games": "الألعاب",
+    "gui.libraryTags.stories": "القصص",
+    "gui.libraryTags.letters": "الحروف",
+    "gui.opcodeLabels.direction": "الاتجاه",
+    "gui.opcodeLabels.xposition": "الموضع س",
+    "gui.opcodeLabels.yposition": "الموضع ص",
+    "gui.opcodeLabels.size": "الحجم",
+    "gui.opcodeLabels.costumename": "اسم المظهر",
+    "gui.opcodeLabels.costumenumber": "رقم المظهر",
+    "gui.opcodeLabels.backdropname": "اسم الخلفية",
+    "gui.opcodeLabels.backdropnumber": "رقم الخلفية",
+    "gui.opcodeLabels.volume": "شدة الصوت",
+    "gui.opcodeLabels.tempo": "سرعة الأيقاع",
+    "gui.opcodeLabels.answer": "الإجابة",
+    "gui.opcodeLabels.loudness": "شدة الصوت",
+    "gui.opcodeLabels.username": "اسم المستخدم",
+    "gui.opcodeLabels.year": "السنة",
+    "gui.opcodeLabels.month": "الشهر",
+    "gui.opcodeLabels.date": "تاريخ",
+    "gui.opcodeLabels.dayofweek": "يوم الأسبوع",
+    "gui.opcodeLabels.hour": "الساعة",
+    "gui.opcodeLabels.minute": "الدقيقة",
+    "gui.opcodeLabels.second": "الثانية",
+    "gui.opcodeLabels.timer": "المؤقت",
+    "gui.sharedMessages.backdrop": "خلفية {index}",
+    "gui.sharedMessages.costume": "مظهر{index}",
+    "gui.sharedMessages.sprite": "الكائن {index}",
+    "gui.sharedMessages.pop": "بُب"
 }

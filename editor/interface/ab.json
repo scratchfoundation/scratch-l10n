@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Даҽазнык аҽаҿакра",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Абӷакыдҵа",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Аҭагалараан агха",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Аҭагалара...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Иҵегь",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Абӷакыдҵа ҭацәуп",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Абраузер аднакылом",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Гәхьаас иҳамоуп аха, Scratch 3.0 аус ауам  Internet Explorer, Vivaldi, Opera, Silk рҟны. Шәхы иашәырхәа даҽа браузерк, иаҳҳәап, Google Chrome, Mozilla Firefox ма Microsoft Edge реиԥш иҟоу.   ",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Шьҭахьҟа",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "ЛЛИ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Афото аҭыхра",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Акамера аҟынтә аҭагалара...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Акамера ахархәараз иаҭахуп шәара шақәшаҳаҭхара",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Афото ҽазнык аҭыхра",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Еиқәырхатәуп",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Афото аҭыхра",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Аҭагалара...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Иаҿактәуп акамера",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Арҵага шәҟәқәа",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Иарктәуп",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Игәашәҭ еиҭа афункциа ҿыцқәа!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Еилкаатәуп еиҳаны",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Шәгәы шәырҭынч, ари ҳара аус адулара ҳаҿуп  {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Иаарласны...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Ари, ҳара аус адулара ҳаҿуп {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Аиҿартәырақәа ԥшаам",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Аиҿартәыра шәааигәа иҟашәҵа, нас шәалага аԥшаара.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Аиҿартәыра аҟны шәақәыӷәӷәа акнопка.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Иалагатәуп аԥшаара",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Аԥшаара...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Игәаҭатәп иҵегь",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Иаҿакуп",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Аимадара ықәгатәуп",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Ииастәуп Аредақтор ахь",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Аимадара...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Уаҳ, аусқәа ишахәҭам ицеит.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Игәаҭатәуп иҵегь",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Ацхыраара",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Аиҿартәыра ахьӡ",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Еимадатәуп",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Аиҿартәырақәа рыԥшаара",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Аиҿартәырақәа ԥшаам",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Иалышәх аиҿартәыра хыхьтәи ахьӡынҵа аҟынтәи.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Ирҿыцтәуп",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Агәра шәга, апрограмма  Scratch Link шықәыргылои аусура ишаҿуи ",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": " Bluetooth шаҿаку агәра шәга",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Игәаҭатәуп иҵегь",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Ацхыраара",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Ԥхьаҟа",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Иаанкылатәуп",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Уаҳ! Аусқәа иашамкәа ицеит.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Ҳара хьаас иҳамоуп, аха Scratch аҟны иҟалеит агха. Агхазы ацҳамҭа автоматикала идәықәҵоуп Scratch акомандахь. Ишәырҿыц адаҟьа, даҽазнык агәаҭараз.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Аиҭаҭагалара",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Иаԥҵатәуп аблок",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Иацҵатәуп аҭагалараз аҭыԥ",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "ахыԥхьаӡара ма атеқст",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Иацҵатәуп аҭагалараз аҭыԥ",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "алогикатә",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Иацҵатәуп атеқст аҭыԥ",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Идәықәҵатәуп аекран арҿыцрада",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Иаҟәыхтәуп",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Ахырхарҭа",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Иргьежьтәуп",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Армарахь/Арӷьарахь",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Иргьежьтәӡам",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Иацҵатәуп арҭбаара",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Акод",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Аҿаԥшырақәа",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Акостиумқәа",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Абжьқәа",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Иахәаԥштәуп Scratch аверсиа 2.0 апроеқт ",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Иҭажәгал азеиԥш проектқәа руак ахь азхьарԥш. Аԥсахрақәа 3.0 Beta версиа аҟны иаҟаҵақәоу еиқәырхахаӡом.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Иҭажәгал азхьарԥш Scratch аҟны шәпроектқәа руак ахь. Аԥсахрақәа, аверсиа 3.0 аҟны иҟаҵақәо еиқәырхахаӡом. ",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Оҳ, апроеқт ахь азхьарԥш ма аидентификатор ааԥшуеит цқьа ииашамкәа. ",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Иахәаԥштәуп",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Шьҭахьҟа",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "ЛЛИ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Иаарласны...",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Аԥшаара",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Зегьы",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Аблокқәа раԥҵара...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Анагӡаҩцәа рҭагалара...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Абжьқәа рҭагалара...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Арҭбаарақәа рҭагалара...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Ацгәқәа рхылаԥшра...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Нанохәҭаҷқәа рынашьҭра...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Гобо арчра...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Асмаиликқәа разырхиара...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Апроеқт аҭагалара",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Апрофиль",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Сара суысумҭақәа",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Сара сыклассқәа",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Сара сыкласс",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Аккаунт азырхирақәа",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Иҭыҵтәуп",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Ахеилак ахәаԥшра",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Ахархәаҩ ихьӡ",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Ажәамаӡа",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Иҭалатәуп",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Ишәҭахума ацхыраара?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "абызшәа алхра",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Аурокқәа",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Дырхынҳәтәуп анагӡаҩ",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Ирхынҳәтәуп абжьы",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Ирхынҳәтәуп акостиум",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Ирхынҳәтәуп",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Еиқәырхатәуп абыржәы",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Еиқәырхатәуп акопиа ҳасабла",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Аремикс",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Аҿыц",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Афаил",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Иҭалатәуп акомпиутер аҟынтәи",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Еиқәырхатәуп шәкомпиутер аҟны",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Ариашара",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Иаҿыхтәуп Turbo арежим",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Иаҿактәуп Turbo арежим",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Шәыҽҭажәгал",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Иҭалатәуп",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Идәықәҵатәуп ахцәажәара",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Апроеқт ахьӡ абра",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Апубликациа азуп",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Угәаанагарақәа рыцеиҩша",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Ацхыраара",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Шьҭахьҟа",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(иҭацәуп)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "аура {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "истандарту аԥшра",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "аԥшра рдыуны",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "арымаа хәыҷ",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Шәахәаԥш Scratch 3.0 ",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Бзиала шәаабеит Scratch 3.0 Beta аҟны",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Уажәы мап",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Игәашәҭ абри",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Иахәаԥштәуп аверсиа 2.0 апроеқт",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Бзиала шәаабеит Scratch 3.0 Beta аҟны",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Ҳара аус адулара ҳаҿуп Scratch анаҩстәи аверсиа. Ҳаигәырӷьоит, иара агәаҭара шәхы ахьалашәырхәуа!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Уажәы мап",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Игәашәҭ! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Иахәаԥштәуп аверсиа 2.0 апроеқт",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "ЛЛИ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Анагӡаҩцәа зегьы рзы",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Абри анагӡаҩ мацара изы",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Аԥсҭҳәатә ҽеиҭак (асервер иҭагалоу)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ари аҽеиҭак анагӡаҩцәа зегь ирызкуп.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Иаҟәыхтәуп",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Иаанкылатәуп",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Иарҳәатәуп",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Аҭагалара...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Еиқәырхатәуп",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Ҿыц иҭаҩтәуп",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Иҭаҩтәуп абжьы",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Шәалага аҭаҩра, ҵаҟатәи акнопка ақәыӷәӷәарала",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow} Шәмикрофон ахархәараз, ҳара иҳамазароуп шәара шәзин",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Иаанкылатәуп аҭаҩра",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Иҭаҩтәуп",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Абжьы",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Иарҳәатәуп",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Иаанкылатәуп",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Иамырффатәуп",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Еиқәырхатәуп",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Иаҟәыхтәуп",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Еиҭанагӡатәуп",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Ирццактәуп",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Аццакыра иагырхатәуп",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Аныҩбжьы",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Аробот",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Абжьы ардура",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Абжьы армаҷра",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Еиҵыхтәуп",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Ахьӡ",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Анагӡаҩ",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Иаарԥштәуп",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Ашәагаа",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "адубликат ҟаҵатәуп",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "ианыхтәуп",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "аекспорт",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Далхтәуп анагӡаҩ",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Иҭыхтәуп",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Асиурприз",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Дҭагалатәуп анагӡаҩ",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Асцена ду",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Асцена маҷ",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Ииастәуп аекран зегь арежим ахь",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Иҭыҵтәуп аекран зегь арежим ",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Аекран зегь арежим",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Иалхтәуп аҿаԥшыра",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Иҭыхтәуп",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Асиурприз",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Иҭагалатәуп аҿаԥшыра",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Асцена",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Аҿаԥшырақәа",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Турбо арежим",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Шәара шәбраузер иаднакылом WebGL.",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Ихьаахгоит аха,  шәбраузер ма шәкомпиутер {webGlLink}.  Ари атехнологиа аҭахуп Scratch 3.0. аус аруразы. ",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "WebGL аднакылом",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Шьҭахьҟа",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "ЛЛИ",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Иалхтәуп аҿаԥшыра",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Иалхтәуп акостиум",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Иалхтәуп аҿаԥшыра ",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Иалхтәуп акостиум",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Иҭыхтәуп",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Асиурприз",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Иҭагалатәуп аҿаԥшыра",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Иҭагалатәуп акостиум",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Акамера",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Иалхтәуп амаруга",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Иҭажәгал арҭбаара а-URL ",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Апроеқт",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Иамуӡеит аҭаҩра алагара",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Иалху апроеқт афаил аҭагалара амуӡеит.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Иалхтәуп абжьы",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Иҭагалатәуп абжьы",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Асиурприз",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Иҭаҩтәуп",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Иалхтәуп абжьы",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Далхтәуп анагӡаҩ",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Иалхтәуп арҵага шәҟәы",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Қәҿиарала иаԥҵоуп",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Аԥҵара...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Қәҿиарала еиқәырхоуп.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Аиқәырхара...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Миау",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "исхатәу аҽеиҭак",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Излалагатәу",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Иацышәҵа аиҭаҵратә блок",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Алагаразы шәақәыӷәӷәа абираҟ иаҵәа!",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Иаԥҵатәуп Анимациа И Иҳәатәуп",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Иацҵатәуп Аблокқәа \"Атеқст Ацәажәарахь\"",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Ишәҳәа џьара акы",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Иқәыргылатәуп Абжьы",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Игьежьлатәуп Иакәыршаны",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Иацышәҵа аҿаԥшыра",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Иацҵатәуп Егьи Аперсонаж",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Иқәгылатәуп Ашәаҳәара  ала",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Иԥсахтәуп аԥштәы",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Иргьежьтәуп",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Идухалатәуп нас Ихәыҷхалатәуп",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Иаԥҵа Ахәмарра Ахҭыс",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Далх ицәырҵраны иҟоу афырхаҵа",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Ишәҳәа џьара акы",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Ашьшьыҳәа аргьежьра",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Иалх еизгатәу",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Еизгала аобиеқтқәа",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Иаԥҵа Аԥхьаӡара Аҽеиҭак",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Аԥхьаӡара Иацҵала",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Аҩаӡара ҿыц: Иԥсах аҿаԥшыра",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Ахьӡ анимациа азура",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Иалышәх нагӡаҩцәас анбанқәа ",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Иргатәуп абжьы, ақәыӷәӷәараан",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Иалышәх егьи Letter Sprite ",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Иԥсахтәуп аԥштәы",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Далышәх даҽа нагӡаҩык нас дшәыргьежь",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Иалышәх анагӡаҩ изку даҽа нбанк нас ишәырдыу иара.",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Иаԥышәҵа амузыка",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Иалышәх амаруга Анагӡаҩ",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Иргатәуп абжьы, ақәыӷәӷәараан",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Иаԥышәҵа ашәа",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Иалышәх абжьы нас иашәырҳәа",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Иалышәх амикрофон Sprite & Surprise Beatbox ",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Иаԥышәҵа ахәмарра Clicker ",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Далышәх анагӡаҩ",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Иргатәуп абжьы, ақәыӷәӷәараан",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Иаԥҵатәуп аԥхьаӡараз аҽеиҭак",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Ақәыӷәӷәараан аԥхьаӡа иазырҳатәуп",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Ииастәуп иарбанзаалакь апозициа ахь",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Иԥсахтәуп аԥштәы",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Иқәгатәуп аԥхьаӡара",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Иаԥышәҵа аиԥхныҩлара иазку ахәмарра",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Иацышәҵа аҿаԥшыра",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Дацышәҵа анагӡаҩ",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Аиагара арӷьарахьи армарахьи ахыцқәа рыла",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Аиагара аҩадеи аладеи ахыцқәа рыла",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Дацҵатәуп егьи анагӡаҩ",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Ииагатәуп иахьабалакь",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Octopus Sprite аҟны ақәыӷәӷәараан иргатәуп абжьы ",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Иаԥҵатәуп аԥхьаӡараз аҽеиҭак",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Octopus Sprite аҟны, ақәыӷәӷәараан иацҵатәуп аԥхьаӡара",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Дацышәҵа анагӡаҩ",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Дацышәҵа анагӡаҩ",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Иацышәҵа аҿаԥшыра",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Иԥсахтәуп ашәагаа",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Ашьшьыҳәа аргьежьра",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Иҭаҩтәуп абжьы",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Игьежьлааит",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Иҵәахтәуп нас иаарԥштәуп",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Анагӡаҩ анимациа изутәуп",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Ихархәатәуп ахыц зну аклавишақәа",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Иацҵа аеффектқәа",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Амузыка",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Иаԥышәҵа амузыка аинструментқәеи адаулқәеи рыла.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Акалам",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Иҭыхтәуп анагӡаҩцәа.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Авидео ахархәара",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Авидеокамера аиҭаҵра.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Атеқст Ацәажәарахь",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Упроеқтқәа аԥсы рхаҵа.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Атанслиациа",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Еиҭагатәуп атеқст егьырҭ абызшәақәа рахь.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Шәпроеқтқәа адунеи иашәырдыр.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Аимадара",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Иаԥышәҵала аинтерактивтә роботи егьырҭ аобиектқәеи.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Аимадара. Агәра шәга, pin-код EV3 аҟны 1234 шықәыргылоу.   ",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Иаԥышәҵала аматорқәеи асенсорқәеи рхархәарала.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Аимадара",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Зегьы",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Аԥстәқәа",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Акәашара",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Аеффектқәа",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Афантастика",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Амода",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Афатә",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Ауада аҩныҵҟа",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Ациклқәа",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Амузыка",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Азгәаҭақәа",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Адәахьы",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Аузорқәа",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Ауаа",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Аперкуссиа",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Акосмос",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Аспорт",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Аӡаҵаҟатәи адунеи",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Абжьы",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Ахеилагақәа",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Анимациа",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Аҟазара",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Ахәмаррақәа",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Аҭоурыхқәа",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Анбанқәа",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "ахырхарҭа",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x аҭыԥ",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y аҭыԥ",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "ашәагаа",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "акостиум ахьӡ",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "акостиум аномер",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "аҿаԥшыра ахьӡ",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "аҿаԥшыра аномер",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "абжьы адура",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "атемп",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "аҭак",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "абжьы адура",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "алахәылаҩ ихьӡ",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "ашықәс",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "амза",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "арыцхә",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "амчыбжь амш",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "асааҭ",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "аминуҭ",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "асекунд",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "аамҭарбага",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "аҿаԥшыра{аиндекс}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "акостиум{аиндекс}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Анагӡаҩ{аиндекс}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "апоп",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Даҽазнык аҽаҿакра",
+    "gui.backpack.header": "Абӷакыдҵа",
+    "gui.backpack.errorBackpack": "Аҭагалараан агха",
+    "gui.backpack.loadingBackpack": "Аҭагалара...",
+    "gui.backpack.more": "Иҵегь",
+    "gui.backpack.emptyBackpack": "Абӷакыдҵа ҭацәуп",
+    "gui.unsupportedBrowser.label": "Абраузер аднакылом",
+    "gui.unsupportedBrowser.description": "Гәхьаас иҳамоуп аха, Scratch 3.0 аус ауам  Internet Explorer, Vivaldi, Opera, Silk рҟны. Шәхы иашәырхәа даҽа браузерк, иаҳҳәап, Google Chrome, Mozilla Firefox ма Microsoft Edge реиԥш иҟоу.   ",
+    "gui.unsupportedBrowser.back": "Шьҭахьҟа",
+    "gui.unsupportedBrowser.previewfaq": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
+    "gui.unsupportedBrowser.previewfaqlinktext": "ЛЛИ",
+    "gui.cameraModal.cameraModalTitle": "Афото аҭыхра",
+    "gui.cameraModal.loadingCameraMessage": "Акамера аҟынтә аҭагалара...",
+    "gui.cameraModal.permissionRequest": "Акамера ахархәараз иаҭахуп шәара шақәшаҳаҭхара",
+    "gui.cameraModal.retakePhoto": "Афото ҽазнык аҭыхра",
+    "gui.cameraModal.save": "Еиқәырхатәуп",
+    "gui.cameraModal.takePhoto": "Афото аҭыхра",
+    "gui.cameraModal.loadingCaption": "Аҭагалара...",
+    "gui.cameraModal.enableCameraCaption": "Иаҿактәуп акамера",
+    "gui.cards.all-tutorials": "Арҵага шәҟәқәа",
+    "gui.cards.close": "Иарктәуп",
+    "gui.cards.more-things-to-try": "Игәашәҭ еиҭа афункциа ҿыцқәа!",
+    "gui.cards.see-more": "Еилкаатәуп еиҳаны",
+    "gui.comingSoon.message1": "Шәгәы шәырҭынч, ари ҳара аус адулара ҳаҿуп  {emoji}",
+    "gui.comingSoon.message2": "Иаарласны...",
+    "gui.comingSoon.message3": "Ари, ҳара аус адулара ҳаҿуп {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Аиҿартәырақәа ԥшаам",
+    "gui.connection.auto-scanning.prescan": "Аиҿартәыра шәааигәа иҟашәҵа, нас шәалага аԥшаара.",
+    "gui.connection.auto-scanning.pressbutton": "Аиҿартәыра аҟны шәақәыӷәӷәа акнопка.",
+    "gui.connection.auto-scanning.start-search": "Иалагатәуп аԥшаара",
+    "gui.connection.connecting-searchbutton": "Аԥшаара...",
+    "gui.connection.auto-scanning.try-again": "Игәаҭатәп иҵегь",
+    "gui.connection.connected": "Иаҿакуп",
+    "gui.connection.disconnect": "Аимадара ықәгатәуп",
+    "gui.connection.go-to-editor": "Ииастәуп Аредақтор ахь",
+    "gui.connection.connecting-cancelbutton": "Аимадара...",
+    "gui.connection.error.errorMessage": "Уаҳ, аусқәа ишахәҭам ицеит.",
+    "gui.connection.error.tryagainbutton": "Игәаҭатәуп иҵегь",
+    "gui.connection.error.helpbutton": "Ацхыраара",
+    "gui.connection.peripheral-name-label": "Аиҿартәыра ахьӡ",
+    "gui.connection.connect": "Еимадатәуп",
+    "gui.connection.scanning.lookingforperipherals": "Аиҿартәырақәа рыԥшаара",
+    "gui.connection.scanning.noPeripheralsFound": "Аиҿартәырақәа ԥшаам",
+    "gui.connection.scanning.instructions": "Иалышәх аиҿартәыра хыхьтәи ахьӡынҵа аҟынтәи.",
+    "gui.connection.search": "Ирҿыцтәуп",
+    "gui.connection.unavailable.installscratchlink": "Агәра шәга, апрограмма  Scratch Link шықәыргылои аусура ишаҿуи ",
+    "gui.connection.unavailable.enablebluetooth": " Bluetooth шаҿаку агәра шәга",
+    "gui.connection.unavailable.tryagainbutton": "Игәаҭатәуп иҵегь",
+    "gui.connection.unavailable.helpbutton": "Ацхыраара",
+    "gui.controls.go": "Ԥхьаҟа",
+    "gui.controls.stop": "Иаанкылатәуп",
+    "gui.crashMessage.label": "Уаҳ! Аусқәа иашамкәа ицеит.",
+    "gui.crashMessage.description": "Ҳара хьаас иҳамоуп, аха Scratch аҟны иҟалеит агха. Агхазы ацҳамҭа автоматикала идәықәҵоуп Scratch акомандахь. Ишәырҿыц адаҟьа, даҽазнык агәаҭараз.",
+    "gui.crashMessage.reload": "Аиҭаҭагалара",
+    "gui.customProcedures.myblockModalTitle": "Иаԥҵатәуп аблок",
+    "gui.customProcedures.addAnInputNumberText": "Иацҵатәуп аҭагалараз аҭыԥ",
+    "gui.customProcedures.numberTextType": "ахыԥхьаӡара ма атеқст",
+    "gui.customProcedures.addAnInputBoolean": "Иацҵатәуп аҭагалараз аҭыԥ",
+    "gui.customProcedures.booleanType": "алогикатә",
+    "gui.customProcedures.addALabel": "Иацҵатәуп атеқст аҭыԥ",
+    "gui.customProcedures.runWithoutScreenRefresh": "Идәықәҵатәуп аекран арҿыцрада",
+    "gui.customProcedures.cancel": "Иаҟәыхтәуп",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Ахырхарҭа",
+    "gui.directionPicker.rotationStyles.allAround": "Иргьежьтәуп",
+    "gui.directionPicker.rotationStyles.leftRight": "Армарахь/Арӷьарахь",
+    "gui.directionPicker.rotationStyles.dontRotate": "Иргьежьтәӡам",
+    "gui.gui.addExtension": "Иацҵатәуп арҭбаара",
+    "gui.gui.codeTab": "Акод",
+    "gui.gui.backdropsTab": "Аҿаԥшырақәа",
+    "gui.gui.costumesTab": "Акостиумқәа",
+    "gui.gui.soundsTab": "Абжьқәа",
+    "gui.importInfo.title": "Иахәаԥштәуп Scratch аверсиа 2.0 апроеқт ",
+    "gui.importInfo.betamessage": "Иҭажәгал азеиԥш проектқәа руак ахь азхьарԥш. Аԥсахрақәа 3.0 Beta версиа аҟны иаҟаҵақәоу еиқәырхахаӡом.",
+    "gui.importInfo.message": "Иҭажәгал азхьарԥш Scratch аҟны шәпроеқтқәа руак ахь. Аԥсахрақәа, аверсиа 3.0 аҟны иҟаҵақәо еиқәырхахаӡом. ",
+    "gui.importInfo.invalidFormatError": "Оҳ, апроеқт ахь азхьарԥш ма аидентификатор ааԥшуеит цқьа ииашамкәа. ",
+    "gui.importModal.viewproject": "Иахәаԥштәуп",
+    "gui.importInfo.goback": "Шьҭахьҟа",
+    "gui.importInfo.previewfaq": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
+    "gui.importInfo.previewfaqlinktext": "ЛЛИ",
+    "gui.extensionLibrary.comingSoon": "Иаарласны...",
+    "gui.extensionLibrary.requires": "Иаҭахуп",
+    "gui.extensionLibrary.collaboration": "Аус рыцутәуп",
+    "gui.library.filterPlaceholder": "Аԥшаара",
+    "gui.library.allTag": "Зегьы",
+    "gui.loader.message1": "Аблокқәа раԥҵара...",
+    "gui.loader.message2": "Анагӡаҩцәа рҭагалара...",
+    "gui.loader.message3": "Абжьқәа рҭагалара...",
+    "gui.loader.message4": "Арҭбаарақәа рҭагалара...",
+    "gui.loader.message5": "Ацгәқәа рхылаԥшра...",
+    "gui.loader.message6": "Нанохәҭаҷқәа рынашьҭра...",
+    "gui.loader.message7": "Гобо арчра...",
+    "gui.loader.message8": "Асмаиликқәа разырхиара...",
+    "gui.loader.headline": "Апроеқт аҭагалара",
+    "gui.accountMenu.profile": "Апрофиль",
+    "gui.accountMenu.myStuff": "Сара суысумҭақәа",
+    "gui.accountMenu.myClasses": "Сара сыклассқәа",
+    "gui.accountMenu.myClass": "Сара сыкласс",
+    "gui.accountMenu.accountSettings": "Аккаунт азырхирақәа",
+    "gui.accountMenu.signOut": "Иҭыҵтәуп",
+    "gui.authorInfo.byUser": "{username} ала",
+    "gui.menuBar.seeCommunity": "Ахеилак ахәаԥшра",
+    "general.username": "Ахархәаҩ ихьӡ",
+    "general.password": "Ажәамаӡа",
+    "general.signIn": "Иҭалатәуп",
+    "login.needHelp": "Ишәҭахума ацхыраара?",
+    "gui.menuBar.LanguageSelector": "абызшәа алхра",
+    "gui.menuBar.tutorialsLibrary": "Аурокқәа",
+    "gui.menuBar.restoreSprite": "Дырхынҳәтәуп анагӡаҩ",
+    "gui.menuBar.restoreSound": "Ирхынҳәтәуп абжьы",
+    "gui.menuBar.restoreCostume": "Ирхынҳәтәуп акостиум",
+    "gui.menuBar.restore": "Ирхынҳәтәуп",
+    "gui.menuBar.saveNow": "Еиқәырхатәуп абыржәы",
+    "gui.menuBar.saveAsCopy": "Еиқәырхатәуп акопиа ҳасабла",
+    "gui.menuBar.remix": "Аремикс",
+    "gui.menuBar.new": "Аҿыц",
+    "gui.menuBar.file": "Афаил",
+    "gui.menuBar.uploadFromComputer": "Иҭалатәуп акомпиутер аҟынтәи",
+    "gui.menuBar.downloadToComputer": "Еиқәырхатәуп шәкомпиутер аҟны",
+    "gui.menuBar.edit": "Ариашара",
+    "gui.menuBar.turboModeOff": "Иаҿыхтәуп Turbo арежим",
+    "gui.menuBar.turboModeOn": "Иаҿактәуп Turbo арежим",
+    "gui.menuBar.joinScratch": "Шәыҽҭажәгал",
+    "gui.menuBar.signIn": "Иҭалатәуп",
+    "gui.menuBar.giveFeedback": "Идәықәҵатәуп ахцәажәара",
+    "gui.gui.projectTitlePlaceholder": "Апроеқт ахьӡ абра",
+    "gui.menuBar.isShared": "Апубликациа азуп",
+    "gui.menuBar.share": "Угәаанагарақәа рыцеиҩша",
+    "gui.modal.help": "Ацхыраара",
+    "gui.modal.back": "Шьҭахьҟа",
+    "gui.monitor.listMonitor.empty": "(иҭацәуп)",
+    "gui.monitor.listMonitor.listLength": "аура {length}",
+    "gui.monitor.contextMenu.default": "истандарту аԥшра",
+    "gui.monitor.contextMenu.large": "аԥшра рдыуны",
+    "gui.monitor.contextMenu.slider": "арымаа хәыҷ",
+    "gui.previewInfo.label": "Шәахәаԥш Scratch 3.0 ",
+    "gui.previewInfo.welcome": "Бзиала шәаабеит Scratch 3.0 Beta аҟны",
+    "gui.previewModal.notnowtooltip": "Уажәы мап",
+    "gui.previewModal.tryittooltip": "Игәашәҭ абри",
+    "gui.previewModal.viewprojecttooltip": "Иахәаԥштәуп аверсиа 2.0 апроеқт",
+    "gui.previewInfo.betawelcome": "Бзиала шәаабеит Scratch 3.0 Beta аҟны",
+    "gui.previewInfo.invitation": "Ҳара аус адулара ҳаҿуп Scratch анаҩстәи аверсиа. Ҳаигәырӷьоит, иара агәаҭара шәхы ахьалашәырхәуа!",
+    "gui.previewInfo.notnow": "Уажәы мап",
+    "gui.previewModal.tryit": "Игәашәҭ! {caticon}",
+    "gui.previewModal.viewproject": "Иахәаԥштәуп аверсиа 2.0 апроеқт",
+    "gui.previewInfo.previewfaq": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
+    "gui.previewInfo.previewfaqlinktext": "ЛЛИ",
+    "gui.gui.variableScopeOptionAllSprites": "Анагӡаҩцәа зегьы рзы",
+    "gui.gui.variableScopeOptionSpriteOnly": "Абри анагӡаҩ мацара изы",
+    "gui.gui.cloudVariableOption": "Аԥсҭҳәатә ҽеиҭак (асервер иҭагалоу)",
+    "gui.gui.variablePromptAllSpritesMessage": "Ари аҽеиҭак анагӡаҩцәа зегь ирызкуп.",
+    "gui.prompt.cancel": "Иаҟәыхтәуп",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Иаанкылатәуп",
+    "gui.playbackStep.playMsg": "Иарҳәатәуп",
+    "gui.playbackStep.loadingMsg": "Аҭагалара...",
+    "gui.playbackStep.saveMsg": "Еиқәырхатәуп",
+    "gui.playbackStep.reRecordMsg": "Ҿыц иҭаҩтәуп",
+    "gui.recordModal.title": "Иҭаҩтәуп абжьы",
+    "gui.recordingStep.beginRecord": "Шәалага аҭаҩра, ҵаҟатәи акнопка ақәыӷәӷәарала",
+    "gui.recordingStep.permission": "{arrow} Шәмикрофон ахархәараз, ҳара иҳамазароуп шәара шәзин",
+    "gui.recordingStep.stop": "Иаанкылатәуп аҭаҩра",
+    "gui.recordingStep.record": "Иҭаҩтәуп",
+    "gui.soundEditor.sound": "Абжьы",
+    "gui.soundEditor.play": "Иарҳәатәуп",
+    "gui.soundEditor.stop": "Иаанкылатәуп",
+    "gui.soundEditor.trim": "Иамырффатәуп",
+    "gui.soundEditor.save": "Еиқәырхатәуп",
+    "gui.soundEditor.undo": "Иаҟәыхтәуп",
+    "gui.soundEditor.redo": "Еиҭанагӡатәуп",
+    "gui.soundEditor.faster": "Ирццактәуп",
+    "gui.soundEditor.slower": "Аццакыра иагырхатәуп",
+    "gui.soundEditor.echo": "Аныҩбжьы",
+    "gui.soundEditor.robot": "Аробот",
+    "gui.soundEditor.louder": "Абжьы ардура",
+    "gui.soundEditor.softer": "Абжьы армаҷра",
+    "gui.soundEditor.reverse": "Еиҵыхтәуп",
+    "gui.SpriteInfo.spritePlaceholder": "Ахьӡ",
+    "gui.SpriteInfo.sprite": "Анагӡаҩ",
+    "gui.SpriteInfo.show": "Иаарԥштәуп",
+    "gui.SpriteInfo.size": "Ашәагаа",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "адубликат ҟаҵатәуп",
+    "gui.spriteSelectorItem.contextMenuDelete": "ианыхтәуп",
+    "gui.spriteSelectorItem.contextMenuExport": "аекспорт",
+    "gui.spriteSelector.addSpriteFromLibrary": "Далхтәуп анагӡаҩ",
+    "gui.spriteSelector.addSpriteFromPaint": "Иҭыхтәуп",
+    "gui.spriteSelector.addSpriteFromSurprise": "Асиурприз",
+    "gui.spriteSelector.addSpriteFromFile": "Дҭагалатәуп анагӡаҩ",
+    "gui.stageHeader.stageSizeLarge": "Асцена ду",
+    "gui.stageHeader.stageSizeSmall": "Асцена маҷ",
+    "gui.stageHeader.stageSizeFull": "Ииастәуп аекран зегь арежим ахь",
+    "gui.stageHeader.stageSizeUnFull": "Иҭыҵтәуп аекран зегь арежим ",
+    "gui.stageHeader.fullscreenControl": "Аекран зегь арежим",
+    "gui.spriteSelector.addBackdropFromLibrary": "Иалхтәуп аҿаԥшыра",
+    "gui.stageSelector.addBackdropFromPaint": "Иҭыхтәуп",
+    "gui.stageSelector.addBackdropFromSurprise": "Асиурприз",
+    "gui.stageSelector.addBackdropFromFile": "Иҭагалатәуп аҿаԥшыра",
+    "gui.stageSelector.stage": "Асцена",
+    "gui.stageSelector.backdrops": "Аҿаԥшырақәа",
+    "gui.turboMode.active": "Турбо арежим",
+    "gui.webglModal.label": "Шәара шәбраузер иаднакылом WebGL.",
+    "gui.webglModal.description": "Ихьаахгоит аха,  шәбраузер ма шәкомпиутер {webGlLink}.  Ари атехнологиа аҭахуп Scratch 3.0. аус аруразы. ",
+    "gui.webglModal.webgllink": "WebGL аднакылом",
+    "gui.webglModal.back": "Шьҭахьҟа",
+    "gui.webglModal.previewfaq": "Иаҳа еиҳаны аилкаараз, шәиас {previewFaqLink} ахь. ",
+    "gui.webglModal.previewfaqlinktext": "ЛЛИ",
+    "gui.costumeLibrary.chooseABackdrop": "Иалхтәуп аҿаԥшыра",
+    "gui.costumeLibrary.chooseACostume": "Иалхтәуп акостиум",
+    "gui.costumeTab.addBackdropFromLibrary": "Иалхтәуп аҿаԥшыра ",
+    "gui.costumeTab.addCostumeFromLibrary": "Иалхтәуп акостиум",
+    "gui.costumeTab.addBlankCostume": "Иҭыхтәуп",
+    "gui.costumeTab.addSurpriseCostume": "Асиурприз",
+    "gui.costumeTab.addFileBackdrop": "Иҭагалатәуп аҿаԥшыра",
+    "gui.costumeTab.addFileCostume": "Иҭагалатәуп акостиум",
+    "gui.costumeTab.addCameraCostume": "Акамера",
+    "gui.extensionLibrary.chooseAnExtension": "Иалхтәуп амаруга",
+    "gui.extensionLibrary.extensionUrl": "Иҭажәгал арҭбаара а-URL ",
+    "gui.gui.defaultProjectTitle": "Scratch Апроеқт",
+    "gui.recordingStep.alertMsg": "Иамуӡеит аҭаҩра алагара",
+    "gui.projectLoader.loadError": "Иалху апроеқт афаил аҭагалара амуӡеит.",
+    "gui.soundLibrary.chooseASound": "Иалхтәуп абжьы",
+    "gui.soundTab.fileUploadSound": "Иҭагалатәуп абжьы",
+    "gui.soundTab.surpriseSound": "Асиурприз",
+    "gui.soundTab.recordSound": "Иҭаҩтәуп",
+    "gui.soundTab.addSoundFromLibrary": "Иалхтәуп абжьы",
+    "gui.spriteLibrary.chooseASprite": "Далхтәуп анагӡаҩ",
+    "gui.tipsLibrary.tutorials": "Иалхтәуп арҵага шәҟәы",
+    "gui.alerts.createsuccess": "Қәҿиарала иаԥҵоуп",
+    "gui.alerts.creating": "Аԥҵара...",
+    "gui.alerts.creatingError": "Иамуӡеит апроеқт аԥҵара. Даҽазнык инашәыгӡа аԥҵара!",
+    "gui.alerts.savingError": "Иамуӡеит апроеқт аиқәырхара. Даҽазнык инашәыгӡа аиқәырхара!",
+    "gui.alerts.savesuccess": "Қәҿиарала еиқәырхоуп.",
+    "gui.alerts.saving": "Аиқәырхара...",
+    "gui.defaultProject.meow": "Миау",
+    "gui.defaultProject.variable": "исхатәу аҽеиҭак",
+    "gui.howtos.intro-move-sayhello-hat.name": "Излалагатәу",
+    "gui.howtos.intro-move.step_stepMove": "Иацышәҵа аиҭаҵратә блок",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Алагаразы шәақәыӷәӷәа абираҟ иаҵәа!",
+    "gui.howtos.say-it-out-loud": "Иаԥҵатәуп Анимациа И Иҳәатәуп",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Иацҵатәуп Аблокқәа \"Атеқст Ацәажәарахь\"",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Ишәҳәа џьара акы",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Иқәыргылатәуп Абжьы",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Игьежьлатәуп Иакәыршаны",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Иацышәҵа аҿаԥшыра",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Иацҵатәуп Егьи Аперсонаж",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Иқәгылатәуп Ашәаҳәара  ала",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Иԥсахтәуп аԥштәы",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Иргьежьтәуп",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Идухалатәуп нас Ихәыҷхалатәуп",
+    "gui.howtos.cartoon-network": "Иаԥҵа Ахәмарра Ахҭыс",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Далх ицәырҵраны иҟоу афырхаҵа",
+    "gui.howtos.cartoon-network.step_CNsay": "Ишәҳәа џьара акы",
+    "gui.howtos.cartoon-network.step_CNglide": "Ашьшьыҳәа аргьежьра",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Иалх еизгатәу",
+    "gui.howtos.cartoon-network.step_CNcollect": "Еизгала аобиеқтқәа",
+    "gui.howtos.cartoon-network.step_CNvariable": "Иаԥҵа Аԥхьаӡара Аҽеиҭак",
+    "gui.howtos.cartoon-network.step_CNscore": "Аԥхьаӡара Иацҵала",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Аҩаӡара ҿыц: Иԥсах аҿаԥшыра",
+    "gui.howtos.animate-a-name.name": "Ахьӡ анимациа азура",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Иалышәх нагӡаҩцәас анбанқәа ",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Иргатәуп абжьы, ақәыӷәӷәараан",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Иалышәх егьи Letter Sprite ",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Иԥсахтәуп аԥштәы",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Далышәх даҽа нагӡаҩык нас дшәыргьежь",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Иалышәх анагӡаҩ изку даҽа нбанк нас ишәырдыу иара.",
+    "gui.howtos.make-music.name": "Иаԥышәҵа амузыка",
+    "gui.howtos.Make-Music.step_PickInstrument": "Иалышәх амаруга Анагӡаҩ",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Иргатәуп абжьы, ақәыӷәӷәараан",
+    "gui.howtos.Make-Music.step_MakeSong": "Иаԥышәҵа ашәа",
+    "gui.howtos.make-music.step_MakeBeat": "Иалышәх абжьы нас иашәырҳәа",
+    "gui.howtos.make-music.step_MakeBeatBox": "Иалышәх амикрофон Sprite & Surprise Beatbox ",
+    "gui.howtos.make-a-game.name": "Иаԥышәҵа ахәмарра Clicker ",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Далышәх анагӡаҩ",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Иргатәуп абжьы, ақәыӷәӷәараан",
+    "gui.howtos.make-a-game.step_GameAddScore": "Иаԥҵатәуп аԥхьаӡараз аҽеиҭак",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Ақәыӷәӷәараан аԥхьаӡа иазырҳатәуп",
+    "gui.howtos.make-a-game.step_Random": "Ииастәуп иарбанзаалакь апозициа ахь",
+    "gui.howtos.make-music.step_GameChangeColor": "Иԥсахтәуп аԥштәы",
+    "gui.howtos.make-music.step_ResetScore": "Иқәгатәуп аԥхьаӡара",
+    "gui.howtos.make-a-chase-game.name": "Иаԥышәҵа аиԥхныҩлара иазку ахәмарра",
+    "gui.howtos.Chase-Game.step_BG": "Иацышәҵа аҿаԥшыра",
+    "gui.howtos.chase-game.step_AddOcto": "Дацышәҵа анагӡаҩ",
+    "gui.howtos.make-music.step_LeftRight": "Аиагара арӷьарахьи армарахьи ахыцқәа рыла",
+    "gui.howtos.Chase-Game.step_UpDown": "Аиагара аҩадеи аладеи ахыцқәа рыла",
+    "gui.howtos.Chase-Game.step_AddStar": "Дацҵатәуп егьи анагӡаҩ",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Ииагатәуп иахьабалакь",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Octopus Sprite аҟны ақәыӷәӷәараан иргатәуп абжьы ",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Иаԥҵатәуп аԥхьаӡараз аҽеиҭак",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Octopus Sprite аҟны, ақәыӷәӷәараан иацҵатәуп аԥхьаӡара",
+    "gui.howtos.add-sprite.name": "Дацышәҵа анагӡаҩ",
+    "gui.howtos.add-sprite.step_addSprite": "Дацышәҵа анагӡаҩ",
+    "gui.howtos.add-a-backdrop.name": "Иацышәҵа аҿаԥшыра",
+    "gui.howtos.change-size.name": "Иԥсахтәуп ашәагаа",
+    "gui.howtos.glide-around.name": "Ашьшьыҳәа аргьежьра",
+    "gui.howtos.record-a-sound.name": "Иҭаҩтәуп абжьы",
+    "gui.howtos.spin-video.name": "Игьежьлааит",
+    "gui.howtos.hide-and-show.name": "Иҵәахтәуп нас иаарԥштәуп",
+    "gui.howtos.switch-costume.name": "Анагӡаҩ анимациа изутәуп",
+    "gui.howtos.move-around-with-arrow-keys.name": "Ихархәатәуп ахыц зну аклавишақәа",
+    "gui.howtos.add-effects.name": "Иацҵа аеффектқәа",
+    "gui.extension.music.name": "Амузыка",
+    "gui.extension.music.description": "Иаԥышәҵа амузыка аинструментқәеи адаулқәеи рыла.",
+    "gui.extension.pen.name": "Акалам",
+    "gui.extension.pen.description": "Иҭыхтәуп анагӡаҩцәа.",
+    "gui.extension.videosensing.name": "Авидео ахархәара",
+    "gui.extension.videosensing.description": "Авидеокамера аиҭаҵра.",
+    "gui.extension.text2speech.name": "Атеқст Ацәажәарахь",
+    "gui.extension.text2speech.description": "Упроеқтқәа аԥсы рхаҵа бжьыла.",
+    "gui.extension.translate.name": "Атранслиациа",
+    "gui.extension.translate.description": "Еиҭагатәуп атеқст егьырҭ абызшәақәа рахь.",
+    "gui.extension.microbit.description": "Шәпроеқтқәа адунеи иашәырдыр.",
+    "gui.extension.microbit.connectingMessage": "Аимадара",
+    "gui.extension.ev3.description": "Иаԥышәҵала аинтерактивтә роботи егьырҭ аобиектқәеи.",
+    "gui.extension.ev3.connectingMessage": "Аимадара. Агәра шәга, pin-код EV3 аҟны 1234 шықәыргылоу.   ",
+    "gui.extension.wedo2.description": "Иаԥышәҵала аматорқәеи асенсорқәеи рхархәарала.",
+    "gui.extension.wedo2.connectingMessage": "Аимадара",
+    "gui.libraryTags.all": "Зегьы",
+    "gui.libraryTags.animals": "Аԥстәқәа",
+    "gui.libraryTags.dance": "Акәашара",
+    "gui.libraryTags.effects": "Аеффектқәа",
+    "gui.libraryTags.fantasy": "Афантастика",
+    "gui.libraryTags.fashion": "Амода",
+    "gui.libraryTags.food": "Афатә",
+    "gui.libraryTags.indoors": "Ауада аҩныҵҟа",
+    "gui.libraryTags.loops": "Ациклқәа",
+    "gui.libraryTags.music": "Амузыка",
+    "gui.libraryTags.notes": "Азгәаҭақәа",
+    "gui.libraryTags.outdoors": "Адәахьы",
+    "gui.libraryTags.patterns": "Аузорқәа",
+    "gui.libraryTags.people": "Ауаа",
+    "gui.libraryTags.percussion": "Аперкуссиа",
+    "gui.libraryTags.space": "Акосмос",
+    "gui.libraryTags.sports": "Аспорт",
+    "gui.libraryTags.underwater": "Аӡаҵаҟатәи адунеи",
+    "gui.libraryTags.voice": "Абжьы",
+    "gui.libraryTags.wacky": "Ахеилагақәа",
+    "gui.libraryTags.animation": "Анимациа",
+    "gui.libraryTags.art": "Аҟазара",
+    "gui.libraryTags.games": "Ахәмаррақәа",
+    "gui.libraryTags.stories": "Аҭоурыхқәа",
+    "gui.libraryTags.letters": "Анбанқәа",
+    "gui.opcodeLabels.direction": "ахырхарҭа",
+    "gui.opcodeLabels.xposition": "x аҭыԥ",
+    "gui.opcodeLabels.yposition": "y аҭыԥ",
+    "gui.opcodeLabels.size": "ашәагаа",
+    "gui.opcodeLabels.costumename": "акостиум ахьӡ",
+    "gui.opcodeLabels.costumenumber": "акостиум аномер",
+    "gui.opcodeLabels.backdropname": "аҿаԥшыра ахьӡ",
+    "gui.opcodeLabels.backdropnumber": "аҿаԥшыра аномер",
+    "gui.opcodeLabels.volume": "абжьы адура",
+    "gui.opcodeLabels.tempo": "атемп",
+    "gui.opcodeLabels.answer": "аҭак",
+    "gui.opcodeLabels.loudness": "абжьы адура",
+    "gui.opcodeLabels.username": "алахәылаҩ ихьӡ",
+    "gui.opcodeLabels.year": "ашықәс",
+    "gui.opcodeLabels.month": "амза",
+    "gui.opcodeLabels.date": "арыцхә",
+    "gui.opcodeLabels.dayofweek": "амчыбжь амш",
+    "gui.opcodeLabels.hour": "асааҭ",
+    "gui.opcodeLabels.minute": "аминуҭ",
+    "gui.opcodeLabels.second": "асекунд",
+    "gui.opcodeLabels.timer": "аамҭарбага",
+    "gui.sharedMessages.backdrop": "аҿаԥшыра{аиндекс}",
+    "gui.sharedMessages.costume": "акостиум{аиндекс}",
+    "gui.sharedMessages.sprite": "Анагӡаҩ{аиндекс}",
+    "gui.sharedMessages.pop": "апоп"
 }

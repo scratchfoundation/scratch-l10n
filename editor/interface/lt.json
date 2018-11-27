@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Prisijungti iš naujo",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Kuprinė",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Klaida iškraustant kuprinę",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Kraunasi...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Daugiau",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Kuprinė tuščia",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Naršyklė nepalaikoma",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Deja, Scratch 3.0 nepalaiko Internet Explorer, Vivaldi, Opera ar Silk. Rekomenduojame bandyti naujesnę naršyklę, pavyzdžiui, Google Chrome, Mozilla Firefox arba Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Atgal",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "DUK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Nufotografuoti",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Įkeliama vaizdo kamera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Mums reikia jūsų leidimo naudoti fotoaparatą",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Fotografuoti iš naujo",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Išsaugoti",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Fotografuoti",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Kraunasi...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Įgalinti kamerą",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Pamokos",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Uždaryti",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Daugiau dalykų, kuriuos galite pabandyti!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Žiūrėti daugiau",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Nesijaudink, mes tobuliname {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Netrukus...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Mes stengiamės ir tobuliname {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Nerasta jokių įrenginių",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Turėkite įrenginį šalia, tuomet pradėkite paiešką.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Nuspauskite mygtuką savo įrenginyje.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Pradėti paiešką",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Ieškoma...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Bandyti iš naujo",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Prisijungta",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Atsijungti",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Grįžti į rengyklę",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Jungiamasi...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Oi, atrodo kažkas ne taip.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Bandyti iš naujo",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Pagalba",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Įrenginio pavadinimas",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Prisijungti",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Ieškoma įrenginių",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Nerasta jokių įrenginių",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Pasirinkite savo įrenginį iš aukščiau esančio sąrašo.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Atnaujinti",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Įsitikinkite, kad įdiegta ir veikia Scratch Link",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Patikrinkite, ar Bluetooth funkcija įjungta",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Bandyti iš naujo",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Pagalba",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Pirmyn",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Stop",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Oi, atrodo kažkas ne taip.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Deja, atrodo, kad Scratch užstrigo. Apie šią klaidą automatiškai pranešama Scratch darbuotojų komandai. Galite atnaujinti puslapį, kad pakartotumėte veiksmą.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Atnaujinti",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Sukurti bloką",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Pridėti įvestį",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "skaičius arba tekstas",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Pridėti įvestį",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "loginis tipas",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Pridėti etiketę",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Vykdyti be ekrano atnaujinimo",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Atšaukti",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Kryptis",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Aplinkui",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "kairėn/dešinėn",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Nesisukti",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Pridėti plėtinį",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Programos kodas",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Fonai",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Kaukės",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Garsai",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Peržiūrėti Scratch 2.0 projektą",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Įveskite nuorodą į vieną iš savo bendrinamų Scratch projektų. Pakeitimai, atlikti šiame 3.0 Beta, nebus išsaugoti.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Įveskite nuorodą į vieną iš savo bendrinamų Scratch projektų. Pakeitimai, atlikti šiame 3.0, nebus išsaugoti.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "O-o, kad projekto nuoroda ar ID neatrodo visiškai teisinga.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Rodyti",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Eiti atgal",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "DUK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Netrukus",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Paieška",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Viskas",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Kuriami blokai…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Įkeliami veikėjai…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Įkeliami garsus…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Įkeliami plėtiniai…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Gaudome kates…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Nano kažkur kraustosi…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Pripučiama Gobo…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Ruošiame emoji…",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Kraunamas projektas",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profilis",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Mano dalykėliai",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Mano klasės pamokos",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Mano klasės pamoka",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Paskyros nustatymai",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Atsijungti",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Žiūrėti bendruomenę",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Naudotojo vardas",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Slaptažodis",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Prisijungti",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Reikia pagalbos?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "kalbos pasirinkimas",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Pamokos",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Atstatyti veikėją",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Atstatyti garsą",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Atstatyti kaukę",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Atstatyti",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Išsaugoti dabar",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Išsaugoti kopiją",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Perdaroma kūryba (remiksas)",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Naujas",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Failas",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Įkelti iš kompiuterio",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Išsaugoti savo kompiuteryje",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Taisyti",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Išjungti Turbo režimą",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Įjungti Turbo režimą",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Prisiregistruoti Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Prisijungti",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Palikti atsiliepimą",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Vieta projekto antraštei",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Bendrinama",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Bendrinti",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Pagalba",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Atgal",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(tuščia)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "ilgis {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "rodyti įprastai",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "rodyti didesnį",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "slinktis",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Išbandyti Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Sveiki atvykę į Scratch 3.0 Beta versiją",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Ne dabar",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Išbandyti",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Peržiūrėti 2.0 versijos projektą",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Sveiki atvykę į Scratch 3.0 Beta versiją",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Mes kuriame naują Scratch. Džiaugiamės, kad nori išbandyti!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Ne dabar",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Išbandyk! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Peržiūrėti 2.0 versijos projektą",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "DUK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Visiems veikėjams",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Tik šiam veikėjui",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Cloud variable (stored on server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Šis kintamasis bus prieinamas visiems veikėjams",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Atšaukti",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Stop",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Paleisti",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Kraunasi...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Išsaugoti",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Įrašyti dar kartą",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Įrašyti garsą",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Įrašui pradėti paspausk žemiau esantį mygtuką",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Reikia tavo leidimo naudoti mikrofoną",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Baigti įrašą",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "įrašyti",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Garsas",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Paleisti",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Stop",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Apkarpyti",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Išsaugoti",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Atšaukti",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Grąžinti",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Greičiau",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Lėčiau",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Aidas",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robotas",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Garsiau",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Minkščiau",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Atbulai",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Pavadinimas",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Veikėjas",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Rodyti",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Dydis",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "dubliuoti",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "šalinti",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "eksportuoti",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Pasirink Veikėją",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Nupiešti",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Siurprizas",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Įkelti veikėją",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Pakeisti į didelę sceną",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Pakeisti į mažą sceną",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Rodyti per visą ekraną",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Išjungti rodymą per visą ekraną",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Per visą ekraną",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Pasirink foną",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Nupiešti",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Siurprizas",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Įkelti foną",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Scena",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Fonai",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turbo režimas",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Ši naršyklė nepalaiko WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Deja, atrodo, kad naršyklė ar kompiuteris {webGlLink}. Ši technologija reikalinga kad veiktų Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "nepalaiko WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Atgal",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "DUK",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Pasirink foną",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Pasirinkite kaukę",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Pasirink foną",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Pasirinkite kaukę",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Nupiešti",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Siurprizas",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Įkelti foną",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Įkelti kaukę",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Pasirinkite plėtinį",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Įveskite plėtinio URL",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch projektas",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Nepavyko pradėti įrašą",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Nepavyko įkelti pasirinkto projekto failo.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Pasirinkite garsą",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Įkelti garsą",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Siurprizas",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "įrašyti",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Pasirinkite garsą",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Pasirink Veikėją",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Pasirinkite pamoką",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Kuriama...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Išsaugoma...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miau",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "mano kintamasis",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Kaip pradėti",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Pridėti judesio bloką",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Spustelėkite žalią vėliavėlę projektui paleisti",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Kurti kalbančias animacijas",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Pridėti tekstą į kalbos blokus",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Sakyk Ką Nors",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Nustatyti balsą",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Judintis",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Pridėk foną",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Pridėti kitą veikėją",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Sudainuoti dainą",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Keisk Spalvą",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Sukis aplink",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Išaugti ir susitraukti",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Kurti nuotykių žaidimo animaciją",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Sakyk Ką Nors",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Slinkti",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Surinkti objektus",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Skaičiuoti taškus",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Sukurti vardo animaciją",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Pasirinkti veikėją-raidę",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Spustelėjus groti garsą",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Pasirinkti kitą veikėją-raidę",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Keisti spalvą",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Rinktis kitą veikėją-raidę kuri suksis aplink",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Rinktis kitą veikėją-raidę kuri augs",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Kurti muziką",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Rinktis veikėją-instrumentą",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Spustelėjus groti garsą",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Kurti dainą",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Rinktis būgną ir kurti ritmą",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Rinktis veikėją-mikrofoną ir nustebinti Beatbox'u",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Kurti spustelėjimų žaidimą",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Pasirinkti veikėją",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Spustelėjus groti garsą",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Sukurti kintamąjį kuris rodys taškų skaičių",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Spustelėjus pridėti tašką",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Eiti į atsitiktinai parinktą vietą",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Keisk Spalvą",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Nunulinti taškų skaičių",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Kurti gaudynių žaidimą",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Pridėk foną",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Pridėk Veikėją",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Judėti dešinėn ir kairėn rodyklių klavišais",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Judėti aukštyn ir žemyn rodyklių klavišais",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Pridėti dar vieną veikėją",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Judėti kaip papuola",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Beliečiant veikėją-aštuonkojį groti garsą",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Sukurti kintamąjį kuris rodys taškų skaičių",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Beliečiant veikėją-aštuonkojį pridėti taškų",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Pridėk Veikėją",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Pridėk Veikėją",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Pridėk foną",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Keisti dydį",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Slinkti",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Įrašyti garsą",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Gerokai pasukti",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Slėpti ir rodyti",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Kurti veikėjo animaciją",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Naudoti rodyklių klavišus",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Pridėti efektų",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Muzika",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Groti instrumentais ir būgnais.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pieštukas",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Piešti savo veikėjus.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Vaizdo jutikliai",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Aptikti judesį naudojant kamerą.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Skaityti tekstą",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Tavo projektai galės kalbėti.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Išversti",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Versti tekstą į kitas kalbas.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Jungti projektus su visu pasauliu.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Prisijungimas",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Sukurkite interaktyvius robotus ir dar daugiau.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Prisijungimas. Įsitikinkite, kad jūsų EV3 PIN kodas yra 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Kurkite su motorais ir jutikliais.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Prisijungimas",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Viskas",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Gyvūnai",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Šokis",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Efektai",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Fantazija",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Mada",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Maistas",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Viduje",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Ciklai",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Muzika",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Natos",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Lauke",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Raštai",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Žmonės",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Mušamieji",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Tarpas",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Sportas",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Povandeninis pasaulis",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Balsas",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Pašėlę",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animacija",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Menas",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Žaidimai",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Pasakojimai",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Letters",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "kryptis",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "x koordinatė",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "y koordinatė",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "dydis",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "kaukės pavadinimas",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "kaukės numeris",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "fono pavadinimas",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "fono numeris",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "garsas",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempas",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "atsakymas",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "garsumas",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "vartotojo vardas",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "metai",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mėnuo",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "data",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "savaitės diena",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "valanda",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minutė",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "sekundė",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "laikmatis",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "fonas{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "kaukė{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Veikėjas{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pokšt",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Prisijungti iš naujo",
+    "gui.backpack.header": "Kuprinė",
+    "gui.backpack.errorBackpack": "Klaida iškraustant kuprinę",
+    "gui.backpack.loadingBackpack": "Kraunasi...",
+    "gui.backpack.more": "Daugiau",
+    "gui.backpack.emptyBackpack": "Kuprinė tuščia",
+    "gui.unsupportedBrowser.label": "Naršyklė nepalaikoma",
+    "gui.unsupportedBrowser.description": "Deja, Scratch 3.0 nepalaiko Internet Explorer, Vivaldi, Opera ar Silk. Rekomenduojame bandyti naujesnę naršyklę, pavyzdžiui, Google Chrome, Mozilla Firefox arba Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Atgal",
+    "gui.unsupportedBrowser.previewfaq": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "DUK",
+    "gui.cameraModal.cameraModalTitle": "Nufotografuoti",
+    "gui.cameraModal.loadingCameraMessage": "Įkeliama vaizdo kamera...",
+    "gui.cameraModal.permissionRequest": "Mums reikia jūsų leidimo naudoti fotoaparatą",
+    "gui.cameraModal.retakePhoto": "Fotografuoti iš naujo",
+    "gui.cameraModal.save": "Išsaugoti",
+    "gui.cameraModal.takePhoto": "Fotografuoti",
+    "gui.cameraModal.loadingCaption": "Kraunasi...",
+    "gui.cameraModal.enableCameraCaption": "Įgalinti kamerą",
+    "gui.cards.all-tutorials": "Pamokos",
+    "gui.cards.close": "Uždaryti",
+    "gui.cards.more-things-to-try": "Daugiau dalykų, kuriuos galite pabandyti!",
+    "gui.cards.see-more": "Žiūrėti daugiau",
+    "gui.comingSoon.message1": "Nesijaudink, mes tobuliname {emoji}",
+    "gui.comingSoon.message2": "Netrukus...",
+    "gui.comingSoon.message3": "Mes stengiamės ir tobuliname {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Nerasta jokių įrenginių",
+    "gui.connection.auto-scanning.prescan": "Turėkite įrenginį šalia, tuomet pradėkite paiešką.",
+    "gui.connection.auto-scanning.pressbutton": "Nuspauskite mygtuką savo įrenginyje.",
+    "gui.connection.auto-scanning.start-search": "Pradėti paiešką",
+    "gui.connection.connecting-searchbutton": "Ieškoma...",
+    "gui.connection.auto-scanning.try-again": "Bandyti iš naujo",
+    "gui.connection.connected": "Prisijungta",
+    "gui.connection.disconnect": "Atsijungti",
+    "gui.connection.go-to-editor": "Grįžti į rengyklę",
+    "gui.connection.connecting-cancelbutton": "Jungiamasi...",
+    "gui.connection.error.errorMessage": "Oi, atrodo kažkas ne taip.",
+    "gui.connection.error.tryagainbutton": "Bandyti iš naujo",
+    "gui.connection.error.helpbutton": "Pagalba",
+    "gui.connection.peripheral-name-label": "Įrenginio pavadinimas",
+    "gui.connection.connect": "Prisijungti",
+    "gui.connection.scanning.lookingforperipherals": "Ieškoma įrenginių",
+    "gui.connection.scanning.noPeripheralsFound": "Nerasta jokių įrenginių",
+    "gui.connection.scanning.instructions": "Pasirinkite savo įrenginį iš aukščiau esančio sąrašo.",
+    "gui.connection.search": "Atnaujinti",
+    "gui.connection.unavailable.installscratchlink": "Įsitikinkite, kad įdiegta ir veikia Scratch Link",
+    "gui.connection.unavailable.enablebluetooth": "Patikrinkite, ar Bluetooth funkcija įjungta",
+    "gui.connection.unavailable.tryagainbutton": "Bandyti iš naujo",
+    "gui.connection.unavailable.helpbutton": "Pagalba",
+    "gui.controls.go": "Pirmyn",
+    "gui.controls.stop": "Stop",
+    "gui.crashMessage.label": "Oi, atrodo kažkas ne taip.",
+    "gui.crashMessage.description": "Deja, atrodo, kad Scratch užstrigo. Apie šią klaidą automatiškai pranešama Scratch darbuotojų komandai. Galite atnaujinti puslapį, kad pakartotumėte veiksmą.",
+    "gui.crashMessage.reload": "Atnaujinti",
+    "gui.customProcedures.myblockModalTitle": "Sukurti bloką",
+    "gui.customProcedures.addAnInputNumberText": "Pridėti įvestį",
+    "gui.customProcedures.numberTextType": "skaičius arba tekstas",
+    "gui.customProcedures.addAnInputBoolean": "Pridėti įvestį",
+    "gui.customProcedures.booleanType": "loginis tipas",
+    "gui.customProcedures.addALabel": "Pridėti etiketę",
+    "gui.customProcedures.runWithoutScreenRefresh": "Vykdyti be ekrano atnaujinimo",
+    "gui.customProcedures.cancel": "Atšaukti",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Kryptis",
+    "gui.directionPicker.rotationStyles.allAround": "Aplinkui",
+    "gui.directionPicker.rotationStyles.leftRight": "kairėn/dešinėn",
+    "gui.directionPicker.rotationStyles.dontRotate": "Nesisukti",
+    "gui.gui.addExtension": "Pridėti plėtinį",
+    "gui.gui.codeTab": "Programos kodas",
+    "gui.gui.backdropsTab": "Fonai",
+    "gui.gui.costumesTab": "Kaukės",
+    "gui.gui.soundsTab": "Garsai",
+    "gui.importInfo.title": "Peržiūrėti Scratch 2.0 projektą",
+    "gui.importInfo.betamessage": "Įveskite nuorodą į vieną iš savo bendrinamų Scratch projektų. Pakeitimai, atlikti šiame 3.0 Beta, nebus išsaugoti.",
+    "gui.importInfo.message": "Įveskite nuorodą į vieną iš savo bendrinamų Scratch projektų. Pakeitimai, atlikti šiame 3.0, nebus išsaugoti.",
+    "gui.importInfo.invalidFormatError": "O-o, kad projekto nuoroda ar ID neatrodo visiškai teisinga.",
+    "gui.importModal.viewproject": "Rodyti",
+    "gui.importInfo.goback": "Eiti atgal",
+    "gui.importInfo.previewfaq": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "DUK",
+    "gui.extensionLibrary.comingSoon": "Netrukus",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Paieška",
+    "gui.library.allTag": "Viskas",
+    "gui.loader.message1": "Kuriami blokai…",
+    "gui.loader.message2": "Įkeliami veikėjai…",
+    "gui.loader.message3": "Įkeliami garsus…",
+    "gui.loader.message4": "Įkeliami plėtiniai…",
+    "gui.loader.message5": "Gaudome kates…",
+    "gui.loader.message6": "Nano kažkur kraustosi…",
+    "gui.loader.message7": "Pripučiama Gobo…",
+    "gui.loader.message8": "Ruošiame emoji…",
+    "gui.loader.headline": "Kraunamas projektas",
+    "gui.accountMenu.profile": "Profilis",
+    "gui.accountMenu.myStuff": "Mano dalykėliai",
+    "gui.accountMenu.myClasses": "Mano klasės pamokos",
+    "gui.accountMenu.myClass": "Mano klasės pamoka",
+    "gui.accountMenu.accountSettings": "Paskyros nustatymai",
+    "gui.accountMenu.signOut": "Atsijungti",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Žiūrėti bendruomenę",
+    "general.username": "Naudotojo vardas",
+    "general.password": "Slaptažodis",
+    "general.signIn": "Prisijungti",
+    "login.needHelp": "Reikia pagalbos?",
+    "gui.menuBar.LanguageSelector": "kalbos pasirinkimas",
+    "gui.menuBar.tutorialsLibrary": "Pamokos",
+    "gui.menuBar.restoreSprite": "Atstatyti veikėją",
+    "gui.menuBar.restoreSound": "Atstatyti garsą",
+    "gui.menuBar.restoreCostume": "Atstatyti kaukę",
+    "gui.menuBar.restore": "Atstatyti",
+    "gui.menuBar.saveNow": "Išsaugoti dabar",
+    "gui.menuBar.saveAsCopy": "Išsaugoti kopiją",
+    "gui.menuBar.remix": "Perdaroma kūryba (remiksas)",
+    "gui.menuBar.new": "Naujas",
+    "gui.menuBar.file": "Failas",
+    "gui.menuBar.uploadFromComputer": "Įkelti iš kompiuterio",
+    "gui.menuBar.downloadToComputer": "Išsaugoti savo kompiuteryje",
+    "gui.menuBar.edit": "Taisyti",
+    "gui.menuBar.turboModeOff": "Išjungti Turbo režimą",
+    "gui.menuBar.turboModeOn": "Įjungti Turbo režimą",
+    "gui.menuBar.joinScratch": "Prisiregistruoti Scratch",
+    "gui.menuBar.signIn": "Prisijungti",
+    "gui.menuBar.giveFeedback": "Palikti atsiliepimą",
+    "gui.gui.projectTitlePlaceholder": "Vieta projekto antraštei",
+    "gui.menuBar.isShared": "Bendrinama",
+    "gui.menuBar.share": "Bendrinti",
+    "gui.modal.help": "Pagalba",
+    "gui.modal.back": "Atgal",
+    "gui.monitor.listMonitor.empty": "(tuščia)",
+    "gui.monitor.listMonitor.listLength": "ilgis {length}",
+    "gui.monitor.contextMenu.default": "rodyti įprastai",
+    "gui.monitor.contextMenu.large": "rodyti didesnį",
+    "gui.monitor.contextMenu.slider": "slinktis",
+    "gui.previewInfo.label": "Išbandyti Scratch 3.0",
+    "gui.previewInfo.welcome": "Sveiki atvykę į Scratch 3.0 Beta versiją",
+    "gui.previewModal.notnowtooltip": "Ne dabar",
+    "gui.previewModal.tryittooltip": "Išbandyti",
+    "gui.previewModal.viewprojecttooltip": "Peržiūrėti 2.0 versijos projektą",
+    "gui.previewInfo.betawelcome": "Sveiki atvykę į Scratch 3.0 Beta versiją",
+    "gui.previewInfo.invitation": "Mes kuriame naują Scratch. Džiaugiamės, kad nori išbandyti!",
+    "gui.previewInfo.notnow": "Ne dabar",
+    "gui.previewModal.tryit": "Išbandyk! {caticon}",
+    "gui.previewModal.viewproject": "Peržiūrėti 2.0 versijos projektą",
+    "gui.previewInfo.previewfaq": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "DUK",
+    "gui.gui.variableScopeOptionAllSprites": "Visiems veikėjams",
+    "gui.gui.variableScopeOptionSpriteOnly": "Tik šiam veikėjui",
+    "gui.gui.cloudVariableOption": "Cloud variable (stored on server)",
+    "gui.gui.variablePromptAllSpritesMessage": "Šis kintamasis bus prieinamas visiems veikėjams",
+    "gui.prompt.cancel": "Atšaukti",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Stop",
+    "gui.playbackStep.playMsg": "Paleisti",
+    "gui.playbackStep.loadingMsg": "Kraunasi...",
+    "gui.playbackStep.saveMsg": "Išsaugoti",
+    "gui.playbackStep.reRecordMsg": "Įrašyti dar kartą",
+    "gui.recordModal.title": "Įrašyti garsą",
+    "gui.recordingStep.beginRecord": "Įrašui pradėti paspausk žemiau esantį mygtuką",
+    "gui.recordingStep.permission": "{arrow}Reikia tavo leidimo naudoti mikrofoną",
+    "gui.recordingStep.stop": "Baigti įrašą",
+    "gui.recordingStep.record": "įrašyti",
+    "gui.soundEditor.sound": "Garsas",
+    "gui.soundEditor.play": "Paleisti",
+    "gui.soundEditor.stop": "Stop",
+    "gui.soundEditor.trim": "Apkarpyti",
+    "gui.soundEditor.save": "Išsaugoti",
+    "gui.soundEditor.undo": "Atšaukti",
+    "gui.soundEditor.redo": "Grąžinti",
+    "gui.soundEditor.faster": "Greičiau",
+    "gui.soundEditor.slower": "Lėčiau",
+    "gui.soundEditor.echo": "Aidas",
+    "gui.soundEditor.robot": "Robotas",
+    "gui.soundEditor.louder": "Garsiau",
+    "gui.soundEditor.softer": "Minkščiau",
+    "gui.soundEditor.reverse": "Atbulai",
+    "gui.SpriteInfo.spritePlaceholder": "Pavadinimas",
+    "gui.SpriteInfo.sprite": "Veikėjas",
+    "gui.SpriteInfo.show": "Rodyti",
+    "gui.SpriteInfo.size": "Dydis",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "dubliuoti",
+    "gui.spriteSelectorItem.contextMenuDelete": "šalinti",
+    "gui.spriteSelectorItem.contextMenuExport": "eksportuoti",
+    "gui.spriteSelector.addSpriteFromLibrary": "Pasirink Veikėją",
+    "gui.spriteSelector.addSpriteFromPaint": "Nupiešti",
+    "gui.spriteSelector.addSpriteFromSurprise": "Siurprizas",
+    "gui.spriteSelector.addSpriteFromFile": "Įkelti veikėją",
+    "gui.stageHeader.stageSizeLarge": "Pakeisti į didelę sceną",
+    "gui.stageHeader.stageSizeSmall": "Pakeisti į mažą sceną",
+    "gui.stageHeader.stageSizeFull": "Rodyti per visą ekraną",
+    "gui.stageHeader.stageSizeUnFull": "Išjungti rodymą per visą ekraną",
+    "gui.stageHeader.fullscreenControl": "Per visą ekraną",
+    "gui.spriteSelector.addBackdropFromLibrary": "Pasirink foną",
+    "gui.stageSelector.addBackdropFromPaint": "Nupiešti",
+    "gui.stageSelector.addBackdropFromSurprise": "Siurprizas",
+    "gui.stageSelector.addBackdropFromFile": "Įkelti foną",
+    "gui.stageSelector.stage": "Scena",
+    "gui.stageSelector.backdrops": "Fonai",
+    "gui.turboMode.active": "Turbo režimas",
+    "gui.webglModal.label": "Ši naršyklė nepalaiko WebGL",
+    "gui.webglModal.description": "Deja, atrodo, kad naršyklė ar kompiuteris {webGlLink}. Ši technologija reikalinga kad veiktų Scratch 3.0.",
+    "gui.webglModal.webgllink": "nepalaiko WebGL",
+    "gui.webglModal.back": "Atgal",
+    "gui.webglModal.previewfaq": "Norėdami sužinoti daugiau, eikite į {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "DUK",
+    "gui.costumeLibrary.chooseABackdrop": "Pasirink foną",
+    "gui.costumeLibrary.chooseACostume": "Pasirinkite kaukę",
+    "gui.costumeTab.addBackdropFromLibrary": "Pasirink foną",
+    "gui.costumeTab.addCostumeFromLibrary": "Pasirinkite kaukę",
+    "gui.costumeTab.addBlankCostume": "Nupiešti",
+    "gui.costumeTab.addSurpriseCostume": "Siurprizas",
+    "gui.costumeTab.addFileBackdrop": "Įkelti foną",
+    "gui.costumeTab.addFileCostume": "Įkelti kaukę",
+    "gui.costumeTab.addCameraCostume": "Kamera",
+    "gui.extensionLibrary.chooseAnExtension": "Pasirinkite plėtinį",
+    "gui.extensionLibrary.extensionUrl": "Įveskite plėtinio URL",
+    "gui.gui.defaultProjectTitle": "Scratch projektas",
+    "gui.recordingStep.alertMsg": "Nepavyko pradėti įrašą",
+    "gui.projectLoader.loadError": "Nepavyko įkelti pasirinkto projekto failo.",
+    "gui.soundLibrary.chooseASound": "Pasirinkite garsą",
+    "gui.soundTab.fileUploadSound": "Įkelti garsą",
+    "gui.soundTab.surpriseSound": "Siurprizas",
+    "gui.soundTab.recordSound": "įrašyti",
+    "gui.soundTab.addSoundFromLibrary": "Pasirinkite garsą",
+    "gui.spriteLibrary.chooseASprite": "Pasirink Veikėją",
+    "gui.tipsLibrary.tutorials": "Pasirinkite pamoką",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Kuriama...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Išsaugoma...",
+    "gui.defaultProject.meow": "Miau",
+    "gui.defaultProject.variable": "mano kintamasis",
+    "gui.howtos.intro-move-sayhello-hat.name": "Kaip pradėti",
+    "gui.howtos.intro-move.step_stepMove": "Pridėti judesio bloką",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Spustelėkite žalią vėliavėlę projektui paleisti",
+    "gui.howtos.say-it-out-loud": "Kurti kalbančias animacijas",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Pridėti tekstą į kalbos blokus",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Sakyk Ką Nors",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Nustatyti balsą",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Judintis",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Pridėk foną",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Pridėti kitą veikėją",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Sudainuoti dainą",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Keisk Spalvą",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Sukis aplink",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Išaugti ir susitraukti",
+    "gui.howtos.cartoon-network": "Kurti nuotykių žaidimo animaciją",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Sakyk Ką Nors",
+    "gui.howtos.cartoon-network.step_CNglide": "Slinkti",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Surinkti objektus",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Skaičiuoti taškus",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Sukurti vardo animaciją",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Pasirinkti veikėją-raidę",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Spustelėjus groti garsą",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Pasirinkti kitą veikėją-raidę",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Keisti spalvą",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Rinktis kitą veikėją-raidę kuri suksis aplink",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Rinktis kitą veikėją-raidę kuri augs",
+    "gui.howtos.make-music.name": "Kurti muziką",
+    "gui.howtos.Make-Music.step_PickInstrument": "Rinktis veikėją-instrumentą",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Spustelėjus groti garsą",
+    "gui.howtos.Make-Music.step_MakeSong": "Kurti dainą",
+    "gui.howtos.make-music.step_MakeBeat": "Rinktis būgną ir kurti ritmą",
+    "gui.howtos.make-music.step_MakeBeatBox": "Rinktis veikėją-mikrofoną ir nustebinti Beatbox'u",
+    "gui.howtos.make-a-game.name": "Kurti spustelėjimų žaidimą",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Pasirinkti veikėją",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Spustelėjus groti garsą",
+    "gui.howtos.make-a-game.step_GameAddScore": "Sukurti kintamąjį kuris rodys taškų skaičių",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Spustelėjus pridėti tašką",
+    "gui.howtos.make-a-game.step_Random": "Eiti į atsitiktinai parinktą vietą",
+    "gui.howtos.make-music.step_GameChangeColor": "Keisk Spalvą",
+    "gui.howtos.make-music.step_ResetScore": "Nunulinti taškų skaičių",
+    "gui.howtos.make-a-chase-game.name": "Kurti gaudynių žaidimą",
+    "gui.howtos.Chase-Game.step_BG": "Pridėk foną",
+    "gui.howtos.chase-game.step_AddOcto": "Pridėk Veikėją",
+    "gui.howtos.make-music.step_LeftRight": "Judėti dešinėn ir kairėn rodyklių klavišais",
+    "gui.howtos.Chase-Game.step_UpDown": "Judėti aukštyn ir žemyn rodyklių klavišais",
+    "gui.howtos.Chase-Game.step_AddStar": "Pridėti dar vieną veikėją",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Judėti kaip papuola",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Beliečiant veikėją-aštuonkojį groti garsą",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Sukurti kintamąjį kuris rodys taškų skaičių",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Beliečiant veikėją-aštuonkojį pridėti taškų",
+    "gui.howtos.add-sprite.name": "Pridėk Veikėją",
+    "gui.howtos.add-sprite.step_addSprite": "Pridėk Veikėją",
+    "gui.howtos.add-a-backdrop.name": "Pridėk foną",
+    "gui.howtos.change-size.name": "Keisti dydį",
+    "gui.howtos.glide-around.name": "Slinkti",
+    "gui.howtos.record-a-sound.name": "Įrašyti garsą",
+    "gui.howtos.spin-video.name": "Gerokai pasukti",
+    "gui.howtos.hide-and-show.name": "Slėpti ir rodyti",
+    "gui.howtos.switch-costume.name": "Kurti veikėjo animaciją",
+    "gui.howtos.move-around-with-arrow-keys.name": "Naudoti rodyklių klavišus",
+    "gui.howtos.add-effects.name": "Pridėti efektų",
+    "gui.extension.music.name": "Muzika",
+    "gui.extension.music.description": "Groti instrumentais ir būgnais.",
+    "gui.extension.pen.name": "Pieštukas",
+    "gui.extension.pen.description": "Piešti savo veikėjus.",
+    "gui.extension.videosensing.name": "Vaizdo jutikliai",
+    "gui.extension.videosensing.description": "Aptikti judesį naudojant kamerą.",
+    "gui.extension.text2speech.name": "Skaityti tekstą",
+    "gui.extension.text2speech.description": "Tavo projektai galės kalbėti.",
+    "gui.extension.translate.name": "Išversti",
+    "gui.extension.translate.description": "Versti tekstą į kitas kalbas.",
+    "gui.extension.microbit.description": "Jungti projektus su visu pasauliu.",
+    "gui.extension.microbit.connectingMessage": "Prisijungimas",
+    "gui.extension.ev3.description": "Sukurkite interaktyvius robotus ir dar daugiau.",
+    "gui.extension.ev3.connectingMessage": "Prisijungimas. Įsitikinkite, kad jūsų EV3 PIN kodas yra 1234.",
+    "gui.extension.wedo2.description": "Kurkite su motorais ir jutikliais.",
+    "gui.extension.wedo2.connectingMessage": "Prisijungimas",
+    "gui.libraryTags.all": "Viskas",
+    "gui.libraryTags.animals": "Gyvūnai",
+    "gui.libraryTags.dance": "Šokis",
+    "gui.libraryTags.effects": "Efektai",
+    "gui.libraryTags.fantasy": "Fantazija",
+    "gui.libraryTags.fashion": "Mada",
+    "gui.libraryTags.food": "Maistas",
+    "gui.libraryTags.indoors": "Viduje",
+    "gui.libraryTags.loops": "Ciklai",
+    "gui.libraryTags.music": "Muzika",
+    "gui.libraryTags.notes": "Natos",
+    "gui.libraryTags.outdoors": "Lauke",
+    "gui.libraryTags.patterns": "Raštai",
+    "gui.libraryTags.people": "Žmonės",
+    "gui.libraryTags.percussion": "Mušamieji",
+    "gui.libraryTags.space": "Tarpas",
+    "gui.libraryTags.sports": "Sportas",
+    "gui.libraryTags.underwater": "Povandeninis pasaulis",
+    "gui.libraryTags.voice": "Balsas",
+    "gui.libraryTags.wacky": "Pašėlę",
+    "gui.libraryTags.animation": "Animacija",
+    "gui.libraryTags.art": "Menas",
+    "gui.libraryTags.games": "Žaidimai",
+    "gui.libraryTags.stories": "Pasakojimai",
+    "gui.libraryTags.letters": "Letters",
+    "gui.opcodeLabels.direction": "kryptis",
+    "gui.opcodeLabels.xposition": "x koordinatė",
+    "gui.opcodeLabels.yposition": "y koordinatė",
+    "gui.opcodeLabels.size": "dydis",
+    "gui.opcodeLabels.costumename": "kaukės pavadinimas",
+    "gui.opcodeLabels.costumenumber": "kaukės numeris",
+    "gui.opcodeLabels.backdropname": "fono pavadinimas",
+    "gui.opcodeLabels.backdropnumber": "fono numeris",
+    "gui.opcodeLabels.volume": "garsas",
+    "gui.opcodeLabels.tempo": "tempas",
+    "gui.opcodeLabels.answer": "atsakymas",
+    "gui.opcodeLabels.loudness": "garsumas",
+    "gui.opcodeLabels.username": "vartotojo vardas",
+    "gui.opcodeLabels.year": "metai",
+    "gui.opcodeLabels.month": "mėnuo",
+    "gui.opcodeLabels.date": "data",
+    "gui.opcodeLabels.dayofweek": "savaitės diena",
+    "gui.opcodeLabels.hour": "valanda",
+    "gui.opcodeLabels.minute": "minutė",
+    "gui.opcodeLabels.second": "sekundė",
+    "gui.opcodeLabels.timer": "laikmatis",
+    "gui.sharedMessages.backdrop": "fonas{index}",
+    "gui.sharedMessages.costume": "kaukė{index}",
+    "gui.sharedMessages.sprite": "Veikėjas{index}",
+    "gui.sharedMessages.pop": "pokšt"
 }

@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Цвет",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Насыщенность",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Яркость",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Не волнуйтесь, мы работаем над этим {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Скоро…",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Мы работаем над этим {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Заливка",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Костюм",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Группировать",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Разгруппировать",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Отменить",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Повторить",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Вперёд",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Назад",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "На передний план",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Назад",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Ещё",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Размер",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Ширина ластика",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Копировать",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Вставить",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Удалить",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "В кривые",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Заострённые",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Толщина",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Отразить по горизонтали",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Отразить по вертикали",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Залитый",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Обведённый",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Конвертировать в растровую графику",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Конвертировать в векторную графику",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Контур",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Кисть",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Ластик",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Заливка",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Линия",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Круг",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Прямоугольник",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Изменение формы",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Скруглённый Прямоугольник",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Выбрать",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Текст",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Заменить",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Цвет",
+    "paint.paintEditor.saturation": "Насыщенность",
+    "paint.paintEditor.brightness": "Яркость",
+    "gui.comingSoon.message1": "Не волнуйтесь, мы работаем над этим {emoji}",
+    "gui.comingSoon.message2": "Скоро…",
+    "gui.comingSoon.message3": "Мы работаем над этим {emoji}",
+    "paint.paintEditor.fill": "Заливка",
+    "paint.paintEditor.costume": "Костюм",
+    "paint.paintEditor.group": "Группировать",
+    "paint.paintEditor.ungroup": "Разгруппировать",
+    "paint.paintEditor.undo": "Отменить",
+    "paint.paintEditor.redo": "Повторить",
+    "paint.paintEditor.forward": "Вперёд",
+    "paint.paintEditor.backward": "Назад",
+    "paint.paintEditor.front": "На передний план",
+    "paint.paintEditor.back": "Назад",
+    "paint.paintEditor.more": "Ещё",
+    "paint.modeTools.brushSize": "Размер",
+    "paint.modeTools.eraserSize": "Ширина ластика",
+    "paint.modeTools.copy": "Копировать",
+    "paint.modeTools.paste": "Вставить",
+    "paint.modeTools.delete": "Удалить",
+    "paint.modeTools.curved": "В кривые",
+    "paint.modeTools.pointed": "Заострённые",
+    "paint.modeTools.thickness": "Толщина",
+    "paint.modeTools.flipHorizontal": "Отразить по горизонтали",
+    "paint.modeTools.flipVertical": "Отразить по вертикали",
+    "paint.modeTools.filled": "Залитый",
+    "paint.modeTools.outlined": "Обведённый",
+    "paint.paintEditor.bitmap": "Конвертировать в растровую графику",
+    "paint.paintEditor.vector": "Конвертировать в векторную графику",
+    "paint.paintEditor.stroke": "Контур",
+    "paint.brushMode.brush": "Кисть",
+    "paint.eraserMode.eraser": "Ластик",
+    "paint.fillMode.fill": "Заливка",
+    "paint.lineMode.line": "Линия",
+    "paint.ovalMode.oval": "Круг",
+    "paint.rectMode.rect": "Прямоугольник",
+    "paint.reshapeMode.reshape": "Изменение формы",
+    "paint.roundedRectMode.roundedRect": "Скруглённый Прямоугольник",
+    "paint.selectMode.select": "Выбрать",
+    "paint.textMode.text": "Текст",
+    "paint.colorPicker.swap": "Заменить"
 }

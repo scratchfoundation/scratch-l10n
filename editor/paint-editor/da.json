@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Farve",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Farvemætning",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Lysstyrke",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Du skal ikke bekymre dig, vi arbejder på sagen {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Kommer snart...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Vi arbejder på sagen {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Fyld",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kostume",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Gruppe",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Opdel",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Fortryd",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Gør om",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Forrest",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Bagerst",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Foran",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Bagved",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Mere",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Størrelse",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Viskelæderets størrelse",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopier",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Sæt ind",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Slet",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Buet",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Spids",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Tykkelse",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Vend venstre-højre",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Vend op og ned",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Fyldt",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Kant streg",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Konverter til Bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Konverter til Vektor",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Kant",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pensel",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Viskelæder",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Fyld",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Linje",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Cirkel",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Rektangel",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Omform",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Afrundet rektangel",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Vælg",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Tekst",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Byt",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Farve",
+    "paint.paintEditor.saturation": "Farvemætning",
+    "paint.paintEditor.brightness": "Lysstyrke",
+    "gui.comingSoon.message1": "Du skal ikke bekymre dig, vi arbejder på sagen {emoji}",
+    "gui.comingSoon.message2": "Kommer snart...",
+    "gui.comingSoon.message3": "Vi arbejder på sagen {emoji}",
+    "paint.paintEditor.fill": "Fyld",
+    "paint.paintEditor.costume": "Kostume",
+    "paint.paintEditor.group": "Gruppe",
+    "paint.paintEditor.ungroup": "Opdel",
+    "paint.paintEditor.undo": "Fortryd",
+    "paint.paintEditor.redo": "Gør om",
+    "paint.paintEditor.forward": "Forrest",
+    "paint.paintEditor.backward": "Bagerst",
+    "paint.paintEditor.front": "Foran",
+    "paint.paintEditor.back": "Bagved",
+    "paint.paintEditor.more": "Mere",
+    "paint.modeTools.brushSize": "Størrelse",
+    "paint.modeTools.eraserSize": "Viskelæderets størrelse",
+    "paint.modeTools.copy": "Kopier",
+    "paint.modeTools.paste": "Sæt ind",
+    "paint.modeTools.delete": "Slet",
+    "paint.modeTools.curved": "Buet",
+    "paint.modeTools.pointed": "Spids",
+    "paint.modeTools.thickness": "Tykkelse",
+    "paint.modeTools.flipHorizontal": "Vend venstre-højre",
+    "paint.modeTools.flipVertical": "Vend op og ned",
+    "paint.modeTools.filled": "Fyldt",
+    "paint.modeTools.outlined": "Kant streg",
+    "paint.paintEditor.bitmap": "Konverter til Bitmap",
+    "paint.paintEditor.vector": "Konverter til Vektor",
+    "paint.paintEditor.stroke": "Kant",
+    "paint.brushMode.brush": "Pensel",
+    "paint.eraserMode.eraser": "Viskelæder",
+    "paint.fillMode.fill": "Fyld",
+    "paint.lineMode.line": "Linje",
+    "paint.ovalMode.oval": "Cirkel",
+    "paint.rectMode.rect": "Rektangel",
+    "paint.reshapeMode.reshape": "Omform",
+    "paint.roundedRectMode.roundedRect": "Afrundet rektangel",
+    "paint.selectMode.select": "Vælg",
+    "paint.textMode.text": "Tekst",
+    "paint.colorPicker.swap": "Byt"
 }

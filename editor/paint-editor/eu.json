@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Kolorea",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Asetasuna",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Distira",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Lasai, horretan gabiltza {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Laster ...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Horretan ari gara {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Bete",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Tankera",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Taldekatu",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Desegin taldea",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Desegin",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Berregin",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Aurrealderantz",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Atzealderantz",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Aurrealdera",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Atzealdera",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Gehiago",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Tamaina",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Ezabatzailearen tamaina",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Kopiatu",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Itsatsi",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Ezabatu",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Kurbatua",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Zorrotza",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Lodiera",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Islatu horizontalki",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Islatu bertikalki",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Betea",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Eskematizatua",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Bihurtu Bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Bihurtu bektore",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Eskema",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pintzela",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Ezabatzailea",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Bete",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Marra",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Zirkuloa",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Laukizuzena",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Aldatu forma",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Laukizuzen biribildua",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Hautatu",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Testua",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Trukatu",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Kolorea",
+    "paint.paintEditor.saturation": "Asetasuna",
+    "paint.paintEditor.brightness": "Distira",
+    "gui.comingSoon.message1": "Lasai, horretan gabiltza {emoji}",
+    "gui.comingSoon.message2": "Laster ...",
+    "gui.comingSoon.message3": "Horretan ari gara {emoji}",
+    "paint.paintEditor.fill": "Bete",
+    "paint.paintEditor.costume": "Tankera",
+    "paint.paintEditor.group": "Taldekatu",
+    "paint.paintEditor.ungroup": "Desegin taldea",
+    "paint.paintEditor.undo": "Desegin",
+    "paint.paintEditor.redo": "Berregin",
+    "paint.paintEditor.forward": "Aurrealderantz",
+    "paint.paintEditor.backward": "Atzealderantz",
+    "paint.paintEditor.front": "Aurrealdera",
+    "paint.paintEditor.back": "Atzealdera",
+    "paint.paintEditor.more": "Gehiago",
+    "paint.modeTools.brushSize": "Tamaina",
+    "paint.modeTools.eraserSize": "Ezabatzailearen tamaina",
+    "paint.modeTools.copy": "Kopiatu",
+    "paint.modeTools.paste": "Itsatsi",
+    "paint.modeTools.delete": "Ezabatu",
+    "paint.modeTools.curved": "Kurbatua",
+    "paint.modeTools.pointed": "Zorrotza",
+    "paint.modeTools.thickness": "Lodiera",
+    "paint.modeTools.flipHorizontal": "Islatu horizontalki",
+    "paint.modeTools.flipVertical": "Islatu bertikalki",
+    "paint.modeTools.filled": "Betea",
+    "paint.modeTools.outlined": "Eskematizatua",
+    "paint.paintEditor.bitmap": "Bihurtu Bitmap",
+    "paint.paintEditor.vector": "Bihurtu bektore",
+    "paint.paintEditor.stroke": "Eskema",
+    "paint.brushMode.brush": "Pintzela",
+    "paint.eraserMode.eraser": "Ezabatzailea",
+    "paint.fillMode.fill": "Bete",
+    "paint.lineMode.line": "Marra",
+    "paint.ovalMode.oval": "Zirkuloa",
+    "paint.rectMode.rect": "Laukizuzena",
+    "paint.reshapeMode.reshape": "Aldatu forma",
+    "paint.roundedRectMode.roundedRect": "Laukizuzen biribildua",
+    "paint.selectMode.select": "Hautatu",
+    "paint.textMode.text": "Testua",
+    "paint.colorPicker.swap": "Trukatu"
 }

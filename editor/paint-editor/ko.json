@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "색상",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "채도",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "명도",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "걱정 마세요, 작업 중입니다 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "곧 이용 가능합니다...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "작업 중입니다 {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "채우기 색",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "모양",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "그룹화 적용",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "그룹화 해제",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "되돌리기",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "재시도",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "앞으로",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "뒤로",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "맨 앞으로",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "맨 뒤로",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "기타",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "크기",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "지우개 크기",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "복사",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "붙이기",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "삭제",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "굽은 모양",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "꺾인 모양",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "굵기",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "좌우 뒤집기",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "상하 뒤집기",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "채우기",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "윤곽선",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "비트맵으로 바꾸기",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "벡터로 바꾸기",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "윤곽선 색",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "브러시",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "지우개",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "채우기 색",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "선",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "원",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "직사각형",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "형태 고치기",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "모서리가 둥근 직사각형",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "선택",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "텍스트",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "바꾸기",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "색상",
+    "paint.paintEditor.saturation": "채도",
+    "paint.paintEditor.brightness": "명도",
+    "gui.comingSoon.message1": "걱정 마세요, 작업 중입니다 {emoji}",
+    "gui.comingSoon.message2": "곧 이용 가능합니다...",
+    "gui.comingSoon.message3": "작업 중입니다 {emoji}",
+    "paint.paintEditor.fill": "채우기 색",
+    "paint.paintEditor.costume": "모양",
+    "paint.paintEditor.group": "그룹화 적용",
+    "paint.paintEditor.ungroup": "그룹화 해제",
+    "paint.paintEditor.undo": "되돌리기",
+    "paint.paintEditor.redo": "재시도",
+    "paint.paintEditor.forward": "앞으로",
+    "paint.paintEditor.backward": "뒤로",
+    "paint.paintEditor.front": "맨 앞으로",
+    "paint.paintEditor.back": "맨 뒤로",
+    "paint.paintEditor.more": "기타",
+    "paint.modeTools.brushSize": "크기",
+    "paint.modeTools.eraserSize": "지우개 크기",
+    "paint.modeTools.copy": "복사",
+    "paint.modeTools.paste": "붙이기",
+    "paint.modeTools.delete": "삭제",
+    "paint.modeTools.curved": "굽은 모양",
+    "paint.modeTools.pointed": "꺾인 모양",
+    "paint.modeTools.thickness": "굵기",
+    "paint.modeTools.flipHorizontal": "좌우 뒤집기",
+    "paint.modeTools.flipVertical": "상하 뒤집기",
+    "paint.modeTools.filled": "채우기",
+    "paint.modeTools.outlined": "윤곽선",
+    "paint.paintEditor.bitmap": "비트맵으로 바꾸기",
+    "paint.paintEditor.vector": "벡터로 바꾸기",
+    "paint.paintEditor.stroke": "윤곽선 색",
+    "paint.brushMode.brush": "브러시",
+    "paint.eraserMode.eraser": "지우개",
+    "paint.fillMode.fill": "채우기 색",
+    "paint.lineMode.line": "선",
+    "paint.ovalMode.oval": "원",
+    "paint.rectMode.rect": "직사각형",
+    "paint.reshapeMode.reshape": "형태 고치기",
+    "paint.roundedRectMode.roundedRect": "모서리가 둥근 직사각형",
+    "paint.selectMode.select": "선택",
+    "paint.textMode.text": "텍스트",
+    "paint.colorPicker.swap": "바꾸기"
 }

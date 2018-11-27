@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "צפצף תו [NOTE]ל[TIME]שניות",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "כפתור [PORT] נלחץ?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "בהירות",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "מרחק",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "מצב מנוע ב[PORT] ",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "תן למנוע[PORT] הספק של [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "סובב את מנוע[PORT] בכיוון זה במשך [TIME] שניות",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "סובב את מנוע [PORT] בכיוון ההוא במשך [TIME] שניות",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "כאשר בהירות <[DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "כאשר לוחצים על כפתור [PORT]",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "כאשר מרחק < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "כל",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "נקה תצוגה",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "שלום!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "הצג [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "הצגת טקסט [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "קפץ",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "זז",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "רעד",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "לחצו על כפתור [BTN]‏ ?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "נוטה[DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "כבה",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "הפעל",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "זווית הטיה [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "כל",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "אחורית",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "קדמית",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "שמאלה",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "ימינה",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "כאשר לוחצים על כפתור [BTN]",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "כאשר [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "כאשר פין [PIN] מחובר",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "כאשר מוטה [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "מוזיקה",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "שנה קצב ב [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) תוף בס",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) בונגו",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) קבסה",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) מקלות הקשה",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) מצילה סגורה",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) קונגה",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) פעמון פרה",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) מצילתיים",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) קויקה",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) גווירו",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) מחיאת כף",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) מצילה פתוחה",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) מקל על צד התוף",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) תוף סנר",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) תוף מרים",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) משולש",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) ויברסלאפ",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) לבנת עץ",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "קצב",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) בס",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) בסון",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) צ'לו",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) מקהלה",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) קלרינט",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) גיטרה חשמלית",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) פסנתר חשמלי",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) חליל",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) גיטרה",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) מרימבה",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) תיבת נגינה ",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) אורגן",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) פסנתר",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) פיציקטו",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) סקסופון",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) תוף פלדה",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) סינתיסייזר לד",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) סינתיסייזר פאד",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) טרומבון",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) ויברפון",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) חליל עץ",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "קביעת כלי נגינה ל[INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "נגן בתוף [DRUM] למשך [BEATS] פעימות",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "נגן תו [NOTE] במשך [BEATS] פעימות",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "נוח למשך [BEATS] פעימות",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "קבע כלי נגינה ל [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "קבע קצב ל [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "עט",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "שנה [COLOR_PARAM] עט ב[VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "שנה צבע עט ב[HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "שנה הצללת עט ב[SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "שנה גודל עט ב[SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "מחק הכל",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "בהירות",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "צבע",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "רווי צבע",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "שקיפות",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "עט מטה",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "עט מעלה",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "קבע צבע עט ל[COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "קבע [COLOR_PARAM] עט ב[VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "קבע צבע עט ל[HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "קבע הצללת עט ל[SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "קבע גודל עט ל[SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "חתום",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "קדימה!",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "דיבור לטקסט",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "הקשב וחכה",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "דיבור",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "כאשר אני שומע [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "שלום",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "ענק",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "חתלתול",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "מקס",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "קווין",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "קביעת שפה ל[LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "קבע קול ל־[VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "אמור [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "חריקה",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "תרגם",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "שלום",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "תרגם[WORDS] ל[LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "שפה",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "חיישן מצלמה",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "כיוון",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "תנועה",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "כבה",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "הפעל",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "הפעל כתמונת ראי",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "קבע שקיפות מצלמה ל [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "דמות",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "במה",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "[ATTRIBUTE] של המצלמה על [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "[VIDEO_STATE] את המצלמה",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "כאשר התנועה במצלמה > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "מרחק",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "זווית הטיה [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "מוטה[TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "כיבוי [MOTOR_ID]",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "הדלקת [MOTOR_ID]",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "הדלקת[MOTOR_ID] למשך [DURATION] שניות",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "ניגון תו [NOTE] למשך [DURATION] שניות",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "קבע צבע אור ל [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "קבע כיוון[MOTOR_ID] ל [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "קבע הספק של[MOTOR_ID] ל [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "כאשר מרחק [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "כאשר מוטה [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "צפצף תו [NOTE]ל[TIME]שניות",
+    "ev3.buttonPressed": "כפתור [PORT] נלחץ?",
+    "ev3.getBrightness": "בהירות",
+    "ev3.getDistance": "מרחק",
+    "ev3.getMotorPosition": "מצב מנוע ב[PORT] ",
+    "ev3.motorSetPower": "תן למנוע[PORT] הספק של [POWER] %",
+    "ev3.motorTurnClockwise": "סובב את מנוע[PORT] בכיוון זה במשך [TIME] שניות",
+    "ev3.motorTurnCounterClockwise": "סובב את מנוע [PORT] בכיוון ההוא במשך [TIME] שניות",
+    "ev3.whenBrightnessLessThan": "כאשר בהירות <[DISTANCE]",
+    "ev3.whenButtonPressed": "כאשר לוחצים על כפתור [PORT]",
+    "ev3.whenDistanceLessThan": "כאשר מרחק < [DISTANCE]",
+    "microbit.buttonsMenu.any": "כל",
+    "microbit.clearDisplay": "נקה תצוגה",
+    "microbit.defaultTextToDisplay": "שלום!",
+    "microbit.displaySymbol": "הצג [MATRIX]",
+    "microbit.displayText": "הצגת טקסט [TEXT]",
+    "microbit.gesturesMenu.jumped": "קפץ",
+    "microbit.gesturesMenu.moved": "זז",
+    "microbit.gesturesMenu.shaken": "רעד",
+    "microbit.isButtonPressed": "לחצו על כפתור [BTN]‏ ?",
+    "microbit.isTilted": "נוטה[DIRECTION]?",
+    "microbit.pinStateMenu.off": "כבה",
+    "microbit.pinStateMenu.on": "הפעל",
+    "microbit.tiltAngle": "זווית הטיה [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "כל",
+    "microbit.tiltDirectionMenu.back": "אחורית",
+    "microbit.tiltDirectionMenu.front": "קדמית",
+    "microbit.tiltDirectionMenu.left": "שמאלה",
+    "microbit.tiltDirectionMenu.right": "ימינה",
+    "microbit.whenButtonPressed": "כאשר לוחצים על כפתור [BTN]",
+    "microbit.whenGesture": "כאשר [GESTURE]",
+    "microbit.whenPinConnected": "כאשר פין [PIN] מחובר",
+    "microbit.whenTilted": "כאשר מוטה [DIRECTION]",
+    "music.categoryName": "מוזיקה",
+    "music.changeTempo": "שנה קצב ב [TEMPO]",
+    "music.drumBass": "(2) תוף בס",
+    "music.drumBongo": "(13) בונגו",
+    "music.drumCabasa": "(15) קבסה",
+    "music.drumClaves": "(9) מקלות הקשה",
+    "music.drumClosedHiHat": "(6) מצילה סגורה",
+    "music.drumConga": "(14) קונגה",
+    "music.drumCowbell": "(11) פעמון פרה",
+    "music.drumCrashCymbal": "(4) מצילתיים",
+    "music.drumCuica": "(18) קויקה",
+    "music.drumGuiro": "(16) גווירו",
+    "music.drumHandClap": "(8) מחיאת כף",
+    "music.drumOpenHiHat": "(5) מצילה פתוחה",
+    "music.drumSideStick": "(3) מקל על צד התוף",
+    "music.drumSnare": "(1) תוף סנר",
+    "music.drumTambourine": "(7) תוף מרים",
+    "music.drumTriangle": "(12) משולש",
+    "music.drumVibraslap": "(17) ויברסלאפ",
+    "music.drumWoodBlock": "(10) לבנת עץ",
+    "music.getTempo": "קצב",
+    "music.instrumentBass": "(6) בס",
+    "music.instrumentBassoon": "(14) בסון",
+    "music.instrumentCello": "(8) צ'לו",
+    "music.instrumentChoir": "(15) מקהלה",
+    "music.instrumentClarinet": "(10) קלרינט",
+    "music.instrumentElectricGuitar": "(5) גיטרה חשמלית",
+    "music.instrumentElectricPiano": "(2) פסנתר חשמלי",
+    "music.instrumentFlute": "(12) חליל",
+    "music.instrumentGuitar": "(4) גיטרה",
+    "music.instrumentMarimba": "(19) מרימבה",
+    "music.instrumentMusicBox": "(17) תיבת נגינה ",
+    "music.instrumentOrgan": "(3) אורגן",
+    "music.instrumentPiano": "(1) פסנתר",
+    "music.instrumentPizzicato": "(7) פיציקטו",
+    "music.instrumentSaxophone": "(11) סקסופון",
+    "music.instrumentSteelDrum": "(18) תוף פלדה",
+    "music.instrumentSynthLead": "(20) סינתיסייזר לד",
+    "music.instrumentSynthPad": "(21) סינתיסייזר פאד",
+    "music.instrumentTrombone": "(9) טרומבון",
+    "music.instrumentVibraphone": "(16) ויברפון",
+    "music.instrumentWoodenFlute": "(13) חליל עץ",
+    "music.midiSetInstrument": "קביעת כלי נגינה ל[INSTRUMENT]",
+    "music.playDrumForBeats": "נגן בתוף [DRUM] למשך [BEATS] פעימות",
+    "music.playNoteForBeats": "נגן תו [NOTE] במשך [BEATS] פעימות",
+    "music.restForBeats": "נוח למשך [BEATS] פעימות",
+    "music.setInstrument": "קבע כלי נגינה ל [INSTRUMENT]",
+    "music.setTempo": "קבע קצב ל [TEMPO]",
+    "pen.categoryName": "עט",
+    "pen.changeColorParam": "שנה [COLOR_PARAM] עט ב[VALUE]",
+    "pen.changeHue": "שנה צבע עט ב[HUE]",
+    "pen.changeShade": "שנה הצללת עט ב[SHADE]",
+    "pen.changeSize": "שנה גודל עט ב[SIZE]",
+    "pen.clear": "מחק הכל",
+    "pen.colorMenu.brightness": "בהירות",
+    "pen.colorMenu.color": "צבע",
+    "pen.colorMenu.saturation": "רווי צבע",
+    "pen.colorMenu.transparency": "שקיפות",
+    "pen.penDown": "עט מטה",
+    "pen.penUp": "עט מעלה",
+    "pen.setColor": "קבע צבע עט ל[COLOR]",
+    "pen.setColorParam": "קבע [COLOR_PARAM] עט ב[VALUE]",
+    "pen.setHue": "קבע צבע עט ל[HUE]",
+    "pen.setShade": "קבע הצללת עט ל[SHADE]",
+    "pen.setSize": "קבע גודל עט ל[SIZE]",
+    "pen.stamp": "חתום",
+    "speech.defaultWhenIHearValue": "קדימה!",
+    "speech.extensionName": "דיבור לטקסט",
+    "speech.listenAndWait": "הקשב וחכה",
+    "speech.speechReporter": "דיבור",
+    "speech.whenIHear": "כאשר אני שומע [PHRASE]",
+    "text2speech.defaultTextToSpeak": "שלום",
+    "text2speech.giant": "ענק",
+    "text2speech.kitten": "חתלתול",
+    "text2speech.max": "מקס",
+    "text2speech.quinn": "קווין",
+    "text2speech.setLanguageBlock": "קביעת שפה ל[LANGUAGE]",
+    "text2speech.setVoiceBlock": "קבע קול ל־[VOICE]",
+    "text2speech.speakAndWaitBlock": "אמור [WORDS]",
+    "text2speech.squeak": "חריקה",
+    "translate.categoryName": "תרגם",
+    "translate.defaultTextToTranslate": "שלום",
+    "translate.translateBlock": "תרגם[WORDS] ל[LANGUAGE]",
+    "translate.viewerLanguage": "שפה",
+    "videoSensing.categoryName": "חיישן מצלמה",
+    "videoSensing.direction": "כיוון",
+    "videoSensing.motion": "תנועה",
+    "videoSensing.off": "כבה",
+    "videoSensing.on": "הפעל",
+    "videoSensing.onFlipped": "הפעל כתמונת ראי",
+    "videoSensing.setVideoTransparency": "קבע שקיפות מצלמה ל [TRANSPARENCY]",
+    "videoSensing.sprite": "דמות",
+    "videoSensing.stage": "במה",
+    "videoSensing.videoOn": "[ATTRIBUTE] של המצלמה על [SUBJECT]",
+    "videoSensing.videoToggle": "[VIDEO_STATE] את המצלמה",
+    "videoSensing.whenMotionGreaterThan": "כאשר התנועה במצלמה > [REFERENCE]",
+    "wedo2.getDistance": "מרחק",
+    "wedo2.getTiltAngle": "זווית הטיה [TILT_DIRECTION]",
+    "wedo2.isTilted": "מוטה[TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "כיבוי [MOTOR_ID]",
+    "wedo2.motorOn": "הדלקת [MOTOR_ID]",
+    "wedo2.motorOnFor": "הדלקת[MOTOR_ID] למשך [DURATION] שניות",
+    "wedo2.playNoteFor": "ניגון תו [NOTE] למשך [DURATION] שניות",
+    "wedo2.setLightHue": "קבע צבע אור ל [HUE]",
+    "wedo2.setMotorDirection": "קבע כיוון[MOTOR_ID] ל [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "קבע הספק של[MOTOR_ID] ל [POWER]",
+    "wedo2.whenDistance": "כאשר מרחק [OP] [REFERENCE]",
+    "wedo2.whenTilted": "כאשר מוטה [TILT_DIRECTION_ANY]"
 }

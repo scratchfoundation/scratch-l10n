@@ -1,11 +1,12 @@
 {
   "name": "scratch-l10n",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Localization for the Scratch 3.0 components",
   "main": "./dist/l10n.js",
   "browser": "./src/index.js",
   "bin": {
-    "build-i18n-src": "./scripts/build-i18n-src.js"
+    "build-i18n-src": "./scripts/build-i18n-src.js",
+    "tx-push-src": "./scripts/tx-push-src.js"
   },
   "scripts": {
     "build:data": "babel-node scripts/build-data",
@@ -14,7 +15,17 @@
     "lint:js": "eslint . --ext .js",
     "lint:json": "jshint -e .json www editor/blocks editor/extensions editor/interface editor/paint-editor",
     "lint": "npm run lint:js && npm run lint:json",
-    "test": "npm run lint && npm run build"
+    "pull:interface": "babel-node scripts/tx-pull-translations scratch-editor interface ./editor/interface/",
+    "pull:paint": "babel-node scripts/tx-pull-translations scratch-editor paint-editor ./editor/paint-editor/",
+    "pull:extensions": "babel-node scripts/tx-pull-translations scratch-editor extensions ./editor/extensions/",
+    "pull:blocks": "babel-node scripts/tx-pull-blocks ./editor/blocks/",
+    "pull:editor": "npm run pull:blocks && npm run pull:extensions && npm run pull:paint && npm run pull:interface",
+    "test": "npm run lint:js && npm run validate:editor && npm run build && npm run lint:json",
+    "validate:blocks": "babel-node scripts/validate-translations ./editor/blocks/",
+    "validate:extensions": "babel-node scripts/validate-translations ./editor/extensions/",
+    "validate:interface": "babel-node scripts/validate-translations ./editor/interface/",
+    "validate:paint": "babel-node scripts/validate-translations ./editor/paint-editor/",
+    "validate:editor": "npm run validate:blocks && npm run validate:extensions && npm run validate:interface && npm run validate:paint"
   },
   "repository": {
     "type": "git",
@@ -27,26 +38,36 @@
   },
   "homepage": "https://github.com/LLK/scratch-l10n#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-intl": "^0.1.1",
-    "babel-plugin-react-intl": "^2.3.1",
-    "react-intl": "2.4.0"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "babel-plugin-react-intl": "^2.3.1"
   },
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.6.1",
-    "eslint-config-scratch": "^4.0.0",
-    "eslint-plugin-import": "^2.7.0",
+    "@babel/node": "7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "async": "2.6.1",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "8.0.4",
+    "eslint": "^5.0.1",
+    "eslint-config-scratch": "^5.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1",
+    "format-message-cli": "6.2.1",
+    "format-message-parse": "6.2.0",
     "jshint": "2.9.5",
     "json": "^9.0.6",
     "jsonlint": "1.6.3",
     "lodash.defaultsdeep": "4.6.0",
     "mkdirp": "^0.5.1",
+    "p-limit": "2.0.0",
+    "p-queue": "3.0.0",
+    "react-intl": "2.4.0",
     "rimraf": "^2.6.2",
+    "transifex": "1.5.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^3.1.2"
   }

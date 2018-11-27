@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "jouer la note [NOTE] pendant [TIME] secondes",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "bouton [PORT] appuyé?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "luminosité",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "distance",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "position du moteur [PORT]",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "mettre la puissance du moteur [PORT] à [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "faire tourner le moteur [PORT] dans ce sens pendant [TIME] secondes",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "faire tourner le moteur [PORT] dans ce sens pendant [TIME] secondes",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "quand la luminosité < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "quand le bouton [PORT] est appuyé",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "quand la distance < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "n'importe laquelle",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "effacer l'affichage",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Bonjour!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "afficher [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "afficher le texte [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "sauté",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "bougé",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "secoué",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "bouton [BTN] appuyé?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "inclinaison [DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "désactivée",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "activée",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "angle d'inclinaison [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "n'importe laquelle",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "arrière",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "avant",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "à gauche",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "à droite",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "quand bouton [BTN] appuyé",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "quand [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "quand le pin [PIN] est connecté",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "quand incliné [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "Musique",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "ajouter [TEMPO] au tempo",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) Grosse caisse",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) Bongo",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) Cabasa",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) Claves",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) Charleston fermé",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) Conga",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) Cloche de vache",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) Cymbale crash",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) Cuíca",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) Guiro",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) Claquement de main",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) Charleston ouvert",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) Side Stick",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) Caisse claire",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) Tambourin",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) Triangle",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) Vibraslap",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) Bloc de bois",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "tempo",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) Basse",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) Basson",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) Violoncelle",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) Chorale",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) Clarinette",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) Guitare électrique",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) Piano électrique",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) Flûte",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) Guitare",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) Marimba",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) Boîte à musique",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) Orgue",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) Piano",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) Pizzicato",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) Saxophone",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) Steel Drum",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) Lead synthétisé",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) Pad synthétisé",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) Trombone",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) Vibraphone",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) Flûte en bois",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "choisir l'instrument n° [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "jouer du tambour [DRUM] pendant [BEATS] temps",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "jouer la note [NOTE] pendant [BEATS] temps",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "faire une pause pendant [BEATS] temps",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "choisir l'instrument n° [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "mettre le tempo à [TEMPO]",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "Stylo",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "ajouter [VALUE] à la [COLOR_PARAM] du stylo",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "ajouter [HUE] à la couleur du stylo",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "ajouter [SHADE] à l'intensité du stylo",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "ajouter [SIZE] à la taille du stylo",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "effacer tout",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "luminosité",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "couleur",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "saturation",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "transparence",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "stylo en position d'écriture",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "relever le stylo",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "mettre la couleur du stylo à [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "mettre la [COLOR_PARAM] du stylo à [VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "mettre la couleur du stylo à [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "mettre l'intensité du stylo à [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "mettre la taille du stylo à [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "estampiller",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "allons-y",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Reconnaissance vocale",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "écouter et attendre",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "parole",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "quand j'entends [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "bonjour",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "géant",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "chaton",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "Quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "mettre la langue à [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "choisir la voix du [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "prononcer [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "piailler",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "Traduire",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "bonjour",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "traduire [WORDS] en [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "langue",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "Détection vidéo",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "direction",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "mouvement",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "désactivée",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "activée",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "effet miroir",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "mettre la transparence vidéo sur [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "sprite",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "scène",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "vidéo [ATTRIBUTE] sur [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "vidéo [VIDEO_STATE]",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "quand mouvement vidéo > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "distance",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "angle d'inclinaison [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "incliné [TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "éteindre le moteur [MOTOR_ID]",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "allumer le moteur [MOTOR_ID]",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "allumer le moteur [MOTOR_ID] pendant [DURATION] secondes",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "jouer la note [NOTE] pendant [DURATION] secondes",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "mettre la couleur de la lampe à [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "mettre la direction du moteur [MOTOR_ID] à [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "mettre la puissance du moteur [MOTOR_ID] à [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "quand la distance [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "quand incliné vers [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "jouer la note [NOTE] pendant [TIME] secondes",
+    "ev3.buttonPressed": "bouton [PORT] appuyé?",
+    "ev3.getBrightness": "luminosité",
+    "ev3.getDistance": "distance",
+    "ev3.getMotorPosition": "position du moteur [PORT]",
+    "ev3.motorSetPower": "mettre la puissance du moteur [PORT] à [POWER] %",
+    "ev3.motorTurnClockwise": "faire tourner le moteur [PORT] dans ce sens pendant [TIME] secondes",
+    "ev3.motorTurnCounterClockwise": "faire tourner le moteur [PORT] dans ce sens pendant [TIME] secondes",
+    "ev3.whenBrightnessLessThan": "quand la luminosité < [DISTANCE]",
+    "ev3.whenButtonPressed": "quand le bouton [PORT] est appuyé",
+    "ev3.whenDistanceLessThan": "quand la distance < [DISTANCE]",
+    "microbit.buttonsMenu.any": "n'importe laquelle",
+    "microbit.clearDisplay": "effacer l'affichage",
+    "microbit.defaultTextToDisplay": "Bonjour!",
+    "microbit.displaySymbol": "afficher [MATRIX]",
+    "microbit.displayText": "afficher le texte [TEXT]",
+    "microbit.gesturesMenu.jumped": "sauté",
+    "microbit.gesturesMenu.moved": "bougé",
+    "microbit.gesturesMenu.shaken": "secoué",
+    "microbit.isButtonPressed": "bouton [BTN] appuyé?",
+    "microbit.isTilted": "inclinaison [DIRECTION]?",
+    "microbit.pinStateMenu.off": "désactivée",
+    "microbit.pinStateMenu.on": "activée",
+    "microbit.tiltAngle": "angle d'inclinaison [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "n'importe laquelle",
+    "microbit.tiltDirectionMenu.back": "arrière",
+    "microbit.tiltDirectionMenu.front": "avant",
+    "microbit.tiltDirectionMenu.left": "à gauche",
+    "microbit.tiltDirectionMenu.right": "à droite",
+    "microbit.whenButtonPressed": "quand bouton [BTN] appuyé",
+    "microbit.whenGesture": "quand [GESTURE]",
+    "microbit.whenPinConnected": "quand le pin [PIN] est connecté",
+    "microbit.whenTilted": "quand incliné [DIRECTION]",
+    "music.categoryName": "Musique",
+    "music.changeTempo": "ajouter [TEMPO] au tempo",
+    "music.drumBass": "(2) Grosse caisse",
+    "music.drumBongo": "(13) Bongo",
+    "music.drumCabasa": "(15) Cabasa",
+    "music.drumClaves": "(9) Claves",
+    "music.drumClosedHiHat": "(6) Charleston fermé",
+    "music.drumConga": "(14) Conga",
+    "music.drumCowbell": "(11) Cloche de vache",
+    "music.drumCrashCymbal": "(4) Cymbale crash",
+    "music.drumCuica": "(18) Cuíca",
+    "music.drumGuiro": "(16) Guiro",
+    "music.drumHandClap": "(8) Claquement de main",
+    "music.drumOpenHiHat": "(5) Charleston ouvert",
+    "music.drumSideStick": "(3) Side Stick",
+    "music.drumSnare": "(1) Caisse claire",
+    "music.drumTambourine": "(7) Tambourin",
+    "music.drumTriangle": "(12) Triangle",
+    "music.drumVibraslap": "(17) Vibraslap",
+    "music.drumWoodBlock": "(10) Bloc de bois",
+    "music.getTempo": "tempo",
+    "music.instrumentBass": "(6) Basse",
+    "music.instrumentBassoon": "(14) Basson",
+    "music.instrumentCello": "(8) Violoncelle",
+    "music.instrumentChoir": "(15) Chorale",
+    "music.instrumentClarinet": "(10) Clarinette",
+    "music.instrumentElectricGuitar": "(5) Guitare électrique",
+    "music.instrumentElectricPiano": "(2) Piano électrique",
+    "music.instrumentFlute": "(12) Flûte",
+    "music.instrumentGuitar": "(4) Guitare",
+    "music.instrumentMarimba": "(19) Marimba",
+    "music.instrumentMusicBox": "(17) Boîte à musique",
+    "music.instrumentOrgan": "(3) Orgue",
+    "music.instrumentPiano": "(1) Piano",
+    "music.instrumentPizzicato": "(7) Pizzicato",
+    "music.instrumentSaxophone": "(11) Saxophone",
+    "music.instrumentSteelDrum": "(18) Steel Drum",
+    "music.instrumentSynthLead": "(20) Lead synthétisé",
+    "music.instrumentSynthPad": "(21) Pad synthétisé",
+    "music.instrumentTrombone": "(9) Trombone",
+    "music.instrumentVibraphone": "(16) Vibraphone",
+    "music.instrumentWoodenFlute": "(13) Flûte en bois",
+    "music.midiSetInstrument": "choisir l'instrument n° [INSTRUMENT]",
+    "music.playDrumForBeats": "jouer du tambour [DRUM] pendant [BEATS] temps",
+    "music.playNoteForBeats": "jouer la note [NOTE] pendant [BEATS] temps",
+    "music.restForBeats": "faire une pause pendant [BEATS] temps",
+    "music.setInstrument": "choisir l'instrument n° [INSTRUMENT]",
+    "music.setTempo": "mettre le tempo à [TEMPO]",
+    "pen.categoryName": "Stylo",
+    "pen.changeColorParam": "ajouter [VALUE] à la [COLOR_PARAM] du stylo",
+    "pen.changeHue": "ajouter [HUE] à la couleur du stylo",
+    "pen.changeShade": "ajouter [SHADE] à l'intensité du stylo",
+    "pen.changeSize": "ajouter [SIZE] à la taille du stylo",
+    "pen.clear": "effacer tout",
+    "pen.colorMenu.brightness": "luminosité",
+    "pen.colorMenu.color": "couleur",
+    "pen.colorMenu.saturation": "saturation",
+    "pen.colorMenu.transparency": "transparence",
+    "pen.penDown": "stylo en position d'écriture",
+    "pen.penUp": "relever le stylo",
+    "pen.setColor": "mettre la couleur du stylo à [COLOR]",
+    "pen.setColorParam": "mettre la [COLOR_PARAM] du stylo à [VALUE]",
+    "pen.setHue": "mettre la couleur du stylo à [HUE]",
+    "pen.setShade": "mettre l'intensité du stylo à [SHADE]",
+    "pen.setSize": "mettre la taille du stylo à [SIZE]",
+    "pen.stamp": "estampiller",
+    "speech.defaultWhenIHearValue": "allons-y",
+    "speech.extensionName": "Reconnaissance vocale",
+    "speech.listenAndWait": "écouter et attendre",
+    "speech.speechReporter": "parole",
+    "speech.whenIHear": "quand j'entends [PHRASE]",
+    "text2speech.defaultTextToSpeak": "bonjour",
+    "text2speech.giant": "géant",
+    "text2speech.kitten": "chaton",
+    "text2speech.max": "max",
+    "text2speech.quinn": "Quinn",
+    "text2speech.setLanguageBlock": "mettre la langue à [LANGUAGE]",
+    "text2speech.setVoiceBlock": "choisir la voix du [VOICE]",
+    "text2speech.speakAndWaitBlock": "prononcer [WORDS]",
+    "text2speech.squeak": "piailler",
+    "translate.categoryName": "Traduire",
+    "translate.defaultTextToTranslate": "bonjour",
+    "translate.translateBlock": "traduire [WORDS] en [LANGUAGE]",
+    "translate.viewerLanguage": "langue",
+    "videoSensing.categoryName": "Détection vidéo",
+    "videoSensing.direction": "direction",
+    "videoSensing.motion": "mouvement",
+    "videoSensing.off": "désactivée",
+    "videoSensing.on": "activée",
+    "videoSensing.onFlipped": "effet miroir",
+    "videoSensing.setVideoTransparency": "mettre la transparence vidéo sur [TRANSPARENCY]",
+    "videoSensing.sprite": "sprite",
+    "videoSensing.stage": "scène",
+    "videoSensing.videoOn": "vidéo [ATTRIBUTE] sur [SUBJECT]",
+    "videoSensing.videoToggle": "vidéo [VIDEO_STATE]",
+    "videoSensing.whenMotionGreaterThan": "quand mouvement vidéo > [REFERENCE]",
+    "wedo2.getDistance": "distance",
+    "wedo2.getTiltAngle": "angle d'inclinaison [TILT_DIRECTION]",
+    "wedo2.isTilted": "incliné [TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "éteindre le moteur [MOTOR_ID]",
+    "wedo2.motorOn": "allumer le moteur [MOTOR_ID]",
+    "wedo2.motorOnFor": "allumer le moteur [MOTOR_ID] pendant [DURATION] secondes",
+    "wedo2.playNoteFor": "jouer la note [NOTE] pendant [DURATION] secondes",
+    "wedo2.setLightHue": "mettre la couleur de la lampe à [HUE]",
+    "wedo2.setMotorDirection": "mettre la direction du moteur [MOTOR_ID] à [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "mettre la puissance du moteur [MOTOR_ID] à [POWER]",
+    "wedo2.whenDistance": "quand la distance [OP] [REFERENCE]",
+    "wedo2.whenTilted": "quand incliné vers [TILT_DIRECTION_ANY]"
 }

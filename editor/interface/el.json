@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Σακίδιο",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Σφάλμα κατά τη φόρτωση σακιδίου",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Γίνεται φόρτωση...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Περισσότερα",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Το σακίδιο είναι άδειο",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Ο περιηγητής δεν υποστηρίζετα",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Λυπούμαστε πολύ, αλλά το Scratch 3.0 δεν υποστηρίζει Internet Explorer, Vivaldi, Opera ή Silk. Προτείνουμε να δοκιμάσετε ένα νεότερο πρόγραμμα περιήγησης, όπως το Google Chrome, το Mozilla Firefox ή το Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Πίσω",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Συχνές Ερωτήσεις",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Λήψη φωτογραφίας",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Φόρτωμα κάμερας...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Χρειαζόμαστε την άδεια σας για χρήση της κάμερας",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Νέα λήψη φωτογραφίας",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Αποθήκευση",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Λήψη φωτογραφίας",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Γίνεται φόρτωση...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Ενεργοποίηση κάμερας",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Εκπαιδευτικό υλικό",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Κλείσιμο",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Περισσότερα πράγματα για να πειραματιστείτε",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Δείτε Περισσότερα",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Μην ανησυχείτε, το 'χουμε {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Έρχεται Σύντομα...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Το δουλεύουμε {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Δεν βρέθηκαν συσκευές",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Έχε τη συσκευή σου κάπου κοντά και ξεκίνα την αναζήτηση.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Πατήστε το κουμπί στη συσκευή σας.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Έναρξη Αναζήτησης",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Αναζήτηση...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Δοκίμασε πάλι",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Συνδέθηκε",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Αποσύνδεση",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Πήγαινε στον Επεξεργαστή",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Σύνδεση...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Ουπς, φαίνεται ότι κάτι πήγε στραβά.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Δοκίμασε πάλι",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Βοήθεια",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Όνομα συσκευής",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Σύνδεση",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Έρευνα για συσκευές",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Δεν βρέθηκαν συσκευές",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Διάλεξε τη συσκευή σου από την παραπάνω λίστα.",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Ανανέωση",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Βεβαιώσου ότι έχεις εγκαταστήσει το πρόγραμμα Scratch Link και ότι αυτό εκτελείται.",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Ελέγξτε το Bluetooth να είναι ενεργοποιημένο",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Δοκίμασε πάλι",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Βοήθεια",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Ξεκίνα",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Διακοπή",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Ωπ! Κάτι πήγε στραβά.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Λυπούμαστε, αλλά φαίνεται πως το Scratch τερματίστηκε απροσδόκητα. Αυτό το πρόβλημα έχει αναφερθεί αυτόματα στην ομάδα του Scratch. Παρακαλούμε επαναφορτώστε τη σελίδα για να ξαναπροσπαθήσετε.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Επαναφόρτωση",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "δημιουργήστε ένα τετράγωνο εντολών",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Προσθήκη εισόδου δεδομένων",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "αριθμός ή κείμενο",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Προσθήκη εισόδου δεδομένων",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "λογική",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Προσθήκη ετικέτας",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Να μην γίνεται ανανέωση οθόνης",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Άκυρο",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Κατεύθυνση",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Πλήρης Περιστροφή",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Αριστερά/Δεξιά",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Χωρίς περιστροφή",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Προσθήκη Επέκτασης",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Κώδικας",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Yπόβαθρα",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Ενδυμασίες",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Ήχοι",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Προβολή Έργου Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Εισάγετε έναν σύνδεσμο σε ένα από τα δημοσιευμένα έργα Scratch σας. Οι αλλαγές που θα γίνουν σε αυτήν την έκδοση Beta 3.0 δεν θα αποθηκευτούν.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Εισάγετε έναν σύνδεσμο σε ένα από τα δημοσιευμένα έργα Scratch σας. Οι αλλαγές που θα γίνουν σε αυτήν την έκδοση προεπισκόπησης 3.0 δεν θα αποθηκευτούν.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Ωπ, αυτός ο σύνδεσμος ή το αναγνωριστικό δεν φαίνεται να είναι σωστό.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Προβολή",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Πήγαινε Πίσω",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Συχνές Ερωτήσεις",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Έρχεται Σύντομα",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Αναζήτηση",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Όλα",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Δημιουργία μπλοκ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Φόρτωση Αντικειμένων ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Φόρτωση Ήχων ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Φόρτωση Επεκτάσεων ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Πολλά ζόρια ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Μετάδοση σωματιδίων ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Αρχικοποίηση του Gobo ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Προετοιμασία emoji...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Φόρτωση Έργου",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Προφίλ",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Τα πράγματά μου",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Οι τάξεις μου",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Η τάξη μου",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Ρυθμίσεις Λογαριασμού",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Αποσύνδεση",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Δείτε την Κοινότητα",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Όνομα χρήστη",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Κωδικός",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Σύνδεση",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Need Help?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "επιλογέας γλώσσας",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Εκπαιδευτικό υλικό",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Επαναφορά Αντικείμενου",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Επαναφορά Ήχου",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Επαναφορά Ενδυμασίας",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Επαναφορά",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Αποθήκευση τώρα",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Αποθήκευση ενός Αντιγράφου",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Αποθήκευση ως ανάμειξη",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Νέο Έργο",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Αρχείο",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Φόρτωση από τον υπολογιστή σου",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Αποθήκευσε στον υπολογιστή σου",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Επεξεργασία",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Απενεργοποίηση Κατάστασης Turbo",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Ενεργοποίηση Κατάστασης Turbo",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Εγγραφή",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Σύνδεση",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Αποστολή σχολίων",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Τίτλος Έργου εδώ",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "σε κοινή χρήση",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Μοιραστείτε",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Βοήθεια",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Πίσω",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(άδεια)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "μήκος {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "Κανονική Προβολή Κειμένου",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "Μεγάλη Προβολή Κειμένου",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "Γραμμή κύλισης",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Δοκιμάστε το Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Καλώς ήλθατε στο Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Όχι Τώρα",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Δοκιμάστε το",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Προβολή Έργου της έκδοσης 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Καλώς ήλθατε στο Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Εργαζόμαστε για την επόμενη έκδοση του Scratch. Είμαστε ενθουσιασμένοι που τη δοκιμάζετε!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Όχι Τώρα",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Δοκιμάστε το! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Προβολή Έργου της έκδοσης 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Συχνές Ερωτήσεις",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Για όλα τα αντικείμενα",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Μόνο για αυτό το αντικείμενο",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "μεταβλητή Cloud (αποθηκευμένα στον server)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Η μεταβλητή αυτή είναι διαθέσιμη σε όλα τα αντικείμενα.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Άκυρο",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Διακοπή",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Αναπαραγωγή",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Γίνεται φόρτωση...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Αποθήκευση",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Επανάληψη εγγραφής",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Ηχογράφηση",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Ξεκίνα την ηχογράφηση πατώντας το κουμπί κάτω",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Χρειαζόμαστε την άδεια σου για τη χρήση του μικρόφωνου",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Τέλος ηχογράφησης",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Ηχογράφηση",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Ήχος",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Αναπαραγωγή",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Διακοπή",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Κόψιμο",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Αποθήκευση",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Αναίρεση",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Ακύρωση Αναίρεσης",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Γρηγορότερα",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Πιο αργά",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Ηχώ",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Ρομπότ",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Δυνατότερα",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Απαλότερο",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Αντιστροφή",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Όνομα",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Αντικείμενο",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Προβολή",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Μέγεθος",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "διπλότυπο",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "διαγραφή",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "Εξαγωγή",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Επιλέξτε ένα Αντικείμενο",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Ζωγραφική",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Έκπληξη",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Μεταφόρτωση Αντικείμενου",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Εναλλαγή σε μεγάλο σκηνικό",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Εναλλαγή σε μικρό σκηνικό",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Προβολή πλήρους οθόνης",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Έξοδος από την προβολή πλήρους οθόνης",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Έλεγχος Πλήρους Οθόνης",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Επιλέξτε Υπόβαθρο",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Ζωγραφική",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Έκπληξη",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Μεταφόρτωση Υποβάθρου",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Σκηνικό",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Yπόβαθρα",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Λειτουργία Γρήγορης Εκτέλεσης",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Ο περιηγητής σας δεν υποστηρίζει WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Δυστυχώς, φαίνεται ότι ο περιηγητής σας ή ο υπολογιστής σας {webGlLink}. Αυτή η τεχνολογία χρειάζεται για να λειτουργήσει το Scratch 3.0.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "δεν υποστηρίζει WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Πίσω",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Συχνές Ερωτήσεις",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Επιλέξτε Υπόβαθρο",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Επιλέξτε Ενδυμασία",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Επιλέξτε Υπόβαθρο",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Επιλέξτε Ενδυμασία",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Ζωγραφική",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Έκπληξη",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Μεταφόρτωση Υποβάθρου",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Μεταφόρτωση Ενδυμασίας",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Κάμερα",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Επιλέξτε μια Επέκταση",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Εισάγετε το URL της επέκτασης",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Έργο Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Η ηχογράφηση δεν ήταν δυνατό να ξεκινήσει",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Απέτυχε η φόρτωση του αρχείου έργου που επιλέχθηκε.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Επιλέξτε Ήχο",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Μεταφόρτωση Ήχου",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Έκπληξη",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Ηχογράφηση",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Επιλέξτε Ήχο",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Επιλέξτε ένα Αντικείμενο",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Διάλεξε Μάθημα",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Γίνεται δημιουργία...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Γίνεται αποθήκευση...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Μιάου",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "η μεταβλητή μου",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Ξεκινώντας",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Πρόσθεσε ένα μπλοκ κίνησης",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Κάνε κλικ στην πράσινη σημαία για να ξεκινήσεις",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Δημιούργησε Κινούμενες Εικόνες Που Μιλούν",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Πρόσθεσε τα μπλοκ Κείμενο σε Ομιλία",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Πείτε Κάτι!",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Όρισε μια Φωνή",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Κινήσου",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Πρόσθεσε Φόντο",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Πρόσθεσε άλλον ένα Χαρακτήρα",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Πες ένα Τραγούδι",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Αλλάξτε το Χρώμα!",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Κάνε περιστροφή",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Μεγέθυνση και Σμίκρυνση",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Ζωντάνεψε ένα Παιχνίδι Περιπέτειας",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Πείτε Κάτι!",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Γλύστρησε Γύρω",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Κρατήστε Σκορ!",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Ζωντάνεψε ένα Όνομα",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Διάλεξε Ένα Sprite Γράμματος",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Παίξε ένα Ήχο Όταν Επιλεγεί",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Διάλεξε Ένα Άλλο Sprite Γράμματος",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Αλλαγή χρώματος",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Διάλεξε Ένα Άλλο Sprite Γράμματος & Κάνε Το Να Γυρίσει",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Διάλεξε Ένα Άλλο Sprite Γράμματος & Κάνε Το Να Μεγαλώσει",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Δημιουργήστε Μουσική",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Διάλεξε ένα Sprite Οργάνου",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Παίξε Ήχο Όταν Επιλεγεί",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Δημιούργησε ένα Τραγούδι",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Διάλεξε ένα Τύμπανο και Κάνε έναν Χτύπο",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Πρόσθεσε το Sprite Μικροφώνου & Ξάφνιασε το Beatbox",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Κάνε ένα Παιχνίδι Τηλεχειρισμού",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Διάλεξε ένα Αντικείμενο",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Παίξε Ήχο Όταν Επιλεγεί",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Δημιουργία Μεταβλητής Βαθμολογίας",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Όταν Πατηθεί Αύξησε το Σκορ",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Πήγαινε σε μια τυχαία θέση",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Αλλάξτε το Χρώμα!",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Επαναφορά Βαθμολογίας",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Κάνε ένα Παιχνίδι Καταδίωξης",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Πρόσθεσε Φόντο",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Πρόσθεσε ένα Sprite",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Μετακινήσου Δεξιά & Αριστερά Με Τα Βελάκια",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Μετακινήσου Πάνω & Κάτω Με Τα Βελάκια",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Πρόσθεσε Ένα Άλλο Sprite",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Κινήσου Τυχαία",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Στο Sprite Χταπόδι, Όταν Αγγίζεις Παίξε Ήχο",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Δημιουργία Μεταβλητής Βαθμολογίας",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Στο Sprite Χταπόδι, Όταν Αγγίζεις Πρόσθεσε Βαθμολογία",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Πρόσθεσε ένα Sprite",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Πρόσθεσε Sprite",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Πρόσθεσε Φόντο",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Αλλαγή Μεγέθους",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Γλύστρησε Γύρω",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Έγγραφή Ήχου",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Κάνε να Περιστρέφεται",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Απόκρυψη και Εμφάνιση",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Ζωντάνεψε ένα Sprite",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Χρησιμοποίησε τα Πλήκτρα Βέλους",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Πρόσθεσε Εφέ",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Μουσική",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Παίξε όργανα και ντραμς.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Πένα",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Σχεδίασε με τα sprites σου.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Προβολή από Κάμερα",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Ανίχνευση κίνησης με την κάμερα.",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Κείμενο σε Ομιλία",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Κάνε τα έργα σου να μιλούν.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Μετάφραση",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Μετάφρασε το κείμενο σε πολλές γλώσσες.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Σύνδεσε τα έργα σου με τον πραγματικό κόσμο.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Σύνδεση",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Φτιάξε διαδραστικά ρομπότ και πολλά άλλα.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Συνδέεται. Βεβαιωθείτε ότι το pin στο EV3 έχει οριστεί σε 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Κατασκεύασε με κινητήρες και αισθητήρες.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Σύνδεση",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Όλα",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Ζώα",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Χορός",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Εφέ",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Φανταστικά",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Μόδα",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Τρόφιμα",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Εσωτερικοί χώροι",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Μουσική",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Νότες",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Εξωτερικοί Χώροι",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Μοτίβα",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Άνθρωποι",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Κρουστά",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Διάστημα",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Αθλήματα",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Κάτω από το νερό",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Φωνή",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Αστείοι ήχοι",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Κινούμενα σχέδια",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Τέχνη",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Παιχνίδια",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Ιστορίες",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Γράμματα",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "κατεύθυνση",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "θέση x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "θέση y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "μέγεθος",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "όνομα ενδυμασίας",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "αριθμός ενδυμασίας",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "όνομα υποβάθρου",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "αριθμός υπόβαθρου",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "ένταση",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "ρυθμός",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "απάντηση",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "ένταση",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "όνομα χρήστη",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "χρόνος",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "μήνας",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "ημερομηνία",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "μέρα της εβδομάδας",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "ώρα",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "λεπτό",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "δευτερόλεπτο",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "χρονομέτρηση",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "υπόβαθρο{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "ενδυμασία{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Αντικείμενο{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "μπουμ",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Σακίδιο",
+    "gui.backpack.errorBackpack": "Σφάλμα κατά τη φόρτωση σακιδίου",
+    "gui.backpack.loadingBackpack": "Γίνεται φόρτωση...",
+    "gui.backpack.more": "Περισσότερα",
+    "gui.backpack.emptyBackpack": "Το σακίδιο είναι άδειο",
+    "gui.unsupportedBrowser.label": "Ο περιηγητής δεν υποστηρίζετα",
+    "gui.unsupportedBrowser.description": "Λυπούμαστε πολύ, αλλά το Scratch 3.0 δεν υποστηρίζει Internet Explorer, Vivaldi, Opera ή Silk. Προτείνουμε να δοκιμάσετε ένα νεότερο πρόγραμμα περιήγησης, όπως το Google Chrome, το Mozilla Firefox ή το Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Πίσω",
+    "gui.unsupportedBrowser.previewfaq": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Συχνές Ερωτήσεις",
+    "gui.cameraModal.cameraModalTitle": "Λήψη φωτογραφίας",
+    "gui.cameraModal.loadingCameraMessage": "Φόρτωμα κάμερας...",
+    "gui.cameraModal.permissionRequest": "Χρειαζόμαστε την άδεια σας για χρήση της κάμερας",
+    "gui.cameraModal.retakePhoto": "Νέα λήψη φωτογραφίας",
+    "gui.cameraModal.save": "Αποθήκευση",
+    "gui.cameraModal.takePhoto": "Λήψη φωτογραφίας",
+    "gui.cameraModal.loadingCaption": "Γίνεται φόρτωση...",
+    "gui.cameraModal.enableCameraCaption": "Ενεργοποίηση κάμερας",
+    "gui.cards.all-tutorials": "Εκπαιδευτικό υλικό",
+    "gui.cards.close": "Κλείσιμο",
+    "gui.cards.more-things-to-try": "Περισσότερα πράγματα για να πειραματιστείτε",
+    "gui.cards.see-more": "Δείτε Περισσότερα",
+    "gui.comingSoon.message1": "Μην ανησυχείτε, το 'χουμε {emoji}",
+    "gui.comingSoon.message2": "Έρχεται Σύντομα...",
+    "gui.comingSoon.message3": "Το δουλεύουμε {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Δεν βρέθηκαν συσκευές",
+    "gui.connection.auto-scanning.prescan": "Έχε τη συσκευή σου κάπου κοντά και ξεκίνα την αναζήτηση.",
+    "gui.connection.auto-scanning.pressbutton": "Πατήστε το κουμπί στη συσκευή σας.",
+    "gui.connection.auto-scanning.start-search": "Έναρξη Αναζήτησης",
+    "gui.connection.connecting-searchbutton": "Αναζήτηση...",
+    "gui.connection.auto-scanning.try-again": "Δοκίμασε πάλι",
+    "gui.connection.connected": "Συνδέθηκε",
+    "gui.connection.disconnect": "Αποσύνδεση",
+    "gui.connection.go-to-editor": "Πήγαινε στον Επεξεργαστή",
+    "gui.connection.connecting-cancelbutton": "Σύνδεση...",
+    "gui.connection.error.errorMessage": "Ουπς, φαίνεται ότι κάτι πήγε στραβά.",
+    "gui.connection.error.tryagainbutton": "Δοκίμασε πάλι",
+    "gui.connection.error.helpbutton": "Βοήθεια",
+    "gui.connection.peripheral-name-label": "Όνομα συσκευής",
+    "gui.connection.connect": "Σύνδεση",
+    "gui.connection.scanning.lookingforperipherals": "Έρευνα για συσκευές",
+    "gui.connection.scanning.noPeripheralsFound": "Δεν βρέθηκαν συσκευές",
+    "gui.connection.scanning.instructions": "Διάλεξε τη συσκευή σου από την παραπάνω λίστα.",
+    "gui.connection.search": "Ανανέωση",
+    "gui.connection.unavailable.installscratchlink": "Βεβαιώσου ότι έχεις εγκαταστήσει το πρόγραμμα Scratch Link και ότι αυτό εκτελείται.",
+    "gui.connection.unavailable.enablebluetooth": "Ελέγξτε το Bluetooth να είναι ενεργοποιημένο",
+    "gui.connection.unavailable.tryagainbutton": "Δοκίμασε πάλι",
+    "gui.connection.unavailable.helpbutton": "Βοήθεια",
+    "gui.controls.go": "Ξεκίνα",
+    "gui.controls.stop": "Διακοπή",
+    "gui.crashMessage.label": "Ωπ! Κάτι πήγε στραβά.",
+    "gui.crashMessage.description": "Λυπούμαστε, αλλά φαίνεται πως το Scratch τερματίστηκε απροσδόκητα. Αυτό το πρόβλημα έχει αναφερθεί αυτόματα στην ομάδα του Scratch. Παρακαλούμε επαναφορτώστε τη σελίδα για να ξαναπροσπαθήσετε.",
+    "gui.crashMessage.reload": "Επαναφόρτωση",
+    "gui.customProcedures.myblockModalTitle": "δημιουργήστε ένα τετράγωνο εντολών",
+    "gui.customProcedures.addAnInputNumberText": "Προσθήκη εισόδου δεδομένων",
+    "gui.customProcedures.numberTextType": "αριθμός ή κείμενο",
+    "gui.customProcedures.addAnInputBoolean": "Προσθήκη εισόδου δεδομένων",
+    "gui.customProcedures.booleanType": "λογική",
+    "gui.customProcedures.addALabel": "Προσθήκη ετικέτας",
+    "gui.customProcedures.runWithoutScreenRefresh": "Να μην γίνεται ανανέωση οθόνης",
+    "gui.customProcedures.cancel": "Άκυρο",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Κατεύθυνση",
+    "gui.directionPicker.rotationStyles.allAround": "Πλήρης Περιστροφή",
+    "gui.directionPicker.rotationStyles.leftRight": "Αριστερά/Δεξιά",
+    "gui.directionPicker.rotationStyles.dontRotate": "Χωρίς περιστροφή",
+    "gui.gui.addExtension": "Προσθήκη Επέκτασης",
+    "gui.gui.codeTab": "Κώδικας",
+    "gui.gui.backdropsTab": "Yπόβαθρα",
+    "gui.gui.costumesTab": "Ενδυμασίες",
+    "gui.gui.soundsTab": "Ήχοι",
+    "gui.importInfo.title": "Προβολή Έργου Scratch 2.0",
+    "gui.importInfo.betamessage": "Εισάγετε έναν σύνδεσμο σε ένα από τα δημοσιευμένα έργα Scratch σας. Οι αλλαγές που θα γίνουν σε αυτήν την έκδοση Beta 3.0 δεν θα αποθηκευτούν.",
+    "gui.importInfo.message": "Εισάγετε έναν σύνδεσμο σε ένα από τα δημοσιευμένα έργα Scratch σας. Οι αλλαγές που θα γίνουν σε αυτήν την έκδοση προεπισκόπησης 3.0 δεν θα αποθηκευτούν.",
+    "gui.importInfo.invalidFormatError": "Ωπ, αυτός ο σύνδεσμος ή το αναγνωριστικό δεν φαίνεται να είναι σωστό.",
+    "gui.importModal.viewproject": "Προβολή",
+    "gui.importInfo.goback": "Πήγαινε Πίσω",
+    "gui.importInfo.previewfaq": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Συχνές Ερωτήσεις",
+    "gui.extensionLibrary.comingSoon": "Έρχεται Σύντομα",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Αναζήτηση",
+    "gui.library.allTag": "Όλα",
+    "gui.loader.message1": "Δημιουργία μπλοκ...",
+    "gui.loader.message2": "Φόρτωση Αντικειμένων ...",
+    "gui.loader.message3": "Φόρτωση Ήχων ...",
+    "gui.loader.message4": "Φόρτωση Επεκτάσεων ...",
+    "gui.loader.message5": "Πολλά ζόρια ...",
+    "gui.loader.message6": "Μετάδοση σωματιδίων ...",
+    "gui.loader.message7": "Αρχικοποίηση του Gobo ...",
+    "gui.loader.message8": "Προετοιμασία emoji...",
+    "gui.loader.headline": "Φόρτωση Έργου",
+    "gui.accountMenu.profile": "Προφίλ",
+    "gui.accountMenu.myStuff": "Τα πράγματά μου",
+    "gui.accountMenu.myClasses": "Οι τάξεις μου",
+    "gui.accountMenu.myClass": "Η τάξη μου",
+    "gui.accountMenu.accountSettings": "Ρυθμίσεις Λογαριασμού",
+    "gui.accountMenu.signOut": "Αποσύνδεση",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Δείτε την Κοινότητα",
+    "general.username": "Όνομα χρήστη",
+    "general.password": "Κωδικός",
+    "general.signIn": "Σύνδεση",
+    "login.needHelp": "Need Help?",
+    "gui.menuBar.LanguageSelector": "επιλογέας γλώσσας",
+    "gui.menuBar.tutorialsLibrary": "Εκπαιδευτικό υλικό",
+    "gui.menuBar.restoreSprite": "Επαναφορά Αντικείμενου",
+    "gui.menuBar.restoreSound": "Επαναφορά Ήχου",
+    "gui.menuBar.restoreCostume": "Επαναφορά Ενδυμασίας",
+    "gui.menuBar.restore": "Επαναφορά",
+    "gui.menuBar.saveNow": "Αποθήκευση τώρα",
+    "gui.menuBar.saveAsCopy": "Αποθήκευση ενός Αντιγράφου",
+    "gui.menuBar.remix": "Αποθήκευση ως ανάμειξη",
+    "gui.menuBar.new": "Νέο Έργο",
+    "gui.menuBar.file": "Αρχείο",
+    "gui.menuBar.uploadFromComputer": "Φόρτωση από τον υπολογιστή σου",
+    "gui.menuBar.downloadToComputer": "Αποθήκευσε στον υπολογιστή σου",
+    "gui.menuBar.edit": "Επεξεργασία",
+    "gui.menuBar.turboModeOff": "Απενεργοποίηση Κατάστασης Turbo",
+    "gui.menuBar.turboModeOn": "Ενεργοποίηση Κατάστασης Turbo",
+    "gui.menuBar.joinScratch": "Εγγραφή",
+    "gui.menuBar.signIn": "Σύνδεση",
+    "gui.menuBar.giveFeedback": "Αποστολή σχολίων",
+    "gui.gui.projectTitlePlaceholder": "Τίτλος Έργου εδώ",
+    "gui.menuBar.isShared": "σε κοινή χρήση",
+    "gui.menuBar.share": "Μοιραστείτε",
+    "gui.modal.help": "Βοήθεια",
+    "gui.modal.back": "Πίσω",
+    "gui.monitor.listMonitor.empty": "(άδεια)",
+    "gui.monitor.listMonitor.listLength": "μήκος {length}",
+    "gui.monitor.contextMenu.default": "Κανονική Προβολή Κειμένου",
+    "gui.monitor.contextMenu.large": "Μεγάλη Προβολή Κειμένου",
+    "gui.monitor.contextMenu.slider": "Γραμμή κύλισης",
+    "gui.previewInfo.label": "Δοκιμάστε το Scratch 3.0",
+    "gui.previewInfo.welcome": "Καλώς ήλθατε στο Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Όχι Τώρα",
+    "gui.previewModal.tryittooltip": "Δοκιμάστε το",
+    "gui.previewModal.viewprojecttooltip": "Προβολή Έργου της έκδοσης 2.0",
+    "gui.previewInfo.betawelcome": "Καλώς ήλθατε στο Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Εργαζόμαστε για την επόμενη έκδοση του Scratch. Είμαστε ενθουσιασμένοι που τη δοκιμάζετε!",
+    "gui.previewInfo.notnow": "Όχι Τώρα",
+    "gui.previewModal.tryit": "Δοκιμάστε το! {caticon}",
+    "gui.previewModal.viewproject": "Προβολή Έργου της έκδοσης 2.0",
+    "gui.previewInfo.previewfaq": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Συχνές Ερωτήσεις",
+    "gui.gui.variableScopeOptionAllSprites": "Για όλα τα αντικείμενα",
+    "gui.gui.variableScopeOptionSpriteOnly": "Μόνο για αυτό το αντικείμενο",
+    "gui.gui.cloudVariableOption": "μεταβλητή Cloud (αποθηκευμένα στον server)",
+    "gui.gui.variablePromptAllSpritesMessage": "Η μεταβλητή αυτή είναι διαθέσιμη σε όλα τα αντικείμενα.",
+    "gui.prompt.cancel": "Άκυρο",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Διακοπή",
+    "gui.playbackStep.playMsg": "Αναπαραγωγή",
+    "gui.playbackStep.loadingMsg": "Γίνεται φόρτωση...",
+    "gui.playbackStep.saveMsg": "Αποθήκευση",
+    "gui.playbackStep.reRecordMsg": "Επανάληψη εγγραφής",
+    "gui.recordModal.title": "Ηχογράφηση",
+    "gui.recordingStep.beginRecord": "Ξεκίνα την ηχογράφηση πατώντας το κουμπί κάτω",
+    "gui.recordingStep.permission": "{arrow}Χρειαζόμαστε την άδεια σου για τη χρήση του μικρόφωνου",
+    "gui.recordingStep.stop": "Τέλος ηχογράφησης",
+    "gui.recordingStep.record": "Ηχογράφηση",
+    "gui.soundEditor.sound": "Ήχος",
+    "gui.soundEditor.play": "Αναπαραγωγή",
+    "gui.soundEditor.stop": "Διακοπή",
+    "gui.soundEditor.trim": "Κόψιμο",
+    "gui.soundEditor.save": "Αποθήκευση",
+    "gui.soundEditor.undo": "Αναίρεση",
+    "gui.soundEditor.redo": "Ακύρωση Αναίρεσης",
+    "gui.soundEditor.faster": "Γρηγορότερα",
+    "gui.soundEditor.slower": "Πιο αργά",
+    "gui.soundEditor.echo": "Ηχώ",
+    "gui.soundEditor.robot": "Ρομπότ",
+    "gui.soundEditor.louder": "Δυνατότερα",
+    "gui.soundEditor.softer": "Απαλότερο",
+    "gui.soundEditor.reverse": "Αντιστροφή",
+    "gui.SpriteInfo.spritePlaceholder": "Όνομα",
+    "gui.SpriteInfo.sprite": "Αντικείμενο",
+    "gui.SpriteInfo.show": "Προβολή",
+    "gui.SpriteInfo.size": "Μέγεθος",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "διπλότυπο",
+    "gui.spriteSelectorItem.contextMenuDelete": "διαγραφή",
+    "gui.spriteSelectorItem.contextMenuExport": "Εξαγωγή",
+    "gui.spriteSelector.addSpriteFromLibrary": "Επιλέξτε ένα Αντικείμενο",
+    "gui.spriteSelector.addSpriteFromPaint": "Ζωγραφική",
+    "gui.spriteSelector.addSpriteFromSurprise": "Έκπληξη",
+    "gui.spriteSelector.addSpriteFromFile": "Μεταφόρτωση Αντικείμενου",
+    "gui.stageHeader.stageSizeLarge": "Εναλλαγή σε μεγάλο σκηνικό",
+    "gui.stageHeader.stageSizeSmall": "Εναλλαγή σε μικρό σκηνικό",
+    "gui.stageHeader.stageSizeFull": "Προβολή πλήρους οθόνης",
+    "gui.stageHeader.stageSizeUnFull": "Έξοδος από την προβολή πλήρους οθόνης",
+    "gui.stageHeader.fullscreenControl": "Έλεγχος Πλήρους Οθόνης",
+    "gui.spriteSelector.addBackdropFromLibrary": "Επιλέξτε Υπόβαθρο",
+    "gui.stageSelector.addBackdropFromPaint": "Ζωγραφική",
+    "gui.stageSelector.addBackdropFromSurprise": "Έκπληξη",
+    "gui.stageSelector.addBackdropFromFile": "Μεταφόρτωση Υποβάθρου",
+    "gui.stageSelector.stage": "Σκηνικό",
+    "gui.stageSelector.backdrops": "Yπόβαθρα",
+    "gui.turboMode.active": "Λειτουργία Γρήγορης Εκτέλεσης",
+    "gui.webglModal.label": "Ο περιηγητής σας δεν υποστηρίζει WebGL",
+    "gui.webglModal.description": "Δυστυχώς, φαίνεται ότι ο περιηγητής σας ή ο υπολογιστής σας {webGlLink}. Αυτή η τεχνολογία χρειάζεται για να λειτουργήσει το Scratch 3.0.",
+    "gui.webglModal.webgllink": "δεν υποστηρίζει WebGL",
+    "gui.webglModal.back": "Πίσω",
+    "gui.webglModal.previewfaq": "Για να μάθετε περισσότερα, πηγαίνετε στο {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Συχνές Ερωτήσεις",
+    "gui.costumeLibrary.chooseABackdrop": "Επιλέξτε Υπόβαθρο",
+    "gui.costumeLibrary.chooseACostume": "Επιλέξτε Ενδυμασία",
+    "gui.costumeTab.addBackdropFromLibrary": "Επιλέξτε Υπόβαθρο",
+    "gui.costumeTab.addCostumeFromLibrary": "Επιλέξτε Ενδυμασία",
+    "gui.costumeTab.addBlankCostume": "Ζωγραφική",
+    "gui.costumeTab.addSurpriseCostume": "Έκπληξη",
+    "gui.costumeTab.addFileBackdrop": "Μεταφόρτωση Υποβάθρου",
+    "gui.costumeTab.addFileCostume": "Μεταφόρτωση Ενδυμασίας",
+    "gui.costumeTab.addCameraCostume": "Κάμερα",
+    "gui.extensionLibrary.chooseAnExtension": "Επιλέξτε μια Επέκταση",
+    "gui.extensionLibrary.extensionUrl": "Εισάγετε το URL της επέκτασης",
+    "gui.gui.defaultProjectTitle": "Έργο Scratch",
+    "gui.recordingStep.alertMsg": "Η ηχογράφηση δεν ήταν δυνατό να ξεκινήσει",
+    "gui.projectLoader.loadError": "Απέτυχε η φόρτωση του αρχείου έργου που επιλέχθηκε.",
+    "gui.soundLibrary.chooseASound": "Επιλέξτε Ήχο",
+    "gui.soundTab.fileUploadSound": "Μεταφόρτωση Ήχου",
+    "gui.soundTab.surpriseSound": "Έκπληξη",
+    "gui.soundTab.recordSound": "Ηχογράφηση",
+    "gui.soundTab.addSoundFromLibrary": "Επιλέξτε Ήχο",
+    "gui.spriteLibrary.chooseASprite": "Επιλέξτε ένα Αντικείμενο",
+    "gui.tipsLibrary.tutorials": "Διάλεξε Μάθημα",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Γίνεται δημιουργία...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Γίνεται αποθήκευση...",
+    "gui.defaultProject.meow": "Μιάου",
+    "gui.defaultProject.variable": "η μεταβλητή μου",
+    "gui.howtos.intro-move-sayhello-hat.name": "Ξεκινώντας",
+    "gui.howtos.intro-move.step_stepMove": "Πρόσθεσε ένα μπλοκ κίνησης",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Κάνε κλικ στην πράσινη σημαία για να ξεκινήσεις",
+    "gui.howtos.say-it-out-loud": "Δημιούργησε Κινούμενες Εικόνες Που Μιλούν",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Πρόσθεσε τα μπλοκ Κείμενο σε Ομιλία",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Πείτε Κάτι!",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Όρισε μια Φωνή",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Κινήσου",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Πρόσθεσε Φόντο",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Πρόσθεσε άλλον ένα Χαρακτήρα",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Πες ένα Τραγούδι",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Αλλάξτε το Χρώμα!",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Κάνε περιστροφή",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Μεγέθυνση και Σμίκρυνση",
+    "gui.howtos.cartoon-network": "Ζωντάνεψε ένα Παιχνίδι Περιπέτειας",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Πείτε Κάτι!",
+    "gui.howtos.cartoon-network.step_CNglide": "Γλύστρησε Γύρω",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Κρατήστε Σκορ!",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Ζωντάνεψε ένα Όνομα",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Διάλεξε Ένα Sprite Γράμματος",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Παίξε ένα Ήχο Όταν Επιλεγεί",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Διάλεξε Ένα Άλλο Sprite Γράμματος",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Αλλαγή χρώματος",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Διάλεξε Ένα Άλλο Sprite Γράμματος & Κάνε Το Να Γυρίσει",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Διάλεξε Ένα Άλλο Sprite Γράμματος & Κάνε Το Να Μεγαλώσει",
+    "gui.howtos.make-music.name": "Δημιουργήστε Μουσική",
+    "gui.howtos.Make-Music.step_PickInstrument": "Διάλεξε ένα Sprite Οργάνου",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Παίξε Ήχο Όταν Επιλεγεί",
+    "gui.howtos.Make-Music.step_MakeSong": "Δημιούργησε ένα Τραγούδι",
+    "gui.howtos.make-music.step_MakeBeat": "Διάλεξε ένα Τύμπανο και Κάνε έναν Χτύπο",
+    "gui.howtos.make-music.step_MakeBeatBox": "Πρόσθεσε το Sprite Μικροφώνου & Ξάφνιασε το Beatbox",
+    "gui.howtos.make-a-game.name": "Κάνε ένα Παιχνίδι Τηλεχειρισμού",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Διάλεξε ένα Αντικείμενο",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Παίξε Ήχο Όταν Επιλεγεί",
+    "gui.howtos.make-a-game.step_GameAddScore": "Δημιουργία Μεταβλητής Βαθμολογίας",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Όταν Πατηθεί Αύξησε το Σκορ",
+    "gui.howtos.make-a-game.step_Random": "Πήγαινε σε μια τυχαία θέση",
+    "gui.howtos.make-music.step_GameChangeColor": "Αλλάξτε το Χρώμα!",
+    "gui.howtos.make-music.step_ResetScore": "Επαναφορά Βαθμολογίας",
+    "gui.howtos.make-a-chase-game.name": "Κάνε ένα Παιχνίδι Καταδίωξης",
+    "gui.howtos.Chase-Game.step_BG": "Πρόσθεσε Φόντο",
+    "gui.howtos.chase-game.step_AddOcto": "Πρόσθεσε ένα Sprite",
+    "gui.howtos.make-music.step_LeftRight": "Μετακινήσου Δεξιά & Αριστερά Με Τα Βελάκια",
+    "gui.howtos.Chase-Game.step_UpDown": "Μετακινήσου Πάνω & Κάτω Με Τα Βελάκια",
+    "gui.howtos.Chase-Game.step_AddStar": "Πρόσθεσε Ένα Άλλο Sprite",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Κινήσου Τυχαία",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Στο Sprite Χταπόδι, Όταν Αγγίζεις Παίξε Ήχο",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Δημιουργία Μεταβλητής Βαθμολογίας",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Στο Sprite Χταπόδι, Όταν Αγγίζεις Πρόσθεσε Βαθμολογία",
+    "gui.howtos.add-sprite.name": "Πρόσθεσε ένα Sprite",
+    "gui.howtos.add-sprite.step_addSprite": "Πρόσθεσε Sprite",
+    "gui.howtos.add-a-backdrop.name": "Πρόσθεσε Φόντο",
+    "gui.howtos.change-size.name": "Αλλαγή Μεγέθους",
+    "gui.howtos.glide-around.name": "Γλύστρησε Γύρω",
+    "gui.howtos.record-a-sound.name": "Έγγραφή Ήχου",
+    "gui.howtos.spin-video.name": "Κάνε να Περιστρέφεται",
+    "gui.howtos.hide-and-show.name": "Απόκρυψη και Εμφάνιση",
+    "gui.howtos.switch-costume.name": "Ζωντάνεψε ένα Sprite",
+    "gui.howtos.move-around-with-arrow-keys.name": "Χρησιμοποίησε τα Πλήκτρα Βέλους",
+    "gui.howtos.add-effects.name": "Πρόσθεσε Εφέ",
+    "gui.extension.music.name": "Μουσική",
+    "gui.extension.music.description": "Παίξε όργανα και ντραμς.",
+    "gui.extension.pen.name": "Πένα",
+    "gui.extension.pen.description": "Σχεδίασε με τα sprites σου.",
+    "gui.extension.videosensing.name": "Προβολή από Κάμερα",
+    "gui.extension.videosensing.description": "Ανίχνευση κίνησης με την κάμερα.",
+    "gui.extension.text2speech.name": "Κείμενο σε Ομιλία",
+    "gui.extension.text2speech.description": "Κάνε τα έργα σου να μιλούν.",
+    "gui.extension.translate.name": "Μετάφραση",
+    "gui.extension.translate.description": "Μετάφρασε το κείμενο σε πολλές γλώσσες.",
+    "gui.extension.microbit.description": "Σύνδεσε τα έργα σου με τον πραγματικό κόσμο.",
+    "gui.extension.microbit.connectingMessage": "Σύνδεση",
+    "gui.extension.ev3.description": "Φτιάξε διαδραστικά ρομπότ και πολλά άλλα.",
+    "gui.extension.ev3.connectingMessage": "Συνδέεται. Βεβαιωθείτε ότι το pin στο EV3 έχει οριστεί σε 1234.",
+    "gui.extension.wedo2.description": "Κατασκεύασε με κινητήρες και αισθητήρες.",
+    "gui.extension.wedo2.connectingMessage": "Σύνδεση",
+    "gui.libraryTags.all": "Όλα",
+    "gui.libraryTags.animals": "Ζώα",
+    "gui.libraryTags.dance": "Χορός",
+    "gui.libraryTags.effects": "Εφέ",
+    "gui.libraryTags.fantasy": "Φανταστικά",
+    "gui.libraryTags.fashion": "Μόδα",
+    "gui.libraryTags.food": "Τρόφιμα",
+    "gui.libraryTags.indoors": "Εσωτερικοί χώροι",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Μουσική",
+    "gui.libraryTags.notes": "Νότες",
+    "gui.libraryTags.outdoors": "Εξωτερικοί Χώροι",
+    "gui.libraryTags.patterns": "Μοτίβα",
+    "gui.libraryTags.people": "Άνθρωποι",
+    "gui.libraryTags.percussion": "Κρουστά",
+    "gui.libraryTags.space": "Διάστημα",
+    "gui.libraryTags.sports": "Αθλήματα",
+    "gui.libraryTags.underwater": "Κάτω από το νερό",
+    "gui.libraryTags.voice": "Φωνή",
+    "gui.libraryTags.wacky": "Αστείοι ήχοι",
+    "gui.libraryTags.animation": "Κινούμενα σχέδια",
+    "gui.libraryTags.art": "Τέχνη",
+    "gui.libraryTags.games": "Παιχνίδια",
+    "gui.libraryTags.stories": "Ιστορίες",
+    "gui.libraryTags.letters": "Γράμματα",
+    "gui.opcodeLabels.direction": "κατεύθυνση",
+    "gui.opcodeLabels.xposition": "θέση x",
+    "gui.opcodeLabels.yposition": "θέση y",
+    "gui.opcodeLabels.size": "μέγεθος",
+    "gui.opcodeLabels.costumename": "όνομα ενδυμασίας",
+    "gui.opcodeLabels.costumenumber": "αριθμός ενδυμασίας",
+    "gui.opcodeLabels.backdropname": "όνομα υποβάθρου",
+    "gui.opcodeLabels.backdropnumber": "αριθμός υπόβαθρου",
+    "gui.opcodeLabels.volume": "ένταση",
+    "gui.opcodeLabels.tempo": "ρυθμός",
+    "gui.opcodeLabels.answer": "απάντηση",
+    "gui.opcodeLabels.loudness": "ένταση",
+    "gui.opcodeLabels.username": "όνομα χρήστη",
+    "gui.opcodeLabels.year": "χρόνος",
+    "gui.opcodeLabels.month": "μήνας",
+    "gui.opcodeLabels.date": "ημερομηνία",
+    "gui.opcodeLabels.dayofweek": "μέρα της εβδομάδας",
+    "gui.opcodeLabels.hour": "ώρα",
+    "gui.opcodeLabels.minute": "λεπτό",
+    "gui.opcodeLabels.second": "δευτερόλεπτο",
+    "gui.opcodeLabels.timer": "χρονομέτρηση",
+    "gui.sharedMessages.backdrop": "υπόβαθρο{index}",
+    "gui.sharedMessages.costume": "ενδυμασία{index}",
+    "gui.sharedMessages.sprite": "Αντικείμενο{index}",
+    "gui.sharedMessages.pop": "μπουμ"
 }

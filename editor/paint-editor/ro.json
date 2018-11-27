@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Culoare",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Saturație",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Strălucire",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Nu-ți face griji, ne ocupăm de asta {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "În curând...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Lucrăm la asta {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Umplere",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Costum",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Grupează",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Degrupează",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Anulează ultima modificare",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Refă acțiunea anulată",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "În față",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "În spate",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Primul",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Înapoi",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Altele",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Dimensiune",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Grosimea radierei",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Copiază",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Lipește",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Șterge",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Curbat",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Unghi",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Grosime",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Întoarce orizontal",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Întoarce vertical",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Plin",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Contur",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Convertește la bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Convertește în format vectorial",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Contur",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Pensulă",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Radieră",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Umplere",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Linie",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Cerc",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Dreptunghi",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Remodelează",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Dreptunghi rotunjit",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Selecteaza",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Text",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Schimbă",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Culoare",
+    "paint.paintEditor.saturation": "Saturație",
+    "paint.paintEditor.brightness": "Strălucire",
+    "gui.comingSoon.message1": "Nu-ți face griji, ne ocupăm de asta {emoji}",
+    "gui.comingSoon.message2": "În curând...",
+    "gui.comingSoon.message3": "Lucrăm la asta {emoji}",
+    "paint.paintEditor.fill": "Umplere",
+    "paint.paintEditor.costume": "Costum",
+    "paint.paintEditor.group": "Grupează",
+    "paint.paintEditor.ungroup": "Degrupează",
+    "paint.paintEditor.undo": "Anulează ultima modificare",
+    "paint.paintEditor.redo": "Refă acțiunea anulată",
+    "paint.paintEditor.forward": "În față",
+    "paint.paintEditor.backward": "În spate",
+    "paint.paintEditor.front": "Primul",
+    "paint.paintEditor.back": "Înapoi",
+    "paint.paintEditor.more": "Altele",
+    "paint.modeTools.brushSize": "Dimensiune",
+    "paint.modeTools.eraserSize": "Grosimea radierei",
+    "paint.modeTools.copy": "Copiază",
+    "paint.modeTools.paste": "Lipește",
+    "paint.modeTools.delete": "Șterge",
+    "paint.modeTools.curved": "Curbat",
+    "paint.modeTools.pointed": "Unghi",
+    "paint.modeTools.thickness": "Grosime",
+    "paint.modeTools.flipHorizontal": "Întoarce orizontal",
+    "paint.modeTools.flipVertical": "Întoarce vertical",
+    "paint.modeTools.filled": "Plin",
+    "paint.modeTools.outlined": "Contur",
+    "paint.paintEditor.bitmap": "Convertește la bitmap",
+    "paint.paintEditor.vector": "Convertește în format vectorial",
+    "paint.paintEditor.stroke": "Contur",
+    "paint.brushMode.brush": "Pensulă",
+    "paint.eraserMode.eraser": "Radieră",
+    "paint.fillMode.fill": "Umplere",
+    "paint.lineMode.line": "Linie",
+    "paint.ovalMode.oval": "Cerc",
+    "paint.rectMode.rect": "Dreptunghi",
+    "paint.reshapeMode.reshape": "Remodelează",
+    "paint.roundedRectMode.roundedRect": "Dreptunghi rotunjit",
+    "paint.selectMode.select": "Selecteaza",
+    "paint.textMode.text": "Text",
+    "paint.colorPicker.swap": "Schimbă"
 }

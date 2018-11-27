@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Màu",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Độ bão hòa",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Độ sáng",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Đừng lo, chúng tôi đang phát triển tính năng này {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Sắp có...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Chúng tôi đang tiếp tục phát triển tính năng này {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Tô",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Thiết kế",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Nhóm",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Hủy nhóm",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Hoàn tác",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Làm lại ",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Đưa lên phía trên",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Đưa ra phía sau",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Đưa lên phía trên cùng",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Đưa ra phía sau cùng",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Nhiều hơn",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Kích thước ",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Kích thước tẩy",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Sao chép",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Dán",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Xóa",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Uốn cong",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Góc nhọn",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Độ dày ngòi bút",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Lật ngang",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Lật dọc",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Hình đầy",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Hình rỗng",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Chuyển thành Bitmap",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Chuyển thành Vector",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Viền",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Cọ vẽ",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Tẩy",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Tô",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Dòng",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Hình tròn",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Hình chữ nhật",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Đổi hình dạng",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Hình vuông góc tròn",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Chọn",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Văn bản",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Đổi màu",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Màu",
+    "paint.paintEditor.saturation": "Độ bão hòa",
+    "paint.paintEditor.brightness": "Độ sáng",
+    "gui.comingSoon.message1": "Đừng lo, chúng tôi đang phát triển tính năng này {emoji}",
+    "gui.comingSoon.message2": "Sắp có...",
+    "gui.comingSoon.message3": "Chúng tôi đang tiếp tục phát triển tính năng này {emoji}",
+    "paint.paintEditor.fill": "Tô",
+    "paint.paintEditor.costume": "Thiết kế",
+    "paint.paintEditor.group": "Nhóm",
+    "paint.paintEditor.ungroup": "Hủy nhóm",
+    "paint.paintEditor.undo": "Hoàn tác",
+    "paint.paintEditor.redo": "Làm lại ",
+    "paint.paintEditor.forward": "Đưa lên phía trên",
+    "paint.paintEditor.backward": "Đưa ra phía sau",
+    "paint.paintEditor.front": "Đưa lên phía trên cùng",
+    "paint.paintEditor.back": "Đưa ra phía sau cùng",
+    "paint.paintEditor.more": "Nhiều hơn",
+    "paint.modeTools.brushSize": "Kích thước ",
+    "paint.modeTools.eraserSize": "Kích thước tẩy",
+    "paint.modeTools.copy": "Sao chép",
+    "paint.modeTools.paste": "Dán",
+    "paint.modeTools.delete": "Xóa",
+    "paint.modeTools.curved": "Uốn cong",
+    "paint.modeTools.pointed": "Góc nhọn",
+    "paint.modeTools.thickness": "Độ dày ngòi bút",
+    "paint.modeTools.flipHorizontal": "Lật ngang",
+    "paint.modeTools.flipVertical": "Lật dọc",
+    "paint.modeTools.filled": "Hình đầy",
+    "paint.modeTools.outlined": "Hình rỗng",
+    "paint.paintEditor.bitmap": "Chuyển thành Bitmap",
+    "paint.paintEditor.vector": "Chuyển thành Vector",
+    "paint.paintEditor.stroke": "Viền",
+    "paint.brushMode.brush": "Cọ vẽ",
+    "paint.eraserMode.eraser": "Tẩy",
+    "paint.fillMode.fill": "Tô",
+    "paint.lineMode.line": "Dòng",
+    "paint.ovalMode.oval": "Hình tròn",
+    "paint.rectMode.rect": "Hình chữ nhật",
+    "paint.reshapeMode.reshape": "Đổi hình dạng",
+    "paint.roundedRectMode.roundedRect": "Hình vuông góc tròn",
+    "paint.selectMode.select": "Chọn",
+    "paint.textMode.text": "Văn bản",
+    "paint.colorPicker.swap": "Đổi màu"
 }

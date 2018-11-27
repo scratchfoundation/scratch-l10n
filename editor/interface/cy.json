@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Ailgysyslltu",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Pecyn Cefn",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Gwall wrth lwytho'r pecyn cefn",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Llwytho...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Rhagor",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Mae pecyn cefn yn wag",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Nid yw eich porwr yn cael ei gynnal",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Mae'n ddrwg gennym ond nid yw Scratch 3.0 yn cynnal Internet Explorer, Vivaldi, Opera na Silk. Rydym yn argymell eich bod yn profi porwyr newydd fel Google Chrome, Mozilla Firefox, neu Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Nôl",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "I wybod mwy, ewch i {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Cwestiynau Cyffredin",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Cymryd Llun",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Llwytho Camera...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Mae angen eich caniatâd i ni ddefnyddio eich camera",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Cymryd Llun Eto",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Cadw",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Cymryd Llun",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Llwytho...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Galluogi Camera",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Tiwtorialau",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Cau",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Pethau eraill i'w gwneud!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Gweld rhagor",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Peidiwch poeni, rydym wrthi {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Yn Dod Cyn Bo Hir",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Rydym yn gweithio arno {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Heb ganfod dyfais",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Cadwch eich dyfais wrth law, yna cychwyn chwilio.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Pwyswch y botwm ar eich dyfais.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Cychwyn Chwilio",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Chwilio...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Ceisio eto",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Wedi cysylltu",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Datgysylltu",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "Mynd i'r Golygydd",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Cysylltu...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Wps! Aeth rhywbeth o'i le",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Ceisio eto",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Cymorth",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Enw dyfais",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Cysylltu",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Chwilio am ddyfeisiau",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Heb ganfod dyfais",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Dewis y ddyfais o'r rhestr uchod",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Adnewyddu",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Gwnewch yn siwr fod Scratch Link wedi ei osod ac yn rhedeg",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Gwirio fod Bluetooth wedi ei alluogi",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Ceisio eto",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Cymorth",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Mynd",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Aros",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "Wps! Aeth rhywbeth o'i le",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Ymddiheuriadau ond mae'n ymddangos fod Scratch wedi chwalu. Mae'r gwall wedi ei adrodd yn awtomatig i Dîm Scratch. Adnewyddwch eich tudalen i geisio eto.",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Ail-lwytho",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Creu Bloc",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Ychwanegu mewnbwn",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "rhif neu destun",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Ychwanegu mewnbwn",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "boole",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Ychwanegwch label",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Yn rhedeg heb adnewyddu'r sgrin",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Diddymu",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "Iawn",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Cyfeiriad",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "O Amgylch",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Chwith/De",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Peidiwch troi",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Ychwanegu Estyniad",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Cod",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Cefnlenni",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Gwisgoedd",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Seiniau",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Edrych ar Broject Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Rhowch ddolen i un o'r projectau Scratch rydych y eu rhannu. Ni fydd newidiadau sy'n cael eu gwneud yn y Beta 3.0 hwn yn cael eu cadw.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Rhowch ddolen i un o'r projectau Scratch rydych yn eu rhannu. Ni fydd newidiadau sydd wedi eu gwneud yn y Rhagolwg 3.0 hwn yn cael eu cadw.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "O na, nid yw'r ddolen yna neu enw'r project yn edrych yn iawn.",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Gweld:",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Mynd Nôl",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "I wybod mwy, ewch i {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Cwestiynau Cyffredin",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Yn Dod Cyn Bo Hir",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Chwilio",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Y Cyfan",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Creu blociau …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Yn llwytho ciplun ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Yn llwytho seiniau …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Yn llwytho estyniadau …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Casglu cathod …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Darlledu nanos …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Enchwythu gobos …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Paratoi emojis …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Llwytho Project",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Proffil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Fy Mhethau",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Fy Nosbarthiadau",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Fy Nosbarth",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Gosodiadau cyfrif",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Allgofnodi",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Gweld y Gymuned",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Enw defnyddwir",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Cyfrinair",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Mewngofnodi",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Angen Cymorth?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "dewisydd iaith",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Tiwtorialau",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Adfer Corlun",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Adfer Sain",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Adfer Gwisg",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Adfer",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Cadw nawr",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Cadw fel copi",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Ailgymysgu",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Newydd",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Ffeil",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Llwytho o'ch cyfrifiadur",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Cadw i'ch cyfrifiadur",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Golygu",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Diffodd y Modd Tyrbo",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "`Cychwyn y Modd Tyrbo",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Ymuno â Scratch",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Mewngofnodi",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Rhoi Adborth",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Teitl project yma",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Wedi eu Rhannu",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Rhannu",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Cymorth",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Nôl",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(gwag)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "hyd {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "darlleniad arferol",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "sgrîn fawr",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "llithrydd",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Rhowch gynnig ar Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Croeso i Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Nid Nawr",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Rhowch Gynnig Arni",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Gweld Project 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Croeso i Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Rydym yn gweithio ar genhedlaeth nesaf Scratch. Rydym yn awyddus i chi ei brofi!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Nid Nawr",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Rhowch gynnig arni {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Gweld Project 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "I wybod mwy, ewch i {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Cwestiynau Cyffredin",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Ar gyfer pob ciplun",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Ar gyfer y ciplun yma'n unig",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Newidyn cwmwl (cedwir ar y gweinydd)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Bydd y newidyn yma ar gael ar gyfer pob corlun.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Diddymu",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "Iawn",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Aros",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Chwarae",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Llwytho...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Cadw",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Ail Recordio",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Recordio Sain",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Cychwyn recordio drwy glicio ar y botwm isod",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}Rydym angen eich caniatâd i ddefnyddio eich meicroffon",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Atal y recordio",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Recordio",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Sain",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Chwarae",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Aros",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Tocio",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Cadw",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Dadwneud",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Ailwneud",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Yn gyflymach",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Arafach",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Atsain",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Yn uwch",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Yn feddalach",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Gwrthdroi",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Enw",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Ciplun",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Dangos",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Maint",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "dyblygu",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "dileu",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "allforio",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Dewiswch Gorlun",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Paentio",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Annisgwyl",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Llwytho Corlun i Fyny",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Newid i lwyfan mawr",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Newid i lwyfan bach",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Mynd i'r modd sgrin llawn",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Gadael y modd sgrin llawn",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Rheolydd Sgrin Llawn",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Dewiswch Gefnlen",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paent",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Annisgwyl",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Llwytho'r Gefnlen i Fyny",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Llwyfan",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Cefnlenni",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Modd Tyrbo",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Nid yw eich Porwr yn Cynnal WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Yn anffodus, mae'n edrych mai eich porwr neu gyfrifiadur {webGlLink}. Mae angen y dechnoleg yma i redeg Scratch 3.0",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "nid yw'#n cynnal WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Nôl",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "I wybod mwy, ewch i {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Cwestiynau Cyffredin",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Dewiswch Gefnlen",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Dewiswch Wisg",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Dewiswch Gefnlen",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Dewiswch Wisg",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Paentio",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Annisgwyl",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Llwytho Cefnlen i Fyny",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Llwytho Gwisg i Fyny",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Camera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Dewis Estyniad",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Rhowch URL yr estyniad",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Project Scratch",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Methwyd cychwyn recordio",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Methodd y ffeil sydd wedi ei dewis â llwytho.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Dewiswch Sain",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Llwytho Sain i Fyny...",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Annisgwyl",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Recordio",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Dewis Sain",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Dewis Corlun",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Dewis Tiwtorial",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Creu...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Wrthi'n cadw...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Miaw",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "fy newidyn",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Cychwyn Arni",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Ychwanegu bloc symud",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Clicio'r faner werdd i gychwyn",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Creu Animeiddiadau sy'n Siarad",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Ychwanegu'r Testun i Flociau Siarad",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Dweud Rhywbeth",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Gosod Llais",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Symud o Amgylch",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Ychwanegu Cefnlen",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Ychwanegu Cymeriad Arall",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Canu Cân",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Newid Lliw",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Troelli",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Tyfu a Lleihau",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animeiddio Gêm Antur",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Dewis pa Gymeriad i'w Ddangos",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Dweud Rhywbeth",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Llithro o Amgylch",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Dewis pa Wrthrych i Redeg ar ei Ôl",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Casglu Gwrthrychau",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Creu Newidyn Sgôr",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Cadw Sgôr",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Lefel i Fyny: Newid Cefnlen",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animeiddio Enw",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Dewis Corlun Llythyren",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Chwarae Sain Wrth Glicio",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Dewis Corlun Llythyren Arall",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Newid lliw",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Dewiswch Corlun Llythyren Arall a'i Wneud i Droi",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Dewis Corlun Llythyren Arall a Gwneud Iddo Dyfu",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Creu Cerddoriaeth",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Dewis Corlun Offeryn",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Chware Sain Wrth ei Glicio",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Creu Cân",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Dewis Drwm a Chreu Curiad",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Dewiswch y Corlun Meicroffon a'r Blwch Taro Annisgwyl",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Creu Gêm Cliciwr",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Dewis Corlun",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Chware Sain Wrth ei Glicio",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Creu Newidyn Sgôr",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Pan Fydd Wedi ei Glicio, Cynyddu'r Sgor",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Mynd i fan ar hap",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Newid Lliw",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Ailosod y Sgôr",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Creu Gêm Ymlid",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Ychwanegu Cefndir",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Ychwanegu Corlun",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Symud i'r Dde a'r Chwith gyda'r Bysellau Saeth",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "Symud i Fyny ac i Lawr gyda Bysellau Saeth",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Ychwanegu Corlun Arall",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Symud ar Hap",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Mewn Corlun Octopws, Pan yn Cyffwrdd Chwaraea Sain ",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Creu Newidyn Sgôr",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Yn y Corlun Octopws, Pan yn Cyffwrdd Ychwanega Sgôr",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Ychwanegu Corlun",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Ychwanegu Corlun",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Ychwanegu Cefnlen",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Newid Maint",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Llithro o Amgylch",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Recordio Sain",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Gwnewch iddo Droelli",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Cuddio a Dangos",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animeiddio Corlun",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Defnyddiwch y Botymau Saeth",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Ychwanegu Effeithiau",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Cerddoriaeth",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Chwarae offerynau a drymiau",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Pin",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Lluniadu gyda'ch corluniau.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Synhwyro Fideo",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Synhwyro symudiad gyda'r camera",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Testun i Leferydd",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Gwnewch i'ch projectau siarad.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Cyfieithu",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Cyfieithu testun i lawer o ieithoedd.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Cysylltu eich project â'r byd.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Cysylltu",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Adeiladu robotiaid rhyngweithiol a mwy.",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Wrthi'n cysylltu. Gwnewch yn siwr fod y PIN ar eich EV3 wedi ei osod i 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Adeiladu gyda moduron a synwyryddion",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Cysylltu",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Y Cyfan",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Anifeiliaid",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Dawns",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Effeithiau",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Ffantasi",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Ffasiwn",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Bwyd",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Dan do",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Cylchoedd",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Cerddoriaeth",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Nodiadau",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Tu allan",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patrymau",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Pobl",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Offerynnau taro",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Gofod",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Chwaraeon",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "O dan y dŵr",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Llais",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Gwirion",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animeiddio",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Celf",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Gemau",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Straeon",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Llythyrau",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "cyfeiriad",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "safle x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "safle y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "maint",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "enw'r wisg",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "rhif gwisg",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "enw cefnlen",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "rhif cefnlen",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "lefel sain",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "amseriad",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "ateb",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "cryfder sain",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "enw defnyddiwr",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "blwyddyn",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mis",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "dyddiad",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "diwrnod o'r wythnos",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "awr",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "munud",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "eiliad",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "amserydd",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "cefnlen {index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "gwisg{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Corlun{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "pop",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Ailgysyslltu",
+    "gui.backpack.header": "Pecyn Cefn",
+    "gui.backpack.errorBackpack": "Gwall wrth lwytho'r pecyn cefn",
+    "gui.backpack.loadingBackpack": "Llwytho...",
+    "gui.backpack.more": "Rhagor",
+    "gui.backpack.emptyBackpack": "Mae pecyn cefn yn wag",
+    "gui.unsupportedBrowser.label": "Nid yw eich porwr yn cael ei gynnal",
+    "gui.unsupportedBrowser.description": "Mae'n ddrwg gennym ond nid yw Scratch 3.0 yn cynnal Internet Explorer, Vivaldi, Opera na Silk. Rydym yn argymell eich bod yn profi porwyr newydd fel Google Chrome, Mozilla Firefox, neu Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Nôl",
+    "gui.unsupportedBrowser.previewfaq": "I wybod mwy, ewch i {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Cwestiynau Cyffredin",
+    "gui.cameraModal.cameraModalTitle": "Cymryd Llun",
+    "gui.cameraModal.loadingCameraMessage": "Llwytho Camera...",
+    "gui.cameraModal.permissionRequest": "Mae angen eich caniatâd i ni ddefnyddio eich camera",
+    "gui.cameraModal.retakePhoto": "Cymryd Llun Eto",
+    "gui.cameraModal.save": "Cadw",
+    "gui.cameraModal.takePhoto": "Cymryd Llun",
+    "gui.cameraModal.loadingCaption": "Llwytho...",
+    "gui.cameraModal.enableCameraCaption": "Galluogi Camera",
+    "gui.cards.all-tutorials": "Tiwtorialau",
+    "gui.cards.close": "Cau",
+    "gui.cards.more-things-to-try": "Pethau eraill i'w gwneud!",
+    "gui.cards.see-more": "Gweld rhagor",
+    "gui.comingSoon.message1": "Peidiwch poeni, rydym wrthi {emoji}",
+    "gui.comingSoon.message2": "Yn Dod Cyn Bo Hir",
+    "gui.comingSoon.message3": "Rydym yn gweithio arno {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Heb ganfod dyfais",
+    "gui.connection.auto-scanning.prescan": "Cadwch eich dyfais wrth law, yna cychwyn chwilio.",
+    "gui.connection.auto-scanning.pressbutton": "Pwyswch y botwm ar eich dyfais.",
+    "gui.connection.auto-scanning.start-search": "Cychwyn Chwilio",
+    "gui.connection.connecting-searchbutton": "Chwilio...",
+    "gui.connection.auto-scanning.try-again": "Ceisio eto",
+    "gui.connection.connected": "Wedi cysylltu",
+    "gui.connection.disconnect": "Datgysylltu",
+    "gui.connection.go-to-editor": "Mynd i'r Golygydd",
+    "gui.connection.connecting-cancelbutton": "Cysylltu...",
+    "gui.connection.error.errorMessage": "Wps! Aeth rhywbeth o'i le",
+    "gui.connection.error.tryagainbutton": "Ceisio eto",
+    "gui.connection.error.helpbutton": "Cymorth",
+    "gui.connection.peripheral-name-label": "Enw dyfais",
+    "gui.connection.connect": "Cysylltu",
+    "gui.connection.scanning.lookingforperipherals": "Chwilio am ddyfeisiau",
+    "gui.connection.scanning.noPeripheralsFound": "Heb ganfod dyfais",
+    "gui.connection.scanning.instructions": "Dewis y ddyfais o'r rhestr uchod",
+    "gui.connection.search": "Adnewyddu",
+    "gui.connection.unavailable.installscratchlink": "Gwnewch yn siwr fod Scratch Link wedi ei osod ac yn rhedeg",
+    "gui.connection.unavailable.enablebluetooth": "Gwirio fod Bluetooth wedi ei alluogi",
+    "gui.connection.unavailable.tryagainbutton": "Ceisio eto",
+    "gui.connection.unavailable.helpbutton": "Cymorth",
+    "gui.controls.go": "Mynd",
+    "gui.controls.stop": "Aros",
+    "gui.crashMessage.label": "Wps! Aeth rhywbeth o'i le",
+    "gui.crashMessage.description": "Ymddiheuriadau ond mae'n ymddangos fod Scratch wedi chwalu. Mae'r gwall wedi ei adrodd yn awtomatig i Dîm Scratch. Adnewyddwch eich tudalen i geisio eto.",
+    "gui.crashMessage.reload": "Ail-lwytho",
+    "gui.customProcedures.myblockModalTitle": "Creu Bloc",
+    "gui.customProcedures.addAnInputNumberText": "Ychwanegu mewnbwn",
+    "gui.customProcedures.numberTextType": "rhif neu destun",
+    "gui.customProcedures.addAnInputBoolean": "Ychwanegu mewnbwn",
+    "gui.customProcedures.booleanType": "boole",
+    "gui.customProcedures.addALabel": "Ychwanegwch label",
+    "gui.customProcedures.runWithoutScreenRefresh": "Yn rhedeg heb adnewyddu'r sgrin",
+    "gui.customProcedures.cancel": "Diddymu",
+    "gui.customProcedures.ok": "Iawn",
+    "gui.SpriteInfo.direction": "Cyfeiriad",
+    "gui.directionPicker.rotationStyles.allAround": "O Amgylch",
+    "gui.directionPicker.rotationStyles.leftRight": "Chwith/De",
+    "gui.directionPicker.rotationStyles.dontRotate": "Peidiwch troi",
+    "gui.gui.addExtension": "Ychwanegu Estyniad",
+    "gui.gui.codeTab": "Cod",
+    "gui.gui.backdropsTab": "Cefnlenni",
+    "gui.gui.costumesTab": "Gwisgoedd",
+    "gui.gui.soundsTab": "Seiniau",
+    "gui.importInfo.title": "Edrych ar Broject Scratch 2.0",
+    "gui.importInfo.betamessage": "Rhowch ddolen i un o'r projectau Scratch rydych y eu rhannu. Ni fydd newidiadau sy'n cael eu gwneud yn y Beta 3.0 hwn yn cael eu cadw.",
+    "gui.importInfo.message": "Rhowch ddolen i un o'r projectau Scratch rydych yn eu rhannu. Ni fydd newidiadau sydd wedi eu gwneud yn y Rhagolwg 3.0 hwn yn cael eu cadw.",
+    "gui.importInfo.invalidFormatError": "O na, nid yw'r ddolen yna neu enw'r project yn edrych yn iawn.",
+    "gui.importModal.viewproject": "Gweld:",
+    "gui.importInfo.goback": "Mynd Nôl",
+    "gui.importInfo.previewfaq": "I wybod mwy, ewch i {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Cwestiynau Cyffredin",
+    "gui.extensionLibrary.comingSoon": "Yn Dod Cyn Bo Hir",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Chwilio",
+    "gui.library.allTag": "Y Cyfan",
+    "gui.loader.message1": "Creu blociau …",
+    "gui.loader.message2": "Yn llwytho ciplun ...",
+    "gui.loader.message3": "Yn llwytho seiniau …",
+    "gui.loader.message4": "Yn llwytho estyniadau …",
+    "gui.loader.message5": "Casglu cathod …",
+    "gui.loader.message6": "Darlledu nanos …",
+    "gui.loader.message7": "Enchwythu gobos …",
+    "gui.loader.message8": "Paratoi emojis …",
+    "gui.loader.headline": "Llwytho Project",
+    "gui.accountMenu.profile": "Proffil",
+    "gui.accountMenu.myStuff": "Fy Mhethau",
+    "gui.accountMenu.myClasses": "Fy Nosbarthiadau",
+    "gui.accountMenu.myClass": "Fy Nosbarth",
+    "gui.accountMenu.accountSettings": "Gosodiadau cyfrif",
+    "gui.accountMenu.signOut": "Allgofnodi",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Gweld y Gymuned",
+    "general.username": "Enw defnyddwir",
+    "general.password": "Cyfrinair",
+    "general.signIn": "Mewngofnodi",
+    "login.needHelp": "Angen Cymorth?",
+    "gui.menuBar.LanguageSelector": "dewisydd iaith",
+    "gui.menuBar.tutorialsLibrary": "Tiwtorialau",
+    "gui.menuBar.restoreSprite": "Adfer Corlun",
+    "gui.menuBar.restoreSound": "Adfer Sain",
+    "gui.menuBar.restoreCostume": "Adfer Gwisg",
+    "gui.menuBar.restore": "Adfer",
+    "gui.menuBar.saveNow": "Cadw nawr",
+    "gui.menuBar.saveAsCopy": "Cadw fel copi",
+    "gui.menuBar.remix": "Ailgymysgu",
+    "gui.menuBar.new": "Newydd",
+    "gui.menuBar.file": "Ffeil",
+    "gui.menuBar.uploadFromComputer": "Llwytho o'ch cyfrifiadur",
+    "gui.menuBar.downloadToComputer": "Cadw i'ch cyfrifiadur",
+    "gui.menuBar.edit": "Golygu",
+    "gui.menuBar.turboModeOff": "Diffodd y Modd Tyrbo",
+    "gui.menuBar.turboModeOn": "`Cychwyn y Modd Tyrbo",
+    "gui.menuBar.joinScratch": "Ymuno â Scratch",
+    "gui.menuBar.signIn": "Mewngofnodi",
+    "gui.menuBar.giveFeedback": "Rhoi Adborth",
+    "gui.gui.projectTitlePlaceholder": "Teitl project yma",
+    "gui.menuBar.isShared": "Wedi eu Rhannu",
+    "gui.menuBar.share": "Rhannu",
+    "gui.modal.help": "Cymorth",
+    "gui.modal.back": "Nôl",
+    "gui.monitor.listMonitor.empty": "(gwag)",
+    "gui.monitor.listMonitor.listLength": "hyd {length}",
+    "gui.monitor.contextMenu.default": "darlleniad arferol",
+    "gui.monitor.contextMenu.large": "sgrîn fawr",
+    "gui.monitor.contextMenu.slider": "llithrydd",
+    "gui.previewInfo.label": "Rhowch gynnig ar Scratch 3.0",
+    "gui.previewInfo.welcome": "Croeso i Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Nid Nawr",
+    "gui.previewModal.tryittooltip": "Rhowch Gynnig Arni",
+    "gui.previewModal.viewprojecttooltip": "Gweld Project 2.0",
+    "gui.previewInfo.betawelcome": "Croeso i Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Rydym yn gweithio ar genhedlaeth nesaf Scratch. Rydym yn awyddus i chi ei brofi!",
+    "gui.previewInfo.notnow": "Nid Nawr",
+    "gui.previewModal.tryit": "Rhowch gynnig arni {caticon}",
+    "gui.previewModal.viewproject": "Gweld Project 2.0",
+    "gui.previewInfo.previewfaq": "I wybod mwy, ewch i {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Cwestiynau Cyffredin",
+    "gui.gui.variableScopeOptionAllSprites": "Ar gyfer pob ciplun",
+    "gui.gui.variableScopeOptionSpriteOnly": "Ar gyfer y ciplun yma'n unig",
+    "gui.gui.cloudVariableOption": "Newidyn cwmwl (cedwir ar y gweinydd)",
+    "gui.gui.variablePromptAllSpritesMessage": "Bydd y newidyn yma ar gael ar gyfer pob corlun.",
+    "gui.prompt.cancel": "Diddymu",
+    "gui.prompt.ok": "Iawn",
+    "gui.playbackStep.stopMsg": "Aros",
+    "gui.playbackStep.playMsg": "Chwarae",
+    "gui.playbackStep.loadingMsg": "Llwytho...",
+    "gui.playbackStep.saveMsg": "Cadw",
+    "gui.playbackStep.reRecordMsg": "Ail Recordio",
+    "gui.recordModal.title": "Recordio Sain",
+    "gui.recordingStep.beginRecord": "Cychwyn recordio drwy glicio ar y botwm isod",
+    "gui.recordingStep.permission": "{arrow}Rydym angen eich caniatâd i ddefnyddio eich meicroffon",
+    "gui.recordingStep.stop": "Atal y recordio",
+    "gui.recordingStep.record": "Recordio",
+    "gui.soundEditor.sound": "Sain",
+    "gui.soundEditor.play": "Chwarae",
+    "gui.soundEditor.stop": "Aros",
+    "gui.soundEditor.trim": "Tocio",
+    "gui.soundEditor.save": "Cadw",
+    "gui.soundEditor.undo": "Dadwneud",
+    "gui.soundEditor.redo": "Ailwneud",
+    "gui.soundEditor.faster": "Yn gyflymach",
+    "gui.soundEditor.slower": "Arafach",
+    "gui.soundEditor.echo": "Atsain",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Yn uwch",
+    "gui.soundEditor.softer": "Yn feddalach",
+    "gui.soundEditor.reverse": "Gwrthdroi",
+    "gui.SpriteInfo.spritePlaceholder": "Enw",
+    "gui.SpriteInfo.sprite": "Ciplun",
+    "gui.SpriteInfo.show": "Dangos",
+    "gui.SpriteInfo.size": "Maint",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "dyblygu",
+    "gui.spriteSelectorItem.contextMenuDelete": "dileu",
+    "gui.spriteSelectorItem.contextMenuExport": "allforio",
+    "gui.spriteSelector.addSpriteFromLibrary": "Dewiswch Gorlun",
+    "gui.spriteSelector.addSpriteFromPaint": "Paentio",
+    "gui.spriteSelector.addSpriteFromSurprise": "Annisgwyl",
+    "gui.spriteSelector.addSpriteFromFile": "Llwytho Corlun i Fyny",
+    "gui.stageHeader.stageSizeLarge": "Newid i lwyfan mawr",
+    "gui.stageHeader.stageSizeSmall": "Newid i lwyfan bach",
+    "gui.stageHeader.stageSizeFull": "Mynd i'r modd sgrin llawn",
+    "gui.stageHeader.stageSizeUnFull": "Gadael y modd sgrin llawn",
+    "gui.stageHeader.fullscreenControl": "Rheolydd Sgrin Llawn",
+    "gui.spriteSelector.addBackdropFromLibrary": "Dewiswch Gefnlen",
+    "gui.stageSelector.addBackdropFromPaint": "Paent",
+    "gui.stageSelector.addBackdropFromSurprise": "Annisgwyl",
+    "gui.stageSelector.addBackdropFromFile": "Llwytho'r Gefnlen i Fyny",
+    "gui.stageSelector.stage": "Llwyfan",
+    "gui.stageSelector.backdrops": "Cefnlenni",
+    "gui.turboMode.active": "Modd Tyrbo",
+    "gui.webglModal.label": "Nid yw eich Porwr yn Cynnal WebGL",
+    "gui.webglModal.description": "Yn anffodus, mae'n edrych mai eich porwr neu gyfrifiadur {webGlLink}. Mae angen y dechnoleg yma i redeg Scratch 3.0",
+    "gui.webglModal.webgllink": "nid yw'#n cynnal WebGL",
+    "gui.webglModal.back": "Nôl",
+    "gui.webglModal.previewfaq": "I wybod mwy, ewch i {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Cwestiynau Cyffredin",
+    "gui.costumeLibrary.chooseABackdrop": "Dewiswch Gefnlen",
+    "gui.costumeLibrary.chooseACostume": "Dewiswch Wisg",
+    "gui.costumeTab.addBackdropFromLibrary": "Dewiswch Gefnlen",
+    "gui.costumeTab.addCostumeFromLibrary": "Dewiswch Wisg",
+    "gui.costumeTab.addBlankCostume": "Paentio",
+    "gui.costumeTab.addSurpriseCostume": "Annisgwyl",
+    "gui.costumeTab.addFileBackdrop": "Llwytho Cefnlen i Fyny",
+    "gui.costumeTab.addFileCostume": "Llwytho Gwisg i Fyny",
+    "gui.costumeTab.addCameraCostume": "Camera",
+    "gui.extensionLibrary.chooseAnExtension": "Dewis Estyniad",
+    "gui.extensionLibrary.extensionUrl": "Rhowch URL yr estyniad",
+    "gui.gui.defaultProjectTitle": "Project Scratch",
+    "gui.recordingStep.alertMsg": "Methwyd cychwyn recordio",
+    "gui.projectLoader.loadError": "Methodd y ffeil sydd wedi ei dewis â llwytho.",
+    "gui.soundLibrary.chooseASound": "Dewiswch Sain",
+    "gui.soundTab.fileUploadSound": "Llwytho Sain i Fyny...",
+    "gui.soundTab.surpriseSound": "Annisgwyl",
+    "gui.soundTab.recordSound": "Recordio",
+    "gui.soundTab.addSoundFromLibrary": "Dewis Sain",
+    "gui.spriteLibrary.chooseASprite": "Dewis Corlun",
+    "gui.tipsLibrary.tutorials": "Dewis Tiwtorial",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Creu...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Wrthi'n cadw...",
+    "gui.defaultProject.meow": "Miaw",
+    "gui.defaultProject.variable": "fy newidyn",
+    "gui.howtos.intro-move-sayhello-hat.name": "Cychwyn Arni",
+    "gui.howtos.intro-move.step_stepMove": "Ychwanegu bloc symud",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Clicio'r faner werdd i gychwyn",
+    "gui.howtos.say-it-out-loud": "Creu Animeiddiadau sy'n Siarad",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Ychwanegu'r Testun i Flociau Siarad",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Dweud Rhywbeth",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Gosod Llais",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Symud o Amgylch",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Ychwanegu Cefnlen",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Ychwanegu Cymeriad Arall",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Canu Cân",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Newid Lliw",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Troelli",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Tyfu a Lleihau",
+    "gui.howtos.cartoon-network": "Animeiddio Gêm Antur",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Dewis pa Gymeriad i'w Ddangos",
+    "gui.howtos.cartoon-network.step_CNsay": "Dweud Rhywbeth",
+    "gui.howtos.cartoon-network.step_CNglide": "Llithro o Amgylch",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Dewis pa Wrthrych i Redeg ar ei Ôl",
+    "gui.howtos.cartoon-network.step_CNcollect": "Casglu Gwrthrychau",
+    "gui.howtos.cartoon-network.step_CNvariable": "Creu Newidyn Sgôr",
+    "gui.howtos.cartoon-network.step_CNscore": "Cadw Sgôr",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Lefel i Fyny: Newid Cefnlen",
+    "gui.howtos.animate-a-name.name": "Animeiddio Enw",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Dewis Corlun Llythyren",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Chwarae Sain Wrth Glicio",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Dewis Corlun Llythyren Arall",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Newid lliw",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Dewiswch Corlun Llythyren Arall a'i Wneud i Droi",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Dewis Corlun Llythyren Arall a Gwneud Iddo Dyfu",
+    "gui.howtos.make-music.name": "Creu Cerddoriaeth",
+    "gui.howtos.Make-Music.step_PickInstrument": "Dewis Corlun Offeryn",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Chware Sain Wrth ei Glicio",
+    "gui.howtos.Make-Music.step_MakeSong": "Creu Cân",
+    "gui.howtos.make-music.step_MakeBeat": "Dewis Drwm a Chreu Curiad",
+    "gui.howtos.make-music.step_MakeBeatBox": "Dewiswch y Corlun Meicroffon a'r Blwch Taro Annisgwyl",
+    "gui.howtos.make-a-game.name": "Creu Gêm Cliciwr",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Dewis Corlun",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Chware Sain Wrth ei Glicio",
+    "gui.howtos.make-a-game.step_GameAddScore": "Creu Newidyn Sgôr",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Pan Fydd Wedi ei Glicio, Cynyddu'r Sgor",
+    "gui.howtos.make-a-game.step_Random": "Mynd i fan ar hap",
+    "gui.howtos.make-music.step_GameChangeColor": "Newid Lliw",
+    "gui.howtos.make-music.step_ResetScore": "Ailosod y Sgôr",
+    "gui.howtos.make-a-chase-game.name": "Creu Gêm Ymlid",
+    "gui.howtos.Chase-Game.step_BG": "Ychwanegu Cefndir",
+    "gui.howtos.chase-game.step_AddOcto": "Ychwanegu Corlun",
+    "gui.howtos.make-music.step_LeftRight": "Symud i'r Dde a'r Chwith gyda'r Bysellau Saeth",
+    "gui.howtos.Chase-Game.step_UpDown": "Symud i Fyny ac i Lawr gyda Bysellau Saeth",
+    "gui.howtos.Chase-Game.step_AddStar": "Ychwanegu Corlun Arall",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Symud ar Hap",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Mewn Corlun Octopws, Pan yn Cyffwrdd Chwaraea Sain ",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Creu Newidyn Sgôr",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Yn y Corlun Octopws, Pan yn Cyffwrdd Ychwanega Sgôr",
+    "gui.howtos.add-sprite.name": "Ychwanegu Corlun",
+    "gui.howtos.add-sprite.step_addSprite": "Ychwanegu Corlun",
+    "gui.howtos.add-a-backdrop.name": "Ychwanegu Cefnlen",
+    "gui.howtos.change-size.name": "Newid Maint",
+    "gui.howtos.glide-around.name": "Llithro o Amgylch",
+    "gui.howtos.record-a-sound.name": "Recordio Sain",
+    "gui.howtos.spin-video.name": "Gwnewch iddo Droelli",
+    "gui.howtos.hide-and-show.name": "Cuddio a Dangos",
+    "gui.howtos.switch-costume.name": "Animeiddio Corlun",
+    "gui.howtos.move-around-with-arrow-keys.name": "Defnyddiwch y Botymau Saeth",
+    "gui.howtos.add-effects.name": "Ychwanegu Effeithiau",
+    "gui.extension.music.name": "Cerddoriaeth",
+    "gui.extension.music.description": "Chwarae offerynau a drymiau",
+    "gui.extension.pen.name": "Pin",
+    "gui.extension.pen.description": "Lluniadu gyda'ch corluniau.",
+    "gui.extension.videosensing.name": "Synhwyro Fideo",
+    "gui.extension.videosensing.description": "Synhwyro symudiad gyda'r camera",
+    "gui.extension.text2speech.name": "Testun i Leferydd",
+    "gui.extension.text2speech.description": "Gwnewch i'ch projectau siarad.",
+    "gui.extension.translate.name": "Cyfieithu",
+    "gui.extension.translate.description": "Cyfieithu testun i lawer o ieithoedd.",
+    "gui.extension.microbit.description": "Cysylltu eich project â'r byd.",
+    "gui.extension.microbit.connectingMessage": "Cysylltu",
+    "gui.extension.ev3.description": "Adeiladu robotiaid rhyngweithiol a mwy.",
+    "gui.extension.ev3.connectingMessage": "Wrthi'n cysylltu. Gwnewch yn siwr fod y PIN ar eich EV3 wedi ei osod i 1234.",
+    "gui.extension.wedo2.description": "Adeiladu gyda moduron a synwyryddion",
+    "gui.extension.wedo2.connectingMessage": "Cysylltu",
+    "gui.libraryTags.all": "Y Cyfan",
+    "gui.libraryTags.animals": "Anifeiliaid",
+    "gui.libraryTags.dance": "Dawns",
+    "gui.libraryTags.effects": "Effeithiau",
+    "gui.libraryTags.fantasy": "Ffantasi",
+    "gui.libraryTags.fashion": "Ffasiwn",
+    "gui.libraryTags.food": "Bwyd",
+    "gui.libraryTags.indoors": "Dan do",
+    "gui.libraryTags.loops": "Cylchoedd",
+    "gui.libraryTags.music": "Cerddoriaeth",
+    "gui.libraryTags.notes": "Nodiadau",
+    "gui.libraryTags.outdoors": "Tu allan",
+    "gui.libraryTags.patterns": "Patrymau",
+    "gui.libraryTags.people": "Pobl",
+    "gui.libraryTags.percussion": "Offerynnau taro",
+    "gui.libraryTags.space": "Gofod",
+    "gui.libraryTags.sports": "Chwaraeon",
+    "gui.libraryTags.underwater": "O dan y dŵr",
+    "gui.libraryTags.voice": "Llais",
+    "gui.libraryTags.wacky": "Gwirion",
+    "gui.libraryTags.animation": "Animeiddio",
+    "gui.libraryTags.art": "Celf",
+    "gui.libraryTags.games": "Gemau",
+    "gui.libraryTags.stories": "Straeon",
+    "gui.libraryTags.letters": "Llythyrau",
+    "gui.opcodeLabels.direction": "cyfeiriad",
+    "gui.opcodeLabels.xposition": "safle x",
+    "gui.opcodeLabels.yposition": "safle y",
+    "gui.opcodeLabels.size": "maint",
+    "gui.opcodeLabels.costumename": "enw'r wisg",
+    "gui.opcodeLabels.costumenumber": "rhif gwisg",
+    "gui.opcodeLabels.backdropname": "enw cefnlen",
+    "gui.opcodeLabels.backdropnumber": "rhif cefnlen",
+    "gui.opcodeLabels.volume": "lefel sain",
+    "gui.opcodeLabels.tempo": "amseriad",
+    "gui.opcodeLabels.answer": "ateb",
+    "gui.opcodeLabels.loudness": "cryfder sain",
+    "gui.opcodeLabels.username": "enw defnyddiwr",
+    "gui.opcodeLabels.year": "blwyddyn",
+    "gui.opcodeLabels.month": "mis",
+    "gui.opcodeLabels.date": "dyddiad",
+    "gui.opcodeLabels.dayofweek": "diwrnod o'r wythnos",
+    "gui.opcodeLabels.hour": "awr",
+    "gui.opcodeLabels.minute": "munud",
+    "gui.opcodeLabels.second": "eiliad",
+    "gui.opcodeLabels.timer": "amserydd",
+    "gui.sharedMessages.backdrop": "cefnlen {index}",
+    "gui.sharedMessages.costume": "gwisg{index}",
+    "gui.sharedMessages.sprite": "Corlun{index}",
+    "gui.sharedMessages.pop": "pop"
 }

@@ -1,1466 +1,368 @@
 {
-    "gui.connection.reconnect": {
-        "message": "Reconnect",
-        "description": "Button to reconnect the device"
-    },
-    "gui.backpack.header": {
-        "message": "Shramba",
-        "description": "Button to open the backpack"
-    },
-    "gui.backpack.errorBackpack": {
-        "message": "Napaka pri nalaganju shrambe",
-        "description": "Error backpack message"
-    },
-    "gui.backpack.loadingBackpack": {
-        "message": "Nalagam ...",
-        "description": "Loading backpack message"
-    },
-    "gui.backpack.more": {
-        "message": "Več",
-        "description": "Load more from backpack"
-    },
-    "gui.backpack.emptyBackpack": {
-        "message": "Shramba je prazna",
-        "description": "Empty backpack message"
-    },
-    "gui.unsupportedBrowser.label": {
-        "message": "Ta brskalnik ni podprt",
-        "description": ""
-    },
-    "gui.unsupportedBrowser.description": {
-        "message": "Žal Scratch 3.0 ne podpira brskalnikov Internet Explorer, Vivaldi, Opera ali Silk. priporočamo uporabo nobvejših brskalnikov kot so Google Chrome, Mozilla Firefox ali Microsoft Edge.",
-        "description": "Unsupported browser description"
-    },
-    "gui.unsupportedBrowser.back": {
-        "message": "Nazaj",
-        "description": "Button to go back in unsupported browser modal"
-    },
-    "gui.unsupportedBrowser.previewfaq": {
-        "message": "Da izveš več, pojdi na {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.unsupportedBrowser.previewfaqlinktext": {
-        "message": "Pogosta vprašanja",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.cameraModal.cameraModalTitle": {
-        "message": "Fotografiraj",
-        "description": "Title for prompt to take a picture (to add as a new costume)."
-    },
-    "gui.cameraModal.loadingCameraMessage": {
-        "message": "Nalaganje kamere...",
-        "description": "Notification to the user that the camera is loading"
-    },
-    "gui.cameraModal.permissionRequest": {
-        "message": "Potrebujemo tvoje soglasje za uporabo kamere",
-        "description": "Notification to the user that the app needs camera access"
-    },
-    "gui.cameraModal.retakePhoto": {
-        "message": "Ponovno fotografiraj",
-        "description": "A button that allows the user to take the picture again, replacing the old one"
-    },
-    "gui.cameraModal.save": {
-        "message": "Shrani",
-        "description": "A button that allows the user to save the photo they took as a costume"
-    },
-    "gui.cameraModal.takePhoto": {
-        "message": "Fotografiraj",
-        "description": "A button to take a photo"
-    },
-    "gui.cameraModal.loadingCaption": {
-        "message": "Nalagam ...",
-        "description": "A caption for a disabled button while the video from the camera is still loading"
-    },
-    "gui.cameraModal.enableCameraCaption": {
-        "message": "Omogoči kamero",
-        "description": "A caption for a disabled button prompting the user to enable camera access"
-    },
-    "gui.cards.all-tutorials": {
-        "message": "Vodiči",
-        "description": "Title for button to return to tutorials library"
-    },
-    "gui.cards.close": {
-        "message": "Zapri",
-        "description": "Title for button to close how-to card"
-    },
-    "gui.cards.more-things-to-try": {
-        "message": "Poskusi še več stvari!",
-        "description": "Title card with more things to try"
-    },
-    "gui.cards.see-more": {
-        "message": "Oglej si še",
-        "description": "Title for button to see more in how-to library"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Ne skrbi, delamo na tem {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Kmalu ...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Delamo na tem {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.connection.auto-scanning.noPeripheralsFound": {
-        "message": "Ni najdenih naprav",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.auto-scanning.prescan": {
-        "message": "Poskrbi, da je naprava v bližini in prični z iskanjem.",
-        "description": "Prompt for beginning the search"
-    },
-    "gui.connection.auto-scanning.pressbutton": {
-        "message": "Na napravi pritisni na gumb.",
-        "description": "Prompt for pushing the button on the device"
-    },
-    "gui.connection.auto-scanning.start-search": {
-        "message": "Začni z iskanjem",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.connecting-searchbutton": {
-        "message": "Iščem...",
-        "description": "Label indicating that search is in progress"
-    },
-    "gui.connection.auto-scanning.try-again": {
-        "message": "Poskusi ponovno",
-        "description": "Button in prompt for trying a device search again"
-    },
-    "gui.connection.connected": {
-        "message": "Povezano",
-        "description": "Message indicating that a device was connected"
-    },
-    "gui.connection.disconnect": {
-        "message": "Prekini povezavo",
-        "description": "Button to disconnect the device"
-    },
-    "gui.connection.go-to-editor": {
-        "message": "V urejevalnik",
-        "description": "Button to return to the editor"
-    },
-    "gui.connection.connecting-cancelbutton": {
-        "message": "Povezovanje...",
-        "description": "Label indicating that connection is in progress"
-    },
-    "gui.connection.error.errorMessage": {
-        "message": "Ups, nekaj je šlo narobe.",
-        "description": "The device connection process has encountered an error."
-    },
-    "gui.connection.error.tryagainbutton": {
-        "message": "Poskusi ponovno",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.error.helpbutton": {
-        "message": "Pomoč",
-        "description": "Button to view help content"
-    },
-    "gui.connection.peripheral-name-label": {
-        "message": "Ime naprave",
-        "description": "Label for field showing the device name"
-    },
-    "gui.connection.connect": {
-        "message": "Poveži",
-        "description": "Button to start connecting to a specific device"
-    },
-    "gui.connection.scanning.lookingforperipherals": {
-        "message": "Iščem naprave",
-        "description": "Text shown while scanning for devices"
-    },
-    "gui.connection.scanning.noPeripheralsFound": {
-        "message": "Ni najdenih naprav",
-        "description": "Text shown when no devices could be found"
-    },
-    "gui.connection.scanning.instructions": {
-        "message": "Izberi napravo z zgornjega spiska .",
-        "description": "Prompt for choosing a device to connect to"
-    },
-    "gui.connection.search": {
-        "message": "Osveži",
-        "description": "Button in prompt for starting a search"
-    },
-    "gui.connection.unavailable.installscratchlink": {
-        "message": "Preveri, če je Scratch Link nameščen in zagnan",
-        "description": "Message for getting Scratch Link installed"
-    },
-    "gui.connection.unavailable.enablebluetooth": {
-        "message": "Preveri, če je Blootooth omogočen",
-        "description": "Message for making sure Bluetooth is enabled"
-    },
-    "gui.connection.unavailable.tryagainbutton": {
-        "message": "Poskusi ponovno",
-        "description": "Button to initiate trying the device connection again after an error"
-    },
-    "gui.connection.unavailable.helpbutton": {
-        "message": "Pomoč",
-        "description": "Button to view help content"
-    },
-    "gui.controls.go": {
-        "message": "Pojdi",
-        "description": "Green flag button title"
-    },
-    "gui.controls.stop": {
-        "message": "Ustavi",
-        "description": "Stop button title"
-    },
-    "gui.crashMessage.label": {
-        "message": "To je nerodno! Nekaj je šlo narobe.",
-        "description": "Crash Message title"
-    },
-    "gui.crashMessage.description": {
-        "message": "Žal nam je, a kaže, da je Scractch prenehal delovati. Ekipa, ki skrbi za razvij Scratcha, je bila avtomatično obveščena. Prosimo, osveži stran in poskusi znova. ",
-        "description": "Message to inform the user that page has crashed."
-    },
-    "gui.crashMessage.reload": {
-        "message": "Reload",
-        "description": "Button to reload the page when page crashes"
-    },
-    "gui.customProcedures.myblockModalTitle": {
-        "message": "Ustvari blok",
-        "description": "Title for the modal where you create a custom block."
-    },
-    "gui.customProcedures.addAnInputNumberText": {
-        "message": "Dodaj vnos",
-        "description": "Label for button to add a number/text input"
-    },
-    "gui.customProcedures.numberTextType": {
-        "message": "število ali besedilo",
-        "description": "Description of the number/text input type"
-    },
-    "gui.customProcedures.addAnInputBoolean": {
-        "message": "Dodaj vnos",
-        "description": "Label for button to add a boolean input"
-    },
-    "gui.customProcedures.booleanType": {
-        "message": "logične vrednosti",
-        "description": "Description of the boolean input type"
-    },
-    "gui.customProcedures.addALabel": {
-        "message": "Dodaj oznako",
-        "description": "Label for button to add a label"
-    },
-    "gui.customProcedures.runWithoutScreenRefresh": {
-        "message": "Izvajaj brez osveževanja",
-        "description": "Label for checkbox to run without screen refresh"
-    },
-    "gui.customProcedures.cancel": {
-        "message": "Prekliči",
-        "description": "Label for button to cancel custom procedure edits"
-    },
-    "gui.customProcedures.ok": {
-        "message": "OK",
-        "description": "Label for button to save new custom procedure"
-    },
-    "gui.SpriteInfo.direction": {
-        "message": "Smer",
-        "description": "Sprite info direction label"
-    },
-    "gui.directionPicker.rotationStyles.allAround": {
-        "message": "Vsepovsod",
-        "description": "Button to change to the all around rotation style"
-    },
-    "gui.directionPicker.rotationStyles.leftRight": {
-        "message": "Levo/Desno",
-        "description": "Button to change to the left-right rotation style"
-    },
-    "gui.directionPicker.rotationStyles.dontRotate": {
-        "message": "Ne obračaj",
-        "description": "Button to change to the dont rotate rotation style"
-    },
-    "gui.gui.addExtension": {
-        "message": "Dodaj razširitev",
-        "description": "Button to add an extension in the target pane"
-    },
-    "gui.gui.codeTab": {
-        "message": "Koda",
-        "description": "Button to get to the code panel"
-    },
-    "gui.gui.backdropsTab": {
-        "message": "Ozadja",
-        "description": "Button to get to the backdrops panel"
-    },
-    "gui.gui.costumesTab": {
-        "message": "Videzi",
-        "description": "Button to get to the costumes panel"
-    },
-    "gui.gui.soundsTab": {
-        "message": "Zvoki",
-        "description": "Button to get to the sounds panel"
-    },
-    "gui.importInfo.title": {
-        "message": "Oglej si Projekt Scratch 2.0",
-        "description": "Scratch 2.0 import modal label - for accessibility"
-    },
-    "gui.importInfo.betamessage": {
-        "message": "Vnesi povezavo do enega od tvojih deljenih Scratch projektov. Spremembe, narejene v tej različici 3.0 Beta ne bodo shranjene.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.message": {
-        "message": "Izberi povezavo do enega od tvojih deljenih Scratch projektov. Spremembe, narejene cv tem Predpregledu 3.0 ne bodo shranjene.",
-        "description": "Import project message"
-    },
-    "gui.importInfo.invalidFormatError": {
-        "message": "Hmm, ta povezava do projekta ali id ni videti ravno prav. ",
-        "description": "Invalid project link or id message"
-    },
-    "gui.importModal.viewproject": {
-        "message": "Oglej si",
-        "description": "Label for button to load a scratch 2.0 project"
-    },
-    "gui.importInfo.goback": {
-        "message": "Nazaj",
-        "description": "Label for button to back out of importing a project"
-    },
-    "gui.importInfo.previewfaq": {
-        "message": "Da izveš več, pojdi na {previewFaqLink}.",
-        "description": "Invitation to try 3.0 preview"
-    },
-    "gui.importInfo.previewfaqlinktext": {
-        "message": "Pogosta vprašanja",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.extensionLibrary.comingSoon": {
-        "message": "Kmalu ...",
-        "description": "Label for extensions that are not yet implemented"
-    },
-    "gui.extensionLibrary.requires": {
-        "message": "Requires",
-        "description": "Label for extension hardware requirements"
-    },
-    "gui.extensionLibrary.collaboration": {
-        "message": "Collaboration with",
-        "description": "Label for extension collaboration"
-    },
-    "gui.library.filterPlaceholder": {
-        "message": "Išči",
-        "description": "Placeholder text for library search field"
-    },
-    "gui.library.allTag": {
-        "message": "Vse",
-        "description": "Label for library tag to revert to all items after filtering by tag."
-    },
-    "gui.loader.message1": {
-        "message": "Ustvarjanje blokov",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message2": {
-        "message": "Nalagam figure ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message3": {
-        "message": "Nalagam zvoke ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message4": {
-        "message": "Nalagam razširitve ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message5": {
-        "message": "Krotenje mačk ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message6": {
-        "message": "Prenos ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message7": {
-        "message": "Inflating gobos …",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.message8": {
-        "message": "Priprava smeškov ...",
-        "description": "One of the loading messages"
-    },
-    "gui.loader.headline": {
-        "message": "Nalagam projekt",
-        "description": "Main loading message"
-    },
-    "gui.accountMenu.profile": {
-        "message": "Profil",
-        "description": "Text to link to my user profile, in the account navigation menu"
-    },
-    "gui.accountMenu.myStuff": {
-        "message": "Moje stvari",
-        "description": "Text to link to list of my projects, in the account navigation menu"
-    },
-    "gui.accountMenu.myClasses": {
-        "message": "Moji razredi",
-        "description": "Text to link to my classes (if I am a teacher), in the account navigation menu"
-    },
-    "gui.accountMenu.myClass": {
-        "message": "Moj razred",
-        "description": "Text to link to my class (if I am a student), in the account navigation menu"
-    },
-    "gui.accountMenu.accountSettings": {
-        "message": "Nastavitve računa",
-        "description": "Text to link to my account settings, in the account navigation menu"
-    },
-    "gui.accountMenu.signOut": {
-        "message": "Izpiši se",
-        "description": "Text to link to sign out, in the account navigation menu"
-    },
-    "gui.authorInfo.byUser": {
-        "message": "by {username}",
-        "description": "Shows that a project was created by this user"
-    },
-    "gui.menuBar.seeCommunity": {
-        "message": "Oglej si Skupnost",
-        "description": "Label for see community button"
-    },
-    "general.username": {
-        "message": "Uporabniško ime",
-        "description": "Label for login username input"
-    },
-    "general.password": {
-        "message": "Geslo",
-        "description": "Label for login password input"
-    },
-    "general.signIn": {
-        "message": "Vpiši se",
-        "description": "Button text for user to sign in"
-    },
-    "login.needHelp": {
-        "message": "Potrebuješ pomoč?",
-        "description": "Button text for user to indicate that they need help"
-    },
-    "gui.menuBar.LanguageSelector": {
-        "message": "izbira jezika",
-        "description": "accessibility text for the language selection menu"
-    },
-    "gui.menuBar.tutorialsLibrary": {
-        "message": "Vodiči",
-        "description": "accessibility text for the tutorials button"
-    },
-    "gui.menuBar.restoreSprite": {
-        "message": "Povrni figuro",
-        "description": "Menu bar item for restoring the last deleted sprite."
-    },
-    "gui.menuBar.restoreSound": {
-        "message": "Povrni zvok",
-        "description": "Menu bar item for restoring the last deleted sound."
-    },
-    "gui.menuBar.restoreCostume": {
-        "message": "Povrni videz",
-        "description": "Menu bar item for restoring the last deleted costume."
-    },
-    "gui.menuBar.restore": {
-        "message": "Povrni",
-        "description": "Menu bar item for restoring the last deleted item in its disabled state."
-    },
-    "gui.menuBar.saveNow": {
-        "message": "Shrani takoj",
-        "description": "Menu bar item for saving now"
-    },
-    "gui.menuBar.saveAsCopy": {
-        "message": "Shrani kot kopijo",
-        "description": "Menu bar item for saving as a copy"
-    },
-    "gui.menuBar.remix": {
-        "message": "Predelaj",
-        "description": "Menu bar item for remixing"
-    },
-    "gui.menuBar.new": {
-        "message": "Nov",
-        "description": "Menu bar item for creating a new project"
-    },
-    "gui.menuBar.file": {
-        "message": "Datoteka",
-        "description": "Text for file dropdown menu"
-    },
-    "gui.menuBar.uploadFromComputer": {
-        "message": "Naloži z računalnika",
-        "description": "Menu bar item for uploading a project from your computer"
-    },
-    "gui.menuBar.downloadToComputer": {
-        "message": "Shrani na računalnik",
-        "description": "Menu bar item for downloading a project to your computer"
-    },
-    "gui.menuBar.edit": {
-        "message": "Uredi",
-        "description": "Text for edit dropdown menu"
-    },
-    "gui.menuBar.turboModeOff": {
-        "message": "Izključi Turbo način",
-        "description": "Menu bar item for turning off turbo mode"
-    },
-    "gui.menuBar.turboModeOn": {
-        "message": "Vključi Turbo način",
-        "description": "Menu bar item for turning on turbo mode"
-    },
-    "gui.menuBar.joinScratch": {
-        "message": "Pridruži se Scratchu",
-        "description": "Link for creating a Scratch account"
-    },
-    "gui.menuBar.signIn": {
-        "message": "Vpiši se",
-        "description": "Link for signing in to your Scratch account"
-    },
-    "gui.menuBar.giveFeedback": {
-        "message": "Sporoči povratne informacije",
-        "description": "Label for feedback form modal button"
-    },
-    "gui.gui.projectTitlePlaceholder": {
-        "message": "Project title here",
-        "description": "Placeholder for project title when blank"
-    },
-    "gui.menuBar.isShared": {
-        "message": "Deljeno",
-        "description": "Label for shared project"
-    },
-    "gui.menuBar.share": {
-        "message": "Deli",
-        "description": "Label for project share button"
-    },
-    "gui.modal.help": {
-        "message": "Pomoč",
-        "description": "Help button in modal"
-    },
-    "gui.modal.back": {
-        "message": "Nazaj",
-        "description": "Back button in modal"
-    },
-    "gui.monitor.listMonitor.empty": {
-        "message": "(empty)",
-        "description": "Text shown on a list monitor when a list is empty"
-    },
-    "gui.monitor.listMonitor.listLength": {
-        "message": "length {length}",
-        "description": "Length label on list monitors. DO NOT translate {length} (with brackets)."
-    },
-    "gui.monitor.contextMenu.default": {
-        "message": "navaden prikaz",
-        "description": "Menu item to switch to the default monitor"
-    },
-    "gui.monitor.contextMenu.large": {
-        "message": "velik prikaz",
-        "description": "Menu item to switch to the large monitor"
-    },
-    "gui.monitor.contextMenu.slider": {
-        "message": "drsnik",
-        "description": "Menu item to switch to the slider monitor"
-    },
-    "gui.previewInfo.label": {
-        "message": "Preizkusi Scratch 3.0",
-        "description": "Scratch 3.0 modal label - for accessibility"
-    },
-    "gui.previewInfo.welcome": {
-        "message": "Dobrodošel v Scratch 3.0 Beta",
-        "description": "Header for Preview Info Modal"
-    },
-    "gui.previewModal.notnowtooltip": {
-        "message": "Ne še",
-        "description": "Tooltip for Not Now button"
-    },
-    "gui.previewModal.tryittooltip": {
-        "message": "Preizkusi",
-        "description": "Tooltip for Try It button"
-    },
-    "gui.previewModal.viewprojecttooltip": {
-        "message": "Oglej si Projekt 2.0",
-        "description": "Tooltip for View 2.0 Project button"
-    },
-    "gui.previewInfo.betawelcome": {
-        "message": "Dobrodošel v Scratch 3.0 Beta",
-        "description": "Header for Beta Info Modal"
-    },
-    "gui.previewInfo.invitation": {
-        "message": "Razvijamo novo generacijo Scratcha. Veselimo se, da ga boš preizkusil!",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.notnow": {
-        "message": "Ne še",
-        "description": "Label for button to back out of trying Scratch 3.0 Beta"
-    },
-    "gui.previewModal.tryit": {
-        "message": "Preizkusi! {caticon}",
-        "description": "Label for button to try Scratch 3.0 Beta"
-    },
-    "gui.previewModal.viewproject": {
-        "message": "Oglej si Projekt 2.0",
-        "description": "Label for button to import a 2.0 project"
-    },
-    "gui.previewInfo.previewfaq": {
-        "message": "Da izveš več, pojdi na {previewFaqLink}.",
-        "description": "Invitation to try 3.0 Beta"
-    },
-    "gui.previewInfo.previewfaqlinktext": {
-        "message": "Pogosta vprašanja",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.gui.variableScopeOptionAllSprites": {
-        "message": "Za vse figure",
-        "description": "Option message when creating a variable for making it available to all sprites"
-    },
-    "gui.gui.variableScopeOptionSpriteOnly": {
-        "message": "Samo za to figuro",
-        "description": "Option message when creating a varaible for making it only available to the current sprite"
-    },
-    "gui.gui.cloudVariableOption": {
-        "message": "Spremenljivka v oblaku (shranjena na strežniku)",
-        "description": "Option message when creating a variable for making it a cloud variable, a variable that is stored on the server"
-    },
-    "gui.gui.variablePromptAllSpritesMessage": {
-        "message": "Ta spremenljivka bo na voljo vsem figuram.",
-        "description": "A message that displays in a variable modal when the stage is selected indicating that the variable being created will available to all sprites."
-    },
-    "gui.prompt.cancel": {
-        "message": "Prekliči",
-        "description": "Button in prompt for cancelling the dialog"
-    },
-    "gui.prompt.ok": {
-        "message": "OK",
-        "description": "Button in prompt for confirming the dialog"
-    },
-    "gui.playbackStep.stopMsg": {
-        "message": "Ustavi",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.playMsg": {
-        "message": "Predvajaj",
-        "description": "Stop/Play button in recording playback"
-    },
-    "gui.playbackStep.loadingMsg": {
-        "message": "Nalagam ...",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.saveMsg": {
-        "message": "Shrani",
-        "description": "Loading/Save button in recording playback"
-    },
-    "gui.playbackStep.reRecordMsg": {
-        "message": "Ponovno posnemi",
-        "description": "Button to re-record sound in recording playback"
-    },
-    "gui.recordModal.title": {
-        "message": "Posnami zvok",
-        "description": "Recording modal title"
-    },
-    "gui.recordingStep.beginRecord": {
-        "message": "Begin recording by clicking the button below",
-        "description": "Message for recording sound modal"
-    },
-    "gui.recordingStep.permission": {
-        "message": "{arrow}We need your permission to use your microphone",
-        "description": "Permission required notice in recording sound modal. Do not translate {arrow}"
-    },
-    "gui.recordingStep.stop": {
-        "message": "Stop recording",
-        "description": "Stop recording button label"
-    },
-    "gui.recordingStep.record": {
-        "message": "Snemaj",
-        "description": "Record button label"
-    },
-    "gui.soundEditor.sound": {
-        "message": "Zvok",
-        "description": "Label for the name of the sound"
-    },
-    "gui.soundEditor.play": {
-        "message": "Predvajaj",
-        "description": "Title of the button to start playing the sound"
-    },
-    "gui.soundEditor.stop": {
-        "message": "Ustavi",
-        "description": "Title of the button to stop the sound"
-    },
-    "gui.soundEditor.trim": {
-        "message": "Odstrani",
-        "description": "Title of the button to start trimminging the sound"
-    },
-    "gui.soundEditor.save": {
-        "message": "Shrani",
-        "description": "Title of the button to save trimmed sound"
-    },
-    "gui.soundEditor.undo": {
-        "message": "Razveljavi",
-        "description": "Title of the button to undo"
-    },
-    "gui.soundEditor.redo": {
-        "message": "Uveljavi",
-        "description": "Title of the button to redo"
-    },
-    "gui.soundEditor.faster": {
-        "message": "Hitreje",
-        "description": "Title of the button to apply the faster effect"
-    },
-    "gui.soundEditor.slower": {
-        "message": "Počasneje",
-        "description": "Title of the button to apply the slower effect"
-    },
-    "gui.soundEditor.echo": {
-        "message": "Odmev",
-        "description": "Title of the button to apply the echo effect"
-    },
-    "gui.soundEditor.robot": {
-        "message": "Robot",
-        "description": "Title of the button to apply the robot effect"
-    },
-    "gui.soundEditor.louder": {
-        "message": "Glasneje",
-        "description": "Title of the button to apply the louder effect"
-    },
-    "gui.soundEditor.softer": {
-        "message": "Mehkeje",
-        "description": "Title of the button to apply thr.softer effect"
-    },
-    "gui.soundEditor.reverse": {
-        "message": "Obrni",
-        "description": "Title of the button to apply the reverse effect"
-    },
-    "gui.SpriteInfo.spritePlaceholder": {
-        "message": "Ime",
-        "description": "Placeholder text for sprite name"
-    },
-    "gui.SpriteInfo.sprite": {
-        "message": "Figura",
-        "description": "Sprite info label"
-    },
-    "gui.SpriteInfo.show": {
-        "message": "Pokaži",
-        "description": "Sprite info show label"
-    },
-    "gui.SpriteInfo.size": {
-        "message": "Velikost",
-        "description": "Sprite info size label"
-    },
-    "gui.spriteSelectorItem.contextMenuDuplicate": {
-        "message": "podvoji",
-        "description": "Menu item to duplicate in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuDelete": {
-        "message": "zbriši",
-        "description": "Menu item to delete in the right click menu"
-    },
-    "gui.spriteSelectorItem.contextMenuExport": {
-        "message": "izvozi",
-        "description": "Menu item to export the selected item"
-    },
-    "gui.spriteSelector.addSpriteFromLibrary": {
-        "message": "Izberi figuro",
-        "description": "Button to add a sprite in the target pane from library"
-    },
-    "gui.spriteSelector.addSpriteFromPaint": {
-        "message": "Nariši",
-        "description": "Button to add a sprite in the target pane from paint"
-    },
-    "gui.spriteSelector.addSpriteFromSurprise": {
-        "message": "Presenečenje",
-        "description": "Button to add a random sprite in the target pane"
-    },
-    "gui.spriteSelector.addSpriteFromFile": {
-        "message": "Naloži figuro",
-        "description": "Button to add a sprite in the target pane from file"
-    },
-    "gui.stageHeader.stageSizeLarge": {
-        "message": "Preklopi na večji oder",
-        "description": "Button to change stage size to large"
-    },
-    "gui.stageHeader.stageSizeSmall": {
-        "message": "Preklopi na manjši oder",
-        "description": "Button to change stage size to small"
-    },
-    "gui.stageHeader.stageSizeFull": {
-        "message": "Vklopi celozaslonski način",
-        "description": "Button to change stage size to full screen"
-    },
-    "gui.stageHeader.stageSizeUnFull": {
-        "message": "Izhod iz celozaslonskega načina",
-        "description": "Button to get out of full screen mode"
-    },
-    "gui.stageHeader.fullscreenControl": {
-        "message": "Celozaslonski način",
-        "description": "Button to enter/exit full screen mode"
-    },
-    "gui.spriteSelector.addBackdropFromLibrary": {
-        "message": "Izberi ozadje",
-        "description": "Button to add a stage in the target pane from library"
-    },
-    "gui.stageSelector.addBackdropFromPaint": {
-        "message": "Paint",
-        "description": "Button to add a stage in the target pane from paint"
-    },
-    "gui.stageSelector.addBackdropFromSurprise": {
-        "message": "Presenečenje",
-        "description": "Button to add a random stage in the target pane"
-    },
-    "gui.stageSelector.addBackdropFromFile": {
-        "message": "Naloži ozadje",
-        "description": "Button to add a stage in the target pane from file"
-    },
-    "gui.stageSelector.stage": {
-        "message": "Oder",
-        "description": "Label for the stage in the stage selector"
-    },
-    "gui.stageSelector.backdrops": {
-        "message": "Ozadja",
-        "description": "Label for the backdrops in the stage selector"
-    },
-    "gui.turboMode.active": {
-        "message": "Turbo način",
-        "description": "Label indicating turbo mode is active"
-    },
-    "gui.webglModal.label": {
-        "message": "Tvoj brskalnik ne podpira WebGL",
-        "description": "WebGL missing title"
-    },
-    "gui.webglModal.description": {
-        "message": "Videti je, da tvoj brskalnik žal ne podpira {webGlLink}. Ta tehnologija je nujna, da Scratch 3.0 deluje.",
-        "description": "WebGL missing message"
-    },
-    "gui.webglModal.webgllink": {
-        "message": "ne podpira WebGL",
-        "description": "link part of your browser does not support WebGL message"
-    },
-    "gui.webglModal.back": {
-        "message": "Nazaj",
-        "description": "Label for button go back when browser is unsupported"
-    },
-    "gui.webglModal.previewfaq": {
-        "message": "Da izveš več, pojdi na {previewFaqLink}.",
-        "description": "Scratch 3.0 FAQ description"
-    },
-    "gui.webglModal.previewfaqlinktext": {
-        "message": "Pogosta vprašanja",
-        "description": "link to Scratch 3.0 FAQ page"
-    },
-    "gui.costumeLibrary.chooseABackdrop": {
-        "message": "Izberi ozadje",
-        "description": "Heading for the backdrop library"
-    },
-    "gui.costumeLibrary.chooseACostume": {
-        "message": "Izberi videz",
-        "description": "Heading for the costume library"
-    },
-    "gui.costumeTab.addBackdropFromLibrary": {
-        "message": "Izberi ozadje",
-        "description": "Button to add a backdrop in the editor tab"
-    },
-    "gui.costumeTab.addCostumeFromLibrary": {
-        "message": "Izberi videz",
-        "description": "Button to add a costume in the editor tab"
-    },
-    "gui.costumeTab.addBlankCostume": {
-        "message": "Nariši",
-        "description": "Button to add a blank costume in the editor tab"
-    },
-    "gui.costumeTab.addSurpriseCostume": {
-        "message": "Presenečenje",
-        "description": "Button to add a surprise costume in the editor tab"
-    },
-    "gui.costumeTab.addFileBackdrop": {
-        "message": "Naloži ozadje",
-        "description": "Button to add a backdrop by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addFileCostume": {
-        "message": "Naloži videz",
-        "description": "Button to add a costume by uploading a file in the editor tab"
-    },
-    "gui.costumeTab.addCameraCostume": {
-        "message": "Spletna kamera",
-        "description": "Button to use the camera to create a costume costume in the editor tab"
-    },
-    "gui.extensionLibrary.chooseAnExtension": {
-        "message": "Izberi razširitev",
-        "description": "Heading for the extension library"
-    },
-    "gui.extensionLibrary.extensionUrl": {
-        "message": "Dodaj URL naslov razširitve",
-        "description": "Prompt for unoffical extension url"
-    },
-    "gui.gui.defaultProjectTitle": {
-        "message": "Scratch Project",
-        "description": "Default title for project"
-    },
-    "gui.recordingStep.alertMsg": {
-        "message": "Ni bilo mogoče snemati",
-        "description": "Alert for recording error"
-    },
-    "gui.projectLoader.loadError": {
-        "message": "Izbrana projektna datoteka se ni naložila.",
-        "description": "An error that displays when a local project file fails to load."
-    },
-    "gui.soundLibrary.chooseASound": {
-        "message": "Izberi zvok",
-        "description": "Heading for the sound library"
-    },
-    "gui.soundTab.fileUploadSound": {
-        "message": "Naloži zvočni posnetek...",
-        "description": "Button to upload sound from file in the editor tab"
-    },
-    "gui.soundTab.surpriseSound": {
-        "message": "Presenečenje",
-        "description": "Button to get a random sound in the editor tab"
-    },
-    "gui.soundTab.recordSound": {
-        "message": "Snemaj",
-        "description": "Button to record a sound in the editor tab"
-    },
-    "gui.soundTab.addSoundFromLibrary": {
-        "message": "Izberi zvok",
-        "description": "Button to add a sound in the editor tab"
-    },
-    "gui.spriteLibrary.chooseASprite": {
-        "message": "Izberi figuro",
-        "description": "Heading for the sprite library"
-    },
-    "gui.tipsLibrary.tutorials": {
-        "message": "Izberi Vodič.",
-        "description": "Heading for the help/tutorials library"
-    },
-    "gui.alerts.createsuccess": {
-        "message": "Successfully created.",
-        "description": "Message indicating that project was successfully created"
-    },
-    "gui.alerts.creating": {
-        "message": "Ustvarjam...",
-        "description": "Message indicating that project is in process of creating"
-    },
-    "gui.alerts.creatingError": {
-        "message": "Could not create the project. Please try again!",
-        "description": "Message indicating that project could not be created"
-    },
-    "gui.alerts.savingError": {
-        "message": "Could not save the project. Please try again!",
-        "description": "Message indicating that project could not be saved"
-    },
-    "gui.alerts.savesuccess": {
-        "message": "Successfully saved.",
-        "description": "Message indicating that project was successfully saved"
-    },
-    "gui.alerts.saving": {
-        "message": "Shranjujem...",
-        "description": "Message indicating that project is in process of saving"
-    },
-    "gui.defaultProject.meow": {
-        "message": "Meow",
-        "description": "Name for the meow sound"
-    },
-    "gui.defaultProject.variable": {
-        "message": "moja spremenljivka",
-        "description": "Name for the default variable"
-    },
-    "gui.howtos.intro-move-sayhello-hat.name": {
-        "message": "Prvi koraki",
-        "description": "Name for the 'Getting Started' how-to"
-    },
-    "gui.howtos.intro-move.step_stepMove": {
-        "message": "Dodaj blok za premik",
-        "description": "Step name for 'Add a move block' step"
-    },
-    "gui.howtos.add-a-move-block.step_stepMoveSayHello": {
-        "message": "Za začetek klikni na zeleno zastavico",
-        "description": "Step name for 'Add A Say Block' step"
-    },
-    "gui.howtos.say-it-out-loud": {
-        "message": "Create Animations That Talk",
-        "description": "Name for the 'Create Animations That Talk' how-to"
-    },
-    "gui.howtos.say-it-out-loud.step_AddTXTextension": {
-        "message": "Add the Text to Speech blocks",
-        "description": "Step name for 'Add the Text to Speech blocks' step"
-    },
-    "gui.howtos. say-it-out-loud.step_TXTSpeech": {
-        "message": "Reci kaj",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.say-it-out-loud_TXTSetVoice": {
-        "message": "Set a Voice",
-        "description": "Step name for 'Set a Voice"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTMove": {
-        "message": "Move Around",
-        "description": "Step name for 'Move Around' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTBackdrop": {
-        "message": "Dodaj ozadje",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTAddSprite": {
-        "message": "Add Another Character",
-        "description": "Step name for 'Add Another Character' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSong": {
-        "message": "Perform a Song",
-        "description": "Step name for 'Perform a Song' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTColor": {
-        "message": "Spremeni barvo",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTSpin": {
-        "message": "Zavrti okoli",
-        "description": "Step name for 'Spin Around"
-    },
-    "gui.howtos.say-it-out-loud.step_TXTGrow": {
-        "message": "Grow and Shrink",
-        "description": "Step name for 'Grow and Shrink' step"
-    },
-    "gui.howtos.cartoon-network": {
-        "message": "Animate an Adventure Game",
-        "description": "Animate an Adventure Game' how-to"
-    },
-    "gui.howtos.cartoon-network.step_CNcharacter": {
-        "message": "Choose a Character to Show",
-        "description": "Step name for 'Choose a Character to Show' step"
-    },
-    "gui.howtos.cartoon-network.step_CNsay": {
-        "message": "Reci kaj",
-        "description": "Step name for 'Say Something' step"
-    },
-    "gui.howtos.cartoon-network.step_CNglide": {
-        "message": "Drsi",
-        "description": "Step name for 'Glide Around' step"
-    },
-    "gui.howtos.cartoon-network.step_CNpicksprite": {
-        "message": "Choose an Object to Chase",
-        "description": "Step name for 'Choose an Object to Chase' step"
-    },
-    "gui.howtos.cartoon-network.step_CNcollect": {
-        "message": "Collect Objects",
-        "description": "Step name for 'Collect Objects' step"
-    },
-    "gui.howtos.cartoon-network.step_CNvariable": {
-        "message": "Make a Score Variable",
-        "description": "Step name for 'Make a Score Variable' step"
-    },
-    "gui.howtos.cartoon-network.step_CNscore": {
-        "message": "Štej točke",
-        "description": "Step name for 'Keep Score' step"
-    },
-    "gui.howtos.cartoon-network.step_CNbackdrop": {
-        "message": "Level Up: Change Backdrop",
-        "description": "Step name for 'Level Up: Change Backdrop' step"
-    },
-    "gui.howtos.animate-a-name.name": {
-        "message": "Animiraj ime",
-        "description": "Name for the 'Animate a Name' how-to"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter": {
-        "message": "Izberi figuro uge črke",
-        "description": "Step name for 'Pick a Letter Sprite' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePlaySound": {
-        "message": "Ob kliku predvajaj zvok",
-        "description": "Step name for 'Play a Sound When Clicked' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimatePickLetter2": {
-        "message": "Izberi figuro druge črko",
-        "description": "Step name for 'Pick Another Letter Sprite"
-    },
-    "gui.howtos.animate-a-name.step_AnimateChangeColor": {
-        "message": "Spremeni barvo",
-        "description": "Step name for 'Change color' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateSpin": {
-        "message": "Izberi drugo črko in povzroči, da se zavrti",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Spin' step"
-    },
-    "gui.howtos.animate-a-name.step_AnimateGrow": {
-        "message": "Izberi drugo črko in povzroči, da se poveča",
-        "description": "Step name for 'Pick Another Letter Sprite & Make It Grow!' step"
-    },
-    "gui.howtos.make-music.name": {
-        "message": "Ustvari glasbo",
-        "description": "Name for the 'Make Music' how-to"
-    },
-    "gui.howtos.Make-Music.step_PickInstrument": {
-        "message": "Izberi figuro glasbila",
-        "description": "Step name for 'Pick an Instrument Sprite' step"
-    },
-    "gui.howtos.Make-Music.step_PlaySoundClick": {
-        "message": "Ob kliku predvajaj zvok",
-        "description": "Step name for 'Play Sound When Clicked' step"
-    },
-    "gui.howtos.Make-Music.step_MakeSong": {
-        "message": "Ustvari pesem",
-        "description": "Step name for 'Create a Song' step"
-    },
-    "gui.howtos.make-music.step_MakeBeat": {
-        "message": "Izberi boben in udari po njem",
-        "description": "Step name for 'Choose a Drum & Make a Beat' step"
-    },
-    "gui.howtos.make-music.step_MakeBeatBox": {
-        "message": "Izberi figuro Mikrofon & Beatbox presenečenja",
-        "description": "Step name for 'Choose the Microphone Sprite & Surprise Beatbox' step"
-    },
-    "gui.howtos.make-a-game.name": {
-        "message": "Ustvari Igro klikanja",
-        "description": "Name for the 'Make a Clicker Game' how-to"
-    },
-    "gui.howtos.Make-A-Game.step_GamePickSprite": {
-        "message": "Izberi figuro",
-        "description": "Step name for 'Pick A Sprite' step"
-    },
-    "gui.howtos.make-a-game.step_GamePlaySound": {
-        "message": "Ob kliku predvajaj zvok",
-        "description": "Play Sound When Clicked' step"
-    },
-    "gui.howtos.make-a-game.step_GameAddScore": {
-        "message": "Ustvari spremenljivko za rezultat",
-        "description": "Step name for 'Create Score Variable' step"
-    },
-    "gui.howtos.make-a-game.step_GameChangeScore": {
-        "message": "Ob kliku povečaj število točk",
-        "description": "Step name for 'When Clicked Increase Score' step"
-    },
-    "gui.howtos.make-a-game.step_Random": {
-        "message": "Pojdi na naključno mesto",
-        "description": "Step name for 'Go to a random position' step"
-    },
-    "gui.howtos.make-music.step_GameChangeColor": {
-        "message": "Spremeni barvo",
-        "description": "Step name for 'Change Color' step"
-    },
-    "gui.howtos.make-music.step_ResetScore": {
-        "message": "Ponastavi rezultat",
-        "description": "Step name for 'Reset Score' step"
-    },
-    "gui.howtos.make-a-chase-game.name": {
-        "message": "Ustvari Igro lovljenja",
-        "description": "Name for the 'Make a Chase Game' how-to"
-    },
-    "gui.howtos.Chase-Game.step_BG": {
-        "message": "Dodaj ozadje",
-        "description": "Step name for 'Add a Backdrop' step"
-    },
-    "gui.howtos.chase-game.step_AddOcto": {
-        "message": "Dodaj figuro",
-        "description": "Step name for 'Add a Sprite' step"
-    },
-    "gui.howtos.make-music.step_LeftRight": {
-        "message": "Premikaj levo in desno s smernimi puščicami ",
-        "description": "Step name for 'Move Right & Left With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_UpDown": {
-        "message": "S smernima puščicama se premikaj gor in dol",
-        "description": "Step name for 'Move Up & Down With Arrow Keys' step"
-    },
-    "gui.howtos.Chase-Game.step_AddStar": {
-        "message": "Dodaj naslednjo figuro",
-        "description": "Step name for 'Add Another Sprite' step"
-    },
-    "gui.howtos.Chase-Game.step_MoveRandom": {
-        "message": "Premikaj naključno",
-        "description": "Step name for 'Move Randomly' step"
-    },
-    "gui.howtos.Chase-Game.step_WhenTouch": {
-        "message": "Pri figuri Hobotnice, ko se jo dotakne, predvajaj zvok",
-        "description": "Step name for 'In Octopus Sprite, When Touching Play Sound' step"
-    },
-    "gui.howtos.Chase-Game.step_ScoreVariable": {
-        "message": "Ustvari spremenljivko za rezultat",
-        "description": "Step name for 'Create Score Variable"
-    },
-    "gui.howtos.Chase-Game.ScoreWhenTouch": {
-        "message": "Pri figuri Hobotnice, ko se jo dotakne, dodaj rezultat",
-        "description": "Step name for 'In Octopus Sprite, When Touching Add Score step"
-    },
-    "gui.howtos.add-sprite.name": {
-        "message": "Dodaj figuro",
-        "description": "Name for the 'Add a Sprite' how-to"
-    },
-    "gui.howtos.add-sprite.step_addSprite": {
-        "message": "Dodaj figuro",
-        "description": "Step name for 'Add a new sprite' step"
-    },
-    "gui.howtos.add-a-backdrop.name": {
-        "message": "Dodaj ozadje",
-        "description": "Name for the 'Add a Backdrop' how-to"
-    },
-    "gui.howtos.change-size.name": {
-        "message": "Spremeni velikost",
-        "description": "Name for the 'Change Size' how-to"
-    },
-    "gui.howtos.glide-around.name": {
-        "message": "Drsi",
-        "description": "Name for the 'Glide Around' how-to"
-    },
-    "gui.howtos.record-a-sound.name": {
-        "message": "Posnami zvok",
-        "description": "Record A Sound' how-to"
-    },
-    "gui.howtos.spin-video.name": {
-        "message": "Naj se vrti",
-        "description": "Name for the 'Make It Spin' how-to"
-    },
-    "gui.howtos.hide-and-show.name": {
-        "message": "Skrij in pokaži",
-        "description": "Name for the 'Hide and Show' how-to"
-    },
-    "gui.howtos.switch-costume.name": {
-        "message": "Animiraj figuro",
-        "description": "Name for the 'Animate a Sprite' how-to"
-    },
-    "gui.howtos.move-around-with-arrow-keys.name": {
-        "message": "Uporabi smerne puščice",
-        "description": "Name for the 'Use Arrow Keys' how-to"
-    },
-    "gui.howtos.add-effects.name": {
-        "message": "Dodaj učinke",
-        "description": "Name for the 'Add Effects' how-to"
-    },
-    "gui.extension.music.name": {
-        "message": "Glasba",
-        "description": "Name for the 'Music' extension"
-    },
-    "gui.extension.music.description": {
-        "message": "Igraj glasbila.",
-        "description": "Description for the 'Music' extension"
-    },
-    "gui.extension.pen.name": {
-        "message": "Svinčnik",
-        "description": "Name for the 'Pen' extension"
-    },
-    "gui.extension.pen.description": {
-        "message": "Riši s figurami.",
-        "description": "Description for the 'Pen' extension"
-    },
-    "gui.extension.videosensing.name": {
-        "message": "Video zaznavanje",
-        "description": "Name for the 'Video Sensing' extension"
-    },
-    "gui.extension.videosensing.description": {
-        "message": "Nadzor gibanja s kamero",
-        "description": "Description for the 'Video Sensing' extension"
-    },
-    "gui.extension.text2speech.name": {
-        "message": "Text to Speech",
-        "description": "Name for the Text to Speech extension"
-    },
-    "gui.extension.text2speech.description": {
-        "message": "Make your projects talk.",
-        "description": "Description for the Text to speech extension"
-    },
-    "gui.extension.translate.name": {
-        "message": "Prevedi",
-        "description": "Name for the Translate extension"
-    },
-    "gui.extension.translate.description": {
-        "message": "Prevedi v različne jezike.",
-        "description": "Description for the Translate extension"
-    },
-    "gui.extension.microbit.description": {
-        "message": "Poveži svoje projekte s svetom.",
-        "description": "Description for the 'micro:bit' extension"
-    },
-    "gui.extension.microbit.connectingMessage": {
-        "message": "Povezovanje",
-        "description": "Message to help people connect to their micro:bit."
-    },
-    "gui.extension.ev3.description": {
-        "message": "Ustvari interaktivne robote in ... .",
-        "description": "Description for the 'LEGO MINDSTORMS EV3' extension"
-    },
-    "gui.extension.ev3.connectingMessage": {
-        "message": "Povezovanje. preveri, da je pin na EV3 nastavljen na 1234.",
-        "description": "Message to help people connect to their EV3. Must note the PIN should be 1234."
-    },
-    "gui.extension.wedo2.description": {
-        "message": "Gradi z motorji in senzorji.",
-        "description": "Description for the 'LEGO WeDo 2.0' extension"
-    },
-    "gui.extension.wedo2.connectingMessage": {
-        "message": "Povezovanje",
-        "description": "Message to help people connect to their WeDo."
-    },
-    "gui.libraryTags.all": {
-        "message": "Vse",
-        "description": "Tag for filtering a library for everything"
-    },
-    "gui.libraryTags.animals": {
-        "message": "Živali",
-        "description": "Tag for filtering a library for animals"
-    },
-    "gui.libraryTags.dance": {
-        "message": "Pleši",
-        "description": "Tag for filtering a library for dance"
-    },
-    "gui.libraryTags.effects": {
-        "message": "Učinki",
-        "description": "Tag for filtering a library for effects"
-    },
-    "gui.libraryTags.fantasy": {
-        "message": "Domišljija",
-        "description": "Tag for filtering a library for fantasy"
-    },
-    "gui.libraryTags.fashion": {
-        "message": "Moda",
-        "description": "Tag for filtering a library for fashion"
-    },
-    "gui.libraryTags.food": {
-        "message": "Food",
-        "description": "Tag for filtering a library for food"
-    },
-    "gui.libraryTags.indoors": {
-        "message": "Notranjost",
-        "description": "Tag for filtering a library for indoors"
-    },
-    "gui.libraryTags.loops": {
-        "message": "Loops",
-        "description": "Tag for filtering a library for loops"
-    },
-    "gui.libraryTags.music": {
-        "message": "Glasba",
-        "description": "Tag for filtering a library for music"
-    },
-    "gui.libraryTags.notes": {
-        "message": "Zapiski",
-        "description": "Tag for filtering a library for notes"
-    },
-    "gui.libraryTags.outdoors": {
-        "message": "Zunanjost",
-        "description": "Tag for filtering a library for outdoors"
-    },
-    "gui.libraryTags.patterns": {
-        "message": "Patterns",
-        "description": "Tag for filtering a library for patterns"
-    },
-    "gui.libraryTags.people": {
-        "message": "Stiki",
-        "description": "Tag for filtering a library for people"
-    },
-    "gui.libraryTags.percussion": {
-        "message": "Tolkala",
-        "description": "Tag for filtering a library for percussion"
-    },
-    "gui.libraryTags.space": {
-        "message": "Presledek",
-        "description": "Tag for filtering a library for space"
-    },
-    "gui.libraryTags.sports": {
-        "message": "Šport",
-        "description": "Tag for filtering a library for sports"
-    },
-    "gui.libraryTags.underwater": {
-        "message": "Pod vodo",
-        "description": "Tag for filtering a library for underwater"
-    },
-    "gui.libraryTags.voice": {
-        "message": "Voice",
-        "description": "Tag for filtering a library for voice"
-    },
-    "gui.libraryTags.wacky": {
-        "message": "Wacky",
-        "description": "Tag for filtering a library for wacky"
-    },
-    "gui.libraryTags.animation": {
-        "message": "Animacije",
-        "description": "Tag for filtering a library for animation"
-    },
-    "gui.libraryTags.art": {
-        "message": "Umetnost",
-        "description": "Tag for filtering a library for art"
-    },
-    "gui.libraryTags.games": {
-        "message": "Igre",
-        "description": "Tag for filtering a library for games"
-    },
-    "gui.libraryTags.stories": {
-        "message": "Zgodbe",
-        "description": "Tag for filtering a library for stories"
-    },
-    "gui.libraryTags.letters": {
-        "message": "Pisma",
-        "description": "Tag for filtering a library for letters"
-    },
-    "gui.opcodeLabels.direction": {
-        "message": "smer",
-        "description": "Label for the direction monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.xposition": {
-        "message": "položaj x",
-        "description": "Label for the x position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.yposition": {
-        "message": "položaj y",
-        "description": "Label for the y position monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.size": {
-        "message": "velikost",
-        "description": "Label for the size monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumename": {
-        "message": "ime videza",
-        "description": "Label for the costume name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.costumenumber": {
-        "message": "costume number",
-        "description": "Label for the costume number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropname": {
-        "message": "ime ozadja",
-        "description": "Label for the backdrop name monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.backdropnumber": {
-        "message": "backdrop number",
-        "description": "Label for the backdrop number monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.volume": {
-        "message": "glasnost",
-        "description": "Label for the volume monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.tempo": {
-        "message": "tempo",
-        "description": "Label for the tempo monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.answer": {
-        "message": "odgovor",
-        "description": "Label for the answer monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.loudness": {
-        "message": "glasnost",
-        "description": "Label for the loudness monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.username": {
-        "message": "uporabniško ime",
-        "description": "Label for the username monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.year": {
-        "message": "leto",
-        "description": "Label for the current year monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.month": {
-        "message": "mesec",
-        "description": "Label for the current month monitor when shown on the stage."
-    },
-    "gui.opcodeLabels.date": {
-        "message": "datum",
-        "description": "Label for the current date monitor when shown on the stage. Shows the current day of the month"
-    },
-    "gui.opcodeLabels.dayofweek": {
-        "message": "dan v tednu",
-        "description": "Label for the current day of week monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.hour": {
-        "message": "ura",
-        "description": "Label for the current hour monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.minute": {
-        "message": "minuta",
-        "description": "Label for the current minute monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.second": {
-        "message": "sekunda",
-        "description": "Label for the current second monitor when shown on the stage"
-    },
-    "gui.opcodeLabels.timer": {
-        "message": "štoparica",
-        "description": "Label for the timer monitor when shown on the stage"
-    },
-    "gui.sharedMessages.backdrop": {
-        "message": "backdrop{index}",
-        "description": "Default name for a new backdrop, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.costume": {
-        "message": "costume{index}",
-        "description": "Default name for a new costume, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.sprite": {
-        "message": "Sprite{index}",
-        "description": "Default name for a new sprite, scratch will automatically adjust the number if necessary"
-    },
-    "gui.sharedMessages.pop": {
-        "message": "poberi",
-        "description": "Name of the pop sound, the default sound added to a sprite"
-    }
+    "gui.connection.reconnect": "Reconnect",
+    "gui.backpack.header": "Shramba",
+    "gui.backpack.errorBackpack": "Napaka pri nalaganju shrambe",
+    "gui.backpack.loadingBackpack": "Nalagam ...",
+    "gui.backpack.more": "Več",
+    "gui.backpack.emptyBackpack": "Shramba je prazna",
+    "gui.unsupportedBrowser.label": "Ta brskalnik ni podprt",
+    "gui.unsupportedBrowser.description": "Žal Scratch 3.0 ne podpira brskalnikov Internet Explorer, Vivaldi, Opera ali Silk. priporočamo uporabo nobvejših brskalnikov kot so Google Chrome, Mozilla Firefox ali Microsoft Edge.",
+    "gui.unsupportedBrowser.back": "Nazaj",
+    "gui.unsupportedBrowser.previewfaq": "Da izveš več, pojdi na {previewFaqLink}.",
+    "gui.unsupportedBrowser.previewfaqlinktext": "Pogosta vprašanja",
+    "gui.cameraModal.cameraModalTitle": "Fotografiraj",
+    "gui.cameraModal.loadingCameraMessage": "Nalaganje kamere...",
+    "gui.cameraModal.permissionRequest": "Potrebujemo tvoje soglasje za uporabo kamere",
+    "gui.cameraModal.retakePhoto": "Ponovno fotografiraj",
+    "gui.cameraModal.save": "Shrani",
+    "gui.cameraModal.takePhoto": "Fotografiraj",
+    "gui.cameraModal.loadingCaption": "Nalagam ...",
+    "gui.cameraModal.enableCameraCaption": "Omogoči kamero",
+    "gui.cards.all-tutorials": "Vodiči",
+    "gui.cards.close": "Zapri",
+    "gui.cards.more-things-to-try": "Poskusi še več stvari!",
+    "gui.cards.see-more": "Oglej si še",
+    "gui.comingSoon.message1": "Ne skrbi, delamo na tem {emoji}",
+    "gui.comingSoon.message2": "Kmalu ...",
+    "gui.comingSoon.message3": "Delamo na tem {emoji}",
+    "gui.connection.auto-scanning.noPeripheralsFound": "Ni najdenih naprav",
+    "gui.connection.auto-scanning.prescan": "Poskrbi, da je naprava v bližini in prični z iskanjem.",
+    "gui.connection.auto-scanning.pressbutton": "Na napravi pritisni na gumb.",
+    "gui.connection.auto-scanning.start-search": "Začni z iskanjem",
+    "gui.connection.connecting-searchbutton": "Iščem...",
+    "gui.connection.auto-scanning.try-again": "Poskusi ponovno",
+    "gui.connection.connected": "Povezano",
+    "gui.connection.disconnect": "Prekini povezavo",
+    "gui.connection.go-to-editor": "V urejevalnik",
+    "gui.connection.connecting-cancelbutton": "Povezovanje...",
+    "gui.connection.error.errorMessage": "Ups, nekaj je šlo narobe.",
+    "gui.connection.error.tryagainbutton": "Poskusi ponovno",
+    "gui.connection.error.helpbutton": "Pomoč",
+    "gui.connection.peripheral-name-label": "Ime naprave",
+    "gui.connection.connect": "Poveži",
+    "gui.connection.scanning.lookingforperipherals": "Iščem naprave",
+    "gui.connection.scanning.noPeripheralsFound": "Ni najdenih naprav",
+    "gui.connection.scanning.instructions": "Izberi napravo z zgornjega spiska .",
+    "gui.connection.search": "Osveži",
+    "gui.connection.unavailable.installscratchlink": "Preveri, če je Scratch Link nameščen in zagnan",
+    "gui.connection.unavailable.enablebluetooth": "Preveri, če je Blootooth omogočen",
+    "gui.connection.unavailable.tryagainbutton": "Poskusi ponovno",
+    "gui.connection.unavailable.helpbutton": "Pomoč",
+    "gui.controls.go": "Pojdi",
+    "gui.controls.stop": "Ustavi",
+    "gui.crashMessage.label": "To je nerodno! Nekaj je šlo narobe.",
+    "gui.crashMessage.description": "Žal nam je, a kaže, da je Scractch prenehal delovati. Ekipa, ki skrbi za razvij Scratcha, je bila avtomatično obveščena. Prosimo, osveži stran in poskusi znova. ",
+    "gui.crashMessage.reload": "Reload",
+    "gui.customProcedures.myblockModalTitle": "Ustvari blok",
+    "gui.customProcedures.addAnInputNumberText": "Dodaj vnos",
+    "gui.customProcedures.numberTextType": "število ali besedilo",
+    "gui.customProcedures.addAnInputBoolean": "Dodaj vnos",
+    "gui.customProcedures.booleanType": "logične vrednosti",
+    "gui.customProcedures.addALabel": "Dodaj oznako",
+    "gui.customProcedures.runWithoutScreenRefresh": "Izvajaj brez osveževanja",
+    "gui.customProcedures.cancel": "Prekliči",
+    "gui.customProcedures.ok": "OK",
+    "gui.SpriteInfo.direction": "Smer",
+    "gui.directionPicker.rotationStyles.allAround": "Vsepovsod",
+    "gui.directionPicker.rotationStyles.leftRight": "Levo/Desno",
+    "gui.directionPicker.rotationStyles.dontRotate": "Ne obračaj",
+    "gui.gui.addExtension": "Dodaj razširitev",
+    "gui.gui.codeTab": "Koda",
+    "gui.gui.backdropsTab": "Ozadja",
+    "gui.gui.costumesTab": "Videzi",
+    "gui.gui.soundsTab": "Zvoki",
+    "gui.importInfo.title": "Oglej si Projekt Scratch 2.0",
+    "gui.importInfo.betamessage": "Vnesi povezavo do enega od tvojih deljenih Scratch projektov. Spremembe, narejene v tej različici 3.0 Beta ne bodo shranjene.",
+    "gui.importInfo.message": "Izberi povezavo do enega od tvojih deljenih Scratch projektov. Spremembe, narejene cv tem Predpregledu 3.0 ne bodo shranjene.",
+    "gui.importInfo.invalidFormatError": "Hmm, ta povezava do projekta ali id ni videti ravno prav. ",
+    "gui.importModal.viewproject": "Oglej si",
+    "gui.importInfo.goback": "Nazaj",
+    "gui.importInfo.previewfaq": "Da izveš več, pojdi na {previewFaqLink}.",
+    "gui.importInfo.previewfaqlinktext": "Pogosta vprašanja",
+    "gui.extensionLibrary.comingSoon": "Kmalu ...",
+    "gui.extensionLibrary.requires": "Requires",
+    "gui.extensionLibrary.collaboration": "Collaboration with",
+    "gui.library.filterPlaceholder": "Išči",
+    "gui.library.allTag": "Vse",
+    "gui.loader.message1": "Ustvarjanje blokov",
+    "gui.loader.message2": "Nalagam figure ...",
+    "gui.loader.message3": "Nalagam zvoke ...",
+    "gui.loader.message4": "Nalagam razširitve ...",
+    "gui.loader.message5": "Krotenje mačk ...",
+    "gui.loader.message6": "Prenos ...",
+    "gui.loader.message7": "Inflating gobos …",
+    "gui.loader.message8": "Priprava smeškov ...",
+    "gui.loader.headline": "Nalagam projekt",
+    "gui.accountMenu.profile": "Profil",
+    "gui.accountMenu.myStuff": "Moje stvari",
+    "gui.accountMenu.myClasses": "Moji razredi",
+    "gui.accountMenu.myClass": "Moj razred",
+    "gui.accountMenu.accountSettings": "Nastavitve računa",
+    "gui.accountMenu.signOut": "Izpiši se",
+    "gui.authorInfo.byUser": "by {username}",
+    "gui.menuBar.seeCommunity": "Oglej si Skupnost",
+    "general.username": "Uporabniško ime",
+    "general.password": "Geslo",
+    "general.signIn": "Vpiši se",
+    "login.needHelp": "Potrebuješ pomoč?",
+    "gui.menuBar.LanguageSelector": "izbira jezika",
+    "gui.menuBar.tutorialsLibrary": "Vodiči",
+    "gui.menuBar.restoreSprite": "Povrni figuro",
+    "gui.menuBar.restoreSound": "Povrni zvok",
+    "gui.menuBar.restoreCostume": "Povrni videz",
+    "gui.menuBar.restore": "Povrni",
+    "gui.menuBar.saveNow": "Shrani takoj",
+    "gui.menuBar.saveAsCopy": "Shrani kot kopijo",
+    "gui.menuBar.remix": "Predelaj",
+    "gui.menuBar.new": "Nov",
+    "gui.menuBar.file": "Datoteka",
+    "gui.menuBar.uploadFromComputer": "Naloži z računalnika",
+    "gui.menuBar.downloadToComputer": "Shrani na računalnik",
+    "gui.menuBar.edit": "Uredi",
+    "gui.menuBar.turboModeOff": "Izključi Turbo način",
+    "gui.menuBar.turboModeOn": "Vključi Turbo način",
+    "gui.menuBar.joinScratch": "Pridruži se Scratchu",
+    "gui.menuBar.signIn": "Vpiši se",
+    "gui.menuBar.giveFeedback": "Sporoči povratne informacije",
+    "gui.gui.projectTitlePlaceholder": "Project title here",
+    "gui.menuBar.isShared": "Deljeno",
+    "gui.menuBar.share": "Deli",
+    "gui.modal.help": "Pomoč",
+    "gui.modal.back": "Nazaj",
+    "gui.monitor.listMonitor.empty": "(empty)",
+    "gui.monitor.listMonitor.listLength": "length {length}",
+    "gui.monitor.contextMenu.default": "navaden prikaz",
+    "gui.monitor.contextMenu.large": "velik prikaz",
+    "gui.monitor.contextMenu.slider": "drsnik",
+    "gui.previewInfo.label": "Preizkusi Scratch 3.0",
+    "gui.previewInfo.welcome": "Dobrodošel v Scratch 3.0 Beta",
+    "gui.previewModal.notnowtooltip": "Ne še",
+    "gui.previewModal.tryittooltip": "Preizkusi",
+    "gui.previewModal.viewprojecttooltip": "Oglej si Projekt 2.0",
+    "gui.previewInfo.betawelcome": "Dobrodošel v Scratch 3.0 Beta",
+    "gui.previewInfo.invitation": "Razvijamo novo generacijo Scratcha. Veselimo se, da ga boš preizkusil!",
+    "gui.previewInfo.notnow": "Ne še",
+    "gui.previewModal.tryit": "Preizkusi! {caticon}",
+    "gui.previewModal.viewproject": "Oglej si Projekt 2.0",
+    "gui.previewInfo.previewfaq": "Da izveš več, pojdi na {previewFaqLink}.",
+    "gui.previewInfo.previewfaqlinktext": "Pogosta vprašanja",
+    "gui.gui.variableScopeOptionAllSprites": "Za vse figure",
+    "gui.gui.variableScopeOptionSpriteOnly": "Samo za to figuro",
+    "gui.gui.cloudVariableOption": "Spremenljivka v oblaku (shranjena na strežniku)",
+    "gui.gui.variablePromptAllSpritesMessage": "Ta spremenljivka bo na voljo vsem figuram.",
+    "gui.prompt.cancel": "Prekliči",
+    "gui.prompt.ok": "OK",
+    "gui.playbackStep.stopMsg": "Ustavi",
+    "gui.playbackStep.playMsg": "Predvajaj",
+    "gui.playbackStep.loadingMsg": "Nalagam ...",
+    "gui.playbackStep.saveMsg": "Shrani",
+    "gui.playbackStep.reRecordMsg": "Ponovno posnemi",
+    "gui.recordModal.title": "Posnami zvok",
+    "gui.recordingStep.beginRecord": "Begin recording by clicking the button below",
+    "gui.recordingStep.permission": "{arrow}We need your permission to use your microphone",
+    "gui.recordingStep.stop": "Stop recording",
+    "gui.recordingStep.record": "Snemaj",
+    "gui.soundEditor.sound": "Zvok",
+    "gui.soundEditor.play": "Predvajaj",
+    "gui.soundEditor.stop": "Ustavi",
+    "gui.soundEditor.trim": "Odstrani",
+    "gui.soundEditor.save": "Shrani",
+    "gui.soundEditor.undo": "Razveljavi",
+    "gui.soundEditor.redo": "Uveljavi",
+    "gui.soundEditor.faster": "Hitreje",
+    "gui.soundEditor.slower": "Počasneje",
+    "gui.soundEditor.echo": "Odmev",
+    "gui.soundEditor.robot": "Robot",
+    "gui.soundEditor.louder": "Glasneje",
+    "gui.soundEditor.softer": "Mehkeje",
+    "gui.soundEditor.reverse": "Obrni",
+    "gui.SpriteInfo.spritePlaceholder": "Ime",
+    "gui.SpriteInfo.sprite": "Figura",
+    "gui.SpriteInfo.show": "Pokaži",
+    "gui.SpriteInfo.size": "Velikost",
+    "gui.spriteSelectorItem.contextMenuDuplicate": "podvoji",
+    "gui.spriteSelectorItem.contextMenuDelete": "zbriši",
+    "gui.spriteSelectorItem.contextMenuExport": "izvozi",
+    "gui.spriteSelector.addSpriteFromLibrary": "Izberi figuro",
+    "gui.spriteSelector.addSpriteFromPaint": "Nariši",
+    "gui.spriteSelector.addSpriteFromSurprise": "Presenečenje",
+    "gui.spriteSelector.addSpriteFromFile": "Naloži figuro",
+    "gui.stageHeader.stageSizeLarge": "Preklopi na večji oder",
+    "gui.stageHeader.stageSizeSmall": "Preklopi na manjši oder",
+    "gui.stageHeader.stageSizeFull": "Vklopi celozaslonski način",
+    "gui.stageHeader.stageSizeUnFull": "Izhod iz celozaslonskega načina",
+    "gui.stageHeader.fullscreenControl": "Celozaslonski način",
+    "gui.spriteSelector.addBackdropFromLibrary": "Izberi ozadje",
+    "gui.stageSelector.addBackdropFromPaint": "Paint",
+    "gui.stageSelector.addBackdropFromSurprise": "Presenečenje",
+    "gui.stageSelector.addBackdropFromFile": "Naloži ozadje",
+    "gui.stageSelector.stage": "Oder",
+    "gui.stageSelector.backdrops": "Ozadja",
+    "gui.turboMode.active": "Turbo način",
+    "gui.webglModal.label": "Tvoj brskalnik ne podpira WebGL",
+    "gui.webglModal.description": "Videti je, da tvoj brskalnik žal ne podpira {webGlLink}. Ta tehnologija je nujna, da Scratch 3.0 deluje.",
+    "gui.webglModal.webgllink": "ne podpira WebGL",
+    "gui.webglModal.back": "Nazaj",
+    "gui.webglModal.previewfaq": "Da izveš več, pojdi na {previewFaqLink}.",
+    "gui.webglModal.previewfaqlinktext": "Pogosta vprašanja",
+    "gui.costumeLibrary.chooseABackdrop": "Izberi ozadje",
+    "gui.costumeLibrary.chooseACostume": "Izberi videz",
+    "gui.costumeTab.addBackdropFromLibrary": "Izberi ozadje",
+    "gui.costumeTab.addCostumeFromLibrary": "Izberi videz",
+    "gui.costumeTab.addBlankCostume": "Nariši",
+    "gui.costumeTab.addSurpriseCostume": "Presenečenje",
+    "gui.costumeTab.addFileBackdrop": "Naloži ozadje",
+    "gui.costumeTab.addFileCostume": "Naloži videz",
+    "gui.costumeTab.addCameraCostume": "Spletna kamera",
+    "gui.extensionLibrary.chooseAnExtension": "Izberi razširitev",
+    "gui.extensionLibrary.extensionUrl": "Dodaj URL naslov razširitve",
+    "gui.gui.defaultProjectTitle": "Scratch Project",
+    "gui.recordingStep.alertMsg": "Ni bilo mogoče snemati",
+    "gui.projectLoader.loadError": "Izbrana projektna datoteka se ni naložila.",
+    "gui.soundLibrary.chooseASound": "Izberi zvok",
+    "gui.soundTab.fileUploadSound": "Naloži zvočni posnetek...",
+    "gui.soundTab.surpriseSound": "Presenečenje",
+    "gui.soundTab.recordSound": "Snemaj",
+    "gui.soundTab.addSoundFromLibrary": "Izberi zvok",
+    "gui.spriteLibrary.chooseASprite": "Izberi figuro",
+    "gui.tipsLibrary.tutorials": "Izberi Vodič.",
+    "gui.alerts.createsuccess": "Successfully created.",
+    "gui.alerts.creating": "Ustvarjam...",
+    "gui.alerts.creatingError": "Could not create the project. Please try again!",
+    "gui.alerts.savingError": "Could not save the project. Please try again!",
+    "gui.alerts.savesuccess": "Successfully saved.",
+    "gui.alerts.saving": "Shranjujem...",
+    "gui.defaultProject.meow": "Meow",
+    "gui.defaultProject.variable": "moja spremenljivka",
+    "gui.howtos.intro-move-sayhello-hat.name": "Prvi koraki",
+    "gui.howtos.intro-move.step_stepMove": "Dodaj blok za premik",
+    "gui.howtos.add-a-move-block.step_stepMoveSayHello": "Za začetek klikni na zeleno zastavico",
+    "gui.howtos.say-it-out-loud": "Create Animations That Talk",
+    "gui.howtos.say-it-out-loud.step_AddTXTextension": "Add the Text to Speech blocks",
+    "gui.howtos. say-it-out-loud.step_TXTSpeech": "Reci kaj",
+    "gui.howtos.say-it-out-loud_TXTSetVoice": "Set a Voice",
+    "gui.howtos.say-it-out-loud.step_TXTMove": "Move Around",
+    "gui.howtos.say-it-out-loud.step_TXTBackdrop": "Dodaj ozadje",
+    "gui.howtos.say-it-out-loud.step_TXTAddSprite": "Add Another Character",
+    "gui.howtos.say-it-out-loud.step_TXTSong": "Perform a Song",
+    "gui.howtos.say-it-out-loud.step_TXTColor": "Spremeni barvo",
+    "gui.howtos.say-it-out-loud.step_TXTSpin": "Zavrti okoli",
+    "gui.howtos.say-it-out-loud.step_TXTGrow": "Grow and Shrink",
+    "gui.howtos.cartoon-network": "Animate an Adventure Game",
+    "gui.howtos.cartoon-network.step_CNcharacter": "Choose a Character to Show",
+    "gui.howtos.cartoon-network.step_CNsay": "Reci kaj",
+    "gui.howtos.cartoon-network.step_CNglide": "Drsi",
+    "gui.howtos.cartoon-network.step_CNpicksprite": "Choose an Object to Chase",
+    "gui.howtos.cartoon-network.step_CNcollect": "Collect Objects",
+    "gui.howtos.cartoon-network.step_CNvariable": "Make a Score Variable",
+    "gui.howtos.cartoon-network.step_CNscore": "Štej točke",
+    "gui.howtos.cartoon-network.step_CNbackdrop": "Level Up: Change Backdrop",
+    "gui.howtos.animate-a-name.name": "Animiraj ime",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter": "Izberi figuro uge črke",
+    "gui.howtos.animate-a-name.step_AnimatePlaySound": "Ob kliku predvajaj zvok",
+    "gui.howtos.animate-a-name.step_AnimatePickLetter2": "Izberi figuro druge črko",
+    "gui.howtos.animate-a-name.step_AnimateChangeColor": "Spremeni barvo",
+    "gui.howtos.animate-a-name.step_AnimateSpin": "Izberi drugo črko in povzroči, da se zavrti",
+    "gui.howtos.animate-a-name.step_AnimateGrow": "Izberi drugo črko in povzroči, da se poveča",
+    "gui.howtos.make-music.name": "Ustvari glasbo",
+    "gui.howtos.Make-Music.step_PickInstrument": "Izberi figuro glasbila",
+    "gui.howtos.Make-Music.step_PlaySoundClick": "Ob kliku predvajaj zvok",
+    "gui.howtos.Make-Music.step_MakeSong": "Ustvari pesem",
+    "gui.howtos.make-music.step_MakeBeat": "Izberi boben in udari po njem",
+    "gui.howtos.make-music.step_MakeBeatBox": "Izberi figuro Mikrofon & Beatbox presenečenja",
+    "gui.howtos.make-a-game.name": "Ustvari Igro klikanja",
+    "gui.howtos.Make-A-Game.step_GamePickSprite": "Izberi figuro",
+    "gui.howtos.make-a-game.step_GamePlaySound": "Ob kliku predvajaj zvok",
+    "gui.howtos.make-a-game.step_GameAddScore": "Ustvari spremenljivko za rezultat",
+    "gui.howtos.make-a-game.step_GameChangeScore": "Ob kliku povečaj število točk",
+    "gui.howtos.make-a-game.step_Random": "Pojdi na naključno mesto",
+    "gui.howtos.make-music.step_GameChangeColor": "Spremeni barvo",
+    "gui.howtos.make-music.step_ResetScore": "Ponastavi rezultat",
+    "gui.howtos.make-a-chase-game.name": "Ustvari Igro lovljenja",
+    "gui.howtos.Chase-Game.step_BG": "Dodaj ozadje",
+    "gui.howtos.chase-game.step_AddOcto": "Dodaj figuro",
+    "gui.howtos.make-music.step_LeftRight": "Premikaj levo in desno s smernimi puščicami ",
+    "gui.howtos.Chase-Game.step_UpDown": "S smernima puščicama se premikaj gor in dol",
+    "gui.howtos.Chase-Game.step_AddStar": "Dodaj naslednjo figuro",
+    "gui.howtos.Chase-Game.step_MoveRandom": "Premikaj naključno",
+    "gui.howtos.Chase-Game.step_WhenTouch": "Pri figuri Hobotnice, ko se jo dotakne, predvajaj zvok",
+    "gui.howtos.Chase-Game.step_ScoreVariable": "Ustvari spremenljivko za rezultat",
+    "gui.howtos.Chase-Game.ScoreWhenTouch": "Pri figuri Hobotnice, ko se jo dotakne, dodaj rezultat",
+    "gui.howtos.add-sprite.name": "Dodaj figuro",
+    "gui.howtos.add-sprite.step_addSprite": "Dodaj figuro",
+    "gui.howtos.add-a-backdrop.name": "Dodaj ozadje",
+    "gui.howtos.change-size.name": "Spremeni velikost",
+    "gui.howtos.glide-around.name": "Drsi",
+    "gui.howtos.record-a-sound.name": "Posnami zvok",
+    "gui.howtos.spin-video.name": "Naj se vrti",
+    "gui.howtos.hide-and-show.name": "Skrij in pokaži",
+    "gui.howtos.switch-costume.name": "Animiraj figuro",
+    "gui.howtos.move-around-with-arrow-keys.name": "Uporabi smerne puščice",
+    "gui.howtos.add-effects.name": "Dodaj učinke",
+    "gui.extension.music.name": "Glasba",
+    "gui.extension.music.description": "Igraj glasbila.",
+    "gui.extension.pen.name": "Svinčnik",
+    "gui.extension.pen.description": "Riši s figurami.",
+    "gui.extension.videosensing.name": "Video zaznavanje",
+    "gui.extension.videosensing.description": "Nadzor gibanja s kamero",
+    "gui.extension.text2speech.name": "Text to Speech",
+    "gui.extension.text2speech.description": "Make your projects talk.",
+    "gui.extension.translate.name": "Prevedi",
+    "gui.extension.translate.description": "Prevedi v različne jezike.",
+    "gui.extension.microbit.description": "Poveži svoje projekte s svetom.",
+    "gui.extension.microbit.connectingMessage": "Povezovanje",
+    "gui.extension.ev3.description": "Ustvari interaktivne robote in ... .",
+    "gui.extension.ev3.connectingMessage": "Povezovanje. preveri, da je pin na EV3 nastavljen na 1234.",
+    "gui.extension.wedo2.description": "Gradi z motorji in senzorji.",
+    "gui.extension.wedo2.connectingMessage": "Povezovanje",
+    "gui.libraryTags.all": "Vse",
+    "gui.libraryTags.animals": "Živali",
+    "gui.libraryTags.dance": "Pleši",
+    "gui.libraryTags.effects": "Učinki",
+    "gui.libraryTags.fantasy": "Domišljija",
+    "gui.libraryTags.fashion": "Moda",
+    "gui.libraryTags.food": "Food",
+    "gui.libraryTags.indoors": "Notranjost",
+    "gui.libraryTags.loops": "Loops",
+    "gui.libraryTags.music": "Glasba",
+    "gui.libraryTags.notes": "Zapiski",
+    "gui.libraryTags.outdoors": "Zunanjost",
+    "gui.libraryTags.patterns": "Patterns",
+    "gui.libraryTags.people": "Stiki",
+    "gui.libraryTags.percussion": "Tolkala",
+    "gui.libraryTags.space": "Presledek",
+    "gui.libraryTags.sports": "Šport",
+    "gui.libraryTags.underwater": "Pod vodo",
+    "gui.libraryTags.voice": "Voice",
+    "gui.libraryTags.wacky": "Wacky",
+    "gui.libraryTags.animation": "Animacije",
+    "gui.libraryTags.art": "Umetnost",
+    "gui.libraryTags.games": "Igre",
+    "gui.libraryTags.stories": "Zgodbe",
+    "gui.libraryTags.letters": "Pisma",
+    "gui.opcodeLabels.direction": "smer",
+    "gui.opcodeLabels.xposition": "položaj x",
+    "gui.opcodeLabels.yposition": "položaj y",
+    "gui.opcodeLabels.size": "velikost",
+    "gui.opcodeLabels.costumename": "ime videza",
+    "gui.opcodeLabels.costumenumber": "costume number",
+    "gui.opcodeLabels.backdropname": "ime ozadja",
+    "gui.opcodeLabels.backdropnumber": "backdrop number",
+    "gui.opcodeLabels.volume": "glasnost",
+    "gui.opcodeLabels.tempo": "tempo",
+    "gui.opcodeLabels.answer": "odgovor",
+    "gui.opcodeLabels.loudness": "glasnost",
+    "gui.opcodeLabels.username": "uporabniško ime",
+    "gui.opcodeLabels.year": "leto",
+    "gui.opcodeLabels.month": "mesec",
+    "gui.opcodeLabels.date": "datum",
+    "gui.opcodeLabels.dayofweek": "dan v tednu",
+    "gui.opcodeLabels.hour": "ura",
+    "gui.opcodeLabels.minute": "minuta",
+    "gui.opcodeLabels.second": "sekunda",
+    "gui.opcodeLabels.timer": "štoparica",
+    "gui.sharedMessages.backdrop": "backdrop{index}",
+    "gui.sharedMessages.costume": "costume{index}",
+    "gui.sharedMessages.sprite": "Sprite{index}",
+    "gui.sharedMessages.pop": "poberi"
 }

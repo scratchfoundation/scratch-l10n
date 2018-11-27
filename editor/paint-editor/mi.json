@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "Tae",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "Waiwai",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "Pīataata",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "Kaua e āwangawanga, ka ekengia e mātou {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "Ākuanei kei konei...",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "Kei te ngana mātou ki te whakaoti {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "Whakakīia",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "Kākahu",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "Whakarōpūngia",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "Wehea",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "Wetekia",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "Mahia anōtia",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "Ki mua",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "Ki muri",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "Mua",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "Hoki atu",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "Anō",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "Rahi",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "Te rahi kōmuru",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "Tāruatia",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "Whakapiri",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "Mukua",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "Ānau",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "Koi",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "Mātotoru",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "Pore whakapae",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "Pore poutū",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "Kua kī",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "Kua whakahuahuatia",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "Whakawhitia hei Maheremoka",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "Whakawhitia hei Pere",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "Whakahuahua",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "Paraihe",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Kōmuru",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "Whakakīia",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "Rārangi",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "Porowhita",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "Tapawhā Roa",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "Tāraia anōtia",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Tapawhā Roa Tōpuku",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "Kōwhiria",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "Kuputuhi",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "Whakawhitia",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "Tae",
+    "paint.paintEditor.saturation": "Waiwai",
+    "paint.paintEditor.brightness": "Pīataata",
+    "gui.comingSoon.message1": "Kaua e āwangawanga, ka ekengia e mātou {emoji}",
+    "gui.comingSoon.message2": "Ākuanei kei konei...",
+    "gui.comingSoon.message3": "Kei te ngana mātou ki te whakaoti {emoji}",
+    "paint.paintEditor.fill": "Whakakīia",
+    "paint.paintEditor.costume": "Kākahu",
+    "paint.paintEditor.group": "Whakarōpūngia",
+    "paint.paintEditor.ungroup": "Wehea",
+    "paint.paintEditor.undo": "Wetekia",
+    "paint.paintEditor.redo": "Mahia anōtia",
+    "paint.paintEditor.forward": "Ki mua",
+    "paint.paintEditor.backward": "Ki muri",
+    "paint.paintEditor.front": "Mua",
+    "paint.paintEditor.back": "Hoki atu",
+    "paint.paintEditor.more": "Anō",
+    "paint.modeTools.brushSize": "Rahi",
+    "paint.modeTools.eraserSize": "Te rahi kōmuru",
+    "paint.modeTools.copy": "Tāruatia",
+    "paint.modeTools.paste": "Whakapiri",
+    "paint.modeTools.delete": "Mukua",
+    "paint.modeTools.curved": "Ānau",
+    "paint.modeTools.pointed": "Koi",
+    "paint.modeTools.thickness": "Mātotoru",
+    "paint.modeTools.flipHorizontal": "Pore whakapae",
+    "paint.modeTools.flipVertical": "Pore poutū",
+    "paint.modeTools.filled": "Kua kī",
+    "paint.modeTools.outlined": "Kua whakahuahuatia",
+    "paint.paintEditor.bitmap": "Whakawhitia hei Maheremoka",
+    "paint.paintEditor.vector": "Whakawhitia hei Pere",
+    "paint.paintEditor.stroke": "Whakahuahua",
+    "paint.brushMode.brush": "Paraihe",
+    "paint.eraserMode.eraser": "Kōmuru",
+    "paint.fillMode.fill": "Whakakīia",
+    "paint.lineMode.line": "Rārangi",
+    "paint.ovalMode.oval": "Porowhita",
+    "paint.rectMode.rect": "Tapawhā Roa",
+    "paint.reshapeMode.reshape": "Tāraia anōtia",
+    "paint.roundedRectMode.roundedRect": "Tapawhā Roa Tōpuku",
+    "paint.selectMode.select": "Kōwhiria",
+    "paint.textMode.text": "Kuputuhi",
+    "paint.colorPicker.swap": "Whakawhitia"
 }

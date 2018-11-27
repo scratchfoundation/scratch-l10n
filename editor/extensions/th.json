@@ -1,566 +1,143 @@
 {
-    "ev3.beepNote": {
-        "message": "เล่นโน้ต [NOTE] เป็นเวลา [TIME] วินาที",
-        "description": "play some note on EV3 for some time"
-    },
-    "ev3.buttonPressed": {
-        "message": "ปุ่ม [PORT] ถูกกด?",
-        "description": "is a button on some port pressed?"
-    },
-    "ev3.getBrightness": {
-        "message": "ความสว่าง",
-        "description": "gets measured brightness"
-    },
-    "ev3.getDistance": {
-        "message": "ระยะห่าง",
-        "description": "gets measured distance"
-    },
-    "ev3.getMotorPosition": {
-        "message": "ตำแหน่งมอเตอร์ [PORT]",
-        "description": "get the measured degrees a motor has turned"
-    },
-    "ev3.motorSetPower": {
-        "message": "ตั้งค่ากำลังมอเตอร์ [PORT] เป็น [POWER] %",
-        "description": "set a motor's power to some value"
-    },
-    "ev3.motorTurnClockwise": {
-        "message": "มอเตอร์ [PORT] หมุนทางนี้ เป็นเวลา [TIME] วินาที",
-        "description": "turn a motor clockwise for some time"
-    },
-    "ev3.motorTurnCounterClockwise": {
-        "message": "มอเตอร์ [PORT] หมุนทางนั้น เป็นเวลา [TIME] วินาที",
-        "description": "turn a motor counter-clockwise for some time"
-    },
-    "ev3.whenBrightnessLessThan": {
-        "message": "เมื่อความสว่าง < [DISTANCE]",
-        "description": "when value measured by brightness sensor is less than some value"
-    },
-    "ev3.whenButtonPressed": {
-        "message": "เมื่อกดปุ่ม [PORT]",
-        "description": "when a button connected to a port is pressed"
-    },
-    "ev3.whenDistanceLessThan": {
-        "message": "เมื่อระยะห่าง < [DISTANCE]",
-        "description": "when the value measured by the distance sensor is less than some value"
-    },
-    "microbit.buttonsMenu.any": {
-        "message": "ทิศใดก็ได้",
-        "description": "label for \"any\" element in button picker for micro:bit extension"
-    },
-    "microbit.clearDisplay": {
-        "message": "ล้างหน้าจอ",
-        "description": "display nothing on the micro:bit display"
-    },
-    "microbit.defaultTextToDisplay": {
-        "message": "Sawasdee!",
-        "description": "default text to display.\n                                IMPORTANT - the micro:bit only supports letters a-z, A-Z.\n                                Please substitute a default word in your language\n                                that can be written with those characters,\n                                substitute non-accented characters or leave it as \"Hello!\".\n                                Check the micro:bit site documentation for details"
-    },
-    "microbit.displaySymbol": {
-        "message": "แสดง [MATRIX]",
-        "description": "display a pattern on the micro:bit display"
-    },
-    "microbit.displayText": {
-        "message": "แสดงข้อความ [TEXT]",
-        "description": "display text on the micro:bit display"
-    },
-    "microbit.gesturesMenu.jumped": {
-        "message": "กระโดด",
-        "description": "label for jumped gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.moved": {
-        "message": "เคลื่อนไหว",
-        "description": "label for moved gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.gesturesMenu.shaken": {
-        "message": "เขย่า",
-        "description": "label for shaken gesture in gesture picker for micro:bit extension"
-    },
-    "microbit.isButtonPressed": {
-        "message": "ปุ่ม [BTN] ถูกกด?",
-        "description": "is the selected button on the micro:bit pressed?"
-    },
-    "microbit.isTilted": {
-        "message": "เอียง [DIRECTION]?",
-        "description": "is the micro:bit is tilted in a direction?"
-    },
-    "microbit.pinStateMenu.off": {
-        "message": "ปิด",
-        "description": "label for off element in pin state picker for micro:bit extension"
-    },
-    "microbit.pinStateMenu.on": {
-        "message": "เปิด",
-        "description": "label for on element in pin state picker for micro:bit extension"
-    },
-    "microbit.tiltAngle": {
-        "message": "มุมเอียง [DIRECTION]",
-        "description": "how much the micro:bit is tilted in a direction"
-    },
-    "microbit.tiltDirectionMenu.any": {
-        "message": "ทิศใดก็ได้",
-        "description": "label for any direction element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.back": {
-        "message": "หลัง",
-        "description": "label for back element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.front": {
-        "message": "หน้า",
-        "description": "label for front element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.left": {
-        "message": "ซ้าย",
-        "description": "label for left element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.tiltDirectionMenu.right": {
-        "message": "ขวา",
-        "description": "label for right element in tilt direction picker for micro:bit extension"
-    },
-    "microbit.whenButtonPressed": {
-        "message": "เมื่อปุ่ม [BTN] ถูกกด",
-        "description": "when the selected button on the micro:bit is pressed"
-    },
-    "microbit.whenGesture": {
-        "message": "เมื่อ [GESTURE]",
-        "description": "when the selected gesture is detected by the micro:bit"
-    },
-    "microbit.whenPinConnected": {
-        "message": "when pin [PIN] connected",
-        "description": "when the pin detects a connection to Earth/Ground"
-    },
-    "microbit.whenTilted": {
-        "message": "เมื่อเอียง [DIRECTION]",
-        "description": "when the micro:bit is tilted in a direction"
-    },
-    "music.categoryName": {
-        "message": "ดนตรี",
-        "description": "Label for the Music extension category"
-    },
-    "music.changeTempo": {
-        "message": "เปลี่ยนความเร็วทีละ [TEMPO]",
-        "description": "change tempo (speed) for notes, drums, and rests played"
-    },
-    "music.drumBass": {
-        "message": "(2) กลองใหญ่",
-        "description": "Sound of bass drum as used in a standard drum kit"
-    },
-    "music.drumBongo": {
-        "message": "(13) บองโก",
-        "description": "Sound of a bongo being struck"
-    },
-    "music.drumCabasa": {
-        "message": "(15) คาบาซา",
-        "description": "Sound of a cabasa being shaken"
-    },
-    "music.drumClaves": {
-        "message": "(9) เคลฟ",
-        "description": "Sound of claves being struck together"
-    },
-    "music.drumClosedHiHat": {
-        "message": "(6) ฉาบไฮแฮทปิด",
-        "description": "Sound of a drum stick hitting a hi-hat while closed"
-    },
-    "music.drumConga": {
-        "message": "(14) คองกา",
-        "description": "Sound of a conga being struck"
-    },
-    "music.drumCowbell": {
-        "message": "(11) คาวเบล",
-        "description": "Sound of a cowbell being struck"
-    },
-    "music.drumCrashCymbal": {
-        "message": "(4) ฉาบ",
-        "description": "Sound of a drum stick hitting a crash cymbal"
-    },
-    "music.drumCuica": {
-        "message": "(18) คุยกา",
-        "description": "Sound of a cuica being played"
-    },
-    "music.drumGuiro": {
-        "message": "(16) กวีโร",
-        "description": "Sound of a guiro being played"
-    },
-    "music.drumHandClap": {
-        "message": "(8) ตบมือ",
-        "description": "Sound of two hands clapping together"
-    },
-    "music.drumOpenHiHat": {
-        "message": "(5) ฉาบไฮแฮทเปิด",
-        "description": "Sound of a drum stick hitting a hi-hat while open"
-    },
-    "music.drumSideStick": {
-        "message": "(3) ไซด์สติค",
-        "description": "Sound of a drum stick hitting the side of a drum (usually the snare)"
-    },
-    "music.drumSnare": {
-        "message": "(1) กลองเล็ก",
-        "description": "Sound of snare drum as used in a standard drum kit"
-    },
-    "music.drumTambourine": {
-        "message": "(7) แทมบูรีน",
-        "description": "Sound of a tambourine being struck"
-    },
-    "music.drumTriangle": {
-        "message": "(12) กิ๋ง",
-        "description": "Sound of a triangle (instrument) being struck"
-    },
-    "music.drumVibraslap": {
-        "message": "(17) ไวบราสแลป",
-        "description": "Sound of a Vibraslap being played"
-    },
-    "music.drumWoodBlock": {
-        "message": "(10) วูดบล็อก",
-        "description": "Sound of a wood block being struck"
-    },
-    "music.getTempo": {
-        "message": "จังหวะ",
-        "description": "get the current tempo (speed) for notes, drums, and rests played"
-    },
-    "music.instrumentBass": {
-        "message": "(6) เบส",
-        "description": "Sound of an accoustic upright bass"
-    },
-    "music.instrumentBassoon": {
-        "message": "(14) บาสซูน",
-        "description": "Sound of a bassoon being played"
-    },
-    "music.instrumentCello": {
-        "message": "(8) เชลโล",
-        "description": "Sound of a cello being played with a bow"
-    },
-    "music.instrumentChoir": {
-        "message": "(15) เสียงประสาน",
-        "description": "Sound of a choir singing"
-    },
-    "music.instrumentClarinet": {
-        "message": "(10) แคลริเน็ต",
-        "description": "Sound of a clarinet being played"
-    },
-    "music.instrumentElectricGuitar": {
-        "message": "(5) กีต้าร์ไฟฟ้า ",
-        "description": "Sound of an electric guitar"
-    },
-    "music.instrumentElectricPiano": {
-        "message": "(2) เปียโนไฟฟ้า",
-        "description": "Sound of an electric piano"
-    },
-    "music.instrumentFlute": {
-        "message": "(12) ฟลูต",
-        "description": "Sound of a flute being played"
-    },
-    "music.instrumentGuitar": {
-        "message": "(4) กีตาร์",
-        "description": "Sound of an accoustic guitar"
-    },
-    "music.instrumentMarimba": {
-        "message": "(19) มาริมบา",
-        "description": "Sound of a marimba being struck"
-    },
-    "music.instrumentMusicBox": {
-        "message": "(17) กล่องดนตรี ",
-        "description": "Sound of a music box playing"
-    },
-    "music.instrumentOrgan": {
-        "message": "(3) ออร์แกน",
-        "description": "Sound of an organ"
-    },
-    "music.instrumentPiano": {
-        "message": "(1) เปียโน",
-        "description": "Sound of a piano"
-    },
-    "music.instrumentPizzicato": {
-        "message": "(7) พิซซิคาโต",
-        "description": "Sound of a string instrument (e.g. violin) being plucked"
-    },
-    "music.instrumentSaxophone": {
-        "message": "(11) แซกโซโฟน",
-        "description": "Sound of a saxophone being played"
-    },
-    "music.instrumentSteelDrum": {
-        "message": "(18) กลองเหล็ก",
-        "description": "Sound of a steel drum being struck"
-    },
-    "music.instrumentSynthLead": {
-        "message": "(20) ซินธ์ลีด",
-        "description": "Sound of a \"lead\" synthesizer being played"
-    },
-    "music.instrumentSynthPad": {
-        "message": "(21) ซินธ์แพด",
-        "description": "Sound of a \"pad\" synthesizer being played"
-    },
-    "music.instrumentTrombone": {
-        "message": "(9) ทรอมโบน",
-        "description": "Sound of a trombone being played"
-    },
-    "music.instrumentVibraphone": {
-        "message": "(16) ไวปราโฟน",
-        "description": "Sound of a vibraphone being struck"
-    },
-    "music.instrumentWoodenFlute": {
-        "message": "(13) ฟลูตไม้",
-        "description": "Sound of a wooden flute being played"
-    },
-    "music.midiSetInstrument": {
-        "message": "ตั้งเครื่องดนตรีเป็น [INSTRUMENT]",
-        "description": "set the instrument for notes played according to a mapping of MIDI codes"
-    },
-    "music.playDrumForBeats": {
-        "message": "เล่น [DRUM] [BEATS] จังหวะ",
-        "description": "play drum sample for a number of beats"
-    },
-    "music.playNoteForBeats": {
-        "message": "เล่นโน๊ต [NOTE] [BEATS] จังหวะ",
-        "description": "play a note for a number of beats"
-    },
-    "music.restForBeats": {
-        "message": "หยุด [BEATS] จังหวะ",
-        "description": "rest (play no sound) for a number of beats"
-    },
-    "music.setInstrument": {
-        "message": "ตั้งเครื่องดนตรีเป็น [INSTRUMENT]",
-        "description": "set the instrument (e.g. piano, guitar, trombone) for notes played"
-    },
-    "music.setTempo": {
-        "message": "ตั้งค่าความเร็วเป็น [TEMPO]จังหวะต่อนาที ",
-        "description": "set tempo (speed) for notes, drums, and rests played"
-    },
-    "pen.categoryName": {
-        "message": "ปากกา",
-        "description": "Label for the pen extension category"
-    },
-    "pen.changeColorParam": {
-        "message": "เปลี่ยน [COLOR_PARAM] ปากกาทีละ [VALUE]",
-        "description": "change the state of a pen color parameter"
-    },
-    "pen.changeHue": {
-        "message": "เปลี่ยนสีปากกาทีละ [HUE]",
-        "description": "legacy pen blocks - change pen color"
-    },
-    "pen.changeShade": {
-        "message": "เปลี่ยนเฉดสีปากกาทีละ [SHADE]",
-        "description": "legacy pen blocks - change pen shade"
-    },
-    "pen.changeSize": {
-        "message": "เปลี่ยนขนาดปากกาทีละ [SIZE]",
-        "description": "change the diameter of the trail left by a sprite"
-    },
-    "pen.clear": {
-        "message": "ลบทั้งหมด",
-        "description": "erase all pen trails and stamps"
-    },
-    "pen.colorMenu.brightness": {
-        "message": "ความสว่าง",
-        "description": "label for brightness element in color picker for pen extension"
-    },
-    "pen.colorMenu.color": {
-        "message": "สี",
-        "description": "label for color element in color picker for pen extension"
-    },
-    "pen.colorMenu.saturation": {
-        "message": "ความอิ่มตัวของสี",
-        "description": "label for saturation element in color picker for pen extension"
-    },
-    "pen.colorMenu.transparency": {
-        "message": "ความโปร่งใส",
-        "description": "label for transparency element in color picker for pen extension"
-    },
-    "pen.penDown": {
-        "message": "จรดปากกา",
-        "description": "start leaving a trail when the sprite moves"
-    },
-    "pen.penUp": {
-        "message": "ยกปากกาขึ้น",
-        "description": "stop leaving a trail behind the sprite"
-    },
-    "pen.setColor": {
-        "message": "ตั้งค่าสีปากกาเป็น [COLOR]",
-        "description": "set the pen color to a particular (RGB) value"
-    },
-    "pen.setColorParam": {
-        "message": "ตั้งค่า [COLOR_PARAM] ปากกาเป็น[VALUE]",
-        "description": "set the state for a pen color parameter e.g. saturation"
-    },
-    "pen.setHue": {
-        "message": "ตั้งสีปากกาเป็น [HUE]",
-        "description": "legacy pen blocks - set pen color to number"
-    },
-    "pen.setShade": {
-        "message": "ตั้งค่าเฉดสีเป็น [SHADE]",
-        "description": "legacy pen blocks - set pen shade"
-    },
-    "pen.setSize": {
-        "message": "ตั้งขนาดปากกาเป็น [SIZE]",
-        "description": "set the diameter of a trail left by a sprite"
-    },
-    "pen.stamp": {
-        "message": "ประทับ",
-        "description": "render current costume on the background"
-    },
-    "speech.defaultWhenIHearValue": {
-        "message": "let''s go",
-        "description": "The default phrase/word that, when heard, triggers the event."
-    },
-    "speech.extensionName": {
-        "message": "Speech to Text",
-        "description": "Name of extension that adds speech recognition blocks. Do Not translate Google."
-    },
-    "speech.listenAndWait": {
-        "message": "listen and wait",
-        "description": "Start listening to the microphone and wait for a result from the speech recognition system."
-    },
-    "speech.speechReporter": {
-        "message": "speech",
-        "description": "Get the text of spoken words transcribed by the speech recognition system."
-    },
-    "speech.whenIHear": {
-        "message": "เมื่อฉันได้ยิน [PHRASE]",
-        "description": "Event that triggers when the text entered on the block is recognized by the speech recognition system."
-    },
-    "text2speech.defaultTextToSpeak": {
-        "message": "สวัสดี",
-        "description": "hello: the default text to speak"
-    },
-    "text2speech.giant": {
-        "message": "giant",
-        "description": "Name for a funny voice with a low pitch."
-    },
-    "text2speech.kitten": {
-        "message": "ลูกแมว",
-        "description": "A baby cat."
-    },
-    "text2speech.max": {
-        "message": "max",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.quinn": {
-        "message": "quinn",
-        "description": "Name for a voice with ambiguous gender."
-    },
-    "text2speech.setLanguageBlock": {
-        "message": "set language to [LANGUAGE]",
-        "description": "Set the language for speech synthesis."
-    },
-    "text2speech.setVoiceBlock": {
-        "message": "set voice to [VOICE]",
-        "description": "Set the voice for speech synthesis."
-    },
-    "text2speech.speakAndWaitBlock": {
-        "message": "พูด [WORDS]",
-        "description": "Speak some words."
-    },
-    "text2speech.squeak": {
-        "message": "squeak",
-        "description": "Name for a funny voice with a high pitch."
-    },
-    "translate.categoryName": {
-        "message": "แปลภาษา",
-        "description": "Name of extension that adds translate blocks"
-    },
-    "translate.defaultTextToTranslate": {
-        "message": "สวัสดี",
-        "description": "hello: the default text to translate"
-    },
-    "translate.translateBlock": {
-        "message": "แปล [WORDS] เป็น [LANGUAGE]",
-        "description": "translate some text to a different language"
-    },
-    "translate.viewerLanguage": {
-        "message": "language",
-        "description": "the languge of the project viewer"
-    },
-    "videoSensing.categoryName": {
-        "message": "การตรวจจับวิดีโอ",
-        "description": "Label for the video sensing extension category"
-    },
-    "videoSensing.direction": {
-        "message": "ทิศทาง",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.motion": {
-        "message": "การเคลื่อนไหว",
-        "description": "Attribute for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.off": {
-        "message": "ปิด",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.on": {
-        "message": "เปิด",
-        "description": "Option for the \"turn video [STATE]\" block"
-    },
-    "videoSensing.onFlipped": {
-        "message": "พลิก",
-        "description": "Option for the \"turn video [STATE]\" block that causes the video to be flipped horizontally (reversed as in a mirror)"
-    },
-    "videoSensing.setVideoTransparency": {
-        "message": "ตั้งค่าความโปร่งใสของวิดีโอเป็น [TRANSPARENCY]",
-        "description": "Controls transparency of the video preview layer"
-    },
-    "videoSensing.sprite": {
-        "message": "สไปรต์",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.stage": {
-        "message": "เวที",
-        "description": "Subject for the \"video [ATTRIBUTE] on [SUBJECT]\" block"
-    },
-    "videoSensing.videoOn": {
-        "message": "[ATTRIBUTE] วิดีโอ บน [SUBJECT]",
-        "description": "Reporter that returns the amount of [ATTRIBUTE] for the selected [SUBJECT]"
-    },
-    "videoSensing.videoToggle": {
-        "message": "[VIDEO_STATE] วิดีโอ",
-        "description": "Controls display of the video preview layer"
-    },
-    "videoSensing.whenMotionGreaterThan": {
-        "message": "เมื่อวิดีโอเคลื่อนไหว > [REFERENCE]",
-        "description": "Event that triggers when the amount of motion is greater than [REFERENCE]"
-    },
-    "wedo2.getDistance": {
-        "message": "ระยะทาง",
-        "description": "the value returned by the distance sensor"
-    },
-    "wedo2.getTiltAngle": {
-        "message": "tilt angle [TILT_DIRECTION]",
-        "description": "the angle returned by the tilt sensor"
-    },
-    "wedo2.isTilted": {
-        "message": "tilted [TILT_DIRECTION_ANY]?",
-        "description": "whether the tilt sensor is tilted"
-    },
-    "wedo2.motorOff": {
-        "message": "turn [MOTOR_ID] off",
-        "description": "turn a motor off"
-    },
-    "wedo2.motorOn": {
-        "message": "turn [MOTOR_ID] on",
-        "description": "turn a motor on indefinitely"
-    },
-    "wedo2.motorOnFor": {
-        "message": "turn [MOTOR_ID] on for [DURATION] seconds",
-        "description": "turn a motor on for some time"
-    },
-    "wedo2.playNoteFor": {
-        "message": "play note [NOTE] for [DURATION] seconds",
-        "description": "play a certain note for some time"
-    },
-    "wedo2.setLightHue": {
-        "message": "set light color to [HUE]",
-        "description": "set the LED color"
-    },
-    "wedo2.setMotorDirection": {
-        "message": "set [MOTOR_ID] direction to [MOTOR_DIRECTION]",
-        "description": "set the motor's turn direction"
-    },
-    "wedo2.startMotorPower": {
-        "message": "set [MOTOR_ID] power to [POWER]",
-        "description": "set the motor's power and turn it on"
-    },
-    "wedo2.whenDistance": {
-        "message": "when distance [OP] [REFERENCE]",
-        "description": "check for when distance is < or > than reference"
-    },
-    "wedo2.whenTilted": {
-        "message": "when tilted [TILT_DIRECTION_ANY]",
-        "description": "check when tilted in a certain direction"
-    }
+    "ev3.beepNote": "เล่นโน้ต [NOTE] เป็นเวลา [TIME] วินาที",
+    "ev3.buttonPressed": "ปุ่ม [PORT] ถูกกด?",
+    "ev3.getBrightness": "ความสว่าง",
+    "ev3.getDistance": "ระยะห่าง",
+    "ev3.getMotorPosition": "ตำแหน่งมอเตอร์ [PORT]",
+    "ev3.motorSetPower": "ตั้งค่ากำลังมอเตอร์ [PORT] เป็น [POWER] %",
+    "ev3.motorTurnClockwise": "มอเตอร์ [PORT] หมุนทางนี้ เป็นเวลา [TIME] วินาที",
+    "ev3.motorTurnCounterClockwise": "มอเตอร์ [PORT] หมุนทางนั้น เป็นเวลา [TIME] วินาที",
+    "ev3.whenBrightnessLessThan": "เมื่อความสว่าง < [DISTANCE]",
+    "ev3.whenButtonPressed": "เมื่อกดปุ่ม [PORT]",
+    "ev3.whenDistanceLessThan": "เมื่อระยะห่าง < [DISTANCE]",
+    "microbit.buttonsMenu.any": "ทิศใดก็ได้",
+    "microbit.clearDisplay": "ล้างหน้าจอ",
+    "microbit.defaultTextToDisplay": "Sawasdee!",
+    "microbit.displaySymbol": "แสดง [MATRIX]",
+    "microbit.displayText": "แสดงข้อความ [TEXT]",
+    "microbit.gesturesMenu.jumped": "กระโดด",
+    "microbit.gesturesMenu.moved": "เคลื่อนไหว",
+    "microbit.gesturesMenu.shaken": "เขย่า",
+    "microbit.isButtonPressed": "ปุ่ม [BTN] ถูกกด?",
+    "microbit.isTilted": "เอียง [DIRECTION]?",
+    "microbit.pinStateMenu.off": "ปิด",
+    "microbit.pinStateMenu.on": "เปิด",
+    "microbit.tiltAngle": "มุมเอียง [DIRECTION]",
+    "microbit.tiltDirectionMenu.any": "ทิศใดก็ได้",
+    "microbit.tiltDirectionMenu.back": "หลัง",
+    "microbit.tiltDirectionMenu.front": "หน้า",
+    "microbit.tiltDirectionMenu.left": "ซ้าย",
+    "microbit.tiltDirectionMenu.right": "ขวา",
+    "microbit.whenButtonPressed": "เมื่อปุ่ม [BTN] ถูกกด",
+    "microbit.whenGesture": "เมื่อ [GESTURE]",
+    "microbit.whenPinConnected": "เมื่อขา [PIN] เชื่อมต่อแล้ว",
+    "microbit.whenTilted": "เมื่อเอียง [DIRECTION]",
+    "music.categoryName": "ดนตรี",
+    "music.changeTempo": "เปลี่ยนความเร็วทีละ [TEMPO]",
+    "music.drumBass": "(2) กลองใหญ่",
+    "music.drumBongo": "(13) บองโก",
+    "music.drumCabasa": "(15) คาบาซา",
+    "music.drumClaves": "(9) เคลฟ",
+    "music.drumClosedHiHat": "(6) ฉาบไฮแฮทปิด",
+    "music.drumConga": "(14) คองกา",
+    "music.drumCowbell": "(11) คาวเบล",
+    "music.drumCrashCymbal": "(4) ฉาบ",
+    "music.drumCuica": "(18) คุยกา",
+    "music.drumGuiro": "(16) กวีโร",
+    "music.drumHandClap": "(8) ตบมือ",
+    "music.drumOpenHiHat": "(5) ฉาบไฮแฮทเปิด",
+    "music.drumSideStick": "(3) ไซด์สติค",
+    "music.drumSnare": "(1) กลองเล็ก",
+    "music.drumTambourine": "(7) แทมบูรีน",
+    "music.drumTriangle": "(12) กิ๋ง",
+    "music.drumVibraslap": "(17) ไวบราสแลป",
+    "music.drumWoodBlock": "(10) วูดบล็อก",
+    "music.getTempo": "จังหวะ",
+    "music.instrumentBass": "(6) เบส",
+    "music.instrumentBassoon": "(14) บาสซูน",
+    "music.instrumentCello": "(8) เชลโล",
+    "music.instrumentChoir": "(15) เสียงประสาน",
+    "music.instrumentClarinet": "(10) แคลริเน็ต",
+    "music.instrumentElectricGuitar": "(5) กีต้าร์ไฟฟ้า ",
+    "music.instrumentElectricPiano": "(2) เปียโนไฟฟ้า",
+    "music.instrumentFlute": "(12) ฟลูต",
+    "music.instrumentGuitar": "(4) กีตาร์",
+    "music.instrumentMarimba": "(19) มาริมบา",
+    "music.instrumentMusicBox": "(17) กล่องดนตรี ",
+    "music.instrumentOrgan": "(3) ออร์แกน",
+    "music.instrumentPiano": "(1) เปียโน",
+    "music.instrumentPizzicato": "(7) พิซซิคาโต",
+    "music.instrumentSaxophone": "(11) แซกโซโฟน",
+    "music.instrumentSteelDrum": "(18) กลองเหล็ก",
+    "music.instrumentSynthLead": "(20) ซินธ์ลีด",
+    "music.instrumentSynthPad": "(21) ซินธ์แพด",
+    "music.instrumentTrombone": "(9) ทรอมโบน",
+    "music.instrumentVibraphone": "(16) ไวปราโฟน",
+    "music.instrumentWoodenFlute": "(13) ฟลูตไม้",
+    "music.midiSetInstrument": "ตั้งเครื่องดนตรีเป็น [INSTRUMENT]",
+    "music.playDrumForBeats": "เล่น [DRUM] [BEATS] จังหวะ",
+    "music.playNoteForBeats": "เล่นโน๊ต [NOTE] [BEATS] จังหวะ",
+    "music.restForBeats": "หยุด [BEATS] จังหวะ",
+    "music.setInstrument": "ตั้งเครื่องดนตรีเป็น [INSTRUMENT]",
+    "music.setTempo": "ตั้งค่าความเร็วเป็น [TEMPO]จังหวะต่อนาที ",
+    "pen.categoryName": "ปากกา",
+    "pen.changeColorParam": "เปลี่ยน [COLOR_PARAM] ปากกาทีละ [VALUE]",
+    "pen.changeHue": "เปลี่ยนสีปากกาทีละ [HUE]",
+    "pen.changeShade": "เปลี่ยนเฉดสีปากกาทีละ [SHADE]",
+    "pen.changeSize": "เปลี่ยนขนาดปากกาทีละ [SIZE]",
+    "pen.clear": "ลบทั้งหมด",
+    "pen.colorMenu.brightness": "ความสว่าง",
+    "pen.colorMenu.color": "สี",
+    "pen.colorMenu.saturation": "ความอิ่มตัวของสี",
+    "pen.colorMenu.transparency": "ความโปร่งใส",
+    "pen.penDown": "จรดปากกา",
+    "pen.penUp": "ยกปากกาขึ้น",
+    "pen.setColor": "ตั้งค่าสีปากกาเป็น [COLOR]",
+    "pen.setColorParam": "ตั้งค่า [COLOR_PARAM] ปากกาเป็น[VALUE]",
+    "pen.setHue": "ตั้งสีปากกาเป็น [HUE]",
+    "pen.setShade": "ตั้งค่าเฉดสีเป็น [SHADE]",
+    "pen.setSize": "ตั้งขนาดปากกาเป็น [SIZE]",
+    "pen.stamp": "ประทับ",
+    "speech.defaultWhenIHearValue": "เริ่มเลย!",
+    "speech.extensionName": "เสียงพูดเป็นข้อความ",
+    "speech.listenAndWait": "ฟังและรอ",
+    "speech.speechReporter": "เสียงพูด",
+    "speech.whenIHear": "เมื่อฉันได้ยิน [PHRASE]",
+    "text2speech.defaultTextToSpeak": "สวัสดี",
+    "text2speech.giant": "ไจแอนท์",
+    "text2speech.kitten": "ลูกแมว",
+    "text2speech.max": "แม็กซ์",
+    "text2speech.quinn": "ควิน",
+    "text2speech.setLanguageBlock": "ตั้งภาษาเป็น [LANGUAGE]",
+    "text2speech.setVoiceBlock": "ตั้งเสียงเป็น  [VOICE]",
+    "text2speech.speakAndWaitBlock": "พูด [WORDS]",
+    "text2speech.squeak": "เอี๊ยด ๆ",
+    "translate.categoryName": "แปลภาษา",
+    "translate.defaultTextToTranslate": "สวัสดี",
+    "translate.translateBlock": "แปล [WORDS] เป็น [LANGUAGE]",
+    "translate.viewerLanguage": "ภาษา",
+    "videoSensing.categoryName": "การตรวจจับวิดีโอ",
+    "videoSensing.direction": "ทิศทาง",
+    "videoSensing.motion": "การเคลื่อนไหว",
+    "videoSensing.off": "ปิด",
+    "videoSensing.on": "เปิด",
+    "videoSensing.onFlipped": "พลิก",
+    "videoSensing.setVideoTransparency": "ตั้งค่าความโปร่งใสของวิดีโอเป็น [TRANSPARENCY]",
+    "videoSensing.sprite": "สไปรต์",
+    "videoSensing.stage": "เวที",
+    "videoSensing.videoOn": "[ATTRIBUTE] วิดีโอ บน [SUBJECT]",
+    "videoSensing.videoToggle": "[VIDEO_STATE] วิดีโอ",
+    "videoSensing.whenMotionGreaterThan": "เมื่อวิดีโอเคลื่อนไหว > [REFERENCE]",
+    "wedo2.getDistance": "ระยะทาง",
+    "wedo2.getTiltAngle": "มุมเอียง [TILT_DIRECTION]",
+    "wedo2.isTilted": "เอียง [TILT_DIRECTION_ANY]?",
+    "wedo2.motorOff": "ปิดมอเตอร์[MOTOR_ID] ",
+    "wedo2.motorOn": "เปิดมอเตอร์ [MOTOR_ID]",
+    "wedo2.motorOnFor": "เปิดมอเตอร์ [MOTOR_ID] เป็นเวลา [DURATION] วินาที",
+    "wedo2.playNoteFor": "เล่นโน้ต [NOTE] เป็นเวลา [DURATION] วินาที",
+    "wedo2.setLightHue": "ตั้งสีหลอดไฟเป็น [HUE]",
+    "wedo2.setMotorDirection": "ตั้งทิศทางมอเตอร์ [MOTOR_ID] เป็น [MOTOR_DIRECTION]",
+    "wedo2.startMotorPower": "ตั้งค่ากำลังมอเตอร์ [MOTOR_ID] เป็น [POWER]",
+    "wedo2.whenDistance": "เมื่อระยะห่าง [OP] [REFERENCE]",
+    "wedo2.whenTilted": "เมื่อเอียง [TILT_DIRECTION_ANY]"
 }

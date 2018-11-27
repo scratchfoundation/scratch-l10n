@@ -1,174 +1,45 @@
 {
-    "paint.paintEditor.hue": {
-        "message": "いろ",
-        "description": "Label for the hue component in the color picker"
-    },
-    "paint.paintEditor.saturation": {
-        "message": "あざやかさ",
-        "description": "Label for the saturation component in the color picker"
-    },
-    "paint.paintEditor.brightness": {
-        "message": "あかるさ",
-        "description": "Label for the brightness component in the color picker"
-    },
-    "gui.comingSoon.message1": {
-        "message": "あんしんしてください。かいはつちゅうです {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message2": {
-        "message": "きんじつこうかい",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "gui.comingSoon.message3": {
-        "message": "かいはつちゅうです {emoji}",
-        "description": "One of the \"coming soon\" random messages for yet-to-be-done features"
-    },
-    "paint.paintEditor.fill": {
-        "message": "ぬりつぶし",
-        "description": "Label for the color picker for the fill color"
-    },
-    "paint.paintEditor.costume": {
-        "message": "コスチューム",
-        "description": "Label for the name of a costume"
-    },
-    "paint.paintEditor.group": {
-        "message": "グループか",
-        "description": "Label for the button to group shapes"
-    },
-    "paint.paintEditor.ungroup": {
-        "message": "グループかいじょ",
-        "description": "Label for the button to ungroup shapes"
-    },
-    "paint.paintEditor.undo": {
-        "message": "とりけし",
-        "description": "Alt to image for the button to undo an action"
-    },
-    "paint.paintEditor.redo": {
-        "message": "やりなおし",
-        "description": "Alt to image for the button to redo an action"
-    },
-    "paint.paintEditor.forward": {
-        "message": "てまえにだす",
-        "description": "Label for the `Send forward on canvas` button"
-    },
-    "paint.paintEditor.backward": {
-        "message": "おくにさげる",
-        "description": "Label for the `Send backward on canvas` button"
-    },
-    "paint.paintEditor.front": {
-        "message": "さいぜんめん",
-        "description": "Label for the `Send to front of canvas` button"
-    },
-    "paint.paintEditor.back": {
-        "message": "さげる",
-        "description": "Label for the `Send to back of canvas` button"
-    },
-    "paint.paintEditor.more": {
-        "message": "もっと",
-        "description": "Label for dropdown to access more action buttons"
-    },
-    "paint.modeTools.brushSize": {
-        "message": "おおきさ",
-        "description": "Label for the brush size input"
-    },
-    "paint.modeTools.eraserSize": {
-        "message": "けしごむのおおきさ",
-        "description": "Label for the eraser size input"
-    },
-    "paint.modeTools.copy": {
-        "message": "コピー",
-        "description": "Label for the copy button"
-    },
-    "paint.modeTools.paste": {
-        "message": "はりつけ",
-        "description": "Label for the paste button"
-    },
-    "paint.modeTools.delete": {
-        "message": "さくじょ",
-        "description": "Label for the delete button"
-    },
-    "paint.modeTools.curved": {
-        "message": "なめらか",
-        "description": "Label for the button that converts selected points to curves"
-    },
-    "paint.modeTools.pointed": {
-        "message": "かくばった",
-        "description": "Label for the button that converts selected points to sharp points"
-    },
-    "paint.modeTools.thickness": {
-        "message": "ふとさ",
-        "description": "Label for the number input to choose the line thickness"
-    },
-    "paint.modeTools.flipHorizontal": {
-        "message": "さゆうはんてん",
-        "description": "Label for the button to flip the image horizontally"
-    },
-    "paint.modeTools.flipVertical": {
-        "message": "じょうげはんてん",
-        "description": "Label for the button to flip the image vertically"
-    },
-    "paint.modeTools.filled": {
-        "message": "ぬりつぶし",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw outlines"
-    },
-    "paint.modeTools.outlined": {
-        "message": "りんかく",
-        "description": "Label for the button that sets the bitmap rectangle/oval mode to draw filled-in shapes"
-    },
-    "paint.paintEditor.bitmap": {
-        "message": "ビットマップにへんかん",
-        "description": "Label for button that converts the paint editor to bitmap mode"
-    },
-    "paint.paintEditor.vector": {
-        "message": "ベクターにへんかん",
-        "description": "Label for button that converts the paint editor to vector mode"
-    },
-    "paint.paintEditor.stroke": {
-        "message": "わくせん",
-        "description": "Label for the color picker for the outline color"
-    },
-    "paint.brushMode.brush": {
-        "message": "ふで",
-        "description": "Label for the brush tool"
-    },
-    "paint.eraserMode.eraser": {
-        "message": "Eraser",
-        "description": "Label for the eraser tool"
-    },
-    "paint.fillMode.fill": {
-        "message": "ぬりつぶし",
-        "description": "Label for the fill tool"
-    },
-    "paint.lineMode.line": {
-        "message": "ちょくせん",
-        "description": "Label for the line tool"
-    },
-    "paint.ovalMode.oval": {
-        "message": "えん",
-        "description": "Label for the oval-drawing tool"
-    },
-    "paint.rectMode.rect": {
-        "message": "しかくけい",
-        "description": "Label for the rectangle tool"
-    },
-    "paint.reshapeMode.reshape": {
-        "message": "かたちをかえる",
-        "description": "Label for the reshape tool, which allows changing the points in the lines of the vectors"
-    },
-    "paint.roundedRectMode.roundedRect": {
-        "message": "Rounded Rectangle",
-        "description": "Label for the rounded rectangle tool"
-    },
-    "paint.selectMode.select": {
-        "message": "せんたく",
-        "description": "Label for the select tool, which allows selecting, moving, and resizing shapes"
-    },
-    "paint.textMode.text": {
-        "message": "テキスト",
-        "description": "Label for the text tool"
-    },
-    "paint.colorPicker.swap": {
-        "message": "こうかん",
-        "description": "Label for button that swaps the two colors in a gradient"
-    }
+    "paint.paintEditor.hue": "いろ",
+    "paint.paintEditor.saturation": "あざやかさ",
+    "paint.paintEditor.brightness": "あかるさ",
+    "gui.comingSoon.message1": "あんしんしてください。かいはつちゅうです {emoji}",
+    "gui.comingSoon.message2": "きんじつこうかい",
+    "gui.comingSoon.message3": "かいはつちゅうです {emoji}",
+    "paint.paintEditor.fill": "ぬりつぶし",
+    "paint.paintEditor.costume": "コスチューム",
+    "paint.paintEditor.group": "グループか",
+    "paint.paintEditor.ungroup": "グループかいじょ",
+    "paint.paintEditor.undo": "とりけし",
+    "paint.paintEditor.redo": "やりなおし",
+    "paint.paintEditor.forward": "てまえにだす",
+    "paint.paintEditor.backward": "おくにさげる",
+    "paint.paintEditor.front": "さいぜんめん",
+    "paint.paintEditor.back": "さげる",
+    "paint.paintEditor.more": "もっと",
+    "paint.modeTools.brushSize": "おおきさ",
+    "paint.modeTools.eraserSize": "けしごむのおおきさ",
+    "paint.modeTools.copy": "コピー",
+    "paint.modeTools.paste": "はりつけ",
+    "paint.modeTools.delete": "さくじょ",
+    "paint.modeTools.curved": "なめらか",
+    "paint.modeTools.pointed": "かくばった",
+    "paint.modeTools.thickness": "ふとさ",
+    "paint.modeTools.flipHorizontal": "さゆうはんてん",
+    "paint.modeTools.flipVertical": "じょうげはんてん",
+    "paint.modeTools.filled": "ぬりつぶし",
+    "paint.modeTools.outlined": "りんかく",
+    "paint.paintEditor.bitmap": "ビットマップにへんかん",
+    "paint.paintEditor.vector": "ベクターにへんかん",
+    "paint.paintEditor.stroke": "わくせん",
+    "paint.brushMode.brush": "ふで",
+    "paint.eraserMode.eraser": "Eraser",
+    "paint.fillMode.fill": "ぬりつぶし",
+    "paint.lineMode.line": "ちょくせん",
+    "paint.ovalMode.oval": "えん",
+    "paint.rectMode.rect": "しかくけい",
+    "paint.reshapeMode.reshape": "かたちをかえる",
+    "paint.roundedRectMode.roundedRect": "Rounded Rectangle",
+    "paint.selectMode.select": "せんたく",
+    "paint.textMode.text": "テキスト",
+    "paint.colorPicker.swap": "こうかん"
 }
