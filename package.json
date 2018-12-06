@@ -21,6 +21,7 @@
     "pull:blocks": "babel-node scripts/tx-pull-blocks ./editor/blocks/",
     "pull:editor": "npm run pull:blocks && npm run pull:extensions && npm run pull:paint && npm run pull:interface",
     "test": "npm run lint:js && npm run validate:editor && npm run build && npm run lint:json",
+    "update": "scripts/update-translations.sh",
     "validate:blocks": "babel-node scripts/validate-translations ./editor/blocks/",
     "validate:extensions": "babel-node scripts/validate-translations ./editor/extensions/",
     "validate:interface": "babel-node scripts/validate-translations ./editor/interface/",

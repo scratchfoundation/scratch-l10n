@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- 6
+- 8
 - node
 cache:
   directories:
@@ -9,16 +9,23 @@ jobs:
   include:
     - stage: npm release
       if: branch = master OR branch = npm-publish
-      node_js: 6
+      node_js: 8
       script: npm run build
       before_deploy:
       - VPKG=$($(npm bin)/json -f package.json version)
       - export VERSION=${VPKG/%?/}$(date +%Y%m%d%H%M%S)
       - npm --no-git-tag-version version $VERSION
       deploy:
-        provider: npm
+      - provider: script
+        skip_cleanup: true
+        script: npm run update
+        on:
+          branch: master
+          condition: $TRAVIS_EVENT_TYPE == cron
+      - provider: npm
         skip_cleanup: true
         email: $NPM_EMAIL
         api_key: $NPM_TOKEN
         on:
           all_branches: true
+          condition: $TRAVIS_EVENT_TYPE != cron
