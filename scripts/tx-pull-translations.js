@@ -36,8 +36,7 @@ import locales, {localeMap} from '../src/supported-locales.js';
 const PROJECT = args[0];
 const RESOURCE = args[1];
 const OUTPUT_DIR = path.resolve(args[2]);
-// TODO: convert mode to 'reviewed' before January
-const MODE = {mode: 'default'};
+const MODE = {mode: 'reviewed'};
 const CONCURRENCY_LIMIT = 4;
 
 const TX = new transifex({
