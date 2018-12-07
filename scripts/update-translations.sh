@@ -11,4 +11,4 @@ npm run test
 # commit any updates and push. Build and release should happen on the push not here.
 git add .
 git commit -m "pull new editor translations from Transifex"
-git push
+git push https://${GITHUB_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:master

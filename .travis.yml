@@ -8,10 +8,10 @@ cache:
 jobs:
   include:
     - stage: update translations
-      if: $TRAVIS_EVENT_TYPE == cron
+      if: type == cron
       script: ./scripts/update-translations.sh
     - stage: npm release
-      if: (branch = master OR branch = npm-publish) AND $TRAVIS_EVENT_TYPE != cron
+      if: branch in (master, npm-publish) AND type != cron
       node_js: 8
       script: npm run build
       before_deploy:
