@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # script for syncing translations from transifex and comitting the changes.
-# exit if either the pulls or the test fail
+
+# exit script if any command returns a non-zero return code:
+set -ev
 
 npm run pull:editor
-rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi #exit if pull failed
-npm run test
-rc=$?; if [[ $rc != 0 ]]; then exit $rc; fi #exit if test failed
+npm run test 
+
+# commit any updates and push. Build and release should happen on the push not here.
 git add .
-
 git commit -m "pull new editor translations from Transifex"
-
 git push
