@@ -42,6 +42,7 @@ import tr from 'react-intl/locale-data/tr';
 import uk from 'react-intl/locale-data/uk';
 import vi from 'react-intl/locale-data/vi';
 import zh from 'react-intl/locale-data/zh';
+import zu from 'react-intl/locale-data/zu';
 
 import locales, {customLocales, localeMap, isRtl} from './supported-locales.js';
 /*
@@ -118,7 +119,8 @@ let localeData = [].concat(
     tr,
     uk,
     vi,
-    zh
+    zh,
+    zu
 );
 
 for (const lang in customLocales) {
