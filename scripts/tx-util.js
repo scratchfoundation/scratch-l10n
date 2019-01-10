@@ -9,12 +9,30 @@ const flattenJson = (translations) => {
     return JSON.stringify(messages, null, 4);
 };
 
+// filter placeholders out of a message
+// parse('a message with a {value} and {count, plural, one {one} other {more}}.')
+// returns an array:
+// [ 'a message with a ',
+//   [ 'value' ],
+//   ' and ',
+//   [ 'count', 'plural', 0, { one: [Array], other: [Array] } ],
+//   '.'
+// ]
+// placeholders are always an array, so filter for array elements to find the placeholders
+const placeholders = message => (
+    // this will throw an error if the message is not valid ICU
+    parse(message).filter(item => Array.isArray(item))
+);
+
 const validMessage = (message, source) => {
-    // this will throw an error if the message is not valid icu
-    const t = parse(message);
-    const s = parse(source);
-    // the syntax tree for both messages should have the same number of elements
-    return t.length === s.length;
+    const transPlaceholders = placeholders(message);
+    const srcPlaceholders = placeholders(source);
+    // different number of placeholders
+    if (transPlaceholders.length !== srcPlaceholders.length) {
+        return false;
+    }
+    // TODO: Add checking to make sure placeholders in source have not been translated
+    return true;
 };
 
 const validateTranslations = (translation, source) => {
