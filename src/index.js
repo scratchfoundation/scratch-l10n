@@ -2,6 +2,7 @@ import en from 'react-intl/locale-data/en';
 import am from 'react-intl/locale-data/am';
 import ar from 'react-intl/locale-data/ar';
 import az from 'react-intl/locale-data/az'; // also parent for Abkahz
+import bg from 'react-intl/locale-data/bg';
 import ca from 'react-intl/locale-data/ca';
 import cs from 'react-intl/locale-data/cs';
 import cy from 'react-intl/locale-data/cy';
@@ -25,16 +26,16 @@ import it from 'react-intl/locale-data/it';
 import ja from 'react-intl/locale-data/ja';
 import ko from 'react-intl/locale-data/ko';
 import lt from 'react-intl/locale-data/lt';
-// import lv from 'react-intl/locale-data/lv';
+import lv from 'react-intl/locale-data/lv';
 import nl from 'react-intl/locale-data/nl';
 import nb from 'react-intl/locale-data/nb';
-// import nn from 'react-intl/locale-data/nn';
+import nn from 'react-intl/locale-data/nn';
 import pl from 'react-intl/locale-data/pl';
 import pt from 'react-intl/locale-data/pt';
 import ro from 'react-intl/locale-data/ro';
 import ru from 'react-intl/locale-data/ru';
 import sl from 'react-intl/locale-data/sl';
-// import sk from 'react-intl/locale-data/sk';
+import sk from 'react-intl/locale-data/sk';
 import sr from 'react-intl/locale-data/sr';
 import sv from 'react-intl/locale-data/sv';
 import th from 'react-intl/locale-data/th';
@@ -80,6 +81,7 @@ let localeData = [].concat(
     am,
     ar,
     az, // parent for Abkahz
+    bg,
     ca,
     cs,
     cy,
@@ -103,14 +105,14 @@ let localeData = [].concat(
     ja,
     ko,
     lt,
-    // lv,
+    lv,
     nl,
     nb,
-    // nn,
+    nn,
     pl,
     pt,
     sl,
-    // sk,
+    sk,
     sr,
     sv,
     ro,
