@@ -1,3 +1,6 @@
+// to find locale data in react-intl, go to:
+// https://unpkg.com/react-intl/locale-data/
+
 import en from 'react-intl/locale-data/en';
 import am from 'react-intl/locale-data/am';
 import ar from 'react-intl/locale-data/ar';
