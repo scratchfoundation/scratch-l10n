@@ -27,10 +27,11 @@ There are two situations in which we create manual PRs to update translations:
     * Add entry in `rtlLocales`
 
 * [ ] Check if language needs a new locale (such as Brasilian Portuguese). If so:
-  * [ ] Edit `.tx/config`:
-    * Add to the `lang_map` list. Format is `<Transifex locale string/ISO standard>:<browser locale string>`
   * [ ] Edit `src/supported-locales.js`:
     * Add new entry to `localeMap`. Format is `'<browser locale string>': '<Transifex locale string/ISO standard>'`
+  * [ ] Edit `.tx/config`:
+    * Add to the `lang_map` list. Format is `<Transifex locale string/ISO standard>:<browser locale string>`
+    * NOTE: we are moving away from using the `tx` cli; `.tx/config` will eventually be deprecated
 
 * [ ] Edit `src/index.js`:
   * [ ] Add 'import' line and export line

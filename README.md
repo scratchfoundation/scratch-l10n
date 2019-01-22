@@ -30,3 +30,7 @@ scratch-l10n provides:
 scratch-l10n uses semantic versioning - breaking changes will increment the major version number, and new features (e.g. a new language) will increment the minor version number. However, the patch number is actually a datetime string. That way it's easy to see how recently the translations were updated.
 
 In general, changes that require a PR (new functionality, new language) should increment the minor version. Pulling new translations from Transifex is automated and will commit to master directly.
+
+#### Deprecations
+
+We are moving away from using the `tx` cli, so the `.tx/config` file will eventually be deprecated.
