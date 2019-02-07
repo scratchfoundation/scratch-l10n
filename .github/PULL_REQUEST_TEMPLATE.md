@@ -26,7 +26,8 @@ There are two situations in which we create manual PRs to update translations:
   * [ ] Check if language is right-to-left. If so:
     * Add entry in `rtlLocales`
 
-* [ ] Check if language needs a new locale (such as Brasilian Portuguese). If so:
+* [ ] Check if the new language uses a country code
+  * Check [https://www.transifex.com/explore/languages](https://www.transifex.com/explore/languages); compare to the ISO code on the language's Wikipedia page. If they are different:
   * [ ] Edit `src/supported-locales.js`:
     * Add new entry to `localeMap`. Format is `'<browser locale string>': '<Transifex locale string/ISO standard>'`
   * [ ] Edit `.tx/config`:
