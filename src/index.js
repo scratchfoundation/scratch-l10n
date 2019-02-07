@@ -7,6 +7,7 @@ import ar from 'react-intl/locale-data/ar';
 import az from 'react-intl/locale-data/az'; // also parent for Abkahz
 import bg from 'react-intl/locale-data/bg';
 import ca from 'react-intl/locale-data/ca';
+import ckb from 'react-intl/locale-data/ckb';
 import cs from 'react-intl/locale-data/cs';
 import cy from 'react-intl/locale-data/cy';
 import da from 'react-intl/locale-data/da';
@@ -15,6 +16,7 @@ import el from 'react-intl/locale-data/el';
 import es from 'react-intl/locale-data/es';
 import et from 'react-intl/locale-data/et';
 import eu from 'react-intl/locale-data/eu';
+import fa from 'react-intl/locale-data/fa';
 import fi from 'react-intl/locale-data/fi';
 import fr from 'react-intl/locale-data/fr';
 import ga from 'react-intl/locale-data/ga';
@@ -86,6 +88,7 @@ let localeData = [].concat(
     az, // parent for Abkahz
     bg,
     ca,
+    ckb,
     cs,
     cy,
     da,
@@ -94,6 +97,7 @@ let localeData = [].concat(
     es,
     et,
     eu,
+    fa,
     fi,
     fr,
     ga,

@@ -21,6 +21,7 @@ const locales = {
     'es': {name: 'Español'},
     'es-419': {name: 'Español Latinoamericano'},
     'eu': {name: 'Euskara'},
+    'fa': {name: 'فارسی'},
     'fr': {name: 'Français'},
     'ga': {name: 'Gaeilge'},
     'gd': {name: 'Gàidhlig'},
@@ -31,6 +32,7 @@ const locales = {
     'zu': {name: 'isiZulu'},
     'is': {name: 'Íslenska'},
     'it': {name: 'Italiano'},
+    'ckb': {name: 'کوردیی ناوەندی'},
     'lv': {name: 'Latviešu'},
     'lt': {name: 'Lietuvių'},
     'hu': {name: 'Magyar'},
@@ -93,6 +95,8 @@ const localeMap = {
 // list of RTL locales supported, and a function to check whether a locale is RTL
 const rtlLocales = [
     'ar',
+    'ckb',
+    'fa',
     'he'
 ];
 
