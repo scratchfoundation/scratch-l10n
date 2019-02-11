@@ -21,7 +21,9 @@ const flattenJson = (translations) => {
 // placeholders are always an array, so filter for array elements to find the placeholders
 const placeholders = message => (
     // this will throw an error if the message is not valid ICU
-    parse(message).filter(item => Array.isArray(item))
+    // single quote (as in French l'année) messes up the parse and is not
+    // relevant for this check, so strip them out
+    parse(message.replace(/'/g, '')).filter(item => Array.isArray(item))
 );
 
 const validMessage = (message, source) => {
