@@ -26,11 +26,12 @@ There are two situations in which we create manual PRs to update translations:
   * [ ] Check if language is right-to-left. If so:
     * Add entry in `rtlLocales`
 
-* [ ] Check if language needs a new locale (such as Brasilian Portuguese). If so:
+* [ ] Check if the new language uses a country code
+  * Check [https://www.transifex.com/explore/languages](https://www.transifex.com/explore/languages). If the language has a country code:
   * [ ] Edit `src/supported-locales.js`:
-    * Add new entry to `localeMap`. Format is `'<browser locale string>': '<Transifex locale string/ISO standard>'`
+    * Add new entry to `localeMap`. Format is `'<W3C HTML browser locale string>': '<Transifex ICU locale string>'`
   * [ ] Edit `.tx/config`:
-    * Add to the `lang_map` list. Format is `<Transifex locale string/ISO standard>:<browser locale string>`
+    * Add to the `lang_map` list. Format is `<Transifex ICU locale string>:<W3C HTML browser locale string>`
     * NOTE: we are moving away from using the `tx` cli; `.tx/config` will eventually be deprecated
 
 * [ ] Edit `src/index.js`:
