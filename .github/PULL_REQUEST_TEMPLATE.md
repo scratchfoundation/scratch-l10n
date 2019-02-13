@@ -38,7 +38,7 @@ There are two situations in which we create manual PRs to update translations:
   * [ ] Add 'import' line and export line
   * [ ] Add entry in `localeData` array
 
-* [ ] check if locale is in `react-intl`
+* [ ] Check if locale is in `react-intl`
   * Look in [https://unpkg.com/react-intl/locale-data/](https://unpkg.com/react-intl/locale-data/)
   * If not in `react-intl`:
     * [ ] Edit `src/supported-locales.js`:
@@ -46,9 +46,11 @@ There are two situations in which we create manual PRs to update translations:
     * [ ] Edit `src/index.js`:
       * In `localeData`, add entry for parent locale
 
-* [ ] update translations per the "Updating translations" section above
+* [ ] Update translations per the "Updating translations" section above
 * [ ] Confirm that we see changes to:
     * [ ] `src/supported-locales.js`
     * [ ] `src/index.js`
     * [ ] `.tx/config` (if language needed a new locale)
     * [ ] Multiple files like `editor/<resource>/<lang code>.json`
+
+* [ ] Bump minor version number in `package.json`
