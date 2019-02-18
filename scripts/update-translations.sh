@@ -6,6 +6,7 @@
 set -ev
 
 npm run pull:editor
+npm run pull:www
 npm run test 
 
 # commit any updates and push. Build and release should happen on the push not here.
