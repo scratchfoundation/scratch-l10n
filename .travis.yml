@@ -6,9 +6,7 @@ cache:
   directories:
   - node_modules
 notifications:
-  slack:
-    on_success: never
-    on_failure: $SLACK_NOTIFICATION_TOKEN
+  slack: $SLACK_NOTIFICATION_TOKEN
 jobs:
   include:
     - stage: update translations
