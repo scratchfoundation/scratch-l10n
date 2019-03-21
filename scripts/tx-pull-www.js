@@ -14,9 +14,10 @@ const usage = `
  Pull supported language translations from Transifex for the 'scratch-website' project.
  It will query transifex for the list of resources.
  Usage:
-   node tx-pull-www.js path
+   node tx-pull-www.js path [lang]
      path: root for the translated resources.
            Each resource will be a subdirectory containing language json files.
+     lang: optional language code - will only pull resources for that language
    NOTE: TX_TOKEN environment variable needs to be set with a Transifex API token. 
    See the Localization page on the GUI wiki for information about setting up Transifex.
  `;
@@ -38,6 +39,8 @@ const PROJECT = 'scratch-website';
 const OUTPUT_DIR = path.resolve(args[0]);
 // const MODE = {mode: 'reviewed'}; // default is everything for www
 const CONCURRENCY_LIMIT = 4;
+
+const lang = args.length === 2 ? args[1] : '';
 
 const TX = new transifex({
     project_slug: PROJECT,
@@ -73,8 +76,12 @@ const getLocaleData = (item, callback) => {
 const expandResourceFiles = (resources) => {
     let items = [];
     for (let resource of resources) {
-        for (let locale of Object.keys(locales)) {
-            items.push({resource: resource.slug, locale: locale});
+        if (lang) {
+            items.push({resource: resource.slug, locale: lang});
+        } else {
+            for (let locale of Object.keys(locales)) {
+                items.push({resource: resource.slug, locale: locale});
+            }
         }
     }
     return items;
