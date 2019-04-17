@@ -15,7 +15,8 @@ There are two situations in which we create manual PRs to update translations:
 
 ### 1. Updating translations manually
 
-* [ ] Pull translations from Transifex with `> npm run pull:editor`
+* [ ] Pull editor translations from Transifex with `> npm run pull:editor`
+* [ ] Pull www translations from Transifex with `> npm run pull:www`
 * [ ] Test the result with `> npm run test`
 * [ ] Confirm that you see changes to files like `editor/<resource>/<lang code>.json`
 
