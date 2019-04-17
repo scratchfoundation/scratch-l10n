@@ -32,6 +32,7 @@ import ja from 'react-intl/locale-data/ja';
 import ko from 'react-intl/locale-data/ko';
 import lt from 'react-intl/locale-data/lt';
 import lv from 'react-intl/locale-data/lv';
+import mi from 'react-intl/locale-data/mi';
 import nl from 'react-intl/locale-data/nl';
 import nb from 'react-intl/locale-data/nb';
 import nn from 'react-intl/locale-data/nn';
@@ -113,6 +114,7 @@ let localeData = [].concat(
     ko,
     lt,
     lv,
+    mi,
     nl,
     nb,
     nn,

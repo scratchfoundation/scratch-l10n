@@ -65,14 +65,7 @@ const customLocales = {
         locale: 'ab',
         parentLocale: 'az'
     },
-    'es-419': {
-        locale: 'es-419',
-        parentLocale: 'es'
-    },
-    'mi': {
-        locale: 'mi',
-        parentLocale: 'en'
-    },
+    // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant
     'zh-cn': {
         locale: 'zh-cn',
         parentLocale: 'zh'
