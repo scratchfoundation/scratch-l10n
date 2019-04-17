@@ -5,6 +5,7 @@ import en from 'react-intl/locale-data/en';
 import am from 'react-intl/locale-data/am';
 import ar from 'react-intl/locale-data/ar';
 import az from 'react-intl/locale-data/az'; // also parent for Abkahz
+import be from 'react-intl/locale-data/be';
 import bg from 'react-intl/locale-data/bg';
 import ca from 'react-intl/locale-data/ca';
 import ckb from 'react-intl/locale-data/ckb';
@@ -86,6 +87,7 @@ let localeData = [].concat(
     am,
     ar,
     az, // parent for Abkahz
+    be,
     bg,
     ca,
     ckb,
