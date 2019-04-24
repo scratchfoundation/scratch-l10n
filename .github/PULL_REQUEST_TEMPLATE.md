@@ -55,3 +55,6 @@ There are two situations in which we create manual PRs to update translations:
     * [ ] Multiple files like `editor/<resource>/<lang code>.json`
 
 * [ ] Bump minor version number in `package.json`
+
+* **Update scratch-blocks dependency**
+  * scratch-blocks has its own translations. It will not pick up the new language unless the scratch-l10n dependency in `package.json` is updated to the new minor version.
