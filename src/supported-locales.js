@@ -43,10 +43,12 @@ const locales = {
     'ja-Hira': {name: 'にほんご'},
     'nb': {name: 'Norsk Bokmål'},
     'nn': {name: 'Norsk Nynorsk'},
+    'uz': {name: 'Oʻzbekcha'},
     'th': {name: 'ไทย'},
     'pl': {name: 'Polski'},
     'pt': {name: 'Português'},
     'pt-br': {name: 'Português Brasileiro'},
+    'rap': {name: 'Rapa Nui'},
     'ro': {name: 'Română'},
     'ru': {name: 'Русский'},
     'sr': {name: 'Српски'},
@@ -65,6 +67,10 @@ const customLocales = {
     'ab': {
         locale: 'ab',
         parentLocale: 'az'
+    },
+    'rap': {
+        locale: 'rap',
+        parentLocale: 'es'
     },
     // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant
     'zh-cn': {
