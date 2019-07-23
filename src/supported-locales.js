@@ -45,6 +45,7 @@ const locales = {
     'nn': {name: 'Norsk Nynorsk'},
     'uz': {name: 'Oʻzbekcha'},
     'th': {name: 'ไทย'},
+    'km': {name: 'ភាសាខ្មែរ'},
     'pl': {name: 'Polski'},
     'pt': {name: 'Português'},
     'pt-br': {name: 'Português Brasileiro'},
