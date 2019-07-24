@@ -33,6 +33,7 @@ const locales = {
     'zu': {name: 'isiZulu'},
     'is': {name: 'Íslenska'},
     'it': {name: 'Italiano'},
+    'ka': {name: 'ქართული ენა'},
     'ckb': {name: 'کوردیی ناوەندی'},
     'lv': {name: 'Latviešu'},
     'lt': {name: 'Lietuvių'},
