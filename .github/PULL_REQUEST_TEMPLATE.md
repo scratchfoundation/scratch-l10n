@@ -64,3 +64,6 @@ There are two situations in which we create manual PRs to update translations:
 
 * [ ] **Add language to scratchr2 settings**
     * manually update `settings/base.py` with the new language
+
+* [ ] **Edit scratch-www custom locales (if needed)**
+    * if the language required a custom locale above, the same custom locale needs to be added to [custom-locales.json](https://github.com/LLK/scratch-www/blob/develop/custom-locales.json) in www as well
