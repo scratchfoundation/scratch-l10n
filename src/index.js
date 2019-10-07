@@ -47,6 +47,7 @@ import sl from 'react-intl/locale-data/sl';
 import sk from 'react-intl/locale-data/sk';
 import sr from 'react-intl/locale-data/sr';
 import sv from 'react-intl/locale-data/sv';
+import sw from 'react-intl/locale-data/sw';
 import th from 'react-intl/locale-data/th';
 import tr from 'react-intl/locale-data/tr';
 import uk from 'react-intl/locale-data/uk';
@@ -102,6 +103,7 @@ let localeData = [].concat(
     sk,
     sr,
     sv,
+    sw,
     ro,
     ru,
     th,
