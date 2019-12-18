@@ -35,6 +35,7 @@ const locales = {
     'it': {name: 'Italiano'},
     'ka': {name: 'ქართული ენა'},
     'sw': {name: 'Kiswahili'},
+    'ht': {name: 'Kreyòl ayisyen'},
     'ckb': {name: 'کوردیی ناوەندی'},
     'lv': {name: 'Latviešu'},
     'lt': {name: 'Lietuvių'},
@@ -70,6 +71,11 @@ const customLocales = {
     'ab': {
         locale: 'ab',
         parentLocale: 'az'
+    },
+    // haitian creole is not in react-intl locales
+    'ht': {
+        locale: 'ht',
+        parentLocale: 'fr'
     },
     'rap': {
         locale: 'rap',
