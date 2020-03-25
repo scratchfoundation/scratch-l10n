@@ -33,6 +33,7 @@ import ja from 'react-intl/locale-data/ja';
 import ka from 'react-intl/locale-data/ka';
 import ko from 'react-intl/locale-data/ko';
 import km from 'react-intl/locale-data/km';
+import ku from 'react-intl/locale-data/ku';
 import lt from 'react-intl/locale-data/lt';
 import lv from 'react-intl/locale-data/lv';
 import mi from 'react-intl/locale-data/mi';
@@ -91,6 +92,7 @@ let localeData = [].concat(
     ka,
     ko,
     km,
+    ku,
     lt,
     lv,
     mi,
