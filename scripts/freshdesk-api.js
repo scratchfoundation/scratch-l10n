@@ -10,6 +10,7 @@ class FreshdeskApi {
             'Content-Type': 'application/json',
             'Authorization': this._auth
         };
+        this.rateLimited = false;
     }
 
     /**
@@ -24,7 +25,9 @@ class FreshdeskApi {
             }
             throw new Error(`response not json: ${res.headers.get('content-type')}`);
         }
-        throw new Error(`response: ${res.statusText}`);
+        let err = new Error(`response ${res.statusText}`);
+        err.code = res.status;
+        throw err;
     }
 
     listCategories () {
@@ -47,6 +50,105 @@ class FreshdeskApi {
             {headers: this.defaultHeaders})
             .then(this.checkStatus)
             .then(res => res.json());
+    }
+
+    updateCategoryTranslation (id, locale, body) {
+        if (this.rateLimited) {
+            process.stdout.write(`Rate limited, skipping id: ${id} for ${locale}\n`);
+            return -1;
+        }
+        return fetch(
+            `${this.baseUrl}/api/v2/solutions/categories/${id}/${locale}`,
+            {
+                method: 'put',
+                body: JSON.stringify(body),
+                headers: this.defaultHeaders
+            })
+            .then(this.checkStatus)
+            .then(res => res.json())
+            .catch((err) => {
+                if (err.code === 404) {
+                    // not found, try create instead
+                    return fetch(
+                        `${this.baseUrl}/api/v2/solutions/categories/${id}/${locale}`,
+                        {
+                            method: 'post',
+                            body: JSON.stringify(body),
+                            headers: this.defaultHeaders
+                        })
+                        .then(this.checkStatus)
+                        .then(res => res.json());
+                }
+                // re-raise the error otherwise
+                throw err;
+            });
+    }
+
+    updateFolderTranslation (id, locale, body) {
+        if (this.rateLimited) {
+            process.stdout.write(`Rate limited, skipping id: ${id} for ${locale}\n`);
+            return -1;
+        }
+        return fetch(
+            `${this.baseUrl}/api/v2/solutions/folders/${id}/${locale}`,
+            {
+                method: 'put',
+                body: JSON.stringify(body),
+                headers: this.defaultHeaders
+            })
+            .then(this.checkStatus)
+            .then(res => res.json())
+            .catch((err) => {
+                if (err.code === 404) {
+                    // not found, try create instead
+                    return fetch(
+                        `${this.baseUrl}/api/v2/solutions/folders/${id}/${locale}`,
+                        {
+                            method: 'post',
+                            body: JSON.stringify(body),
+                            headers: this.defaultHeaders
+                        })
+                        .then(this.checkStatus)
+                        .then(res => res.json());
+                }
+                // re-raise the error otherwise
+                throw err;
+            });
+    }
+
+    updateArticleTranslation (id, locale, body) {
+        if (this.rateLimited) {
+            process.stdout.write(`Rate limited, skipping id: ${id} for ${locale}\n`);
+            return -1;
+        }
+        return fetch(
+            `${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`,
+            {
+                method: 'put',
+                body: JSON.stringify(body),
+                headers: this.defaultHeaders
+            })
+            .then(this.checkStatus)
+            .then(res => res.json())
+            .catch((err) => {
+                if (err.code === 404) {
+                    // not found, try create instead
+                    return fetch(
+                        `${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`,
+                        {
+                            method: 'post',
+                            body: JSON.stringify(body),
+                            headers: this.defaultHeaders
+                        })
+                        .then(this.checkStatus)
+                        .then(res => res.json());
+                }
+                if (err.code === 429) {
+                    this.rateLimited = true;
+                }
+                // re-raise the error otherwise
+                throw err;
+            });
     }
 }
 

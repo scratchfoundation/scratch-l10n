@@ -102,7 +102,7 @@ const saveArticles = (folder) => {
                         }
                     };
                     if (current.tags.length > 0) {
-                        strings[`${current.id}`].tags = current.tags.toString();
+                        strings[`${current.id}`].tags = {string: current.tags.toString()};
                     }
                 }
                 return strings;
