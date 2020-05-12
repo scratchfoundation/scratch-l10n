@@ -26,6 +26,7 @@ import gl from 'react-intl/locale-data/gl';
 import he from 'react-intl/locale-data/he';
 import hu from 'react-intl/locale-data/hu';
 import hr from 'react-intl/locale-data/hr';
+import hy from 'react-intl/locale-data/hy';
 import id from 'react-intl/locale-data/id';
 import is from 'react-intl/locale-data/is';
 import it from 'react-intl/locale-data/it';
@@ -85,6 +86,7 @@ let localeData = [].concat(
     he,
     hu,
     hr,
+    hy,
     id,
     is,
     it,
