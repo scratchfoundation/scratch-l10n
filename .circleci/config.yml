@@ -64,6 +64,11 @@ jobs:
             git add .
             git commit -m "pull new editor translations from Transifex"
             git push $CIRCLE_REPOSITORY_URL HEAD:master
+  sync-help:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: npm run sync:help
 workflows:
   version: 2
   build-test-and-deploy:
@@ -87,3 +92,12 @@ workflows:
         - commit-translations:
             requires:
               - pull-translations # don't commit if there were errors
+  daily-help-update:
+    triggers:
+      - schedule: # daily at 11pm
+          cron: "0 23 * * *"
+          filters:
+            branches:
+              only: master
+    jobs:
+      - sync-help
