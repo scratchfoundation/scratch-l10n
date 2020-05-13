@@ -37,6 +37,33 @@ jobs:
           command: |
             git tag $VERSION
             git push $CIRCLE_REPOSITORY_URL $VERSION
+  pull-translations:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: "pull editor and www translations"
+          command: |
+            npm run pull:editor
+            npm run pull:www
+            npm run test
+      - persist_to_workspace:
+          root: ~/project
+          paths: .
+  commit-translations:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - add_ssh_keys:
+          fingerprints:
+            - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
+      - run:
+          name: "commit translation updates"
+          command: |
+            git add .
+            git commit -m "pull new editor translations from Transifex"
+            git push $CIRCLE_REPOSITORY_URL HEAD:master
 workflows:
   version: 2
   build-test-and-deploy:
@@ -48,3 +75,15 @@ workflows:
           filters:
             branches:
               only: master
+  weekly-tx-pull:
+      triggers:
+        - schedule: # weekly on Tuesdays at 8pm
+            cron: "0 20 * * 2"
+            filters:
+              branches:
+                only: master
+      jobs:
+        - pull-translations
+        - commit-translations:
+            requires:
+              - pull-translations # don't commit if there were errors
