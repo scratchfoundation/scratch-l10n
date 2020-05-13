@@ -1,16 +1,50 @@
 version: 2.1
 orbs:
   node: circleci/node@2.1.0
+defaults: &defaults
+  working_directory: ~/project
+  executor:
+    name: node/default
+    tag: 'lts'
 jobs:
   build-and-test:
-    executor:
-      name: node/default
-      tag: 'lts'
+    <<: *defaults
     steps:
       - checkout
-      - node/install-packages
-      - run: npm test
+      - node/install-packages #node orb cmd caches
+      - run: npm run test
+      - persist_to_workspace:
+          root: ~/project
+          paths: .
+  deploy-npm:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - run:
+          name: "configure npm version"
+          command: |
+            VPKG=$($(npm bin)/json -f package.json version)
+            echo "export VERSION=${VPKG/%?/}$(date +%Y%m%d%H%M%S)" >> $BASH_ENV
+            npm --no-git-tag-version version $VERSION
+      - run:
+          name: "publish"
+          command: |
+            npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            npm publish
+      - run:
+          name: "tag release"
+          command: |
+            git tag $VERSION
+            git push $CIRCLE_REPOSITORY_URL $VERSION
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - build-and-test
+      - deploy-npm:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: master
