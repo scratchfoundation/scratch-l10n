@@ -8,8 +8,9 @@
 const transifex = require('transifex');
 const FreshdeskApi = require('./freshdesk-api.js');
 const util = require('util');
-// const fs = require('fs');
-// const mkdirp = require('mkdirp');
+const fs = require('fs');
+const fsPromises = fs.promises;
+const mkdirp = require('mkdirp');
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
 const TX_PROJECT = 'scratch-help';
@@ -116,7 +117,12 @@ const serializeFolderSave = async (json, locale) => {
             status: 2 // set status to published
         };
         if (value.hasOwnProperty('tags')) {
-            body.tags = value.tags.string.split(',');
+            let tags = value.tags.string.split(',');
+            let validTags = tags.filter(tag => tag.length < 33);
+            if (validTags.length !== tags.length) {
+                process.stdout.write(`Warning: tags too long in ${id} for ${locale}\n`);
+            }
+            body.tags = validTags;
         }
         let status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body);
         if (status === -1) {
@@ -138,6 +144,28 @@ exports.localizeFolder = async (folder, locale) => {
             const json = JSON.parse(data);
 
             serializeFolderSave(json, locale);
+        })
+        .catch((e) => {
+            process.stdout.write(`Error processing ${folder.slug}, ${locale}: ${e.message}\n`);
+            process.exitCode = 1; // not ok
+        });
+};
+
+/**
+ * Save Transifex resource corresponding to a Knowledge base folder locally for debugging
+ * @param  {object}  folder Transifex resource json corresponding to a KB folder
+ * @param  {string}  locale locale to pull and save
+ * @return {Promise}        [description]
+ */
+exports.debugFolder = async (folder, locale) => {
+    mkdirp.sync('tmpDebug');
+    getTranslation(TX_PROJECT, folder.slug, locale, {mode: 'default'})
+        .then(data => {
+            const json = JSON.parse(data);
+            fsPromises.writeFile(
+                `tmpDebug/${folder.slug}_${locale}.json`,
+                JSON.stringify(json, null, 2)
+            );
         })
         .catch((e) => {
             process.stdout.write(`Error processing ${folder.slug}, ${locale}: ${e.message}\n`);

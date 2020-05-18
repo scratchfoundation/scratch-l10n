@@ -111,7 +111,10 @@ class FreshdeskApi {
                         .then(this.checkStatus)
                         .then(res => res.json());
                 }
-                // re-raise the error otherwise
+                if (err.code === 429) {
+                    this.rateLimited = true;
+                }
+                process.stdout.write(`Error processing id ${id} for locale ${locale}: ${err.message}\n`);
                 throw err;
             });
     }
