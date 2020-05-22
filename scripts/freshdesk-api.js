@@ -27,6 +27,9 @@ class FreshdeskApi {
         }
         let err = new Error(`response ${res.statusText}`);
         err.code = res.status;
+        if (res.status === 429) {
+            err.retryAfter = res.headers.get('Retry-After');
+        }
         throw err;
     }
 
@@ -79,7 +82,10 @@ class FreshdeskApi {
                         .then(this.checkStatus)
                         .then(res => res.json());
                 }
-                // re-raise the error otherwise
+                if (err.code === 429) {
+                    this.rateLimited = true;
+                }
+                process.stdout.write(`Error processing id ${id} for locale ${locale}: ${err.message}\n`);
                 throw err;
             });
     }
@@ -149,7 +155,7 @@ class FreshdeskApi {
                 if (err.code === 429) {
                     this.rateLimited = true;
                 }
-                // re-raise the error otherwise
+                process.stdout.write(`Error processing id ${id} for locale ${locale}: ${err.message}\n`);
                 throw err;
             });
     }
