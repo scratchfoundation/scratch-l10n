@@ -1,0 +1,106 @@
+version: 2.1
+orbs:
+  node: circleci/node@2.1.0
+defaults: &defaults
+  working_directory: ~/project
+  executor:
+    name: node/default
+    tag: 'lts'
+jobs:
+  build-and-test:
+    <<: *defaults
+    steps:
+      - checkout
+      - node/install-packages #node orb cmd caches
+      - run: npm run test
+      - persist_to_workspace:
+          root: ~/project
+          paths: .
+  deploy-npm:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - add_ssh_keys:
+          fingerprints:
+            - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
+      - run:
+          name: "configure npm version"
+          command: |
+            VPKG=$($(npm bin)/json -f package.json version)
+            echo "export VERSION=${VPKG/%?/}$(date +%Y%m%d%H%M%S)" >> $BASH_ENV
+            npm --no-git-tag-version version $VERSION
+      - run:
+          name: "publish"
+          command: |
+            npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+            npm publish
+      - run:
+          name: "tag release"
+          command: |
+            git tag $VERSION
+            git push $CIRCLE_REPOSITORY_URL $VERSION
+  pull-translations:
+    <<: *defaults
+    steps:
+      - checkout
+      - run:
+          name: "pull editor and www translations"
+          command: |
+            npm run pull:editor
+            npm run pull:www
+            npm run test
+      - persist_to_workspace:
+          root: ~/project
+          paths: .
+  commit-translations:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/project
+      - add_ssh_keys:
+          fingerprints:
+            - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
+      - run:
+          name: "commit translation updates"
+          command: |
+            git add .
+            git commit -m "pull new editor translations from Transifex"
+            git push $CIRCLE_REPOSITORY_URL HEAD:master
+  sync-help:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: npm run sync:help
+workflows:
+  version: 2
+  build-test-and-deploy:
+    jobs:
+      - build-and-test
+      - deploy-npm:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only: master
+  weekly-tx-pull:
+      triggers:
+        - schedule: # weekly on Tuesdays at 8pm
+            cron: "0 20 * * 2"
+            filters:
+              branches:
+                only: master
+      jobs:
+        - pull-translations
+        - commit-translations:
+            requires:
+              - pull-translations # don't commit if there were errors
+  daily-help-update:
+    triggers:
+      - schedule: # daily at 11pm
+          cron: "0 23 * * *"
+          filters:
+            branches:
+              only: master
+    jobs:
+      - sync-help
