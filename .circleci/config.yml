@@ -25,14 +25,14 @@ jobs:
           fingerprints:
             - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
       - run:
-          name: "configure npm version"
+          name: "configure release version"
           command: |
             VPKG=$($(npm bin)/json -f package.json version)
             echo "export VERSION=${VPKG/%?/}$(date +%Y%m%d%H%M%S)" >> $BASH_ENV
-            npm --no-git-tag-version version $VERSION
       - run:
           name: "publish"
           command: |
+            npm --no-git-tag-version version $VERSION
             npm set //registry.npmjs.org/:_authToken=$NPM_TOKEN
             npm publish
       - run:
