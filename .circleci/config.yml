@@ -21,6 +21,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/project
+      - add_ssh_keys:
+          fingerprints:
+            - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
       - run:
           name: "configure npm version"
           command: |
