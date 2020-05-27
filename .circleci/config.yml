@@ -24,6 +24,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
+      - run: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: "configure release version"
           command: |
@@ -61,6 +62,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "58:62:ab:1f:24:b9:39:5a:ee:8a:e7:28:b2:f2:61:a2"
+      - run: ssh-keyscan -H github.com >> ~/.ssh/known_hosts
       - run:
           name: "commit translation updates"
           command: |
