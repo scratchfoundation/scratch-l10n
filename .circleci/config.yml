@@ -45,6 +45,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - node/install-packages
       - run:
           name: "pull editor and www translations"
           command: |
@@ -73,6 +74,7 @@ jobs:
     <<: *defaults
     steps:
       - checkout
+      - node/install-packages
       - run: npm run sync:help
 workflows:
   version: 2
