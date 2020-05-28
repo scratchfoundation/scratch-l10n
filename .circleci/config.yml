@@ -58,7 +58,7 @@ jobs:
           paths: .
       - slack/status:
           fail_only: true
-          failure_message: ":explosion" Pull editor and www translations failed"
+          failure_message: ":explosion: Pull editor and www translations failed"
           only_for_branches: "master"
   commit-translations:
     <<: *defaults
