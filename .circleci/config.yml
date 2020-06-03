@@ -72,6 +72,8 @@ jobs:
       - run:
           name: "commit translation updates"
           command: |
+            git config --global user.email $(git log --pretty=format:"%ae" -n1)
+            git config --global user.name $(git log --pretty=format:"%an" -n1)
             git add .
             git commit -m "pull new editor translations from Transifex"
             git push $CIRCLE_REPOSITORY_URL HEAD:master
@@ -96,6 +98,15 @@ workflows:
           filters:
             branches:
               only: master
+  manual-pull:
+    jobs:
+      - pull-translations
+      - commit-translations:
+          requires:
+            - pull-translations
+          filters:
+            branches:
+              only: tx-pull-manual
   weekly-tx-pull:
       triggers:
         - schedule: # weekly on Tuesdays at 8pm
