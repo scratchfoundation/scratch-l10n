@@ -99,6 +99,8 @@ workflows:
             branches:
               only: master
   manual-pull:
+    when:
+      equal: [ tx-pull-manual, << pipeline.git.branch >> ]
     jobs:
       - pull-translations
       - commit-translations:
