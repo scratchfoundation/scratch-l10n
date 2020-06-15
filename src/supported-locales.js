@@ -43,6 +43,7 @@ const locales = {
     'lt': {name: 'Lietuvių'},
     'hu': {name: 'Magyar'},
     'mi': {name: 'Māori'},
+    'mn': {name: 'Монгол хэ'},
     'nl': {name: 'Nederlands'},
     'ja': {name: '日本語'},
     'ja-Hira': {name: 'にほんご'},
