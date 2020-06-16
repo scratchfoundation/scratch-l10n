@@ -58,7 +58,7 @@ jobs:
           paths: .
       - slack/status:
           fail_only: true
-          failure_message: ":explosion: Pull editor and www translations failed"
+          failure_message: ":explosion: Pull editor and www translations failed, for help see: https://github.com/LLK/scratch-l10n/wiki/Developer-Guide#weekly-editor-and-website-update"
           only_for_branches: "master"
   commit-translations:
     <<: *defaults
@@ -85,7 +85,7 @@ jobs:
       - run: npm run sync:help
       - slack/status:
           fail_only: true
-          failure_message: ":boom: Scratch Help update failed"
+          failure_message: ":boom: Scratch Help update failed, for help see: https://github.com/LLK/scratch-l10n/wiki/Developer-Guide#daily-help-update"
           only_for_branches: "master"
 workflows:
   version: 2
@@ -109,8 +109,8 @@ workflows:
               only: tx-pull-manual
   weekly-tx-pull:
       triggers:
-        - schedule: # weekly on Tuesdays at 8pm
-            cron: "0 20 * * 2"
+        - schedule: # weekly on Wednesday at 3am
+            cron: "0 03 * * 3"
             filters:
               branches:
                 only: master
@@ -121,8 +121,8 @@ workflows:
               - pull-translations # don't commit if there were errors
   daily-help-update:
     triggers:
-      - schedule: # daily at 11pm
-          cron: "0 23 * * *"
+      - schedule: # daily at 5am
+          cron: "0 05 * * *"
           filters:
             branches:
               only: master
