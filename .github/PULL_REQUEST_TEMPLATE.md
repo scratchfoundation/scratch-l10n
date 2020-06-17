@@ -62,6 +62,7 @@ There are two situations in which we create manual PRs to update translations:
 * [ ] **Add language to scratchr2 settings**
     * manually update `settings/base.py` with the new language
 
+#### After scratch-l10n update is published:
 * [ ] **Update scratch-blocks dependency**
     * [ ] in `package.json`, update the version of the scratch-l10n dependency to the version number you used above
     * [ ] pull translations so that a new `Blockly.ScratchMsgs.locales["<LOCALE CODE>"]` is added to `msg/scratch_msgs.js`
