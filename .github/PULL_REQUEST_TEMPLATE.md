@@ -36,7 +36,7 @@ There are two situations in which we create manual PRs to update translations:
     * NOTE: we are moving away from using the `tx` cli; `.tx/config` will eventually be deprecated
 
 * [ ] Edit `src/index.js`:
-  * [ ] Add 'import' line and export line
+  * [ ] Add 'import' line
   * [ ] Add entry in `localeData` array
 
 * [ ] Check if locale is in `react-intl`
@@ -56,11 +56,13 @@ There are two situations in which we create manual PRs to update translations:
 
 * [ ] Bump minor version number in `package.json`
 
-* [ ] **Update scratch-blocks dependency**
-    * scratch-blocks has its own translations. It will not pick up the new language unless the scratch-l10n dependency in `package.json` is updated to the new minor version.
-
 * [ ] **Add language po files to scratchr2_translations**
     * manually update `scratchr2_translations/legacy` with `tx pull -l <locale>` and check in changes
 
 * [ ] **Add language to scratchr2 settings**
     * manually update `settings/base.py` with the new language
+
+#### After scratch-l10n update is published:
+* [ ] **Update scratch-blocks dependency**
+    * [ ] in `package.json`, update the version of the scratch-l10n dependency to the version number you used above
+    * [ ] pull translations so that a new `Blockly.ScratchMsgs.locales["<LOCALE CODE>"]` is added to `msg/scratch_msgs.js`
