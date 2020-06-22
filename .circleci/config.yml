@@ -110,7 +110,7 @@ workflows:
   weekly-tx-pull:
       triggers:
         - schedule: # weekly on Wednesday at 3am
-            cron: "0 03 * * 3"
+            cron: "0 3 * * 3"
             filters:
               branches:
                 only: master
