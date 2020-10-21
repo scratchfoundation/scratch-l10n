@@ -109,10 +109,10 @@ workflows:
           filters:
             branches:
               only: tx-pull-manual
-  weekly-tx-pull:
+  daily-tx-pull:
       triggers:
-        - schedule: # weekly on Wednesday at 3am
-            cron: "0 3 * * 3"
+        - schedule: # daily at 3am UTC (10pm EST)
+            cron: "0 3 * * *"
             filters:
               branches:
                 only: master
@@ -123,7 +123,7 @@ workflows:
               - pull-translations # don't commit if there were errors
   daily-help-update:
     triggers:
-      - schedule: # daily at 5am
+      - schedule: # daily at 5am UTC
           cron: "0 5 * * *"
           filters:
             branches:
