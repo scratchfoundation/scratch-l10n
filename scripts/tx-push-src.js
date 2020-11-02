@@ -41,11 +41,68 @@ const TX = new transifex({
 let en = fs.readFileSync(path.resolve(args[2]));
 en = JSON.parse(en);
 
+// get the correct resource file type based on transifex project/repo and resource
+const getResourceType = (project, resource) => {
+    if (project === 'scratch-website') {
+        // all the resources are KEYVALUEJSON
+        return 'KEYVALUEJSON';
+    }
+    if (project === 'scratch-legacy') {
+        // all the resources are po files
+        return 'PO';
+    }
+    if (project === 'scratch-editor') {
+        if (resource === 'blocks') {
+            return 'KEYVALUEJSON';
+        }
+        // everything else is CHROME I18N JSON
+        return 'CHROME';
+    }
+    if (project === 'scratch-videos') {
+        // all the resources are srt files
+        return 'SRT';
+    }
+    if (project === 'scratch-android') {
+        // all the resources are android xml files
+        return 'ANDROID';
+    }
+    if (project === 'scratch-resources') {
+        // all the resources are Chrome format json files
+        return 'CHROME';
+    }
+    process.stdout.write(`Error - Unknown resource type for:\n`);
+    process.stdout.write(`  Project: ${project}, resource: ${resource}\n`);
+    process.exit(1);
+};
+
 // update Transifex with English source
 TX.uploadSourceLanguageMethod(PROJECT, RESOURCE, {content: JSON.stringify(en)}, (err) => {
-    if (err) {
-        console.error(err); // eslint-disable-line no-console
-        process.exit(1);
+    if (err && err.response.statusCode !== 404) {
+        process.stdout.write(`Transifex Error: ${err.message}\n`);
+        process.stdout.write(
+            `Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`);
+        process.exitCode = 1;
+        return;
     }
-    process.exit(0);
+    // file not found - create it, but also give message
+    if (err && err.response.statusCode === 404) {
+        process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`);
+        const resourceData = {
+            slug: RESOURCE,
+            name: RESOURCE,
+            priority: 0, // default to normal priority
+            i18n_type: getResourceType(PROJECT, RESOURCE),
+            content: JSON.stringify(en)
+        };
+        TX.resourceCreateMethod(PROJECT, resourceData, (err1) => {
+            if (err1) {
+                process.stdout.write(`Transifex Error: ${err1.message}\n`);
+                process.stdout.write(
+                    `Transifex Error ${err1.response.statusCode.toString()}: ${err1.response.body}\n`);
+                process.exitCode = 1;
+                return;
+            }
+        });
+    }
+    process.exitCode = 0;
 });
