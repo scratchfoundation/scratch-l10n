@@ -2,6 +2,7 @@
 // https://unpkg.com/react-intl/locale-data/
 
 import en from 'react-intl/locale-data/en';
+import af from 'react-intl/locale-data/af';
 import am from 'react-intl/locale-data/am';
 import ar from 'react-intl/locale-data/ar';
 import az from 'react-intl/locale-data/az'; // also parent for Abkahz
@@ -42,8 +43,11 @@ import mn from 'react-intl/locale-data/mn';
 import nl from 'react-intl/locale-data/nl';
 import nb from 'react-intl/locale-data/nb';
 import nn from 'react-intl/locale-data/nn';
+import nso from 'react-intl/locale-data/nso';
+import or from 'react-intl/locale-data/or';
 import pl from 'react-intl/locale-data/pl';
 import pt from 'react-intl/locale-data/pt';
+import qu from 'react-intl/locale-data/qu';
 import ro from 'react-intl/locale-data/ro';
 import ru from 'react-intl/locale-data/ru';
 import sl from 'react-intl/locale-data/sl';
@@ -53,9 +57,11 @@ import sv from 'react-intl/locale-data/sv';
 import sw from 'react-intl/locale-data/sw';
 import th from 'react-intl/locale-data/th';
 import tr from 'react-intl/locale-data/tr';
+import tn from 'react-intl/locale-data/tn';
 import uk from 'react-intl/locale-data/uk';
 import uz from 'react-intl/locale-data/uz';
 import vi from 'react-intl/locale-data/vi';
+import xh from 'react-intl/locale-data/xh';
 import zh from 'react-intl/locale-data/zh';
 import zu from 'react-intl/locale-data/zu';
 
@@ -63,6 +69,7 @@ import locales, {customLocales, localeMap, isRtl} from './supported-locales.js';
 
 let localeData = [].concat(
     en,
+    af,
     am,
     ar,
     az, // parent for Abkahz
@@ -103,6 +110,8 @@ let localeData = [].concat(
     nl,
     nb,
     nn,
+    nso,
+    or,
     pl,
     pt,
     sl,
@@ -110,13 +119,16 @@ let localeData = [].concat(
     sr,
     sv,
     sw,
+    qu,
     ro,
     ru,
     th,
+    tn,
     tr,
     uk,
     uz,
     vi,
+    xh,
     zh,
     zu
 );
