@@ -20,6 +20,7 @@ const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`));
 // e.g. matches '[MOTOR_ID]', '[POWER]' from 'altera a potência de [MOTOR_ID] para [POWER]'
 const blockInputRegex = /\[.+?\]/g;
 const blockPercentRegex = /%\d+/g;
+const blockPercentWithQuotesRegex = /"%\d+"|“%\d+”|'%\d+'|「%\d+」|«%\d+»|„%\d+”/g;
 
 let numTotalErrors = 0;
 
@@ -67,6 +68,18 @@ const validateExtensionInputs = (translationData, locale) => {
                     numLocaleErrors++;
                     console.error(err.message + '\n'); // eslint-disable-line no-console
                 }
+            }
+        }
+
+        // do not add to list of errors, print warning only
+        const englishBlockPercentsWithQuotes = source[block].match(blockPercentWithQuotesRegex);
+        if (englishBlockPercentsWithQuotes) {
+            const translatedBlockPercentsWithQuotes = translationData[block].match(blockPercentWithQuotesRegex) || [];
+            if (englishBlockPercentsWithQuotes.length !== translatedBlockPercentsWithQuotes.length) {
+                /* eslint-disable no-console */
+                console.error(`Warning (nonfatal): Block '${block}' in locale '${locale}'` +
+                    ' might not have correct number of quoted inputs in:\n' + translationData[block] + '\n');
+                /* eslint-enable no-console */
             }
         }
     }
