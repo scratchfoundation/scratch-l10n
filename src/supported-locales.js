@@ -80,9 +80,9 @@ const locales = {
 const customLocales = {
     'ab': {
         locale: 'ab',
-        parentLocale: 'az'
+        parentLocale: 'ru'
     },
-    // haitian creole is not in react-intl locales
+    // haitian creole is not in locale-langData
     'ht': {
         locale: 'ht',
         parentLocale: 'fr'
@@ -91,7 +91,7 @@ const customLocales = {
         locale: 'rap',
         parentLocale: 'es'
     },
-    // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant
+    // TODO: replace zh-cn, zh-tw with zh-Hans and zh-Hant then customLocales is unnecessary
     'zh-cn': {
         locale: 'zh-cn',
         parentLocale: 'zh'
@@ -123,4 +123,4 @@ const isRtl = locale => {
     return rtlLocales.indexOf(locale) !== -1;
 };
 
-export {locales as default, customLocales, localeMap, rtlLocales, isRtl};
+export {locales as default, customLocales, localeMap, isRtl};
