@@ -20,7 +20,7 @@ const locales = {
     'et': {name: 'Eesti'},
     'el': {name: 'Ελληνικά'},
     'en': {name: 'English'},
-    'es': {name: 'Español'},
+    'es': {name: 'Español (España)'},
     'es-419': {name: 'Español Latinoamericano'},
     'eu': {name: 'Euskara'},
     'fa': {name: 'فارسی'},
