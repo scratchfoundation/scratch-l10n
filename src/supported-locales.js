@@ -37,6 +37,7 @@ const locales = {
     'is': {name: 'Íslenska'},
     'it': {name: 'Italiano'},
     'ka': {name: 'ქართული ენა'},
+    'kk': {name: 'қазақша'},
     'qu': {name: 'Kichwa'},
     'sw': {name: 'Kiswahili'},
     'ht': {name: 'Kreyòl ayisyen'},
