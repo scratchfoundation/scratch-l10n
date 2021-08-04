@@ -8,8 +8,10 @@ const locales = {
     'af': {name: 'Afrikaans'},
     'ar': {name: 'العربية'},
     'am': {name: 'አማርኛ'},
+    'an': {name: 'Aragonés'},
     'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
+    'bn': {name: 'বাংলা'},
     'be': {name: 'Беларуская'},
     'bg': {name: 'Български'},
     'ca': {name: 'Català'},
@@ -25,6 +27,7 @@ const locales = {
     'eu': {name: 'Euskara'},
     'fa': {name: 'فارسی'},
     'fr': {name: 'Français'},
+    'fy': {name: 'Frysk'},
     'ga': {name: 'Gaeilge'},
     'gd': {name: 'Gàidhlig'},
     'gl': {name: 'Galego'},
@@ -81,6 +84,11 @@ const customLocales = {
     'ab': {
         locale: 'ab',
         parentLocale: 'ru'
+    },
+    // Aragonese is not in the locale data, using es for Spain
+    'an': {
+        locale: 'an',
+        parentLocale: 'es'
     },
     // haitian creole is not in locale-langData
     'ht': {

@@ -6,6 +6,7 @@ import am from './locale-data/am';
 import ar from './locale-data/ar';
 import az from './locale-data/az';
 import be from './locale-data/be';
+import bn from './locale-data/bn';
 import bg from './locale-data/bg';
 import ca from './locale-data/ca';
 import ckb from './locale-data/ckb';
@@ -20,6 +21,7 @@ import eu from './locale-data/eu';
 import fa from './locale-data/fa';
 import fi from './locale-data/fi';
 import fr from './locale-data/fr';
+import fy from './locale-data/fy';
 import ga from './locale-data/ga';
 import gd from './locale-data/gd';
 import gl from './locale-data/gl';
@@ -75,6 +77,7 @@ let localeData = [].concat(
     az,
     be,
     bg,
+    bn,
     ca,
     ckb,
     cs,
@@ -88,6 +91,7 @@ let localeData = [].concat(
     fa,
     fi,
     fr,
+    fy,
     ga,
     gd,
     gl,
