@@ -10,7 +10,8 @@
 
 const fs = require('fs');
 const path = require('path');
-const transifex = require('transifex');
+const txPush = require('../lib/transifex.js').txPush;
+const txCreateResource = require('../lib/transifex.js').txCreateResource;
 
 const args = process.argv.slice(2);
 
@@ -33,10 +34,6 @@ if (args.length < 3 || !process.env.TX_TOKEN) {
 // Globals
 const PROJECT = args[0];
 const RESOURCE = args[1];
-const TX = new transifex({
-    project_slug: PROJECT,
-    credential: 'api:' + process.env.TX_TOKEN
-});
 
 let en = fs.readFileSync(path.resolve(args[2]));
 en = JSON.parse(en);
@@ -76,33 +73,31 @@ const getResourceType = (project, resource) => {
 };
 
 // update Transifex with English source
-TX.uploadSourceLanguageMethod(PROJECT, RESOURCE, {content: JSON.stringify(en)}, (err) => {
-    if (err && err.response.statusCode !== 404) {
-        process.stdout.write(`Transifex Error: ${err.message}\n`);
-        process.stdout.write(
-            `Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`);
-        process.exitCode = 1;
-        return;
+const pushSource = async function () {
+    try {
+        await txPush(PROJECT, RESOURCE, en);
+    } catch (err) {
+        if (err.statusCode !== 404) {
+            process.stdout.write(`Transifex Error: ${err.message}\n`);
+            process.stdout.write(
+                `Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`);
+            process.exitCode = 1;
+            return;
+        }
+        // file not found - create it, but also give message
+        if (err.statusCode === 404) {
+            process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`);
+            const resourceData = {
+                slug: RESOURCE,
+                name: RESOURCE,
+                priority: 0, // default to normal priority
+                i18nType: getResourceType(PROJECT, RESOURCE),
+                content: en
+            };
+            await txCreateResource(PROJECT, resourceData);
+        }
+        process.exitCode = 0;
     }
-    // file not found - create it, but also give message
-    if (err && err.response.statusCode === 404) {
-        process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`);
-        const resourceData = {
-            slug: RESOURCE,
-            name: RESOURCE,
-            priority: 0, // default to normal priority
-            i18n_type: getResourceType(PROJECT, RESOURCE),
-            content: JSON.stringify(en)
-        };
-        TX.resourceCreateMethod(PROJECT, resourceData, (err1) => {
-            if (err1) {
-                process.stdout.write(`Transifex Error: ${err1.message}\n`);
-                process.stdout.write(
-                    `Transifex Error ${err1.response.statusCode.toString()}: ${err1.response.body}\n`);
-                process.exitCode = 1;
-                return;
-            }
-        });
-    }
-    process.exitCode = 0;
-});
+};
+
+pushSource();
