@@ -42,28 +42,25 @@ const CONCURRENCY_LIMIT = 4;
 
 const lang = args.length === 2 ? args[1] : '';
 
-const getLocaleData = (item, callback) => {
+const getLocaleData = async function (item) {
     const locale = item.locale;
     const resource = item.resource;
     let txLocale = localeMap[locale] || locale;
-    txPull(PROJECT, resource, txLocale, function (err, translations) {
-        if (err) {
-            callback(err);
-        } else {
-            const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
-            mkdirp.sync(txOutdir);
-            const fileName = `${txOutdir}/${locale}.json`;
-            fs.writeFileSync(
-                fileName,
-                JSON.stringify(translations, null, 4)
-            );
-            callback(null, {
-                resource: resource,
-                locale: locale,
-                file: fileName
-            });
-        }
-    });
+    
+    const translations = await txPull(PROJECT, resource, txLocale);
+    
+    const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
+    mkdirp.sync(txOutdir);
+    const fileName = `${txOutdir}/${locale}.json`;
+    fs.writeFileSync(
+        fileName,
+        JSON.stringify(translations, null, 4)
+    );
+    return {
+        resource: resource,
+        locale: locale,
+        file: fileName
+    };
 };
 
 const expandResourceFiles = (resources) => {
