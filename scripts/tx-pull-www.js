@@ -31,14 +31,14 @@ import fs from 'fs';
 import path from 'path';
 import mkdirp from 'mkdirp';
 import {txPull, txResources} from '../lib/transifex.js';
-import async from 'async';
 import locales, {localeMap} from '../src/supported-locales.js';
+import {batchMap} from '../lib/batch.js';
 
 // Globals
 const PROJECT = 'scratch-website';
 const OUTPUT_DIR = path.resolve(args[0]);
 // const MODE = {mode: 'reviewed'}; // default is everything for www
-const CONCURRENCY_LIMIT = 4;
+const CONCURRENCY_LIMIT = 36;
 
 const lang = args.length === 2 ? args[1] : '';
 
@@ -82,7 +82,7 @@ const pullTranslations = async function () {
     const allFiles = expandResourceFiles(resources);
 
     try {
-        await async.mapLimit(allFiles, CONCURRENCY_LIMIT, getLocaleData);
+        await batchMap(allFiles, CONCURRENCY_LIMIT, getLocaleData);
     } catch (err) {
         console.error(err); // eslint-disable-line no-console
         process.exit(1);
