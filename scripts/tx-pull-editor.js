@@ -29,9 +29,9 @@ if (!process.env.TX_TOKEN || args.length < 3) {
 import fs from 'fs';
 import path from 'path';
 import {txPull} from '../lib/transifex.js';
-import async from 'async';
 import {validateTranslations} from '../lib/validate.js';
 import locales, {localeMap} from '../src/supported-locales.js';
+import {batchMap} from '../lib/batch.js';
 
 // Globals
 const PROJECT = args[0];
@@ -43,7 +43,6 @@ const CONCURRENCY_LIMIT = 36;
 const getLocaleData = async function (locale) {
     let txLocale = localeMap[locale] || locale;
     const data = await txPull(PROJECT, RESOURCE, txLocale, MODE);
-    
     return {
         locale: locale,
         translations: data
@@ -52,8 +51,8 @@ const getLocaleData = async function (locale) {
 
 const pullTranslations = async function () {
     try {
-        const values = await async.mapLimit(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
-    
+        const values = await batchMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
+
         const source = values.find(elt => elt.locale === 'en').translations;
         values.forEach(function (translation) {
             validateTranslations({locale: translation.locale, translations: translation.translations}, source);
@@ -64,7 +63,7 @@ const pullTranslations = async function () {
             );
         });
     } catch (err) {
-        console.error(err); // eslint-disable-line no-console
+        process.stdout.write(err);
         process.exit(1);
     }
 };
