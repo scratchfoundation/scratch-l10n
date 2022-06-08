@@ -116,7 +116,7 @@ const serializeFolderSave = async (json, locale) => {
             description: value.description.string,
             status: 2 // set status to published
         };
-        if (value.hasOwnProperty('tags')) {
+        if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
             let tags = value.tags.string.split(',');
             let validTags = tags.filter(tag => tag.length < 33);
             if (validTags.length !== tags.length) {
