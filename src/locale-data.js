@@ -4,6 +4,7 @@ import en from './locale-data/en';
 import af from './locale-data/af';
 import am from './locale-data/am';
 import ar from './locale-data/ar';
+import ast from './locale-data/ast';
 import az from './locale-data/az';
 import be from './locale-data/be';
 import bn from './locale-data/bn';
@@ -75,6 +76,7 @@ let localeData = [].concat(
     af,
     am,
     ar,
+    ast,
     az,
     be,
     bg,

@@ -9,6 +9,7 @@ const locales = {
     'ar': {name: 'العربية'},
     'am': {name: 'አማርኛ'},
     'an': {name: 'Aragonés'},
+    'ast': {name: 'Asturianu'},
     'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
     'bn': {name: 'বাংলা'},
