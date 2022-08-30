@@ -20,6 +20,7 @@ import et from './locale-data/et';
 import eu from './locale-data/eu';
 import fa from './locale-data/fa';
 import fi from './locale-data/fi';
+import fil from './locale-data/fil';
 import fr from './locale-data/fr';
 import fy from './locale-data/fy';
 import ga from './locale-data/ga';
@@ -90,6 +91,7 @@ let localeData = [].concat(
     eu,
     fa,
     fi,
+    fil,
     fr,
     fy,
     ga,
