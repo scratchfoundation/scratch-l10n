@@ -58,6 +58,7 @@ const locales = {
     'ja-Hira': {name: 'にほんご'},
     'nb': {name: 'Norsk Bokmål'},
     'nn': {name: 'Norsk Nynorsk'},
+    'oc': {name: 'Occitan'},
     'or': {name: 'ଓଡ଼ିଆ'},
     'uz': {name: 'Oʻzbekcha'},
     'th': {name: 'ไทย'},
@@ -96,6 +97,10 @@ const customLocales = {
     // haitian creole is not in locale-langData
     'ht': {
         locale: 'ht',
+        parentLocale: 'fr'
+    },
+    'oc': {
+        locale: 'oc',
         parentLocale: 'fr'
     },
     'rap': {
