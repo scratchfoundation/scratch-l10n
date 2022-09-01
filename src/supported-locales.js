@@ -25,6 +25,7 @@ const locales = {
     'en': {name: 'English'},
     'es': {name: 'Español (España)'},
     'es-419': {name: 'Español Latinoamericano'},
+    'eo': {name: 'Esperanto'},
     'eu': {name: 'Euskara'},
     'fa': {name: 'فارسی'},
     'fr': {name: 'Français'},

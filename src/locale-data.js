@@ -16,6 +16,7 @@ import cy from './locale-data/cy';
 import da from './locale-data/da';
 import de from './locale-data/de';
 import el from './locale-data/el';
+import eo from './locale-data/eo';
 import es from './locale-data/es';
 import et from './locale-data/et';
 import eu from './locale-data/eu';
@@ -88,6 +89,7 @@ let localeData = [].concat(
     da,
     de,
     el,
+    eo,
     es,
     et,
     eu,
