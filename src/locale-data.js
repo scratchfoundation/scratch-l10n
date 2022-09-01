@@ -28,6 +28,7 @@ import fy from './locale-data/fy';
 import ga from './locale-data/ga';
 import gd from './locale-data/gd';
 import gl from './locale-data/gl';
+import ha from './locale-data/ha';
 import he from './locale-data/he';
 import hu from './locale-data/hu';
 import hr from './locale-data/hr';
@@ -101,6 +102,7 @@ let localeData = [].concat(
     ga,
     gd,
     gl,
+    ha,
     he,
     hu,
     hr,

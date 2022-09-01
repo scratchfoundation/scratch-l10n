@@ -34,6 +34,7 @@ const locales = {
     'gd': {name: 'Gàidhlig'},
     'gl': {name: 'Galego'},
     'ko': {name: '한국어'},
+    'ha': {name: 'Hausa'},
     'hy': {name: 'Հայերեն'},
     'he': {name: 'עִבְרִית'},
     'hr': {name: 'Hrvatski'},
