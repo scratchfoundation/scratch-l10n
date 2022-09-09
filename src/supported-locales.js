@@ -9,6 +9,7 @@ const locales = {
     'ar': {name: 'العربية'},
     'am': {name: 'አማርኛ'},
     'an': {name: 'Aragonés'},
+    'ast': {name: 'Asturianu'},
     'az': {name: 'Azeri'},
     'id': {name: 'Bahasa Indonesia'},
     'bn': {name: 'বাংলা'},
@@ -24,14 +25,17 @@ const locales = {
     'en': {name: 'English'},
     'es': {name: 'Español (España)'},
     'es-419': {name: 'Español Latinoamericano'},
+    'eo': {name: 'Esperanto'},
     'eu': {name: 'Euskara'},
     'fa': {name: 'فارسی'},
+    'fil': {name: 'Filipino'},
     'fr': {name: 'Français'},
     'fy': {name: 'Frysk'},
     'ga': {name: 'Gaeilge'},
     'gd': {name: 'Gàidhlig'},
     'gl': {name: 'Galego'},
     'ko': {name: '한국어'},
+    'ha': {name: 'Hausa'},
     'hy': {name: 'Հայերեն'},
     'he': {name: 'עִבְרִית'},
     'hr': {name: 'Hrvatski'},
@@ -56,6 +60,7 @@ const locales = {
     'ja-Hira': {name: 'にほんご'},
     'nb': {name: 'Norsk Bokmål'},
     'nn': {name: 'Norsk Nynorsk'},
+    'oc': {name: 'Occitan'},
     'or': {name: 'ଓଡ଼ିଆ'},
     'uz': {name: 'Oʻzbekcha'},
     'th': {name: 'ไทย'},
@@ -93,6 +98,10 @@ const customLocales = {
     // haitian creole is not in locale-langData
     'ht': {
         locale: 'ht',
+        parentLocale: 'fr'
+    },
+    'oc': {
+        locale: 'oc',
         parentLocale: 'fr'
     },
     'rap': {

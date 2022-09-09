@@ -4,6 +4,7 @@ import en from './locale-data/en';
 import af from './locale-data/af';
 import am from './locale-data/am';
 import ar from './locale-data/ar';
+import ast from './locale-data/ast';
 import az from './locale-data/az';
 import be from './locale-data/be';
 import bn from './locale-data/bn';
@@ -15,16 +16,19 @@ import cy from './locale-data/cy';
 import da from './locale-data/da';
 import de from './locale-data/de';
 import el from './locale-data/el';
+import eo from './locale-data/eo';
 import es from './locale-data/es';
 import et from './locale-data/et';
 import eu from './locale-data/eu';
 import fa from './locale-data/fa';
 import fi from './locale-data/fi';
+import fil from './locale-data/fil';
 import fr from './locale-data/fr';
 import fy from './locale-data/fy';
 import ga from './locale-data/ga';
 import gd from './locale-data/gd';
 import gl from './locale-data/gl';
+import ha from './locale-data/ha';
 import he from './locale-data/he';
 import hu from './locale-data/hu';
 import hr from './locale-data/hr';
@@ -74,6 +78,7 @@ let localeData = [].concat(
     af,
     am,
     ar,
+    ast,
     az,
     be,
     bg,
@@ -85,16 +90,19 @@ let localeData = [].concat(
     da,
     de,
     el,
+    eo,
     es,
     et,
     eu,
     fa,
     fi,
+    fil,
     fr,
     fy,
     ga,
     gd,
     gl,
+    ha,
     he,
     hu,
     hr,
