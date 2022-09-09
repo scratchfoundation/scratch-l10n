@@ -28,6 +28,7 @@ const locales = {
     'eo': {name: 'Esperanto'},
     'eu': {name: 'Euskara'},
     'fa': {name: 'فارسی'},
+    'fil': {name: 'Filipino'},
     'fr': {name: 'Français'},
     'fy': {name: 'Frysk'},
     'ga': {name: 'Gaeilge'},
@@ -79,7 +80,6 @@ const locales = {
     'sv': {name: 'Svenska'},
     'vi': {name: 'Tiếng Việt'},
     'tr': {name: 'Türkçe'},
-    'fil': {name: 'Wikang Filipino'},
     'uk': {name: 'Українська'},
     'zh-cn': {name: '简体中文'},
     'zh-tw': {name: '繁體中文'}
