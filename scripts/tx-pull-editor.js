@@ -54,6 +54,7 @@ const pullTranslations = async function () {
         const values = await batchMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
         const source = values.find(elt => elt.locale === 'en').translations;
         values.forEach(function (translation) {
+            validateTranslations({locale: translation.locale, translations: translation.translations}, source);
             // if translation has message & description, we only want the message
             let txs = {};
             for (const key of Object.keys(translation.translations)) {
@@ -64,7 +65,6 @@ const pullTranslations = async function () {
                     txs[key] = tx;
                 }
             }
-            validateTranslations({locale: translation.locale, translations: txs}, source);
             const file = JSON.stringify(txs, null, 4);
             fs.writeFileSync(
                 `${OUTPUT_DIR}/${translation.locale}.json`,
@@ -72,7 +72,7 @@ const pullTranslations = async function () {
             );
         });
     } catch (err) {
-        process.stdout.write(err);
+        process.stdout.write(err.message);
         process.exit(1);
     }
 };
