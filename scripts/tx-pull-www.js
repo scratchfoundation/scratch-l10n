@@ -46,21 +46,28 @@ const getLocaleData = async function (item) {
     const locale = item.locale;
     const resource = item.resource;
     let txLocale = localeMap[locale] || locale;
-    
-    const translations = await txPull(PROJECT, resource, txLocale);
-    
-    const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
-    mkdirp.sync(txOutdir);
-    const fileName = `${txOutdir}/${locale}.json`;
-    fs.writeFileSync(
-        fileName,
-        JSON.stringify(translations, null, 4)
-    );
-    return {
-        resource: resource,
-        locale: locale,
-        file: fileName
-    };
+    for (let i = 0; i < 5; i++) {
+        try {
+            const translations = await txPull(PROJECT, resource, txLocale);
+            
+            const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
+            mkdirp.sync(txOutdir);
+            const fileName = `${txOutdir}/${locale}.json`;
+            fs.writeFileSync(
+                fileName,
+                JSON.stringify(translations, null, 4)
+            );
+            return {
+                resource: resource,
+                locale: locale,
+                file: fileName
+            };
+        } catch (e) {
+            // eslint-disable-next-line no-console
+            console.error(`got ${e.message}, retrying after ${i + 1} attempts`);
+        }
+    }
+    throw Error('failed to pull translations after 5 retries');
 };
 
 const expandResourceFiles = (resources) => {
