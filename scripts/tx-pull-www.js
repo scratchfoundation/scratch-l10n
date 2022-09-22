@@ -63,8 +63,7 @@ const getLocaleData = async function (item) {
                 file: fileName
             };
         } catch (e) {
-            // eslint-disable-next-line no-console
-            console.error(`got ${e.message}, retrying after ${i + 1} attempts`);
+            process.stdout.write(`got ${e.message}, retrying after ${i + 1} attempt(s)\n`);
         }
     }
     throw Error('failed to pull translations after 5 retries');
