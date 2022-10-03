@@ -19,7 +19,7 @@ import fs from 'fs';
 import path from 'path';
 import glob from 'glob';
 import async from 'async';
-import {validateTranslations} from './tx-util.js';
+import {validateTranslations} from '../lib/validate.js';
 import locales from '../src/supported-locales.js';
 
 // Globals
