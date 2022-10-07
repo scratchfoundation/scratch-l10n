@@ -84,17 +84,15 @@ const pushSource = async function () {
             return;
         }
         // file not found - create it, but also give message
-        if (err.statusCode === 404) {
-            process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`);
-            const resourceData = {
-                slug: RESOURCE,
-                name: RESOURCE,
-                priority: 0, // default to normal priority
-                i18nType: getResourceType(PROJECT, RESOURCE),
-                content: en
-            };
-            await txCreateResource(PROJECT, resourceData);
-        }
+        process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`);
+        const resourceData = {
+            slug: RESOURCE,
+            name: RESOURCE,
+            priority: 0, // default to normal priority
+            i18nType: getResourceType(PROJECT, RESOURCE),
+            content: en
+        };
+        await txCreateResource(PROJECT, resourceData);
         process.exitCode = 0;
     }
 };
