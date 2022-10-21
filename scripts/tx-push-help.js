@@ -63,6 +63,7 @@ const txPushResource = async (name, articles, type) => {
         }
 
         // file not found - create it, but also give message
+        process.stdout.write(`Transifex Resource not found, creating: ${name}\n`);
         if (err.statusCode === 404) {
             await txCreateResource(TX_PROJECT, resourceData);
         }
