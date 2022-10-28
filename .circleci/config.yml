@@ -6,7 +6,7 @@ defaults: &defaults
   working_directory: ~/project
   executor:
     name: node/default
-    tag: 'lts'
+    tag: '16'
 jobs:
   build-and-test:
     <<: *defaults
