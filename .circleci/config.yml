@@ -76,8 +76,12 @@ jobs:
             git config --global user.email $(git log --pretty=format:"%ae" -n1)
             git config --global user.name $(git log --pretty=format:"%an" -n1)
             git add .
-            git commit -m "pull new editor translations from Transifex"
-            git push $CIRCLE_REPOSITORY_URL HEAD:master
+            if git diff --cached --exit-code --quiet; then
+              echo "Nothing to commit."
+            else
+              git commit -m "pull new editor translations from Transifex"
+              git push $CIRCLE_REPOSITORY_URL HEAD:master
+            fi
   sync-help:
     <<: *defaults
     steps:
