@@ -6,6 +6,7 @@
  */
 
 const args = process.argv.slice(2);
+const {txPush, txCreateResource} = require('../lib/transifex.js');
 
 const usage = `
  Pull knowledge base articles from Freshdesk and push to scratch-help project on transifex. Usage:
@@ -22,15 +23,10 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
     process.exit(1);
 }
 
-import transifex from 'transifex';
 import FreshdeskApi from './freshdesk-api.js';
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
 const TX_PROJECT = 'scratch-help';
-const TX = new transifex({
-    project_slug: TX_PROJECT,
-    credential: 'api:' + process.env.TX_TOKEN
-});
 
 const categoryNames = {};
 const folderNames = {};
@@ -46,33 +42,32 @@ const makeTxId = item => {
     return `${item.name.replace(/[ /]/g, '').slice(0, 30)}_${item.id}`;
 };
 
-const txPushResource = (name, articles, type) => {
+const txPushResource = async (name, articles, type) => {
     const resourceData = {
         slug: name,
         name: name,
-        priority: 0, // default to normal priority
         i18n_type: type,
-        content: '{}'
+        priority: 0, // default to normal priority
+        content: articles
     };
-    TX.resourceCreateMethod(TX_PROJECT, resourceData, (err) => {
-        // ignore already created error report others
-        if (err && err.response.statusCode !== 400) {
+
+    try {
+        await txPush(TX_PROJECT, name, articles);
+    } catch (err) {
+        if (err.statusCode !== 404) {
             process.stdout.write(`Transifex Error: ${err.message}\n`);
             process.stdout.write(
                 `Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`);
             process.exitCode = 1;
             return;
         }
-        // update Transifex with English source
-        TX.uploadSourceLanguageMethod(TX_PROJECT, name,
-            {content: JSON.stringify(articles, null, 2)}, (err1) => {
-                if (err1) {
-                    process.stdout.write(`Transifex Error:${err1.name}, ${err1.message}\n`);
-                    process.stdout.write(`Transifex Error:${err1.toString()}\n`);
-                    process.exitCode = 1;
-                }
-            });
-    });
+
+        // file not found - create it, but also give message
+        process.stdout.write(`Transifex Resource not found, creating: ${name}\n`);
+        if (err.statusCode === 404) {
+            await txCreateResource(TX_PROJECT, resourceData);
+        }
+    }
 };
 
 /**

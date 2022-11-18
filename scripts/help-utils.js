@@ -5,19 +5,14 @@
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
 
-const transifex = require('transifex');
 const FreshdeskApi = require('./freshdesk-api.js');
-const util = require('util');
 const fs = require('fs');
 const fsPromises = fs.promises;
 const mkdirp = require('mkdirp');
+const {txPull, txResourcesObjects, txAvailableLanguages} = require('../lib/transifex.js');
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
 const TX_PROJECT = 'scratch-help';
-const TX = new transifex({
-    project_slug: TX_PROJECT,
-    credential: 'api:' + process.env.TX_TOKEN
-});
 
 const freshdeskLocale = locale => {
     // map between Transifex locale and Freshdesk. Two letter codes are usually fine
@@ -38,10 +33,6 @@ const freshdeskLocale = locale => {
     return localeMap[locale] || locale;
 };
 
-// Promisify Transifex async/callbacks to make them easier to use`
-const getResources = util.promisify(TX.resourcesSetMethod.bind(TX));
-const getResourceInfo = util.promisify(TX.resourcesInstanceMethods.bind(TX));
-const getTranslation = util.promisify(TX.translationInstanceMethod.bind(TX));
 
 /**
  * Pull metadata from Transifex for the scratch-help project
@@ -51,16 +42,12 @@ const getTranslation = util.promisify(TX.translationInstanceMethod.bind(TX));
  *                      names: array of tx resources corresponding to the Freshdesk metadata
  */
 exports.getInputs = async () => {
-    const resources = await getResources(TX_PROJECT);
+    const resources = await txResourcesObjects(TX_PROJECT);
+    const languages = await txAvailableLanguages(TX_PROJECT);
     // there are three types of resources differentiated by the file type
     const folders = resources.filter(resource => resource.i18n_type === 'STRUCTURED_JSON');
     const names = resources.filter(resource => resource.i18n_type === 'KEYVALUEJSON');
     // ignore the yaml type because it's not possible to update via API
-
-    // Lookup available languages by getting metadata for a resource, they all have the
-    // same set of languages, so it doesn't matter which one you get
-    const resourceInfo = await getResourceInfo(TX_PROJECT, resources[0].slug, true);
-    const languages = resourceInfo.available_languages.map(l => l.code);
 
     return Promise.all([languages, folders, names]); // eslint-disable-line no-undef
 };
@@ -139,11 +126,9 @@ const serializeFolderSave = async (json, locale) => {
  * @return {Promise}        [description]
  */
 exports.localizeFolder = async (folder, locale) => {
-    getTranslation(TX_PROJECT, folder.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, folder.slug, locale, {mode: 'default'})
         .then(data => {
-            const json = JSON.parse(data);
-
-            serializeFolderSave(json, locale);
+            serializeFolderSave(data, locale);
         })
         .catch((e) => {
             process.stdout.write(`Error processing ${folder.slug}, ${locale}: ${e.message}\n`);
@@ -159,12 +144,11 @@ exports.localizeFolder = async (folder, locale) => {
  */
 exports.debugFolder = async (folder, locale) => {
     mkdirp.sync('tmpDebug');
-    getTranslation(TX_PROJECT, folder.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, folder.slug, locale, {mode: 'default'})
         .then(data => {
-            const json = JSON.parse(data);
             fsPromises.writeFile(
                 `tmpDebug/${folder.slug}_${locale}.json`,
-                JSON.stringify(json, null, 2)
+                JSON.stringify(data, null, 2)
             );
         })
         .catch((e) => {
@@ -181,10 +165,9 @@ exports.debugFolder = async (folder, locale) => {
  * @return {Promise}          [description]
  */
 exports.localizeNames = async (resource, locale) => {
-    getTranslation(TX_PROJECT, resource.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, resource.slug, locale, {mode: 'default'})
         .then(data => {
-            const json = JSON.parse(data);
-            serializeNameSave(json, resource, locale);
+            serializeNameSave(data, resource, locale);
         })
         .catch((e) => {
             process.stdout.write(`Error saving ${resource.slug}, ${locale}: ${e.message}\n`);
