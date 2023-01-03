@@ -53,7 +53,7 @@ jobs:
             npm run pull:editor
             npm run pull:www
             npm run test
-          no_output_timeout: 20m
+          no_output_timeout: 30m
       - persist_to_workspace:
           root: ~/project
           paths: .
