@@ -30,6 +30,7 @@ import gd from './locale-data/gd';
 import gl from './locale-data/gl';
 import ha from './locale-data/ha';
 import he from './locale-data/he';
+import hi from './locale-data/hi';
 import hu from './locale-data/hu';
 import hr from './locale-data/hr';
 import hy from './locale-data/hy';
@@ -104,6 +105,7 @@ let localeData = [].concat(
     gl,
     ha,
     he,
+    hi,
     hu,
     hr,
     hy,
