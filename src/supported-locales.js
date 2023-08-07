@@ -38,6 +38,7 @@ const locales = {
     'ha': {name: 'Hausa'},
     'hy': {name: 'Հայերեն'},
     'he': {name: 'עִבְרִית'},
+    'hi': {name: 'हिंदी'},
     'hr': {name: 'Hrvatski'},
     'xh': {name: 'isiXhosa'},
     'zu': {name: 'isiZulu'},
