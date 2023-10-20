@@ -5,11 +5,6 @@ on:
   pull_request: # Runs whenever a pull request is created or updated
   push: # Runs whenever a commit is pushed to the repository
     branches: [master, tx-pull-manual]
-  schedule:
-    # daily-tx-pull (e.g., daily at 3 AM UTC)
-    - cron: "0 3 * * *"
-    # daily-help-update (e.g., daily at 5 AM UTC)
-    - cron: "0 5 * * *"
 
 concurrency:
   group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
@@ -76,62 +71,4 @@ jobs:
           if npm info | grep -q $RELEASE_VERSION; then 
             git tag $RELEASE_VERSION 
             git push origin $RELEASE_VERSION
-          fi
-
-  daily-help-update:
-    runs-on: ubuntu-latest
-
-    env:
-      # Organization-wide secrets
-      FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
-      TX_TOKEN: ${{ secrets.TX_TOKEN }}
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          cache: "npm"
-          node-version-file: ".nvmrc"
-
-      - name: Install dependencies
-        run: |
-          npm ci
-          npx browserslist@latest --update-db
-
-      - name: Sync help
-        run: npm run sync:help
-
-  daily-tx-pull:
-    runs-on: ubuntu-latest
-
-    env:
-      # Organization-wide secrets
-      TX_TOKEN: ${{ secrets.TX_TOKEN }}
-
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
-        with:
-          cache: "npm"
-          node-version-file: ".nvmrc"
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Pull editor and www translations
-        run: |
-          npm run pull:editor
-          npm run pull:www
-          npm run test
-
-      - name: Commit translation updates
-        run: |
-          git config --global user.email $(git log --pretty=format:"%ae" -n1)
-          git config --global user.name $(git log --pretty=format:"%an" -n1)
-          git add .
-          if git diff --cached --exit-code --quiet; then
-            echo "Nothing to commit."
-          else
-            git commit -m "pull new editor translations from Transifex"
-            git push origin HEAD:master
           fi
