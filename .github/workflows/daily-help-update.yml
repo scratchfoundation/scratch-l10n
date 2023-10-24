@@ -1,0 +1,41 @@
+name: Daily Help Update
+
+on:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    # daily-help-update (e.g., daily at 5 AM UTC)
+    - cron: "0 5 * * *"
+
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write # publish a GitHub release
+  pages: write # deploy to GitHub Pages
+  issues: write # comment on released issues
+  pull-requests: write # comment on released pull requests
+
+jobs:
+  daily-help-update:
+    runs-on: ubuntu-latest
+
+    env:
+      # Organization-wide secrets
+      FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
+      TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx browserslist@latest --update-db
+
+      - name: Sync help
+        run: npm run sync:help

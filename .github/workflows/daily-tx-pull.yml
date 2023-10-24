@@ -1,0 +1,53 @@
+name: Daily TX Pull
+
+on:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    # daily-tx-pull (e.g., daily at 3 AM UTC)
+    - cron: "0 3 * * *"
+
+concurrency:
+  group: "${{ github.workflow }}"
+  cancel-in-progress: true
+
+permissions:
+  contents: write # publish a GitHub release
+  pages: write # deploy to GitHub Pages
+  issues: write # comment on released issues
+  pull-requests: write # comment on released pull requests
+
+jobs:
+  daily-tx-pull:
+    runs-on: ubuntu-latest
+
+    env:
+      # Organization-wide secrets
+      TX_TOKEN: ${{ secrets.TX_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          cache: "npm"
+          node-version-file: ".nvmrc"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Pull editor and www translations
+        run: |
+          npm run pull:editor
+          npm run pull:www
+          npm run test
+
+      - name: Commit translation updates
+        run: |
+          git config --global user.email $(git log --pretty=format:"%ae" -n1)
+          git config --global user.name $(git log --pretty=format:"%an" -n1)
+          git add .
+          if git diff --cached --exit-code --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "pull new editor translations from Transifex"
+            git push origin HEAD:master
+          fi
