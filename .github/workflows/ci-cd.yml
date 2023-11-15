@@ -2,6 +2,7 @@ name: CI/CD
 
 on:
   push: # Runs whenever a commit is pushed to the repository
+  workflow_call: # Allows another workflow to call this one
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
 
 concurrency:
