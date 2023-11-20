@@ -41,18 +41,19 @@ jobs:
           npm run test
 
       - name: Commit translation updates
+        id: commit
         run: |
           git config --global user.email $(git log --pretty=format:"%ae" -n1)
           git config --global user.name $(git log --pretty=format:"%an" -n1)
           git add .
           if git diff --cached --exit-code --quiet; then
+            echo "MADE_CHANGES=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to commit."
-            echo "::set-env name=MADE_CHANGES::false"
           else
             git commit -m "pull new editor translations from Transifex"
+            echo "MADE_CHANGES=true" >> "$GITHUB_OUTPUT"
             git push origin HEAD:master
-            echo "::set-env name=MADE_CHANGES::true"
           fi
       - name: Start CI/CD workflow if changes were made
-        if: env.MADE_CHANGES == 'true'
+        if: steps.commit.outputs.MADE_CHANGES == 'true'
         uses: ./.github/workflows/ci-cd.yml
