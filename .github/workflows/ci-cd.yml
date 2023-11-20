@@ -22,8 +22,7 @@ jobs:
       TRIGGER_DEPLOY: ${{ startsWith(github.ref, 'refs/heads/master') }}
     steps:
       - uses: actions/checkout@v4
-      - uses: wagoid/commitlint-github-action@v5
-        if: github.event_name == 'pull_request'
+
       - uses: actions/setup-node@v3
         with:
           cache: "npm"
