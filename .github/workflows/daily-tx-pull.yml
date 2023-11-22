@@ -20,6 +20,9 @@ jobs:
   daily-tx-pull:
     runs-on: ubuntu-latest
 
+    outputs:
+      MADE_CHANGES: ${{ steps.commit.outputs.MADE_CHANGES }}
+
     env:
       # Organization-wide secrets
       TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -54,6 +57,7 @@ jobs:
             echo "MADE_CHANGES=true" >> "$GITHUB_OUTPUT"
             git push origin HEAD:master
           fi
-      - name: Start CI/CD workflow if changes were made
-        if: steps.commit.outputs.MADE_CHANGES == 'true'
-        uses: ./.github/workflows/ci-cd.yml
+  call-ci-cd:
+    uses: ./.github/workflows/ci-cd.yml
+    needs: daily-tx-pull
+    if: needs.daily-tx-pull.outputs.MADE_CHANGES == 'true'
