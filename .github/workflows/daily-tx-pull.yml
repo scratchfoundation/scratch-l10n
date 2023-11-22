@@ -55,7 +55,7 @@ jobs:
           else
             git commit -m "pull new editor translations from Transifex"
             echo "MADE_CHANGES=true" >> "$GITHUB_OUTPUT"
-            git push origin HEAD:master
+            git push
           fi
   call-ci-cd:
     uses: ./.github/workflows/ci-cd.yml
