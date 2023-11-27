@@ -58,6 +58,7 @@ jobs:
             git push
           fi
   call-ci-cd:
-    uses: ./.github/workflows/ci-cd.yml
     needs: daily-tx-pull
     if: needs.daily-tx-pull.outputs.MADE_CHANGES == 'true'
+    uses: ./.github/workflows/ci-cd.yml
+    secrets: inherit
