@@ -53,7 +53,7 @@ jobs:
             echo "MADE_CHANGES=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to commit."
           else
-            git commit -m "pull new editor translations from Transifex"
+            git commit -m "fix: pull new editor translations from Transifex"
             echo "MADE_CHANGES=true" >> "$GITHUB_OUTPUT"
             git push
           fi
