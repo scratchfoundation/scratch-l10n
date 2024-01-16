@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.18.0](https://github.com/scratchfoundation/scratch-l10n/compare/v3.17.0...v3.18.0) (2024-01-16)
+
+
+### Features
+
+* realign version numbers ([c4f9f06](https://github.com/scratchfoundation/scratch-l10n/commit/c4f9f06744c13c97032986360faffba953ff8538))
+
 # 1.0.0 (2024-01-16)
 
 
