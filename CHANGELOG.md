@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.3](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.2...v3.18.3) (2024-01-28)
+
+
+### Bug Fixes
+
+* **deps:** update babel monorepo to v7.23.9 ([fa373f0](https://github.com/scratchfoundation/scratch-l10n/commit/fa373f0fce794ffbda53a31421e9d2bc0c11d9d0))
+
 ## [3.18.2](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.1...v3.18.2) (2024-01-28)
 
 
