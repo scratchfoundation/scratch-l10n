@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.4](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.3...v3.18.4) (2024-02-16)
+
+
+### Bug Fixes
+
+* **deps:** unpin non-dev dependencies ([d65223a](https://github.com/scratchfoundation/scratch-l10n/commit/d65223a8ac67c5ab135353a2f43542e4625a7d45))
+* pull new editor translations from Transifex ([2ccd4e5](https://github.com/scratchfoundation/scratch-l10n/commit/2ccd4e5b8b4d78927ce765e4a5969811d9ea56a6))
+* pull new editor translations from Transifex ([74a26f6](https://github.com/scratchfoundation/scratch-l10n/commit/74a26f6bd1cce13a2515dba064f240f6218b9a7b))
+* pull new editor translations from Transifex ([b5dac93](https://github.com/scratchfoundation/scratch-l10n/commit/b5dac93e853c25403528ece1ce95362ce5587725))
+* pull new editor translations from Transifex ([489266b](https://github.com/scratchfoundation/scratch-l10n/commit/489266bc5092a77cf4c0fb2cdc22c5159734e3c6))
+* pull new editor translations from Transifex ([9fa726c](https://github.com/scratchfoundation/scratch-l10n/commit/9fa726c3d09362f79d9013c5a2a8caa301ab7d88))
+* pull new editor translations from Transifex ([3b380d0](https://github.com/scratchfoundation/scratch-l10n/commit/3b380d0927c84226817709f8497f598e33a0c6c3))
+* pull new editor translations from Transifex ([25f6a87](https://github.com/scratchfoundation/scratch-l10n/commit/25f6a876da4234f3fa4dcb711cc5e4faf04bce2b))
+
 ## [3.18.3](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.2...v3.18.3) (2024-01-28)
 
 
