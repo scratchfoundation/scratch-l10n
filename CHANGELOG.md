@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.9](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.8...v3.18.9) (2024-02-21)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-config-scratch to v9.0.4 ([62e2829](https://github.com/scratchfoundation/scratch-l10n/commit/62e2829536b9d28ab2e5b2176cb78825f7694e2c))
+
 ## [3.18.8](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.7...v3.18.8) (2024-02-21)
 
 
