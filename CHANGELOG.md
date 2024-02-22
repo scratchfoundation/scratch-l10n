@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.13](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.12...v3.18.13) (2024-02-22)
+
+
+### Bug Fixes
+
+* **deps:** move build-time dependencies out of 'dependencies' list ([f7d80a6](https://github.com/scratchfoundation/scratch-l10n/commit/f7d80a667bf36abb26a19244ae52f5f1f2e4a2eb))
+
 ## [3.18.12](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.11...v3.18.12) (2024-02-22)
 
 
