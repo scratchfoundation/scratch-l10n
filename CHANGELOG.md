@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.10](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.9...v3.18.10) (2024-02-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency scratch-semantic-release-config to v1.0.11 ([8a3445a](https://github.com/scratchfoundation/scratch-l10n/commit/8a3445aafe9e16cdbd1fba552470d1a4e4abb467))
+
 ## [3.18.9](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.8...v3.18.9) (2024-02-21)
 
 
