@@ -4,6 +4,11 @@ on:
   push: # Runs whenever a commit is pushed to the repository
   workflow_call: # Allows another workflow to call this one
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  workflow_run: # Allows you to run this workflow when another workflow is run
+    types: [completed]
+    workflows:
+      - "Daily TX Pull"
+      - "Daily Help Update"
 
 concurrency:
   group: "${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}"
@@ -18,8 +23,6 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      TRIGGER_DEPLOY: ${{ startsWith(github.ref, 'refs/heads/master') }}
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 

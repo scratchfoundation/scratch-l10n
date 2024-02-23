@@ -20,9 +20,6 @@ jobs:
   daily-tx-pull:
     runs-on: ubuntu-latest
 
-    outputs:
-      MADE_CHANGES: ${{ steps.commit.outputs.MADE_CHANGES }}
-
     env:
       # Organization-wide secrets
       TX_TOKEN: ${{ secrets.TX_TOKEN }}
@@ -50,15 +47,8 @@ jobs:
           git config --global user.name $(git log --pretty=format:"%an" -n1)
           git add .
           if git diff --cached --exit-code --quiet; then
-            echo "MADE_CHANGES=false" >> "$GITHUB_OUTPUT"
             echo "Nothing to commit."
           else
             git commit -m "fix: pull new editor translations from Transifex"
-            echo "MADE_CHANGES=true" >> "$GITHUB_OUTPUT"
             git push
           fi
-  call-ci-cd:
-    needs: daily-tx-pull
-    if: needs.daily-tx-pull.outputs.MADE_CHANGES == 'true'
-    uses: ./.github/workflows/ci-cd.yml
-    secrets: inherit
