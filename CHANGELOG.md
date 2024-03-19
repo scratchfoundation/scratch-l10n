@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.73](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.72...v3.18.73) (2024-03-19)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([f6ef3d8](https://github.com/scratchfoundation/scratch-l10n/commit/f6ef3d8055d54a539fa7a7d5d32bd9a31bb539cf))
+
 ## [3.18.72](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.71...v3.18.72) (2024-03-19)
 
 
