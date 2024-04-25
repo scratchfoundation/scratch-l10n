@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.121](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.120...v3.18.121) (2024-04-25)
+
+
+### Bug Fixes
+
+* attempted fix for "unauthorized" error ([95947f1](https://github.com/scratchfoundation/scratch-l10n/commit/95947f18afc71fd1d5890cb4d0e912c92fb304fd))
+
 ## [3.18.120](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.119...v3.18.120) (2024-04-25)
 
 
