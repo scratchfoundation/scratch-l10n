@@ -20,11 +20,6 @@ jobs:
   daily-help-update:
     runs-on: ubuntu-latest
 
-    env:
-      # Organization-wide secrets
-      FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
-      TX_TOKEN: ${{ secrets.TX_TOKEN }}
-
     steps:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
@@ -38,4 +33,8 @@ jobs:
           npx browserslist@latest --update-db
 
       - name: Sync help
+        env:
+          # Organization-wide secrets
+          FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
         run: npm run sync:help
