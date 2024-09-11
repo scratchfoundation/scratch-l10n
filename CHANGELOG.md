@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.300](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.299...v3.18.300) (2024-09-11)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([335e21a](https://github.com/scratchfoundation/scratch-l10n/commit/335e21acab26b5f1be99e8d7d3e058cce170a4c0))
+* **deps:** update dependency scratch-semantic-release-config to v1.0.16 ([9a4b2b2](https://github.com/scratchfoundation/scratch-l10n/commit/9a4b2b2e4d9bc3f941c37202733e72518fe4c06f))
+
 ## [3.18.299](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.298...v3.18.299) (2024-09-11)
 
 
