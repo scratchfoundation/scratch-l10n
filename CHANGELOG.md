@@ -3,6 +3,672 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.303](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.302...v3.18.303) (2024-09-13)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([03a3592](https://github.com/scratchfoundation/scratch-l10n/commit/03a3592fbd805051138b177986079d56fae173df))
+
+## [3.18.302](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.301...v3.18.302) (2024-09-13)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([5e2327c](https://github.com/scratchfoundation/scratch-l10n/commit/5e2327cc698c4fe66dd5bd55a59272a784ed17b3))
+
+## [3.18.301](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.300...v3.18.301) (2024-09-12)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([e942668](https://github.com/scratchfoundation/scratch-l10n/commit/e9426685f323be33ee02a2e7ae7abb0893de2d37))
+
+## [3.18.300](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.299...v3.18.300) (2024-09-11)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([335e21a](https://github.com/scratchfoundation/scratch-l10n/commit/335e21acab26b5f1be99e8d7d3e058cce170a4c0))
+* **deps:** update dependency scratch-semantic-release-config to v1.0.16 ([9a4b2b2](https://github.com/scratchfoundation/scratch-l10n/commit/9a4b2b2e4d9bc3f941c37202733e72518fe4c06f))
+
+## [3.18.299](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.298...v3.18.299) (2024-09-11)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([2ba9015](https://github.com/scratchfoundation/scratch-l10n/commit/2ba9015afc6f1892844d02a5d09416e716524f55))
+
+## [3.18.298](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.297...v3.18.298) (2024-09-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency scratch-semantic-release-config to v1.0.15 ([23c76d5](https://github.com/scratchfoundation/scratch-l10n/commit/23c76d5260c88c57a04ab45a245ff0cb1050ab93))
+
+## [3.18.297](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.296...v3.18.297) (2024-09-10)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([dfc059a](https://github.com/scratchfoundation/scratch-l10n/commit/dfc059acf761f96f475af8dbd9073494369e4a9c))
+
+## [3.18.296](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.295...v3.18.296) (2024-09-09)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([558da93](https://github.com/scratchfoundation/scratch-l10n/commit/558da93848f60051ae300faeea58292449aeb325))
+
+## [3.18.295](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.294...v3.18.295) (2024-09-07)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([51ad8ec](https://github.com/scratchfoundation/scratch-l10n/commit/51ad8ec30c1e48c574522c88499b26edac425ccf))
+
+## [3.18.294](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.293...v3.18.294) (2024-09-07)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([3d4a5f7](https://github.com/scratchfoundation/scratch-l10n/commit/3d4a5f710f24b430909fce35baea0e18489285c6))
+
+## [3.18.293](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.292...v3.18.293) (2024-09-06)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([d22781a](https://github.com/scratchfoundation/scratch-l10n/commit/d22781aeaf5213babc266731b87938ac58c81d29))
+
+## [3.18.292](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.291...v3.18.292) (2024-09-05)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([532624c](https://github.com/scratchfoundation/scratch-l10n/commit/532624c5c0b23fe0b787e979a40c41bb837d3480))
+
+## [3.18.291](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.290...v3.18.291) (2024-09-05)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([aee9c95](https://github.com/scratchfoundation/scratch-l10n/commit/aee9c953a378e70d02b4ce084cffe18207706ddc))
+
+## [3.18.290](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.289...v3.18.290) (2024-09-04)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([37a9a10](https://github.com/scratchfoundation/scratch-l10n/commit/37a9a100047b3316fd180488b7e502351635e36a))
+
+## [3.18.289](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.288...v3.18.289) (2024-09-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([d72310b](https://github.com/scratchfoundation/scratch-l10n/commit/d72310bb7ea3f383457e904adc27a44fb2d2b9b3))
+
+## [3.18.288](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.287...v3.18.288) (2024-09-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6a10068](https://github.com/scratchfoundation/scratch-l10n/commit/6a100680bf63b0b01e4f9c9e485aeed52d72f1b5))
+
+## [3.18.287](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.286...v3.18.287) (2024-09-02)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([d328724](https://github.com/scratchfoundation/scratch-l10n/commit/d3287245dc1931142a32ce529d891e1a4eb4162b))
+
+## [3.18.286](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.285...v3.18.286) (2024-08-31)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([c71631c](https://github.com/scratchfoundation/scratch-l10n/commit/c71631c5d0843efae55c4dac301cb4ed0d214f90))
+
+## [3.18.285](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.284...v3.18.285) (2024-08-30)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([3a5f696](https://github.com/scratchfoundation/scratch-l10n/commit/3a5f69635aade397a2513ffc82340f380b10616b))
+
+## [3.18.284](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.283...v3.18.284) (2024-08-29)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([59a8110](https://github.com/scratchfoundation/scratch-l10n/commit/59a8110b417289a04a5d9d6f1b773f9c24486e8e))
+
+## [3.18.283](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.282...v3.18.283) (2024-08-28)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([d22565f](https://github.com/scratchfoundation/scratch-l10n/commit/d22565f8a32eab027e12c887e96d4ccd56df24e0))
+
+## [3.18.282](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.281...v3.18.282) (2024-08-26)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([c9ad58e](https://github.com/scratchfoundation/scratch-l10n/commit/c9ad58ed5a3389937a240ecf8bc062b9e361db56))
+
+## [3.18.281](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.280...v3.18.281) (2024-08-26)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([f38581c](https://github.com/scratchfoundation/scratch-l10n/commit/f38581ce580a80a70f9269422f72fbc0854c7735))
+
+## [3.18.280](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.279...v3.18.280) (2024-08-25)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6a31ec1](https://github.com/scratchfoundation/scratch-l10n/commit/6a31ec1653dd0c4d398cf314e40f5c288bb50803))
+
+## [3.18.279](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.278...v3.18.279) (2024-08-24)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([244e1ed](https://github.com/scratchfoundation/scratch-l10n/commit/244e1ed33850dab7064e347dc24fb7099f378617))
+
+## [3.18.278](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.277...v3.18.278) (2024-08-24)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([26b165a](https://github.com/scratchfoundation/scratch-l10n/commit/26b165aa8728d45292f8eadae74ba684d0757a23))
+
+## [3.18.277](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.276...v3.18.277) (2024-08-24)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([a9f081e](https://github.com/scratchfoundation/scratch-l10n/commit/a9f081e7335022232231cf7ffa07c4addbfe3a3c))
+
+## [3.18.276](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.275...v3.18.276) (2024-08-23)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([1f87d95](https://github.com/scratchfoundation/scratch-l10n/commit/1f87d953971f0d44dd15c58c77aef9a88bfffea9))
+
+## [3.18.275](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.274...v3.18.275) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([29436fd](https://github.com/scratchfoundation/scratch-l10n/commit/29436fd2ab94c44b966635ab04ba4e862ab47a51))
+
+## [3.18.274](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.273...v3.18.274) (2024-08-22)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([0ba1ab3](https://github.com/scratchfoundation/scratch-l10n/commit/0ba1ab3f7306040f5b8a6249a0b80a41e05ffe37))
+
+## [3.18.273](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.272...v3.18.273) (2024-08-21)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([1b581dc](https://github.com/scratchfoundation/scratch-l10n/commit/1b581dc95306b9b9429fb9b17616d67655e371af))
+
+## [3.18.272](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.271...v3.18.272) (2024-08-20)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([ca9e368](https://github.com/scratchfoundation/scratch-l10n/commit/ca9e368b7cbae98e9e0838cf96f072f8395dbfaf))
+
+## [3.18.271](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.270...v3.18.271) (2024-08-19)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([c136192](https://github.com/scratchfoundation/scratch-l10n/commit/c136192628c04c3c18a63cb6c424d8bec05cb8b3))
+
+## [3.18.270](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.269...v3.18.270) (2024-08-18)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([852c0cd](https://github.com/scratchfoundation/scratch-l10n/commit/852c0cdd77b7a67933f36911d532ff487cbab41a))
+
+## [3.18.269](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.268...v3.18.269) (2024-08-17)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([3d406dd](https://github.com/scratchfoundation/scratch-l10n/commit/3d406dd14b38b860f58ba4ada59caefd9f55b6c7))
+
+## [3.18.268](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.267...v3.18.268) (2024-08-17)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([ebdc7a9](https://github.com/scratchfoundation/scratch-l10n/commit/ebdc7a94d241a5af933dc032301ca243cf9ce8e8))
+
+## [3.18.267](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.266...v3.18.267) (2024-08-16)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([0186136](https://github.com/scratchfoundation/scratch-l10n/commit/0186136584e7f4bf6913fdb2b1430153bdf89104))
+
+## [3.18.266](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.265...v3.18.266) (2024-08-15)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([85b17f9](https://github.com/scratchfoundation/scratch-l10n/commit/85b17f969f151c78618968ebb2f4ac91c23b1ddd))
+
+## [3.18.265](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.264...v3.18.265) (2024-08-15)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6cc6d8a](https://github.com/scratchfoundation/scratch-l10n/commit/6cc6d8ab2111b2014cafe2481937712146d305cf))
+
+## [3.18.264](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.263...v3.18.264) (2024-08-14)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([b623c06](https://github.com/scratchfoundation/scratch-l10n/commit/b623c0617f8ce6328e201cde46a158ebb4b859f4))
+
+## [3.18.263](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.262...v3.18.263) (2024-08-13)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([2919385](https://github.com/scratchfoundation/scratch-l10n/commit/29193851192d54821d0f0b76fc8fe92861d93b56))
+
+## [3.18.262](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.261...v3.18.262) (2024-08-13)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([e68ce57](https://github.com/scratchfoundation/scratch-l10n/commit/e68ce579c268c246f60cb2f2999a0da86765e2f6))
+
+## [3.18.261](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.260...v3.18.261) (2024-08-12)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([1993aeb](https://github.com/scratchfoundation/scratch-l10n/commit/1993aeb96818d2b46d20554094cec9d1b9a7bbe3))
+
+## [3.18.260](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.259...v3.18.260) (2024-08-12)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([6026123](https://github.com/scratchfoundation/scratch-l10n/commit/602612399dfd8e2848e808c95e08a45b6bb965df))
+
+## [3.18.259](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.258...v3.18.259) (2024-08-11)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([f7d4a4a](https://github.com/scratchfoundation/scratch-l10n/commit/f7d4a4ac383550328847bf4cab2be0dddb90eaed))
+
+## [3.18.258](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.257...v3.18.258) (2024-08-11)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([2477a8f](https://github.com/scratchfoundation/scratch-l10n/commit/2477a8f964e537a691097f793b538b902c2eaeb0))
+
+## [3.18.257](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.256...v3.18.257) (2024-08-10)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([0802d29](https://github.com/scratchfoundation/scratch-l10n/commit/0802d297dce9d91af58ce9bba936ea6dee2efe79))
+
+## [3.18.256](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.255...v3.18.256) (2024-08-10)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([b3b163c](https://github.com/scratchfoundation/scratch-l10n/commit/b3b163cbed9cbc3d91be4790d3f95bb9d5c8128a))
+
+## [3.18.255](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.254...v3.18.255) (2024-08-08)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([dacbe6d](https://github.com/scratchfoundation/scratch-l10n/commit/dacbe6df0888f9d3812c110210c12c76c6c3793e))
+
+## [3.18.254](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.253...v3.18.254) (2024-08-08)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([a3860d7](https://github.com/scratchfoundation/scratch-l10n/commit/a3860d7b39815152e154a48f138946b0a4c28afa))
+
+## [3.18.253](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.252...v3.18.253) (2024-08-08)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([d40df9e](https://github.com/scratchfoundation/scratch-l10n/commit/d40df9eb108e8e158837466b9dcee42e83d8df40))
+
+## [3.18.252](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.251...v3.18.252) (2024-08-07)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([58cff47](https://github.com/scratchfoundation/scratch-l10n/commit/58cff478e0e5f9bf57a089c65f7742353d7a2353))
+
+## [3.18.251](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.250...v3.18.251) (2024-08-05)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([06ecfa2](https://github.com/scratchfoundation/scratch-l10n/commit/06ecfa2e9a670ac8d0510d256b0fc90f13e60b91))
+
+## [3.18.250](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.249...v3.18.250) (2024-08-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([3635eac](https://github.com/scratchfoundation/scratch-l10n/commit/3635eaca28417921d99bdfdada87c128c13b7a40))
+
+## [3.18.249](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.248...v3.18.249) (2024-08-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([41c731d](https://github.com/scratchfoundation/scratch-l10n/commit/41c731daac508f7b01333d55fd4b515aa2557bfd))
+
+## [3.18.248](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.247...v3.18.248) (2024-08-02)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([51c6c1f](https://github.com/scratchfoundation/scratch-l10n/commit/51c6c1fa7e8dd950dceddbfe76d919745029cc2f))
+
+## [3.18.247](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.246...v3.18.247) (2024-08-02)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([b42ef57](https://github.com/scratchfoundation/scratch-l10n/commit/b42ef579a57b4f2a10747eff035181e942218d43))
+
+## [3.18.246](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.245...v3.18.246) (2024-08-02)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([20d9aba](https://github.com/scratchfoundation/scratch-l10n/commit/20d9aba490dad0ad3c637ca2ab6a446c73e785ef))
+
+## [3.18.245](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.244...v3.18.245) (2024-08-01)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([b36f1de](https://github.com/scratchfoundation/scratch-l10n/commit/b36f1deae6dc5673323bda18210407cfec324291))
+
+## [3.18.244](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.243...v3.18.244) (2024-07-31)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([9467b5a](https://github.com/scratchfoundation/scratch-l10n/commit/9467b5ad11728a71ef00be93e49e68ec72685a66))
+
+## [3.18.243](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.242...v3.18.243) (2024-07-31)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([50f9914](https://github.com/scratchfoundation/scratch-l10n/commit/50f9914eeab9ce44071e769ae0cc1c68c1626580))
+
+## [3.18.242](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.241...v3.18.242) (2024-07-31)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([fc1a486](https://github.com/scratchfoundation/scratch-l10n/commit/fc1a4863b8cde4697c9adaf3fb406116a2dd0692))
+
+## [3.18.241](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.240...v3.18.241) (2024-07-30)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([9a1e0ff](https://github.com/scratchfoundation/scratch-l10n/commit/9a1e0ff8ab5f84cadf288f318eb8bfbb6e0cdce8))
+
+## [3.18.240](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.239...v3.18.240) (2024-07-29)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([db7a970](https://github.com/scratchfoundation/scratch-l10n/commit/db7a97027a98a17c9786def61298d66732eb694e))
+
+## [3.18.239](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.238...v3.18.239) (2024-07-29)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([037dc7c](https://github.com/scratchfoundation/scratch-l10n/commit/037dc7ce41a3302590f8db575190ef00f7f31b46))
+
+## [3.18.238](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.237...v3.18.238) (2024-07-28)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([70f08a0](https://github.com/scratchfoundation/scratch-l10n/commit/70f08a09b948c2d6798f351ec1df22699b65f7ef))
+
+## [3.18.237](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.236...v3.18.237) (2024-07-28)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([e45778a](https://github.com/scratchfoundation/scratch-l10n/commit/e45778ad0f8d6b92a9d3bbacd55ad2050a37e68a))
+
+## [3.18.236](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.235...v3.18.236) (2024-07-27)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6186ef1](https://github.com/scratchfoundation/scratch-l10n/commit/6186ef1b732445b84e7ba86ee2fba0c9c2494ca3))
+
+## [3.18.235](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.234...v3.18.235) (2024-07-27)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([754d9f5](https://github.com/scratchfoundation/scratch-l10n/commit/754d9f5dbb903420b0c6949c51fd8837bf875dde))
+
+## [3.18.234](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.233...v3.18.234) (2024-07-27)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([63cf53a](https://github.com/scratchfoundation/scratch-l10n/commit/63cf53af3f6d76f781e4bd3a5277d4b12015e8c4))
+
+## [3.18.233](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.232...v3.18.233) (2024-07-26)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([c16e39a](https://github.com/scratchfoundation/scratch-l10n/commit/c16e39a3e651e45cf14acf7118bbf822f0772e04))
+
+## [3.18.232](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.231...v3.18.232) (2024-07-25)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([06f6971](https://github.com/scratchfoundation/scratch-l10n/commit/06f6971685beed5a9120342e6e88b0727206dd90))
+
+## [3.18.231](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.230...v3.18.231) (2024-07-24)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([dfcc262](https://github.com/scratchfoundation/scratch-l10n/commit/dfcc2621221491d90db683b566632cbcd95341c0))
+
+## [3.18.230](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.229...v3.18.230) (2024-07-23)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([18cd4d0](https://github.com/scratchfoundation/scratch-l10n/commit/18cd4d0c0d5b500b8f9d05b32e7e99f56a30548c))
+
+## [3.18.229](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.228...v3.18.229) (2024-07-22)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([0f27dc9](https://github.com/scratchfoundation/scratch-l10n/commit/0f27dc9d43484ce6188ff7f297bd85b95df0ca11))
+
+## [3.18.228](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.227...v3.18.228) (2024-07-22)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([2252b4f](https://github.com/scratchfoundation/scratch-l10n/commit/2252b4f7d9b5e1aa60fae9515809ed5bb0cf4cf8))
+
+## [3.18.227](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.226...v3.18.227) (2024-07-21)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([b263dd5](https://github.com/scratchfoundation/scratch-l10n/commit/b263dd5d6c0f8fb32365017e48fc38469782764c))
+
+## [3.18.226](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.225...v3.18.226) (2024-07-20)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([648e595](https://github.com/scratchfoundation/scratch-l10n/commit/648e5954a9efa953905797cca17c36b0e02282e6))
+
+## [3.18.225](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.224...v3.18.225) (2024-07-19)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([ee54c3e](https://github.com/scratchfoundation/scratch-l10n/commit/ee54c3ee571fc5c20c612c93516d7d8d0a331034))
+
+## [3.18.224](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.223...v3.18.224) (2024-07-19)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([4254263](https://github.com/scratchfoundation/scratch-l10n/commit/4254263c242d3cc6e45bf82c5651bec83cb4d5bb))
+
+## [3.18.223](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.222...v3.18.223) (2024-07-18)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([a5049f2](https://github.com/scratchfoundation/scratch-l10n/commit/a5049f2be52c8d45f093bbecb3a25a69ca66d760))
+
+## [3.18.222](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.221...v3.18.222) (2024-07-18)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([ce0d37a](https://github.com/scratchfoundation/scratch-l10n/commit/ce0d37ab5c3e54a3aea6f114bba4754bfeb0470e))
+
+## [3.18.221](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.220...v3.18.221) (2024-07-17)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6b9f6f3](https://github.com/scratchfoundation/scratch-l10n/commit/6b9f6f31db34d551e912bc1e0a2c67faaf7d4d5d))
+
+## [3.18.220](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.219...v3.18.220) (2024-07-16)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([2b9c9e0](https://github.com/scratchfoundation/scratch-l10n/commit/2b9c9e05bc69b002c1b81417319a22fbd8a2533c))
+
+## [3.18.219](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.218...v3.18.219) (2024-07-15)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([722a2f6](https://github.com/scratchfoundation/scratch-l10n/commit/722a2f6fab1ba89329a79052d943b9b72784202c))
+
+## [3.18.218](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.217...v3.18.218) (2024-07-14)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([294f97e](https://github.com/scratchfoundation/scratch-l10n/commit/294f97e7c1b18bca28c6fbdb4bb3b25794892ba8))
+
+## [3.18.217](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.216...v3.18.217) (2024-07-13)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([412e3e6](https://github.com/scratchfoundation/scratch-l10n/commit/412e3e638d5b6495dd0d315624fdc720ea944b59))
+
+## [3.18.216](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.215...v3.18.216) (2024-07-12)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([ea15048](https://github.com/scratchfoundation/scratch-l10n/commit/ea15048a49fb8d0f40a56a6a4aa07a741ed8f692))
+
+## [3.18.215](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.214...v3.18.215) (2024-07-11)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([85e6c62](https://github.com/scratchfoundation/scratch-l10n/commit/85e6c6205d742a68f55eb8feeca1226d0426f1eb))
+
+## [3.18.214](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.213...v3.18.214) (2024-07-10)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([0641123](https://github.com/scratchfoundation/scratch-l10n/commit/0641123857f60493b4baf266ab547a4f09a91d04))
+
+## [3.18.213](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.212...v3.18.213) (2024-07-10)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6f42e4b](https://github.com/scratchfoundation/scratch-l10n/commit/6f42e4b7f992c0d05726aac589092119fa6a0e83))
+
+## [3.18.212](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.211...v3.18.212) (2024-07-09)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([4bfb219](https://github.com/scratchfoundation/scratch-l10n/commit/4bfb219ea4a75461122a28985a923392917e756c))
+
+## [3.18.211](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.210...v3.18.211) (2024-07-07)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([6d42ce1](https://github.com/scratchfoundation/scratch-l10n/commit/6d42ce1d9298c191e68faa1aee5bbe55ba006e33))
+
+## [3.18.210](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.209...v3.18.210) (2024-07-06)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([d2cd4fc](https://github.com/scratchfoundation/scratch-l10n/commit/d2cd4fc4020e1a5ebcd81e3942012cdf4ea4619c))
+
+## [3.18.209](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.208...v3.18.209) (2024-07-03)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([cb6dd16](https://github.com/scratchfoundation/scratch-l10n/commit/cb6dd16afbdc8249c9b3d92692ea0c39f043eaa4))
+
 ## [3.18.208](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.207...v3.18.208) (2024-07-03)
 
 
