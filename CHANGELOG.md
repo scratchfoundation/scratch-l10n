@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.18.342](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.341...v3.18.342) (2024-10-19)
+
+
+### Bug Fixes
+
+* **deps:** lock file maintenance ([29d33fe](https://github.com/scratchfoundation/scratch-l10n/commit/29d33fe462901a259b640c45a50bf88641b0c933))
+* **deps:** lock file maintenance ([cd6cead](https://github.com/scratchfoundation/scratch-l10n/commit/cd6ceadc5d8d51737971ab2ae672790dba7b9749))
+* **deps:** lock file maintenance ([f7296da](https://github.com/scratchfoundation/scratch-l10n/commit/f7296daba4730a0e8830b4dad3c9bc9f26171c2a))
+* **deps:** lock file maintenance ([9d6fd80](https://github.com/scratchfoundation/scratch-l10n/commit/9d6fd8037847c65d0530c3b1909f06c5b015697c))
+* pull new editor translations from Transifex ([a875d56](https://github.com/scratchfoundation/scratch-l10n/commit/a875d56e606ce84d31dd98c651ff3ac44afc3b8c))
+
 ## [3.18.341](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.340...v3.18.341) (2024-10-15)
 
 
