@@ -40,12 +40,12 @@ Missing locales are ignored, react-intl will use the default messages for them.
  */
 import * as fs from 'fs';
 import * as path from 'path';
-import {sync as mkdirpSync} from 'mkdirp';
+import mkdirp from 'mkdirp';
 import defaultsDeep from 'lodash.defaultsdeep';
 import locales from '../src/supported-locales.mjs';
 
 const MSGS_DIR = './locales/';
-mkdirpSync(MSGS_DIR);
+mkdirp.sync(MSGS_DIR);
 let missingLocales = [];
 
 const combineJson = (component) => {
