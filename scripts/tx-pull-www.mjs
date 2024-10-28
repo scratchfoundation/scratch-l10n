@@ -27,12 +27,13 @@ if (!process.env.TX_TOKEN || args.length < 1) {
     process.exit(1);
 }
 
-import fs from 'fs';
+import fs from 'fs/promises';
 import path from 'path';
 import mkdirp from 'mkdirp';
 import {txPull, txResources} from '../lib/transifex.js';
 import locales, {localeMap} from '../src/supported-locales.mjs';
 import {batchMap} from '../lib/batch.js';
+import {ProgressLogger} from '../lib/progress-logger.mjs';
 
 // Globals
 const PROJECT = 'scratch-website';
@@ -49,21 +50,24 @@ const getLocaleData = async function (item) {
     for (let i = 0; i < 5; i++) {
         try {
             const translations = await txPull(PROJECT, resource, txLocale);
-            
+
             const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
             mkdirp.sync(txOutdir);
             const fileName = `${txOutdir}/${locale}.json`;
-            fs.writeFileSync(
+
+            await fs.writeFile(
                 fileName,
                 JSON.stringify(translations, null, 4)
             );
+            this.progress.increment();
             return {
                 resource: resource,
                 locale: locale,
                 file: fileName
             };
         } catch (e) {
-            process.stdout.write(`got ${e.message}, retrying after ${i + 1} attempt(s)\n`);
+            console.error(e);
+            console.log(`retrying after ${i + 1} attempt(s)`);
         }
     }
     throw Error('failed to pull translations after 5 retries');
@@ -84,13 +88,21 @@ const expandResourceFiles = (resources) => {
 };
 
 const pullTranslations = async function () {
-    const resources = await txResources('scratch-website');
+    const resources = await txResources(PROJECT);
     const allFiles = expandResourceFiles(resources);
 
+    const progress = new ProgressLogger(allFiles.length);
+
     try {
-        await batchMap(allFiles, CONCURRENCY_LIMIT, getLocaleData);
+        await batchMap(allFiles, CONCURRENCY_LIMIT, item => {
+            try {
+                getLocaleData(item);
+            } finally {
+                progress.increment();
+            }
+        });
     } catch (err) {
-        console.error(err); // eslint-disable-line no-console
+        console.error(err);
         process.exit(1);
     }
 };
