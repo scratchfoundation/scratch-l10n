@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
 /**
  * @fileoverview
@@ -9,7 +9,7 @@ import fs from 'fs';
 import path from 'path';
 import async from 'async';
 import assert from 'assert';
-import locales from '../src/supported-locales.js';
+import locales from '../src/supported-locales.mjs';
 
 // Globals
 const JSON_DIR = path.join(process.cwd(), '/editor/extensions');

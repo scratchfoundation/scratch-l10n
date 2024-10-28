@@ -22,14 +22,14 @@ There are two situations in which we create manual PRs to update translations:
 
 ### Adding a language
 
-* [ ] Edit `src/supported-locales.js`:
+* [ ] Edit `src/supported-locales.mjs`:
   * [ ] Add entry for the language in the `locales` const
   * [ ] Check if language is right-to-left. If so:
     * Add entry in `rtlLocales`
 
 * [ ] Check if the new language uses a country code
   * Check [https://www.transifex.com/explore/languages](https://www.transifex.com/explore/languages). If the language has a country code:
-  * [ ] Edit `src/supported-locales.js`:
+  * [ ] Edit `src/supported-locales.mjs`:
     * Add new entry to `localeMap`. Format is `'<W3C HTML browser locale string>': '<Transifex ICU locale string>'`
   * [ ] Edit `.tx/config`:
     * Add to the `lang_map` list. Format is `<Transifex ICU locale string>:<W3C HTML browser locale string>`
@@ -42,14 +42,14 @@ There are two situations in which we create manual PRs to update translations:
 * [ ] Check if locale is in `react-intl`
   * Look in [https://unpkg.com/react-intl/locale-data/](https://unpkg.com/react-intl/locale-data/)
   * If not in `react-intl`:
-    * [ ] Edit `src/supported-locales.js`:
+    * [ ] Edit `src/supported-locales.mjs`:
       * In `customLocales`, add entry with parent set to a `react-intl` locale
     * [ ] Edit `src/index.js`:
       * In `localeData`, add entry for parent locale
 
 * [ ] Update translations per the "Updating translations" section above
 * [ ] Confirm that we see changes to:
-    * [ ] `src/supported-locales.js`
+    * [ ] `src/supported-locales.mjs`
     * [ ] `src/index.js`
     * [ ] `.tx/config` (if language needed a new locale)
     * [ ] Multiple files like `editor/<resource>/<lang code>.json`

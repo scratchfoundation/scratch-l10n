@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
 /**
  * @fileoverview
@@ -31,7 +31,7 @@ import fs from 'fs';
 import path from 'path';
 import mkdirp from 'mkdirp';
 import {txPull, txResources} from '../lib/transifex.js';
-import locales, {localeMap} from '../src/supported-locales.js';
+import locales, {localeMap} from '../src/supported-locales.mjs';
 import {batchMap} from '../lib/batch.js';
 
 // Globals

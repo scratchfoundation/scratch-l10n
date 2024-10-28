@@ -42,7 +42,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import {sync as mkdirpSync} from 'mkdirp';
 import defaultsDeep from 'lodash.defaultsdeep';
-import locales from '../src/supported-locales.js';
+import locales from '../src/supported-locales.mjs';
 
 const MSGS_DIR = './locales/';
 mkdirpSync(MSGS_DIR);

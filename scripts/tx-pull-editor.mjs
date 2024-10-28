@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
 /**
  * @fileoverview
@@ -29,8 +29,8 @@ if (!process.env.TX_TOKEN || args.length < 3) {
 import fs from 'fs';
 import path from 'path';
 import {txPull} from '../lib/transifex.js';
-import {validateTranslations} from '../lib/validate.js';
-import locales, {localeMap} from '../src/supported-locales.js';
+import {validateTranslations} from '../lib/validate.mjs';
+import locales, {localeMap} from '../src/supported-locales.mjs';
 import {batchMap} from '../lib/batch.js';
 
 // Globals

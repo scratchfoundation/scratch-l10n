@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
 /**
  * @fileoverview
@@ -8,7 +8,7 @@
 const args = process.argv.slice(2);
 const usage = `
  Validate translation json. Usage:
-   babel-node validate_www.js path
+   node validate_www.mjs path
      path: root folder for all the www resource folders
  `;
 if (args.length < 1) {
@@ -19,8 +19,8 @@ import fs from 'fs';
 import path from 'path';
 import glob from 'glob';
 import async from 'async';
-import {validateTranslations} from '../lib/validate.js';
-import locales from '../src/supported-locales.js';
+import {validateTranslations} from '../lib/validate.mjs';
+import locales from '../src/supported-locales.mjs';
 
 // Globals
 const WWW_DIR = path.resolve(args[0]);

@@ -72,7 +72,7 @@ import xh from './locale-data/xh';
 import zh from './locale-data/zh';
 import zu from './locale-data/zu';
 
-import {customLocales} from './supported-locales.js';
+import {customLocales} from './supported-locales.mjs';
 
 let localeData = [].concat(
     en,

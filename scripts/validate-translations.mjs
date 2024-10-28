@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-node
+#!/usr/bin/env node
 
 /**
  * @fileoverview
@@ -8,7 +8,7 @@
 const args = process.argv.slice(2);
 const usage = `
  Validate translation json. Usage:
-   babel-node validate_translations.js path
+   node validate_translations.mjs path
      path: where to find the downloaded json files
  `;
 // Fail immediately if the TX_TOKEN is not defined
@@ -19,8 +19,8 @@ if (args.length < 1) {
 import fs from 'fs';
 import path from 'path';
 import async from 'async';
-import {validateTranslations} from '../lib/validate.js';
-import locales from '../src/supported-locales.js';
+import {validateTranslations} from '../lib/validate.mjs';
+import locales from '../src/supported-locales.mjs';
 
 // Globals
 const JSON_DIR = path.resolve(args[0]);
