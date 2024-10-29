@@ -47,30 +47,34 @@ const getLocaleData = async function (item) {
     const locale = item.locale;
     const resource = item.resource;
     let txLocale = localeMap[locale] || locale;
-    for (let i = 0; i < 5; i++) {
-        try {
-            const translations = await txPull(PROJECT, resource, txLocale);
 
-            const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
-            mkdirp.sync(txOutdir);
-            const fileName = `${txOutdir}/${locale}.json`;
+    const translations = await txPull(PROJECT, resource, txLocale);
 
-            await fs.writeFile(
-                fileName,
-                JSON.stringify(translations, null, 4)
-            );
-            this.progress.increment();
-            return {
-                resource: resource,
-                locale: locale,
-                file: fileName
-            };
-        } catch (e) {
-            console.error(e);
-            console.log(`retrying after ${i + 1} attempt(s)`);
-        }
+    const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`;
+    const fileName = `${txOutdir}/${locale}.json`;
+
+    try {
+        mkdirp.sync(txOutdir);
+        await fs.writeFile(
+            fileName,
+            JSON.stringify(translations, null, 4)
+        );
+
+        return {
+            resource,
+            locale,
+            fileName
+        };
+    } catch (e) {
+        e.cause = {
+            resource,
+            locale,
+            translations,
+            txOutdir,
+            fileName
+        };
+        throw e;
     }
-    throw Error('failed to pull translations after 5 retries');
 };
 
 const expandResourceFiles = (resources) => {
@@ -94,9 +98,9 @@ const pullTranslations = async function () {
     const progress = new ProgressLogger(allFiles.length);
 
     try {
-        await batchMap(allFiles, CONCURRENCY_LIMIT, item => {
+        await batchMap(allFiles, CONCURRENCY_LIMIT, async item => {
             try {
-                getLocaleData(item);
+                await getLocaleData(item);
             } finally {
                 progress.increment();
             }
