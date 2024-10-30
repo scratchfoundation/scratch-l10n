@@ -72,22 +72,27 @@ const txPushResource = async (name, articles, type) => {
 };
 
 /**
- * get a flattened list of folders
- * @param  {category}  categories array of categories the folders belong to
- * @return {Promise}            flattened list of folders
+ * get a flattened list of folders associated with the specified categories
+ * @param  {object[]} categories array of categories the folders belong to
+ * @return {Promise<object[]>} flattened list of folders from all requested categories
  */
 const getFolders = async (categories) => {
-    let categoryFolders = await Promise.all( // eslint-disable-line no-undef
+    const categoryFolders = await Promise.all(
         categories.map(category => FD.listFolders(category))
     );
     return [].concat(...categoryFolders);
 };
 
 const PUBLISHED = 2; // in Freshdesk, draft status = 1, and published = 2
-const saveArticles = (folder) => {
-    FD.listArticles(folder)
+
+/**
+ * Save articles in a particular folder
+ * @param {object} folder The folder object
+ */
+const saveArticles = async folder => {
+    await FD.listArticles(folder)
         .then(json => {
-            let txArticles = json.reduce((strings, current) => {
+            const txArticles = json.reduce((strings, current) => {
                 if (current.status === PUBLISHED) {
                     strings[`${current.id}`] = {
                         title: {
@@ -107,13 +112,16 @@ const saveArticles = (folder) => {
             txPushResource(`${makeTxId(folder)}_json`, txArticles, 'STRUCTURED_JSON');
         });
 };
-const getArticles = async (folders) => {
-    return Promise.all(folders.map(folder => saveArticles(folder))); // eslint-disable-line no-undef
+
+/**
+ * @param {object[]} folders Array of folders containing articles to be saved
+ */
+const saveArticleFolders = async (folders) => {
+    await Promise.all(folders.map(folder => saveArticles(folder)));
 };
 
 const syncSources = async () => {
-    let status = 0;
-    status = await FD.listCategories()
+    await FD.listCategories()
         .then(json => {
             // save category names for translation
             for (let cat of json.values()) {
@@ -131,12 +139,7 @@ const syncSources = async () => {
             txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON');
             return data;
         })
-        .then(getArticles)
-        .catch((e) => {
-            process.stdout.write(`Error:${e.message}\n`);
-            return 1;
-        });
-    process.exitCode = status;
+        .then(saveArticleFolders);
 };
 
 syncSources();
