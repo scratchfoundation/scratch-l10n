@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.2](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.1...v4.0.2) (2024-10-30)
+
+
+### Bug Fixes
+
+* stop trying to assign an array to process.exitCode ([a4b1680](https://github.com/scratchfoundation/scratch-l10n/commit/a4b16805f4b601204415f731ca8397fb9027201e))
+
 ## [4.0.1](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.0...v4.0.1) (2024-10-30)
 
 
