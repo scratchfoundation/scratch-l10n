@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.0...v4.0.1) (2024-10-30)
+
+
+### Bug Fixes
+
+* require is not allowed in mjs files ([fb47cd2](https://github.com/scratchfoundation/scratch-l10n/commit/fb47cd2c566ad4020953bd88d754eceb6b120a8f))
+
 # [4.0.0](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.357...v4.0.0) (2024-10-30)
 
 
