@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.357...v4.0.0) (2024-10-30)
+
+
+### Bug Fixes
+
+* fix mkdirp import ([cfd31fd](https://github.com/scratchfoundation/scratch-l10n/commit/cfd31fda7157c287bf3ca21688afefcb90bae2a0))
+* handle paginated results more carefully ([2930b8a](https://github.com/scratchfoundation/scratch-l10n/commit/2930b8a02b7fd73f4e200aba16ea4f76a44b7f27))
+* only retry the actual download ([905f004](https://github.com/scratchfoundation/scratch-l10n/commit/905f004b1511b4b399735e9659bca0538f297a43))
+
+
+* refactor!: stop using babel-node ([44c4b97](https://github.com/scratchfoundation/scratch-l10n/commit/44c4b975819dafc8f598227f1297da8b8946aa05))
+
+
+### Features
+
+* report progress during tx-pull-www ([b501bdd](https://github.com/scratchfoundation/scratch-l10n/commit/b501bddc6bcfabf9f4d8114b28c21aef4c9119c9))
+
+
+### BREAKING CHANGES
+
+* Some files have been renamed from '.js' to '.mjs'
+
 ## [3.18.357](https://github.com/scratchfoundation/scratch-l10n/compare/v3.18.356...v3.18.357) (2024-10-30)
 
 
