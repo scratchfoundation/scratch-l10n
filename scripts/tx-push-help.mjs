@@ -5,8 +5,9 @@
  * Script get Knowledge base articles from Freshdesk and push them to transifex.
  */
 
+import {txPush, txCreateResource} from '../lib/transifex.js';
+
 const args = process.argv.slice(2);
-const {txPush, txCreateResource} = require('../lib/transifex.js');
 
 const usage = `
  Pull knowledge base articles from Freshdesk and push to scratch-help project on transifex. Usage:
