@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.5](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.4...v4.0.5) (2024-11-01)
+
+
+### Bug Fixes
+
+* specify file extension for ./file.js imports ([2c1fddb](https://github.com/scratchfoundation/scratch-l10n/commit/2c1fddbf1407e0dae99d19361b0745f1f005af15))
+
 ## [4.0.4](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.3...v4.0.4) (2024-11-01)
 
 
