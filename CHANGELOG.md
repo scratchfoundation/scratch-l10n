@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.46...v5.0.0) (2024-11-25)
+
+
+* chore!: set license to AGPL-3.0-only ([f98e5bb](https://github.com/scratchfoundation/scratch-l10n/commit/f98e5bb7fa7cf289d78317541e2e4dd1b35143a7))
+
+
+### BREAKING CHANGES
+
+* This project is now licensed under the AGPL version 3.0
+
+See https://www.scratchfoundation.org/open-source-license
+
 ## [4.0.46](https://github.com/scratchfoundation/scratch-l10n/compare/v4.0.45...v4.0.46) (2024-11-25)
 
 
