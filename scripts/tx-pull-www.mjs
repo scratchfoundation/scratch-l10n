@@ -32,7 +32,7 @@ import path from 'path';
 import mkdirp from 'mkdirp';
 import {txPull, txResources} from '../lib/transifex.js';
 import locales, {localeMap} from '../src/supported-locales.mjs';
-import {batchMap} from '../lib/batch.js';
+import {poolMap} from '../lib/concurrent.js';
 import {ProgressLogger} from '../lib/progress-logger.mjs';
 
 // Globals
@@ -98,7 +98,7 @@ const pullTranslations = async function () {
     const progress = new ProgressLogger(allFiles.length);
 
     try {
-        await batchMap(allFiles, CONCURRENCY_LIMIT, async item => {
+        await poolMap(allFiles, CONCURRENCY_LIMIT, async item => {
             try {
                 await getLocaleData(item);
             } finally {

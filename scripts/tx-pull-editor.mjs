@@ -31,7 +31,7 @@ import path from 'path';
 import {txPull} from '../lib/transifex.js';
 import {validateTranslations} from '../lib/validate.mjs';
 import locales, {localeMap} from '../src/supported-locales.mjs';
-import {batchMap} from '../lib/batch.js';
+import {poolMap} from '../lib/concurrent.js';
 
 // Globals
 const PROJECT = args[0];
@@ -51,7 +51,7 @@ const getLocaleData = async function (locale) {
 
 const pullTranslations = async function () {
     try {
-        const values = await batchMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
+        const values = await poolMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData);
         const source = values.find(elt => elt.locale === 'en').translations;
         values.forEach(function (translation) {
             validateTranslations({locale: translation.locale, translations: translation.translations}, source);
