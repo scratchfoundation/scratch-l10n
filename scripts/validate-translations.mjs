@@ -25,10 +25,15 @@ import locales from '../src/supported-locales.mjs';
 // Globals
 const JSON_DIR = path.resolve(args[0]);
 
-const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`));
+const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8'));
 
+/**
+ * Load and validate a JSON file containing translations
+ * @param {string} locale The locale code to load and validate, like 'en' or 'es'
+ * @param {async.ErrorCallback<Error>} callback Callback for error reporting
+ */
 const validate = (locale, callback) => {
-    fs.readFile(`${JSON_DIR}/${locale}.json`, function (err, data) {
+    fs.readFile(`${JSON_DIR}/${locale}.json`, 'utf8', function (err, data) {
         if (err) callback(err);
         // let this throw an error if invalid json
         data = JSON.parse(data);

@@ -1,8 +1,12 @@
 /**
- * Currently supported locales for the Scratch Project
- * @type {Object} Key Value pairs of locale code: Language name written in the language
+ * @typedef {Object} LocaleData
+ * @property {string} name - The name of the locale in the locale's language
  */
 
+/**
+ * Currently supported locales for the Scratch Project
+ * @type {Record<string, LocaleData>} Key Value pairs of locale code: Language name written in the language
+ */
 const locales = {
     'ab': {name: 'Аҧсшәа'},
     'af': {name: 'Afrikaans'},
@@ -86,6 +90,16 @@ const locales = {
     'zh-tw': {name: '繁體中文'}
 };
 
+/**
+ * @typedef {Object} CustomLocale
+ * @property {string} locale - The locale code for this custom locale
+ * @property {string} parentLocale - The "parent" locale code to use as a fallback
+ */
+
+/**
+ * List of custom locales supported by Scratch but not in the locale data
+ * @type {Record<string, CustomLocale>}
+ */
 const customLocales = {
     'ab': {
         locale: 'ab',
@@ -96,7 +110,7 @@ const customLocales = {
         locale: 'an',
         parentLocale: 'es'
     },
-    // haitian creole is not in locale-langData
+    // Haitian Creole is not in locale-langData
     'ht': {
         locale: 'ht',
         parentLocale: 'fr'
@@ -120,6 +134,11 @@ const customLocales = {
     }
 };
 
+
+/**
+ * Map of Scratch locale codes to Transifex locale codes
+ * @type {Record<string, string>}
+ */
 const localeMap = {
     'aa-dj': 'aa_DJ',
     'es-419': 'es_419',
@@ -129,7 +148,10 @@ const localeMap = {
     'zh-tw': 'zh_TW'
 };
 
-// list of RTL locales supported, and a function to check whether a locale is RTL
+/**
+ * List of right-to-left (RTL) locale codes
+ * @type {string[]}
+ */
 const rtlLocales = [
     'ar',
     'ckb',
@@ -137,6 +159,10 @@ const rtlLocales = [
     'he'
 ];
 
+/**
+ * @param {string} locale - The locale code to check
+ * @returns {boolean} - True if the locale is RTL, false otherwise
+ */
 const isRtl = locale => {
     return rtlLocales.indexOf(locale) !== -1;
 };

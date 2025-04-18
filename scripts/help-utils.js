@@ -10,10 +10,21 @@ const fs = require('fs');
 const fsPromises = fs.promises;
 const mkdirp = require('mkdirp');
 const {txPull, txResourcesObjects, txAvailableLanguages} = require('../lib/transifex.js');
+const {poolMap} = require('../lib/concurrent.js');
+
+/**
+ * @import {JsonApiResource} from '@transifex/api';
+ * @import {chromei18nCollection} from '../lib/transifex.js';
+ */
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
 const TX_PROJECT = 'scratch-help';
 
+/**
+ * Map between Transifex locale and Freshdesk locale
+ * @param  {string} locale Transifex locale code
+ * @return {string} Freshdesk locale code
+ */
 const freshdeskLocale = locale => {
     // map between Transifex locale and Freshdesk. Two letter codes are usually fine
     const localeMap = {
@@ -33,13 +44,14 @@ const freshdeskLocale = locale => {
     return localeMap[locale] || locale;
 };
 
+/**
+ * Inputs for processing articles from the knowledge base
+ * @typedef {[languages: string[], jsonFolders: JsonApiResource[], kvNames: JsonApiResource[]]} HelpInputs
+ */
 
 /**
  * Pull metadata from Transifex for the scratch-help project
- * @return {Promise} results array containing:
- *                      languages: array of supported languages
- *                      folders: array of tx resources corrsponding to Freshdesk folders
- *                      names: array of tx resources corresponding to the Freshdesk metadata
+ * @return {Promise.<HelpInputs>} Promise resolving to all required inputs
  */
 exports.getInputs = async () => {
     const resources = await txResourcesObjects(TX_PROJECT);
@@ -54,10 +66,10 @@ exports.getInputs = async () => {
 
 /**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
- * @param  {[type]}  json     [description]
- * @param  {[type]}  resource [description]
- * @param  {[type]}  locale   [description]
- * @return {Promise}          [description]
+ * @param  {chromei18nCollection} json - collection of messages for a particular locale
+ * @param  {JsonApiResource} resource - the Transifex resource object that `json` came from
+ * @param  {string}  locale - the Transifex locale code
+ * @return {Promise} Resolves when all items are saved
  */
 const serializeNameSave = async (json, resource, locale) => {
     for (let [key, value] of Object.entries(json)) {
@@ -126,7 +138,7 @@ const serializeFolderSave = async (json, locale) => {
  * @return {Promise}        [description]
  */
 exports.localizeFolder = async (folder, locale) => {
-    txPull(TX_PROJECT, folder.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, folder.slug, locale, 'default')
         .then(data => {
             serializeFolderSave(data, locale);
         })
@@ -144,7 +156,7 @@ exports.localizeFolder = async (folder, locale) => {
  */
 exports.debugFolder = async (folder, locale) => {
     mkdirp.sync('tmpDebug');
-    txPull(TX_PROJECT, folder.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, folder.slug, locale, 'default')
         .then(data => {
             fsPromises.writeFile(
                 `tmpDebug/${folder.slug}_${locale}.json`,
@@ -165,7 +177,7 @@ exports.debugFolder = async (folder, locale) => {
  * @return {Promise}          [description]
  */
 exports.localizeNames = async (resource, locale) => {
-    txPull(TX_PROJECT, resource.slug, locale, {mode: 'default'})
+    txPull(TX_PROJECT, resource.slug, locale, 'default')
         .then(data => {
             serializeNameSave(data, resource, locale);
         })
@@ -176,17 +188,28 @@ exports.localizeNames = async (resource, locale) => {
 };
 
 
+/**
+ * @callback ItemSaveFunction A function that saves a single item
+ * @param {object} item - The item to save
+ * @param {string} language - The language to save the item in
+ */
+
 const BATCH_SIZE = 2;
-/*
- * save resource items in batches to reduce rate limiting errors
+/**
+ * Save resource items in batches to reduce rate limiting errors
  * @param  {object}  item      Transifex resource json, used for 'slug'
  * @param  {array}  languages  Array of languages to save
  * @param  {function}  saveFn  Async function to use to save the item
- * @return {Promise}
+ * @return {Promise} Resolves when all items are saved
  */
 exports.saveItem = async (item, languages, saveFn) => {
     const saveLanguages = languages.filter(l => l !== 'en'); // exclude English from update
-    let batchedPromises = Promise.resolve(); // eslint-disable-line no-undef
+    
+    await poolMap(saveLanguages, BATCH_SIZE, async (l) => {
+        const saveLanguage = freshdeskLocale(l);
+        await saveFn(item, saveLanguage);
+    });
+    let batchedPromises = Promise.resolve();
     for (let i = 0; i < saveLanguages.length; i += BATCH_SIZE) {
         batchedPromises = batchedPromises
             .then(() => Promise.all( // eslint-disable-line
