@@ -30,10 +30,10 @@ if (!process.env.TX_TOKEN || args.length < 1) {
 import fs from 'fs/promises';
 import path from 'path';
 import mkdirp from 'mkdirp';
-import {txPull, txResources} from '../lib/transifex.js';
+import {txPull, txResources} from './lib/transifex.js';
 import locales, {localeMap} from '../src/supported-locales.mjs';
-import {poolMap} from '../lib/concurrent.js';
-import {ProgressLogger} from '../lib/progress-logger.mjs';
+import {poolMap} from './lib/concurrent.js';
+import {ProgressLogger} from './lib/progress-logger.mjs';
 
 // Globals
 const PROJECT = 'scratch-website';

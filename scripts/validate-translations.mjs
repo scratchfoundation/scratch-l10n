@@ -19,7 +19,7 @@ if (args.length < 1) {
 import fs from 'fs';
 import path from 'path';
 import async from 'async';
-import {validateTranslations} from '../lib/validate.mjs';
+import {validateTranslations} from './lib/validate.mjs';
 import locales from '../src/supported-locales.mjs';
 
 // Globals

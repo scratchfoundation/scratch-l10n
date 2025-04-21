@@ -5,7 +5,7 @@
  * Script get Knowledge base articles from Freshdesk and push them to transifex.
  */
 
-import {txPush, txCreateResource} from '../lib/transifex.js';
+import {txPush, txCreateResource} from './lib/transifex.js';
 
 const args = process.argv.slice(2);
 
@@ -24,7 +24,7 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
     process.exit(1);
 }
 
-import FreshdeskApi from './freshdesk-api.js';
+import FreshdeskApi from './lib/freshdesk-api.js';
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN);
 const TX_PROJECT = 'scratch-help';

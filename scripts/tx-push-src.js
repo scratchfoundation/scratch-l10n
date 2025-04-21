@@ -10,7 +10,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const {txPush, txCreateResource} = require('../lib/transifex.js');
+const {txPush, txCreateResource} = require('./lib/transifex.js');
 
 const args = process.argv.slice(2);
 

@@ -21,7 +21,7 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length === 0) 
     process.exit(1);
 }
 
-const {getInputs, saveItem, localizeFolder, debugFolder} = require('./help-utils.js');
+const {getInputs, saveItem, localizeFolder, debugFolder} = require('./lib/help-utils.js');
 
 let locale = args[0];
 let debug = false;

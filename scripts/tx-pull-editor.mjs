@@ -28,10 +28,10 @@ if (!process.env.TX_TOKEN || args.length < 3) {
 
 import fs from 'fs';
 import path from 'path';
-import {txPull} from '../lib/transifex.js';
-import {validateTranslations} from '../lib/validate.mjs';
+import {txPull} from './lib/transifex.js';
+import {validateTranslations} from './lib/validate.mjs';
 import locales, {localeMap} from '../src/supported-locales.mjs';
-import {poolMap} from '../lib/concurrent.js';
+import {poolMap} from './lib/concurrent.js';
 
 // Globals
 const PROJECT = args[0];

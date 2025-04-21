@@ -22,7 +22,7 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
     process.exit(1);
 }
 
-const {getInputs, saveItem, localizeNames} = require('./help-utils.js');
+const {getInputs, saveItem, localizeNames} = require('./lib/help-utils.js');
 
 getInputs()
     .then(([languages, folders, names]) => { // eslint-disable-line no-unused-vars
