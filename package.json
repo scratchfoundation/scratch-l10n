@@ -5,8 +5,8 @@
   "main": "./dist/l10n.js",
   "browser": "./src/index.mjs",
   "bin": {
-    "build-i18n-src": "./scripts/build-i18n-src.js",
-    "tx-push-src": "./scripts/tx-push-src.js"
+    "build-i18n-src": "./scripts/build-i18n-src.mjs",
+    "tx-push-src": "./scripts/tx-push-src.mjs"
   },
   "scripts": {
     "build": "npm run clean && npm run build:data && webpack --progress --colors --bail",
@@ -20,8 +20,8 @@
     "pull:editor": "npm run pull:blocks && npm run pull:extensions && npm run pull:paint && npm run pull:interface",
     "pull:extensions": "node scripts/tx-pull-editor.mjs scratch-editor extensions ./editor/extensions/",
     "pull:help": "npm run pull:help:names && npm run pull:help:articles",
-    "pull:help:articles": "./scripts/tx-pull-help-articles.js",
-    "pull:help:names": "./scripts/tx-pull-help-names.js",
+    "pull:help:articles": "./scripts/tx-pull-help-articles.mjs",
+    "pull:help:names": "./scripts/tx-pull-help-names.mjs",
     "pull:interface": "node scripts/tx-pull-editor.mjs scratch-editor interface ./editor/interface/",
     "pull:paint": "node scripts/tx-pull-editor.mjs scratch-editor paint-editor ./editor/paint-editor/",
     "pull:www": "node scripts/tx-pull-www.mjs ./www",

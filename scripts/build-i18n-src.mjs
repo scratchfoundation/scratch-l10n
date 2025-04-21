@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const glob = require('glob');
-const path = require('path');
-const mkdirp = require('mkdirp');
+import fs from 'fs';
+import glob from 'glob';
+import path from 'path';
+import mkdirp from 'mkdirp';
 
 var args = process.argv.slice(2);
 

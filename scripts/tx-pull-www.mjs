@@ -111,4 +111,4 @@ const pullTranslations = async function () {
     }
 };
 
-pullTranslations();
+await pullTranslations();

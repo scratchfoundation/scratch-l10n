@@ -8,9 +8,9 @@
  * token that has developer access.
  */
 
-const fs = require('fs');
-const path = require('path');
-const {txPush, txCreateResource} = require('./lib/transifex.js');
+import fs from 'fs';
+import path from 'path';
+import {txPush, txCreateResource} from './lib/transifex.js';
 
 const args = process.argv.slice(2);
 
@@ -97,4 +97,4 @@ const pushSource = async function () {
     }
 };
 
-pushSource();
+await pushSource();

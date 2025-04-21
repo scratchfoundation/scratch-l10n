@@ -6,9 +6,8 @@
  */
 
 const args = process.argv.slice(2);
-
 const usage = `
- Pull knowledge base category and folder names from transifex and push to FreshDesk. Usage:
+ Pull knowledge base articles from transifex and push to FreshDesk. Usage:
    node tx-pull-help.js
    NOTE:
    FRESHDESK_TOKEN environment variable needs to be set to a FreshDesk API key with
@@ -22,12 +21,12 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
     process.exit(1);
 }
 
-const {getInputs, saveItem, localizeNames} = require('./lib/help-utils.js');
+import {getInputs, saveItem, localizeFolder} from './lib/help-utils.js';
 
-getInputs()
+await getInputs()
     .then(([languages, folders, names]) => { // eslint-disable-line no-unused-vars
-        process.stdout.write('Process Category and Folder Names pulled from Transifex\n');
-        return names.map(item => saveItem(item, languages, localizeNames));
+        process.stdout.write('Processing articles pulled from Transifex\n');
+        return folders.map(item => saveItem(item, languages, localizeFolder));
     })
     .catch((e) => {
         process.stdout.write(`Error: ${e.message}\n`);

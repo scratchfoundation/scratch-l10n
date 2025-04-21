@@ -142,4 +142,4 @@ const syncSources = async () => {
         .then(saveArticleFolders);
 };
 
-syncSources();
+await syncSources();
