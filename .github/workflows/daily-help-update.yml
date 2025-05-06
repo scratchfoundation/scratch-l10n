@@ -4,10 +4,10 @@ on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   schedule:
     # daily-help-update (e.g., daily at 5 AM UTC)
-    - cron: "0 5 * * *"
+    - cron: '0 5 * * *'
 
 concurrency:
-  group: "${{ github.workflow }}"
+  group: '${{ github.workflow }}'
   cancel-in-progress: true
 
 permissions:
@@ -24,8 +24,8 @@ jobs:
       - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
       - uses: actions/setup-node@1a4442cacd436585916779262731d5b162bc6ec7 # v3
         with:
-          cache: "npm"
-          node-version-file: ".nvmrc"
+          cache: 'npm'
+          node-version-file: '.nvmrc'
 
       - name: Install dependencies
         run: |

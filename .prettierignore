@@ -1,0 +1,11 @@
+node_modules/
+/locales/*
+/dist/
+/src/locale-data/*
+
+# don't fight semantic-release
+/CHANGELOG.md
+
+# don't format JSON pulled from Transifex
+/editor/*/*.json
+/www/*/*.json

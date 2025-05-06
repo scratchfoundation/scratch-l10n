@@ -13,27 +13,27 @@
  * @param {number} poolSize - Number of calls to `func` allowed to run concurrently.
  * If `poolSize` is less than 2, tasks will be run sequentially.
  * @param {ProcessItemAsync.<T,R>} func - Function to apply to each item in `arr`.
- * @return {Promise<R[]>} - Results of `func` applied to each item in `arr`.
+ * @returns {Promise<R[]>} - Results of `func` applied to each item in `arr`.
  */
 exports.poolMap = async (arr, poolSize, func) => {
-    const pool = [];
-    const results = [];
+  const pool = []
+  const results = []
 
-    const processItem = async i => {
-        results[i] = await func(arr[i]);
-        delete pool[i];
-    };
+  const processItem = async i => {
+    results[i] = await func(arr[i])
+    delete pool[i]
+  }
 
-    for (let i = 0; i < arr.length; i++) {
-        pool[i] = processItem(i); // No `await` here: we're storing the promise, not the result
-        if (Object.keys(pool).length >= poolSize) {
-            // Wait for one of the promises in the pool to resolve
-            // and clear itself to make room for the next one
-            await Promise.race(Object.values(pool));
-        }
+  for (let i = 0; i < arr.length; i++) {
+    pool[i] = processItem(i) // No `await` here: we're storing the promise, not the result
+    if (Object.keys(pool).length >= poolSize) {
+      // Wait for one of the promises in the pool to resolve
+      // and clear itself to make room for the next one
+      await Promise.race(Object.values(pool))
     }
+  }
 
-    // Wait for any remaining promises to resolve
-    await Promise.all(Object.values(pool));
-    return results;
-};
+  // Wait for any remaining promises to resolve
+  await Promise.all(Object.values(pool))
+  return results
+}
