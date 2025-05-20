@@ -72,11 +72,13 @@ export const validMessage = (message: TransifexEditorString, source: TransifexEd
   }
 
   // Check scratch-blocks numeric placeholders like '%1'
-  const msgPlaceholdersNumeric: string[] = msgText.match(/%[0-9]+/g) ?? []
-  const srcPlaceholdersNumeric: string[] = srcText.match(/%[0-9]+/g) ?? []
-  if (!sameItems(msgPlaceholdersNumeric, srcPlaceholdersNumeric)) {
-    return false
-  }
+  // TODO: apply this only for resources that use numeric placeholders.
+  // Otherwise, sentences with percentages can cause failures in some languages. Example: "göre %48'lik bir artış"
+  // const msgPlaceholdersNumeric: string[] = msgText.match(/%[0-9]+/g) ?? []
+  // const srcPlaceholdersNumeric: string[] = srcText.match(/%[0-9]+/g) ?? []
+  // if (!sameItems(msgPlaceholdersNumeric, srcPlaceholdersNumeric)) {
+  //   return false
+  // }
 
   return true
 }
