@@ -64,9 +64,9 @@ const validateTranslations = (
   const transKeys = Object.keys(translations)
   const sourceKeys = Object.keys(source)
   assert.strictEqual(transKeys.length, sourceKeys.length, `locale ${locale} has a different number of message keys`)
-  transKeys.map(item => assert(sourceKeys.includes(item), `locale ${locale} has key ${item} not in the source`))
-  sourceKeys.map(item => assert(transKeys.includes(item), `locale ${locale} is missing key ${item}`))
-  sourceKeys.map(item =>
+  transKeys.forEach(item => assert(sourceKeys.includes(item), `locale ${locale} has key ${item} not in the source`))
+  sourceKeys.forEach(item => assert(transKeys.includes(item), `locale ${locale} is missing key ${item}`))
+  sourceKeys.forEach(item =>
     assert(
       validMessage(translations[item], source[item]),
       `locale ${locale} / item ${item}: "${getMessageText(translations[item])}" is not a valid translation for "${getMessageText(source[item])}"`,
