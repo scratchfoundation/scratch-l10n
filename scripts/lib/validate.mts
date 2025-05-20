@@ -99,7 +99,7 @@ export const validateTranslations = (
   sourceKeys.forEach(item =>
     assert(
       validMessage(translations[item], source[item]),
-      `locale ${locale} / item ${item}: "${getMessageText(translations[item])}" is not a valid translation for "${getMessageText(source[item])}"`,
+      `locale ${locale} / item ${item}: message validation failed:\n  msg: ${getMessageText(translations[item])}\n  src: ${getMessageText(source[item])}`,
     ),
   )
 }
