@@ -64,10 +64,10 @@ export const validMessage = (message: TransifexEditorString, source: TransifexEd
   const msgText = getMessageText(message)
   const srcText = getMessageText(source)
 
-  // Check ICU placeholders (stringify in case of complex placeholders)
-  const msgPlaceholdersICU = placeholders(msgText).map(x => JSON.stringify(x))
-  const srcPlaceholdersICU = placeholders(srcText).map(x => JSON.stringify(x))
-  if (!sameItems(msgPlaceholdersICU, srcPlaceholdersICU)) {
+  // Check ICU placeholder names (but not extended plural info)
+  const msgPlaceholderNamesICU = placeholders(msgText).map(x => x[0])
+  const srcPlaceholderNamesICU = placeholders(srcText).map(x => x[0])
+  if (!sameItems(msgPlaceholderNamesICU, srcPlaceholderNamesICU)) {
     return false
   }
 
