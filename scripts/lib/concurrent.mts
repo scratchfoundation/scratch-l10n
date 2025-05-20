@@ -1,25 +1,23 @@
 /**
- * @template T, R
- * @callback ProcessItemAsync - Process a single item asynchronously
- * @param {T} item - An item to process
- * @returns {Promise<R>} - The result of processing the item
+ * @param item - An item to process
+ * @returns The result of processing the item
  */
+type ProcessItemAsync<T, R> = (item: T) => Promise<R>
 
 /**
  * Maps each value of an array into an async function, then returns an array of the results.
  * Up to `poolSize` calls to the async function are allowed to run concurrently.
- * @template T, R
- * @param {T[]} arr - Array of input values.
- * @param {number} poolSize - Number of calls to `func` allowed to run concurrently.
+ * @param arr - Array of input values.
+ * @param poolSize - Number of calls to `func` allowed to run concurrently.
  * If `poolSize` is less than 2, tasks will be run sequentially.
- * @param {ProcessItemAsync.<T,R>} func - Function to apply to each item in `arr`.
- * @returns {Promise<R[]>} - Results of `func` applied to each item in `arr`.
+ * @param func - Function to apply to each item in `arr`.
+ * @returns Results of `func` applied to each item in `arr`.
  */
-exports.poolMap = async (arr, poolSize, func) => {
-  const pool = []
-  const results = []
+export const poolMap = async <T, R>(arr: T[], poolSize: number, func: ProcessItemAsync<T, R>): Promise<R[]> => {
+  const pool: Record<number, Promise<void>> = []
+  const results: R[] = []
 
-  const processItem = async i => {
+  const processItem = async (i: number): Promise<void> => {
     results[i] = await func(arr[i])
     delete pool[i]
   }

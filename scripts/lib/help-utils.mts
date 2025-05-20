@@ -1,22 +1,20 @@
-#!/usr/bin/env node
-
 /**
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
+import { promises as fsPromises } from 'fs'
+import { mkdirp } from 'mkdirp'
+import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus } from './freshdesk-api.mts'
+import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
+import { TransifexResourceObject } from './transifex-objects.mts'
+import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
 
-const FreshdeskApi = require('./freshdesk-api.js')
-const fs = require('fs')
-const fsPromises = fs.promises
-const mkdirp = require('mkdirp')
-const { txPull, txResourcesObjects, txAvailableLanguages } = require('../lib/transifex.js')
-
-const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN)
+const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
 
-const freshdeskLocale = locale => {
+const freshdeskLocale = (locale: string): string => {
   // map between Transifex locale and Freshdesk. Two letter codes are usually fine
-  const localeMap = {
+  const localeMap: Record<string, string> = {
     es_419: 'es-LA',
     ja: 'ja-JP',
     'ja-Hira': 'ja-JP',
@@ -34,36 +32,69 @@ const freshdeskLocale = locale => {
 }
 
 /**
- * Pull metadata from Transifex for the scratch-help project
- * @returns {Promise} results array containing:
- *                      languages: array of supported languages
- *                      folders: array of tx resources corresponding to Freshdesk folders
- *                      names: array of tx resources corresponding to the Freshdesk metadata
+ * Parse a string into an integer.
+ * If converting the integer back to a string does not result in the same string, throw.
+ * @param str - The (allegedly) numeric string to parse
+ * @param radix - Interpret the string as a number in this base. For example, use 10 for decimal values.
+ * @returns The numeric value of the string
  */
-exports.getInputs = async () => {
-  const resources = await txResourcesObjects(TX_PROJECT)
-  const languages = await txAvailableLanguages(TX_PROJECT)
-  // there are three types of resources differentiated by the file type
-  const folders = resources.filter(resource => resource.i18n_type === 'STRUCTURED_JSON')
-  const names = resources.filter(resource => resource.i18n_type === 'KEYVALUEJSON')
-  // ignore the yaml type because it's not possible to update via API
-
-  return Promise.all([languages, folders, names])
+const parseIntOrThrow = (str: string, radix: number) => {
+  const num = parseInt(str, radix)
+  if (str != num.toString(radix)) {
+    throw new Error(`Could not parse int safely: ${str}`)
+  }
+  return num
 }
 
-/*
- * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
+/**
+ * Pull metadata from Transifex for the scratch-help project
+ * @returns Promise for a results object containing:
+ * languages - array of supported languages
+ * folders - array of tx resources corrsponding to Freshdesk folders
+ * names - array of tx resources corresponding to the Freshdesk metadata
  */
-const serializeNameSave = async (json, resource, locale) => {
-  for (const [key, value] of Object.entries(json)) {
+export const getInputs = async () => {
+  const resourcesPromise = txResourcesObjects(TX_PROJECT)
+  const languagesPromise = txAvailableLanguages(TX_PROJECT)
+
+  // there are three types of resources differentiated by the file type
+  const foldersPromise = resourcesPromise.then(resources =>
+    resources.filter(resource => resource.attributes.i18n_type === 'STRUCTURED_JSON'),
+  )
+  const namesPromise = resourcesPromise.then(resources =>
+    resources.filter(resource => resource.attributes.i18n_type === 'KEYVALUEJSON'),
+  )
+  // ignore the yaml type because it's not possible to update via API
+
+  const [languages, folders, names] = await Promise.all([languagesPromise, foldersPromise, namesPromise])
+
+  return {
+    languages,
+    folders,
+    names,
+  }
+}
+
+/**
+ * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
+ * @param strings - the string data pulled from Transifex
+ * @param resource - the `attributes` property of the resource object which contains these strings
+ * @param locale - the Transifex locale code corresponding to these strings
+ */
+const serializeNameSave = async (
+  strings: TransifexStringsKeyValueJson,
+  resource: TransifexResourceObject,
+  locale: string,
+): Promise<void> => {
+  for (const [key, value] of Object.entries(strings)) {
     // key is of the form <name>_<id>
     const words = key.split('_')
-    const id = words[words.length - 1]
-    let status = 0
-    if (resource.name === 'categoryNames_json') {
+    const id = parseIntOrThrow(words[words.length - 1], 10)
+    let status
+    if (resource.attributes.name === 'categoryNames_json') {
       status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
     }
-    if (resource.name === 'folderNames_json') {
+    if (resource.attributes.name === 'folderNames_json') {
       status = await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
     }
     if (status === -1) {
@@ -73,30 +104,28 @@ const serializeNameSave = async (json, resource, locale) => {
 }
 
 /**
- * Internal function serialize Freshdesk requests to avoid getting rate limited
- * @param  {object}  json   object with keys corresponding to article ids
- * @param  {string}  locale language code
- * @returns {Promise}        [description]
+ * We use this specific structure in the `STRUCTUREDJSON` resources associated with our Freshdesk folders.
+ * This should be compatible with (and stricter than) `TransifexStringStructuredJson`.
  */
-const serializeFolderSave = async (json, locale) => {
-  // json is a map of articles:
-  // {
-  //   <id>: {
-  //     title: {string: <title-value>},
-  //     description: {string: <description-value>},
-  //     tags: {string: <comma separated strings} // optional
-  //   },
-  //   <id>: {
-  //     title: {string: <title-value>},
-  //     description: {string: <description-value>},
-  //     tags: {string: <comma separated strings} // optional
-  //   }
-  // }
-  for (const [id, value] of Object.entries(json)) {
-    const body = {
+interface FreshdeskFolderInTransifex {
+  title: { string: string }
+  description: { string: string }
+  tags: { string: string }
+}
+
+/**
+ * Internal function serialize Freshdesk requests to avoid getting rate limited
+ * @param  json   object with keys corresponding to article ids
+ * @param  locale language code
+ * @returns a numeric status code
+ */
+const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTransifex>, locale: string) => {
+  for (const [idString, value] of Object.entries(json)) {
+    const id = parseIntOrThrow(idString, 10)
+    const body: FreshdeskArticleCreate = {
       title: value.title.string,
       description: value.description.string,
-      status: 2, // set status to published
+      status: FreshdeskArticleStatus.published,
     }
     if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
       const tags = value.tags.string.split(',')
@@ -108,44 +137,46 @@ const serializeFolderSave = async (json, locale) => {
     }
     const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
     if (status === -1) {
-      // eslint-disable-next-line require-atomic-updates -- I promise that `process` won't change across `await`
+      // eslint-disable-next-line require-atomic-updates -- `process` will not change across `await`
       process.exitCode = 1
     }
   }
-  return 0
 }
 
 /**
  * Process Transifex resource corresponding to a Knowledge base folder on Freshdesk
- * @param  {object}  folder Transifex resource json corresponding to a KB folder
- * @param  {string}  locale locale to pull and submit to Freshdesk
- * @returns {Promise}        [description]
+ * @param  folderAttributes Transifex resource json corresponding to a KB folder
+ * @param  locale locale to pull and submit to Freshdesk
  */
-exports.localizeFolder = async (folder, locale) => {
-  txPull(TX_PROJECT, folder.slug, locale, { mode: 'default' })
-    .then(data => {
-      serializeFolderSave(data, locale)
-    })
+export const localizeFolder = async (folderAttributes: TransifexResourceObject, locale: string) => {
+  await txPull<FreshdeskFolderInTransifex>(TX_PROJECT, folderAttributes.attributes.slug, locale, 'default')
+    .then(data => serializeFolderSave(data, locale))
     .catch(e => {
-      process.stdout.write(`Error processing ${folder.slug}, ${locale}: ${e.message}\n`)
+      process.stdout.write(
+        `Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`,
+      )
       process.exitCode = 1 // not ok
     })
 }
 
 /**
  * Save Transifex resource corresponding to a Knowledge base folder locally for debugging
- * @param  {object}  folder Transifex resource json corresponding to a KB folder
- * @param  {string}  locale locale to pull and save
- * @returns {Promise}        [description]
+ * @param  folderAttributes Transifex resource json corresponding to a KB folder
+ * @param  locale locale to pull and save
  */
-exports.debugFolder = async (folder, locale) => {
-  mkdirp.sync('tmpDebug')
-  txPull(TX_PROJECT, folder.slug, locale, { mode: 'default' })
-    .then(data => {
-      fsPromises.writeFile(`tmpDebug/${folder.slug}_${locale}.json`, JSON.stringify(data, null, 2))
-    })
+export const debugFolder = async (folderAttributes: TransifexResourceObject, locale: string) => {
+  await mkdirp('tmpDebug')
+  await txPull(TX_PROJECT, folderAttributes.attributes.slug, locale, 'default')
+    .then(data =>
+      fsPromises.writeFile(
+        `tmpDebug/${folderAttributes.attributes.slug}_${locale}.json`,
+        JSON.stringify(data, null, 2),
+      ),
+    )
     .catch(e => {
-      process.stdout.write(`Error processing ${folder.slug}, ${locale}: ${e.message}\n`)
+      process.stdout.write(
+        `Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`,
+      )
       process.exitCode = 1 // not ok
     })
 }
@@ -153,38 +184,34 @@ exports.debugFolder = async (folder, locale) => {
 /**
  * Process KEYVALUEJSON resources from scratch-help on transifex
  * Category and Folder names are stored as plain json
- * @param  {object}  resource Transifex resource json for either CategoryNames or FolderNames
- * @param  {string}  locale   locale to pull and submit to Freshdesk
- * @returns {Promise}          [description]
+ * @param resource Transifex resource json for either CategoryNames or FolderNames
+ * @param locale   locale to pull and submit to Freshdesk
  */
-exports.localizeNames = async (resource, locale) => {
-  txPull(TX_PROJECT, resource.slug, locale, { mode: 'default' })
-    .then(data => {
-      serializeNameSave(data, resource, locale)
-    })
+export const localizeNames = async (resource: TransifexResourceObject, locale: string): Promise<void> => {
+  await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
+    .then(data => serializeNameSave(data, resource, locale))
     .catch(e => {
-      process.stdout.write(`Error saving ${resource.slug}, ${locale}: ${e.message}\n`)
+      process.stdout.write(`Error saving ${resource.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
       process.exitCode = 1 // not ok
     })
 }
 
 const BATCH_SIZE = 2
-/*
+
+type SaveFn = (item: TransifexResourceObject, language: string) => Promise<void>
+
+/**
  * save resource items in batches to reduce rate limiting errors
- * @param  {object}  item      Transifex resource json, used for 'slug'
- * @param  {array}  languages  Array of languages to save
- * @param  {function}  saveFn  Async function to use to save the item
- * @return {Promise}
+ * @param item      Transifex resource json, used for 'slug'
+ * @param languages  Array of languages to save
+ * @param saveFn  Async function to use to save the item
  */
-exports.saveItem = async (item, languages, saveFn) => {
+export const saveItem = async (item: TransifexResourceObject, languages: string[], saveFn: SaveFn) => {
   const saveLanguages = languages.filter(l => l !== 'en') // exclude English from update
-  let batchedPromises = Promise.resolve()
   for (let i = 0; i < saveLanguages.length; i += BATCH_SIZE) {
-    batchedPromises = batchedPromises
-      .then(() => Promise.all(saveLanguages.slice(i, i + BATCH_SIZE).map(l => saveFn(item, l))))
-      .catch(err => {
-        process.stdout.write(`Error saving item:${err.message}\n${JSON.stringify(item, null, 2)}\n`)
-        process.exitCode = 1 // not ok
-      })
+    await Promise.all(saveLanguages.slice(i, i + BATCH_SIZE).map(l => saveFn(item, l))).catch(err => {
+      process.stdout.write(`Error saving item:${(err as Error).message}\n${JSON.stringify(item, null, 2)}\n`)
+      process.exitCode = 1 // not ok
+    })
   }
 }

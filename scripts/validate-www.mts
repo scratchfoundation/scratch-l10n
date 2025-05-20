@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to validate the www translation json
@@ -8,7 +8,8 @@ import fs from 'fs'
 import glob from 'glob'
 import path from 'path'
 import locales from '../src/supported-locales.mjs'
-import { validateTranslations } from './lib/validate.mjs'
+import { TransifexStringsKeyValueJson, TransifexStrings } from './lib/transifex-formats.mts'
+import { validateTranslations } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -25,21 +26,27 @@ if (args.length < 1) {
 const WWW_DIR = path.resolve(args[0])
 const RESOURCES = glob.sync(`${path.resolve(WWW_DIR)}/*`)
 
-const validate = (localeData, callback) => {
-  fs.readFile(localeData.localeFileName, (err, data) => {
+interface LocaleData {
+  locale: string
+  localeFileName: string
+  sourceData: TransifexStrings<string>
+}
+
+const validate = (localeData: LocaleData, callback: async.ErrorCallback) => {
+  fs.readFile(localeData.localeFileName, 'utf8', (err, data) => {
     if (err) callback(err)
     // let this throw an error if invalid json
-    data = JSON.parse(data)
+    const strings = JSON.parse(data) as TransifexStringsKeyValueJson
     const translations = {
       locale: localeData.locale,
-      translations: data,
+      translations: strings,
     }
     validateTranslations(translations, localeData.sourceData)
   })
 }
 
-const validateResource = (resource, callback) => {
-  const source = JSON.parse(fs.readFileSync(`${resource}/en.json`))
+const validateResource = (resource: string, callback: async.ErrorCallback) => {
+  const source = JSON.parse(fs.readFileSync(`${resource}/en.json`, 'utf8')) as TransifexStringsKeyValueJson
   const allLocales = Object.keys(locales).map(loc => ({
     locale: loc,
     localeFileName: `${resource}/${loc}.json`,

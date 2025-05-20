@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to pull translations from transifex and generate the editor-msgs file.
@@ -9,9 +9,10 @@
 import fs from 'fs'
 import path from 'path'
 import locales, { localeMap } from '../src/supported-locales.mjs'
-import { poolMap } from './lib/concurrent.js'
-import { txPull } from './lib/transifex.js'
-import { validateTranslations } from './lib/validate.mjs'
+import { poolMap } from './lib/concurrent.mts'
+import { TransifexStringsKeyValueJson } from './lib/transifex-formats.mts'
+import { txPull } from './lib/transifex.mts'
+import { TransifexEditorStrings, validateTranslations } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 
@@ -38,9 +39,9 @@ const OUTPUT_DIR = path.resolve(args[2])
 const MODE = 'reviewed'
 const CONCURRENCY_LIMIT = 36
 
-const getLocaleData = async function (locale) {
+const getLocaleData = async function (locale: string) {
   const txLocale = localeMap[locale] || locale
-  const data = await txPull(PROJECT, RESOURCE, txLocale, MODE)
+  const data = (await txPull(PROJECT, RESOURCE, txLocale, MODE)) as TransifexEditorStrings
   return {
     locale: locale,
     translations: data,
@@ -49,17 +50,20 @@ const getLocaleData = async function (locale) {
 
 const pullTranslations = async function () {
   const values = await poolMap(Object.keys(locales), CONCURRENCY_LIMIT, getLocaleData)
-  const source = values.find(elt => elt.locale === 'en').translations
+  const source = values.find(elt => elt.locale === 'en')?.translations
+  if (!source) {
+    throw new Error('Could not find source strings')
+  }
   values.forEach(translation => {
     validateTranslations({ locale: translation.locale, translations: translation.translations }, source)
     // if translation has message & description, we only want the message
-    const txs = {}
+    const txs: TransifexStringsKeyValueJson = {}
     for (const key of Object.keys(translation.translations)) {
       const tx = translation.translations[key]
-      if (tx.message) {
-        txs[key] = tx.message
-      } else {
+      if (typeof tx === 'string') {
         txs[key] = tx
+      } else {
+        txs[key] = tx.message
       }
     }
     const file = JSON.stringify(txs, null, 4)

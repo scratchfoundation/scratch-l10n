@@ -7,6 +7,12 @@ you would like to contribute translations, please sign up to translate on Transi
 
 ## Using scratch-l10n in development
 
+Files under `src/` and `dist/` are JavaScript and meant to be used at runtime.
+
+Files under `scripts/` are generally TypeScript and are meant to be used during development or at build time.
+
+Most other directories contain the localization data itself: both source and translated strings.
+
 ### Basic Use
 
 ```js

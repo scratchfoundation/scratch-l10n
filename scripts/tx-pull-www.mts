@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to pull www translations from transifex for all resources.
@@ -7,12 +7,12 @@
  * token that has developer access.
  */
 import fs from 'fs/promises'
-import mkdirp from 'mkdirp'
+import { mkdirp } from 'mkdirp'
 import path from 'path'
 import locales, { localeMap } from '../src/supported-locales.mjs'
-import { poolMap } from './lib/concurrent.js'
+import { poolMap } from './lib/concurrent.mts'
 import { ProgressLogger } from './lib/progress-logger.mjs'
-import { txPull, txResources } from './lib/transifex.js'
+import { txPull, txResources } from './lib/transifex.mts'
 
 const args = process.argv.slice(2)
 
@@ -41,7 +41,7 @@ const CONCURRENCY_LIMIT = 36
 
 const lang = args.length === 2 ? args[1] : ''
 
-const getLocaleData = async function (item) {
+const getLocaleData = async function (item: { locale: string; resource: string }) {
   const locale = item.locale
   const resource = item.resource
   const txLocale = localeMap[locale] || locale
@@ -61,7 +61,7 @@ const getLocaleData = async function (item) {
       fileName,
     }
   } catch (e) {
-    e.cause = {
+    ;(e as Error).cause = {
       resource,
       locale,
       translations,
@@ -72,7 +72,7 @@ const getLocaleData = async function (item) {
   }
 }
 
-const expandResourceFiles = resources => {
+const expandResourceFiles = (resources: string[]) => {
   const items = []
   for (const resource of resources) {
     if (lang) {
@@ -92,18 +92,13 @@ const pullTranslations = async function () {
 
   const progress = new ProgressLogger(allFiles.length)
 
-  try {
-    await poolMap(allFiles, CONCURRENCY_LIMIT, async item => {
-      try {
-        await getLocaleData(item)
-      } finally {
-        progress.increment()
-      }
-    })
-  } catch (err) {
-    console.error(err)
-    process.exit(1)
-  }
+  await poolMap(allFiles, CONCURRENCY_LIMIT, async item => {
+    try {
+      await getLocaleData(item)
+    } finally {
+      progress.increment()
+    }
+  })
 }
 
 await pullTranslations()

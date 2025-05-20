@@ -1,29 +1,21 @@
-#!/usr/bin/env node
-
 /**
  * @file
  * Utilities for interfacing with Transifex API 3.
  */
-
-const transifexApi = require('@transifex/api').transifexApi
-
-/**
- * @import {Collection, JsonApiResource} from '@transifex/api';
- */
+import { transifexApi, Collection, JsonApiResource } from '@transifex/api'
+import { TransifexStrings } from './transifex-formats.mts'
+import { TransifexLanguageObject, TransifexResourceObject } from './transifex-objects.mts'
 
 const ORG_NAME = 'llk'
 const SOURCE_LOCALE = 'en'
 
-try {
-  transifexApi.setup({
-    auth: process.env.TX_TOKEN,
-  })
-} catch (err) {
-  if (!process.env.TX_TOKEN) {
-    throw new Error('TX_TOKEN is not defined.')
-  }
-  throw err
+if (!process.env.TX_TOKEN) {
+  throw new Error('TX_TOKEN is not defined.')
 }
+
+transifexApi.setup({
+  auth: process.env.TX_TOKEN,
+})
 
 /*
  * The Transifex JS API wraps the Transifex JSON API, and is built around the concept of a `Collection`.
@@ -39,16 +31,17 @@ try {
  */
 
 /**
- * Collects all resources from all pages of a potentially-paginated Transifex collection.
+ * Collects all resources from all pages of a potentially-paginated JSON API collection.
  * It's not necessary, but also not harmful, to call `fetch()` on the collection before calling this function.
- * @param {Collection} collection A collection of Transifex resources.
- * @returns {Promise<JsonApiResource[]>} An array of all resources in the collection.
+ * @param collection A collection of JSON API resources.
+ * @returns An array of all resources in the collection.
+ * @todo This seems necessary with the latest Transifex API..?
  */
-const collectAll = async function (collection) {
+const collectAll = async function <T extends JsonApiResource>(collection: Collection): Promise<T[]> {
   await collection.fetch() // fetch the first page if it hasn't already been fetched
-  const collected = []
-  for await (const item of collection.all()) {
-    collected.push(item)
+  const collected: T[] = []
+  for (const item of collection.all()) {
+    collected.push(item as T)
   }
   return collected
 }
@@ -56,13 +49,18 @@ const collectAll = async function (collection) {
 /**
  * Creates a download event for a specific project, resource, and locale.
  * Returns the URL to download the resource.
- * @param {string} projectSlug - project slug (for example,  "scratch-editor")
- * @param {string} resourceSlug - resource slug (for example,  "blocks")
- * @param {string} localeCode - language code (for example,  "ko")
- * @param {string} mode - translation status of strings to include
- * @returns {Promise<string>} - URL to download the resource
+ * @param projectSlug - project slug (for example,  "scratch-editor")
+ * @param resourceSlug - resource slug (for example,  "blocks")
+ * @param localeCode - language code (for example,  "ko")
+ * @param mode - translation status of strings to include
+ * @returns URL to download the resource
  */
-const getResourceLocation = async function (projectSlug, resourceSlug, localeCode, mode = 'default') {
+const getResourceLocation = async function (
+  projectSlug: string,
+  resourceSlug: string,
+  localeCode: string,
+  mode = 'default',
+): Promise<string> {
   const resource = {
     data: {
       id: `o:${ORG_NAME}:p:${projectSlug}:r:${resourceSlug}`,
@@ -72,9 +70,9 @@ const getResourceLocation = async function (projectSlug, resourceSlug, localeCod
 
   // if locale is English, create a download event of the source file
   if (localeCode === SOURCE_LOCALE) {
-    return await transifexApi.ResourceStringsAsyncDownload.download({
+    return (await transifexApi.ResourceStringsAsyncDownload.download({
       resource,
-    })
+    })) as string
   }
 
   const language = {
@@ -85,25 +83,30 @@ const getResourceLocation = async function (projectSlug, resourceSlug, localeCod
   }
 
   // if locale is not English, create a download event of the translation file
-  return await transifexApi.ResourceTranslationsAsyncDownload.download({
+  return (await transifexApi.ResourceTranslationsAsyncDownload.download({
     mode,
     resource,
     language,
-  })
+  })) as string
 }
 
 /**
- * Pulls a translation json from transifex, for a specific project, resource, and locale.
- * @param {string} project - project slug (for example,  "scratch-editor")
- * @param {string} resource - resource slug (for example,  "blocks")
- * @param {string} locale - language code (for example,  "ko")
- * @param {string} mode - translation status of strings to include
- * @returns {Promise<object>} - JSON object of translated resource strings (or, of the original resource
- * strings, if the local is the source language)
+ * Pulls a translation JSON from transifex, for a specific project, resource, and locale.
+ * @template T - resource file type, such as `TransifexStringsKeyValueJson`
+ * @param project - project slug (for example, `scratch-editor`)
+ * @param resource - resource slug (for example, `blocks`)
+ * @param locale - language code (for example, `ko`)
+ * @param mode - translation status of strings to include
+ * @returns JSON object of translated resource strings (or, of the original resource strings, if the local is the
+ * source language)
  */
-const txPull = async function (project, resource, locale, mode = 'default') {
-  /** @type {string?} */
-  let buffer = null
+export const txPull = async function <T>(
+  project: string,
+  resource: string,
+  locale: string,
+  mode = 'default',
+): Promise<TransifexStrings<T>> {
+  let buffer: string | null = null
   try {
     const url = await getResourceLocation(project, resource, locale, mode)
     for (let i = 0; i < 5; i++) {
@@ -124,9 +127,9 @@ const txPull = async function (project, resource, locale, mode = 'default') {
     if (!buffer) {
       throw Error(`txPull download failed after 5 retries: ${url}`)
     }
-    return JSON.parse(buffer)
+    return JSON.parse(buffer) as TransifexStrings<T>
   } catch (e) {
-    e.cause = {
+    ;(e as Error).cause = {
       project,
       resource,
       locale,
@@ -138,15 +141,15 @@ const txPull = async function (project, resource, locale, mode = 'default') {
 
 /**
  * Given a project, returns a list of the slugs of all resources in the project
- * @param {string} project - project slug (for example,  "scratch-website")
- * @returns {Promise<Array>} - array of strings, slugs identifying each resource in the project
+ * @param project - project slug (for example,  "scratch-website")
+ * @returns - array of strings, slugs identifying each resource in the project
  */
-const txResources = async function (project) {
+export const txResources = async function (project: string): Promise<string[]> {
   const resources = transifexApi.Resource.filter({
     project: `o:${ORG_NAME}:p:${project}`,
   })
 
-  const resourcesData = await collectAll(resources)
+  const resourcesData = await collectAll<TransifexResourceObject>(resources)
 
   const slugs = resourcesData.map(
     r =>
@@ -158,40 +161,40 @@ const txResources = async function (project) {
 }
 
 /**
- * @param {string} project - project slug (for example)
- * @returns {Promise<JsonApiResource[]>} - array of resource objects
+ * @param project - project slug (for example)
+ * @returns - array of resource objects
  */
-const txResourcesObjects = async function (project) {
+export const txResourcesObjects = async function (project: string): Promise<TransifexResourceObject[]> {
   const resources = transifexApi.Resource.filter({
     project: `o:${ORG_NAME}:p:${project}`,
   })
 
-  return collectAll(resources)
+  return collectAll<TransifexResourceObject>(resources)
 }
 
 /**
  * Gets available languages for a project
- * @param {string} slug - project slug (for example, "scratch-editor")
- * @returns {Promise<string[]>} - list of language codes
+ * @param slug - project slug (for example, "scratch-editor")
+ * @returns - list of language codes
  */
-const txAvailableLanguages = async function (slug) {
+export const txAvailableLanguages = async function (slug: string): Promise<string[]> {
   const project = await transifexApi.Project.get({
     organization: `o:${ORG_NAME}`,
     slug: slug,
   })
 
-  const languages = await project.fetch('languages')
-  const languagesData = await collectAll(languages)
+  const languages = (await project.fetch('languages', false)) as Collection
+  const languagesData = await collectAll<TransifexLanguageObject>(languages)
   return languagesData.map(l => l.attributes.code)
 }
 
 /**
  * Uploads English source strings to a resource in transifex
- * @param {string} project - project slug (for example,  "scratch-editor")
- * @param {string} resource - resource slug (for example,  "blocks")
- * @param {object} sourceStrings - json of source strings
+ * @param project - project slug (for example,  "scratch-editor")
+ * @param resource - resource slug (for example,  "blocks")
+ * @param sourceStrings - json of source strings
  */
-const txPush = async function (project, resource, sourceStrings) {
+export const txPush = async function (project: string, resource: string, sourceStrings: TransifexStrings<unknown>) {
   const resourceObj = {
     data: {
       id: `o:${ORG_NAME}:p:${project}:r:${resource}`,
@@ -207,14 +210,27 @@ const txPush = async function (project, resource, sourceStrings) {
 
 /**
  * Creates a new resource, and then uploads source strings to it if they are provided
- * @param {string} project - project slug (for example,  "scratch-editor")
- * @param {object} resource - object of resource information
- * @param {string} resource.slug - resource slug (for example,  "blocks")
- * @param {string} resource.name - human-readable name for the resource
- * @param {string} resource.i18nType - i18n format id
- * @param {object} resource.sourceStrings - json object of source strings
+ * @param project - project slug (for example,  "scratch-editor")
+ * @param resource - object of resource information
+ * @param resource.slug - resource slug (for example,  "blocks")
+ * @param resource.name - human-readable name for the resource
+ * @param resource.i18nType - i18n format id
+ * @param resource.sourceStrings - json object of source strings
  */
-const txCreateResource = async function (project, { slug, name, i18nType, sourceStrings }) {
+export const txCreateResource = async function (
+  project: string,
+  {
+    slug,
+    name,
+    i18nType,
+    sourceStrings,
+  }: {
+    slug: string
+    name: string
+    i18nType: string
+    sourceStrings?: TransifexStrings<unknown>
+  },
+) {
   const i18nFormat = {
     data: {
       id: i18nType || 'KEYVALUEJSON',
@@ -229,6 +245,7 @@ const txCreateResource = async function (project, { slug, name, i18nType, source
     },
   }
 
+  // @ts-expect-error This omits "required" props but has been like this for ages and I'm not sure how to best fix it
   await transifexApi.Resource.create({
     attributes: { slug: slug, name: name },
     relationships: {
@@ -242,4 +259,26 @@ const txCreateResource = async function (project, { slug, name, i18nType, source
   }
 }
 
-module.exports = { txPull, txPush, txResources, txResourcesObjects, txCreateResource, txAvailableLanguages }
+/**
+ * Information about an error condition generated by Transifex's JSON API
+ * @see https://github.com/transifex/transifex-api-python/blob/master/src/jsonapi/exceptions.py
+ * @see https://github.com/transifex/transifex-javascript/blob/master/packages/jsonapi/src/errors.js
+ */
+export interface JsonApiError {
+  status: number
+  code: string
+  title: string
+  detail: string
+  source?: string
+}
+
+/**
+ * A JS `Error` thrown by Transifex's JSON API
+ * @see https://github.com/transifex/transifex-api-python/blob/master/src/jsonapi/exceptions.py
+ * @see https://github.com/transifex/transifex-javascript/blob/master/packages/jsonapi/src/errors.js
+ */
+export interface JsonApiException extends Error {
+  statusCode: number
+  errors: JsonApiError[]
+  message: string
+}

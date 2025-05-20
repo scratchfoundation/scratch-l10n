@@ -1,10 +1,11 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /**
  * @file
  * Script get Knowledge base articles from Freshdesk and push them to transifex.
  */
-import FreshdeskApi from './lib/freshdesk-api.js'
-import { txPush, txCreateResource } from './lib/transifex.js'
+import FreshdeskApi, { FreshdeskArticleStatus, FreshdeskCategory, FreshdeskFolder } from './lib/freshdesk-api.mts'
+import { TransifexStringsKeyValueJson, TransifexStringsStructuredJson } from './lib/transifex-formats.mts'
+import { txPush, txCreateResource, JsonApiException } from './lib/transifex.mts'
 
 const args = process.argv.slice(2)
 
@@ -26,65 +27,63 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN)
 const TX_PROJECT = 'scratch-help'
 
-const categoryNames = {}
-const folderNames = {}
+const categoryNames: TransifexStringsKeyValueJson = {}
+const folderNames: TransifexStringsKeyValueJson = {}
 
 /**
  * Generate a transifex id from the name and id field of an objects. Remove spaces and '/'
  * from the name and append '.<id>' Transifex ids (slugs) have a max length of 50. Use at most
  * 30 characters of the name to allow for Freshdesk id, and a suffix like '_json'
- * @param  {object} item data from Freshdesk that includes the name and id of a category or folder
- * @returns {string}      generated transifex id
+ * @param item - data from Freshdesk that includes the name and id of a category or folder
+ * @returns generated transifex id
  */
-const makeTxId = item => `${item.name.replace(/[ /]/g, '').slice(0, 30)}_${item.id}`
+const makeTxId = (item: FreshdeskFolder) => `${item.name.replace(/[ /]/g, '').slice(0, 30)}_${item.id}`
 
-const txPushResource = async (name, articles, type) => {
+const txPushResource = async (
+  name: string,
+  articles: TransifexStringsStructuredJson | TransifexStringsKeyValueJson,
+  type: string,
+) => {
   const resourceData = {
     slug: name,
     name: name,
-    i18n_type: type,
+    i18nType: type,
     priority: 0, // default to normal priority
     content: articles,
   }
 
   try {
     await txPush(TX_PROJECT, name, articles)
-  } catch (err) {
+  } catch (errUnknown) {
+    const err = errUnknown as JsonApiException
     if (err.statusCode !== 404) {
-      process.stdout.write(`Transifex Error: ${err.message}\n`)
-      process.stdout.write(`Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`)
-      process.exitCode = 1
-      return
+      throw err
     }
 
     // file not found - create it, but also give message
     process.stdout.write(`Transifex Resource not found, creating: ${name}\n`)
-    if (err.statusCode === 404) {
-      await txCreateResource(TX_PROJECT, resourceData)
-    }
+    await txCreateResource(TX_PROJECT, resourceData)
   }
 }
 
 /**
  * get a flattened list of folders associated with the specified categories
- * @param  {object[]} categories array of categories the folders belong to
- * @returns {Promise<object[]>} flattened list of folders from all requested categories
+ * @param categories - array of categories the folders belong to
+ * @returns flattened list of folders from all requested categories
  */
-const getFolders = async categories => {
+const getFolders = async (categories: FreshdeskCategory[]) => {
   const categoryFolders = await Promise.all(categories.map(category => FD.listFolders(category)))
-  return [].concat(...categoryFolders)
+  return ([] as FreshdeskCategory[]).concat(...categoryFolders)
 }
-
-const PUBLISHED = 2 // in Freshdesk, draft status = 1, and published = 2
 
 /**
  * Save articles in a particular folder
- * @param {object} folder The folder object
+ * @param folder - The folder object
  */
-const saveArticles = async folder => {
-  await FD.listArticles(folder).then(json => {
-    const txArticles = json.reduce((strings, current) => {
-      if (current.status === PUBLISHED) {
+const saveArticles = async (folder: FreshdeskFolder) => {
+  await FD.listArticles(folder).then(async json => {
+    const txArticles = json.reduce((strings: TransifexStringsStructuredJson, current) => {
+      if (current.status === FreshdeskArticleStatus.published) {
         strings[`${current.id}`] = {
           title: {
             string: current.title,
@@ -93,27 +92,28 @@ const saveArticles = async folder => {
             string: current.description,
           },
         }
-        if (current.tags.length > 0) {
+        if (current.tags?.length) {
           strings[`${current.id}`].tags = { string: current.tags.toString() }
         }
       }
       return strings
     }, {})
     process.stdout.write(`Push ${folder.name} articles to Transifex\n`)
-    txPushResource(`${makeTxId(folder)}_json`, txArticles, 'STRUCTURED_JSON')
+    await txPushResource(`${makeTxId(folder)}_json`, txArticles, 'STRUCTURED_JSON')
   })
 }
 
 /**
- * @param {object[]} folders Array of folders containing articles to be saved
+ * @param folders - Array of folders containing articles to be saved
  */
-const saveArticleFolders = async folders => {
+const saveArticleFolders = async (folders: FreshdeskCategory[]) => {
   await Promise.all(folders.map(folder => saveArticles(folder)))
 }
 
 const syncSources = async () => {
   await FD.listCategories()
     .then(json => {
+      console.dir(json)
       // save category names for translation
       for (const cat of json.values()) {
         categoryNames[`${makeTxId(cat)}`] = cat.name
@@ -121,13 +121,15 @@ const syncSources = async () => {
       return json
     })
     .then(getFolders)
-    .then(data => {
+    .then(async data => {
       data.forEach(item => {
         folderNames[`${makeTxId(item)}`] = item.name
       })
       process.stdout.write('Push category and folder names to Transifex\n')
-      txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON')
-      txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON')
+      await Promise.all([
+        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON'),
+        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON'),
+      ])
       return data
     })
     .then(saveArticleFolders)
