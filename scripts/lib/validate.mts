@@ -35,19 +35,49 @@ const getMessageText = (m: TransifexStringKeyValueJson | TransifexStringChrome):
   typeof m === 'string' ? m : m.message
 
 /**
+ * @param a - one array of items
+ * @param b - another array of items
+ * @returns true if the two arrays contain the same items, without consideration of order and duplicates, judged by
+ * shallow equality.
+ * @example
+ * sameItems(['a', 'b'], ['a', 'b']) === true
+ * sameItems(['a', 'b'], ['b', 'a']) === true
+ * sameItems(['a', 'b'], ['b', 'a', 'b']) === true
+ * sameItems(['a', 'b'], ['a']) === false
+ */
+function sameItems<T>(a: T[], b: T[]): boolean {
+  if (!a.every(x => b.includes(x))) {
+    return false
+  }
+  if (!b.every(x => a.includes(x))) {
+    return false
+  }
+  return true
+}
+
+/**
  * @param message - the translated message to validate
  * @param source - the source string for this translated message
  * @returns `false` if the message definitely has a problem, or `true` if the message might be OK.
  */
-const validMessage = (message: TransifexEditorString, source: TransifexEditorString): boolean => {
-  const transPlaceholders = placeholders(getMessageText(message))
-  const srcPlaceholders = placeholders(getMessageText(source))
-  // different number of placeholders
-  if (transPlaceholders.length !== srcPlaceholders.length) {
+export const validMessage = (message: TransifexEditorString, source: TransifexEditorString): boolean => {
+  const msgText = getMessageText(message)
+  const srcText = getMessageText(source)
+
+  // Check ICU placeholders (stringify in case of complex placeholders)
+  const msgPlaceholdersICU = placeholders(msgText).map(x => JSON.stringify(x))
+  const srcPlaceholdersICU = placeholders(srcText).map(x => JSON.stringify(x))
+  if (!sameItems(msgPlaceholdersICU, srcPlaceholdersICU)) {
     return false
   }
-  // TODO: Add checking to make sure placeholders in source have not been translated
-  // TODO: Add validation of scratch-blocks placeholders
+
+  // Check scratch-blocks numeric placeholders like '%1'
+  const msgPlaceholdersNumeric: string[] = msgText.match(/%[0-9]+/g) ?? []
+  const srcPlaceholdersNumeric: string[] = srcText.match(/%[0-9]+/g) ?? []
+  if (!sameItems(msgPlaceholdersNumeric, srcPlaceholdersNumeric)) {
+    return false
+  }
+
   return true
 }
 
@@ -57,7 +87,7 @@ const validMessage = (message: TransifexEditorString, source: TransifexEditorStr
  * @param translation.translations - the translations to validate
  * @param source - the source strings for the translations
  */
-const validateTranslations = (
+export const validateTranslations = (
   { locale, translations }: { locale: string; translations: TransifexEditorStrings },
   source: TransifexEditorStrings,
 ) => {
@@ -73,5 +103,3 @@ const validateTranslations = (
     ),
   )
 }
-
-export { validateTranslations, validMessage }
