@@ -50,7 +50,7 @@ const parseIntOrThrow = (str: string, radix: number) => {
  * Pull metadata from Transifex for the scratch-help project
  * @returns Promise for a results object containing:
  * languages - array of supported languages
- * folders - array of tx resources corrsponding to Freshdesk folders
+ * folders - array of tx resources corresponding to Freshdesk folders
  * names - array of tx resources corresponding to the Freshdesk metadata
  */
 export const getInputs = async () => {
@@ -149,14 +149,18 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
  * @param  locale locale to pull and submit to Freshdesk
  */
 export const localizeFolder = async (folderAttributes: TransifexResourceObject, locale: string) => {
-  await txPull<FreshdeskFolderInTransifex>(TX_PROJECT, folderAttributes.attributes.slug, locale, 'default')
-    .then(data => serializeFolderSave(data, locale))
-    .catch(e => {
-      process.stdout.write(
-        `Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`,
-      )
-      process.exitCode = 1 // not ok
-    })
+  try {
+    const data = await txPull<FreshdeskFolderInTransifex>(
+      TX_PROJECT,
+      folderAttributes.attributes.slug,
+      locale,
+      'default',
+    )
+    await serializeFolderSave(data, locale)
+  } catch (e) {
+    process.stdout.write(`Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
+    process.exitCode = 1 // not ok
+  }
 }
 
 /**
