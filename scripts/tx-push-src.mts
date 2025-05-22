@@ -1,5 +1,4 @@
-#!/usr/bin/env node
-
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to upload a source en.json file to a particular transifex project resource.
@@ -7,10 +6,10 @@
  * the person running the script has the the TX_TOKEN environment variable set to an api
  * token that has developer access.
  */
-
-const fs = require('fs')
-const path = require('path')
-const { txPush, txCreateResource } = require('../lib/transifex.js')
+import fs from 'fs'
+import path from 'path'
+import { TransifexStrings } from './lib/transifex-formats.mts'
+import { txPush, txCreateResource, JsonApiException } from './lib/transifex.mts'
 
 const args = process.argv.slice(2)
 
@@ -34,11 +33,10 @@ if (args.length < 3 || !process.env.TX_TOKEN) {
 const PROJECT = args[0]
 const RESOURCE = args[1]
 
-let en = fs.readFileSync(path.resolve(args[2]))
-en = JSON.parse(en)
+const en = JSON.parse(fs.readFileSync(path.resolve(args[2]), 'utf8')) as TransifexStrings<unknown>
 
 // get the correct resource file type based on transifex project/repo and resource
-const getResourceType = (project, resource) => {
+const getResourceType = (project: string, resource: string) => {
   if (project === 'scratch-website') {
     // all the resources are KEYVALUEJSON
     return 'KEYVALUEJSON'
@@ -66,21 +64,18 @@ const getResourceType = (project, resource) => {
     // all the resources are Chrome format json files
     return 'CHROME'
   }
-  process.stdout.write(`Error - Unknown resource type for:\n`)
-  process.stdout.write(`  Project: ${project}, resource: ${resource}\n`)
-  process.exit(1)
+
+  throw new Error(`Error - Unknown resource type for:\n  Project: ${project}, resource: ${resource}\n`)
 }
 
 // update Transifex with English source
 const pushSource = async function () {
   try {
     await txPush(PROJECT, RESOURCE, en)
-  } catch (err) {
+  } catch (errUnknown) {
+    const err = errUnknown as JsonApiException
     if (err.statusCode !== 404) {
-      process.stdout.write(`Transifex Error: ${err.message}\n`)
-      process.stdout.write(`Transifex Error ${err.response.statusCode.toString()}: ${err.response.body}\n`)
-      process.exitCode = 1
-      return
+      throw err
     }
     // file not found - create it, but also give message
     process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`)
@@ -92,9 +87,7 @@ const pushSource = async function () {
       content: en,
     }
     await txCreateResource(PROJECT, resourceData)
-    // eslint-disable-next-line require-atomic-updates -- I promise that `process` won't change across `await`
-    process.exitCode = 0
   }
 }
 
-pushSource()
+await pushSource()

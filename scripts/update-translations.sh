@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # script for syncing translations from transifex and comitting the changes.
 
@@ -7,7 +7,7 @@ set -ev
 
 npm run pull:editor
 npm run pull:www
-npm run test 
+npm run test
 
 # commit any updates and push. Build and release should happen on the push not here.
 git add .

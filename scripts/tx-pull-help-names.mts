@@ -1,13 +1,14 @@
-#!/usr/bin/env node
-
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to pull scratch-help translations from transifex and push to FreshDesk.
  */
+import { getInputs, saveItem, localizeNames } from './lib/help-utils.mts'
 
 const args = process.argv.slice(2)
+
 const usage = `
- Pull knowledge base articles from transifex and push to FreshDesk. Usage:
+ Pull knowledge base category and folder names from transifex and push to FreshDesk. Usage:
    node tx-pull-help.js
    NOTE:
    FRESHDESK_TOKEN environment variable needs to be set to a FreshDesk API key with
@@ -21,14 +22,6 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
   process.exit(1)
 }
 
-const { getInputs, saveItem, localizeFolder } = require('./help-utils.js')
-
-getInputs()
-  .then(([languages, folders]) => {
-    process.stdout.write('Processing articles pulled from Transifex\n')
-    return folders.map(item => saveItem(item, languages, localizeFolder))
-  })
-  .catch(e => {
-    process.stdout.write(`Error: ${e.message}\n`)
-    process.exitCode = 1 // not ok
-  })
+const { languages, names } = await getInputs()
+console.log('Process Category and Folder Names pulled from Transifex')
+await Promise.all(names.map(item => saveItem(item, languages, localizeNames)))

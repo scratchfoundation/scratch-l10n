@@ -1,9 +1,9 @@
-#!/usr/bin/env node
-
+#!/usr/bin/env tsx
 /**
  * @file
  * Script to pull scratch-help translations from transifex and push to FreshDesk.
  */
+import { getInputs, saveItem, localizeFolder, debugFolder } from './lib/help-utils.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -21,8 +21,6 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length === 0) 
   process.exit(1)
 }
 
-const { getInputs, saveItem, localizeFolder, debugFolder } = require('./help-utils.js')
-
 let locale = args[0]
 let debug = false
 if (locale === '-d') {
@@ -31,12 +29,6 @@ if (locale === '-d') {
 }
 const saveFn = debug ? debugFolder : localizeFolder
 
-getInputs()
-  .then(([, folders]) => {
-    process.stdout.write('Processing articles pulled from Transifex\n')
-    return folders.map(item => saveItem(item, [locale], saveFn))
-  })
-  .catch(e => {
-    process.stdout.write(`Error: ${e.message}\n`)
-    process.exitCode = 1 // not ok
-  })
+const { folders } = await getInputs()
+console.log('Processing articles pulled from Transifex')
+await Promise.all(folders.map(item => saveItem(item, [locale], saveFn)))
