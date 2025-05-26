@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.252](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.251...v5.0.252) (2025-05-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @transifex/api to v7.1.4 ([#640](https://github.com/scratchfoundation/scratch-l10n/issues/640)) ([7b1a5c7](https://github.com/scratchfoundation/scratch-l10n/commit/7b1a5c7f755f48f414575ef6909f6dc9f85c3e54))
+
 ## [5.0.251](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.250...v5.0.251) (2025-05-25)
 
 
