@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.262](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.261...v5.0.262) (2025-06-05)
+
+
+### Bug Fixes
+
+* pull new editor translations from Transifex ([ad91f5d](https://github.com/scratchfoundation/scratch-l10n/commit/ad91f5d8d96fb644f7415ed7fb428cfd28379c91))
+
 ## [5.0.261](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.260...v5.0.261) (2025-06-04)
 
 
