@@ -120,6 +120,9 @@ const customLocales = {
   },
 }
 
+/**
+ * @type {Record<string,string>}
+ */
 const localeMap = {
   'aa-dj': 'aa_DJ',
   'es-419': 'es_419',

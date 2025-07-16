@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env tsx
 /*
 Generates locales/<component>-msgs.js for each component (gui, etc) from  the
 current translation files for each language for that component
@@ -39,18 +39,27 @@ Missing locales are ignored, react-intl will use the default messages for them.
  */
 import * as fs from 'fs'
 import defaultsDeep from 'lodash.defaultsdeep'
-import mkdirp from 'mkdirp'
+import { mkdirp } from 'mkdirp'
 import * as path from 'path'
 import locales from '../src/supported-locales.mjs'
+import { TransifexEditorStrings } from './lib/validate.mts'
 
 const MSGS_DIR = './locales/'
 mkdirp.sync(MSGS_DIR)
-const missingLocales = []
 
-const combineJson = component =>
-  Object.keys(locales).reduce((collection, lang) => {
+const missingLocales: string[] = []
+
+/**
+ * For a given component, load translation data from multiple locales and merge all of that into one translation map.
+ * @param component - the name of an editor component
+ * @returns translation data for the requested component
+ */
+const combineJson = (component: string) =>
+  Object.keys(locales).reduce((collection: Record<string, TransifexEditorStrings>, lang) => {
     try {
-      const langData = JSON.parse(fs.readFileSync(path.resolve('editor', component, lang + '.json'), 'utf8'))
+      const langData = JSON.parse(
+        fs.readFileSync(path.resolve('editor', component, lang + '.json'), 'utf8'),
+      ) as TransifexEditorStrings
       collection[lang] = langData
     } catch {
       missingLocales.push(component + ':' + lang + '\n')
