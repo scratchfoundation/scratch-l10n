@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.309...v6.0.0) (2025-07-16)
+
+
+### Bug Fixes
+
+* check placeholder names but not extended plural info ([65d67eb](https://github.com/scratchfoundation/scratch-l10n/commit/65d67eb3014620e39bc7ff81243dbf7ba6b28711))
+* disable numeric placeholder validation ([65ffd90](https://github.com/scratchfoundation/scratch-l10n/commit/65ffd90e20d31de368cb2d7364cfe53b90c59b4b))
+* fix incorrect placeholder ([332e9b7](https://github.com/scratchfoundation/scratch-l10n/commit/332e9b7931d89440dfd50ddf75c1679ae2c29e8d))
+* fix more incorrect placeholders ([fe6680d](https://github.com/scratchfoundation/scratch-l10n/commit/fe6680d931572039b5dfb62071377f17c9136436))
+* make validation failure message easier to read ([42c13a3](https://github.com/scratchfoundation/scratch-l10n/commit/42c13a32b93dffdba6f640b3807739bcad94d7db))
+* use top-level "await" to make sure exceptions show ([0385c16](https://github.com/scratchfoundation/scratch-l10n/commit/0385c1602b44fa5ad8b349adb1b7c9f24197647e))
+
+
+* refactor!: use TypeScript and fix bugs in scripts/ ([fc1e381](https://github.com/scratchfoundation/scratch-l10n/commit/fc1e38186b484e5206e724a9ab2866c26f493ea3))
+
+
+### Features
+
+* validate placeholders more thoroughly ([accefc6](https://github.com/scratchfoundation/scratch-l10n/commit/accefc6e9144898eb865a2c626211589f5c1b7de))
+
+
+### Performance Improvements
+
+* replace batch mapping with pool mapping ([b605020](https://github.com/scratchfoundation/scratch-l10n/commit/b605020d95359f55e395b989befd6758036ee02b))
+
+
+### BREAKING CHANGES
+
+* Code under `scripts/` is now TypeScript and runs using `tsx`. This _shouldn't_
+break anyone, but in theory it could...
+
+The files under `scripts/` now use TypeScript, which exposed quite a few bugs. They're configured to
+run with `tsx` so we don't need a build step.
+
+Some of the common changes:
+- Some functions returning promises were called without `await` or `.then()`, which meant that
+  exceptions thrown by them were being ignored. I've added `await` to all cases that I found. I
+  changed some functions and promise chains to use `async` instead, especially where it's easier to
+  read and/or easier to get exceptions right.
+- Most Transifex objects have a property called `attributes`. Some of our functions tried to access
+  properties of `attributes` as if they were properties of the Transifex object directly (`o.foo`
+  instead of `o.attributes.foo`). TypeScript helps quite a bit with finding this kind of error.
+- Added `'utf8'` parameter to `fs.readFile` and `fs.readFileSync` in several places. We were already
+  treating the return value as a string (usually passing it to `JSON.parse`), but without specifying
+  the text encoding, the actual return value was a buffer. Adding the text encoding parameter makes
+  our usage type-correct.
+- In some cases, correct code was hard to read since it wasn't clear what type of data was being
+  handled. Adding type annotations, plus a few comments here and there, should help with
+  understanding the code in the future. Some placeholder comments were removed or filled in.
+
 ## [5.0.309](https://github.com/scratchfoundation/scratch-l10n/compare/v5.0.308...v5.0.309) (2025-07-16)
 
 
