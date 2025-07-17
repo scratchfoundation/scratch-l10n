@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.2...v6.0.3) (2025-07-17)
+
+
+### Bug Fixes
+
+* **deps:** move script dependencies from devDependencies ([a2f84e8](https://github.com/scratchfoundation/scratch-l10n/commit/a2f84e814aa2614f2215e53878cd06babd93fcc9))
+
 ## [6.0.2](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.1...v6.0.2) (2025-07-17)
 
 
