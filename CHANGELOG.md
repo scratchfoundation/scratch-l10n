@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.55](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.54...v6.0.55) (2025-09-30)
+
+
+### Bug Fixes
+
+* **deps:** update dependency tsx to v4.20.6 ([#710](https://github.com/scratchfoundation/scratch-l10n/issues/710)) ([4723b15](https://github.com/scratchfoundation/scratch-l10n/commit/4723b1554fc51f69ff60012705a79d648cf1e1c0))
+
 ## [6.0.54](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.53...v6.0.54) (2025-09-30)
 
 
