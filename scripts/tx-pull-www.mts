@@ -9,10 +9,7 @@
 import fs from 'fs/promises'
 import { mkdirp } from 'mkdirp'
 import path from 'path'
-import locales, { localeMap } from '../src/supported-locales.mjs'
-import { poolMap } from './lib/concurrent.mts'
-import { ProgressLogger } from './lib/progress-logger.mjs'
-import { txPull, txResources } from './lib/transifex.mts'
+import { pullAndValidateProject } from './lib/pull-and-validate.mts'
 
 const args = process.argv.slice(2)
 
@@ -37,68 +34,34 @@ if (!process.env.TX_TOKEN || args.length < 1) {
 const PROJECT = 'scratch-website'
 const OUTPUT_DIR = path.resolve(args[0])
 // const MODE = {mode: 'reviewed'}; // default is everything for www
-const CONCURRENCY_LIMIT = 36
 
-const lang = args.length === 2 ? args[1] : ''
+const lang = args.length === 2 ? args[1] : undefined
+const validationResults = await pullAndValidateProject({
+  project: PROJECT,
+  selectedLocales: lang,
+})
 
-const getLocaleData = async function (item: { locale: string; resource: string }) {
-  const locale = item.locale
-  const resource = item.resource
-  const txLocale = localeMap[locale] || locale
+for (const [resourceName, resource] of Object.entries(validationResults.allStrings)) {
+  for (const [locale, translations] of Object.entries(resource)) {
+    const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resourceName}`
+    const fileName = `${txOutdir}/${locale}.json`
 
-  const translations = await txPull(PROJECT, resource, txLocale)
-
-  const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resource}`
-  const fileName = `${txOutdir}/${locale}.json`
-
-  try {
-    mkdirp.sync(txOutdir)
-    await fs.writeFile(fileName, JSON.stringify(translations, null, 4))
-
-    return {
-      resource,
-      locale,
-      fileName,
-    }
-  } catch (e) {
-    ;(e as Error).cause = {
-      resource,
-      locale,
-      translations,
-      txOutdir,
-      fileName,
-    }
-    throw e
-  }
-}
-
-const expandResourceFiles = (resources: string[]) => {
-  const items = []
-  for (const resource of resources) {
-    if (lang) {
-      items.push({ resource: resource, locale: lang })
-    } else {
-      for (const locale of Object.keys(locales)) {
-        items.push({ resource: resource, locale: locale })
-      }
-    }
-  }
-  return items
-}
-
-const pullTranslations = async function () {
-  const resources = await txResources(PROJECT)
-  const allFiles = expandResourceFiles(resources)
-
-  const progress = new ProgressLogger(allFiles.length)
-
-  await poolMap(allFiles, CONCURRENCY_LIMIT, async item => {
     try {
-      await getLocaleData(item)
-    } finally {
-      progress.increment()
+      mkdirp.sync(txOutdir)
+      await fs.writeFile(fileName, JSON.stringify(translations, null, 4))
+    } catch (e) {
+      ;(e as Error).cause = {
+        resourceName,
+        locale,
+        translations,
+        txOutdir,
+        fileName,
+      }
+      throw e
     }
-  })
+  }
 }
 
-await pullTranslations()
+if (validationResults.messages.length > 0) {
+  console.error(validationResults.messages.join('\n\n'))
+}

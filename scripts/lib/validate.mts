@@ -101,7 +101,61 @@ export const validateTranslations = (
   sourceKeys.forEach(item =>
     assert(
       validMessage(translations[item], source[item]),
-      `locale ${locale} / item ${item}: message validation failed:\n  msg: ${getMessageText(translations[item])}\n  src: ${getMessageText(source[item])}`,
+      [
+        `locale ${locale} / item ${item}: message validation failed:`,
+        `  msg: ${getMessageText(translations[item])}`,
+        `  src: ${getMessageText(source[item])}`,
+      ].join('\n'),
     ),
   )
+}
+
+/**
+ * Validate and filter translations.
+ * WARNING: Modifies the translations object in place.
+ * @param locale - the Transifex locale, for error reporting
+ * @param translations - the translations to validate and filter
+ * @param source - the source strings for the translations
+ * @returns a list of messages about errors encountered during validation. Every removed translation will have a
+ * message. Some messages may not correspond to removed translations (e.g., when the number of keys differ).
+ */
+export const filterInvalidTranslations = (
+  locale: string,
+  translations: TransifexEditorStrings,
+  source: TransifexEditorStrings,
+): string[] => {
+  const messages: string[] = []
+
+  const sourceKeys = Object.keys(source)
+
+  const transKeys = Object.keys(translations).filter(item => {
+    if (!sourceKeys.includes(item)) {
+      messages.push(`locale ${locale} has key ${item} not in the source`)
+      return false
+    }
+    return true
+  })
+
+  sourceKeys.forEach(item => {
+    if (!transKeys.includes(item)) {
+      messages.push(`locale ${locale} is missing key ${item}`)
+    }
+  })
+
+  transKeys.forEach(item => {
+    if (!validMessage(translations[item], source[item])) {
+      messages.push(
+        [
+          `locale ${locale} / item ${item}: message validation failed:`,
+          `  msg: ${getMessageText(translations[item])}`,
+          `  src: ${getMessageText(source[item])}`,
+        ].join('\n'),
+      )
+
+      // fall back to source message
+      translations[item] = source[item]
+    }
+  })
+
+  return messages
 }
