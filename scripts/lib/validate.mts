@@ -1,4 +1,3 @@
-import assert from 'assert'
 import parse from 'format-message-parse'
 import {
   TransifexStringChrome,
@@ -81,33 +80,6 @@ export const validMessage = (message: TransifexEditorString, source: TransifexEd
   // }
 
   return true
-}
-
-/**
- * @param translation - the translations to validate and their corresponding source strings
- * @param translation.locale - the Transifex locale, for error reporting
- * @param translation.translations - the translations to validate
- * @param source - the source strings for the translations
- */
-export const validateTranslations = (
-  { locale, translations }: { locale: string; translations: TransifexEditorStrings },
-  source: TransifexEditorStrings,
-) => {
-  const transKeys = Object.keys(translations)
-  const sourceKeys = Object.keys(source)
-  assert.strictEqual(transKeys.length, sourceKeys.length, `locale ${locale} has a different number of message keys`)
-  transKeys.forEach(item => assert(sourceKeys.includes(item), `locale ${locale} has key ${item} not in the source`))
-  sourceKeys.forEach(item => assert(transKeys.includes(item), `locale ${locale} is missing key ${item}`))
-  sourceKeys.forEach(item =>
-    assert(
-      validMessage(translations[item], source[item]),
-      [
-        `locale ${locale} / item ${item}: message validation failed:`,
-        `  msg: ${getMessageText(translations[item])}`,
-        `  src: ${getMessageText(source[item])}`,
-      ].join('\n'),
-    ),
-  )
 }
 
 /**

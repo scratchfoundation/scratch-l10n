@@ -7,7 +7,7 @@ import async from 'async'
 import fs from 'fs'
 import path from 'path'
 import locales from '../src/supported-locales.mjs'
-import { TransifexEditorStrings, validateTranslations } from './lib/validate.mts'
+import { filterInvalidTranslations, TransifexEditorStrings } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -31,11 +31,10 @@ const validate = (locale: string, callback: async.ErrorCallback) => {
     if (err) callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexEditorStrings
-    const translations = {
-      locale: locale,
-      translations: strings,
+    const messages = filterInvalidTranslations(locale, strings, source)
+    if (messages.length > 0) {
+      callback(new Error(`Locale ${locale} has validation errors:\n${messages.join('\n')}`))
     }
-    validateTranslations(translations, source)
   })
 }
 
