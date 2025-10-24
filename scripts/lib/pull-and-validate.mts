@@ -121,7 +121,7 @@ export async function pullAndValidateProject({
         mode,
       })
       for (const message of fileMessages) {
-        // `fileMessage` already contains locale and/or string info if appropriate
+        // `message` already contains locale and/or string info if appropriate
         messages.push(`resource ${resource} / ${message}`)
       }
     } finally {

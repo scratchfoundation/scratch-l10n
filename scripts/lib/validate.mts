@@ -84,7 +84,7 @@ export const validMessage = (message: TransifexEditorString, source: TransifexEd
 
 /**
  * Validate and filter translations.
- * WARNING: Modifies the translations object in place.
+ * WARNING: Modifies the translations object in place by replacing invalid translations with source strings.
  * @param locale - the Transifex locale, for error reporting
  * @param translations - the translations to validate and filter
  * @param source - the source strings for the translations
@@ -103,6 +103,7 @@ export const filterInvalidTranslations = (
   const transKeys = Object.keys(translations).filter(item => {
     if (!sourceKeys.includes(item)) {
       messages.push(`locale ${locale} has key ${item} not in the source`)
+      delete translations[item]
       return false
     }
     return true
