@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.71](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.70...v6.0.71) (2025-10-24)
+
+
+### Bug Fixes
+
+* failing iteration through transifex iterable ([d060894](https://github.com/scratchfoundation/scratch-l10n/commit/d0608944b7e4e91c34363138294d1cc8c42971a3))
+
 ## [6.0.70](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.69...v6.0.70) (2025-10-24)
 
 
