@@ -9,7 +9,7 @@ import glob from 'glob'
 import path from 'path'
 import locales from '../src/supported-locales.mjs'
 import { TransifexStringsKeyValueJson, TransifexStrings } from './lib/transifex-formats.mts'
-import { validateTranslations } from './lib/validate.mts'
+import { filterInvalidTranslations } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -37,11 +37,10 @@ const validate = (localeData: LocaleData, callback: async.ErrorCallback) => {
     if (err) callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexStringsKeyValueJson
-    const translations = {
-      locale: localeData.locale,
-      translations: strings,
+    const messages = filterInvalidTranslations(localeData.locale, strings, localeData.sourceData)
+    if (messages.length > 0) {
+      callback(new Error(`Locale ${localeData.locale} has validation errors:\n${messages.join('\n')}`))
     }
-    validateTranslations(translations, localeData.sourceData)
   })
 }
 
