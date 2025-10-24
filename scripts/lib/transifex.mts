@@ -39,11 +39,8 @@ transifexApi.setup({
  */
 const collectAll = async function <T extends JsonApiResource>(collection: Collection): Promise<T[]> {
   await collection.fetch() // fetch the first page if it hasn't already been fetched
-  console.log('Items that were fetched:');
-  console.log(collection);
-  console.log(collection.all());
   const collected: T[] = []
-  for (const item of collection.all()) {
+  for await (const item of collection.all() as unknown as AsyncIterable<JsonApiResource>) {
     collected.push(item as T)
   }
   return collected
