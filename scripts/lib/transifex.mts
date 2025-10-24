@@ -40,7 +40,10 @@ transifexApi.setup({
 const collectAll = async function <T extends JsonApiResource>(collection: Collection): Promise<T[]> {
   await collection.fetch() // fetch the first page if it hasn't already been fetched
   const collected: T[] = []
-  for (const item of collection.all()) {
+  // According to `transifexApi.d.ts`, `all()` returns an `Iterable<JsonApiResource>`.
+  // However, that's not the case in practice; it actually returns an `AsyncGenerator`,
+  // hence the need `for await` (pun slightly intended) and the ugly cast.
+  for await (const item of collection.all() as unknown as AsyncIterable<JsonApiResource>) {
     collected.push(item as T)
   }
   return collected
