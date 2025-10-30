@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.75...v6.1.0) (2025-10-30)
+
+
+### Bug Fixes
+
+* apply suggestions from code review ([19fb2c4](https://github.com/scratchfoundation/scratch-l10n/commit/19fb2c424025360955d64b2dec84b22c3bf9c19d))
+
+
+### Features
+
+* continue after validation error ([08be90e](https://github.com/scratchfoundation/scratch-l10n/commit/08be90e3dc362fb0104e29cb96fcd60e8497b6a8))
+
 ## [6.0.75](https://github.com/scratchfoundation/scratch-l10n/compare/v6.0.74...v6.0.75) (2025-10-30)
 
 
