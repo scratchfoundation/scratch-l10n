@@ -19,6 +19,7 @@ permissions:
   pages: write # deploy to GitHub Pages
   issues: write # comment on released issues
   pull-requests: write # comment on released pull requests
+  id-token: write # allows GHA to generate OIDC tokens
 
 jobs:
   build-and-deploy:
@@ -53,6 +54,5 @@ jobs:
 
       - name: Run semantic-release
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx --no -- semantic-release
