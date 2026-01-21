@@ -32,12 +32,15 @@ jobs:
           node-version-file: '.nvmrc'
 
       - name: Info
+        # https://docs.github.com/en/actions/reference/security/secure-use#use-an-intermediate-environment-variable
+        env:
+          GH_HEAD_REF: ${{ github.head_ref }}
         run: |
           cat <<EOF
           Node version: $(node --version)
           NPM version: $(npm --version)
           GitHub ref: ${{ github.ref }}
-          GitHub head ref: ${{ github.head_ref }}
+          GitHub head ref: ${GH_HEAD_REF}
           EOF
 
       - name: Install dependencies
