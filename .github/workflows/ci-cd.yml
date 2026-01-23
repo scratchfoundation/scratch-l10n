@@ -27,7 +27,7 @@ jobs:
       pages: write # deploy to GitHub Pages
       pull-requests: write # comment on released pull requests
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
         with:
           persist-credentials: false # automatic GITHUB_TOKEN would interfere with custom one in semantic-release step
 
