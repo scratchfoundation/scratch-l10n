@@ -101,6 +101,10 @@ const customLocales = {
     locale: 'ht',
     parentLocale: 'fr',
   },
+    hyw: {
+    locale: 'hyw',
+    parentLocale: 'hyw',
+  },
   oc: {
     locale: 'oc',
     parentLocale: 'fr',
