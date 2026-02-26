@@ -1,0 +1,30 @@
+name: Report Scheduled Failure
+description: Reports failure of a scheduled workflow run to Slack
+
+inputs:
+  slack-webhook:
+    description: Slack incoming webhook URL
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Report failure of a scheduled run
+      uses: slackapi/slack-github-action@v2.1.1
+      with:
+        webhook: ${{ inputs.slack-webhook }}
+        webhook-type: incoming-webhook
+        # Try Slack's "Block Kit Builder" to experiment with message formatting:
+        # https://app.slack.com/block-kit-builder/
+        # The top-level "text" field is used in contexts where blocks are not supported, like mobile notifications.
+        payload: |
+          text: "${{ github.workflow }} failed for ${{ github.repository }}."
+          blocks:
+            - type: "section"
+              text:
+                type: "mrkdwn"
+                text: "${{ github.workflow }} failed for ${{ github.repository }}."
+            - type: "section"
+              text:
+                type: "mrkdwn"
+                text: "Please check the <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|workflow run> for details."

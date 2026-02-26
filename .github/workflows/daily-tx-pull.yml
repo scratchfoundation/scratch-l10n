@@ -52,3 +52,8 @@ jobs:
             git commit -m "fix: pull new editor translations from Transifex"
             git push
           fi
+
+      - uses: ./.github/actions/report-scheduled-failure
+        if: failure() && github.event_name == 'schedule'
+        with:
+          slack-webhook: ${{ secrets.SLACK_WEBHOOK_ENGINEERING }}
