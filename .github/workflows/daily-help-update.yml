@@ -38,3 +38,8 @@ jobs:
           FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
         run: npm run sync:help
+
+      - uses: ./.github/actions/report-scheduled-failure
+        if: failure() && github.event_name == 'schedule'
+        with:
+          slack-webhook: ${{ secrets.SLACK_WEBHOOK_ENGINEERING }}
