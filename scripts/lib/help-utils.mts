@@ -2,9 +2,9 @@
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
-import { promises as fsPromises } from 'fs'
+import { promises as fsPromises, appendFileSync } from 'fs'
 import { mkdirp } from 'mkdirp'
-import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus } from './freshdesk-api.mts'
+import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
 import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
@@ -46,6 +46,13 @@ const parseIntOrThrow = (str: string, radix: number) => {
   return num
 }
 
+const emitWarning = (warning: string) => {
+  console.warn(warning)
+  if (process.env.WARNINGS_FILE) {
+    appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
+  }
+}
+
 /**
  * Pull metadata from Transifex for the scratch-help project
  * @returns Promise for a results object containing:
@@ -76,20 +83,54 @@ export const getInputs = async () => {
 }
 
 /**
+ * Fetch the current set of valid category and folder IDs from Freshdesk.
+ * Used to detect stale entries in Transifex that refer to deleted Freshdesk items.
+ * @returns Promise for an object containing:
+ * validCategoryIds - set of Freshdesk category IDs that currently exist
+ * validFolderIds - set of Freshdesk folder IDs that currently exist
+ */
+export const getValidFreshdeskIds = async () => {
+  const categories = await FD.listCategories()
+  const categoriesWithId = categories.filter((c): c is typeof c & { id: number } => c.id !== undefined)
+  const validCategoryIds = new Set(categoriesWithId.map(c => c.id))
+  const fdFolders: FreshdeskFolder[] = []
+  for (const category of categoriesWithId) {
+    const folders = await FD.listFolders(category)
+    fdFolders.push(...folders)
+  }
+  const validFolderIds = new Set(fdFolders.map(f => f.id).filter((id): id is number => id !== undefined))
+  return { validCategoryIds, validFolderIds }
+}
+
+/**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
  * @param strings - the string data pulled from Transifex
  * @param resource - the `attributes` property of the resource object which contains these strings
  * @param locale - the Transifex locale code corresponding to these strings
+ * @param validIds - set of Freshdesk IDs that currently exist; keys not in this set are skipped
+ * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
  */
 const serializeNameSave = async (
   strings: TransifexStringsKeyValueJson,
   resource: TransifexResourceObject,
   locale: string,
+  validIds: Set<number>,
+  warnedKeys: Set<string>,
 ): Promise<void> => {
   for (const [key, value] of Object.entries(strings)) {
     // key is of the form <name>_<id>
     const words = key.split('_')
     const id = parseIntOrThrow(words[words.length - 1], 10)
+    if (!validIds.has(id)) {
+      const warnedKey = `${resource.attributes.name}:${id}`
+      if (!warnedKeys.has(warnedKey)) {
+        warnedKeys.add(warnedKey)
+        emitWarning(
+          `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
+        )
+      }
+      continue
+    }
     let status
     if (resource.attributes.name === 'categoryNames_json') {
       status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
@@ -131,13 +172,12 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
       const tags = value.tags.string.split(',')
       const validTags = tags.filter(tag => tag.length < 33)
       if (validTags.length !== tags.length) {
-        process.stdout.write(`Warning: tags too long in ${id} for ${locale}\n`)
+        emitWarning(`Warning: tags too long in ${id} for ${locale}`)
       }
       body.tags = validTags
     }
     const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
     if (status === -1) {
-      // eslint-disable-next-line require-atomic-updates -- `process` will not change across `await`
       process.exitCode = 1
     }
   }
@@ -190,10 +230,20 @@ export const debugFolder = async (folderAttributes: TransifexResourceObject, loc
  * Category and Folder names are stored as plain json
  * @param resource Transifex resource json for either CategoryNames or FolderNames
  * @param locale   locale to pull and submit to Freshdesk
+ * @param validCategoryIds - set of Freshdesk category IDs that currently exist
+ * @param validFolderIds - set of Freshdesk folder IDs that currently exist
+ * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
  */
-export const localizeNames = async (resource: TransifexResourceObject, locale: string): Promise<void> => {
+export const localizeNames = async (
+  resource: TransifexResourceObject,
+  locale: string,
+  validCategoryIds: Set<number>,
+  validFolderIds: Set<number>,
+  warnedKeys: Set<string>,
+): Promise<void> => {
+  const validIds = resource.attributes.name === 'categoryNames_json' ? validCategoryIds : validFolderIds
   await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
-    .then(data => serializeNameSave(data, resource, locale))
+    .then(data => serializeNameSave(data, resource, locale, validIds, warnedKeys))
     .catch(e => {
       process.stdout.write(`Error saving ${resource.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
       process.exitCode = 1 // not ok

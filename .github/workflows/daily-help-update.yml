@@ -37,9 +37,27 @@ jobs:
           # Organization-wide secrets
           FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
+          WARNINGS_FILE: ${{ runner.temp }}/sync-help-warnings.txt
         run: npm run sync:help
 
-      - uses: ./.github/actions/report-scheduled-failure
+      - name: Check for warnings
+        id: check-warnings
+        if: success()
+        run: |
+          if [ -s "${{ runner.temp }}/sync-help-warnings.txt" ]; then
+            echo "has_warnings=true" >> $GITHUB_OUTPUT
+            echo "### Sync Help Warnings" >> $GITHUB_STEP_SUMMARY
+            cat "${{ runner.temp }}/sync-help-warnings.txt" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - uses: ./.github/actions/report-scheduled-issue
+        if: steps.check-warnings.outputs.has_warnings == 'true' && github.event_name == 'schedule'
+        with:
+          slack-webhook: ${{ secrets.SLACK_WEBHOOK_ENGINEERING }}
+          event: has warnings
+
+      - uses: ./.github/actions/report-scheduled-issue
         if: failure() && github.event_name == 'schedule'
         with:
           slack-webhook: ${{ secrets.SLACK_WEBHOOK_ENGINEERING }}
+          event: failed
