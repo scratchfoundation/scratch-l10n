@@ -31,13 +31,19 @@ const categoryNames: TransifexStringsKeyValueJson = {}
 const folderNames: TransifexStringsKeyValueJson = {}
 
 /**
- * Generate a transifex id from the name and id field of an objects. Remove spaces and '/'
- * from the name and append '.<id>' Transifex ids (slugs) have a max length of 50. Use at most
- * 30 characters of the name to allow for Freshdesk id, and a suffix like '_json'
- * @param item - data from Freshdesk that includes the name and id of a category or folder
- * @returns generated transifex id
+ * Generate a transifex resource slug from the name and ID of a Freshdesk object.
+ * Strips characters not allowed in Transifex slugs (only `[a-zA-Z0-9_-]` are permitted).
+ * Transifex slugs have a max length of 50; use at most 30 characters of the name to leave
+ * room for the Freshdesk ID and a suffix like '_json'.
+ * @param item - data from Freshdesk that includes the name and ID of a category or folder
+ * @param item.name - the name of the category or folder
+ * @param item.id - the Freshdesk ID; always present on API responses despite the optional type
+ * @returns generated transifex slug
  */
-const makeTxId = (item: FreshdeskFolder) => `${item.name.replace(/[ /]/g, '').slice(0, 30)}_${item.id}`
+const makeTxSlug = (item: { name: string; id?: number }) => {
+  if (item.id == null) throw new Error(`makeTxSlug: item has no id: ${item.name}`)
+  return `${item.name.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30)}_${item.id}`
+}
 
 const txPushResource = async (
   name: string,
@@ -84,7 +90,7 @@ const saveArticles = async (folder: FreshdeskFolder) => {
   await FD.listArticles(folder).then(async json => {
     const txArticles = json.reduce((strings: TransifexStringsStructuredJson, current) => {
       if (current.status === FreshdeskArticleStatus.published) {
-        strings[`${current.id}`] = {
+        strings[String(current.id)] = {
           title: {
             string: current.title,
           },
@@ -93,13 +99,13 @@ const saveArticles = async (folder: FreshdeskFolder) => {
           },
         }
         if (current.tags?.length) {
-          strings[`${current.id}`].tags = { string: current.tags.toString() }
+          strings[String(current.id)].tags = { string: current.tags.toString() }
         }
       }
       return strings
     }, {})
     process.stdout.write(`Push ${folder.name} articles to Transifex\n`)
-    await txPushResource(`${makeTxId(folder)}_json`, txArticles, 'STRUCTURED_JSON')
+    await txPushResource(`${makeTxSlug(folder)}_json`, txArticles, 'STRUCTURED_JSON')
   })
 }
 
@@ -116,14 +122,14 @@ const syncSources = async () => {
       console.dir(json)
       // save category names for translation
       for (const cat of json.values()) {
-        categoryNames[`${makeTxId(cat)}`] = cat.name
+        categoryNames[makeTxSlug(cat)] = cat.name
       }
       return json
     })
     .then(getFolders)
     .then(async data => {
       data.forEach(item => {
-        folderNames[`${makeTxId(item)}`] = item.name
+        folderNames[makeTxSlug(item)] = item.name
       })
       process.stdout.write('Push category and folder names to Transifex\n')
       await Promise.all([

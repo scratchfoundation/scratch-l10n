@@ -9,6 +9,16 @@ import {
 export type TransifexEditorString = TransifexStringChrome | TransifexStringKeyValueJson
 export type TransifexEditorStrings = TransifexStringsChrome | TransifexStringsKeyValueJson
 
+const formatError = (err: unknown): string => {
+  if (err instanceof Error) return err.stack ?? err.message
+  if (typeof err === 'string') return err
+  try {
+    return JSON.stringify(err)
+  } catch {
+    return '[unserializable error]'
+  }
+}
+
 /**
  * filter placeholders out of a message
  * @param message - the message to parse
@@ -58,14 +68,28 @@ function sameItems<T>(a: T[], b: T[]): boolean {
  * @param message - the translated message to validate
  * @param source - the source string for this translated message
  * @returns `false` if the message definitely has a problem, or `true` if the message might be OK.
+ * @throws if ICU parsing fails for a reason other than a `SyntaxError` (e.g. an unexpected error in the parser itself)
  */
 export const validMessage = (message: TransifexEditorString, source: TransifexEditorString): boolean => {
   const msgText = getMessageText(message)
   const srcText = getMessageText(source)
 
   // Check ICU placeholder names (but not extended plural info)
-  const msgPlaceholderNamesICU = placeholders(msgText).map(x => x[0])
-  const srcPlaceholderNamesICU = placeholders(srcText).map(x => x[0])
+  // parse() throws a SyntaxError if the message has invalid ICU syntax (e.g. `{{tosLink}`)
+  // Treat that as invalid so the translation is replaced with the source string instead of crashing.
+  let msgPlaceholderNamesICU: string[]
+  let srcPlaceholderNamesICU: string[]
+  try {
+    msgPlaceholderNamesICU = placeholders(msgText).map(x => x[0])
+    srcPlaceholderNamesICU = placeholders(srcText).map(x => x[0])
+  } catch (err) {
+    // ICU parse error - treat as a validation failure
+    if (err instanceof SyntaxError) {
+      return false
+    }
+    // Some other error we didn't expect - re-throw it
+    throw err
+  }
   if (!sameItems(msgPlaceholderNamesICU, srcPlaceholderNamesICU)) {
     return false
   }
@@ -116,12 +140,21 @@ export const filterInvalidTranslations = (
   })
 
   transKeys.forEach(item => {
-    if (!validMessage(translations[item], source[item])) {
+    let valid: boolean
+    let validationError: unknown
+    try {
+      valid = validMessage(translations[item], source[item])
+    } catch (err) {
+      valid = false
+      validationError = err
+    }
+    if (!valid) {
       messages.push(
         [
           `locale ${locale} / item ${item}: message validation failed:`,
           `  msg: ${getMessageText(translations[item])}`,
           `  src: ${getMessageText(source[item])}`,
+          ...(validationError != null ? [`  error: ${formatError(validationError)}`] : []),
         ].join('\n'),
       )
 
