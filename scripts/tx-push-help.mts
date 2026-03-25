@@ -31,13 +31,14 @@ const categoryNames: TransifexStringsKeyValueJson = {}
 const folderNames: TransifexStringsKeyValueJson = {}
 
 /**
- * Generate a transifex id from the name and id field of an objects. Remove spaces and '/'
- * from the name and append '.<id>' Transifex ids (slugs) have a max length of 50. Use at most
- * 30 characters of the name to allow for Freshdesk id, and a suffix like '_json'
- * @param item - data from Freshdesk that includes the name and id of a category or folder
- * @returns generated transifex id
+ * Generate a transifex resource slug from the name and ID of a Freshdesk object.
+ * Strips characters not allowed in Transifex slugs (only `[a-zA-Z0-9_-]` are permitted).
+ * Transifex slugs have a max length of 50; use at most 30 characters of the name to leave
+ * room for the Freshdesk ID and a suffix like '_json'.
+ * @param item - data from Freshdesk that includes the name and ID of a category or folder
+ * @returns generated transifex slug
  */
-const makeTxId = (item: FreshdeskFolder) => `${item.name.replace(/[ /]/g, '').slice(0, 30)}_${item.id}`
+const makeTxId = (item: FreshdeskFolder) => `${item.name.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30)}_${item.id}`
 
 const txPushResource = async (
   name: string,
