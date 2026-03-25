@@ -177,7 +177,11 @@ export class FreshdeskApi {
       }
       throw new Error(`response not json: ${res.headers.get('content-type')}`)
     }
-    const err = new Error(`response ${res.statusText}`) as HttpError
+    let message = `HTTP ${res.status} ${res.statusText} for ${res.url}`
+    if (res.status === 403) {
+      message += ` -- this item may have been deleted in Freshdesk, or the API key lacks permission.`
+    }
+    const err = new Error(message) as HttpError
     err.code = res.status
     if (res.status === 429) {
       err.retryAfter = res.headers.get('Retry-After')

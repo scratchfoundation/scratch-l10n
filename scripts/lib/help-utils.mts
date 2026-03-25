@@ -4,7 +4,7 @@
  */
 import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
-import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus } from './freshdesk-api.mts'
+import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
 import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
@@ -76,20 +76,54 @@ export const getInputs = async () => {
 }
 
 /**
+ * Fetch the current set of valid category and folder IDs from Freshdesk.
+ * Used to detect stale entries in Transifex that refer to deleted Freshdesk items.
+ * @returns Promise for an object containing:
+ * validCategoryIds - set of Freshdesk category IDs that currently exist
+ * validFolderIds - set of Freshdesk folder IDs that currently exist
+ */
+export const getValidFreshdeskIds = async () => {
+  const categories = await FD.listCategories()
+  const categoriesWithId = categories.filter((c): c is typeof c & { id: number } => c.id !== undefined)
+  const validCategoryIds = new Set(categoriesWithId.map(c => c.id))
+  const fdFolders: FreshdeskFolder[] = []
+  for (const category of categoriesWithId) {
+    const folders = await FD.listFolders(category)
+    fdFolders.push(...folders)
+  }
+  const validFolderIds = new Set(fdFolders.map(f => f.id).filter((id): id is number => id !== undefined))
+  return { validCategoryIds, validFolderIds }
+}
+
+/**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
  * @param strings - the string data pulled from Transifex
  * @param resource - the `attributes` property of the resource object which contains these strings
  * @param locale - the Transifex locale code corresponding to these strings
+ * @param validIds - set of Freshdesk IDs that currently exist; keys not in this set are skipped
+ * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
  */
 const serializeNameSave = async (
   strings: TransifexStringsKeyValueJson,
   resource: TransifexResourceObject,
   locale: string,
+  validIds: Set<number>,
+  warnedKeys: Set<string>,
 ): Promise<void> => {
   for (const [key, value] of Object.entries(strings)) {
     // key is of the form <name>_<id>
     const words = key.split('_')
     const id = parseIntOrThrow(words[words.length - 1], 10)
+    if (!validIds.has(id)) {
+      const warnedKey = `${resource.attributes.name}:${id}`
+      if (!warnedKeys.has(warnedKey)) {
+        warnedKeys.add(warnedKey)
+        process.stdout.write(
+          `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.\n`,
+        )
+      }
+      continue
+    }
     let status
     if (resource.attributes.name === 'categoryNames_json') {
       status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
@@ -190,10 +224,20 @@ export const debugFolder = async (folderAttributes: TransifexResourceObject, loc
  * Category and Folder names are stored as plain json
  * @param resource Transifex resource json for either CategoryNames or FolderNames
  * @param locale   locale to pull and submit to Freshdesk
+ * @param validCategoryIds - set of Freshdesk category IDs that currently exist
+ * @param validFolderIds - set of Freshdesk folder IDs that currently exist
+ * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
  */
-export const localizeNames = async (resource: TransifexResourceObject, locale: string): Promise<void> => {
+export const localizeNames = async (
+  resource: TransifexResourceObject,
+  locale: string,
+  validCategoryIds: Set<number>,
+  validFolderIds: Set<number>,
+  warnedKeys: Set<string>,
+): Promise<void> => {
+  const validIds = resource.attributes.name === 'categoryNames_json' ? validCategoryIds : validFolderIds
   await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
-    .then(data => serializeNameSave(data, resource, locale))
+    .then(data => serializeNameSave(data, resource, locale, validIds, warnedKeys))
     .catch(e => {
       process.stdout.write(`Error saving ${resource.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
       process.exitCode = 1 // not ok
