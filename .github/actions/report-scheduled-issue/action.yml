@@ -1,15 +1,18 @@
-name: Report Scheduled Failure
-description: Reports failure of a scheduled workflow run to Slack
+name: Report Scheduled Issue
+description: Reports failure or warning of a scheduled workflow run to Slack
 
 inputs:
   slack-webhook:
     description: Slack incoming webhook URL
     required: true
+  event:
+    description: Description of what happened, used in the message (e.g. "failed", "has warnings")
+    required: true
 
 runs:
   using: composite
   steps:
-    - name: Report failure of a scheduled run
+    - name: Report issue from a scheduled run
       uses: slackapi/slack-github-action@v2.1.1
       with:
         webhook: ${{ inputs.slack-webhook }}
@@ -18,12 +21,12 @@ runs:
         # https://app.slack.com/block-kit-builder/
         # The top-level "text" field is used in contexts where blocks are not supported, like mobile notifications.
         payload: |
-          text: "${{ github.workflow }} failed for ${{ github.repository }}."
+          text: "${{ github.workflow }} ${{ inputs.event }} for ${{ github.repository }}."
           blocks:
             - type: "section"
               text:
                 type: "mrkdwn"
-                text: "${{ github.workflow }} failed for ${{ github.repository }}."
+                text: "${{ github.workflow }} ${{ inputs.event }} for ${{ github.repository }}."
             - type: "section"
               text:
                 type: "mrkdwn"

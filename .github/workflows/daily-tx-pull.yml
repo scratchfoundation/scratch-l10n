@@ -53,7 +53,8 @@ jobs:
             git push
           fi
 
-      - uses: ./.github/actions/report-scheduled-failure
+      - uses: ./.github/actions/report-scheduled-issue
         if: failure() && github.event_name == 'schedule'
         with:
           slack-webhook: ${{ secrets.SLACK_WEBHOOK_ENGINEERING }}
+          event: failed

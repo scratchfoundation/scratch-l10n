@@ -2,7 +2,7 @@
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
-import { promises as fsPromises } from 'fs'
+import { promises as fsPromises, appendFileSync } from 'fs'
 import { mkdirp } from 'mkdirp'
 import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
@@ -44,6 +44,13 @@ const parseIntOrThrow = (str: string, radix: number) => {
     throw new Error(`Could not parse int safely: ${str}`)
   }
   return num
+}
+
+const emitWarning = (warning: string) => {
+  console.warn(warning)
+  if (process.env.WARNINGS_FILE) {
+    appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
+  }
 }
 
 /**
@@ -118,8 +125,8 @@ const serializeNameSave = async (
       const warnedKey = `${resource.attributes.name}:${id}`
       if (!warnedKeys.has(warnedKey)) {
         warnedKeys.add(warnedKey)
-        process.stdout.write(
-          `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.\n`,
+        emitWarning(
+          `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
         )
       }
       continue
@@ -165,13 +172,12 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
       const tags = value.tags.string.split(',')
       const validTags = tags.filter(tag => tag.length < 33)
       if (validTags.length !== tags.length) {
-        process.stdout.write(`Warning: tags too long in ${id} for ${locale}\n`)
+        emitWarning(`Warning: tags too long in ${id} for ${locale}`)
       }
       body.tags = validTags
     }
     const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
     if (status === -1) {
-      // eslint-disable-next-line require-atomic-updates -- `process` will not change across `await`
       process.exitCode = 1
     }
   }
