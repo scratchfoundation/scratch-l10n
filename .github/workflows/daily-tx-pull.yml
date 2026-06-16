@@ -34,17 +34,30 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Pull editor and www translations
-        run: |
-          npm run pull:editor
-          npm run pull:www
-          npm run test
+      # The pull steps replace any translation that fails validation with the previous translation or the source
+      # text, so the saved files are always valid. They exit non-zero when something was replaced; the validation and
+      # commit steps still run (via `!cancelled()`) so the good translations are committed, but the job ends red to
+      # flag the bad strings for fixing in Transifex.
+      - name: Pull editor translations
+        run: npm run pull:editor
 
+      - name: Pull www translations
+        if: ${{ !cancelled() }}
+        run: npm run pull:www
+
+      - name: Validate translations
+        id: validate
+        if: ${{ !cancelled() }}
+        run: npm run test
+
+      # Commit even when a pull step exited non-zero (only bad strings were replaced). Skip the commit only when
+      # validation actually failed - a problem the pull did not sanitize, which we should not commit.
       - name: Commit translation updates
         id: commit
+        if: ${{ !cancelled() && steps.validate.outcome == 'success' }}
         run: |
-          git config --global user.email $(git log --pretty=format:"%ae" -n1)
-          git config --global user.name $(git log --pretty=format:"%an" -n1)
+          git config --global user.email "$(git log --pretty=format:"%ae" -n1)"
+          git config --global user.name "$(git log --pretty=format:"%an" -n1)"
           git add .
           if git diff --cached --exit-code --quiet; then
             echo "Nothing to commit."

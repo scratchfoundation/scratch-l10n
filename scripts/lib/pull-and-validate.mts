@@ -3,7 +3,7 @@ import { poolMap } from './concurrent.mts'
 import { ProgressLogger } from './progress-logger.mts'
 import { TransifexStringsKeyValueJson } from './transifex-formats.mts'
 import { txPull, txResources } from './transifex.mts'
-import { filterInvalidTranslations, TransifexEditorString } from './validate.mts'
+import { filterInvalidTranslations, TransifexEditorString, TransifexEditorStrings } from './validate.mts'
 
 const CONCURRENCY_LIMIT = 36
 const SOURCE_LOCALE = 'en' // TODO: don't hardcode this
@@ -34,7 +34,10 @@ const expandResourceFiles = (resources: string[], selectedLocales: string[]) => 
  * @param o.resource - The Transifex resource to pull from
  * @param o.locale - The locale to pull
  * @param o.mode - The mode to use when pulling (e.g., "reviewed")
- * @returns A list of messages about errors encountered during validation, if any.
+ * @param o.previous - The previously committed translations for this resource/locale, used as the preferred fallback
+ *   when an incoming translation fails validation
+ * @param o.checkBracketPlaceholders - Whether to require bracket placeholders (e.g. `[PART]`) to be preserved
+ * @returns The messages about validation problems, if any, and the number of translations that were rejected.
  */
 async function pullAndValidateFile({
   allStrings,
@@ -42,14 +45,17 @@ async function pullAndValidateFile({
   resource,
   locale,
   mode,
+  previous,
+  checkBracketPlaceholders,
 }: {
   allStrings: Record<string, Record<string, TransifexStringsKeyValueJson>>
   project: string
   resource: string
   locale: string
   mode?: string
+  previous?: TransifexEditorStrings
+  checkBracketPlaceholders?: boolean
 }) {
-  const messages: string[] = []
   const txLocale = localeMap[locale] || locale
   const fileContent = await txPull<TransifexEditorString>(project, resource, txLocale, mode)
 
@@ -74,9 +80,7 @@ async function pullAndValidateFile({
 
   // some of the validation checks may still be relevant even if locale === SOURCE_LOCALE
   // console.log({ resource, locale, translations, sourceStrings })
-  messages.push(...filterInvalidTranslations(locale, translations, sourceStrings))
-
-  return messages
+  return filterInvalidTranslations(locale, translations, sourceStrings, { previous, checkBracketPlaceholders })
 }
 
 /**
@@ -87,18 +91,27 @@ async function pullAndValidateFile({
  * @param o.mode - The mode to use when pulling translations (e.g., "reviewed").
  * @param o.resources - The resources within the project to pull translations for.
  * @param o.selectedLocales - The locales to pull translations for. Defaults to all supported locales.
- * @returns Translation strings and a list of messages about errors encountered during validation, if any.
+ * @param o.bracketPlaceholderResources - Resources whose bracket tokens (e.g. `[PART]`) are placeholders that must be
+ *   preserved verbatim. Other resources may contain literal brackets in prose, so the check is opt-in per resource.
+ * @param o.loadPrevious - Returns the previously committed translations for a resource/locale, used as the preferred
+ *   fallback when an incoming translation fails validation. Return undefined when there is no previous version.
+ * @returns Translation strings, the messages about validation problems, and `rejected`, the total number of
+ *   translations that failed validation and were replaced with a fallback.
  */
 export async function pullAndValidateProject({
   project,
   resources,
   mode,
   selectedLocales,
+  bracketPlaceholderResources = [],
+  loadPrevious,
 }: {
   project: string
   mode?: string
   resources?: string[]
   selectedLocales?: string | string[]
+  bracketPlaceholderResources?: string[]
+  loadPrevious?: (resource: string, locale: string) => TransifexEditorStrings | undefined
 }) {
   const selectedResources = resources ?? (await txResources(project))
   selectedLocales =
@@ -108,19 +121,23 @@ export async function pullAndValidateProject({
 
   const allStrings: Record<string, Record<string, TransifexStringsKeyValueJson>> = {}
   const messages: string[] = []
+  let rejected = 0
 
   const progress = new ProgressLogger(selectedResources.length + files.length)
 
   const handleFile = async (resource: string, locale: string) => {
     try {
-      const fileMessages = await pullAndValidateFile({
+      const fileResult = await pullAndValidateFile({
         allStrings,
         project,
         resource,
         locale,
         mode,
+        previous: loadPrevious?.(resource, locale),
+        checkBracketPlaceholders: bracketPlaceholderResources.includes(resource),
       })
-      for (const message of fileMessages) {
+      rejected += fileResult.rejected
+      for (const message of fileResult.messages) {
         // `message` already contains locale and/or string info if appropriate
         messages.push(`resource ${resource} / ${message}`)
       }
@@ -138,5 +155,6 @@ export async function pullAndValidateProject({
   return {
     allStrings,
     messages,
+    rejected,
   }
 }

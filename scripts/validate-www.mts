@@ -34,13 +34,14 @@ interface LocaleData {
 
 const validate = (localeData: LocaleData, callback: async.ErrorCallback) => {
   fs.readFile(localeData.localeFileName, 'utf8', (err, data) => {
-    if (err) callback(err)
+    if (err) return callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexStringsKeyValueJson
-    const messages = filterInvalidTranslations(localeData.locale, strings, localeData.sourceData)
+    const { messages } = filterInvalidTranslations(localeData.locale, strings, localeData.sourceData)
     if (messages.length > 0) {
-      callback(new Error(`Locale ${localeData.locale} has validation errors:\n${messages.join('\n')}`))
+      return callback(new Error(`Locale ${localeData.locale} has validation errors:\n${messages.join('\n')}`))
     }
+    callback()
   })
 }
 
@@ -51,11 +52,7 @@ const validateResource = (resource: string, callback: async.ErrorCallback) => {
     localeFileName: `${resource}/${loc}.json`,
     sourceData: source,
   }))
-  async.each(allLocales, validate, err => {
-    if (err) {
-      callback(err)
-    }
-  })
+  async.each(allLocales, validate, callback)
 }
 
 async.each(RESOURCES, validateResource, err => {

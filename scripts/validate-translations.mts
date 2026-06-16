@@ -28,13 +28,14 @@ const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8')) as Tra
 
 const validate = (locale: string, callback: async.ErrorCallback) => {
   fs.readFile(`${JSON_DIR}/${locale}.json`, 'utf8', (err, data) => {
-    if (err) callback(err)
+    if (err) return callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexEditorStrings
-    const messages = filterInvalidTranslations(locale, strings, source)
+    const { messages } = filterInvalidTranslations(locale, strings, source)
     if (messages.length > 0) {
-      callback(new Error(`Locale ${locale} has validation errors:\n${messages.join('\n')}`))
+      return callback(new Error(`Locale ${locale} has validation errors:\n${messages.join('\n')}`))
     }
+    callback()
   })
 }
 

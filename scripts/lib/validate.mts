@@ -40,8 +40,32 @@ const placeholders = (message: string): parse.Placeholder[] =>
   // relevant for this check, so strip them out
   parse(message.replace(/'/g, '')).filter(item => Array.isArray(item))
 
-const getMessageText = (m: TransifexStringKeyValueJson | TransifexStringChrome): string =>
-  typeof m === 'string' ? m : m.message
+const getMessageText = (m: TransifexStringKeyValueJson | TransifexStringChrome | undefined): string =>
+  m == null ? '' : typeof m === 'string' ? m : m.message
+
+// Matches everything inside brackets, and the brackets themselves.
+// e.g. matches '[MOTOR_ID]', '[POWER]' from 'altera a potência de [MOTOR_ID] para [POWER]'
+// These are used as block input placeholders in extension translations and must be preserved verbatim.
+const bracketPlaceholderRegex = /\[.+?\]/g
+
+/**
+ * Find bracket placeholders (e.g. `[PART]`) that exist in the source string but are missing from the translation.
+ * A translation that localizes or drops a placeholder (e.g. `[TEIL]` instead of `[PART]`) breaks the editor, so the
+ * placeholder text must appear verbatim. Shared by {@link validMessage} (pull-time sanitizing) and the standalone
+ * extension-input validator so the two never drift apart.
+ * @param message - the translated message to check
+ * @param source - the source string the translation is derived from
+ * @returns the source placeholders that are absent from the translation (empty if the translation is fine)
+ */
+export const missingBracketPlaceholders = (
+  message: TransifexEditorString | undefined,
+  source: TransifexEditorString | undefined,
+): string[] => {
+  const sourceInputs = getMessageText(source).match(bracketPlaceholderRegex)
+  if (!sourceInputs) return []
+  const translatedInputs: string[] = getMessageText(message).match(bracketPlaceholderRegex) ?? []
+  return sourceInputs.filter(input => !translatedInputs.includes(input))
+}
 
 /**
  * @param a - one array of items
@@ -67,10 +91,16 @@ function sameItems<T>(a: T[], b: T[]): boolean {
 /**
  * @param message - the translated message to validate
  * @param source - the source string for this translated message
+ * @param options - validation options
+ * @param options.checkBracketPlaceholders - also require bracket placeholders (e.g. `[PART]`) to be preserved verbatim
  * @returns `false` if the message definitely has a problem, or `true` if the message might be OK.
  * @throws if ICU parsing fails for a reason other than a `SyntaxError` (e.g. an unexpected error in the parser itself)
  */
-export const validMessage = (message: TransifexEditorString, source: TransifexEditorString): boolean => {
+export const validMessage = (
+  message: TransifexEditorString,
+  source: TransifexEditorString,
+  options: { checkBracketPlaceholders?: boolean } = {},
+): boolean => {
   const msgText = getMessageText(message)
   const srcText = getMessageText(source)
 
@@ -103,24 +133,62 @@ export const validMessage = (message: TransifexEditorString, source: TransifexEd
   //   return false
   // }
 
+  // Check bracket placeholders like '[PART]' (extension block inputs only - see filterInvalidTranslations caller).
+  // Applied opt-in because non-extension resources can contain literal brackets in prose (e.g. www quotes).
+  if (options.checkBracketPlaceholders && missingBracketPlaceholders(message, source).length > 0) {
+    return false
+  }
+
   return true
 }
 
 /**
+ * Like {@link validMessage}, but treats a thrown (unexpected) error as invalid instead of propagating it. Used when
+ * checking a fallback candidate, where any problem simply means "don't use this one".
+ * @param message - the message to validate
+ * @param source - the source string for the message
+ * @param options - validation options, forwarded to {@link validMessage}
+ * @param options.checkBracketPlaceholders - also require bracket placeholders (e.g. `[PART]`) to be preserved verbatim
+ * @returns true if the message validates without throwing
+ */
+const safeValidMessage = (
+  message: TransifexEditorString,
+  source: TransifexEditorString,
+  options: { checkBracketPlaceholders?: boolean } = {},
+): boolean => {
+  try {
+    return validMessage(message, source, options)
+  } catch {
+    return false
+  }
+}
+
+/**
  * Validate and filter translations.
- * WARNING: Modifies the translations object in place by replacing invalid translations with source strings.
+ * WARNING: Modifies the translations object in place by replacing invalid translations.
+ * An invalid translation is replaced with the previous translation if one is supplied and still valid, otherwise with
+ * the source string. This keeps a known-good earlier translation rather than regressing all the way to English when
+ * only the newest Transifex revision is broken.
  * @param locale - the Transifex locale, for error reporting
  * @param translations - the translations to validate and filter
  * @param source - the source strings for the translations
- * @returns a list of messages about errors encountered during validation. Every removed translation will have a
- * message. Some messages may not correspond to removed translations (e.g., when the number of keys differ).
+ * @param options - validation options
+ * @param options.previous - the previously committed translations for this locale, used as the preferred fallback
+ * @param options.checkBracketPlaceholders - also require bracket placeholders (e.g. `[PART]`) to be preserved;
+ *   enable only for resources whose brackets are placeholders rather than prose (i.e. extensions)
+ * @returns the messages about problems encountered (every replaced translation has one; some messages such as missing
+ * keys do not correspond to a replacement) and `rejected`, the count of translations that failed validation and were
+ * replaced.
  */
 export const filterInvalidTranslations = (
   locale: string,
   translations: TransifexEditorStrings,
   source: TransifexEditorStrings,
-): string[] => {
+  options: { previous?: TransifexEditorStrings; checkBracketPlaceholders?: boolean } = {},
+): { messages: string[]; rejected: number } => {
+  const { previous, checkBracketPlaceholders = false } = options
   const messages: string[] = []
+  let rejected = 0
 
   const sourceKeys = Object.keys(source)
 
@@ -143,12 +211,13 @@ export const filterInvalidTranslations = (
     let valid: boolean
     let validationError: unknown
     try {
-      valid = validMessage(translations[item], source[item])
+      valid = validMessage(translations[item], source[item], { checkBracketPlaceholders })
     } catch (err) {
       valid = false
       validationError = err
     }
     if (!valid) {
+      rejected++
       messages.push(
         [
           `locale ${locale} / item ${item}: message validation failed:`,
@@ -158,10 +227,14 @@ export const filterInvalidTranslations = (
         ].join('\n'),
       )
 
-      // fall back to source message
-      translations[item] = source[item]
+      // Prefer the previous translation if we have one and it still validates; otherwise fall back to the source.
+      const previousTranslation = previous?.[item]
+      const keepPrevious =
+        previousTranslation !== undefined &&
+        safeValidMessage(previousTranslation, source[item], { checkBracketPlaceholders })
+      translations[item] = keepPrevious ? previousTranslation : source[item]
     }
   })
 
-  return messages
+  return { messages, rejected }
 }
