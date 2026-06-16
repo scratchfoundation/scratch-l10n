@@ -31,7 +31,7 @@ const validate = (locale: string, callback: async.ErrorCallback) => {
     if (err) callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexEditorStrings
-    const messages = filterInvalidTranslations(locale, strings, source)
+    const { messages } = filterInvalidTranslations(locale, strings, source)
     if (messages.length > 0) {
       callback(new Error(`Locale ${locale} has validation errors:\n${messages.join('\n')}`))
     }

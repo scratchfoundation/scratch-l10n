@@ -6,10 +6,12 @@
  * has the the TX_TOKEN environment variable set to an api
  * token that has developer access.
  */
+import { readFileSync } from 'fs'
 import fs from 'fs/promises'
 import { mkdirp } from 'mkdirp'
 import path from 'path'
 import { pullAndValidateProject } from './lib/pull-and-validate.mts'
+import { TransifexEditorStrings } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 
@@ -36,9 +38,21 @@ const OUTPUT_DIR = path.resolve(args[0])
 // const MODE = {mode: 'reviewed'}; // default is everything for www
 
 const lang = args.length === 2 ? args[1] : undefined
+
+// www resources live in per-resource subdirectories; the previous translation is whatever is on disk before we
+// overwrite it below.
+const previousFileName = (resource: string, locale: string) => `${OUTPUT_DIR}/${PROJECT}.${resource}/${locale}.json`
+
 const validationResults = await pullAndValidateProject({
   project: PROJECT,
   selectedLocales: lang,
+  loadPrevious: (resource, locale) => {
+    try {
+      return JSON.parse(readFileSync(previousFileName(resource, locale), 'utf8')) as TransifexEditorStrings
+    } catch {
+      return undefined
+    }
+  },
 })
 
 for (const [resourceName, resource] of Object.entries(validationResults.allStrings)) {
@@ -64,4 +78,13 @@ for (const [resourceName, resource] of Object.entries(validationResults.allStrin
 
 if (validationResults.messages.length > 0) {
   console.error(validationResults.messages.join('\n\n'))
+}
+
+// Good translations are always written above; signal failure (after saving) so the bad strings get fixed in Transifex.
+if (validationResults.rejected > 0) {
+  console.error(
+    `\n${validationResults.rejected} translation(s) failed validation and were replaced with the previous ` +
+      `translation or the source text. Fix them in Transifex.`,
+  )
+  process.exitCode = 1
 }
