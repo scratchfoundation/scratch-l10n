@@ -19,6 +19,9 @@ permissions:
 jobs:
   daily-help-update:
     runs-on: ubuntu-latest
+    # Backstop only: the sync should finish in a few minutes. The Transifex client code bounds its
+    # own waits, so this guards against an unexpected hang rather than being the primary timeout.
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
