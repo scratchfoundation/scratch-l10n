@@ -6,6 +6,7 @@
 import FreshdeskApi, { FreshdeskArticleStatus, FreshdeskCategory, FreshdeskFolder } from './lib/freshdesk-api.mts'
 import { TransifexStringsKeyValueJson, TransifexStringsStructuredJson } from './lib/transifex-formats.mts'
 import { txPush, txCreateResource, JsonApiException } from './lib/transifex.mts'
+import { emitWarning } from './lib/warnings.mts'
 
 const args = process.argv.slice(2)
 
@@ -50,6 +51,15 @@ const txPushResource = async (
   articles: TransifexStringsStructuredJson | TransifexStringsKeyValueJson,
   type: string,
 ) => {
+  // Transifex rejects an upload with no extractable strings (`parse_error: No strings could be
+  // extracted`). That used to leave the upload stuck in a non-`succeeded` state forever, hanging
+  // the whole sync. An empty resource almost always means a Freshdesk folder with no published
+  // articles, which is a content situation rather than a sync failure: warn and skip it.
+  if (Object.keys(articles).length === 0) {
+    emitWarning(`Skipping Transifex resource "${name}": no strings to push (empty content).`)
+    return
+  }
+
   const resourceData = {
     slug: name,
     name: name,
