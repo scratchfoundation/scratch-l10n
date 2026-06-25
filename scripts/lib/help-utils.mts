@@ -2,12 +2,13 @@
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
-import { promises as fsPromises, appendFileSync } from 'fs'
+import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
 import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
 import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
+import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
@@ -44,13 +45,6 @@ const parseIntOrThrow = (str: string, radix: number) => {
     throw new Error(`Could not parse int safely: ${str}`)
   }
   return num
-}
-
-const emitWarning = (warning: string) => {
-  console.warn(warning)
-  if (process.env.WARNINGS_FILE) {
-    appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
-  }
 }
 
 /**
