@@ -12,7 +12,7 @@ export interface HttpError extends Error {
 }
 
 /**
- * Properties to provide when creating a Category throught the Freshdesk API. Also works for updates.
+ * Properties to provide when creating a Category through the Freshdesk API. Also works for updates.
  * @see https://developers.freshdesk.com/api/#create_solution_category
  */
 export interface FreshdeskCategoryCreate {
@@ -38,7 +38,7 @@ export interface FreshdeskCategory extends FreshdeskCategoryCreate {
 }
 
 /**
- * Properties to provide when creating a Folder throught the Freshdesk API. Also works for updates.
+ * Properties to provide when creating a Folder through the Freshdesk API. Also works for updates.
  * @see https://developers.freshdesk.com/api/#create_solution_folder
  */
 export interface FreshdeskFolderCreate {
@@ -89,7 +89,7 @@ export enum FreshdeskFolderVisibility {
 }
 
 /**
- * Properties to provide when creating an Article throught the Freshdesk API. Also works for updates.
+ * Properties to provide when creating an Article through the Freshdesk API. Also works for updates.
  * @see https://developers.freshdesk.com/api/#create_solution_article
  */
 export interface FreshdeskArticleCreate {
@@ -166,11 +166,14 @@ export class FreshdeskApi {
   }
 
   /**
-   * Checks the status of a response. If status is not ok, or the body is not JSON, raise exception
+   * Checks the status of a response. If status is not ok, or the body is not JSON, raise exception.
+   * On error, the response body is included in the message: Freshdesk reports the actual reason for
+   * a failure there (for example `{"code":"access_denied","message":"..."}`), so surfacing it turns
+   * an opaque "HTTP 403" into something diagnosable.
    * @param res - The response object
    * @returns the response if it is ok
    */
-  checkStatus(res: Response) {
+  async checkStatus(res: Response) {
     if (res.ok) {
       if (res.headers.get('content-type')?.includes('application/json')) {
         return res
@@ -180,6 +183,12 @@ export class FreshdeskApi {
     let message = `HTTP ${res.status} ${res.statusText} for ${res.url}`
     if (res.status === 403) {
       message += ` -- this item may have been deleted in Freshdesk, or the API key lacks permission.`
+    }
+    // Read the body for the underlying reason. It is safe to consume here because we only reach this
+    // point on error and are about to throw; the caller never reads the body of a failed response.
+    const body = (await res.text().catch(() => '')).trim()
+    if (body) {
+      message += ` -- response: ${body.length > 500 ? `${body.slice(0, 500)}...` : body}`
     }
     const err = new Error(message) as HttpError
     err.code = res.status
@@ -191,7 +200,7 @@ export class FreshdeskApi {
 
   async listCategories(): Promise<FreshdeskCategory[]> {
     const res = await fetch(`${this.baseUrl}/api/v2/solutions/categories`, { headers: this.defaultHeaders })
-    this.checkStatus(res)
+    await this.checkStatus(res)
     return (await res.json()) as FreshdeskCategory[]
   }
 
@@ -199,7 +208,7 @@ export class FreshdeskApi {
     const res = await fetch(`${this.baseUrl}/api/v2/solutions/categories/${category.id}/folders`, {
       headers: this.defaultHeaders,
     })
-    this.checkStatus(res)
+    await this.checkStatus(res)
     return (await res.json()) as FreshdeskFolder[]
   }
 
@@ -207,7 +216,7 @@ export class FreshdeskApi {
     const res = await fetch(`${this.baseUrl}/api/v2/solutions/folders/${folder.id}/articles`, {
       headers: this.defaultHeaders,
     })
-    this.checkStatus(res)
+    await this.checkStatus(res)
     return (await res.json()) as FreshdeskArticle[]
   }
 
@@ -226,7 +235,7 @@ export class FreshdeskApi {
         body: JSON.stringify(body),
         headers: this.defaultHeaders,
       })
-      this.checkStatus(res)
+      await this.checkStatus(res)
       return (await res.json()) as FreshdeskCategory
     } catch (err) {
       const httpError = err as HttpError
@@ -237,7 +246,7 @@ export class FreshdeskApi {
           body: JSON.stringify(body),
           headers: this.defaultHeaders,
         })
-        this.checkStatus(res2)
+        await this.checkStatus(res2)
         return (await res2.json()) as FreshdeskCategory
       }
       if (httpError.code === 429) {
@@ -263,7 +272,7 @@ export class FreshdeskApi {
         body: JSON.stringify(body),
         headers: this.defaultHeaders,
       })
-      this.checkStatus(res)
+      await this.checkStatus(res)
       return (await res.json()) as FreshdeskFolder
     } catch (err) {
       const httpError = err as HttpError
@@ -274,7 +283,7 @@ export class FreshdeskApi {
           body: JSON.stringify(body),
           headers: this.defaultHeaders,
         })
-        this.checkStatus(res2)
+        await this.checkStatus(res2)
         return (await res2.json()) as FreshdeskFolder
       }
       if (httpError.code === 429) {
@@ -300,7 +309,7 @@ export class FreshdeskApi {
         body: JSON.stringify(body),
         headers: this.defaultHeaders,
       })
-      this.checkStatus(res)
+      await this.checkStatus(res)
       return (await res.json()) as FreshdeskArticle
     } catch (err) {
       const httpError = err as HttpError
@@ -311,7 +320,7 @@ export class FreshdeskApi {
           body: JSON.stringify(body),
           headers: this.defaultHeaders,
         })
-        this.checkStatus(res2)
+        await this.checkStatus(res2)
         return (await res2.json()) as FreshdeskArticle
       }
       if (httpError.code === 429) {
