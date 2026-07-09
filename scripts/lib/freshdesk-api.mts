@@ -147,6 +147,23 @@ export interface FreshdeskSEOData {
 }
 
 /**
+ * A Freshdesk agent, as returned by the `agents/me` endpoint.
+ * @see https://developers.freshdesk.com/api/#me
+ */
+export interface FreshdeskAgent {
+  /** Unique ID of the agent */
+  id: number
+  /** Scope of tickets the agent can access */
+  ticket_scope?: number
+  /** The agent's contact details */
+  contact: {
+    name: string
+    email: string
+    active?: boolean
+  }
+}
+
+/**
  * Wrapper for Freshdesk's REST API
  */
 export class FreshdeskApi {
@@ -218,6 +235,18 @@ export class FreshdeskApi {
     })
     await this.checkStatus(res)
     return (await res.json()) as FreshdeskArticle[]
+  }
+
+  /**
+   * Fetch the agent that the configured API key authenticates as. The account behind the token
+   * determines what the sync may read and write, so surfacing it makes a permission problem (such
+   * as a `403 access_denied` on a specific item) much easier to route to the right person.
+   * @returns the agent's id and contact details
+   */
+  async getAuthenticatedAgent(): Promise<FreshdeskAgent> {
+    const res = await fetch(`${this.baseUrl}/api/v2/agents/me`, { headers: this.defaultHeaders })
+    await this.checkStatus(res)
+    return (await res.json()) as FreshdeskAgent
   }
 
   async updateCategoryTranslation(
@@ -329,6 +358,23 @@ export class FreshdeskApi {
       process.stdout.write(`Error processing id ${id} for locale ${locale}: ${httpError.message}\n`)
       throw err
     }
+  }
+}
+
+/**
+ * Log which agent the given Freshdesk client authenticates as. Never throws: identifying the agent
+ * is a diagnostic aid, so a failure here (for example an invalid token) is reported and swallowed
+ * rather than aborting the caller, which will hit the same problem with a clearer error of its own.
+ * The agent's email is intentionally omitted to keep it out of public CI logs; the name and id are
+ * enough to find the account in Freshdesk.
+ * @param fd - a configured Freshdesk client
+ */
+export const logAuthenticatedAgent = async (fd: FreshdeskApi): Promise<void> => {
+  try {
+    const agent = await fd.getAuthenticatedAgent()
+    console.log(`Freshdesk token authenticated as "${agent.contact.name}" (agent id ${agent.id}).`)
+  } catch (error) {
+    console.warn(`Could not identify the Freshdesk agent for the configured token: ${(error as Error).message}`)
   }
 }
 

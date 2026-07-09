@@ -3,7 +3,7 @@
  * @file
  * Script to pull scratch-help translations from transifex and push to FreshDesk.
  */
-import { getInputs, getValidFreshdeskIds, saveItem, localizeNames } from './lib/help-utils.mts'
+import { getInputs, getValidFreshdeskIds, saveItem, localizeNames, logFreshdeskAgent } from './lib/help-utils.mts'
 
 const args = process.argv.slice(2)
 
@@ -21,6 +21,8 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
   process.stdout.write(usage)
   process.exit(1)
 }
+
+await logFreshdeskAgent()
 
 const [{ languages, names }, { validCategoryIds, validFolderIds }] = await Promise.all([
   getInputs(),

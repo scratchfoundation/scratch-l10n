@@ -4,7 +4,12 @@
  */
 import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
-import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
+import FreshdeskApi, {
+  FreshdeskArticleCreate,
+  FreshdeskArticleStatus,
+  FreshdeskFolder,
+  logAuthenticatedAgent,
+} from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
 import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
@@ -12,6 +17,13 @@ import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
+
+/**
+ * Log which agent the configured Freshdesk token authenticates as, to aid in diagnosing permission
+ * problems. Never throws.
+ * @returns a promise that resolves once the agent has been logged
+ */
+export const logFreshdeskAgent = (): Promise<void> => logAuthenticatedAgent(FD)
 
 const freshdeskLocale = (locale: string): string => {
   // map between Transifex locale and Freshdesk. Two letter codes are usually fine

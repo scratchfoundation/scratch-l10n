@@ -3,7 +3,12 @@
  * @file
  * Script get Knowledge base articles from Freshdesk and push them to transifex.
  */
-import FreshdeskApi, { FreshdeskArticleStatus, FreshdeskCategory, FreshdeskFolder } from './lib/freshdesk-api.mts'
+import FreshdeskApi, {
+  FreshdeskArticleStatus,
+  FreshdeskCategory,
+  FreshdeskFolder,
+  logAuthenticatedAgent,
+} from './lib/freshdesk-api.mts'
 import { TransifexStringsKeyValueJson, TransifexStringsStructuredJson } from './lib/transifex-formats.mts'
 import { txPush, txCreateResource, JsonApiException } from './lib/transifex.mts'
 import { emitWarning } from './lib/warnings.mts'
@@ -30,6 +35,17 @@ const TX_PROJECT = 'scratch-help'
 
 const categoryNames: TransifexStringsKeyValueJson = {}
 const folderNames: TransifexStringsKeyValueJson = {}
+
+// Collect per-resource failures instead of aborting on the first one, so a single failing folder or
+// category (for example one the token cannot access) still lets every other resource sync. The
+// script fails at the end if anything meaningful failed, so a persistent problem is surfaced for
+// investigation rather than silently dropped.
+const failures: { context: string; message: string }[] = []
+const recordFailure = (context: string, error: unknown) => {
+  const message = error instanceof Error ? error.message : String(error)
+  console.error(`Error: ${context}: ${message}`)
+  failures.push({ context, message })
+}
 
 /**
  * Generate a transifex resource slug from the name and ID of a Freshdesk object.
@@ -88,7 +104,16 @@ const txPushResource = async (
  * @returns flattened list of folders from all requested categories
  */
 const getFolders = async (categories: FreshdeskCategory[]) => {
-  const categoryFolders = await Promise.all(categories.map(category => FD.listFolders(category)))
+  const categoryFolders = await Promise.all(
+    categories.map(async category => {
+      try {
+        return await FD.listFolders(category)
+      } catch (error) {
+        recordFailure(`list folders for category "${category.name}" (id ${category.id})`, error)
+        return []
+      }
+    }),
+  )
   return ([] as FreshdeskCategory[]).concat(...categoryFolders)
 }
 
@@ -97,7 +122,8 @@ const getFolders = async (categories: FreshdeskCategory[]) => {
  * @param folder - The folder object
  */
 const saveArticles = async (folder: FreshdeskFolder) => {
-  await FD.listArticles(folder).then(async json => {
+  try {
+    const json = await FD.listArticles(folder)
     const txArticles = json.reduce((strings: TransifexStringsStructuredJson, current) => {
       if (current.status === FreshdeskArticleStatus.published) {
         strings[String(current.id)] = {
@@ -116,7 +142,9 @@ const saveArticles = async (folder: FreshdeskFolder) => {
     }, {})
     process.stdout.write(`Push ${folder.name} articles to Transifex\n`)
     await txPushResource(`${makeTxSlug(folder)}_json`, txArticles, 'STRUCTURED_JSON')
-  })
+  } catch (error) {
+    recordFailure(`folder "${folder.name}" (id ${folder.id})`, error)
+  }
 }
 
 /**
@@ -143,12 +171,25 @@ const syncSources = async () => {
       })
       process.stdout.write('Push category and folder names to Transifex\n')
       await Promise.all([
-        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON'),
-        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON'),
+        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON').catch(error =>
+          recordFailure('categoryNames_json', error),
+        ),
+        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON').catch(error =>
+          recordFailure('folderNames_json', error),
+        ),
       ])
       return data
     })
     .then(saveArticleFolders)
 }
 
+await logAuthenticatedAgent(FD)
 await syncSources()
+
+if (failures.length > 0) {
+  console.error(`\n${failures.length} resource(s) failed to push to Transifex:`)
+  for (const failure of failures) {
+    console.error(`  - ${failure.context}: ${failure.message}`)
+  }
+  process.exitCode = 1
+}
