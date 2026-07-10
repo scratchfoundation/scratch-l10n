@@ -143,9 +143,13 @@ const serializeNameSave = async (
       let status
       if (resource.attributes.name === 'categoryNames_json') {
         status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
-      }
-      if (resource.attributes.name === 'folderNames_json') {
+      } else if (resource.attributes.name === 'folderNames_json') {
         status = await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
+      } else {
+        // Guard against silently dropping an unexpected resource: this function only knows how to
+        // write category and folder names. A new KEYVALUEJSON names resource would otherwise no-op
+        // while still reporting success.
+        throw new Error(`Unexpected names resource "${resource.attributes.name}"; don't know how to save it`)
       }
       if (status === -1) {
         process.exitCode = 1

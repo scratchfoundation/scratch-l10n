@@ -103,9 +103,9 @@ const txPushResource = async (
  * @param categories - array of categories the folders belong to
  * @returns flattened list of folders from all requested categories
  */
-const getFolders = async (categories: FreshdeskCategory[]) => {
+const getFolders = async (categories: FreshdeskCategory[]): Promise<FreshdeskFolder[]> => {
   const categoryFolders = await Promise.all(
-    categories.map(async category => {
+    categories.map(async (category): Promise<FreshdeskFolder[]> => {
       try {
         return await FD.listFolders(category)
       } catch (error) {
@@ -114,7 +114,7 @@ const getFolders = async (categories: FreshdeskCategory[]) => {
       }
     }),
   )
-  return ([] as FreshdeskCategory[]).concat(...categoryFolders)
+  return categoryFolders.flat()
 }
 
 /**
@@ -150,7 +150,7 @@ const saveArticles = async (folder: FreshdeskFolder) => {
 /**
  * @param folders - Array of folders containing articles to be saved
  */
-const saveArticleFolders = async (folders: FreshdeskCategory[]) => {
+const saveArticleFolders = async (folders: FreshdeskFolder[]) => {
   await Promise.all(folders.map(folder => saveArticles(folder)))
 }
 

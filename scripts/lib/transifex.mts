@@ -35,6 +35,14 @@ const TX_DOWNLOAD_TIMEOUT_MS = 60_000
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
 
 /**
+ * Extract a human-readable message from a caught value. `catch` values are typed `unknown` and are
+ * not guaranteed to be `Error` instances, so read `.message` only when it really is one.
+ * @param err - the caught value
+ * @returns the error message, or a string representation of a non-Error throw
+ */
+const messageOf = (err: unknown): string => (err instanceof Error ? err.message : String(err))
+
+/**
  * Decide whether an error is worth retrying: server-side 5xx, rate limiting (429), or a transient
  * network failure. Client errors (4xx other than 429) are not retried — they won't fix themselves.
  * @param err - the thrown error, from the Transifex SDK (`JsonApiException`), `fetch`, or the network stack
@@ -78,7 +86,7 @@ const withRetry = async function <T>(label: string, fn: () => Promise<T>): Promi
       const delay = TX_RETRY_BASE_MS * 2 ** (attempt - 1)
       console.warn(
         `${label}: transient error on attempt ${attempt}/${TX_MAX_TRANSIENT_RETRIES}, ` +
-          `retrying in ${delay}ms: ${(err as Error).message}`,
+          `retrying in ${delay}ms: ${messageOf(err)}`,
       )
       await sleep(delay)
     }
@@ -214,7 +222,7 @@ export const txPull = async function <T>(
         break
       } catch (e) {
         lastError = e
-        console.error(`txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${(e as Error).message}`)
+        console.error(`txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${messageOf(e)}`)
       }
     }
     if (buffer === null) {
