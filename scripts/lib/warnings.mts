@@ -3,6 +3,7 @@
  * Shared helper for reporting non-fatal problems during help sync.
  */
 import { appendFileSync } from 'fs'
+import { messageOf } from './errors.mts'
 
 /**
  * Log a warning to the console and, when the `WARNINGS_FILE` environment variable is set, append it
@@ -14,6 +15,12 @@ import { appendFileSync } from 'fs'
 export const emitWarning = (warning: string): void => {
   console.warn(warning)
   if (process.env.WARNINGS_FILE) {
-    appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
+    // The file write is best-effort: emitWarning is the non-fatal path (often called from a catch
+    // block), so a failed append must not turn a warning into a crash.
+    try {
+      appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
+    } catch (error) {
+      console.warn(`Could not append to WARNINGS_FILE "${process.env.WARNINGS_FILE}": ${messageOf(error)}`)
+    }
   }
 }

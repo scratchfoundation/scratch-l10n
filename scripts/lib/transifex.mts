@@ -3,6 +3,7 @@
  * Utilities for interfacing with Transifex API 3.
  */
 import { transifexApi, Collection, JsonApiResource } from '@transifex/api'
+import { messageOf } from './errors.mts'
 import { TransifexStrings } from './transifex-formats.mts'
 import { TransifexLanguageObject, TransifexResourceObject } from './transifex-objects.mts'
 
@@ -33,14 +34,6 @@ const TX_UPLOAD_TIMEOUT_MS = 5 * 60_000
 const TX_DOWNLOAD_TIMEOUT_MS = 60_000
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
-
-/**
- * Extract a human-readable message from a caught value. `catch` values are typed `unknown` and are
- * not guaranteed to be `Error` instances, so read `.message` only when it really is one.
- * @param err - the caught value
- * @returns the error message, or a string representation of a non-Error throw
- */
-const messageOf = (err: unknown): string => (err instanceof Error ? err.message : String(err))
 
 /**
  * Decide whether an error is worth retrying: server-side 5xx, rate limiting (429), or a transient

@@ -4,6 +4,7 @@
  */
 import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
+import { messageOf } from './errors.mts'
 import FreshdeskApi, {
   FreshdeskArticleCreate,
   FreshdeskArticleStatus,
@@ -158,7 +159,7 @@ const serializeNameSave = async (
       // The FreshdeskApi update method already logged the specific error. Record the failure so the
       // job still exits non-zero, then move on to the next entry.
       process.stdout.write(
-        `Failed to save an entry in ${resource.attributes.name} for ${locale} (key "${key}"): ${(error as Error).message}\n`,
+        `Failed to save an entry in ${resource.attributes.name} for ${locale} (key "${key}"): ${messageOf(error)}\n`,
       )
       process.exitCode = 1
     }
@@ -206,7 +207,7 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
     } catch (error) {
       // The FreshdeskApi update method already logged the specific error. Record the failure so the
       // job still exits non-zero, then move on to the next article.
-      process.stdout.write(`Failed to save article ${idString} for ${locale}: ${(error as Error).message}\n`)
+      process.stdout.write(`Failed to save article ${idString} for ${locale}: ${messageOf(error)}\n`)
       process.exitCode = 1
     }
   }

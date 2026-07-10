@@ -1,4 +1,5 @@
 // interface to FreshDesk Solutions (knowledge base) api
+import { messageOf } from './errors.mts'
 
 /**
  * Extend
@@ -374,7 +375,7 @@ export const logAuthenticatedAgent = async (fd: FreshdeskApi): Promise<void> => 
     const agent = await fd.getAuthenticatedAgent()
     console.log(`Freshdesk token authenticated as "${agent.contact.name}" (agent id ${agent.id}).`)
   } catch (error) {
-    console.warn(`Could not identify the Freshdesk agent for the configured token: ${(error as Error).message}`)
+    console.warn(`Could not identify the Freshdesk agent for the configured token: ${messageOf(error)}`)
   }
 }
 
