@@ -3,6 +3,7 @@
  * Utilities for interfacing with Transifex API 3.
  */
 import { transifexApi, Collection, JsonApiResource } from '@transifex/api'
+import { messageOf } from './errors.mts'
 import { TransifexStrings } from './transifex-formats.mts'
 import { TransifexLanguageObject, TransifexResourceObject } from './transifex-objects.mts'
 
@@ -16,6 +17,98 @@ if (!process.env.TX_TOKEN) {
 transifexApi.setup({
   auth: process.env.TX_TOKEN,
 })
+
+/** Base delay for exponential backoff between transient-error retries, in milliseconds. */
+const TX_RETRY_BASE_MS = 1_000
+/** Maximum number of attempts for an operation that fails with a transient (retryable) error. */
+const TX_MAX_TRANSIENT_RETRIES = 5
+/** How often to poll an async upload for completion, in milliseconds. */
+const TX_UPLOAD_POLL_INTERVAL_MS = 2_000
+/**
+ * Overall budget for a single async upload to reach a terminal state, in milliseconds.
+ * This bounds the poll loop so a stuck upload fails fast (with a clear message) instead of
+ * polling forever — the workflow's `timeout-minutes` is only a last-resort backstop.
+ */
+const TX_UPLOAD_TIMEOUT_MS = 5 * 60_000
+/** Per-request timeout for downloading a resource from the CDN, in milliseconds. */
+const TX_DOWNLOAD_TIMEOUT_MS = 60_000
+
+const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
+
+/**
+ * Decide whether an error is worth retrying: server-side 5xx, rate limiting (429), or a transient
+ * network failure. Client errors (4xx other than 429) are not retried — they won't fix themselves.
+ * @param err - the thrown error, from the Transifex SDK (`JsonApiException`), `fetch`, or the network stack
+ * @returns true if retrying the same operation might succeed
+ */
+const isTransientError = (err: unknown): boolean => {
+  const e = (err ?? {}) as {
+    statusCode?: number
+    status?: number
+    code?: string
+    name?: string
+    cause?: { code?: string }
+  }
+  // A `fetch` aborted by `AbortSignal.timeout` rejects with a `TimeoutError` that carries no status
+  // or code; the only abort in this module is that timeout, so treat it (and a bare abort) as worth
+  // retrying.
+  if (e.name === 'TimeoutError' || e.name === 'AbortError') {
+    return true
+  }
+  const status = e.statusCode ?? e.status
+  if (typeof status === 'number') {
+    return status === 429 || (status >= 500 && status < 600)
+  }
+  const code = e.code ?? e.cause?.code
+  return (
+    code === 'ECONNRESET' ||
+    code === 'ECONNREFUSED' ||
+    code === 'ETIMEDOUT' ||
+    code === 'EAI_AGAIN' ||
+    code === 'UND_ERR_SOCKET' ||
+    code === 'UND_ERR_CONNECT_TIMEOUT'
+  )
+}
+
+/**
+ * Run an async operation, retrying with exponential backoff when it fails with a transient error.
+ * Non-transient errors (for example a 404) are re-thrown immediately so callers can handle them.
+ * @template T - the resolved type of the operation
+ * @param label - short description of the operation, used in retry log lines
+ * @param fn - the operation to run; called once per attempt
+ * @returns the resolved value of `fn`
+ */
+const withRetry = async function <T>(label: string, fn: () => Promise<T>): Promise<T> {
+  let lastError: unknown
+  for (let attempt = 1; attempt <= TX_MAX_TRANSIENT_RETRIES; attempt++) {
+    try {
+      return await fn()
+    } catch (err) {
+      lastError = err
+      if (!isTransientError(err) || attempt === TX_MAX_TRANSIENT_RETRIES) {
+        throw err
+      }
+      const delay = TX_RETRY_BASE_MS * 2 ** (attempt - 1)
+      console.warn(
+        `${label}: transient error on attempt ${attempt}/${TX_MAX_TRANSIENT_RETRIES}, ` +
+          `retrying in ${delay}ms: ${messageOf(err)}`,
+      )
+      await sleep(delay)
+    }
+  }
+  // Unreachable: the loop either returns or throws, but TypeScript can't prove it.
+  throw lastError
+}
+
+/**
+ * The subset of an async-upload resource instance that we poll. The SDK's generated types model
+ * `reload` as requiring an `include` argument, but at runtime it is optional; this shape lets us
+ * call `reload()` with no arguments while staying type-checked.
+ */
+interface AsyncUploadResource {
+  get(key: string): unknown
+  reload(): Promise<void>
+}
 
 /*
  * The Transifex JS API wraps the Transifex JSON API, and is built around the concept of a `Collection`.
@@ -111,24 +204,47 @@ export const txPull = async function <T>(
 ): Promise<TransifexStrings<T>> {
   let buffer: string | null = null
   try {
-    const url = await getResourceLocation(project, resource, locale, mode)
+    // Creating the download event itself polls Transifex until the file is ready; retry transient
+    // failures (5xx / network blips) so one bad response doesn't sink the whole pull.
+    const url = await withRetry(`txPull download event for ${resource}/${locale}`, () =>
+      getResourceLocation(project, resource, locale, mode),
+    )
+    let lastError: unknown
     for (let i = 0; i < 5; i++) {
       if (i > 0) {
-        console.log(`Retrying txPull download after ${i} failed attempt(s)`)
+        const delay = TX_RETRY_BASE_MS * 2 ** (i - 1)
+        console.log(
+          `Retrying txPull download for ${resource}/${locale} after ${i} failed attempt(s); waiting ${delay}ms`,
+        )
+        await sleep(delay)
       }
       try {
-        const response = await fetch(url)
+        const response = await fetch(url, { signal: AbortSignal.timeout(TX_DOWNLOAD_TIMEOUT_MS) })
         if (!response.ok) {
-          throw new Error(`Failed to download resource: ${response.statusText}`)
+          const err = new Error(
+            `Failed to download resource: HTTP ${response.status} ${response.statusText}`,
+          ) as Error & { status: number }
+          err.status = response.status
+          throw err
         }
         buffer = await response.text()
         break
       } catch (e) {
-        console.error(e, { project, resource, locale, buffer })
+        lastError = e
+        console.error(`txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${messageOf(e)}`)
+        // Only 5xx / 429 / network / timeout failures are worth retrying. A non-transient failure
+        // (for example a 403 or 404) won't fix itself, so fail fast and surface the real cause
+        // instead of burning the remaining attempts.
+        if (!isTransientError(e)) {
+          throw e
+        }
       }
     }
-    if (!buffer) {
-      throw Error(`txPull download failed after 5 retries: ${url}`)
+    if (buffer === null) {
+      throw new Error(
+        `txPull download failed after 5 attempts for ${resource}/${locale} (${url}): ` +
+          `${(lastError as Error | undefined)?.message ?? 'unknown error'}`,
+      )
     }
     return JSON.parse(buffer) as TransifexStrings<T>
   } catch (e) {
@@ -205,10 +321,42 @@ export const txPush = async function (project: string, resource: string, sourceS
     },
   }
 
-  await transifexApi.ResourceStringsAsyncUpload.upload({
-    resource: resourceObj,
-    content: JSON.stringify(sourceStrings),
-  })
+  // `ResourceStringsAsyncUpload.upload()` creates the upload and then polls until its status is
+  // `succeeded`. That poll has no timeout and no exit for a `failed` status, so a rejected upload
+  // (or one stuck in `pending`) loops forever — historically until the CI job's 6-hour limit, and
+  // any transient 502 on a poll crashed the whole job with an unhelpful stack trace. We do the
+  // create-then-poll ourselves so we can bound it, retry transient blips, and surface the actual
+  // reason an upload failed.
+  const upload = (await withRetry(`txPush create upload for "${resource}"`, () =>
+    transifexApi.ResourceStringsAsyncUpload.create({
+      resource: resourceObj,
+      content: JSON.stringify(sourceStrings),
+      content_encoding: 'text',
+      // The generated type insists on id/attributes/relationships/links, but the upload resource
+      // takes this flatter shape — the same one `ResourceStringsAsyncUpload.upload()` passes through.
+    } as unknown as Parameters<typeof transifexApi.ResourceStringsAsyncUpload.create>[0]),
+  )) as unknown as AsyncUploadResource
+
+  const deadline = Date.now() + TX_UPLOAD_TIMEOUT_MS
+  for (;;) {
+    const status = upload.get('status') as string | undefined
+    if (status === 'succeeded') {
+      return
+    }
+    if (status === 'failed') {
+      // On failure the upload carries `errors` (and sometimes `details`) explaining why.
+      const errorInfo = upload.get('errors') ?? upload.get('details') ?? 'no error detail provided'
+      throw new Error(`Transifex upload failed for resource "${resource}": ${JSON.stringify(errorInfo)}`)
+    }
+    if (Date.now() >= deadline) {
+      throw new Error(
+        `Transifex upload for resource "${resource}" did not reach a terminal state within ` +
+          `${TX_UPLOAD_TIMEOUT_MS / 1000}s (last status: ${status ?? 'unknown'}).`,
+      )
+    }
+    await sleep(TX_UPLOAD_POLL_INTERVAL_MS)
+    await withRetry(`txPush poll upload for "${resource}"`, () => upload.reload())
+  }
 }
 
 /**

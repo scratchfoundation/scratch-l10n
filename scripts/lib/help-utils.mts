@@ -2,15 +2,29 @@
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
-import { promises as fsPromises, appendFileSync } from 'fs'
+import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
-import FreshdeskApi, { FreshdeskArticleCreate, FreshdeskArticleStatus, FreshdeskFolder } from './freshdesk-api.mts'
+import { messageOf } from './errors.mts'
+import FreshdeskApi, {
+  FreshdeskArticleCreate,
+  FreshdeskArticleStatus,
+  FreshdeskFolder,
+  logAuthenticatedAgent,
+} from './freshdesk-api.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
 import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
+import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
+
+/**
+ * Log which agent the configured Freshdesk token authenticates as, to aid in diagnosing permission
+ * problems. Never throws.
+ * @returns a promise that resolves once the agent has been logged
+ */
+export const logFreshdeskAgent = (): Promise<void> => logAuthenticatedAgent(FD)
 
 const freshdeskLocale = (locale: string): string => {
   // map between Transifex locale and Freshdesk. Two letter codes are usually fine
@@ -44,13 +58,6 @@ const parseIntOrThrow = (str: string, radix: number) => {
     throw new Error(`Could not parse int safely: ${str}`)
   }
   return num
-}
-
-const emitWarning = (warning: string) => {
-  console.warn(warning)
-  if (process.env.WARNINGS_FILE) {
-    appendFileSync(process.env.WARNINGS_FILE, warning + '\n')
-  }
 }
 
 /**
@@ -118,27 +125,42 @@ const serializeNameSave = async (
   warnedKeys: Set<string>,
 ): Promise<void> => {
   for (const [key, value] of Object.entries(strings)) {
-    // key is of the form <name>_<id>
-    const words = key.split('_')
-    const id = parseIntOrThrow(words[words.length - 1], 10)
-    if (!validIds.has(id)) {
-      const warnedKey = `${resource.attributes.name}:${id}`
-      if (!warnedKeys.has(warnedKey)) {
-        warnedKeys.add(warnedKey)
-        emitWarning(
-          `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
-        )
+    // Handle each entry independently: a failure on one item (for example a translation the token
+    // is not allowed to write) must not abort the remaining names for this locale.
+    try {
+      // key is of the form <name>_<id>
+      const words = key.split('_')
+      const id = parseIntOrThrow(words[words.length - 1], 10)
+      if (!validIds.has(id)) {
+        const warnedKey = `${resource.attributes.name}:${id}`
+        if (!warnedKeys.has(warnedKey)) {
+          warnedKeys.add(warnedKey)
+          emitWarning(
+            `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
+          )
+        }
+        continue
       }
-      continue
-    }
-    let status
-    if (resource.attributes.name === 'categoryNames_json') {
-      status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
-    }
-    if (resource.attributes.name === 'folderNames_json') {
-      status = await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
-    }
-    if (status === -1) {
+      let status
+      if (resource.attributes.name === 'categoryNames_json') {
+        status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
+      } else if (resource.attributes.name === 'folderNames_json') {
+        status = await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
+      } else {
+        // Guard against silently dropping an unexpected resource: this function only knows how to
+        // write category and folder names. A new KEYVALUEJSON names resource would otherwise no-op
+        // while still reporting success.
+        throw new Error(`Unexpected names resource "${resource.attributes.name}"; don't know how to save it`)
+      }
+      if (status === -1) {
+        process.exitCode = 1
+      }
+    } catch (error) {
+      // The FreshdeskApi update method already logged the specific error. Record the failure so the
+      // job still exits non-zero, then move on to the next entry.
+      process.stdout.write(
+        `Failed to save an entry in ${resource.attributes.name} for ${locale} (key "${key}"): ${messageOf(error)}\n`,
+      )
       process.exitCode = 1
     }
   }
@@ -162,22 +184,30 @@ interface FreshdeskFolderInTransifex {
  */
 const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTransifex>, locale: string) => {
   for (const [idString, value] of Object.entries(json)) {
-    const id = parseIntOrThrow(idString, 10)
-    const body: FreshdeskArticleCreate = {
-      title: value.title.string,
-      description: value.description.string,
-      status: FreshdeskArticleStatus.published,
-    }
-    if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
-      const tags = value.tags.string.split(',')
-      const validTags = tags.filter(tag => tag.length < 33)
-      if (validTags.length !== tags.length) {
-        emitWarning(`Warning: tags too long in ${id} for ${locale}`)
+    // Handle each article independently: a failure on one must not abort the rest for this locale.
+    try {
+      const id = parseIntOrThrow(idString, 10)
+      const body: FreshdeskArticleCreate = {
+        title: value.title.string,
+        description: value.description.string,
+        status: FreshdeskArticleStatus.published,
       }
-      body.tags = validTags
-    }
-    const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
-    if (status === -1) {
+      if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
+        const tags = value.tags.string.split(',')
+        const validTags = tags.filter(tag => tag.length < 33)
+        if (validTags.length !== tags.length) {
+          emitWarning(`Warning: tags too long in ${id} for ${locale}`)
+        }
+        body.tags = validTags
+      }
+      const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
+      if (status === -1) {
+        process.exitCode = 1
+      }
+    } catch (error) {
+      // The FreshdeskApi update method already logged the specific error. Record the failure so the
+      // job still exits non-zero, then move on to the next article.
+      process.stdout.write(`Failed to save article ${idString} for ${locale}: ${messageOf(error)}\n`)
       process.exitCode = 1
     }
   }

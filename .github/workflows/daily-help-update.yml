@@ -19,6 +19,9 @@ permissions:
 jobs:
   daily-help-update:
     runs-on: ubuntu-latest
+    # Backstop only: the sync should finish in a few minutes. The Transifex client code bounds its
+    # own waits, so this guards against an unexpected hang rather than being the primary timeout.
+    timeout-minutes: 30
 
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
@@ -45,9 +48,9 @@ jobs:
         if: success()
         run: |
           if [ -s "${{ runner.temp }}/sync-help-warnings.txt" ]; then
-            echo "has_warnings=true" >> $GITHUB_OUTPUT
-            echo "### Sync Help Warnings" >> $GITHUB_STEP_SUMMARY
-            cat "${{ runner.temp }}/sync-help-warnings.txt" >> $GITHUB_STEP_SUMMARY
+            echo "has_warnings=true" >> "$GITHUB_OUTPUT"
+            echo "### Sync Help Warnings" >> "$GITHUB_STEP_SUMMARY"
+            cat "${{ runner.temp }}/sync-help-warnings.txt" >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - uses: ./.github/actions/report-scheduled-issue
