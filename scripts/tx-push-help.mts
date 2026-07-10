@@ -80,8 +80,9 @@ const txPushResource = async (
     slug: name,
     name: name,
     i18nType: type,
-    priority: 0, // default to normal priority
-    content: articles,
+    // `txCreateResource` reads `sourceStrings` (not `content`); passing the wrong key left a newly
+    // created resource empty until a later run populated it.
+    sourceStrings: articles,
   }
 
   try {
