@@ -42,7 +42,19 @@ const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(r
  * @returns true if retrying the same operation might succeed
  */
 const isTransientError = (err: unknown): boolean => {
-  const e = (err ?? {}) as { statusCode?: number; status?: number; code?: string; cause?: { code?: string } }
+  const e = (err ?? {}) as {
+    statusCode?: number
+    status?: number
+    code?: string
+    name?: string
+    cause?: { code?: string }
+  }
+  // A `fetch` aborted by `AbortSignal.timeout` rejects with a `TimeoutError` that carries no status
+  // or code; the only abort in this module is that timeout, so treat it (and a bare abort) as worth
+  // retrying.
+  if (e.name === 'TimeoutError' || e.name === 'AbortError') {
+    return true
+  }
   const status = e.statusCode ?? e.status
   if (typeof status === 'number') {
     return status === 429 || (status >= 500 && status < 600)
@@ -209,13 +221,23 @@ export const txPull = async function <T>(
       try {
         const response = await fetch(url, { signal: AbortSignal.timeout(TX_DOWNLOAD_TIMEOUT_MS) })
         if (!response.ok) {
-          throw new Error(`Failed to download resource: HTTP ${response.status} ${response.statusText}`)
+          const err = new Error(
+            `Failed to download resource: HTTP ${response.status} ${response.statusText}`,
+          ) as Error & { status: number }
+          err.status = response.status
+          throw err
         }
         buffer = await response.text()
         break
       } catch (e) {
         lastError = e
         console.error(`txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${messageOf(e)}`)
+        // Only 5xx / 429 / network / timeout failures are worth retrying. A non-transient failure
+        // (for example a 403 or 404) won't fix itself, so fail fast and surface the real cause
+        // instead of burning the remaining attempts.
+        if (!isTransientError(e)) {
+          throw e
+        }
       }
     }
     if (buffer === null) {
