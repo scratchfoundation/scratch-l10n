@@ -13,7 +13,7 @@ runs:
   using: composite
   steps:
     - name: Report issue from a scheduled run
-      uses: slackapi/slack-github-action@v2.1.1
+      uses: slackapi/slack-github-action@dcb1066f776dd043e64d0e8ba94ca15cc7e1875d # v4.0.0
       with:
         webhook: ${{ inputs.slack-webhook }}
         webhook-type: incoming-webhook
