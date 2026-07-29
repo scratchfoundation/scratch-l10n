@@ -19,6 +19,34 @@ import { emitWarning } from './warnings.mts'
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
 
+// Collect per-item failures instead of aborting on the first one, so one bad translation or a single
+// item the token cannot write still lets every other item sync. Freshdesk rate limiting is handled
+// transparently by the client (paced requests, `Retry-After`-aware retries), so anything that reaches
+// here is a genuine problem worth a human's attention. `reportFailures` prints a consolidated summary
+// and fails the run at the end, so real errors are surfaced rather than lost in the log.
+const failures: { context: string; message: string }[] = []
+const recordFailure = (context: string, error: unknown): void => {
+  const message = messageOf(error)
+  // Genuine failures go to stderr (like the consolidated summary), so they stand apart from normal output.
+  process.stderr.write(`Error: ${context}: ${message}\n`)
+  failures.push({ context, message })
+}
+
+/**
+ * Print a summary of everything that failed during the sync and mark the process as failed if there
+ * was anything. Call once, after all saves have completed.
+ */
+export const reportFailures = (): void => {
+  if (failures.length === 0) {
+    return
+  }
+  console.error(`\n${failures.length} item(s) failed to sync to Freshdesk:`)
+  for (const failure of failures) {
+    console.error(`  - ${failure.context}: ${failure.message}`)
+  }
+  process.exitCode = 1
+}
+
 /**
  * Log which agent the configured Freshdesk token authenticates as, to aid in diagnosing permission
  * problems. Never throws.
@@ -141,27 +169,20 @@ const serializeNameSave = async (
         }
         continue
       }
-      let status
       if (resource.attributes.name === 'categoryNames_json') {
-        status = await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
+        await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
       } else if (resource.attributes.name === 'folderNames_json') {
-        status = await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
+        await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
       } else {
         // Guard against silently dropping an unexpected resource: this function only knows how to
         // write category and folder names. A new KEYVALUEJSON names resource would otherwise no-op
         // while still reporting success.
         throw new Error(`Unexpected names resource "${resource.attributes.name}"; don't know how to save it`)
       }
-      if (status === -1) {
-        process.exitCode = 1
-      }
     } catch (error) {
-      // The FreshdeskApi update method already logged the specific error. Record the failure so the
-      // job still exits non-zero, then move on to the next entry.
-      process.stdout.write(
-        `Failed to save an entry in ${resource.attributes.name} for ${locale} (key "${key}"): ${messageOf(error)}\n`,
-      )
-      process.exitCode = 1
+      // Record the failure so the job still reports a non-zero exit at the end, then move on to the
+      // next entry.
+      recordFailure(`${resource.attributes.name} entry "${key}" for ${locale}`, error)
     }
   }
 }
@@ -207,15 +228,11 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
         }
         body.tags = validTags
       }
-      const status = await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
-      if (status === -1) {
-        process.exitCode = 1
-      }
+      await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
     } catch (error) {
-      // The FreshdeskApi update method already logged the specific error. Record the failure so the
-      // job still exits non-zero, then move on to the next article.
-      process.stdout.write(`Failed to save article ${idString} for ${locale}: ${messageOf(error)}\n`)
-      process.exitCode = 1
+      // Record the failure so the job still reports a non-zero exit at the end, then move on to the
+      // next article.
+      recordFailure(`article ${idString} for ${locale}`, error)
     }
   }
 }
@@ -235,8 +252,7 @@ export const localizeFolder = async (folderAttributes: TransifexResourceObject, 
     )
     await serializeFolderSave(data, locale)
   } catch (e) {
-    process.stdout.write(`Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
-    process.exitCode = 1 // not ok
+    recordFailure(`${folderAttributes.attributes.slug} for ${locale}`, e)
   }
 }
 
@@ -281,10 +297,7 @@ export const localizeNames = async (
   const validIds = resource.attributes.name === 'categoryNames_json' ? validCategoryIds : validFolderIds
   await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
     .then(data => serializeNameSave(data, resource, locale, validIds, warnedKeys))
-    .catch(e => {
-      process.stdout.write(`Error saving ${resource.attributes.slug}, ${locale}: ${(e as Error).message}\n`)
-      process.exitCode = 1 // not ok
-    })
+    .catch(e => recordFailure(`${resource.attributes.slug} for ${locale}`, e))
 }
 
 const BATCH_SIZE = 2
@@ -300,9 +313,8 @@ type SaveFn = (item: TransifexResourceObject, language: string) => Promise<void>
 export const saveItem = async (item: TransifexResourceObject, languages: string[], saveFn: SaveFn) => {
   const saveLanguages = languages.filter(l => l !== 'en') // exclude English from update
   for (let i = 0; i < saveLanguages.length; i += BATCH_SIZE) {
-    await Promise.all(saveLanguages.slice(i, i + BATCH_SIZE).map(l => saveFn(item, l))).catch(err => {
-      process.stdout.write(`Error saving item:${(err as Error).message}\n${JSON.stringify(item, null, 2)}\n`)
-      process.exitCode = 1 // not ok
-    })
+    await Promise.all(saveLanguages.slice(i, i + BATCH_SIZE).map(l => saveFn(item, l))).catch(err =>
+      recordFailure(`saving ${item.attributes.slug}`, err),
+    )
   }
 }

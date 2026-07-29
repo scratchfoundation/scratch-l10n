@@ -3,7 +3,14 @@
  * @file
  * Script to pull scratch-help translations from transifex and push to FreshDesk.
  */
-import { getInputs, getValidFreshdeskIds, saveItem, localizeNames, logFreshdeskAgent } from './lib/help-utils.mts'
+import {
+  getInputs,
+  getValidFreshdeskIds,
+  saveItem,
+  localizeNames,
+  logFreshdeskAgent,
+  reportFailures,
+} from './lib/help-utils.mts'
 
 const args = process.argv.slice(2)
 
@@ -37,3 +44,4 @@ await Promise.all(
     ),
   ),
 )
+reportFailures()
