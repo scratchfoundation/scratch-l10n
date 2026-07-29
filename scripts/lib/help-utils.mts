@@ -194,9 +194,16 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
       }
       if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
         const tags = value.tags.string.split(',')
+        // Freshdesk rejects tags longer than 32 characters, so drop them rather than fail the write.
         const validTags = tags.filter(tag => tag.length < 33)
-        if (validTags.length !== tags.length) {
-          emitWarning(`Warning: tags too long in ${id} for ${locale}`)
+        const droppedTags = tags.filter(tag => tag.length >= 33)
+        if (droppedTags.length > 0) {
+          emitWarning(
+            `Dropping ${droppedTags.length} tag(s) over Freshdesk's 32-character limit for article ${id} ` +
+              `(${locale}); shorten them in Transifex: ${droppedTags
+                .map(tag => `"${tag}" (${tag.length} chars)`)
+                .join(', ')}.`,
+          )
         }
         body.tags = validTags
       }
