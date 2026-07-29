@@ -33,6 +33,7 @@ import hi from './locale-data/hi.js'
 import hr from './locale-data/hr.js'
 import hu from './locale-data/hu.js'
 import hy from './locale-data/hy.js'
+import hyw from './locale-data/hyw.js'
 import id from './locale-data/id.js'
 import is from './locale-data/is.js'
 import it from './locale-data/it.js'
@@ -107,6 +108,7 @@ const localeData = [].concat(
   hu,
   hr,
   hy,
+  hyw,
   id,
   is,
   it,
