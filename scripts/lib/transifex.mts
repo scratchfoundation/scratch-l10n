@@ -5,7 +5,11 @@
 import { transifexApi, Collection, JsonApiResource } from '@transifex/api'
 import { messageOf } from './errors.mts'
 import { TransifexStrings } from './transifex-formats.mts'
-import { TransifexLanguageObject, TransifexResourceObject } from './transifex-objects.mts'
+import {
+  TransifexLanguageObject,
+  TransifexResourceLanguageStatsObject,
+  TransifexResourceObject,
+} from './transifex-objects.mts'
 
 const ORG_NAME = 'llk'
 const SOURCE_LOCALE = 'en'
@@ -32,8 +36,81 @@ const TX_UPLOAD_POLL_INTERVAL_MS = 2_000
 const TX_UPLOAD_TIMEOUT_MS = 5 * 60_000
 /** Per-request timeout for downloading a resource from the CDN, in milliseconds. */
 const TX_DOWNLOAD_TIMEOUT_MS = 60_000
+/**
+ * Maximum number of Transifex download events to create concurrently. Each `txPull` creates a
+ * download event (a rate-limited API call); fanning every (resource, locale) pair out at once
+ * overruns the API's throttle. Bounding the create step keeps a bulk pull under the limit while
+ * still overlapping enough requests to make progress.
+ */
+const TX_MAX_CONCURRENT_DOWNLOADS = 4
+/** Upper bound on how long to honor a throttle's "expected available" hint before giving up on it. */
+const TX_MAX_THROTTLE_WAIT_MS = 120_000
 
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
+
+/**
+ * Builds a concurrency limiter: the returned function runs at most `max` of the tasks handed to it at
+ * once and queues the rest, preserving submission order. Used to bound how many Transifex download
+ * events are created in parallel so a bulk pull stays under the API rate limit.
+ * @param max - the greatest number of tasks allowed to run at the same time
+ * @returns a function that schedules a task and resolves (or rejects) with its result
+ */
+const limitConcurrency = (max: number): (<T>(task: () => Promise<T>) => Promise<T>) => {
+  let active = 0
+  const queue: (() => void)[] = []
+  const startNext = (): void => {
+    active--
+    queue.shift()?.()
+  }
+  return <T,>(task: () => Promise<T>): Promise<T> =>
+    new Promise<T>((resolve, reject) => {
+      const run = (): void => {
+        active++
+        // Invoke task() inside a then so a synchronous throw becomes a rejection: otherwise it would
+        // escape run(), skip finally(startNext), and leak `active` -- eventually deadlocking the queue.
+        void Promise.resolve().then(task).then(resolve, reject).finally(startNext)
+      }
+      if (active < max) {
+        run()
+      } else {
+        queue.push(run)
+      }
+    })
+}
+
+/** Bounds creation of download events so a bulk pull stays under the Transifex rate limit. */
+const downloadLimit = limitConcurrency(TX_MAX_CONCURRENT_DOWNLOADS)
+
+/**
+ * How long Transifex asked us to wait, if a 429 said. Transifex reports throttling as
+ * "Request was throttled. Expected available in N seconds." (and some errors carry a numeric
+ * `retry_after`); honoring that recovers sooner and more reliably than a blind exponential backoff.
+ * @param err - the thrown error
+ * @returns the requested wait in milliseconds (with a small cushion, capped), or null if this is not
+ * a throttle carrying a hint we can read
+ */
+const throttleWaitMs = (err: unknown): number | null => {
+  const e = (err ?? {}) as {
+    statusCode?: number
+    status?: number
+    retry_after?: number
+    errors?: { detail?: string }[]
+    message?: string
+  }
+  const status = e.statusCode ?? e.status
+  if (status !== 429) {
+    return null
+  }
+  if (typeof e.retry_after === 'number' && e.retry_after > 0) {
+    return Math.min((e.retry_after + 1) * 1_000, TX_MAX_THROTTLE_WAIT_MS)
+  }
+  const detail = e.errors?.[0]?.detail ?? e.message ?? ''
+  const match = /available in (\d+)\s*second/i.exec(detail)
+  if (match) {
+    return Math.min((parseInt(match[1], 10) + 1) * 1_000, TX_MAX_THROTTLE_WAIT_MS)
+  }
+  return null
+}
 
 /**
  * Decide whether an error is worth retrying: server-side 5xx, rate limiting (429), or a transient
@@ -88,7 +165,9 @@ const withRetry = async function <T>(label: string, fn: () => Promise<T>): Promi
       if (!isTransientError(err) || attempt === TX_MAX_TRANSIENT_RETRIES) {
         throw err
       }
-      const delay = TX_RETRY_BASE_MS * 2 ** (attempt - 1)
+      // If Transifex threw a throttle telling us when it will be available, wait exactly that long
+      // (plus a cushion); otherwise fall back to exponential backoff.
+      const delay = throttleWaitMs(err) ?? TX_RETRY_BASE_MS * 2 ** (attempt - 1)
       console.warn(
         `${label}: transient error on attempt ${attempt}/${TX_MAX_TRANSIENT_RETRIES}, ` +
           `retrying in ${delay}ms: ${messageOf(err)}`,
@@ -205,9 +284,13 @@ export const txPull = async function <T>(
   let buffer: string | null = null
   try {
     // Creating the download event itself polls Transifex until the file is ready; retry transient
-    // failures (5xx / network blips) so one bad response doesn't sink the whole pull.
-    const url = await withRetry(`txPull download event for ${resource}/${locale}`, () =>
-      getResourceLocation(project, resource, locale, mode),
+    // failures (5xx / network blips) so one bad response doesn't sink the whole pull. Gate it through
+    // the shared limiter so a bulk pull creates only a few download events at a time and stays under
+    // the API rate limit (the slot is held across retries, so throttling naturally slows the fan-out).
+    const url = await downloadLimit(() =>
+      withRetry(`txPull download event for ${resource}/${locale}`, () =>
+        getResourceLocation(project, resource, locale, mode),
+      ),
     )
     let lastError: unknown
     for (let i = 0; i < 5; i++) {
@@ -289,6 +372,45 @@ export const txResourcesObjects = async function (project: string): Promise<Tran
   })
 
   return collectAll<TransifexResourceObject>(resources)
+}
+
+/**
+ * Fetches per-(resource, locale) translation statistics for a project in a single paginated query.
+ * Used to detect which pairs changed since a previous sync without downloading any translation files:
+ * comparing the returned timestamp against a stored baseline tells us whether a pair needs re-pushing.
+ * @param project - project slug (for example, `scratch-help`)
+ * @returns a map keyed `<resourceSlug>:<localeCode>` whose value is the ISO datetime that pair's
+ * translations were last updated (falling back to the pair's last update of any kind), or null if the
+ * pair has never been translated
+ */
+export const txResourceLanguageStats = async function (project: string): Promise<Map<string, string | null>> {
+  const stats = transifexApi.ResourceLanguageStats.filter({
+    project: `o:${ORG_NAME}:p:${project}`,
+  })
+  const statsData = await collectAll<TransifexResourceLanguageStatsObject>(stats)
+
+  const lastUpdatedByPair = new Map<string, string | null>()
+  for (const stat of statsData) {
+    // id form: o:llk:p:<project>:r:<resource>:l:<locale> — resource slugs and locale codes never
+    // contain a colon, so splitting on the delimiters recovers both halves.
+    const afterResource = stat.id.split(':r:')[1]
+    if (!afterResource) {
+      continue
+    }
+    const [resource, locale] = afterResource.split(':l:')
+    if (!resource || !locale) {
+      continue
+    }
+    // A pair with no translated strings has never been translated: map it to null so the gate skips
+    // it. Falling back to last_update (which is set even for untranslated pairs) would instead make
+    // the gate treat it as changed and sync empty/untranslated content.
+    const attrs = stat.attributes
+    lastUpdatedByPair.set(
+      `${resource}:${locale}`,
+      attrs.translated_strings > 0 ? (attrs.last_translation_update ?? attrs.last_update) : null,
+    )
+  }
+  return lastUpdatedByPair
 }
 
 /**
