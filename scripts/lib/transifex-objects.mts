@@ -98,6 +98,37 @@ export interface TransifexProjectObject extends TransifexObject {
 }
 
 /**
+ * Transifex object representing per-resource, per-language translation statistics.
+ * @see https://developers.transifex.com/reference/get_resource-language-stats
+ */
+export interface TransifexResourceLanguageStatsObject extends TransifexObject {
+  /** The type of the object. */
+  type: 'resource_language_stats'
+  /** Identifier combining resource and language. Example: `o:org:p:project:r:resource:l:lang` */
+  id: `o:${string}:p:${string}:r:${string}:l:${string}`
+  attributes: {
+    /** Total number of source strings. */
+    total_strings: number
+    /** Number of translated strings. */
+    translated_strings: number
+    /** Number of untranslated strings. */
+    untranslated_strings: number
+    /** Number of reviewed strings. */
+    reviewed_strings: number
+    /** Number of strings that have cleared the second (proofread) review step. */
+    proofread_strings: number
+    /** ISO datetime of the most recent translation update, or null if never translated. */
+    last_translation_update: string | null
+    /** ISO datetime of the most recent update of any kind to this pair, or null. */
+    last_update: string | null
+    /** ISO datetime of the most recent review update, or null. */
+    last_review_update: string | null
+    /** ISO datetime of the most recent proofread update, or null. */
+    last_proofread_update: string | null
+  }
+}
+
+/**
  * Transifex object representing a Resource.
  * @see https://developers.transifex.com/reference/get_resources-resource-id
  */

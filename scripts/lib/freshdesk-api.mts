@@ -165,6 +165,20 @@ export interface FreshdeskAgent {
   }
 }
 
+/**
+ * Helpdesk settings, as returned by `GET /api/v2/settings/helpdesk`. These determine which languages
+ * the knowledge base can hold translations in, so they gate which locales we can push.
+ * @see https://developers.freshdesk.com/api/#settings
+ */
+export interface FreshdeskHelpdeskSettings {
+  /** The account's primary language code; its content lives on the base resource, not a translation. */
+  primary_language?: string
+  /** Language codes translations may be created for (configured in Admin > Helpdesk Settings). */
+  supported_languages?: string[]
+  /** Subset of supported languages exposed on the support portal. */
+  portal_languages?: string[]
+}
+
 const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
 
 /** Interval used before the server has told us its limit, in ms (conservative, avoids an opening burst). */
@@ -438,94 +452,91 @@ export class FreshdeskApi {
     return (await res.json()) as FreshdeskAgent
   }
 
-  async updateCategoryTranslation(
-    id: FreshdeskCategory['id'],
+  /**
+   * Fetch the account's helpdesk settings, including the primary language and the set of supported
+   * languages that gate which locales the knowledge base can hold translations for.
+   * @returns the primary language, supported languages, and portal languages
+   */
+  async getHelpdeskSettings(): Promise<FreshdeskHelpdeskSettings> {
+    const res = await this.request(`${this.baseUrl}/api/v2/settings/helpdesk`, { headers: this.defaultHeaders })
+    await this.checkStatus(res)
+    return (await res.json()) as FreshdeskHelpdeskSettings
+  }
+
+  /**
+   * Send a translation write and confirm it succeeded, then drain the response body so undici can
+   * release (and reuse) the connection promptly. A large sync issues thousands of writes and we do
+   * not use the returned translation object, so an undrained body would keep connections busy.
+   * @param url - the translation endpoint
+   * @param method - `put` to update, or `post` to create
+   * @param payload - the serialized translation body
+   */
+  private async writeRequest(url: string, method: 'put' | 'post', payload: string): Promise<void> {
+    const res = await this.request(url, { method, body: payload, headers: this.defaultHeaders })
+    await this.checkStatus(res)
+    await res.text().catch(() => undefined)
+  }
+
+  /**
+   * Write one translation with an optimistic update-then-create flow: `PUT` assuming it exists and,
+   * only on a 404, `POST` to create it. If the create is refused because the translation already
+   * exists (`409 duplicate_value`, or `405` where the endpoint only allows GET/PUT), Freshdesk is
+   * telling us the record exists even though `PUT` reported 404 — a state we cannot resolve through
+   * the API (typically an unsupported or primary language). Rather than fail the whole run, surface
+   * it as a warning and move on. Any other error is re-thrown for the caller to record.
+   * @param resourcePath - the solutions sub-path: `categories`, `folders`, or `articles`
+   * @param id - the primary resource id the translation belongs to
+   * @param locale - the Freshdesk language code
+   * @param body - the translation payload
+   * @returns true if the translation was written; false if Freshdesk reported it as an unresolvable
+   * already-exists skip, so callers can avoid advancing their synced baseline for a pair not written
+   */
+  private async writeTranslation(
+    resourcePath: 'categories' | 'folders' | 'articles',
+    id: number,
     locale: string,
-    body: FreshdeskCategoryCreate,
-  ): Promise<FreshdeskCategory> {
+    body: FreshdeskCategoryCreate | FreshdeskFolderCreate | FreshdeskArticleCreate,
+  ): Promise<boolean> {
+    const url = `${this.baseUrl}/api/v2/solutions/${resourcePath}/${id}/${locale}`
+    const payload = JSON.stringify(body)
     try {
-      const res = await this.request(`${this.baseUrl}/api/v2/solutions/categories/${id}/${locale}`, {
-        method: 'put',
-        body: JSON.stringify(body),
-        headers: this.defaultHeaders,
-      })
-      await this.checkStatus(res)
-      return (await res.json()) as FreshdeskCategory
+      await this.writeRequest(url, 'put', payload)
+      return true
     } catch (err) {
-      const httpError = err as HttpError
-      if (httpError.code === 404) {
-        // not found, try create instead
-        const res2 = await this.request(`${this.baseUrl}/api/v2/solutions/categories/${id}/${locale}`, {
-          method: 'post',
-          body: JSON.stringify(body),
-          headers: this.defaultHeaders,
-        })
-        await this.checkStatus(res2)
-        return (await res2.json()) as FreshdeskCategory
+      if ((err as HttpError).code !== 404) {
+        process.stdout.write(`Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`)
+        throw err
       }
-      process.stdout.write(`Error processing id ${id} for locale ${locale}: ${httpError.message}\n`)
+      // PUT 404: the translation does not exist yet, so fall through and create it.
+    }
+    try {
+      await this.writeRequest(url, 'post', payload)
+      return true
+    } catch (err) {
+      const code = (err as HttpError).code
+      if (code === 409 || code === 405) {
+        emitWarning(
+          `Skipping ${resourcePath} ${id} translation for "${locale}": Freshdesk refused the create ` +
+            `(HTTP ${code}) after PUT returned 404. This usually means "${locale}" is the primary ` +
+            `language or is not enabled in Freshdesk; enable it there to sync it.`,
+        )
+        return false
+      }
+      process.stdout.write(`Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`)
       throw err
     }
   }
 
-  async updateFolderTranslation(
-    id: FreshdeskFolder['id'],
-    locale: string,
-    body: FreshdeskFolderCreate,
-  ): Promise<FreshdeskFolder> {
-    try {
-      const res = await this.request(`${this.baseUrl}/api/v2/solutions/folders/${id}/${locale}`, {
-        method: 'put',
-        body: JSON.stringify(body),
-        headers: this.defaultHeaders,
-      })
-      await this.checkStatus(res)
-      return (await res.json()) as FreshdeskFolder
-    } catch (err) {
-      const httpError = err as HttpError
-      if (httpError.code === 404) {
-        // not found, try create instead
-        const res2 = await this.request(`${this.baseUrl}/api/v2/solutions/folders/${id}/${locale}`, {
-          method: 'post',
-          body: JSON.stringify(body),
-          headers: this.defaultHeaders,
-        })
-        await this.checkStatus(res2)
-        return (await res2.json()) as FreshdeskFolder
-      }
-      process.stdout.write(`Error processing id ${id} for locale ${locale}: ${httpError.message}\n`)
-      throw err
-    }
+  async updateCategoryTranslation(id: number, locale: string, body: FreshdeskCategoryCreate): Promise<boolean> {
+    return this.writeTranslation('categories', id, locale, body)
   }
 
-  async updateArticleTranslation(
-    id: FreshdeskArticle['id'],
-    locale: string,
-    body: FreshdeskArticleCreate,
-  ): Promise<FreshdeskArticle> {
-    try {
-      const res = await this.request(`${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`, {
-        method: 'put',
-        body: JSON.stringify(body),
-        headers: this.defaultHeaders,
-      })
-      await this.checkStatus(res)
-      return (await res.json()) as FreshdeskArticle
-    } catch (err) {
-      const httpError = err as HttpError
-      if (httpError.code === 404) {
-        // not found, try create instead
-        const res2 = await this.request(`${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`, {
-          method: 'post',
-          body: JSON.stringify(body),
-          headers: this.defaultHeaders,
-        })
-        await this.checkStatus(res2)
-        return (await res2.json()) as FreshdeskArticle
-      }
-      process.stdout.write(`Error processing id ${id} for locale ${locale}: ${httpError.message}\n`)
-      throw err
-    }
+  async updateFolderTranslation(id: number, locale: string, body: FreshdeskFolderCreate): Promise<boolean> {
+    return this.writeTranslation('folders', id, locale, body)
+  }
+
+  async updateArticleTranslation(id: number, locale: string, body: FreshdeskArticleCreate): Promise<boolean> {
+    return this.writeTranslation('articles', id, locale, body)
   }
 }
 

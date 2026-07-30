@@ -11,9 +11,10 @@ import FreshdeskApi, {
   FreshdeskFolder,
   logAuthenticatedAgent,
 } from './freshdesk-api.mts'
+import { loadBaseline, saveBaseline, SyncBaseline } from './sync-baseline.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
-import { txPull, txResourcesObjects, txAvailableLanguages } from './transifex.mts'
+import { txPull, txResourcesObjects, txAvailableLanguages, txResourceLanguageStats } from './transifex.mts'
 import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
@@ -45,6 +46,178 @@ export const reportFailures = (): void => {
     console.error(`  - ${failure.context}: ${failure.message}`)
   }
   process.exitCode = 1
+}
+
+// --- Change detection -------------------------------------------------------
+// The sync used to push every translation for every locale on every run (~10k+ Freshdesk writes),
+// which is what tripped the rate limit. We now pull per-(resource, locale) stats from Transifex once
+// and skip any pair whose translations have not changed since the last successful sync, so a normal
+// day writes only what actually moved. `DRY_RUN` does everything except issue the Freshdesk writes,
+// for validating the gate without mutating the knowledge base.
+
+/** When set (to a non-empty value other than "0"/"false"), do everything except issue Freshdesk writes. */
+const DRY_RUN = !!process.env.DRY_RUN && process.env.DRY_RUN !== '0' && process.env.DRY_RUN.toLowerCase() !== 'false'
+
+/**
+ * Wall-clock budget for a single run, in minutes (override with `HELP_SYNC_MAX_MINUTES`). When it is
+ * exceeded the sync stops starting new writes, persists the baseline for everything that finished, and
+ * exits cleanly. This matters because the baseline is restored from and saved to a CI cache whose save
+ * step only runs when the job is not cancelled: finishing under the job's hard `timeout-minutes` keeps
+ * partial progress, so a first-time full sync that cannot complete in one run converges over several
+ * daily runs instead of losing everything to a timeout.
+ */
+const RUN_TIME_BUDGET_MS = (() => {
+  const minutes = Number(process.env.HELP_SYNC_MAX_MINUTES)
+  return (Number.isFinite(minutes) && minutes > 0 ? minutes : 24) * 60_000
+})()
+/** When this run began, used to enforce {@link RUN_TIME_BUDGET_MS}. */
+const runStartedAt = Date.now()
+/** Count of changed, supported pairs left unattempted because the run hit its time budget. */
+let deferredForBudget = 0
+
+/**
+ * Whether the run has used up its wall-clock budget and should stop starting new writes. Only active
+ * once change detection is initialized, so the locale-debug script (which force-pulls) is unaffected.
+ * @returns true if no further writes should be started this run
+ */
+const runBudgetExhausted = (): boolean => changeDetectionReady && Date.now() - runStartedAt >= RUN_TIME_BUDGET_MS
+
+/** Whether {@link initChangeDetection} has run; until it has, the gate is disabled (sync everything). */
+let changeDetectionReady = false
+/** Transifex last-update timestamp per `<resourceSlug>:<localeCode>`, loaded once per run. */
+let currentStats = new Map<string, string | null>()
+/** The baseline recorded by the previous successful sync, loaded once per run. */
+let baseline: SyncBaseline = new Map()
+/** Pairs synced this run (or, in a dry run, that would sync), folded into the baseline at the end. */
+const syncedPairs: SyncBaseline = new Map()
+/** Count of Freshdesk writes skipped in a dry run, reported at the end. */
+let plannedWrites = 0
+
+/** Whether the Freshdesk supported-language filter is active (helpdesk settings loaded successfully). */
+let localeFilterActive = false
+/** Freshdesk supported language codes (lowercased) the knowledge base can hold translations for. */
+const supportedFreshdeskLocales = new Set<string>()
+/** Freshdesk primary language (lowercased); its content lives on the base resource, not a translation. */
+let primaryLanguage = ''
+
+/**
+ * Load the Transifex per-(resource, locale) stats, the previous baseline, and the Freshdesk helpdesk
+ * settings (which languages the KB can hold translations for). Call once before syncing.
+ * @returns a promise that resolves once change-detection state is loaded
+ */
+export const initChangeDetection = async (): Promise<void> => {
+  currentStats = await txResourceLanguageStats(TX_PROJECT)
+  baseline = loadBaseline()
+  try {
+    const settings = await FD.getHelpdeskSettings()
+    primaryLanguage = (settings.primary_language ?? '').toLowerCase()
+    for (const code of settings.supported_languages ?? []) {
+      supportedFreshdeskLocales.add(code.toLowerCase())
+    }
+    localeFilterActive = supportedFreshdeskLocales.size > 0
+  } catch (error) {
+    // If the settings can't be read, don't gate on language: attempt every locale and let the
+    // create path warn about any Freshdesk won't accept.
+    console.warn(`Could not read Freshdesk helpdesk settings; not filtering locales: ${messageOf(error)}`)
+  }
+  changeDetectionReady = true
+}
+
+/**
+ * Whether Freshdesk can hold a translation for a Transifex locale: it must map to a configured
+ * supported language and not be the primary language (whose content lives on the base resource).
+ * @param locale - the Transifex locale code
+ * @returns true if the locale should be pushed to Freshdesk
+ */
+const localeSupported = (locale: string): boolean => {
+  // Until the filter is active (settings not loaded, or the locale-debug script), don't gate.
+  if (!localeFilterActive) {
+    return true
+  }
+  const fd = freshdeskLocale(locale).toLowerCase()
+  return fd !== primaryLanguage && supportedFreshdeskLocales.has(fd)
+}
+
+/**
+ * Emit a single warning naming the locales Freshdesk is not configured to hold translations for, so
+ * someone reading the logs can decide whether to enable any of them in Freshdesk.
+ * @param languages - the Transifex locales the sync would otherwise push
+ */
+export const reportSkippedLocales = (languages: string[]): void => {
+  if (!localeFilterActive) {
+    return
+  }
+  // Report the Freshdesk language codes (deduplicated: several Transifex locales can map to one),
+  // because those are what an operator enables in Freshdesk -- not the raw Transifex locale codes.
+  const skipped = [...new Set(languages.filter(l => l !== 'en' && !localeSupported(l)).map(freshdeskLocale))].sort()
+  if (skipped.length > 0) {
+    emitWarning(
+      `Skipping ${skipped.length} Freshdesk language(s) not enabled for the knowledge base; their ` +
+        `translations cannot sync until they are added under Admin > Helpdesk Settings: ${skipped.join(', ')}.`,
+    )
+  }
+}
+
+/**
+ * Whether a (resource, locale) pair has translations worth pushing: it must have translated content
+ * and a newer last-update timestamp than the baseline recorded.
+ * @param resource - the Transifex resource slug
+ * @param locale - the Transifex locale code
+ * @returns true if the pair changed since the last successful sync
+ */
+const pairChanged = (resource: string, locale: string): boolean => {
+  // When change detection hasn't been initialized (for example the locale-debug script, which
+  // deliberately force-pulls), don't gate — behave as before and sync everything requested.
+  if (!changeDetectionReady) {
+    return true
+  }
+  const current = currentStats.get(`${resource}:${locale}`)
+  // No stats for the pair, or nothing translated yet -> nothing to push.
+  if (!current) {
+    return false
+  }
+  return baseline.get(`${resource}:${locale}`) !== current
+}
+
+/**
+ * Record that a (resource, locale) pair synced successfully, so its baseline entry advances to the
+ * current Transifex timestamp when the run finishes.
+ * @param resource - the Transifex resource slug
+ * @param locale - the Transifex locale code
+ */
+const markSynced = (resource: string, locale: string): void => {
+  const current = currentStats.get(`${resource}:${locale}`)
+  if (current) {
+    syncedPairs.set(`${resource}:${locale}`, current)
+  }
+}
+
+/**
+ * Finish the run: persist the advanced baseline (unless this is a dry run) and print the failure
+ * summary. Call once, after all saves have completed.
+ */
+export const finalizeSync = (): void => {
+  if (DRY_RUN) {
+    console.log(
+      `[dry-run] ${syncedPairs.size} (resource, locale) pair(s) changed and would sync, for ` +
+        `${plannedWrites} Freshdesk write(s). No writes were issued and the baseline was left unchanged.`,
+    )
+  } else {
+    for (const [key, timestamp] of syncedPairs) {
+      baseline.set(key, timestamp)
+    }
+    saveBaseline(baseline)
+    console.log(`Synced ${syncedPairs.size} (resource, locale) pair(s); baseline now holds ${baseline.size} entries.`)
+  }
+  if (deferredForBudget > 0) {
+    // Informational, not a warning: during a first-time full sync this is expected every run until the
+    // backlog clears, and routing it through emitWarning would alert on every one of those runs.
+    console.log(
+      `Reached the ${RUN_TIME_BUDGET_MS / 60_000}-minute run budget with ${deferredForBudget} changed ` +
+        `pair(s) not yet synced; they will sync on subsequent runs as the baseline converges.`,
+    )
+  }
+  reportFailures()
 }
 
 /**
@@ -144,6 +317,7 @@ export const getValidFreshdeskIds = async () => {
  * @param locale - the Transifex locale code corresponding to these strings
  * @param validIds - set of Freshdesk IDs that currently exist; keys not in this set are skipped
  * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
+ * @returns true if every entry saved without a failure (stale-key skips do not count as failures)
  */
 const serializeNameSave = async (
   strings: TransifexStringsKeyValueJson,
@@ -151,7 +325,8 @@ const serializeNameSave = async (
   locale: string,
   validIds: Set<number>,
   warnedKeys: Set<string>,
-): Promise<void> => {
+): Promise<boolean> => {
+  let allOk = true
   for (const [key, value] of Object.entries(strings)) {
     // Handle each entry independently: a failure on one item (for example a translation the token
     // is not allowed to write) must not abort the remaining names for this locale.
@@ -169,22 +344,30 @@ const serializeNameSave = async (
         }
         continue
       }
-      if (resource.attributes.name === 'categoryNames_json') {
-        await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value })
-      } else if (resource.attributes.name === 'folderNames_json') {
-        await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value })
-      } else {
-        // Guard against silently dropping an unexpected resource: this function only knows how to
-        // write category and folder names. A new KEYVALUEJSON names resource would otherwise no-op
-        // while still reporting success.
+      // Guard against silently dropping an unexpected resource: this function only knows how to write
+      // category and folder names. A new KEYVALUEJSON names resource would otherwise no-op while
+      // still reporting success.
+      if (resource.attributes.name !== 'categoryNames_json' && resource.attributes.name !== 'folderNames_json') {
         throw new Error(`Unexpected names resource "${resource.attributes.name}"; don't know how to save it`)
+      }
+      if (DRY_RUN) {
+        plannedWrites++
+      } else if (resource.attributes.name === 'categoryNames_json') {
+        // A skipped write (Freshdesk reports it already exists) must not advance the baseline.
+        if (!(await FD.updateCategoryTranslation(id, freshdeskLocale(locale), { name: value }))) {
+          allOk = false
+        }
+      } else if (!(await FD.updateFolderTranslation(id, freshdeskLocale(locale), { name: value }))) {
+        allOk = false
       }
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
       // next entry.
       recordFailure(`${resource.attributes.name} entry "${key}" for ${locale}`, error)
+      allOk = false
     }
   }
+  return allOk
 }
 
 /**
@@ -201,9 +384,13 @@ interface FreshdeskFolderInTransifex {
  * Internal function serialize Freshdesk requests to avoid getting rate limited
  * @param  json   object with keys corresponding to article ids
  * @param  locale language code
- * @returns a numeric status code
+ * @returns true if every article saved without a failure
  */
-const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTransifex>, locale: string) => {
+const serializeFolderSave = async (
+  json: TransifexStrings<FreshdeskFolderInTransifex>,
+  locale: string,
+): Promise<boolean> => {
+  let allOk = true
   for (const [idString, value] of Object.entries(json)) {
     // Handle each article independently: a failure on one must not abort the rest for this locale.
     try {
@@ -228,21 +415,29 @@ const serializeFolderSave = async (json: TransifexStrings<FreshdeskFolderInTrans
         }
         body.tags = validTags
       }
-      await FD.updateArticleTranslation(id, freshdeskLocale(locale), body)
+      if (DRY_RUN) {
+        plannedWrites++
+      } else if (!(await FD.updateArticleTranslation(id, freshdeskLocale(locale), body))) {
+        // A skipped write (Freshdesk reports it already exists) must not advance the baseline.
+        allOk = false
+      }
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
       // next article.
       recordFailure(`article ${idString} for ${locale}`, error)
+      allOk = false
     }
   }
+  return allOk
 }
 
 /**
  * Process Transifex resource corresponding to a Knowledge base folder on Freshdesk
  * @param  folderAttributes Transifex resource json corresponding to a KB folder
  * @param  locale locale to pull and submit to Freshdesk
+ * @returns true if the folder's articles for this locale all saved without a failure
  */
-export const localizeFolder = async (folderAttributes: TransifexResourceObject, locale: string) => {
+export const localizeFolder = async (folderAttributes: TransifexResourceObject, locale: string): Promise<boolean> => {
   try {
     const data = await txPull<FreshdeskFolderInTransifex>(
       TX_PROJECT,
@@ -250,9 +445,10 @@ export const localizeFolder = async (folderAttributes: TransifexResourceObject, 
       locale,
       'default',
     )
-    await serializeFolderSave(data, locale)
+    return await serializeFolderSave(data, locale)
   } catch (e) {
     recordFailure(`${folderAttributes.attributes.slug} for ${locale}`, e)
+    return false
   }
 }
 
@@ -260,22 +456,22 @@ export const localizeFolder = async (folderAttributes: TransifexResourceObject, 
  * Save Transifex resource corresponding to a Knowledge base folder locally for debugging
  * @param  folderAttributes Transifex resource json corresponding to a KB folder
  * @param  locale locale to pull and save
+ * @returns true if the resource was pulled and written to the debug file
  */
-export const debugFolder = async (folderAttributes: TransifexResourceObject, locale: string) => {
+export const debugFolder = async (folderAttributes: TransifexResourceObject, locale: string): Promise<boolean> => {
   await mkdirp('tmpDebug')
-  await txPull(TX_PROJECT, folderAttributes.attributes.slug, locale, 'default')
-    .then(data =>
-      fsPromises.writeFile(
-        `tmpDebug/${folderAttributes.attributes.slug}_${locale}.json`,
-        JSON.stringify(data, null, 2),
-      ),
+  try {
+    const data = await txPull(TX_PROJECT, folderAttributes.attributes.slug, locale, 'default')
+    await fsPromises.writeFile(
+      `tmpDebug/${folderAttributes.attributes.slug}_${locale}.json`,
+      JSON.stringify(data, null, 2),
     )
-    .catch(e => {
-      process.stdout.write(
-        `Error processing ${folderAttributes.attributes.slug}, ${locale}: ${(e as Error).message}\n`,
-      )
-      process.exitCode = 1 // not ok
-    })
+    return true
+  } catch (e) {
+    process.stdout.write(`Error processing ${folderAttributes.attributes.slug}, ${locale}: ${messageOf(e)}\n`)
+    process.exitCode = 1 // not ok
+    return false
+  }
 }
 
 /**
@@ -286,6 +482,7 @@ export const debugFolder = async (folderAttributes: TransifexResourceObject, loc
  * @param validCategoryIds - set of Freshdesk category IDs that currently exist
  * @param validFolderIds - set of Freshdesk folder IDs that currently exist
  * @param warnedKeys - tracks which stale resource+ID combinations have already been reported, to avoid repeating the warning
+ * @returns true if the names for this locale all saved without a failure
  */
 export const localizeNames = async (
   resource: TransifexResourceObject,
@@ -293,28 +490,52 @@ export const localizeNames = async (
   validCategoryIds: Set<number>,
   validFolderIds: Set<number>,
   warnedKeys: Set<string>,
-): Promise<void> => {
+): Promise<boolean> => {
   const validIds = resource.attributes.name === 'categoryNames_json' ? validCategoryIds : validFolderIds
-  await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
-    .then(data => serializeNameSave(data, resource, locale, validIds, warnedKeys))
-    .catch(e => recordFailure(`${resource.attributes.slug} for ${locale}`, e))
+  try {
+    const data = await txPull<TransifexStringKeyValueJson>(TX_PROJECT, resource.attributes.slug, locale, 'default')
+    return await serializeNameSave(data, resource, locale, validIds, warnedKeys)
+  } catch (e) {
+    recordFailure(`${resource.attributes.slug} for ${locale}`, e)
+    return false
+  }
 }
 
 const BATCH_SIZE = 2
 
-type SaveFn = (item: TransifexResourceObject, language: string) => Promise<void>
+type SaveFn = (item: TransifexResourceObject, language: string) => Promise<boolean>
 
 /**
- * save resource items in batches to reduce rate limiting errors
- * @param item      Transifex resource json, used for 'slug'
- * @param languages  Array of languages to save
- * @param saveFn  Async function to use to save the item
+ * Save a resource's translations in batches (to reduce rate-limit pressure), skipping any locale that
+ * has not changed since the last successful sync. A locale is recorded as synced only after its save
+ * reports success, so a partial or failed run re-syncs that pair next time instead of silently
+ * skipping it.
+ * @param item - Transifex resource object, used for its slug
+ * @param languages - array of locales to consider saving
+ * @param saveFn - async function that saves the item for one locale and returns whether it fully succeeded
+ * @returns a promise that resolves once every changed locale has been attempted
  */
-export const saveItem = async (item: TransifexResourceObject, languages: string[], saveFn: SaveFn) => {
-  const saveLanguages = languages.filter(l => l !== 'en') // exclude English from update
+export const saveItem = async (item: TransifexResourceObject, languages: string[], saveFn: SaveFn): Promise<void> => {
+  const slug = item.attributes.slug
+  // Exclude English (the source), locales Freshdesk can't hold, and pairs that haven't changed.
+  const saveLanguages = languages.filter(l => l !== 'en' && localeSupported(l) && pairChanged(slug, l))
   for (let i = 0; i < saveLanguages.length; i += BATCH_SIZE) {
-    await Promise.all(saveLanguages.slice(i, i + BATCH_SIZE).map(l => saveFn(item, l))).catch(err =>
-      recordFailure(`saving ${item.attributes.slug}`, err),
+    // Out of time: leave the rest of this resource's locales for a later run. They stay unmarked, so
+    // the next run still sees them as changed and picks them up.
+    if (runBudgetExhausted()) {
+      deferredForBudget += saveLanguages.length - i
+      break
+    }
+    await Promise.all(
+      saveLanguages.slice(i, i + BATCH_SIZE).map(async l => {
+        try {
+          if (await saveFn(item, l)) {
+            markSynced(slug, l)
+          }
+        } catch (err) {
+          recordFailure(`saving ${slug} for ${l}`, err)
+        }
+      }),
     )
   }
 }
