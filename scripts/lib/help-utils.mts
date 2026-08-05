@@ -61,16 +61,22 @@ const DRY_RUN = !!process.env.DRY_RUN && process.env.DRY_RUN !== '0' && process.
 /**
  * Wall-clock budget for a single run, in minutes (override with `HELP_SYNC_MAX_MINUTES`). When it is
  * exceeded the sync stops starting new writes, persists the baseline for everything that finished, and
- * exits cleanly. This matters because the baseline is restored from and saved to a CI cache whose save
- * step only runs when the job is not cancelled: finishing under the job's hard `timeout-minutes` keeps
- * partial progress, so a first-time full sync that cannot complete in one run converges over several
- * daily runs instead of losing everything to a timeout.
+ * exits cleanly. Durability across a cancellation is already handled by the incremental baseline flush
+ * plus the workflow's save-on-cancel step, so this budget is the graceful path, not the safety net:
+ * exiting cleanly under the step's hard `timeout-minutes` lets the run print its failure summary, exit
+ * non-zero on genuine errors, and finish as a success rather than a cancellation -- so real problems
+ * surface (and alert) while the baseline is still converging instead of being masked by a timeout.
  */
 const RUN_TIME_BUDGET_MS = (() => {
   const minutes = Number(process.env.HELP_SYNC_MAX_MINUTES)
   return (Number.isFinite(minutes) && minutes > 0 ? minutes : 24) * 60_000
 })()
-/** When this run began, used to enforce {@link RUN_TIME_BUDGET_MS}. */
+/**
+ * When this run began, used to enforce {@link RUN_TIME_BUDGET_MS}. Each sync phase (`pull:help:names`,
+ * `pull:help:articles`) runs as its own job step with its own step-level `timeout-minutes`, so this
+ * per-process clock starts alongside that step's timeout: the soft budget sits just under it, stopping
+ * new writes and exiting cleanly (reporting failures) before the step is hard-killed.
+ */
 const runStartedAt = Date.now()
 /** Count of changed, supported pairs left unattempted because the run hit its time budget. */
 let deferredForBudget = 0
@@ -192,6 +198,49 @@ const markSynced = (resource: string, locale: string): void => {
   }
 }
 
+/** Minimum interval between incremental baseline flushes, to bound both progress loss and write churn. */
+const BASELINE_FLUSH_INTERVAL_MS = 15_000
+/** When the baseline was last flushed to disk, used to debounce {@link maybeFlushBaseline}. */
+let lastBaselineFlushAt = 0
+
+/**
+ * Merge the pairs synced so far into the baseline and persist it to disk. A no-op in a dry run (which
+ * must never mutate the baseline) and before change detection is initialized: a script that calls
+ * saveItem without initChangeDetection (the locale-debug pull) leaves baseline/currentStats empty, and
+ * persisting then would clobber the real baseline with an empty file, forcing the next sync to re-sync
+ * everything. Safe to call from concurrently-running saveItem tasks: JS is single-threaded and
+ * {@link saveBaseline} writes atomically, so calls cannot interleave a partial file.
+ */
+const flushBaseline = (): void => {
+  if (DRY_RUN || !changeDetectionReady) {
+    return
+  }
+  for (const [key, timestamp] of syncedPairs) {
+    baseline.set(key, timestamp)
+  }
+  saveBaseline(baseline)
+  lastBaselineFlushAt = Date.now()
+}
+
+/**
+ * Persist the baseline if enough time has passed since the last flush. Called as the sync makes
+ * progress so a run cancelled mid-sync (for example by its phase step's timeout) still keeps what it
+ * finished on disk, letting the workflow's save-on-cancel step cache it and the next run continue
+ * instead of restarting a full sync. The graceful path still calls {@link flushBaseline} once more at
+ * the end via {@link finalizeSync}.
+ */
+const maybeFlushBaseline = (): void => {
+  // Nothing to persist in a dry run or before change detection is initialized, so skip the debounce
+  // entirely rather than calling flushBaseline (a no-op there) on every batch. flushBaseline keeps the
+  // same guards for the finalizeSync path.
+  if (DRY_RUN || !changeDetectionReady) {
+    return
+  }
+  if (Date.now() - lastBaselineFlushAt >= BASELINE_FLUSH_INTERVAL_MS) {
+    flushBaseline()
+  }
+}
+
 /**
  * Finish the run: persist the advanced baseline (unless this is a dry run) and print the failure
  * summary. Call once, after all saves have completed.
@@ -203,10 +252,7 @@ export const finalizeSync = (): void => {
         `${plannedWrites} Freshdesk write(s). No writes were issued and the baseline was left unchanged.`,
     )
   } else {
-    for (const [key, timestamp] of syncedPairs) {
-      baseline.set(key, timestamp)
-    }
-    saveBaseline(baseline)
+    flushBaseline()
     console.log(`Synced ${syncedPairs.size} (resource, locale) pair(s); baseline now holds ${baseline.size} entries.`)
   }
   if (deferredForBudget > 0) {
@@ -537,5 +583,8 @@ export const saveItem = async (item: TransifexResourceObject, languages: string[
         }
       }),
     )
+    // Persist progress periodically so a run cancelled mid-sync keeps what it finished (see
+    // maybeFlushBaseline); the interval debounce keeps this from writing on every batch.
+    maybeFlushBaseline()
   }
 }

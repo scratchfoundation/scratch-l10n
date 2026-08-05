@@ -24,11 +24,23 @@ permissions:
 jobs:
   daily-help-update:
     runs-on: ubuntu-latest
-    # Hard backstop against an unexpected hang. The sync stops issuing new writes at its own softer
-    # wall-clock budget (HELP_SYNC_MAX_MINUTES, default 24) and exits cleanly under this limit, so the
-    # cache save below always runs and partial progress from a first-time full sync is never lost to a
-    # cancellation.
-    timeout-minutes: 30
+    # Loose backstop for steps without their own timeout (setup, push) and for an unexpected hang. The
+    # per-phase sync steps below carry their own step-level timeouts, and the sync stops issuing new
+    # writes at its softer wall-clock budget (HELP_SYNC_MAX_MINUTES) before those fire, so this job cap
+    # is rarely the thing that ends a run.
+    timeout-minutes: 45
+
+    env:
+      # Non-secret config, safe to share with every step. The Freshdesk/Transifex tokens are NOT here:
+      # they are scoped to the phase steps that need them (below) so the rest of the job never sees them.
+      # Default soft wall-clock budget per sync phase, kept under the articles step's timeout-minutes so
+      # the sync stops starting writes and exits cleanly (reporting failures) before the step is
+      # hard-killed. The shorter names step overrides this under its own timeout.
+      HELP_SYNC_MAX_MINUTES: '27'
+      # Empty except on a manual dry-run dispatch, where it makes the pull report what it would write to
+      # Freshdesk without issuing any writes. Read through github.event.inputs (rather than the inputs
+      # context) so scheduled runs, which have no inputs, safely resolve to "not dry-run".
+      DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
 
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6
@@ -42,46 +54,79 @@ jobs:
           npm ci
           npx browserslist@latest --update-db
 
+      # One warnings file shared by every phase step (each appends), read after the sync to surface
+      # warnings in the job summary and notify. Set here because runner.temp is not available in
+      # job-level env.
+      - name: Configure the warnings file
+        run: echo "WARNINGS_FILE=$RUNNER_TEMP/sync-help-warnings.txt" >> "$GITHUB_ENV"
+
       # The change-detection baseline records the last-synced Transifex timestamp per (resource, locale)
       # so each run only pushes what changed. It is not committed; it lives in the cache. The key is
-      # unique per run attempt (run_id + run_attempt, since a re-run keeps the same run_id) so the
-      # post-job save always stores that attempt's updated baseline, and restore-keys pulls the most
-      # recent prior baseline. If the cache is ever evicted, the baseline is simply rebuilt by a
-      # one-time full sync (which converges over a few runs).
-      - name: Restore and save the help-sync baseline
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+      # unique per run attempt (run_id + run_attempt, since a re-run keeps the same run_id) so the save
+      # step stores that attempt's updated baseline, and restore-keys pulls the most recent prior
+      # baseline. If the cache is ever evicted, the baseline is simply rebuilt by a one-time full sync
+      # (which converges over a few runs). Restore and save are split so the save can run on
+      # cancellation (see the save step below).
+      - name: Restore the help-sync baseline
+        uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: scripts/help-sync-baseline.json
           key: help-sync-baseline-${{ github.run_id }}-${{ github.run_attempt }}
           restore-keys: |
             help-sync-baseline-
 
-      - name: Sync help
+      # The sync runs as separate phase steps, each its own process. Splitting them gives the expensive
+      # articles phase its own step-level timeout measured from its own start (rather than sharing one
+      # job-wide clock), and makes it clear in the logs which phase ran long. Push source to Transifex
+      # first, but not on a dry run, whose purpose is to report what would sync without mutating anything.
+      - name: Push help source to Transifex
+        if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
-          # Organization-wide secrets
           FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
           TX_TOKEN: ${{ secrets.TX_TOKEN }}
-          WARNINGS_FILE: ${{ runner.temp }}/sync-help-warnings.txt
-          # Empty except on a manual dry-run dispatch, where it makes the pull report what it would
-          # write to Freshdesk without issuing any writes. Read through github.event.inputs (rather than
-          # the inputs context) so scheduled runs, which have no inputs, safely resolve to "not dry-run".
-          DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '' }}
-        run: |
-          if [ -n "$DRY_RUN" ]; then
-            echo "DRY RUN: pulling and reporting what would sync, without writing to Freshdesk."
-            npm run pull:help
-          else
-            npm run sync:help
-          fi
+        run: npm run push:help
+
+      - name: Sync category and folder names
+        # Small phase (two resources); both caps are generous for it and should never be reached. Its
+        # soft budget overrides the job default to stay under this timeout, so if it ever did run long it
+        # would still stop and exit cleanly before being hard-killed, matching the articles phase.
+        timeout-minutes: 10
+        env:
+          FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+          HELP_SYNC_MAX_MINUTES: '8'
+        run: npm run pull:help:names
+
+      - name: Sync articles
+        # The large phase. Its timeout sits just above HELP_SYNC_MAX_MINUTES so the soft budget stops
+        # new writes and the run exits cleanly before this hard cap fires.
+        timeout-minutes: 30
+        env:
+          FRESHDESK_TOKEN: ${{ secrets.FRESHDESK_TOKEN }}
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: npm run pull:help:articles
+
+      # Save the baseline even when the sync is cancelled -- most importantly when a phase step hits its
+      # timeout mid-sync during a first-time full sync (or the job hits its cap). The sync flushes
+      # progress to disk as it goes, so this caches whatever finished and the next run continues from it.
+      # always() is required: the default (success()) and !cancelled() both skip on cancellation, which
+      # is exactly when saving partial progress matters most. Skipped on dry runs, which never write the
+      # baseline (nothing new to cache; avoids a spurious "path does not exist" warning).
+      - name: Save the help-sync baseline
+        if: ${{ always() && github.event.inputs.dry_run != 'true' }}
+        uses: actions/cache/save@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: scripts/help-sync-baseline.json
+          key: help-sync-baseline-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Check for warnings
         id: check-warnings
         if: success()
         run: |
-          if [ -s "${{ runner.temp }}/sync-help-warnings.txt" ]; then
+          if [ -s "$WARNINGS_FILE" ]; then
             echo "has_warnings=true" >> "$GITHUB_OUTPUT"
             echo "### Sync Help Warnings" >> "$GITHUB_STEP_SUMMARY"
-            cat "${{ runner.temp }}/sync-help-warnings.txt" >> "$GITHUB_STEP_SUMMARY"
+            cat "$WARNINGS_FILE" >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - uses: ./.github/actions/report-scheduled-issue
