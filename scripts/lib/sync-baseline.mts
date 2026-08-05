@@ -8,7 +8,7 @@
  * The file location is overridable via `HELP_SYNC_BASELINE_FILE` so the persistence mechanism (a
  * committed repo file vs. a restored CI cache) can change without touching this code.
  */
-import { readFileSync, writeFileSync, mkdirSync } from 'fs'
+import { readFileSync, writeFileSync, mkdirSync, renameSync } from 'fs'
 import { dirname } from 'path'
 import { messageOf } from './errors.mts'
 
@@ -42,7 +42,11 @@ export const loadBaseline = (path?: string): SyncBaseline => {
 }
 
 /**
- * Persist the baseline to disk, sorted by key for a stable, diff-friendly file.
+ * Persist the baseline to disk, sorted by key for a stable, diff-friendly file. The write is atomic
+ * (write a temp file, then rename over the target) because the sync flushes the baseline repeatedly
+ * as it makes progress and relies on the file surviving an abrupt kill (a job timeout mid-write). A
+ * partial `writeFileSync` would otherwise leave a truncated file that {@link loadBaseline} discards as
+ * corrupt, throwing away every pair synced so far. `renameSync` within the same directory is atomic.
  * @param baseline - the baseline to write
  * @param path - override for the baseline file location; defaults to `HELP_SYNC_BASELINE_FILE` or {@link DEFAULT_BASELINE_PATH}
  */
@@ -53,5 +57,7 @@ export const saveBaseline = (baseline: SyncBaseline, path?: string): void => {
   for (const key of [...baseline.keys()].sort()) {
     sorted[key] = baseline.get(key) ?? null
   }
-  writeFileSync(file, JSON.stringify(sorted, null, 2) + '\n')
+  const tempFile = `${file}.tmp`
+  writeFileSync(tempFile, JSON.stringify(sorted, null, 2) + '\n')
+  renameSync(tempFile, file)
 }
