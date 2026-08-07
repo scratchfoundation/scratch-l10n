@@ -4,7 +4,8 @@
  */
 import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
-import { messageOf } from './errors.mts'
+import { emitAnnotation } from './annotations.mts'
+import { describeJsonParseError, messageOf } from './errors.mts'
 import FreshdeskApi, {
   FreshdeskArticleCreate,
   FreshdeskArticleStatus,
@@ -14,7 +15,15 @@ import FreshdeskApi, {
 import { loadBaseline, saveBaseline, SyncBaseline } from './sync-baseline.mts'
 import { TransifexStringKeyValueJson, TransifexStringsKeyValueJson, TransifexStrings } from './transifex-formats.mts'
 import { TransifexResourceObject } from './transifex-objects.mts'
-import { txPull, txResourcesObjects, txAvailableLanguages, txResourceLanguageStats } from './transifex.mts'
+import {
+  txPull,
+  txResourcesObjects,
+  txAvailableLanguages,
+  txResourceLanguageStats,
+  transifexEditorLink,
+  txPullErrorCause,
+  SOURCE_LOCALE,
+} from './transifex.mts'
 import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
@@ -25,12 +34,30 @@ const TX_PROJECT = 'scratch-help'
 // transparently by the client (paced requests, `Retry-After`-aware retries), so anything that reaches
 // here is a genuine problem worth a human's attention. `reportFailures` prints a consolidated summary
 // and fails the run at the end, so real errors are surfaced rather than lost in the log.
-const failures: { context: string; message: string }[] = []
-const recordFailure = (context: string, error: unknown): void => {
+const failures: { context: string; message: string; link?: string }[] = []
+const recordFailure = (context: string, error: unknown, link?: string): void => {
   const message = messageOf(error)
+  // A txPull error carries the failing (resource, locale) — and, for a parse failure, the raw text —
+  // on its `cause`, so we can build a Transifex link and describe malformed JSON without the call site
+  // passing anything. An explicit link still wins: some callers know the fix lives on the source (`en`)
+  // rather than the translation locale the pull used.
+  const cause = txPullErrorCause(error)
+  const resolvedLink =
+    link ??
+    (cause
+      ? transifexEditorLink({ project: cause.project, resource: cause.resource, lang: cause.locale })
+      : undefined)
+  const detail = cause?.buffer != null ? describeJsonParseError(error, cause.buffer) : undefined
+  const fullMessage = detail ? `${message} — ${detail}` : message
   // Genuine failures go to stderr (like the consolidated summary), so they stand apart from normal output.
-  process.stderr.write(`Error: ${context}: ${message}\n`)
-  failures.push({ context, message })
+  process.stderr.write(`Error: ${context}: ${fullMessage}${resolvedLink ? ` (${resolvedLink})` : ''}\n`)
+  failures.push({ context, message: fullMessage, link: resolvedLink })
+  // Surface it on the run page too (no-op off CI). The full list still lives in stderr and the summary.
+  emitAnnotation({
+    level: 'error',
+    title: context,
+    message: resolvedLink ? `${fullMessage}\n${resolvedLink}` : fullMessage,
+  })
 }
 
 /**
@@ -43,7 +70,7 @@ export const reportFailures = (): void => {
   }
   console.error(`\n${failures.length} item(s) failed to sync to Freshdesk:`)
   for (const failure of failures) {
-    console.error(`  - ${failure.context}: ${failure.message}`)
+    console.error(`  - ${failure.context}: ${failure.message}${failure.link ? ` (${failure.link})` : ''}`)
   }
   process.exitCode = 1
 }
@@ -386,6 +413,8 @@ const serializeNameSave = async (
           warnedKeys.add(warnedKey)
           emitWarning(
             `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
+            // The key is removed from the source, so point at the source language, not a translation.
+            transifexEditorLink({ project: TX_PROJECT, resource: resource.attributes.slug, lang: SOURCE_LOCALE }),
           )
         }
         continue
@@ -409,7 +438,11 @@ const serializeNameSave = async (
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
       // next entry.
-      recordFailure(`${resource.attributes.name} entry "${key}" for ${locale}`, error)
+      recordFailure(
+        `${resource.attributes.name} entry "${key}" for ${locale}`,
+        error,
+        transifexEditorLink({ project: TX_PROJECT, resource: resource.attributes.slug, lang: locale }),
+      )
       allOk = false
     }
   }
@@ -430,11 +463,13 @@ interface FreshdeskFolderInTransifex {
  * Internal function serialize Freshdesk requests to avoid getting rate limited
  * @param  json   object with keys corresponding to article ids
  * @param  locale language code
+ * @param  resourceSlug Transifex resource slug for these articles, used to build editor links in warnings and failures
  * @returns true if every article saved without a failure
  */
 const serializeFolderSave = async (
   json: TransifexStrings<FreshdeskFolderInTransifex>,
   locale: string,
+  resourceSlug: string,
 ): Promise<boolean> => {
   let allOk = true
   for (const [idString, value] of Object.entries(json)) {
@@ -457,6 +492,7 @@ const serializeFolderSave = async (
               `(${locale}); shorten them in Transifex: ${droppedTags
                 .map(tag => `"${tag}" (${tag.length} chars)`)
                 .join(', ')}.`,
+            transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale }),
           )
         }
         body.tags = validTags
@@ -470,7 +506,11 @@ const serializeFolderSave = async (
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
       // next article.
-      recordFailure(`article ${idString} for ${locale}`, error)
+      recordFailure(
+        `article ${idString} for ${locale}`,
+        error,
+        transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale }),
+      )
       allOk = false
     }
   }
@@ -491,7 +531,7 @@ export const localizeFolder = async (folderAttributes: TransifexResourceObject, 
       locale,
       'default',
     )
-    return await serializeFolderSave(data, locale)
+    return await serializeFolderSave(data, locale, folderAttributes.attributes.slug)
   } catch (e) {
     recordFailure(`${folderAttributes.attributes.slug} for ${locale}`, e)
     return false
@@ -579,7 +619,11 @@ export const saveItem = async (item: TransifexResourceObject, languages: string[
             markSynced(slug, l)
           }
         } catch (err) {
-          recordFailure(`saving ${slug} for ${l}`, err)
+          recordFailure(
+            `saving ${slug} for ${l}`,
+            err,
+            transifexEditorLink({ project: TX_PROJECT, resource: slug, lang: l }),
+          )
         }
       }),
     )

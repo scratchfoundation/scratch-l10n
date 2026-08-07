@@ -12,7 +12,63 @@ import {
 } from './transifex-objects.mts'
 
 const ORG_NAME = 'llk'
-const SOURCE_LOCALE = 'en'
+export const SOURCE_LOCALE = 'en'
+
+/**
+ * Build a deep link to the Transifex online editor for a resource in one language, matching the URL
+ * the web app uses: `app.transifex.com/<org>/<project>/translate/#<lang>/<resource>[/<stringId>]`.
+ * @param params - link target
+ * @param params.project - project slug (for example, `scratch-help`)
+ * @param params.resource - resource slug (for example, `Accessibility_4000040849_json`)
+ * @param params.lang - language code: the source ({@link SOURCE_LOCALE}) for a source-side fix, or the
+ *   translation locale for a bad translation
+ * @param params.stringId - optional Transifex numeric string id to focus a single string; omitted, the
+ *   link lands on the resource (with its first string shown)
+ * @returns the editor URL
+ */
+export const transifexEditorLink = (params: {
+  project: string
+  resource: string
+  lang: string
+  stringId?: string | number
+}): string => {
+  const { project, resource, lang, stringId } = params
+  const base = `https://app.transifex.com/${ORG_NAME}/${project}/translate/#${lang}/${resource}`
+  return stringId == null ? base : `${base}/${stringId}`
+}
+
+/**
+ * Shape attached to a {@link txPull} error's `cause`, carrying the context needed to locate and link
+ * the failing (resource, locale) in Transifex (and, for a parse failure, the raw file that failed).
+ */
+export interface TxPullErrorCause {
+  project: string
+  resource: string
+  locale: string
+  buffer: string | null
+}
+
+/**
+ * Read the {@link TxPullErrorCause} that {@link txPull} attaches to its errors, if present, so a
+ * failure handler can build a Transifex link (and read the raw buffer for a parse failure) without the
+ * call site threading that context through.
+ * @param error - the caught value
+ * @returns the cause, or undefined if the error did not come from txPull
+ */
+export const txPullErrorCause = (error: unknown): TxPullErrorCause | undefined => {
+  const cause = (error as { cause?: unknown } | null)?.cause
+  if (
+    cause &&
+    typeof cause === 'object' &&
+    typeof (cause as TxPullErrorCause).project === 'string' &&
+    typeof (cause as TxPullErrorCause).resource === 'string' &&
+    typeof (cause as TxPullErrorCause).locale === 'string' &&
+    (typeof (cause as TxPullErrorCause).buffer === 'string' || (cause as TxPullErrorCause).buffer === null)
+  ) {
+    return cause as TxPullErrorCause
+  }
+  return undefined
+}
 
 if (!process.env.TX_TOKEN) {
   throw new Error('TX_TOKEN is not defined.')
