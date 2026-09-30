@@ -10,7 +10,7 @@ _Describe what this Pull Request does_
 
 There are two situations in which we create manual PRs to update translations:
 
-1. We don't want to wait for Travis's automatic weekly update; or,
+1. We don't want to wait for the automatic daily update (the Daily TX Pull workflow); or,
 2. We need to add a language that has become ready
 
 ### 1. Updating translations manually
@@ -30,7 +30,7 @@ There are two situations in which we create manual PRs to update translations:
 
 - [ ] Check if the new language uses a country code
 
-  - Check [https://www.transifex.com/explore/languages](https://www.transifex.com/explore/languages). If the language has a country code:
+  - Check [Transifex's language list](https://explore.transifex.com/languages/). If the language has a country code:
   - [ ] Edit `src/supported-locales.mjs`:
     - Add new entry to `localeMap`. Format is `'<W3C HTML browser locale string>': '<Transifex ICU locale string>'`
   - [ ] Edit `.tx/config`:
@@ -68,8 +68,9 @@ There are two situations in which we create manual PRs to update translations:
 - [ ] **Add language to scratchr2 settings**
   - manually update `settings/base.py` with the new language
 
-#### After scratch-l10n update is published:
+#### After scratch-l10n update is published
 
-- [ ] **Update scratch-blocks dependency**
-  - [ ] in `package.json`, update the version of the scratch-l10n dependency to the version number you used above
-  - [ ] pull translations so that a new `Blockly.ScratchMsgs.locales["<LOCALE CODE>"]` is added to `msg/scratch_msgs.js`
+- [ ] **Confirm scratch-blocks picks up the new version**
+  - scratch-blocks bundles every locale in `locales/blocks-msgs.js`, so there is no manual step: Renovate opens a
+    `fix(deps)` PR bumping its scratch-l10n devDependency, and merging it publishes a scratch-blocks release.
+  - [ ] Check that PR merged and the new locale appears in `ScratchMsgs.locales`
