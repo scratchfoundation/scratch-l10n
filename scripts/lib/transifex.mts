@@ -93,12 +93,20 @@ const TX_UPLOAD_TIMEOUT_MS = 5 * 60_000
 /** Per-request timeout for downloading a resource from the CDN, in milliseconds. */
 const TX_DOWNLOAD_TIMEOUT_MS = 60_000
 /**
+ * How long the Transifex SDK waits between checks on whether a download event's file is ready, in
+ * seconds (the SDK's own unit). The SDK sleeps this long before its first check, and files are
+ * usually ready within a fraction of a second, so the SDK's 5-second default dominates a bulk pull.
+ */
+const TX_DOWNLOAD_POLL_INTERVAL_S = 0.25
+/**
  * Maximum number of Transifex download events to create concurrently. Each `txPull` creates a
  * download event (a rate-limited API call); fanning every (resource, locale) pair out at once
  * overruns the API's throttle. Bounding the create step keeps a bulk pull under the limit while
- * still overlapping enough requests to make progress.
+ * still overlapping enough requests to make progress. With the short poll interval, 8 pulls all of
+ * scratch-website (3,840 files) in about 10 minutes without a single 429; 16 is only about 2 minutes
+ * faster and gets throttled on every run.
  */
-const TX_MAX_CONCURRENT_DOWNLOADS = 4
+const TX_MAX_CONCURRENT_DOWNLOADS = 8
 /** Upper bound on how long to honor a throttle's "expected available" hint before giving up on it. */
 const TX_MAX_THROTTLE_WAIT_MS = 120_000
 
@@ -302,6 +310,7 @@ const getResourceLocation = async function (
   // if locale is English, create a download event of the source file
   if (localeCode === SOURCE_LOCALE) {
     return (await transifexApi.ResourceStringsAsyncDownload.download({
+      interval: TX_DOWNLOAD_POLL_INTERVAL_S,
       resource,
     })) as string
   }
@@ -315,6 +324,7 @@ const getResourceLocation = async function (
 
   // if locale is not English, create a download event of the translation file
   return (await transifexApi.ResourceTranslationsAsyncDownload.download({
+    interval: TX_DOWNLOAD_POLL_INTERVAL_S,
     mode,
     resource,
     language,
