@@ -3,7 +3,14 @@
  * @file
  * Script to pull scratch-help translations from transifex and push to FreshDesk.
  */
-import { getInputs, saveItem, localizeFolder, debugFolder } from './lib/help-utils.mts'
+import {
+  getInputs,
+  getValidFreshdeskIds,
+  foldersToSync,
+  saveItem,
+  localizeFolder,
+  debugFolder,
+} from './lib/help-utils.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -29,6 +36,7 @@ if (locale === '-d') {
 }
 const saveFn = debug ? debugFolder : localizeFolder
 
-const { folders } = await getInputs()
+const [{ folders: allFolders }, { validFolderIds }] = await Promise.all([getInputs(), getValidFreshdeskIds()])
+const folders = foldersToSync(allFolders, validFolderIds)
 console.log('Processing articles pulled from Transifex')
 await Promise.all(folders.map(item => saveItem(item, [locale], saveFn)))

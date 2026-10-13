@@ -5,6 +5,8 @@
  */
 import {
   getInputs,
+  getValidFreshdeskIds,
+  foldersToSync,
   saveItem,
   localizeFolder,
   initChangeDetection,
@@ -29,7 +31,11 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
 }
 
 await initChangeDetection()
-const { languages, folders } = await getInputs()
+const [{ languages, folders: allFolders }, { validFolderIds }] = await Promise.all([
+  getInputs(),
+  getValidFreshdeskIds(),
+])
+const folders = foldersToSync(allFolders, validFolderIds)
 reportSkippedLocales(languages)
 console.log('Processing articles pulled from Transifex')
 await Promise.all(folders.map(item => saveItem(item, languages, localizeFolder)))

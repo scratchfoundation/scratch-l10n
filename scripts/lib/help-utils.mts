@@ -28,6 +28,8 @@ import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
+/** The Transifex resources that hold category and folder names; every other JSON resource holds articles. */
+const NAMES_RESOURCES = ['categoryNames_json', 'folderNames_json']
 
 // Collect per-item failures instead of aborting on the first one, so one bad translation or a single
 // item the token cannot write still lets every other item sync. Freshdesk rate limiting is handled
@@ -356,13 +358,16 @@ export const getInputs = async () => {
   const resourcesPromise = txResourcesObjects(TX_PROJECT)
   const languagesPromise = txAvailableLanguages(TX_PROJECT)
 
-  // there are three types of resources differentiated by the file type
+  // Category and folder names live in two fixed KEYVALUEJSON resources; every other JSON resource holds a
+  // folder's articles. Classify by name rather than type: some article resources were created as
+  // KEYVALUEJSON by mistake, and they download in the same nested shape as the STRUCTURED_JSON ones.
+  const isNames = (resource: TransifexResourceObject) => NAMES_RESOURCES.includes(resource.attributes.slug)
+  const isJson = (resource: TransifexResourceObject) =>
+    resource.attributes.i18n_type === 'STRUCTURED_JSON' || resource.attributes.i18n_type === 'KEYVALUEJSON'
   const foldersPromise = resourcesPromise.then(resources =>
-    resources.filter(resource => resource.attributes.i18n_type === 'STRUCTURED_JSON'),
+    resources.filter(resource => isJson(resource) && !isNames(resource)),
   )
-  const namesPromise = resourcesPromise.then(resources =>
-    resources.filter(resource => resource.attributes.i18n_type === 'KEYVALUEJSON'),
-  )
+  const namesPromise = resourcesPromise.then(resources => resources.filter(isNames))
   // ignore the yaml type because it's not possible to update via API
 
   const [languages, folders, names] = await Promise.all([languagesPromise, foldersPromise, namesPromise])
@@ -393,6 +398,46 @@ export const getValidFreshdeskIds = async () => {
   const validFolderIds = new Set(fdFolders.map(f => f.id).filter((id): id is number => id !== undefined))
   return { validCategoryIds, validFolderIds }
 }
+
+/**
+ * Freshdesk folders whose article translations are deliberately not written to Freshdesk, even when they're
+ * translated in Transifex. Their articles are still pushed to Transifex as source.
+ *
+ * - 4000040867 "Legal Documents" (Terms of Service, Privacy Policy, and the like): we don't publish
+ *   translations of legal documents for now. This decision may be revisited.
+ */
+const UNSYNCED_FOLDER_IDS = new Set([4000040867])
+
+/**
+ * Keep only the article resources whose translations should be written to Freshdesk: the folder must still
+ * exist, and must not be in {@link UNSYNCED_FOLDER_IDS}. The push only updates resources for current
+ * folders, so a resource left behind by a deleted folder keeps its old English source forever. Its articles
+ * may have moved to another folder, so pulling it would overwrite their live translations with translations
+ * of outdated content. Each such resource is reported once so someone can remove it.
+ * @param folders - article resources from {@link getInputs}, named `<folder name>_<folder id>_json`
+ * @param validFolderIds - set of Freshdesk folder IDs that currently exist
+ * @returns the resources whose translations should sync to Freshdesk
+ */
+export const foldersToSync = (folders: TransifexResourceObject[], validFolderIds: Set<number>) =>
+  folders.filter(resource => {
+    const slug = resource.attributes.slug
+    const match = /_(\d+)_json$/.exec(slug)
+    if (match && UNSYNCED_FOLDER_IDS.has(Number(match[1]))) {
+      // Intentional, so log it rather than raising a warning on every run.
+      console.log(`Not syncing Transifex resource "${slug}": its translations are excluded from Freshdesk.`)
+      return false
+    }
+    if (match && validFolderIds.has(Number(match[1]))) {
+      return true
+    }
+    emitWarning(
+      match
+        ? `Skipping Transifex resource "${slug}": Freshdesk folder ${match[1]} no longer exists. Remove this resource from Transifex.`
+        : `Skipping Transifex resource "${slug}": its name doesn't end in a Freshdesk folder ID.`,
+      transifexEditorLink({ project: TX_PROJECT, resource: slug, lang: SOURCE_LOCALE }),
+    )
+    return false
+  })
 
 /**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
@@ -618,8 +663,8 @@ export const debugFolder = async (folderAttributes: TransifexResourceObject, loc
 }
 
 /**
- * Process KEYVALUEJSON resources from scratch-help on transifex
- * Category and Folder names are stored as plain json
+ * Process the category and folder names resources from scratch-help on transifex
+ * Category and Folder names are stored as plain json (KEYVALUEJSON)
  * @param resource Transifex resource json for either CategoryNames or FolderNames
  * @param locale   locale to pull and submit to Freshdesk
  * @param validCategoryIds - set of Freshdesk category IDs that currently exist
