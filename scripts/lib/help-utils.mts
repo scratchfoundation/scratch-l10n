@@ -555,13 +555,19 @@ const serializeFolderSave = async (
       }
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
-      // next article. The link filters the editor to the article's strings (a `key:<id>` search
-      // matches its title, description, and tags).
-      recordFailure(
-        `article ${idString} for ${locale}`,
-        error,
-        transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale, query: `key:${idString}` }),
-      )
+      // next article. Freshdesk won't accept an article translation until its folder's name is
+      // translated too, so for that error point at the folder's entry in the names resource (keyed by
+      // this resource's slug without `_json`) instead of the article. Otherwise filter the editor to
+      // the article's strings (a `key:<id>` search matches its title, description, and tags).
+      const link = /"field"\s*:\s*"folder_name"/.test(messageOf(error))
+        ? transifexEditorLink({
+            project: TX_PROJECT,
+            resource: 'folderNames_json',
+            lang: locale,
+            query: `key:${resourceSlug.replace(/_json$/, '')}`,
+          })
+        : transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale, query: `key:${idString}` })
+      recordFailure(`article ${idString} for ${locale}`, error, link)
       allOk = false
     }
   }
