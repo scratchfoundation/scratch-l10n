@@ -16,7 +16,8 @@ export const SOURCE_LOCALE = 'en'
 
 /**
  * Build a deep link to the Transifex online editor for a resource in one language, matching the URL
- * the web app uses: `app.transifex.com/<org>/<project>/translate/#<lang>/<resource>[/<stringId>]`.
+ * the web app uses: `app.transifex.com/<org>/<project>/translate/#<lang>/<resource>[/<stringId>]`, or
+ * `…/<resource>?q=<query>` to open the editor with a search applied.
  * @param params - link target
  * @param params.project - project slug (for example, `scratch-help`)
  * @param params.resource - resource slug (for example, `Accessibility_4000040849_json`)
@@ -24,6 +25,8 @@ export const SOURCE_LOCALE = 'en'
  *   translation locale for a bad translation
  * @param params.stringId - optional Transifex numeric string id to focus a single string; omitted, the
  *   link lands on the resource (with its first string shown)
+ * @param params.query - optional editor search, as typed into its search box (for example,
+ *   `key:4000156778.description` to filter to one string by its key); takes precedence over `stringId`
  * @returns the editor URL
  */
 export const transifexEditorLink = (params: {
@@ -31,9 +34,15 @@ export const transifexEditorLink = (params: {
   resource: string
   lang: string
   stringId?: string | number
+  query?: string
 }): string => {
-  const { project, resource, lang, stringId } = params
+  const { project, resource, lang, stringId, query } = params
   const base = `https://app.transifex.com/${ORG_NAME}/${project}/translate/#${lang}/${resource}`
+  if (query != null) {
+    // No slash before `?q=`. The editor rewrites its address bar to `<resource>/?q=…`, but that form
+    // lands on the project overview (query ignored) when opened fresh.
+    return `${base}?q=${encodeURIComponent(query)}`
+  }
   return stringId == null ? base : `${base}/${stringId}`
 }
 

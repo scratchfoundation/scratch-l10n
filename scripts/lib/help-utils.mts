@@ -414,7 +414,12 @@ const serializeNameSave = async (
           emitWarning(
             `Warning: key "${key}" in Transifex resource "${resource.attributes.name}" refers to Freshdesk id ${id} which no longer exists. Remove this key from the Transifex resource.`,
             // The key is removed from the source, so point at the source language, not a translation.
-            transifexEditorLink({ project: TX_PROJECT, resource: resource.attributes.slug, lang: SOURCE_LOCALE }),
+            transifexEditorLink({
+              project: TX_PROJECT,
+              resource: resource.attributes.slug,
+              lang: SOURCE_LOCALE,
+              query: `key:${key}`,
+            }),
           )
         }
         continue
@@ -441,7 +446,12 @@ const serializeNameSave = async (
       recordFailure(
         `${resource.attributes.name} entry "${key}" for ${locale}`,
         error,
-        transifexEditorLink({ project: TX_PROJECT, resource: resource.attributes.slug, lang: locale }),
+        transifexEditorLink({
+          project: TX_PROJECT,
+          resource: resource.attributes.slug,
+          lang: locale,
+          query: `key:${key}`,
+        }),
       )
       allOk = false
     }
@@ -492,7 +502,12 @@ const serializeFolderSave = async (
               `(${locale}); shorten them in Transifex: ${droppedTags
                 .map(tag => `"${tag}" (${tag.length} chars)`)
                 .join(', ')}.`,
-            transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale }),
+            transifexEditorLink({
+              project: TX_PROJECT,
+              resource: resourceSlug,
+              lang: locale,
+              query: `key:${id}.tags`,
+            }),
           )
         }
         body.tags = validTags
@@ -505,11 +520,12 @@ const serializeFolderSave = async (
       }
     } catch (error) {
       // Record the failure so the job still reports a non-zero exit at the end, then move on to the
-      // next article.
+      // next article. The link filters the editor to the article's strings (a `key:<id>` search
+      // matches its title, description, and tags).
       recordFailure(
         `article ${idString} for ${locale}`,
         error,
-        transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale }),
+        transifexEditorLink({ project: TX_PROJECT, resource: resourceSlug, lang: locale, query: `key:${idString}` }),
       )
       allOk = false
     }
