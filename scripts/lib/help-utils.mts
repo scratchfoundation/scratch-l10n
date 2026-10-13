@@ -550,6 +550,29 @@ const locateArticle = (before: string): JsonEntryLocation | undefined => {
 }
 
 /**
+ * Split a translated tags string into Freshdesk tags. The push joins each article's tags with ASCII commas,
+ * but translators often use their own language's comma, so also split on the Arabic (،), ideographic (、),
+ * and full-width (，) commas. Tags are trimmed, empty ones dropped, and duplicates that differ only in case
+ * removed, since Freshdesk rejects those.
+ * @param tags - the translated tags string
+ * @returns the tags to send to Freshdesk, in their original order
+ */
+export const splitTags = (tags: string): string[] => {
+  const seen = new Set<string>()
+  return tags
+    .split(/[,،、，]/)
+    .map(tag => tag.trim())
+    .filter(tag => {
+      const folded = tag.toLowerCase()
+      if (!tag || seen.has(folded)) {
+        return false
+      }
+      seen.add(folded)
+      return true
+    })
+}
+
+/**
  * Internal function serialize Freshdesk requests to avoid getting rate limited
  * @param  json   object with keys corresponding to article ids
  * @param  locale language code
@@ -572,7 +595,7 @@ const serializeFolderSave = async (
         status: FreshdeskArticleStatus.published,
       }
       if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
-        const tags = value.tags.string.split(',')
+        const tags = splitTags(value.tags.string)
         // Freshdesk rejects tags longer than 32 characters, so drop them rather than fail the write.
         const validTags = tags.filter(tag => tag.length < 33)
         const droppedTags = tags.filter(tag => tag.length >= 33)
