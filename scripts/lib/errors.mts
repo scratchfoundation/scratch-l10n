@@ -11,6 +11,14 @@
  */
 export const messageOf = (err: unknown): string => (err instanceof Error ? err.message : String(err))
 
+/** Where a JSON parse error falls, as named by a shape-aware locator for {@link describeJsonParseError}. */
+export interface JsonEntryLocation {
+  /** Human-readable name of the entry, for the message (for example `key "123.description"`). */
+  label: string
+  /** The string key, when the locator could pin one, for linking straight to it. */
+  key?: string
+}
+
 /**
  * Describe where a `JSON.parse` failed, for a diagnostic message. V8 reports the byte offset (and, on
  * newer Node, the line and column) in the error message; combined with the original text this pins the
@@ -19,9 +27,18 @@ export const messageOf = (err: unknown): string => (err instanceof Error ? err.m
  * be read, so callers fall back to the plain message.
  * @param error - the caught value (expected to be a `SyntaxError` from `JSON.parse`)
  * @param text - the exact string that was parsed
- * @returns a one-line description (location, nearby key, snippet), or undefined
+ * @param locate - optional, for a caller that knows the file's shape: given the text before the error
+ *   position, name the entry it falls in (a `label` for the message, and the string `key` when known).
+ *   Used in place of the flat-file "near key" guess, which nested files with escaped quotes in their
+ *   values easily fool.
+ * @returns a one-line `message` (location, entry or nearby key, snippet) plus the located string `key`
+ *   if any, or undefined
  */
-export const describeJsonParseError = (error: unknown, text: string): string | undefined => {
+export const describeJsonParseError = (
+  error: unknown,
+  text: string,
+  locate?: (before: string) => JsonEntryLocation | undefined,
+): { message: string; key?: string } | undefined => {
   if (!(error instanceof SyntaxError) || typeof text !== 'string') {
     return undefined
   }
@@ -35,6 +52,15 @@ export const describeJsonParseError = (error: unknown, text: string): string | u
   }
   const lineColMatch = /\(line (\d+) column (\d+)\)/.exec(error.message)
   const where = lineColMatch ? `line ${lineColMatch[1]}, column ${lineColMatch[2]}` : `position ${pos}`
+  // A short, whitespace-collapsed window around the failure so the operator can eyeball the bad text.
+  const snippet = text
+    .slice(Math.max(0, pos - 30), pos + 30)
+    .replace(/\s+/g, ' ')
+    .trim()
+  const entry = locate?.(text.slice(0, pos))
+  if (entry) {
+    return { message: `malformed JSON in ${entry.label} (${where}): …${snippet}…`, key: entry.key }
+  }
   // Recover the enclosing key of a flat KEYVALUEJSON object: the value that failed to parse is
   // preceded by `"<key>":`, so scan back from the error position to that key. Heuristic (a colon or
   // quote inside an earlier string can fool it), so it is reported as "near key", not an exact locator.
@@ -50,11 +76,6 @@ export const describeJsonParseError = (error: unknown, text: string): string | u
       }
     }
   }
-  // A short, whitespace-collapsed window around the failure so the operator can eyeball the bad text.
-  const snippet = text
-    .slice(Math.max(0, pos - 30), pos + 30)
-    .replace(/\s+/g, ' ')
-    .trim()
   const keyPart = nearKey ? ` near key "${nearKey}"` : ''
-  return `malformed JSON at ${where}${keyPart}: …${snippet}…`
+  return { message: `malformed JSON at ${where}${keyPart}: …${snippet}…` }
 }

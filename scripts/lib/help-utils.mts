@@ -5,7 +5,7 @@
 import { promises as fsPromises } from 'fs'
 import { mkdirp } from 'mkdirp'
 import { emitAnnotation } from './annotations.mts'
-import { describeJsonParseError, messageOf } from './errors.mts'
+import { describeJsonParseError, JsonEntryLocation, messageOf } from './errors.mts'
 import FreshdeskApi, {
   FreshdeskArticleCreate,
   FreshdeskArticleStatus,
@@ -35,20 +35,31 @@ const TX_PROJECT = 'scratch-help'
 // here is a genuine problem worth a human's attention. `reportFailures` prints a consolidated summary
 // and fails the run at the end, so real errors are surfaced rather than lost in the log.
 const failures: { context: string; message: string; link?: string }[] = []
-const recordFailure = (context: string, error: unknown, link?: string): void => {
+const recordFailure = (
+  context: string,
+  error: unknown,
+  link?: string,
+  locate?: (before: string) => JsonEntryLocation | undefined,
+): void => {
   const message = messageOf(error)
   // A txPull error carries the failing (resource, locale) — and, for a parse failure, the raw text —
   // on its `cause`, so we can build a Transifex link and describe malformed JSON without the call site
-  // passing anything. An explicit link still wins: some callers know the fix lives on the source (`en`)
+  // passing anything. When the parse error can be pinned to one string, the link filters the editor to
+  // that string's key. An explicit link still wins: some callers know the fix lives on the source (`en`)
   // rather than the translation locale the pull used.
   const cause = txPullErrorCause(error)
+  const detail = cause?.buffer != null ? describeJsonParseError(error, cause.buffer, locate) : undefined
   const resolvedLink =
     link ??
     (cause
-      ? transifexEditorLink({ project: cause.project, resource: cause.resource, lang: cause.locale })
+      ? transifexEditorLink({
+          project: cause.project,
+          resource: cause.resource,
+          lang: cause.locale,
+          query: detail?.key && `key:${detail.key}`,
+        })
       : undefined)
-  const detail = cause?.buffer != null ? describeJsonParseError(error, cause.buffer) : undefined
-  const fullMessage = detail ? `${message} — ${detail}` : message
+  const fullMessage = detail ? `${message} — ${detail.message}` : message
   // Genuine failures go to stderr (like the consolidated summary), so they stand apart from normal output.
   process.stderr.write(`Error: ${context}: ${fullMessage}${resolvedLink ? ` (${resolvedLink})` : ''}\n`)
   failures.push({ context, message: fullMessage, link: resolvedLink })
@@ -470,6 +481,30 @@ interface FreshdeskFolderInTransifex {
 }
 
 /**
+ * Name the article (and field) that a position in a folder resource's raw JSON falls in, for a parse
+ * error. Matches only the structural `"<id>":{"title"…` and `"<field>":{"string":` openers, which don't
+ * occur inside the HTML values, so escaped or stray quotes in the content can't throw it off.
+ * @param before - the raw text up to the parse error position
+ * @returns the article's string key (e.g. `4000123456.description`) and a label for it, or undefined if no
+ *   article opener precedes the position
+ */
+const locateArticle = (before: string): JsonEntryLocation | undefined => {
+  const article = [...before.matchAll(/"(\d+)"\s*:\s*\{\s*"(?:title|description|tags)"/g)].pop()
+  if (article?.index == null) {
+    return undefined
+  }
+  const field = [
+    ...before.slice(article.index).matchAll(/[{,]\s*"(title|description|tags)"\s*:\s*\{\s*"string"\s*:/g),
+  ].pop()
+  if (!field) {
+    return { label: `article ${article[1]}` }
+  }
+  // The Transifex string key is `<id>.<field>`, which the editor shows and can filter to.
+  const key = `${article[1]}.${field[1]}`
+  return { label: `key "${key}"`, key }
+}
+
+/**
  * Internal function serialize Freshdesk requests to avoid getting rate limited
  * @param  json   object with keys corresponding to article ids
  * @param  locale language code
@@ -549,7 +584,7 @@ export const localizeFolder = async (folderAttributes: TransifexResourceObject, 
     )
     return await serializeFolderSave(data, locale, folderAttributes.attributes.slug)
   } catch (e) {
-    recordFailure(`${folderAttributes.attributes.slug} for ${locale}`, e)
+    recordFailure(`${folderAttributes.attributes.slug} for ${locale}`, e, undefined, locateArticle)
     return false
   }
 }
