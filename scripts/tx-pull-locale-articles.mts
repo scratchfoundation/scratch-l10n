@@ -6,7 +6,7 @@
 import {
   getInputs,
   getValidFreshdeskIds,
-  currentFolderResources,
+  foldersToSync,
   saveItem,
   localizeFolder,
   debugFolder,
@@ -37,6 +37,6 @@ if (locale === '-d') {
 const saveFn = debug ? debugFolder : localizeFolder
 
 const [{ folders: allFolders }, { validFolderIds }] = await Promise.all([getInputs(), getValidFreshdeskIds()])
-const folders = currentFolderResources(allFolders, validFolderIds)
+const folders = foldersToSync(allFolders, validFolderIds)
 console.log('Processing articles pulled from Transifex')
 await Promise.all(folders.map(item => saveItem(item, [locale], saveFn)))

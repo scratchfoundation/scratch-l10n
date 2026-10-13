@@ -400,18 +400,33 @@ export const getValidFreshdeskIds = async () => {
 }
 
 /**
- * Keep only the article resources whose Freshdesk folder still exists. The push only updates resources for
- * current folders, so a resource left behind by a deleted folder keeps its old English source forever. Its
- * articles may have moved to another folder, so pulling it would overwrite their live translations with
- * translations of outdated content. Each skipped resource is reported once so someone can remove it.
- * @param folders - STRUCTURED_JSON resources from {@link getInputs}, named `<folder name>_<folder id>_json`
- * @param validFolderIds - set of Freshdesk folder IDs that currently exist
- * @returns the resources that belong to a current Freshdesk folder
+ * Freshdesk folders whose article translations are deliberately not written to Freshdesk, even when they're
+ * translated in Transifex. Their articles are still pushed to Transifex as source.
+ *
+ * - 4000040867 "Legal Documents" (Terms of Service, Privacy Policy, and the like): we don't publish
+ *   translations of legal documents for now. This decision may be revisited.
  */
-export const currentFolderResources = (folders: TransifexResourceObject[], validFolderIds: Set<number>) =>
+const UNSYNCED_FOLDER_IDS = new Set([4000040867])
+
+/**
+ * Keep only the article resources whose translations should be written to Freshdesk: the folder must still
+ * exist, and must not be in {@link UNSYNCED_FOLDER_IDS}. The push only updates resources for current
+ * folders, so a resource left behind by a deleted folder keeps its old English source forever. Its articles
+ * may have moved to another folder, so pulling it would overwrite their live translations with translations
+ * of outdated content. Each such resource is reported once so someone can remove it.
+ * @param folders - article resources from {@link getInputs}, named `<folder name>_<folder id>_json`
+ * @param validFolderIds - set of Freshdesk folder IDs that currently exist
+ * @returns the resources whose translations should sync to Freshdesk
+ */
+export const foldersToSync = (folders: TransifexResourceObject[], validFolderIds: Set<number>) =>
   folders.filter(resource => {
     const slug = resource.attributes.slug
     const match = /_(\d+)_json$/.exec(slug)
+    if (match && UNSYNCED_FOLDER_IDS.has(Number(match[1]))) {
+      // Intentional, so log it rather than raising a warning on every run.
+      console.log(`Not syncing Transifex resource "${slug}": its translations are excluded from Freshdesk.`)
+      return false
+    }
     if (match && validFolderIds.has(Number(match[1]))) {
       return true
     }
