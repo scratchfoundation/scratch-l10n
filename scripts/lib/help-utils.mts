@@ -395,6 +395,31 @@ export const getValidFreshdeskIds = async () => {
 }
 
 /**
+ * Keep only the article resources whose Freshdesk folder still exists. The push only updates resources for
+ * current folders, so a resource left behind by a deleted folder keeps its old English source forever. Its
+ * articles may have moved to another folder, so pulling it would overwrite their live translations with
+ * translations of outdated content. Each skipped resource is reported once so someone can remove it.
+ * @param folders - STRUCTURED_JSON resources from {@link getInputs}, named `<folder name>_<folder id>_json`
+ * @param validFolderIds - set of Freshdesk folder IDs that currently exist
+ * @returns the resources that belong to a current Freshdesk folder
+ */
+export const currentFolderResources = (folders: TransifexResourceObject[], validFolderIds: Set<number>) =>
+  folders.filter(resource => {
+    const slug = resource.attributes.slug
+    const match = /_(\d+)_json$/.exec(slug)
+    if (match && validFolderIds.has(Number(match[1]))) {
+      return true
+    }
+    emitWarning(
+      match
+        ? `Skipping Transifex resource "${slug}": Freshdesk folder ${match[1]} no longer exists. Remove this resource from Transifex.`
+        : `Skipping Transifex resource "${slug}": its name doesn't end in a Freshdesk folder ID.`,
+      transifexEditorLink({ project: TX_PROJECT, resource: slug, lang: SOURCE_LOCALE }),
+    )
+    return false
+  })
+
+/**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
  * @param strings - the string data pulled from Transifex
  * @param resource - the `attributes` property of the resource object which contains these strings
