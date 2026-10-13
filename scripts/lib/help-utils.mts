@@ -28,6 +28,8 @@ import { emitWarning } from './warnings.mts'
 
 const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN ?? '')
 const TX_PROJECT = 'scratch-help'
+/** The Transifex resources that hold category and folder names; every other JSON resource holds articles. */
+const NAMES_RESOURCES = ['categoryNames_json', 'folderNames_json']
 
 // Collect per-item failures instead of aborting on the first one, so one bad translation or a single
 // item the token cannot write still lets every other item sync. Freshdesk rate limiting is handled
@@ -356,13 +358,16 @@ export const getInputs = async () => {
   const resourcesPromise = txResourcesObjects(TX_PROJECT)
   const languagesPromise = txAvailableLanguages(TX_PROJECT)
 
-  // there are three types of resources differentiated by the file type
+  // Category and folder names live in two fixed KEYVALUEJSON resources; every other JSON resource holds a
+  // folder's articles. Classify by name rather than type: some article resources were created as
+  // KEYVALUEJSON by mistake, and they download in the same nested shape as the STRUCTURED_JSON ones.
+  const isNames = (resource: TransifexResourceObject) => NAMES_RESOURCES.includes(resource.attributes.slug)
+  const isJson = (resource: TransifexResourceObject) =>
+    resource.attributes.i18n_type === 'STRUCTURED_JSON' || resource.attributes.i18n_type === 'KEYVALUEJSON'
   const foldersPromise = resourcesPromise.then(resources =>
-    resources.filter(resource => resource.attributes.i18n_type === 'STRUCTURED_JSON'),
+    resources.filter(resource => isJson(resource) && !isNames(resource)),
   )
-  const namesPromise = resourcesPromise.then(resources =>
-    resources.filter(resource => resource.attributes.i18n_type === 'KEYVALUEJSON'),
-  )
+  const namesPromise = resourcesPromise.then(resources => resources.filter(isNames))
   // ignore the yaml type because it's not possible to update via API
 
   const [languages, folders, names] = await Promise.all([languagesPromise, foldersPromise, namesPromise])
@@ -643,8 +648,8 @@ export const debugFolder = async (folderAttributes: TransifexResourceObject, loc
 }
 
 /**
- * Process KEYVALUEJSON resources from scratch-help on transifex
- * Category and Folder names are stored as plain json
+ * Process the category and folder names resources from scratch-help on transifex
+ * Category and Folder names are stored as plain json (KEYVALUEJSON)
  * @param resource Transifex resource json for either CategoryNames or FolderNames
  * @param locale   locale to pull and submit to Freshdesk
  * @param validCategoryIds - set of Freshdesk category IDs that currently exist
