@@ -179,7 +179,7 @@ export interface FreshdeskHelpdeskSettings {
   portal_languages?: string[]
 }
 
-const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
+const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))
 
 /** Interval used before the server has told us its limit, in ms (conservative, avoids an opening burst). */
 const FD_START_INTERVAL_MS = 300

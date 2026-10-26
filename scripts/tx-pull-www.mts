@@ -6,10 +6,10 @@
  * has the the TX_TOKEN environment variable set to an api
  * token that has developer access.
  */
-import { readFileSync } from 'fs'
-import fs from 'fs/promises'
+import { readFileSync } from 'node:fs'
+import fs from 'node:fs/promises'
+import path from 'node:path'
 import { mkdirp } from 'mkdirp'
-import path from 'path'
 import { pullAndValidateProject } from './lib/pull-and-validate.mts'
 import { TransifexEditorStrings } from './lib/validate.mts'
 

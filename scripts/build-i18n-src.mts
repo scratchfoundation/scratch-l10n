@@ -1,8 +1,8 @@
 #!/usr/bin/env tsx
-import fs from 'fs'
+import fs from 'node:fs'
+import path from 'node:path'
 import glob from 'glob'
 import { mkdirp } from 'mkdirp'
-import path from 'path'
 import { TransifexStringChrome, TransifexStrings } from './lib/transifex-formats.mts'
 
 const args = process.argv.slice(2)
@@ -33,8 +33,8 @@ interface Descriptor {
 // description: description}` pairs for the app's default locale.
 const defaultMessages = glob
   .sync(MESSAGES_PATTERN)
-  .map(filename => fs.readFileSync(filename, 'utf8'))
-  .map(file => JSON.parse(file) as Descriptor[])
+  .map((filename) => fs.readFileSync(filename, 'utf8'))
+  .map((file) => JSON.parse(file) as Descriptor[])
   .reduce((collection: TransifexStrings<TransifexStringChrome>, descriptors) => {
     descriptors.forEach(({ id, defaultMessage, description }) => {
       if (Object.prototype.hasOwnProperty.call(collection, id)) {

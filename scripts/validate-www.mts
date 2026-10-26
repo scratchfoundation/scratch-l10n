@@ -3,10 +3,10 @@
  * @file
  * Script to validate the www translation json
  */
+import fs from 'node:fs'
+import path from 'node:path'
 import async from 'async'
-import fs from 'fs'
 import glob from 'glob'
-import path from 'path'
 import locales from '../src/supported-locales.mjs'
 import { TransifexStringsKeyValueJson, TransifexStrings } from './lib/transifex-formats.mts'
 import { filterInvalidTranslations } from './lib/validate.mts'
@@ -47,7 +47,7 @@ const validate = (localeData: LocaleData, callback: async.ErrorCallback) => {
 
 const validateResource = (resource: string, callback: async.ErrorCallback) => {
   const source = JSON.parse(fs.readFileSync(`${resource}/en.json`, 'utf8')) as TransifexStringsKeyValueJson
-  const allLocales = Object.keys(locales).map(loc => ({
+  const allLocales = Object.keys(locales).map((loc) => ({
     locale: loc,
     localeFileName: `${resource}/${loc}.json`,
     sourceData: source,
@@ -55,7 +55,7 @@ const validateResource = (resource: string, callback: async.ErrorCallback) => {
   async.each(allLocales, validate, callback)
 }
 
-async.each(RESOURCES, validateResource, err => {
+async.each(RESOURCES, validateResource, (err) => {
   if (err) {
     console.error(err)
     process.exit(1)

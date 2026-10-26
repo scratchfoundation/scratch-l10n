@@ -119,7 +119,7 @@ const TX_MAX_CONCURRENT_DOWNLOADS = 8
 /** Upper bound on how long to honor a throttle's "expected available" hint before giving up on it. */
 const TX_MAX_THROTTLE_WAIT_MS = 120_000
 
-const sleep = (ms: number): Promise<void> => new Promise(resolve => setTimeout(resolve, ms))
+const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))
 
 /**
  * Builds a concurrency limiter: the returned function runs at most `max` of the tasks handed to it at
@@ -429,7 +429,7 @@ export const txResources = async function (project: string): Promise<string[]> {
   const resourcesData = await collectAll<TransifexResourceObject>(resources)
 
   const slugs = resourcesData.map(
-    r =>
+    (r) =>
       // r.id is a longer id string, like "o:llk:p:scratch-website:r:about-l10njson"
       // We just want the slug that comes after ":r:" ("about-l10njson")
       r.id.split(':r:')[1],
@@ -501,7 +501,7 @@ export const txAvailableLanguages = async function (slug: string): Promise<strin
 
   const languages = (await project.fetch('languages', false)) as Collection
   const languagesData = await collectAll<TransifexLanguageObject>(languages)
-  return languagesData.map(l => l.attributes.code)
+  return languagesData.map((l) => l.attributes.code)
 }
 
 /**

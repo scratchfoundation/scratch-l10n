@@ -42,7 +42,7 @@ reportSkippedLocales(languages)
 const warnedKeys = new Set<string>()
 console.log('Process Category and Folder Names pulled from Transifex')
 await Promise.all(
-  names.map(item =>
+  names.map((item) =>
     saveItem(item, languages, (resource, locale) =>
       localizeNames(resource, locale, validCategoryIds, validFolderIds, warnedKeys),
     ),

@@ -2,7 +2,7 @@
  * @file
  * Shared helper for reporting non-fatal problems during help sync.
  */
-import { appendFileSync } from 'fs'
+import { appendFileSync } from 'node:fs'
 import { emitAnnotation } from './annotations.mts'
 import { messageOf } from './errors.mts'
 
