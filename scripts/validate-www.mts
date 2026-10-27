@@ -6,7 +6,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import async from 'async'
-import glob from 'glob'
+import { globSync } from 'glob'
 import locales from '../src/supported-locales.mjs'
 import { TransifexStringsKeyValueJson, TransifexStrings } from './lib/transifex-formats.mts'
 import { filterInvalidTranslations } from './lib/validate.mts'
@@ -24,7 +24,7 @@ if (args.length < 1) {
 
 // Globals
 const WWW_DIR = path.resolve(args[0])
-const RESOURCES = glob.sync(`${path.resolve(WWW_DIR)}/*`)
+const RESOURCES = globSync(`${path.resolve(WWW_DIR)}/*`).sort()
 
 interface LocaleData {
   locale: string

@@ -1,7 +1,7 @@
 #!/usr/bin/env tsx
 import fs from 'node:fs'
 import path from 'node:path'
-import glob from 'glob'
+import { globSync } from 'glob'
 import { mkdirp } from 'mkdirp'
 import { TransifexStringChrome, TransifexStrings } from './lib/transifex-formats.mts'
 
@@ -31,8 +31,8 @@ interface Descriptor {
 // there are messages in different components that use the same `id`. The result
 // is a chromei18n format collection of `id: {message: defaultMessage,
 // description: description}` pairs for the app's default locale.
-const defaultMessages = glob
-  .sync(MESSAGES_PATTERN)
+const defaultMessages = globSync(MESSAGES_PATTERN)
+  .sort()
   .map((filename) => fs.readFileSync(filename, 'utf8'))
   .map((file) => JSON.parse(file) as Descriptor[])
   .reduce((collection: TransifexStrings<TransifexStringChrome>, descriptors) => {
