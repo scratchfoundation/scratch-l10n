@@ -37,10 +37,10 @@ NOTE: blocks messages are plain key-value JSON files
 
 Missing locales are ignored, react-intl will use the default messages for them.
  */
-import * as fs from 'fs'
+import * as fs from 'node:fs'
+import * as path from 'node:path'
 import defaultsDeep from 'lodash.defaultsdeep'
 import { mkdirp } from 'mkdirp'
-import * as path from 'path'
 import locales from '../src/supported-locales.mjs'
 import { TransifexEditorStrings } from './lib/validate.mts'
 
@@ -76,7 +76,7 @@ fs.writeFileSync(MSGS_DIR + 'blocks-msgs.js', blockData)
 // generate messages for gui components - all files are plain key-value JSON
 const components = ['interface', 'extensions', 'paint-editor']
 const editorMsgs = {}
-components.forEach(component => {
+components.forEach((component) => {
   const messages = combineJson(component)
   const data = '// GENERATED FILE:\n' + 'export default ' + JSON.stringify(messages, null, 2) + ';\n'
   fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data)

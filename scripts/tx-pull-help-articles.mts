@@ -38,5 +38,5 @@ const [{ languages, folders: allFolders }, { validFolderIds }] = await Promise.a
 const folders = foldersToSync(allFolders, validFolderIds)
 reportSkippedLocales(languages)
 console.log('Processing articles pulled from Transifex')
-await Promise.all(folders.map(item => saveItem(item, languages, localizeFolder)))
+await Promise.all(folders.map((item) => saveItem(item, languages, localizeFolder)))
 finalizeSync()

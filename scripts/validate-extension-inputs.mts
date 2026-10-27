@@ -3,9 +3,9 @@
  * @file
  * Script to validate extension block input placeholders
  */
+import fs from 'node:fs'
+import path from 'node:path'
 import async from 'async'
-import fs from 'fs'
-import path from 'path'
 import locales from '../src/supported-locales.mjs'
 import { TransifexStringsKeyValueJson } from './lib/transifex-formats.mts'
 import { missingBracketPlaceholders } from './lib/validate.mts'
@@ -59,7 +59,7 @@ const validate = (locale: string, callback: async.ErrorCallback<Error>) => {
   })
 }
 
-async.each(Object.keys(locales), validate, err => {
+async.each(Object.keys(locales), validate, (err) => {
   if (err) {
     console.error(err)
     process.exit(1)

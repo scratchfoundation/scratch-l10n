@@ -38,7 +38,7 @@ const placeholders = (message: string): parse.Placeholder[] =>
   // this will throw an error if the message is not valid ICU
   // single quote (as in French l'année) messes up the parse and is not
   // relevant for this check, so strip them out
-  parse(message.replace(/'/g, '')).filter(item => Array.isArray(item))
+  parse(message.replace(/'/g, '')).filter((item) => Array.isArray(item))
 
 const getMessageText = (m: TransifexStringKeyValueJson | TransifexStringChrome | undefined): string =>
   m == null ? '' : typeof m === 'string' ? m : m.message
@@ -64,7 +64,7 @@ export const missingBracketPlaceholders = (
   const sourceInputs = getMessageText(source).match(bracketPlaceholderRegex)
   if (!sourceInputs) return []
   const translatedInputs: string[] = getMessageText(message).match(bracketPlaceholderRegex) ?? []
-  return sourceInputs.filter(input => !translatedInputs.includes(input))
+  return sourceInputs.filter((input) => !translatedInputs.includes(input))
 }
 
 /**
@@ -79,10 +79,10 @@ export const missingBracketPlaceholders = (
  * sameItems(['a', 'b'], ['a']) === false
  */
 function sameItems<T>(a: T[], b: T[]): boolean {
-  if (!a.every(x => b.includes(x))) {
+  if (!a.every((x) => b.includes(x))) {
     return false
   }
-  if (!b.every(x => a.includes(x))) {
+  if (!b.every((x) => a.includes(x))) {
     return false
   }
   return true
@@ -94,7 +94,7 @@ function sameItems<T>(a: T[], b: T[]): boolean {
  * @param options - validation options
  * @param options.checkBracketPlaceholders - also require bracket placeholders (e.g. `[PART]`) to be preserved verbatim
  * @returns `false` if the message definitely has a problem, or `true` if the message might be OK.
- * @throws if ICU parsing fails for a reason other than a `SyntaxError` (e.g. an unexpected error in the parser itself)
+ * @throws {unknown} if ICU parsing fails for a reason other than a `SyntaxError` (e.g. an unexpected error in the parser itself)
  */
 export const validMessage = (
   message: TransifexEditorString,
@@ -110,8 +110,8 @@ export const validMessage = (
   let msgPlaceholderNamesICU: string[]
   let srcPlaceholderNamesICU: string[]
   try {
-    msgPlaceholderNamesICU = placeholders(msgText).map(x => x[0])
-    srcPlaceholderNamesICU = placeholders(srcText).map(x => x[0])
+    msgPlaceholderNamesICU = placeholders(msgText).map((x) => x[0])
+    srcPlaceholderNamesICU = placeholders(srcText).map((x) => x[0])
   } catch (err) {
     // ICU parse error - treat as a validation failure
     if (err instanceof SyntaxError) {
@@ -192,7 +192,7 @@ export const filterInvalidTranslations = (
 
   const sourceKeys = Object.keys(source)
 
-  const transKeys = Object.keys(translations).filter(item => {
+  const transKeys = Object.keys(translations).filter((item) => {
     if (!sourceKeys.includes(item)) {
       messages.push(`locale ${locale} has key ${item} not in the source`)
       delete translations[item]
@@ -201,13 +201,13 @@ export const filterInvalidTranslations = (
     return true
   })
 
-  sourceKeys.forEach(item => {
+  sourceKeys.forEach((item) => {
     if (!transKeys.includes(item)) {
       messages.push(`locale ${locale} is missing key ${item}`)
     }
   })
 
-  transKeys.forEach(item => {
+  transKeys.forEach((item) => {
     let valid: boolean
     let validationError: unknown
     try {

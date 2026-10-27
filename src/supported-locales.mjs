@@ -135,6 +135,6 @@ const localeMap = {
 // list of RTL locales supported, and a function to check whether a locale is RTL
 const rtlLocales = ['ar', 'ckb', 'fa', 'he']
 
-const isRtl = locale => rtlLocales.indexOf(locale) !== -1
+const isRtl = (locale) => rtlLocales.indexOf(locale) !== -1
 
 export { locales as default, customLocales, localeMap, isRtl }

@@ -152,12 +152,12 @@ const saveArticles = async (folder: FreshdeskFolder) => {
  * @param folders - Array of folders containing articles to be saved
  */
 const saveArticleFolders = async (folders: FreshdeskFolder[]) => {
-  await Promise.all(folders.map(folder => saveArticles(folder)))
+  await Promise.all(folders.map((folder) => saveArticles(folder)))
 }
 
 const syncSources = async () => {
   await FD.listCategories()
-    .then(json => {
+    .then((json) => {
       console.dir(json)
       // save category names for translation
       for (const cat of json.values()) {
@@ -166,16 +166,16 @@ const syncSources = async () => {
       return json
     })
     .then(getFolders)
-    .then(async data => {
-      data.forEach(item => {
+    .then(async (data) => {
+      data.forEach((item) => {
         folderNames[makeTxSlug(item)] = item.name
       })
       process.stdout.write('Push category and folder names to Transifex\n')
       await Promise.all([
-        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON').catch(error =>
+        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON').catch((error) =>
           recordFailure('categoryNames_json', error),
         ),
-        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON').catch(error =>
+        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON').catch((error) =>
           recordFailure('folderNames_json', error),
         ),
       ])

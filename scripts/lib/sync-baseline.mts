@@ -8,8 +8,8 @@
  * The file location is overridable via `HELP_SYNC_BASELINE_FILE` so the persistence mechanism (a
  * committed repo file vs. a restored CI cache) can change without touching this code.
  */
-import { readFileSync, writeFileSync, mkdirSync, renameSync } from 'fs'
-import { dirname } from 'path'
+import { readFileSync, writeFileSync, mkdirSync, renameSync } from 'node:fs'
+import { dirname } from 'node:path'
 import { messageOf } from './errors.mts'
 
 /** A map of `<resourceSlug>:<localeCode>` to the last-synced timestamp (or null if never translated). */

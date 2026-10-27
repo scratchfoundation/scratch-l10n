@@ -147,7 +147,7 @@ export async function pullAndValidateProject({
   }
 
   // Ensure source locale is available for validation
-  await poolMap(selectedResources, CONCURRENCY_LIMIT, async resource => handleFile(resource, SOURCE_LOCALE))
+  await poolMap(selectedResources, CONCURRENCY_LIMIT, async (resource) => handleFile(resource, SOURCE_LOCALE))
 
   // Non-source locales
   await poolMap(files, CONCURRENCY_LIMIT, async ({ resource, locale }) => handleFile(resource, locale))

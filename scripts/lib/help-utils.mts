@@ -2,7 +2,7 @@
  * @file
  * Helper functions for syncing Freshdesk knowledge base articles with Transifex
  */
-import { promises as fsPromises } from 'fs'
+import { promises as fsPromises } from 'node:fs'
 import { mkdirp } from 'mkdirp'
 import { emitAnnotation } from './annotations.mts'
 import { describeJsonParseError, JsonEntryLocation, messageOf } from './errors.mts'
@@ -195,7 +195,7 @@ export const reportSkippedLocales = (languages: string[]): void => {
   }
   // Report the Freshdesk language codes (deduplicated: several Transifex locales can map to one),
   // because those are what an operator enables in Freshdesk -- not the raw Transifex locale codes.
-  const skipped = [...new Set(languages.filter(l => l !== 'en' && !localeSupported(l)).map(freshdeskLocale))].sort()
+  const skipped = [...new Set(languages.filter((l) => l !== 'en' && !localeSupported(l)).map(freshdeskLocale))].sort()
   if (skipped.length > 0) {
     emitWarning(
       `Skipping ${skipped.length} Freshdesk language(s) not enabled for the knowledge base; their ` +
@@ -364,10 +364,10 @@ export const getInputs = async () => {
   const isNames = (resource: TransifexResourceObject) => NAMES_RESOURCES.includes(resource.attributes.slug)
   const isJson = (resource: TransifexResourceObject) =>
     resource.attributes.i18n_type === 'STRUCTURED_JSON' || resource.attributes.i18n_type === 'KEYVALUEJSON'
-  const foldersPromise = resourcesPromise.then(resources =>
-    resources.filter(resource => isJson(resource) && !isNames(resource)),
+  const foldersPromise = resourcesPromise.then((resources) =>
+    resources.filter((resource) => isJson(resource) && !isNames(resource)),
   )
-  const namesPromise = resourcesPromise.then(resources => resources.filter(isNames))
+  const namesPromise = resourcesPromise.then((resources) => resources.filter(isNames))
   // ignore the yaml type because it's not possible to update via API
 
   const [languages, folders, names] = await Promise.all([languagesPromise, foldersPromise, namesPromise])
@@ -389,13 +389,13 @@ export const getInputs = async () => {
 export const getValidFreshdeskIds = async () => {
   const categories = await FD.listCategories()
   const categoriesWithId = categories.filter((c): c is typeof c & { id: number } => c.id !== undefined)
-  const validCategoryIds = new Set(categoriesWithId.map(c => c.id))
+  const validCategoryIds = new Set(categoriesWithId.map((c) => c.id))
   const fdFolders: FreshdeskFolder[] = []
   for (const category of categoriesWithId) {
     const folders = await FD.listFolders(category)
     fdFolders.push(...folders)
   }
-  const validFolderIds = new Set(fdFolders.map(f => f.id).filter((id): id is number => id !== undefined))
+  const validFolderIds = new Set(fdFolders.map((f) => f.id).filter((id): id is number => id !== undefined))
   return { validCategoryIds, validFolderIds }
 }
 
@@ -419,7 +419,7 @@ const UNSYNCED_FOLDER_IDS = new Set([4000040867])
  * @returns the resources whose translations should sync to Freshdesk
  */
 export const foldersToSync = (folders: TransifexResourceObject[], validFolderIds: Set<number>) =>
-  folders.filter(resource => {
+  folders.filter((resource) => {
     const slug = resource.attributes.slug
     const match = /_(\d+)_json$/.exec(slug)
     if (match && UNSYNCED_FOLDER_IDS.has(Number(match[1]))) {
@@ -561,8 +561,8 @@ export const splitTags = (tags: string): string[] => {
   const seen = new Set<string>()
   return tags
     .split(/[,،、，]/)
-    .map(tag => tag.trim())
-    .filter(tag => {
+    .map((tag) => tag.trim())
+    .filter((tag) => {
       const folded = tag.toLowerCase()
       if (!tag || seen.has(folded)) {
         return false
@@ -597,13 +597,13 @@ const serializeFolderSave = async (
       if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
         const tags = splitTags(value.tags.string)
         // Freshdesk rejects tags longer than 32 characters, so drop them rather than fail the write.
-        const validTags = tags.filter(tag => tag.length < 33)
-        const droppedTags = tags.filter(tag => tag.length >= 33)
+        const validTags = tags.filter((tag) => tag.length < 33)
+        const droppedTags = tags.filter((tag) => tag.length >= 33)
         if (droppedTags.length > 0) {
           emitWarning(
             `Dropping ${droppedTags.length} tag(s) over Freshdesk's 32-character limit for article ${id} ` +
               `(${locale}); shorten them in Transifex: ${droppedTags
-                .map(tag => `"${tag}" (${tag.length} chars)`)
+                .map((tag) => `"${tag}" (${tag.length} chars)`)
                 .join(', ')}.`,
             transifexEditorLink({
               project: TX_PROJECT,
@@ -729,7 +729,7 @@ type SaveFn = (item: TransifexResourceObject, language: string) => Promise<boole
 export const saveItem = async (item: TransifexResourceObject, languages: string[], saveFn: SaveFn): Promise<void> => {
   const slug = item.attributes.slug
   // Exclude English (the source), locales Freshdesk can't hold, and pairs that haven't changed.
-  const saveLanguages = languages.filter(l => l !== 'en' && localeSupported(l) && pairChanged(slug, l))
+  const saveLanguages = languages.filter((l) => l !== 'en' && localeSupported(l) && pairChanged(slug, l))
   for (let i = 0; i < saveLanguages.length; i += BATCH_SIZE) {
     // Out of time: leave the rest of this resource's locales for a later run. They stay unmarked, so
     // the next run still sees them as changed and picks them up.
@@ -738,7 +738,7 @@ export const saveItem = async (item: TransifexResourceObject, languages: string[
       break
     }
     await Promise.all(
-      saveLanguages.slice(i, i + BATCH_SIZE).map(async l => {
+      saveLanguages.slice(i, i + BATCH_SIZE).map(async (l) => {
         try {
           if (await saveFn(item, l)) {
             markSynced(slug, l)

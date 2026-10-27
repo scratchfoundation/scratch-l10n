@@ -3,9 +3,9 @@
  * @file
  * Script to validate the translation json
  */
+import fs from 'node:fs'
+import path from 'node:path'
 import async from 'async'
-import fs from 'fs'
-import path from 'path'
 import locales from '../src/supported-locales.mjs'
 import { filterInvalidTranslations, TransifexEditorStrings } from './lib/validate.mts'
 
@@ -39,7 +39,7 @@ const validate = (locale: string, callback: async.ErrorCallback) => {
   })
 }
 
-async.each(Object.keys(locales), validate, err => {
+async.each(Object.keys(locales), validate, (err) => {
   if (err) {
     console.error(err)
     process.exit(1)

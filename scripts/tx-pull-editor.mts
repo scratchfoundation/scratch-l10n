@@ -6,8 +6,8 @@
  * the person running the script has the the TX_TOKEN environment variable set to an api
  * token that has developer access.
  */
-import fs from 'fs'
-import path from 'path'
+import fs from 'node:fs'
+import path from 'node:path'
 import { pullAndValidateProject } from './lib/pull-and-validate.mts'
 import { TransifexEditorStrings } from './lib/validate.mts'
 
