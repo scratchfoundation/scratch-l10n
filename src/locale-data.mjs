@@ -36,6 +36,7 @@ import hy from './locale-data/hy.js'
 import id from './locale-data/id.js'
 import is from './locale-data/is.js'
 import it from './locale-data/it.js'
+import iu from './locale-data/iu.js'
 import ja from './locale-data/ja.js'
 import ka from './locale-data/ka.js'
 import kk from './locale-data/kk.js'
@@ -110,6 +111,7 @@ const localeData = [].concat(
   id,
   is,
   it,
+  iu,
   ja,
   ka,
   kk,

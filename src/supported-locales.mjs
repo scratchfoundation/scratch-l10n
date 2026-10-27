@@ -37,9 +37,11 @@ const locales = {
   ko: { name: '한국어' },
   ha: { name: 'Hausa' },
   hy: { name: 'Հայերեն' },
+  hyw: { name: 'Արեւմտահայերէն' },
   he: { name: 'עִבְרִית' },
   hi: { name: 'हिंदी' },
   hr: { name: 'Hrvatski' },
+  iu: { name: 'ᐃᓄᒃᑎᑐᑦ' },
   xh: { name: 'isiXhosa' },
   zu: { name: 'isiZulu' },
   is: { name: 'Íslenska' },
@@ -100,6 +102,10 @@ const customLocales = {
   ht: {
     locale: 'ht',
     parentLocale: 'fr',
+  },
+  hyw: {
+    locale: 'hyw',
+    parentLocale: 'hy',
   },
   oc: {
     locale: 'oc',
