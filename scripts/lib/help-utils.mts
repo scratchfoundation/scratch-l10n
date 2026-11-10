@@ -152,16 +152,22 @@ const englishDrafts = new Set<number>()
 /** Ids of every published English article in the synced folders. */
 const englishPublished = new Set<number>()
 /**
- * Baseline key prefix recording that a draft article's translations have all been unpublished, so
- * {@link matchTranslationStatusToEnglish} does it once per article rather than every run.
+ * Baseline key prefix recording the state of an article's translations, so
+ * {@link matchTranslationStatusToEnglish} changes them once per change of English status rather than every
+ * run. No key means they're all published; {@link HIDDEN_DONE} means they're all unpublished; and
+ * {@link HIDDEN_PENDING} means a change was started but not finished, so some may be either.
  */
 const HIDDEN_KEY_PREFIX = 'hidden:'
+/** Marker value: every translation of the article is unpublished. */
+const HIDDEN_DONE = 'draft'
+/** Marker value: a status change didn't finish, so the translations may be a mix of published and unpublished. */
+const HIDDEN_PENDING = 'pending'
 /** Draft articles whose translations were all unpublished this run (or, in a dry run, would be). */
 const hiddenThisRun = new Set<number>()
 /** Republished articles whose translations were all published again this run (or, in a dry run, would be). */
 const republishedThisRun = new Set<number>()
-/** Baseline keys to drop when the baseline is next flushed: articles that are no longer drafts. */
-const staleBaselineKeys = new Set<string>()
+/** Marker changes to apply when the baseline is next flushed: a new value, or null to remove the marker. */
+const markerUpdates = new Map<string, string | null>()
 
 /** Whether the Freshdesk supported-language filter is active (helpdesk settings loaded successfully). */
 let localeFilterActive = false
@@ -304,11 +310,12 @@ const flushBaseline = (): void => {
   for (const [key, timestamp] of syncedPairs) {
     baseline.set(key, timestamp)
   }
-  for (const id of hiddenThisRun) {
-    baseline.set(`${HIDDEN_KEY_PREFIX}${id}`, 'draft')
-  }
-  for (const key of staleBaselineKeys) {
-    baseline.delete(key)
+  for (const [key, value] of markerUpdates) {
+    if (value === null) {
+      baseline.delete(key)
+    } else {
+      baseline.set(key, value)
+    }
   }
   saveBaseline(baseline)
   lastBaselineFlushAt = Date.now()
@@ -561,9 +568,11 @@ export const loadEnglishArticleStatuses = async (folders: TransifexResourceObjec
  * the English becomes a draft, and publish them all again when it's republished. The article sync only
  * writes languages that have translations in Transifex, and only for articles Transifex holds, but Freshdesk
  * can also have translations that came from elsewhere: older syncs, or ones entered by hand. A hidden article
- * is recorded in the baseline, so each change is made once, not every run; the record is cleared once its
- * translations are published again. Publishing uses a status-only request, which makes each translation's
- * latest content live. Call after {@link loadEnglishArticleStatuses}.
+ * is recorded in the baseline (see {@link HIDDEN_KEY_PREFIX}), so each change is made once, not every run.
+ * The record is marked pending before the first write, so a change that fails partway, or is cut off, is
+ * finished on a later run in whichever direction the English status is by then. Publishing uses a
+ * status-only request, which makes each translation's latest content live. Call after
+ * {@link loadEnglishArticleStatuses}.
  * @returns a promise that resolves once every changed article has been handled
  */
 export const matchTranslationStatusToEnglish = async (): Promise<void> => {
@@ -580,7 +589,7 @@ export const matchTranslationStatusToEnglish = async (): Promise<void> => {
       toPublish.push(id)
     } else if (!englishDrafts.has(id)) {
       // Deleted, or moved to a folder that isn't synced. Either way there's nothing to publish.
-      staleBaselineKeys.add(key)
+      markerUpdates.set(key, null)
     }
   }
   if (!localeFilterActive) {
@@ -591,7 +600,7 @@ export const matchTranslationStatusToEnglish = async (): Promise<void> => {
     return
   }
   const languages = freshdeskLanguages.filter((code) => code.toLowerCase() !== primaryLanguage)
-  const toHide = [...englishDrafts].filter((id) => !baseline.has(`${HIDDEN_KEY_PREFIX}${id}`))
+  const toHide = [...englishDrafts].filter((id) => baseline.get(`${HIDDEN_KEY_PREFIX}${id}`) !== HIDDEN_DONE)
   const changes = [
     ...toHide.map((id) => ({ id, status: FreshdeskArticleStatus.draft })),
     ...toPublish.map((id) => ({ id, status: FreshdeskArticleStatus.published })),
@@ -607,6 +616,10 @@ export const matchTranslationStatusToEnglish = async (): Promise<void> => {
       ;(hiding ? hiddenThisRun : republishedThisRun).add(id)
       continue
     }
+    // Save the pending marker before writing anything, so a run that stops partway leaves a record.
+    const key = `${HIDDEN_KEY_PREFIX}${id}`
+    markerUpdates.set(key, HIDDEN_PENDING)
+    flushBaseline()
     let allOk = true
     let changed = 0
     for (const language of languages) {
@@ -627,12 +640,8 @@ export const matchTranslationStatusToEnglish = async (): Promise<void> => {
       )
     }
     if (allOk) {
-      if (hiding) {
-        hiddenThisRun.add(id)
-      } else {
-        republishedThisRun.add(id)
-        staleBaselineKeys.add(`${HIDDEN_KEY_PREFIX}${id}`)
-      }
+      ;(hiding ? hiddenThisRun : republishedThisRun).add(id)
+      markerUpdates.set(key, hiding ? HIDDEN_DONE : null)
     }
     maybeFlushBaseline()
   }
