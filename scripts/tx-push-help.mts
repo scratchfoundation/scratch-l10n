@@ -10,8 +10,7 @@ import FreshdeskApi, {
   logAuthenticatedAgent,
 } from './lib/freshdesk-api.mts'
 import { TransifexStringsKeyValueJson, TransifexStringsStructuredJson } from './lib/transifex-formats.mts'
-import { txPush, txCreateResource, JsonApiException } from './lib/transifex.mts'
-import { emitWarning } from './lib/warnings.mts'
+import { txPull, txPush, txCreateResource, JsonApiException, SOURCE_LOCALE } from './lib/transifex.mts'
 
 const args = process.argv.slice(2)
 
@@ -69,10 +68,10 @@ const txPushResource = async (
 ) => {
   // Transifex rejects an upload with no extractable strings (`parse_error: No strings could be
   // extracted`). That used to leave the upload stuck in a non-`succeeded` state forever, hanging
-  // the whole sync. An empty resource almost always means a Freshdesk folder with no published
-  // articles, which is a content situation rather than a sync failure: warn and skip it.
+  // the whole sync. An empty resource means a Freshdesk folder with nothing to translate, which is a
+  // content situation rather than a sync failure: log it and leave any existing resource as it is.
   if (Object.keys(articles).length === 0) {
-    emitWarning(`Skipping Transifex resource "${name}": no strings to push (empty content).`)
+    console.log(`Not pushing Transifex resource "${name}": its Freshdesk folder has no articles to translate.`)
     return
   }
 
@@ -119,14 +118,39 @@ const getFolders = async (categories: FreshdeskCategory[]): Promise<FreshdeskFol
 }
 
 /**
- * Save articles in a particular folder
+ * Find which articles a folder's Transifex resource already holds.
+ * @param slug - the resource slug
+ * @returns the article ids in the resource's source, or an empty set if the resource doesn't exist yet
+ */
+const txArticleIds = async (slug: string): Promise<Set<string>> => {
+  try {
+    return new Set(Object.keys(await txPull<unknown>(TX_PROJECT, slug, SOURCE_LOCALE)))
+  } catch (err) {
+    if ((err as JsonApiException).statusCode === 404) {
+      return new Set()
+    }
+    throw err
+  }
+}
+
+/**
+ * Save articles in a particular folder. Published articles are pushed, and so are drafts that are already in
+ * Transifex: unpublishing an article hides its translations in Freshdesk (see the article pull) but keeps them,
+ * and their source, in Transifex in case the article comes back. A draft that was never published stays out of
+ * Transifex, so translators don't see unreleased or unfinished content.
  * @param folder - The folder object
  */
 const saveArticles = async (folder: FreshdeskFolder) => {
   try {
     const json = await FD.listArticles(folder)
+    const slug = `${makeTxSlug(folder)}_json`
+    // Only a folder with drafts needs to know what Transifex already holds. If that can't be read, the push
+    // fails for this folder instead of dropping the drafts' strings, and their translations with them.
+    const inTransifex = json.some((article) => article.status !== FreshdeskArticleStatus.published)
+      ? await txArticleIds(slug)
+      : new Set<string>()
     const txArticles = json.reduce((strings: TransifexStringsStructuredJson, current) => {
-      if (current.status === FreshdeskArticleStatus.published) {
+      if (current.status === FreshdeskArticleStatus.published || inTransifex.has(String(current.id))) {
         strings[String(current.id)] = {
           title: {
             string: current.title,
@@ -141,8 +165,15 @@ const saveArticles = async (folder: FreshdeskFolder) => {
       }
       return strings
     }, {})
-    process.stdout.write(`Push ${folder.name} articles to Transifex\n`)
-    await txPushResource(`${makeTxSlug(folder)}_json`, txArticles, 'STRUCTURED_JSON')
+    const drafts = json.filter(
+      (article) => article.status !== FreshdeskArticleStatus.published && inTransifex.has(String(article.id)),
+    )
+    process.stdout.write(
+      `Push ${folder.name} articles to Transifex` +
+        (drafts.length ? ` (including ${drafts.length} draft(s): ${drafts.map((a) => a.id).join(', ')})` : '') +
+        '\n',
+    )
+    await txPushResource(slug, txArticles, 'STRUCTURED_JSON')
   } catch (error) {
     recordFailure(`folder "${folder.name}" (id ${folder.id})`, error)
   }

@@ -138,11 +138,33 @@ let baseline: SyncBaseline = new Map()
 const syncedPairs: SyncBaseline = new Map()
 /** Count of Freshdesk writes skipped in a dry run, reported at the end. */
 let plannedWrites = 0
+/** Articles whose translations a dry run would write as drafts, reported at the end. */
+const plannedDraftArticles = new Set<number>()
+
+/** English status of each article, by folder id, loaded by {@link loadEnglishArticleStatuses}. */
+let englishStatuses: Map<number, Map<number, FreshdeskArticleStatus>> | undefined
+/** Sorted ids of each synced folder's English drafts, for {@link pairSignature}. */
+const draftIdsByFolder = new Map<number, number[]>()
+/** Articles already reported as missing from Freshdesk, so each is logged once rather than once per locale. */
+const reportedMissingArticles = new Set<number>()
+/** Ids of every English draft in the synced folders, whether or not Transifex holds it. */
+const englishDrafts = new Set<number>()
+/**
+ * Baseline key prefix recording that a draft article's translations have all been unpublished, so
+ * {@link hideDraftTranslations} does it once per article rather than every run.
+ */
+const HIDDEN_KEY_PREFIX = 'hidden:'
+/** Draft articles whose translations were all unpublished this run (or, in a dry run, would be). */
+const hiddenThisRun = new Set<number>()
+/** Baseline keys to drop when the baseline is next flushed: articles that are no longer drafts. */
+const staleBaselineKeys = new Set<string>()
 
 /** Whether the Freshdesk supported-language filter is active (helpdesk settings loaded successfully). */
 let localeFilterActive = false
 /** Freshdesk supported language codes (lowercased) the knowledge base can hold translations for. */
 const supportedFreshdeskLocales = new Set<string>()
+/** The same codes as Freshdesk spells them (for example `ja-JP`), for building request URLs. */
+const freshdeskLanguages: string[] = []
 /** Freshdesk primary language (lowercased); its content lives on the base resource, not a translation. */
 let primaryLanguage = ''
 
@@ -159,6 +181,7 @@ export const initChangeDetection = async (): Promise<void> => {
     primaryLanguage = (settings.primary_language ?? '').toLowerCase()
     for (const code of settings.supported_languages ?? []) {
       supportedFreshdeskLocales.add(code.toLowerCase())
+      freshdeskLanguages.push(code)
     }
     localeFilterActive = supportedFreshdeskLocales.size > 0
   } catch (error) {
@@ -205,8 +228,27 @@ export const reportSkippedLocales = (languages: string[]): void => {
 }
 
 /**
- * Whether a (resource, locale) pair has translations worth pushing: it must have translated content
- * and a newer last-update timestamp than the baseline recorded.
+ * What the baseline records for a (resource, locale) pair: the Transifex last-update timestamp, plus the
+ * folder's English drafts when it has any. Publishing or unpublishing an English article doesn't touch
+ * Transifex, so the drafts are part of the signature to make that change re-sync the folder, which brings
+ * its translations' status in line. A folder without drafts keeps the bare timestamp, as before.
+ * @param resource - the Transifex resource slug
+ * @param locale - the Transifex locale code
+ * @returns the pair's signature, or null if it has nothing translated
+ */
+const pairSignature = (resource: string, locale: string): string | null => {
+  const current = currentStats.get(`${resource}:${locale}`)
+  if (!current) {
+    return null
+  }
+  const folderId = /_(\d+)_json$/.exec(resource)?.[1]
+  const drafts = folderId ? draftIdsByFolder.get(Number(folderId)) : undefined
+  return drafts?.length ? `${current} drafts:${drafts.join(',')}` : current
+}
+
+/**
+ * Whether a (resource, locale) pair has translations worth pushing: it must have translated content,
+ * and its signature (see {@link pairSignature}) must differ from what the baseline recorded.
  * @param resource - the Transifex resource slug
  * @param locale - the Transifex locale code
  * @returns true if the pair changed since the last successful sync
@@ -217,24 +259,24 @@ const pairChanged = (resource: string, locale: string): boolean => {
   if (!changeDetectionReady) {
     return true
   }
-  const current = currentStats.get(`${resource}:${locale}`)
+  const signature = pairSignature(resource, locale)
   // No stats for the pair, or nothing translated yet -> nothing to push.
-  if (!current) {
+  if (!signature) {
     return false
   }
-  return baseline.get(`${resource}:${locale}`) !== current
+  return baseline.get(`${resource}:${locale}`) !== signature
 }
 
 /**
  * Record that a (resource, locale) pair synced successfully, so its baseline entry advances to the
- * current Transifex timestamp when the run finishes.
+ * pair's current signature when the run finishes.
  * @param resource - the Transifex resource slug
  * @param locale - the Transifex locale code
  */
 const markSynced = (resource: string, locale: string): void => {
-  const current = currentStats.get(`${resource}:${locale}`)
-  if (current) {
-    syncedPairs.set(`${resource}:${locale}`, current)
+  const signature = pairSignature(resource, locale)
+  if (signature) {
+    syncedPairs.set(`${resource}:${locale}`, signature)
   }
 }
 
@@ -257,6 +299,12 @@ const flushBaseline = (): void => {
   }
   for (const [key, timestamp] of syncedPairs) {
     baseline.set(key, timestamp)
+  }
+  for (const id of hiddenThisRun) {
+    baseline.set(`${HIDDEN_KEY_PREFIX}${id}`, 'draft')
+  }
+  for (const key of staleBaselineKeys) {
+    baseline.delete(key)
   }
   saveBaseline(baseline)
   lastBaselineFlushAt = Date.now()
@@ -291,6 +339,18 @@ export const finalizeSync = (): void => {
       `[dry-run] ${syncedPairs.size} (resource, locale) pair(s) changed and would sync, for ` +
         `${plannedWrites} Freshdesk write(s). No writes were issued and the baseline was left unchanged.`,
     )
+    if (hiddenThisRun.size > 0) {
+      console.log(
+        `[dry-run] Every translation would be unpublished for ${hiddenThisRun.size} article(s) that are drafts ` +
+          `in English: ${[...hiddenThisRun].join(', ')}.`,
+      )
+    }
+    if (plannedDraftArticles.size > 0) {
+      console.log(
+        `[dry-run] Translations would be written as drafts for ${plannedDraftArticles.size} article(s) that ` +
+          `are drafts in English: ${[...plannedDraftArticles].sort((a, b) => a - b).join(', ')}.`,
+      )
+    }
   } else {
     flushBaseline()
     console.log(`Synced ${syncedPairs.size} (resource, locale) pair(s); baseline now holds ${baseline.size} entries.`)
@@ -413,7 +473,8 @@ const UNSYNCED_FOLDER_IDS = new Set([4000040867])
  * exist, and must not be in {@link UNSYNCED_FOLDER_IDS}. The push only updates resources for current
  * folders, so a resource left behind by a deleted folder keeps its old English source forever. Its articles
  * may have moved to another folder, so pulling it would overwrite their live translations with translations
- * of outdated content. Each such resource is reported once so someone can remove it.
+ * of outdated content. Such a resource is kept in case the content is wanted again, so it's logged, not
+ * warned about; remove it from Transifex once it's no longer needed.
  * @param folders - article resources from {@link getInputs}, named `<folder name>_<folder id>_json`
  * @param validFolderIds - set of Freshdesk folder IDs that currently exist
  * @returns the resources whose translations should sync to Freshdesk
@@ -430,14 +491,136 @@ export const foldersToSync = (folders: TransifexResourceObject[], validFolderIds
     if (match && validFolderIds.has(Number(match[1]))) {
       return true
     }
+    if (match) {
+      console.log(
+        `Not syncing Transifex resource "${slug}": Freshdesk folder ${match[1]} no longer exists. ` +
+          `Remove the resource from Transifex if its content isn't needed again: ` +
+          transifexEditorLink({ project: TX_PROJECT, resource: slug, lang: SOURCE_LOCALE }),
+      )
+      return false
+    }
     emitWarning(
-      match
-        ? `Skipping Transifex resource "${slug}": Freshdesk folder ${match[1]} no longer exists. Remove this resource from Transifex.`
-        : `Skipping Transifex resource "${slug}": its name doesn't end in a Freshdesk folder ID.`,
+      `Skipping Transifex resource "${slug}": its name doesn't end in a Freshdesk folder ID.`,
       transifexEditorLink({ project: TX_PROJECT, resource: slug, lang: SOURCE_LOCALE }),
     )
     return false
   })
+
+/**
+ * Load the English status of every article in the given folders. Translations follow it: an article that's a
+ * draft in English gets its translations written as drafts, and one missing from Freshdesk is skipped. Call
+ * once, before syncing articles.
+ * @param folders - article resources from {@link foldersToSync}
+ * @returns a promise that resolves once the statuses are loaded
+ */
+export const loadEnglishArticleStatuses = async (folders: TransifexResourceObject[]): Promise<void> => {
+  const byFolder = new Map<number, Map<number, FreshdeskArticleStatus>>()
+  for (const resource of folders) {
+    const folderId = Number(/_(\d+)_json$/.exec(resource.attributes.slug)?.[1])
+    const articles = await FD.listArticles({ id: folderId, name: resource.attributes.slug })
+    const statuses = new Map<number, FreshdeskArticleStatus>()
+    byFolder.set(folderId, statuses)
+    const drafts: number[] = []
+    for (const article of articles) {
+      if (article.id == null) {
+        continue
+      }
+      statuses.set(article.id, article.status)
+      if (article.status !== FreshdeskArticleStatus.published) {
+        drafts.push(article.id)
+        englishDrafts.add(article.id)
+      }
+    }
+    if (drafts.length > 0) {
+      const dormant = await draftsInTransifex(resource.attributes.slug, drafts)
+      if (dormant.length > 0) {
+        draftIdsByFolder.set(
+          folderId,
+          dormant.sort((a, b) => a - b),
+        )
+      }
+    }
+  }
+  englishStatuses = byFolder
+}
+
+/**
+ * Unpublish every translation of each article that's a draft in English. The article sync writes draft
+ * translations only for languages with translations in Transifex, and only for articles Transifex holds, but
+ * Freshdesk can also have published translations that came from elsewhere: older syncs, or ones entered by
+ * hand. Each article is done once and recorded in the baseline; republishing it clears the record, so
+ * unpublishing it again later hides its translations again. Call after {@link loadEnglishArticleStatuses}.
+ * @returns a promise that resolves once every draft has been handled
+ */
+export const hideDraftTranslations = async (): Promise<void> => {
+  if (!changeDetectionReady || !englishStatuses) {
+    throw new Error('hideDraftTranslations needs initChangeDetection and loadEnglishArticleStatuses first')
+  }
+  for (const key of baseline.keys()) {
+    if (key.startsWith(HIDDEN_KEY_PREFIX) && !englishDrafts.has(Number(key.slice(HIDDEN_KEY_PREFIX.length)))) {
+      staleBaselineKeys.add(key)
+    }
+  }
+  if (!localeFilterActive) {
+    emitWarning("Couldn't read Freshdesk's languages, so translations of draft articles weren't unpublished.")
+    return
+  }
+  const languages = freshdeskLanguages.filter((code) => code.toLowerCase() !== primaryLanguage)
+  for (const id of [...englishDrafts].sort((a, b) => a - b)) {
+    if (baseline.has(`${HIDDEN_KEY_PREFIX}${id}`)) {
+      continue
+    }
+    if (runBudgetExhausted()) {
+      deferredForBudget++
+      continue
+    }
+    if (DRY_RUN) {
+      plannedWrites += languages.length
+      hiddenThisRun.add(id)
+      continue
+    }
+    let allOk = true
+    let unpublished = 0
+    for (const language of languages) {
+      try {
+        if (await FD.unpublishArticleTranslation(id, language)) {
+          unpublished++
+        }
+      } catch (error) {
+        recordFailure(`unpublishing the ${language} translation of draft article ${id}`, error)
+        allOk = false
+      }
+    }
+    if (unpublished > 0) {
+      console.log(`Unpublished ${unpublished} translation(s) of article ${id}, which is a draft in English.`)
+    }
+    if (allOk) {
+      hiddenThisRun.add(id)
+    }
+    maybeFlushBaseline()
+  }
+}
+
+/**
+ * Narrow a folder's English drafts to those its Transifex resource holds, which are the only ones with
+ * translations to write. Drafts that were never published aren't pushed, so leaving them out of the
+ * signature means creating or deleting one doesn't re-sync the whole folder.
+ * @param slug - the folder's Transifex resource slug
+ * @param drafts - ids of the folder's English drafts
+ * @returns the drafts that are in Transifex, or all of them if the resource couldn't be read
+ */
+const draftsInTransifex = async (slug: string, drafts: number[]): Promise<number[]> => {
+  try {
+    const source = await txPull<unknown>(TX_PROJECT, slug, SOURCE_LOCALE)
+    return drafts.filter((id) => Object.prototype.hasOwnProperty.call(source, String(id)))
+  } catch (error) {
+    // Over-counting only costs an extra re-sync of the folder, so don't fail the run over it.
+    console.warn(
+      `Could not read the source of "${slug}"; treating all its drafts as in Transifex: ${messageOf(error)}`,
+    )
+    return drafts
+  }
+}
 
 /**
  * internal function to serialize saving category and folder name translations to avoid Freshdesk rate limit
@@ -584,15 +767,33 @@ const serializeFolderSave = async (
   locale: string,
   resourceSlug: string,
 ): Promise<boolean> => {
+  const folderStatuses = englishStatuses?.get(Number(/_(\d+)_json$/.exec(resourceSlug)?.[1]))
+  if (!folderStatuses) {
+    throw new Error(
+      `English article statuses not loaded for "${resourceSlug}"; call loadEnglishArticleStatuses first`,
+    )
+  }
   let allOk = true
   for (const [idString, value] of Object.entries(json)) {
     // Handle each article independently: a failure on one must not abort the rest for this locale.
     try {
       const id = parseIntOrThrow(idString, 10)
+      const status = folderStatuses.get(id)
+      if (status == null) {
+        // Deleted in Freshdesk, or moved to a folder this resource doesn't belong to. Either way, there's
+        // nothing here to write to.
+        if (!reportedMissingArticles.has(id)) {
+          reportedMissingArticles.add(id)
+          console.log(`Not syncing article ${id} from "${resourceSlug}": it isn't in that folder in Freshdesk.`)
+        }
+        continue
+      }
+      // Translations follow the English article: published if it is, otherwise a draft, so unpublishing the
+      // English hides them too, without losing them in Transifex.
       const body: FreshdeskArticleCreate = {
         title: value.title.string,
         description: value.description.string,
-        status: FreshdeskArticleStatus.published,
+        status: status === FreshdeskArticleStatus.published ? status : FreshdeskArticleStatus.draft,
       }
       if (Object.prototype.hasOwnProperty.call(value, 'tags')) {
         const tags = splitTags(value.tags.string)
@@ -617,6 +818,11 @@ const serializeFolderSave = async (
       }
       if (DRY_RUN) {
         plannedWrites++
+        if (body.status === FreshdeskArticleStatus.draft) {
+          // Each draft write also unpublishes first (see FreshdeskApi.updateArticleTranslation).
+          plannedWrites++
+          plannedDraftArticles.add(id)
+        }
       } else if (!(await FD.updateArticleTranslation(id, freshdeskLocale(locale), body))) {
         // A skipped write (Freshdesk reports it already exists) must not advance the baseline.
         allOk = false

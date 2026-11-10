@@ -7,6 +7,8 @@ import {
   getInputs,
   getValidFreshdeskIds,
   foldersToSync,
+  loadEnglishArticleStatuses,
+  hideDraftTranslations,
   saveItem,
   localizeFolder,
   initChangeDetection,
@@ -36,6 +38,8 @@ const [{ languages, folders: allFolders }, { validFolderIds }] = await Promise.a
   getValidFreshdeskIds(),
 ])
 const folders = foldersToSync(allFolders, validFolderIds)
+await loadEnglishArticleStatuses(folders)
+await hideDraftTranslations()
 reportSkippedLocales(languages)
 console.log('Processing articles pulled from Transifex')
 await Promise.all(folders.map((item) => saveItem(item, languages, localizeFolder)))

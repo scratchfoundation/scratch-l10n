@@ -432,12 +432,30 @@ export class FreshdeskApi {
     return (await res.json()) as FreshdeskFolder[]
   }
 
-  async listArticles(folder: FreshdeskFolder) {
-    const res = await this.request(`${this.baseUrl}/api/v2/solutions/folders/${folder.id}/articles`, {
-      headers: this.defaultHeaders,
-    })
-    await this.checkStatus(res)
-    return (await res.json()) as FreshdeskArticle[]
+  /**
+   * List every article in a folder, in English. Freshdesk pages this list (30 per page by default), so keep
+   * fetching until a short page.
+   *
+   * For a published article with an unpublished edit, Freshdesk returns the edit's title and description but
+   * still reports the article as published, and the public API has no way to read the live version instead.
+   * @param folder - the folder to list
+   * @returns the folder's articles, drafts included
+   */
+  async listArticles(folder: FreshdeskFolder): Promise<FreshdeskArticle[]> {
+    const perPage = 100
+    const articles: FreshdeskArticle[] = []
+    for (let page = 1; ; page++) {
+      const res = await this.request(
+        `${this.baseUrl}/api/v2/solutions/folders/${folder.id}/articles?per_page=${perPage}&page=${page}`,
+        { headers: this.defaultHeaders },
+      )
+      await this.checkStatus(res)
+      const batch = (await res.json()) as FreshdeskArticle[]
+      articles.push(...batch)
+      if (batch.length < perPage) {
+        return articles
+      }
+    }
   }
 
   /**
@@ -535,8 +553,45 @@ export class FreshdeskApi {
     return this.writeTranslation('folders', id, locale, body)
   }
 
+  /**
+   * Write an article translation. A draft write needs an extra step: sending the content with draft status to
+   * an already-published translation only saves a pending edit and leaves the published version live. Only a
+   * request carrying nothing but the draft status unpublishes it, so send that first, then write the content
+   * to the now-unpublished translation (or create it as a draft if it doesn't exist yet).
+   * @param id - the English article this translates
+   * @param locale - the Freshdesk language code
+   * @param body - the translation, with the status it should end up in
+   * @returns true if the translation was written; see {@link writeTranslation}
+   */
   async updateArticleTranslation(id: number, locale: string, body: FreshdeskArticleCreate): Promise<boolean> {
+    if (body.status === FreshdeskArticleStatus.draft) {
+      // If there's no translation to unpublish yet, writeTranslation creates it as a draft.
+      await this.unpublishArticleTranslation(id, locale)
+    }
     return this.writeTranslation('articles', id, locale, body)
+  }
+
+  /**
+   * Unpublish an article translation, keeping its content. This needs a request carrying only the draft status:
+   * one that also carries content saves a pending edit and leaves the published version live.
+   * @param id - the English article the translation belongs to
+   * @param locale - the Freshdesk language code
+   * @returns true if the translation exists (and is now unpublished), false if there's no such translation
+   */
+  async unpublishArticleTranslation(id: number, locale: string): Promise<boolean> {
+    try {
+      await this.writeRequest(
+        `${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`,
+        'put',
+        JSON.stringify({ status: FreshdeskArticleStatus.draft }),
+      )
+      return true
+    } catch (err) {
+      if ((err as HttpError).code === 404) {
+        return false
+      }
+      throw err
+    }
   }
 }
 
