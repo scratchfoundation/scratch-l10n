@@ -141,6 +141,10 @@ const localeMap = {
 // list of RTL locales supported, and a function to check whether a locale is RTL
 const rtlLocales = ['ar', 'ckb', 'fa', 'he']
 
+/**
+ * @param {string} locale - the locale code to check
+ * @returns {boolean} true if the locale is written right to left
+ */
 const isRtl = (locale) => rtlLocales.indexOf(locale) !== -1
 
 export { locales as default, customLocales, localeMap, isRtl }
