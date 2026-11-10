@@ -13,7 +13,8 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "skipLibCheck": true
   },
   "include": ["**/*.js", "**/*.mjs", "**/*.ts", "**/*.mts"],
   "exclude": ["node_modules"]
