@@ -206,6 +206,10 @@ const FD_DEFAULT_RETRY_AFTER_MS = 30_000
  * instead. Correct pacing should keep us from ever earning such a penalty in the first place.
  */
 const FD_MAX_RETRY_AFTER_MS = 120_000
+/** Maximum attempts (the initial request plus retries) for a request that keeps failing with a 5xx or network error. */
+const FD_MAX_SERVER_ERROR_ATTEMPTS = 4
+/** Wait before the first retry after a 5xx or network error, doubled for each later retry, in milliseconds. */
+const FD_SERVER_ERROR_RETRY_MS = 2_000
 
 /**
  * Parse a `Retry-After` header into milliseconds. Freshdesk sends a delta in seconds, but the HTTP
@@ -331,24 +335,46 @@ export class FreshdeskApi {
   }
 
   /**
-   * Perform a fetch through the rate limiter: paced against the shared schedule, and transparently
-   * retried on 429 while honoring `Retry-After`. Any non-429 response (success or a real error) is
-   * returned as-is for the caller's {@link checkStatus} to interpret; a 429 that survives every
-   * retry is likewise returned so it surfaces as a genuine, reported failure rather than a silent
-   * skip. Only rate limiting is handled here — other transient failures keep their existing behavior.
+   * Perform a fetch through the rate limiter: paced against the shared schedule, retried on 429 while
+   * honoring `Retry-After`, and retried a few times with backoff on a 5xx or network error. Any other
+   * response (success or a real error) is returned as-is for the caller's {@link checkStatus} to
+   * interpret. A 429 or 5xx that survives every retry is likewise returned, and a network error that
+   * does is re-thrown, so it surfaces as a genuine, reported failure rather than a silent skip. A read
+   * that fails this way ends the run: when Freshdesk keeps erroring, its answers can't be trusted, and
+   * the next run (or a manual rerun) can try again.
    * @param url - absolute endpoint to call
    * @param init - method, body, and headers for the fetch
    * @returns the final response
    */
   private async request(url: string, init: RequestInit): Promise<Response> {
-    for (let attempt = 1; ; attempt++) {
+    let serverErrorAttempts = 0
+    let attempt = 0
+    for (;;) {
       await this.gate()
-      const res = await fetch(url, init)
+      let res: Response
+      try {
+        res = await fetch(url, init)
+      } catch (error) {
+        if (++serverErrorAttempts >= FD_MAX_SERVER_ERROR_ATTEMPTS) {
+          throw error
+        }
+        await this.waitToRetry(messageOf(error), serverErrorAttempts)
+        continue
+      }
       // Learn the server's limit from every response (success or 429) and pace to it.
       this.applyRateHeaders(res.headers)
+      if (res.status >= 500) {
+        if (++serverErrorAttempts >= FD_MAX_SERVER_ERROR_ATTEMPTS) {
+          return res
+        }
+        await res.text().catch(() => undefined)
+        await this.waitToRetry(`HTTP ${res.status}`, serverErrorAttempts)
+        continue
+      }
       if (res.status !== 429) {
         return res
       }
+      attempt++
       this.rateLimitHits++
       // Surface the first back-off through the shared warnings channel (job summary + Slack), once
       // per run, so a job that recovers and stays green still flags that it is brushing the limit.
@@ -383,6 +409,22 @@ export class FreshdeskApi {
           `(attempt ${attempt}/${FD_MAX_RATE_LIMIT_ATTEMPTS}, pace now ${Math.round(this.requestIntervalMs)}ms).`,
       )
     }
+  }
+
+  /**
+   * Log a 5xx or network error and wait before retrying it, doubling the wait with each retry. Only this
+   * request waits; the rest of the schedule carries on.
+   * @param reason - what went wrong, for the log
+   * @param failures - how many times this request has failed so far
+   * @returns a promise that resolves when it's time to retry
+   */
+  private async waitToRetry(reason: string, failures: number): Promise<void> {
+    const wait = FD_SERVER_ERROR_RETRY_MS * 2 ** (failures - 1)
+    console.warn(
+      `Freshdesk request failed (${reason}); retrying in ${wait / 1000}s ` +
+        `(attempt ${failures + 1}/${FD_MAX_SERVER_ERROR_ATTEMPTS}).`,
+    )
+    await sleep(wait)
   }
 
   /**
@@ -566,24 +608,26 @@ export class FreshdeskApi {
   async updateArticleTranslation(id: number, locale: string, body: FreshdeskArticleCreate): Promise<boolean> {
     if (body.status === FreshdeskArticleStatus.draft) {
       // If there's no translation to unpublish yet, writeTranslation creates it as a draft.
-      await this.unpublishArticleTranslation(id, locale)
+      await this.setArticleTranslationStatus(id, locale, FreshdeskArticleStatus.draft)
     }
     return this.writeTranslation('articles', id, locale, body)
   }
 
   /**
-   * Unpublish an article translation, keeping its content. This needs a request carrying only the draft status:
-   * one that also carries content saves a pending edit and leaves the published version live.
+   * Publish or unpublish an article translation, keeping its content. Unpublishing needs a request carrying
+   * only the draft status: one that also carries content saves a pending edit and leaves the published
+   * version live. Publishing this way makes the translation's latest content live.
    * @param id - the English article the translation belongs to
    * @param locale - the Freshdesk language code
-   * @returns true if the translation exists (and is now unpublished), false if there's no such translation
+   * @param status - the status to set
+   * @returns true if the translation exists (and now has that status), false if there's no such translation
    */
-  async unpublishArticleTranslation(id: number, locale: string): Promise<boolean> {
+  async setArticleTranslationStatus(id: number, locale: string, status: FreshdeskArticleStatus): Promise<boolean> {
     try {
       await this.writeRequest(
         `${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`,
         'put',
-        JSON.stringify({ status: FreshdeskArticleStatus.draft }),
+        JSON.stringify({ status }),
       )
       return true
     } catch (err) {

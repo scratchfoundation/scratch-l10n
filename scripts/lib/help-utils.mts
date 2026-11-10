@@ -149,13 +149,17 @@ const draftIdsByFolder = new Map<number, number[]>()
 const reportedMissingArticles = new Set<number>()
 /** Ids of every English draft in the synced folders, whether or not Transifex holds it. */
 const englishDrafts = new Set<number>()
+/** Ids of every published English article in the synced folders. */
+const englishPublished = new Set<number>()
 /**
  * Baseline key prefix recording that a draft article's translations have all been unpublished, so
- * {@link hideDraftTranslations} does it once per article rather than every run.
+ * {@link matchTranslationStatusToEnglish} does it once per article rather than every run.
  */
 const HIDDEN_KEY_PREFIX = 'hidden:'
 /** Draft articles whose translations were all unpublished this run (or, in a dry run, would be). */
 const hiddenThisRun = new Set<number>()
+/** Republished articles whose translations were all published again this run (or, in a dry run, would be). */
+const republishedThisRun = new Set<number>()
 /** Baseline keys to drop when the baseline is next flushed: articles that are no longer drafts. */
 const staleBaselineKeys = new Set<string>()
 
@@ -345,6 +349,12 @@ export const finalizeSync = (): void => {
           `in English: ${[...hiddenThisRun].join(', ')}.`,
       )
     }
+    if (republishedThisRun.size > 0) {
+      console.log(
+        `[dry-run] Every translation would be published again for ${republishedThisRun.size} article(s) that ` +
+          `were republished in English: ${[...republishedThisRun].join(', ')}.`,
+      )
+    }
     if (plannedDraftArticles.size > 0) {
       console.log(
         `[dry-run] Translations would be written as drafts for ${plannedDraftArticles.size} article(s) that ` +
@@ -526,7 +536,9 @@ export const loadEnglishArticleStatuses = async (folders: TransifexResourceObjec
         continue
       }
       statuses.set(article.id, article.status)
-      if (article.status !== FreshdeskArticleStatus.published) {
+      if (article.status === FreshdeskArticleStatus.published) {
+        englishPublished.add(article.id)
+      } else {
         drafts.push(article.id)
         englishDrafts.add(article.id)
       }
@@ -545,57 +557,82 @@ export const loadEnglishArticleStatuses = async (folders: TransifexResourceObjec
 }
 
 /**
- * Unpublish every translation of each article that's a draft in English. The article sync writes draft
- * translations only for languages with translations in Transifex, and only for articles Transifex holds, but
- * Freshdesk can also have published translations that came from elsewhere: older syncs, or ones entered by
- * hand. Each article is done once and recorded in the baseline; republishing it clears the record, so
- * unpublishing it again later hides its translations again. Call after {@link loadEnglishArticleStatuses}.
- * @returns a promise that resolves once every draft has been handled
+ * Give every translation of an article its English status when that status changes: unpublish them all when
+ * the English becomes a draft, and publish them all again when it's republished. The article sync only
+ * writes languages that have translations in Transifex, and only for articles Transifex holds, but Freshdesk
+ * can also have translations that came from elsewhere: older syncs, or ones entered by hand. A hidden article
+ * is recorded in the baseline, so each change is made once, not every run; the record is cleared once its
+ * translations are published again. Publishing uses a status-only request, which makes each translation's
+ * latest content live. Call after {@link loadEnglishArticleStatuses}.
+ * @returns a promise that resolves once every changed article has been handled
  */
-export const hideDraftTranslations = async (): Promise<void> => {
+export const matchTranslationStatusToEnglish = async (): Promise<void> => {
   if (!changeDetectionReady || !englishStatuses) {
-    throw new Error('hideDraftTranslations needs initChangeDetection and loadEnglishArticleStatuses first')
+    throw new Error('matchTranslationStatusToEnglish needs initChangeDetection and loadEnglishArticleStatuses first')
   }
+  const toPublish: number[] = []
   for (const key of baseline.keys()) {
-    if (key.startsWith(HIDDEN_KEY_PREFIX) && !englishDrafts.has(Number(key.slice(HIDDEN_KEY_PREFIX.length)))) {
+    if (!key.startsWith(HIDDEN_KEY_PREFIX)) {
+      continue
+    }
+    const id = Number(key.slice(HIDDEN_KEY_PREFIX.length))
+    if (englishPublished.has(id)) {
+      toPublish.push(id)
+    } else if (!englishDrafts.has(id)) {
+      // Deleted, or moved to a folder that isn't synced. Either way there's nothing to publish.
       staleBaselineKeys.add(key)
     }
   }
   if (!localeFilterActive) {
-    emitWarning("Couldn't read Freshdesk's languages, so translations of draft articles weren't unpublished.")
+    emitWarning(
+      "Couldn't read Freshdesk's languages, so translations weren't published or unpublished to match " +
+        'their English articles.',
+    )
     return
   }
   const languages = freshdeskLanguages.filter((code) => code.toLowerCase() !== primaryLanguage)
-  for (const id of [...englishDrafts].sort((a, b) => a - b)) {
-    if (baseline.has(`${HIDDEN_KEY_PREFIX}${id}`)) {
-      continue
-    }
+  const toHide = [...englishDrafts].filter((id) => !baseline.has(`${HIDDEN_KEY_PREFIX}${id}`))
+  const changes = [
+    ...toHide.map((id) => ({ id, status: FreshdeskArticleStatus.draft })),
+    ...toPublish.map((id) => ({ id, status: FreshdeskArticleStatus.published })),
+  ].sort((a, b) => a.id - b.id)
+  for (const { id, status } of changes) {
+    const hiding = status === FreshdeskArticleStatus.draft
     if (runBudgetExhausted()) {
       deferredForBudget++
       continue
     }
     if (DRY_RUN) {
       plannedWrites += languages.length
-      hiddenThisRun.add(id)
+      ;(hiding ? hiddenThisRun : republishedThisRun).add(id)
       continue
     }
     let allOk = true
-    let unpublished = 0
+    let changed = 0
     for (const language of languages) {
       try {
-        if (await FD.unpublishArticleTranslation(id, language)) {
-          unpublished++
+        if (await FD.setArticleTranslationStatus(id, language, status)) {
+          changed++
         }
       } catch (error) {
-        recordFailure(`unpublishing the ${language} translation of draft article ${id}`, error)
+        recordFailure(`${hiding ? 'unpublishing' : 'publishing'} the ${language} translation of article ${id}`, error)
         allOk = false
       }
     }
-    if (unpublished > 0) {
-      console.log(`Unpublished ${unpublished} translation(s) of article ${id}, which is a draft in English.`)
+    if (changed > 0) {
+      console.log(
+        hiding
+          ? `Unpublished ${changed} translation(s) of article ${id}, which is a draft in English.`
+          : `Published ${changed} translation(s) of article ${id}, which was republished in English.`,
+      )
     }
     if (allOk) {
-      hiddenThisRun.add(id)
+      if (hiding) {
+        hiddenThisRun.add(id)
+      } else {
+        republishedThisRun.add(id)
+        staleBaselineKeys.add(`${HIDDEN_KEY_PREFIX}${id}`)
+      }
     }
     maybeFlushBaseline()
   }
