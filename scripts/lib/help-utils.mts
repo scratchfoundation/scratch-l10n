@@ -145,8 +145,8 @@ const plannedDraftArticles = new Set<number>()
 let englishStatuses: Map<number, Map<number, FreshdeskArticleStatus>> | undefined
 /** Sorted ids of each synced folder's English drafts, for {@link pairSignature}. */
 const draftIdsByFolder = new Map<number, number[]>()
-/** Articles already reported as missing from Freshdesk, so each is logged once rather than once per locale. */
-const reportedMissingArticles = new Set<number>()
+/** Articles already reported as skipped (missing, or a draft), so each is logged once rather than per locale. */
+const reportedSkippedArticles = new Set<number>()
 /** Ids of every English draft in the synced folders, whether or not Transifex holds it. */
 const englishDrafts = new Set<number>()
 /** Ids of every published English article in the synced folders. */
@@ -180,25 +180,20 @@ let primaryLanguage = ''
 
 /**
  * Load the Transifex per-(resource, locale) stats, the previous baseline, and the Freshdesk helpdesk
- * settings (which languages the KB can hold translations for). Call once before syncing.
+ * settings (which languages the KB can hold translations for). Call once before syncing. If the settings
+ * can't be read, this throws and the run stops, like any other Freshdesk read that keeps failing.
  * @returns a promise that resolves once change-detection state is loaded
  */
 export const initChangeDetection = async (): Promise<void> => {
   currentStats = await txResourceLanguageStats(TX_PROJECT)
   baseline = loadBaseline()
-  try {
-    const settings = await FD.getHelpdeskSettings()
-    primaryLanguage = (settings.primary_language ?? '').toLowerCase()
-    for (const code of settings.supported_languages ?? []) {
-      supportedFreshdeskLocales.add(code.toLowerCase())
-      freshdeskLanguages.push(code)
-    }
-    localeFilterActive = supportedFreshdeskLocales.size > 0
-  } catch (error) {
-    // If the settings can't be read, don't gate on language: attempt every locale and let the
-    // create path warn about any Freshdesk won't accept.
-    console.warn(`Could not read Freshdesk helpdesk settings; not filtering locales: ${messageOf(error)}`)
+  const settings = await FD.getHelpdeskSettings()
+  primaryLanguage = (settings.primary_language ?? '').toLowerCase()
+  for (const code of settings.supported_languages ?? []) {
+    supportedFreshdeskLocales.add(code.toLowerCase())
+    freshdeskLanguages.push(code)
   }
+  localeFilterActive = supportedFreshdeskLocales.size > 0
   changeDetectionReady = true
 }
 
@@ -209,7 +204,7 @@ export const initChangeDetection = async (): Promise<void> => {
  * @returns true if the locale should be pushed to Freshdesk
  */
 const localeSupported = (locale: string): boolean => {
-  // Until the filter is active (settings not loaded, or the locale-debug script), don't gate.
+  // Until the filter is active (no supported languages listed, or the single-locale script), don't gate.
   if (!localeFilterActive) {
     return true
   }
@@ -594,8 +589,8 @@ export const matchTranslationStatusToEnglish = async (): Promise<void> => {
   }
   if (!localeFilterActive) {
     emitWarning(
-      "Couldn't read Freshdesk's languages, so translations weren't published or unpublished to match " +
-        'their English articles.',
+      "Freshdesk's helpdesk settings list no languages, so translations weren't published or unpublished " +
+        'to match their English articles.',
     )
     return
   }
@@ -828,9 +823,18 @@ const serializeFolderSave = async (
       if (status == null) {
         // Deleted in Freshdesk, or moved to a folder this resource doesn't belong to. Either way, there's
         // nothing here to write to.
-        if (!reportedMissingArticles.has(id)) {
-          reportedMissingArticles.add(id)
+        if (!reportedSkippedArticles.has(id)) {
+          reportedSkippedArticles.add(id)
           console.log(`Not syncing article ${id} from "${resourceSlug}": it isn't in that folder in Freshdesk.`)
+        }
+        continue
+      }
+      if (status !== FreshdeskArticleStatus.published && !changeDetectionReady) {
+        // The single-locale script doesn't keep the baseline, so it can't record a hidden translation
+        // (see HIDDEN_KEY_PREFIX). Leave draft articles to the daily sync, which owns their status.
+        if (!reportedSkippedArticles.has(id)) {
+          reportedSkippedArticles.add(id)
+          console.log(`Not syncing article ${id}: it's a draft in English, which only the daily sync handles.`)
         }
         continue
       }
