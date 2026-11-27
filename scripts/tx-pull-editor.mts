@@ -46,7 +46,9 @@ for (const arg of args.slice(1)) {
     process.stdout.write(usage)
     process.exit(1)
   }
-  outputDirByResource[arg.slice(0, separator)] = path.resolve(arg.slice(separator + 1))
+  outputDirByResource[arg.slice(0, separator)] = path.resolve(
+    arg.slice(separator + 1),
+  )
 }
 const resources = Object.keys(outputDirByResource)
 
@@ -59,7 +61,10 @@ const validationResults = await pullAndValidateProject({
   loadPrevious: (resource, locale) => {
     try {
       return JSON.parse(
-        fs.readFileSync(`${outputDirByResource[resource]}/${locale}.json`, 'utf8'),
+        fs.readFileSync(
+          `${outputDirByResource[resource]}/${locale}.json`,
+          'utf8',
+        ),
       ) as TransifexEditorStrings
     } catch {
       return undefined
@@ -67,7 +72,9 @@ const validationResults = await pullAndValidateProject({
   },
 })
 
-for (const [resource, localeStrings] of Object.entries(validationResults.allStrings)) {
+for (const [resource, localeStrings] of Object.entries(
+  validationResults.allStrings,
+)) {
   for (const [locale, strings] of Object.entries(localeStrings)) {
     const file = JSON.stringify(strings, null, 4)
     fs.writeFileSync(`${outputDirByResource[resource]}/${locale}.json`, file)

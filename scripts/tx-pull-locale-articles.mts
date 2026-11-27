@@ -24,7 +24,11 @@ const usage = `
    the Localization page on the GUI wiki for information about setting up Transifex.
  `
 // Fail immediately if the API tokens are not defined, or missing argument
-if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length === 0) {
+if (
+  !process.env.TX_TOKEN ||
+  !process.env.FRESHDESK_TOKEN ||
+  args.length === 0
+) {
   process.stdout.write(usage)
   process.exit(1)
 }
@@ -37,7 +41,10 @@ if (locale === '-d') {
 }
 const saveFn = debug ? debugFolder : localizeFolder
 
-const [{ folders: allFolders }, { validFolderIds }] = await Promise.all([getInputs(), getValidFreshdeskIds()])
+const [{ folders: allFolders }, { validFolderIds }] = await Promise.all([
+  getInputs(),
+  getValidFreshdeskIds(),
+])
 const folders = foldersToSync(allFolders, validFolderIds)
 if (!debug) {
   await loadEnglishArticleStatuses(folders)

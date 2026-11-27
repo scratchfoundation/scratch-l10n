@@ -9,7 +9,8 @@
  * @param err - the caught value
  * @returns the error message, or a string representation of a non-Error throw
  */
-export const messageOf = (err: unknown): string => (err instanceof Error ? err.message : String(err))
+export const messageOf = (err: unknown): string =>
+  err instanceof Error ? err.message : String(err)
 
 /** Where a JSON parse error falls, as named by a shape-aware locator for {@link describeJsonParseError}. */
 export interface JsonEntryLocation {
@@ -51,7 +52,9 @@ export const describeJsonParseError = (
     return undefined
   }
   const lineColMatch = /\(line (\d+) column (\d+)\)/.exec(error.message)
-  const where = lineColMatch ? `line ${lineColMatch[1]}, column ${lineColMatch[2]}` : `position ${pos}`
+  const where = lineColMatch
+    ? `line ${lineColMatch[1]}, column ${lineColMatch[2]}`
+    : `position ${pos}`
   // A short, whitespace-collapsed window around the failure so the operator can eyeball the bad text.
   const snippet = text
     .slice(Math.max(0, pos - 30), pos + 30)
@@ -59,7 +62,10 @@ export const describeJsonParseError = (
     .trim()
   const entry = locate?.(text.slice(0, pos))
   if (entry) {
-    return { message: `malformed JSON in ${entry.label} (${where}): …${snippet}…`, key: entry.key }
+    return {
+      message: `malformed JSON in ${entry.label} (${where}): …${snippet}…`,
+      key: entry.key,
+    }
   }
   // Recover the enclosing key of a flat KEYVALUEJSON object: the value that failed to parse is
   // preceded by `"<key>":`, so scan back from the error position to that key. Heuristic (a colon or

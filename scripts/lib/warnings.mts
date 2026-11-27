@@ -25,7 +25,9 @@ export const emitWarning = (warning: string, link?: string): void => {
     try {
       appendFileSync(process.env.WARNINGS_FILE, line + '\n')
     } catch (error) {
-      console.warn(`Could not append to WARNINGS_FILE "${process.env.WARNINGS_FILE}": ${messageOf(error)}`)
+      console.warn(
+        `Could not append to WARNINGS_FILE "${process.env.WARNINGS_FILE}": ${messageOf(error)}`,
+      )
     }
   }
   emitAnnotation({ level: 'warning', message: line })

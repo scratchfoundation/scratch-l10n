@@ -179,7 +179,8 @@ export interface FreshdeskHelpdeskSettings {
   portal_languages?: string[]
 }
 
-const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms))
 
 /** Interval used before the server has told us its limit, in ms (conservative, avoids an opening burst). */
 const FD_START_INTERVAL_MS = 300
@@ -291,7 +292,10 @@ export class FreshdeskApi {
    */
   private async gate(): Promise<void> {
     const run = this.queue.then(async () => {
-      const target = Math.max(this.lastRequestStart + this.requestIntervalMs, this.pauseUntil)
+      const target = Math.max(
+        this.lastRequestStart + this.requestIntervalMs,
+        this.pauseUntil,
+      )
       const wait = target - Date.now()
       if (wait > 0) {
         await sleep(wait)
@@ -318,7 +322,10 @@ export class FreshdeskApi {
     }
     // Aim for a fraction of the budget: interval = one minute / (budget * safety).
     const target = 60_000 / (total * FD_RATE_SAFETY_FACTOR)
-    this.requestIntervalMs = Math.min(Math.max(target, FD_MIN_REQUEST_INTERVAL_MS), FD_MAX_REQUEST_INTERVAL_MS)
+    this.requestIntervalMs = Math.min(
+      Math.max(target, FD_MIN_REQUEST_INTERVAL_MS),
+      FD_MAX_REQUEST_INTERVAL_MS,
+    )
     if (!this.limitLogged) {
       this.limitLogged = true
       console.log(
@@ -330,7 +337,10 @@ export class FreshdeskApi {
     if (remaining !== null && remaining <= total * FD_LOW_REMAINING_FRACTION) {
       // Budget nearly exhausted: hold the shared schedule briefly so the window can refill before we
       // spend the last of it and trip a 429.
-      this.pauseUntil = Math.max(this.pauseUntil, Date.now() + FD_LOW_REMAINING_PAUSE_MS)
+      this.pauseUntil = Math.max(
+        this.pauseUntil,
+        Date.now() + FD_LOW_REMAINING_PAUSE_MS,
+      )
     }
   }
 
@@ -386,11 +396,16 @@ export class FreshdeskApi {
             'consider reducing request volume or raising the Freshdesk rate limit.',
         )
       }
-      const requested = parseRetryAfterMs(res.headers.get('Retry-After')) ?? FD_DEFAULT_RETRY_AFTER_MS
+      const requested =
+        parseRetryAfterMs(res.headers.get('Retry-After')) ??
+        FD_DEFAULT_RETRY_AFTER_MS
       // Cap the honored wait so a punitive multi-minute Retry-After can't hang the job; give up
       // rather than sleep past the timeout. Return the 429 with its body still intact so
       // checkStatus can read and surface Freshdesk's actual reason for the failure.
-      if (requested > FD_MAX_RETRY_AFTER_MS || attempt >= FD_MAX_RATE_LIMIT_ATTEMPTS) {
+      if (
+        requested > FD_MAX_RETRY_AFTER_MS ||
+        attempt >= FD_MAX_RATE_LIMIT_ATTEMPTS
+      ) {
         return res
       }
       // We are going to retry and abandon this response, so drain its body now to free the socket
@@ -461,15 +476,21 @@ export class FreshdeskApi {
   }
 
   async listCategories(): Promise<FreshdeskCategory[]> {
-    const res = await this.request(`${this.baseUrl}/api/v2/solutions/categories`, { headers: this.defaultHeaders })
+    const res = await this.request(
+      `${this.baseUrl}/api/v2/solutions/categories`,
+      { headers: this.defaultHeaders },
+    )
     await this.checkStatus(res)
     return (await res.json()) as FreshdeskCategory[]
   }
 
   async listFolders(category: FreshdeskCategory): Promise<FreshdeskFolder[]> {
-    const res = await this.request(`${this.baseUrl}/api/v2/solutions/categories/${category.id}/folders`, {
-      headers: this.defaultHeaders,
-    })
+    const res = await this.request(
+      `${this.baseUrl}/api/v2/solutions/categories/${category.id}/folders`,
+      {
+        headers: this.defaultHeaders,
+      },
+    )
     await this.checkStatus(res)
     return (await res.json()) as FreshdeskFolder[]
   }
@@ -507,7 +528,9 @@ export class FreshdeskApi {
    * @returns the agent's id and contact details
    */
   async getAuthenticatedAgent(): Promise<FreshdeskAgent> {
-    const res = await this.request(`${this.baseUrl}/api/v2/agents/me`, { headers: this.defaultHeaders })
+    const res = await this.request(`${this.baseUrl}/api/v2/agents/me`, {
+      headers: this.defaultHeaders,
+    })
     await this.checkStatus(res)
     return (await res.json()) as FreshdeskAgent
   }
@@ -518,7 +541,9 @@ export class FreshdeskApi {
    * @returns the primary language, supported languages, and portal languages
    */
   async getHelpdeskSettings(): Promise<FreshdeskHelpdeskSettings> {
-    const res = await this.request(`${this.baseUrl}/api/v2/settings/helpdesk`, { headers: this.defaultHeaders })
+    const res = await this.request(`${this.baseUrl}/api/v2/settings/helpdesk`, {
+      headers: this.defaultHeaders,
+    })
     await this.checkStatus(res)
     return (await res.json()) as FreshdeskHelpdeskSettings
   }
@@ -531,8 +556,16 @@ export class FreshdeskApi {
    * @param method - `put` to update, or `post` to create
    * @param payload - the serialized translation body
    */
-  private async writeRequest(url: string, method: 'put' | 'post', payload: string): Promise<void> {
-    const res = await this.request(url, { method, body: payload, headers: this.defaultHeaders })
+  private async writeRequest(
+    url: string,
+    method: 'put' | 'post',
+    payload: string,
+  ): Promise<void> {
+    const res = await this.request(url, {
+      method,
+      body: payload,
+      headers: this.defaultHeaders,
+    })
     await this.checkStatus(res)
     await res.text().catch(() => undefined)
   }
@@ -555,7 +588,8 @@ export class FreshdeskApi {
     resourcePath: 'categories' | 'folders' | 'articles',
     id: number,
     locale: string,
-    body: FreshdeskCategoryCreate | FreshdeskFolderCreate | FreshdeskArticleCreate,
+    body:
+      FreshdeskCategoryCreate | FreshdeskFolderCreate | FreshdeskArticleCreate,
   ): Promise<boolean> {
     const url = `${this.baseUrl}/api/v2/solutions/${resourcePath}/${id}/${locale}`
     const payload = JSON.stringify(body)
@@ -564,7 +598,9 @@ export class FreshdeskApi {
       return true
     } catch (err) {
       if ((err as HttpError).code !== 404) {
-        process.stdout.write(`Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`)
+        process.stdout.write(
+          `Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`,
+        )
         throw err
       }
       // PUT 404: the translation does not exist yet, so fall through and create it.
@@ -582,16 +618,26 @@ export class FreshdeskApi {
         )
         return false
       }
-      process.stdout.write(`Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`)
+      process.stdout.write(
+        `Error processing id ${id} for locale ${locale}: ${(err as HttpError).message}\n`,
+      )
       throw err
     }
   }
 
-  async updateCategoryTranslation(id: number, locale: string, body: FreshdeskCategoryCreate): Promise<boolean> {
+  async updateCategoryTranslation(
+    id: number,
+    locale: string,
+    body: FreshdeskCategoryCreate,
+  ): Promise<boolean> {
     return this.writeTranslation('categories', id, locale, body)
   }
 
-  async updateFolderTranslation(id: number, locale: string, body: FreshdeskFolderCreate): Promise<boolean> {
+  async updateFolderTranslation(
+    id: number,
+    locale: string,
+    body: FreshdeskFolderCreate,
+  ): Promise<boolean> {
     return this.writeTranslation('folders', id, locale, body)
   }
 
@@ -605,10 +651,18 @@ export class FreshdeskApi {
    * @param body - the translation, with the status it should end up in
    * @returns true if the translation was written; see {@link writeTranslation}
    */
-  async updateArticleTranslation(id: number, locale: string, body: FreshdeskArticleCreate): Promise<boolean> {
+  async updateArticleTranslation(
+    id: number,
+    locale: string,
+    body: FreshdeskArticleCreate,
+  ): Promise<boolean> {
     if (body.status === FreshdeskArticleStatus.draft) {
       // If there's no translation to unpublish yet, writeTranslation creates it as a draft.
-      await this.setArticleTranslationStatus(id, locale, FreshdeskArticleStatus.draft)
+      await this.setArticleTranslationStatus(
+        id,
+        locale,
+        FreshdeskArticleStatus.draft,
+      )
     }
     return this.writeTranslation('articles', id, locale, body)
   }
@@ -622,7 +676,11 @@ export class FreshdeskApi {
    * @param status - the status to set
    * @returns true if the translation exists (and now has that status), false if there's no such translation
    */
-  async setArticleTranslationStatus(id: number, locale: string, status: FreshdeskArticleStatus): Promise<boolean> {
+  async setArticleTranslationStatus(
+    id: number,
+    locale: string,
+    status: FreshdeskArticleStatus,
+  ): Promise<boolean> {
     try {
       await this.writeRequest(
         `${this.baseUrl}/api/v2/solutions/articles/${id}/${locale}`,
@@ -647,12 +705,18 @@ export class FreshdeskApi {
  * enough to find the account in Freshdesk.
  * @param fd - a configured Freshdesk client
  */
-export const logAuthenticatedAgent = async (fd: FreshdeskApi): Promise<void> => {
+export const logAuthenticatedAgent = async (
+  fd: FreshdeskApi,
+): Promise<void> => {
   try {
     const agent = await fd.getAuthenticatedAgent()
-    console.log(`Freshdesk token authenticated as "${agent.contact.name}" (agent id ${agent.id}).`)
+    console.log(
+      `Freshdesk token authenticated as "${agent.contact.name}" (agent id ${agent.id}).`,
+    )
   } catch (error) {
-    console.warn(`Could not identify the Freshdesk agent for the configured token: ${messageOf(error)}`)
+    console.warn(
+      `Could not identify the Freshdesk agent for the configured token: ${messageOf(error)}`,
+    )
   }
 }
 

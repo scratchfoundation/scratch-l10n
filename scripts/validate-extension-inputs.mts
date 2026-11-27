@@ -13,7 +13,9 @@ import { missingBracketPlaceholders } from './lib/validate.mts'
 // Globals
 const JSON_DIR = path.join(process.cwd(), '/editor/extensions')
 
-const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8')) as TransifexStringsKeyValueJson
+const source = JSON.parse(
+  fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8'),
+) as TransifexStringsKeyValueJson
 
 let numTotalErrors = 0
 
@@ -21,11 +23,17 @@ let numTotalErrors = 0
  * @param translationData - the translation data to validate
  * @param locale - validate extension inputs for this locale
  */
-const validateExtensionInputs = (translationData: TransifexStringsKeyValueJson, locale: string) => {
+const validateExtensionInputs = (
+  translationData: TransifexStringsKeyValueJson,
+  locale: string,
+) => {
   let numLocaleErrors = 0
   for (const block of Object.keys(translationData)) {
     // Report every missing input at once rather than failing on the first, so a single run surfaces all the work.
-    for (const input of missingBracketPlaceholders(translationData[block], source[block])) {
+    for (const input of missingBracketPlaceholders(
+      translationData[block],
+      source[block],
+    )) {
       numLocaleErrors++
       console.error(
         `Block '${block}' in locale '${locale}' does not include input ${input}:\n${translationData[block]}\n`,

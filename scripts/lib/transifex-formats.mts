@@ -30,7 +30,8 @@ export type TransifexStringKeyValueJson = string
  * A set of strings from a resource that uses the "KEYVALUEJSON" file type.
  * Scratch: used for the Scratch Website project, the Scratch Editor blocks resource, and some Scratch Help resources.
  */
-export type TransifexStringsKeyValueJson = TransifexStrings<TransifexStringKeyValueJson>
+export type TransifexStringsKeyValueJson =
+  TransifexStrings<TransifexStringKeyValueJson>
 
 /**
  * A single string from a resource that uses the "STRUCTUREDJSON" file type.
@@ -43,11 +44,13 @@ export interface TransifexStringStructuredJson {
   character_limit?: number
   plurals?: object
 
-  [key: string]: TransifexStringStructuredJson | string | number | object | undefined
+  [key: string]:
+    TransifexStringStructuredJson | string | number | object | undefined
 }
 
 /**
  * A set of strings from a resource that uses the "STRUCTUREDJSON" file type.
  * Scratch: used for most (but not all) Scratch Help resources.
  */
-export type TransifexStringsStructuredJson = TransifexStrings<TransifexStringStructuredJson>
+export type TransifexStringsStructuredJson =
+  TransifexStrings<TransifexStringStructuredJson>

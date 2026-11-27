@@ -55,21 +55,31 @@ const missingLocales: string[] = []
  * @returns translation data for the requested component
  */
 const combineJson = (component: string) =>
-  Object.keys(locales).reduce((collection: Record<string, TransifexEditorStrings>, lang) => {
-    try {
-      const langData = JSON.parse(
-        fs.readFileSync(path.resolve('editor', component, lang + '.json'), 'utf8'),
-      ) as TransifexEditorStrings
-      collection[lang] = langData
-    } catch {
-      missingLocales.push(component + ':' + lang + '\n')
-    }
-    return collection
-  }, {})
+  Object.keys(locales).reduce(
+    (collection: Record<string, TransifexEditorStrings>, lang) => {
+      try {
+        const langData = JSON.parse(
+          fs.readFileSync(
+            path.resolve('editor', component, lang + '.json'),
+            'utf8',
+          ),
+        ) as TransifexEditorStrings
+        collection[lang] = langData
+      } catch {
+        missingLocales.push(component + ':' + lang + '\n')
+      }
+      return collection
+    },
+    {},
+  )
 
 // generate the blocks messages: files are plain key-value JSON
 const blocksMessages = combineJson('blocks')
-const blockData = '// GENERATED FILE:\n' + 'export default ' + JSON.stringify(blocksMessages, null, 2) + ';\n'
+const blockData =
+  '// GENERATED FILE:\n' +
+  'export default ' +
+  JSON.stringify(blocksMessages, null, 2) +
+  ';\n'
 
 fs.writeFileSync(MSGS_DIR + 'blocks-msgs.js', blockData)
 
@@ -78,13 +88,21 @@ const components = ['interface', 'extensions', 'paint-editor']
 const editorMsgs = {}
 components.forEach((component) => {
   const messages = combineJson(component)
-  const data = '// GENERATED FILE:\n' + 'export default ' + JSON.stringify(messages, null, 2) + ';\n'
+  const data =
+    '// GENERATED FILE:\n' +
+    'export default ' +
+    JSON.stringify(messages, null, 2) +
+    ';\n'
   fs.writeFileSync(MSGS_DIR + component + '-msgs.js', data)
   defaultsDeep(editorMsgs, messages)
 })
 
 // generate combined editor-msgs file
-const editorData = '// GENERATED FILE:\n' + 'export default ' + JSON.stringify(editorMsgs, null, 2) + ';\n'
+const editorData =
+  '// GENERATED FILE:\n' +
+  'export default ' +
+  JSON.stringify(editorMsgs, null, 2) +
+  ';\n'
 fs.writeFileSync(MSGS_DIR + 'editor-msgs.js', editorData)
 
 if (missingLocales.length > 0) {

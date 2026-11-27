@@ -18,7 +18,8 @@ export type SyncBaseline = Map<string, string | null>
 /** Default on-disk location of the baseline manifest, relative to the repository root. */
 export const DEFAULT_BASELINE_PATH = 'scripts/help-sync-baseline.json'
 
-const baselinePath = (path?: string): string => path ?? process.env.HELP_SYNC_BASELINE_FILE ?? DEFAULT_BASELINE_PATH
+const baselinePath = (path?: string): string =>
+  path ?? process.env.HELP_SYNC_BASELINE_FILE ?? DEFAULT_BASELINE_PATH
 
 /**
  * Load the baseline from disk. A missing baseline means "sync everything" — the safe default — so an
@@ -29,13 +30,18 @@ const baselinePath = (path?: string): string => path ?? process.env.HELP_SYNC_BA
 export const loadBaseline = (path?: string): SyncBaseline => {
   const file = baselinePath(path)
   try {
-    const parsed = JSON.parse(readFileSync(file, 'utf8')) as Record<string, string | null>
+    const parsed = JSON.parse(readFileSync(file, 'utf8')) as Record<
+      string,
+      string | null
+    >
     return new Map(Object.entries(parsed))
   } catch (error) {
     // A corrupt or unreadable file must not wedge the run: log (unless it is simply absent) and start
     // fresh, which just means a one-time full sync that repopulates the baseline.
     if ((error as NodeJS.ErrnoException).code !== 'ENOENT') {
-      console.warn(`Could not read help-sync baseline "${file}"; treating as empty: ${messageOf(error)}`)
+      console.warn(
+        `Could not read help-sync baseline "${file}"; treating as empty: ${messageOf(error)}`,
+      )
     }
     return new Map()
   }

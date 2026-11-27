@@ -33,7 +33,9 @@ if (args.length < 3 || !process.env.TX_TOKEN) {
 const PROJECT = args[0]
 const RESOURCE = args[1]
 
-const en = JSON.parse(fs.readFileSync(path.resolve(args[2]), 'utf8')) as TransifexStrings<unknown>
+const en = JSON.parse(
+  fs.readFileSync(path.resolve(args[2]), 'utf8'),
+) as TransifexStrings<unknown>
 
 // get the correct resource file type based on transifex project/repo and resource
 const getResourceType = (project: string, resource: string) => {
@@ -65,7 +67,9 @@ const getResourceType = (project: string, resource: string) => {
     return 'CHROME'
   }
 
-  throw new Error(`Error - Unknown resource type for:\n  Project: ${project}, resource: ${resource}\n`)
+  throw new Error(
+    `Error - Unknown resource type for:\n  Project: ${project}, resource: ${resource}\n`,
+  )
 }
 
 // update Transifex with English source
@@ -78,7 +82,9 @@ const pushSource = async function () {
       throw err
     }
     // file not found - create it, but also give message
-    process.stdout.write(`Transifex Resource not found, creating: ${RESOURCE}\n`)
+    process.stdout.write(
+      `Transifex Resource not found, creating: ${RESOURCE}\n`,
+    )
     const resourceData = {
       slug: RESOURCE,
       name: RESOURCE,

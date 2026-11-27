@@ -6,8 +6,10 @@ import {
   TransifexStringsKeyValueJson,
 } from './transifex-formats.mts'
 
-export type TransifexEditorString = TransifexStringChrome | TransifexStringKeyValueJson
-export type TransifexEditorStrings = TransifexStringsChrome | TransifexStringsKeyValueJson
+export type TransifexEditorString =
+  TransifexStringChrome | TransifexStringKeyValueJson
+export type TransifexEditorStrings =
+  TransifexStringsChrome | TransifexStringsKeyValueJson
 
 const formatError = (err: unknown): string => {
   if (err instanceof Error) return err.stack ?? err.message
@@ -40,8 +42,9 @@ const placeholders = (message: string): parse.Placeholder[] =>
   // relevant for this check, so strip them out
   parse(message.replace(/'/g, '')).filter((item) => Array.isArray(item))
 
-const getMessageText = (m: TransifexStringKeyValueJson | TransifexStringChrome | undefined): string =>
-  m == null ? '' : typeof m === 'string' ? m : m.message
+const getMessageText = (
+  m: TransifexStringKeyValueJson | TransifexStringChrome | undefined,
+): string => (m == null ? '' : typeof m === 'string' ? m : m.message)
 
 // Matches everything inside brackets, and the brackets themselves.
 // e.g. matches '[MOTOR_ID]', '[POWER]' from 'altera a potência de [MOTOR_ID] para [POWER]'
@@ -63,7 +66,8 @@ export const missingBracketPlaceholders = (
 ): string[] => {
   const sourceInputs = getMessageText(source).match(bracketPlaceholderRegex)
   if (!sourceInputs) return []
-  const translatedInputs: string[] = getMessageText(message).match(bracketPlaceholderRegex) ?? []
+  const translatedInputs: string[] =
+    getMessageText(message).match(bracketPlaceholderRegex) ?? []
   return sourceInputs.filter((input) => !translatedInputs.includes(input))
 }
 
@@ -135,7 +139,10 @@ export const validMessage = (
 
   // Check bracket placeholders like '[PART]' (extension block inputs only - see filterInvalidTranslations caller).
   // Applied opt-in because non-extension resources can contain literal brackets in prose (e.g. www quotes).
-  if (options.checkBracketPlaceholders && missingBracketPlaceholders(message, source).length > 0) {
+  if (
+    options.checkBracketPlaceholders &&
+    missingBracketPlaceholders(message, source).length > 0
+  ) {
     return false
   }
 
@@ -184,7 +191,10 @@ export const filterInvalidTranslations = (
   locale: string,
   translations: TransifexEditorStrings,
   source: TransifexEditorStrings,
-  options: { previous?: TransifexEditorStrings; checkBracketPlaceholders?: boolean } = {},
+  options: {
+    previous?: TransifexEditorStrings
+    checkBracketPlaceholders?: boolean
+  } = {},
 ): { messages: string[]; rejected: number } => {
   const { previous, checkBracketPlaceholders = false } = options
   const messages: string[] = []
@@ -211,7 +221,9 @@ export const filterInvalidTranslations = (
     let valid: boolean
     let validationError: unknown
     try {
-      valid = validMessage(translations[item], source[item], { checkBracketPlaceholders })
+      valid = validMessage(translations[item], source[item], {
+        checkBracketPlaceholders,
+      })
     } catch (err) {
       valid = false
       validationError = err
@@ -223,7 +235,9 @@ export const filterInvalidTranslations = (
           `locale ${locale} / item ${item}: message validation failed:`,
           `  msg: ${getMessageText(translations[item])}`,
           `  src: ${getMessageText(source[item])}`,
-          ...(validationError != null ? [`  error: ${formatError(validationError)}`] : []),
+          ...(validationError != null
+            ? [`  error: ${formatError(validationError)}`]
+            : []),
         ].join('\n'),
       )
 
@@ -231,7 +245,9 @@ export const filterInvalidTranslations = (
       const previousTranslation = previous?.[item]
       const keepPrevious =
         previousTranslation !== undefined &&
-        safeValidMessage(previousTranslation, source[item], { checkBracketPlaceholders })
+        safeValidMessage(previousTranslation, source[item], {
+          checkBracketPlaceholders,
+        })
       translations[item] = keepPrevious ? previousTranslation : source[item]
     }
   })

@@ -34,17 +34,21 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
 await logFreshdeskAgent()
 await initChangeDetection()
 
-const [{ languages, names }, { validCategoryIds, validFolderIds }] = await Promise.all([
-  getInputs(),
-  getValidFreshdeskIds(),
-])
+const [{ languages, names }, { validCategoryIds, validFolderIds }] =
+  await Promise.all([getInputs(), getValidFreshdeskIds()])
 reportSkippedLocales(languages)
 const warnedKeys = new Set<string>()
 console.log('Process Category and Folder Names pulled from Transifex')
 await Promise.all(
   names.map((item) =>
     saveItem(item, languages, (resource, locale) =>
-      localizeNames(resource, locale, validCategoryIds, validFolderIds, warnedKeys),
+      localizeNames(
+        resource,
+        locale,
+        validCategoryIds,
+        validFolderIds,
+        warnedKeys,
+      ),
     ),
   ),
 )

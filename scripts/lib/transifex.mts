@@ -64,7 +64,9 @@ export interface TxPullErrorCause {
  * @param error - the caught value
  * @returns the cause, or undefined if the error did not come from txPull
  */
-export const txPullErrorCause = (error: unknown): TxPullErrorCause | undefined => {
+export const txPullErrorCause = (
+  error: unknown,
+): TxPullErrorCause | undefined => {
   const cause = (error as { cause?: unknown } | null)?.cause
   if (
     cause &&
@@ -72,7 +74,8 @@ export const txPullErrorCause = (error: unknown): TxPullErrorCause | undefined =
     typeof (cause as TxPullErrorCause).project === 'string' &&
     typeof (cause as TxPullErrorCause).resource === 'string' &&
     typeof (cause as TxPullErrorCause).locale === 'string' &&
-    (typeof (cause as TxPullErrorCause).buffer === 'string' || (cause as TxPullErrorCause).buffer === null)
+    (typeof (cause as TxPullErrorCause).buffer === 'string' ||
+      (cause as TxPullErrorCause).buffer === null)
   ) {
     return cause as TxPullErrorCause
   }
@@ -119,7 +122,8 @@ const TX_MAX_CONCURRENT_DOWNLOADS = 8
 /** Upper bound on how long to honor a throttle's "expected available" hint before giving up on it. */
 const TX_MAX_THROTTLE_WAIT_MS = 120_000
 
-const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout(resolve, ms))
+const sleep = (ms: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, ms))
 
 /**
  * Builds a concurrency limiter: the returned function runs at most `max` of the tasks handed to it at
@@ -128,7 +132,9 @@ const sleep = (ms: number): Promise<void> => new Promise((resolve) => setTimeout
  * @param max - the greatest number of tasks allowed to run at the same time
  * @returns a function that schedules a task and resolves (or rejects) with its result
  */
-const limitConcurrency = (max: number): (<T>(task: () => Promise<T>) => Promise<T>) => {
+const limitConcurrency = (
+  max: number,
+): (<T>(task: () => Promise<T>) => Promise<T>) => {
   let active = 0
   const queue: (() => void)[] = []
   const startNext = (): void => {
@@ -141,7 +147,10 @@ const limitConcurrency = (max: number): (<T>(task: () => Promise<T>) => Promise<
         active++
         // Invoke task() inside a then so a synchronous throw becomes a rejection: otherwise it would
         // escape run(), skip finally(startNext), and leak `active` -- eventually deadlocking the queue.
-        void Promise.resolve().then(task).then(resolve, reject).finally(startNext)
+        void Promise.resolve()
+          .then(task)
+          .then(resolve, reject)
+          .finally(startNext)
       }
       if (active < max) {
         run()
@@ -180,7 +189,10 @@ const throttleWaitMs = (err: unknown): number | null => {
   const detail = e.errors?.[0]?.detail ?? e.message ?? ''
   const match = /available in (\d+)\s*second/i.exec(detail)
   if (match) {
-    return Math.min((parseInt(match[1], 10) + 1) * 1_000, TX_MAX_THROTTLE_WAIT_MS)
+    return Math.min(
+      (parseInt(match[1], 10) + 1) * 1_000,
+      TX_MAX_THROTTLE_WAIT_MS,
+    )
   }
   return null
 }
@@ -228,7 +240,10 @@ const isTransientError = (err: unknown): boolean => {
  * @param fn - the operation to run; called once per attempt
  * @returns the resolved value of `fn`
  */
-const withRetry = async function <T>(label: string, fn: () => Promise<T>): Promise<T> {
+const withRetry = async function <T>(
+  label: string,
+  fn: () => Promise<T>,
+): Promise<T> {
   let lastError: unknown
   for (let attempt = 1; attempt <= TX_MAX_TRANSIENT_RETRIES; attempt++) {
     try {
@@ -282,7 +297,9 @@ interface AsyncUploadResource {
  * @returns An array of all resources in the collection.
  * @todo This seems necessary with the latest Transifex API..?
  */
-const collectAll = async function <T extends JsonApiResource>(collection: Collection): Promise<T[]> {
+const collectAll = async function <T extends JsonApiResource>(
+  collection: Collection,
+): Promise<T[]> {
   await collection.fetch() // fetch the first page if it hasn't already been fetched
   const collected: T[] = []
   // According to `transifexApi.d.ts`, `all()` returns an `Iterable<JsonApiResource>`.
@@ -377,7 +394,9 @@ export const txPull = async function <T>(
         await sleep(delay)
       }
       try {
-        const response = await fetch(url, { signal: AbortSignal.timeout(TX_DOWNLOAD_TIMEOUT_MS) })
+        const response = await fetch(url, {
+          signal: AbortSignal.timeout(TX_DOWNLOAD_TIMEOUT_MS),
+        })
         if (!response.ok) {
           const err = new Error(
             `Failed to download resource: HTTP ${response.status} ${response.statusText}`,
@@ -389,7 +408,9 @@ export const txPull = async function <T>(
         break
       } catch (e) {
         lastError = e
-        console.error(`txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${messageOf(e)}`)
+        console.error(
+          `txPull download attempt ${i + 1} failed for ${resource}/${locale}: ${messageOf(e)}`,
+        )
         // Only 5xx / 429 / network / timeout failures are worth retrying. A non-transient failure
         // (for example a 403 or 404) won't fix itself, so fail fast and surface the real cause
         // instead of burning the remaining attempts.
@@ -441,7 +462,9 @@ export const txResources = async function (project: string): Promise<string[]> {
  * @param project - project slug (for example)
  * @returns - array of resource objects
  */
-export const txResourcesObjects = async function (project: string): Promise<TransifexResourceObject[]> {
+export const txResourcesObjects = async function (
+  project: string,
+): Promise<TransifexResourceObject[]> {
   const resources = transifexApi.Resource.filter({
     project: `o:${ORG_NAME}:p:${project}`,
   })
@@ -458,11 +481,14 @@ export const txResourcesObjects = async function (project: string): Promise<Tran
  * translations were last updated (falling back to the pair's last update of any kind), or null if the
  * pair has never been translated
  */
-export const txResourceLanguageStats = async function (project: string): Promise<Map<string, string | null>> {
+export const txResourceLanguageStats = async function (
+  project: string,
+): Promise<Map<string, string | null>> {
   const stats = transifexApi.ResourceLanguageStats.filter({
     project: `o:${ORG_NAME}:p:${project}`,
   })
-  const statsData = await collectAll<TransifexResourceLanguageStatsObject>(stats)
+  const statsData =
+    await collectAll<TransifexResourceLanguageStatsObject>(stats)
 
   const lastUpdatedByPair = new Map<string, string | null>()
   for (const stat of statsData) {
@@ -482,7 +508,9 @@ export const txResourceLanguageStats = async function (project: string): Promise
     const attrs = stat.attributes
     lastUpdatedByPair.set(
       `${resource}:${locale}`,
-      attrs.translated_strings > 0 ? (attrs.last_translation_update ?? attrs.last_update) : null,
+      attrs.translated_strings > 0
+        ? (attrs.last_translation_update ?? attrs.last_update)
+        : null,
     )
   }
   return lastUpdatedByPair
@@ -493,7 +521,9 @@ export const txResourceLanguageStats = async function (project: string): Promise
  * @param slug - project slug (for example, "scratch-editor")
  * @returns - list of language codes
  */
-export const txAvailableLanguages = async function (slug: string): Promise<string[]> {
+export const txAvailableLanguages = async function (
+  slug: string,
+): Promise<string[]> {
   const project = await transifexApi.Project.get({
     organization: `o:${ORG_NAME}`,
     slug: slug,
@@ -510,7 +540,11 @@ export const txAvailableLanguages = async function (slug: string): Promise<strin
  * @param resource - resource slug (for example,  "blocks")
  * @param sourceStrings - json of source strings
  */
-export const txPush = async function (project: string, resource: string, sourceStrings: TransifexStrings<unknown>) {
+export const txPush = async function (
+  project: string,
+  resource: string,
+  sourceStrings: TransifexStrings<unknown>,
+) {
   const resourceObj = {
     data: {
       id: `o:${ORG_NAME}:p:${project}:r:${resource}`,
@@ -524,14 +558,18 @@ export const txPush = async function (project: string, resource: string, sourceS
   // any transient 502 on a poll crashed the whole job with an unhelpful stack trace. We do the
   // create-then-poll ourselves so we can bound it, retry transient blips, and surface the actual
   // reason an upload failed.
-  const upload = (await withRetry(`txPush create upload for "${resource}"`, () =>
-    transifexApi.ResourceStringsAsyncUpload.create({
-      resource: resourceObj,
-      content: JSON.stringify(sourceStrings),
-      content_encoding: 'text',
-      // The generated type insists on id/attributes/relationships/links, but the upload resource
-      // takes this flatter shape — the same one `ResourceStringsAsyncUpload.upload()` passes through.
-    } as unknown as Parameters<typeof transifexApi.ResourceStringsAsyncUpload.create>[0]),
+  const upload = (await withRetry(
+    `txPush create upload for "${resource}"`,
+    () =>
+      transifexApi.ResourceStringsAsyncUpload.create({
+        resource: resourceObj,
+        content: JSON.stringify(sourceStrings),
+        content_encoding: 'text',
+        // The generated type insists on id/attributes/relationships/links, but the upload resource
+        // takes this flatter shape — the same one `ResourceStringsAsyncUpload.upload()` passes through.
+      } as unknown as Parameters<
+        typeof transifexApi.ResourceStringsAsyncUpload.create
+      >[0]),
   )) as unknown as AsyncUploadResource
 
   const deadline = Date.now() + TX_UPLOAD_TIMEOUT_MS
@@ -542,8 +580,13 @@ export const txPush = async function (project: string, resource: string, sourceS
     }
     if (status === 'failed') {
       // On failure the upload carries `errors` (and sometimes `details`) explaining why.
-      const errorInfo = upload.get('errors') ?? upload.get('details') ?? 'no error detail provided'
-      throw new Error(`Transifex upload failed for resource "${resource}": ${JSON.stringify(errorInfo)}`)
+      const errorInfo =
+        upload.get('errors') ??
+        upload.get('details') ??
+        'no error detail provided'
+      throw new Error(
+        `Transifex upload failed for resource "${resource}": ${JSON.stringify(errorInfo)}`,
+      )
     }
     if (Date.now() >= deadline) {
       throw new Error(
@@ -552,7 +595,9 @@ export const txPush = async function (project: string, resource: string, sourceS
       )
     }
     await sleep(TX_UPLOAD_POLL_INTERVAL_MS)
-    await withRetry(`txPush poll upload for "${resource}"`, () => upload.reload())
+    await withRetry(`txPush poll upload for "${resource}"`, () =>
+      upload.reload(),
+    )
   }
 }
 

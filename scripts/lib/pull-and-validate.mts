@@ -3,7 +3,11 @@ import { poolMap } from './concurrent.mts'
 import { ProgressLogger } from './progress-logger.mts'
 import { TransifexStringsKeyValueJson } from './transifex-formats.mts'
 import { txPull, txResources } from './transifex.mts'
-import { filterInvalidTranslations, TransifexEditorString, TransifexEditorStrings } from './validate.mts'
+import {
+  filterInvalidTranslations,
+  TransifexEditorString,
+  TransifexEditorStrings,
+} from './validate.mts'
 
 const CONCURRENCY_LIMIT = 36
 const SOURCE_LOCALE = 'en' // TODO: don't hardcode this
@@ -13,7 +17,10 @@ const SOURCE_LOCALE = 'en' // TODO: don't hardcode this
  * @param selectedLocales - A list of Scratch locale codes
  * @returns The list of all resource/locale combinations to pull. The source locale is always excluded.
  */
-const expandResourceFiles = (resources: string[], selectedLocales: string[]) => {
+const expandResourceFiles = (
+  resources: string[],
+  selectedLocales: string[],
+) => {
   const files = []
   for (const resource of resources) {
     for (const locale of selectedLocales) {
@@ -57,7 +64,12 @@ async function pullAndValidateFile({
   checkBracketPlaceholders?: boolean
 }) {
   const txLocale = localeMap[locale] || locale
-  const fileContent = await txPull<TransifexEditorString>(project, resource, txLocale, mode)
+  const fileContent = await txPull<TransifexEditorString>(
+    project,
+    resource,
+    txLocale,
+    mode,
+  )
 
   // if fileContent has message & description, we only want the message
   const translations: TransifexStringsKeyValueJson = {}
@@ -80,7 +92,10 @@ async function pullAndValidateFile({
 
   // some of the validation checks may still be relevant even if locale === SOURCE_LOCALE
   // console.log({ resource, locale, translations, sourceStrings })
-  return filterInvalidTranslations(locale, translations, sourceStrings, { previous, checkBracketPlaceholders })
+  return filterInvalidTranslations(locale, translations, sourceStrings, {
+    previous,
+    checkBracketPlaceholders,
+  })
 }
 
 /**
@@ -111,15 +126,23 @@ export async function pullAndValidateProject({
   resources?: string[]
   selectedLocales?: string | string[]
   bracketPlaceholderResources?: string[]
-  loadPrevious?: (resource: string, locale: string) => TransifexEditorStrings | undefined
+  loadPrevious?: (
+    resource: string,
+    locale: string,
+  ) => TransifexEditorStrings | undefined
 }) {
   const selectedResources = resources ?? (await txResources(project))
   selectedLocales =
-    typeof selectedLocales === 'string' ? [selectedLocales] : (selectedLocales ?? Object.keys(locales))
+    typeof selectedLocales === 'string'
+      ? [selectedLocales]
+      : (selectedLocales ?? Object.keys(locales))
 
   const files = expandResourceFiles(selectedResources, selectedLocales)
 
-  const allStrings: Record<string, Record<string, TransifexStringsKeyValueJson>> = {}
+  const allStrings: Record<
+    string,
+    Record<string, TransifexStringsKeyValueJson>
+  > = {}
   const messages: string[] = []
   let rejected = 0
 
@@ -134,7 +157,8 @@ export async function pullAndValidateProject({
         locale,
         mode,
         previous: loadPrevious?.(resource, locale),
-        checkBracketPlaceholders: bracketPlaceholderResources.includes(resource),
+        checkBracketPlaceholders:
+          bracketPlaceholderResources.includes(resource),
       })
       rejected += fileResult.rejected
       for (const message of fileResult.messages) {
@@ -147,10 +171,14 @@ export async function pullAndValidateProject({
   }
 
   // Ensure source locale is available for validation
-  await poolMap(selectedResources, CONCURRENCY_LIMIT, async (resource) => handleFile(resource, SOURCE_LOCALE))
+  await poolMap(selectedResources, CONCURRENCY_LIMIT, async (resource) =>
+    handleFile(resource, SOURCE_LOCALE),
+  )
 
   // Non-source locales
-  await poolMap(files, CONCURRENCY_LIMIT, async ({ resource, locale }) => handleFile(resource, locale))
+  await poolMap(files, CONCURRENCY_LIMIT, async ({ resource, locale }) =>
+    handleFile(resource, locale),
+  )
 
   return {
     allStrings,

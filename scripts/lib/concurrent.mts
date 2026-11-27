@@ -13,7 +13,11 @@ type ProcessItemAsync<T, R> = (item: T) => Promise<R>
  * @param func - Function to apply to each item in `arr`.
  * @returns Results of `func` applied to each item in `arr`.
  */
-export const poolMap = async <T, R>(arr: T[], poolSize: number, func: ProcessItemAsync<T, R>): Promise<R[]> => {
+export const poolMap = async <T, R>(
+  arr: T[],
+  poolSize: number,
+  func: ProcessItemAsync<T, R>,
+): Promise<R[]> => {
   const pool: Record<number, Promise<void>> = []
   const results: R[] = []
 

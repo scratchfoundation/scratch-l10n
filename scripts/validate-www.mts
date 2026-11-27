@@ -8,7 +8,10 @@ import path from 'node:path'
 import async from 'async'
 import { globSync } from 'glob'
 import locales from '../src/supported-locales.mjs'
-import { TransifexStringsKeyValueJson, TransifexStrings } from './lib/transifex-formats.mts'
+import {
+  TransifexStringsKeyValueJson,
+  TransifexStrings,
+} from './lib/transifex-formats.mts'
 import { filterInvalidTranslations } from './lib/validate.mts'
 
 const args = process.argv.slice(2)
@@ -37,16 +40,26 @@ const validate = (localeData: LocaleData, callback: async.ErrorCallback) => {
     if (err) return callback(err)
     // let this throw an error if invalid json
     const strings = JSON.parse(data) as TransifexStringsKeyValueJson
-    const { messages } = filterInvalidTranslations(localeData.locale, strings, localeData.sourceData)
+    const { messages } = filterInvalidTranslations(
+      localeData.locale,
+      strings,
+      localeData.sourceData,
+    )
     if (messages.length > 0) {
-      return callback(new Error(`Locale ${localeData.locale} has validation errors:\n${messages.join('\n')}`))
+      return callback(
+        new Error(
+          `Locale ${localeData.locale} has validation errors:\n${messages.join('\n')}`,
+        ),
+      )
     }
     callback()
   })
 }
 
 const validateResource = (resource: string, callback: async.ErrorCallback) => {
-  const source = JSON.parse(fs.readFileSync(`${resource}/en.json`, 'utf8')) as TransifexStringsKeyValueJson
+  const source = JSON.parse(
+    fs.readFileSync(`${resource}/en.json`, 'utf8'),
+  ) as TransifexStringsKeyValueJson
   const allLocales = Object.keys(locales).map((loc) => ({
     locale: loc,
     localeFileName: `${resource}/${loc}.json`,
