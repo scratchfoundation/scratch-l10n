@@ -38,7 +38,9 @@ export class ProgressLogger {
       const percent = Math.floor((100 * this.completed) / this.total)
       if (percent !== this.percent) {
         this.percent = percent
-        console.info(`Progress: ${this.percent}% (${this.completed}/${this.total})`)
+        console.info(
+          `Progress: ${this.percent}% (${this.completed}/${this.total})`,
+        )
       }
     } else {
       console.info(`Progress: ${this.completed} of unknown total`)

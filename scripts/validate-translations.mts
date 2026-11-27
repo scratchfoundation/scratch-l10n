@@ -7,7 +7,10 @@ import fs from 'node:fs'
 import path from 'node:path'
 import async from 'async'
 import locales from '../src/supported-locales.mjs'
-import { filterInvalidTranslations, TransifexEditorStrings } from './lib/validate.mts'
+import {
+  filterInvalidTranslations,
+  TransifexEditorStrings,
+} from './lib/validate.mts'
 
 const args = process.argv.slice(2)
 const usage = `
@@ -24,7 +27,9 @@ if (args.length < 1) {
 // Globals
 const JSON_DIR = path.resolve(args[0])
 
-const source = JSON.parse(fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8')) as TransifexEditorStrings
+const source = JSON.parse(
+  fs.readFileSync(`${JSON_DIR}/en.json`, 'utf8'),
+) as TransifexEditorStrings
 
 const validate = (locale: string, callback: async.ErrorCallback) => {
   fs.readFile(`${JSON_DIR}/${locale}.json`, 'utf8', (err, data) => {
@@ -33,7 +38,11 @@ const validate = (locale: string, callback: async.ErrorCallback) => {
     const strings = JSON.parse(data) as TransifexEditorStrings
     const { messages } = filterInvalidTranslations(locale, strings, source)
     if (messages.length > 0) {
-      return callback(new Error(`Locale ${locale} has validation errors:\n${messages.join('\n')}`))
+      return callback(
+        new Error(
+          `Locale ${locale} has validation errors:\n${messages.join('\n')}`,
+        ),
+      )
     }
     callback()
   })

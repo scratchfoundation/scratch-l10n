@@ -41,21 +41,26 @@ const lang = args.length === 2 ? args[1] : undefined
 
 // www resources live in per-resource subdirectories; the previous translation is whatever is on disk before we
 // overwrite it below.
-const previousFileName = (resource: string, locale: string) => `${OUTPUT_DIR}/${PROJECT}.${resource}/${locale}.json`
+const previousFileName = (resource: string, locale: string) =>
+  `${OUTPUT_DIR}/${PROJECT}.${resource}/${locale}.json`
 
 const validationResults = await pullAndValidateProject({
   project: PROJECT,
   selectedLocales: lang,
   loadPrevious: (resource, locale) => {
     try {
-      return JSON.parse(readFileSync(previousFileName(resource, locale), 'utf8')) as TransifexEditorStrings
+      return JSON.parse(
+        readFileSync(previousFileName(resource, locale), 'utf8'),
+      ) as TransifexEditorStrings
     } catch {
       return undefined
     }
   },
 })
 
-for (const [resourceName, resource] of Object.entries(validationResults.allStrings)) {
+for (const [resourceName, resource] of Object.entries(
+  validationResults.allStrings,
+)) {
   for (const [locale, translations] of Object.entries(resource)) {
     const txOutdir = `${OUTPUT_DIR}/${PROJECT}.${resourceName}`
     const fileName = `${txOutdir}/${locale}.json`

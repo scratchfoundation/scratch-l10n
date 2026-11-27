@@ -9,8 +9,17 @@ import FreshdeskApi, {
   FreshdeskFolder,
   logAuthenticatedAgent,
 } from './lib/freshdesk-api.mts'
-import { TransifexStringsKeyValueJson, TransifexStringsStructuredJson } from './lib/transifex-formats.mts'
-import { txPull, txPush, txCreateResource, JsonApiException, SOURCE_LOCALE } from './lib/transifex.mts'
+import {
+  TransifexStringsKeyValueJson,
+  TransifexStringsStructuredJson,
+} from './lib/transifex-formats.mts'
+import {
+  txPull,
+  txPush,
+  txCreateResource,
+  JsonApiException,
+  SOURCE_LOCALE,
+} from './lib/transifex.mts'
 
 const args = process.argv.slice(2)
 
@@ -29,7 +38,10 @@ if (!process.env.TX_TOKEN || !process.env.FRESHDESK_TOKEN || args.length > 0) {
   process.exit(1)
 }
 
-const FD = new FreshdeskApi('https://mitscratch.freshdesk.com', process.env.FRESHDESK_TOKEN)
+const FD = new FreshdeskApi(
+  'https://mitscratch.freshdesk.com',
+  process.env.FRESHDESK_TOKEN,
+)
 const TX_PROJECT = 'scratch-help'
 
 const categoryNames: TransifexStringsKeyValueJson = {}
@@ -57,7 +69,8 @@ const recordFailure = (context: string, error: unknown) => {
  * @returns generated transifex slug
  */
 const makeTxSlug = (item: { name: string; id?: number }) => {
-  if (item.id == null) throw new Error(`makeTxSlug: item has no id: ${item.name}`)
+  if (item.id == null)
+    throw new Error(`makeTxSlug: item has no id: ${item.name}`)
   return `${item.name.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 30)}_${item.id}`
 }
 
@@ -71,7 +84,9 @@ const txPushResource = async (
   // the whole sync. An empty resource means a Freshdesk folder with nothing to translate, which is a
   // content situation rather than a sync failure: log it and leave any existing resource as it is.
   if (Object.keys(articles).length === 0) {
-    console.log(`Not pushing Transifex resource "${name}": its Freshdesk folder has no articles to translate.`)
+    console.log(
+      `Not pushing Transifex resource "${name}": its Freshdesk folder has no articles to translate.`,
+    )
     return
   }
 
@@ -103,13 +118,18 @@ const txPushResource = async (
  * @param categories - array of categories the folders belong to
  * @returns flattened list of folders from all requested categories
  */
-const getFolders = async (categories: FreshdeskCategory[]): Promise<FreshdeskFolder[]> => {
+const getFolders = async (
+  categories: FreshdeskCategory[],
+): Promise<FreshdeskFolder[]> => {
   const categoryFolders = await Promise.all(
     categories.map(async (category): Promise<FreshdeskFolder[]> => {
       try {
         return await FD.listFolders(category)
       } catch (error) {
-        recordFailure(`list folders for category "${category.name}" (id ${category.id})`, error)
+        recordFailure(
+          `list folders for category "${category.name}" (id ${category.id})`,
+          error,
+        )
         return []
       }
     }),
@@ -124,7 +144,9 @@ const getFolders = async (categories: FreshdeskCategory[]): Promise<FreshdeskFol
  */
 const txArticleIds = async (slug: string): Promise<Set<string>> => {
   try {
-    return new Set(Object.keys(await txPull<unknown>(TX_PROJECT, slug, SOURCE_LOCALE)))
+    return new Set(
+      Object.keys(await txPull<unknown>(TX_PROJECT, slug, SOURCE_LOCALE)),
+    )
   } catch (err) {
     if ((err as JsonApiException).statusCode === 404) {
       return new Set()
@@ -146,31 +168,45 @@ const saveArticles = async (folder: FreshdeskFolder) => {
     const slug = `${makeTxSlug(folder)}_json`
     // Only a folder with drafts needs to know what Transifex already holds. If that can't be read, the push
     // fails for this folder instead of dropping the drafts' strings, and their translations with them.
-    const inTransifex = json.some((article) => article.status !== FreshdeskArticleStatus.published)
+    const inTransifex = json.some(
+      (article) => article.status !== FreshdeskArticleStatus.published,
+    )
       ? await txArticleIds(slug)
       : new Set<string>()
-    const txArticles = json.reduce((strings: TransifexStringsStructuredJson, current) => {
-      if (current.status === FreshdeskArticleStatus.published || inTransifex.has(String(current.id))) {
-        strings[String(current.id)] = {
-          title: {
-            string: current.title,
-          },
-          description: {
-            string: current.description,
-          },
+    const txArticles = json.reduce(
+      (strings: TransifexStringsStructuredJson, current) => {
+        if (
+          current.status === FreshdeskArticleStatus.published ||
+          inTransifex.has(String(current.id))
+        ) {
+          strings[String(current.id)] = {
+            title: {
+              string: current.title,
+            },
+            description: {
+              string: current.description,
+            },
+          }
+          if (current.tags?.length) {
+            strings[String(current.id)].tags = {
+              string: current.tags.toString(),
+            }
+          }
         }
-        if (current.tags?.length) {
-          strings[String(current.id)].tags = { string: current.tags.toString() }
-        }
-      }
-      return strings
-    }, {})
+        return strings
+      },
+      {},
+    )
     const drafts = json.filter(
-      (article) => article.status !== FreshdeskArticleStatus.published && inTransifex.has(String(article.id)),
+      (article) =>
+        article.status !== FreshdeskArticleStatus.published &&
+        inTransifex.has(String(article.id)),
     )
     process.stdout.write(
       `Push ${folder.name} articles to Transifex` +
-        (drafts.length ? ` (including ${drafts.length} draft(s): ${drafts.map((a) => a.id).join(', ')})` : '') +
+        (drafts.length
+          ? ` (including ${drafts.length} draft(s): ${drafts.map((a) => a.id).join(', ')})`
+          : '') +
         '\n',
     )
     await txPushResource(slug, txArticles, 'STRUCTURED_JSON')
@@ -203,11 +239,13 @@ const syncSources = async () => {
       })
       process.stdout.write('Push category and folder names to Transifex\n')
       await Promise.all([
-        txPushResource('categoryNames_json', categoryNames, 'KEYVALUEJSON').catch((error) =>
-          recordFailure('categoryNames_json', error),
-        ),
-        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON').catch((error) =>
-          recordFailure('folderNames_json', error),
+        txPushResource(
+          'categoryNames_json',
+          categoryNames,
+          'KEYVALUEJSON',
+        ).catch((error) => recordFailure('categoryNames_json', error)),
+        txPushResource('folderNames_json', folderNames, 'KEYVALUEJSON').catch(
+          (error) => recordFailure('folderNames_json', error),
         ),
       ])
       return data

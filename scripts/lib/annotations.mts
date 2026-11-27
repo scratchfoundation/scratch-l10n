@@ -18,14 +18,20 @@ const MAX_ANNOTATIONS_PER_LEVEL = 10
 
 type AnnotationLevel = 'error' | 'warning' | 'notice'
 
-const emittedByLevel: Record<AnnotationLevel, number> = { error: 0, warning: 0, notice: 0 }
+const emittedByLevel: Record<AnnotationLevel, number> = {
+  error: 0,
+  warning: 0,
+  notice: 0,
+}
 
 // In a workflow command's message, only `%`, CR and LF are special and must be encoded. The order
 // matters: encode `%` first so the escapes we add are not themselves re-encoded.
-const escapeData = (value: string): string => value.replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A')
+const escapeData = (value: string): string =>
+  value.replace(/%/g, '%25').replace(/\r/g, '%0D').replace(/\n/g, '%0A')
 
 // A property value (such as `title`) additionally encodes `:` and `,`.
-const escapeProperty = (value: string): string => escapeData(value).replace(/:/g, '%3A').replace(/,/g, '%2C')
+const escapeProperty = (value: string): string =>
+  escapeData(value).replace(/:/g, '%3A').replace(/,/g, '%2C')
 
 /**
  * Emit a single GitHub Actions annotation. No-op outside Actions and after the per-level display cap
@@ -35,7 +41,11 @@ const escapeProperty = (value: string): string => escapeData(value).replace(/:/g
  * @param annotation.message - the annotation body; may contain newlines and a URL
  * @param annotation.title - optional short bold header (for example, the failing item)
  */
-export const emitAnnotation = (annotation: { level: AnnotationLevel; message: string; title?: string }): void => {
+export const emitAnnotation = (annotation: {
+  level: AnnotationLevel
+  message: string
+  title?: string
+}): void => {
   const { level, message, title } = annotation
   if (!IN_GITHUB_ACTIONS) {
     return
